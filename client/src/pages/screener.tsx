@@ -137,21 +137,7 @@ export default function ScreenerPage() {
   const progress = ((step + 1) / STEPS.length) * 100;
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-2xl mx-auto px-4 py-4 flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
-            <Shield className="w-4 h-4 text-primary-foreground" />
-          </div>
-          <div>
-            <h1 className="text-base font-semibold leading-tight" data-testid="text-app-title">Benefits Screener</h1>
-            <p className="text-xs text-muted-foreground">Find programs you may qualify for</p>
-          </div>
-        </div>
-      </header>
-
-      <main className="max-w-2xl mx-auto px-4 py-6">
+    <div className="p-4 md:p-6 max-w-2xl mx-auto">
         {/* Progress */}
         <div className="mb-6">
           <div className="flex justify-between items-center mb-2">
@@ -434,7 +420,6 @@ export default function ScreenerPage() {
             Your information is not stored or shared — all screening happens in your browser.
           </p>
         </div>
-      </main>
     </div>
   );
 }

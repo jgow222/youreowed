@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
-  Shield,
   ExternalLink,
   RotateCcw,
   CheckCircle2,
@@ -22,9 +21,10 @@ import {
   Zap,
   ShieldCheck,
   Info,
+  GraduationCap,
+  Search,
 } from "lucide-react";
 import { type ProgramResult, type EligibilityStatus } from "@/lib/eligibility";
-import { PerplexityAttribution } from "@/components/PerplexityAttribution";
 
 interface ResultsPageProps {
   results: ProgramResult[];
@@ -76,13 +76,23 @@ const CATEGORY_ICONS: Record<string, typeof Utensils> = {
   "Veterans": Medal,
   "Cash Assistance": Wallet,
   "Utilities": Zap,
+  "Education": GraduationCap,
+  "Telecommunications": Zap,
 };
+
+function formatEstimate(min: number, max: number): string {
+  if (min === max) return `$${min.toLocaleString()}`;
+  return `$${min.toLocaleString()} – $${max.toLocaleString()}`;
+}
 
 function ProgramCard({ result }: { result: ProgramResult }) {
   const [expanded, setExpanded] = useState(result.status !== "unlikely");
   const config = STATUS_CONFIG[result.status];
   const StatusIcon = config.icon;
   const CategoryIcon = CATEGORY_ICONS[result.program.category] || Info;
+
+  const monthlyEst = result.program.estimatedMonthlyBenefit;
+  const annualEst = result.program.estimatedAnnualBenefit;
 
   return (
     <Card
@@ -102,7 +112,7 @@ function ProgramCard({ result }: { result: ProgramResult }) {
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0">
               <h3 className="text-sm font-semibold leading-tight">{result.program.name}</h3>
-              <div className="flex items-center gap-2 mt-1">
+              <div className="flex items-center gap-2 mt-1 flex-wrap">
                 <Badge variant="secondary" className="text-[11px] py-0 px-1.5 h-5 gap-1">
                   <CategoryIcon className="w-3 h-3" />
                   {result.program.category}
@@ -110,6 +120,18 @@ function ProgramCard({ result }: { result: ProgramResult }) {
                 {result.program.level === "state" && result.program.stateCode && (
                   <Badge variant="outline" className="text-[11px] py-0 px-1.5 h-5">
                     {result.program.stateCode}
+                  </Badge>
+                )}
+                {/* Dollar estimate badge */}
+                {result.status !== "unlikely" && (monthlyEst || annualEst) && (
+                  <Badge variant="outline" className="text-[11px] py-0 px-1.5 h-5 gap-0.5 border-emerald-300 dark:border-emerald-700 text-emerald-700 dark:text-emerald-400 bg-emerald-50/50 dark:bg-emerald-950/20">
+                    <DollarSign className="w-2.5 h-2.5" />
+                    {monthlyEst
+                      ? `${formatEstimate(monthlyEst.min, monthlyEst.max)}/mo`
+                      : annualEst
+                        ? `${formatEstimate(annualEst.min, annualEst.max)}/yr`
+                        : ""
+                    }
                   </Badge>
                 )}
               </div>
@@ -129,6 +151,29 @@ function ProgramCard({ result }: { result: ProgramResult }) {
           <p className="text-sm text-foreground/80 mb-2">
             {result.program.description}
           </p>
+
+          {/* Estimated value breakdown */}
+          {(monthlyEst || annualEst) && result.status !== "unlikely" && (
+            <div className="p-2.5 rounded-md bg-emerald-50/80 dark:bg-emerald-950/20 border border-emerald-200/50 dark:border-emerald-800/30 mb-2">
+              <div className="flex items-center gap-1.5 mb-1">
+                <DollarSign className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-400">Estimated Value</span>
+              </div>
+              {monthlyEst && (
+                <p className="text-xs text-foreground/70">
+                  <span className="font-semibold">{formatEstimate(monthlyEst.min, monthlyEst.max)}/month</span>
+                  {monthlyEst.description && ` — ${monthlyEst.description}`}
+                </p>
+              )}
+              {annualEst && (
+                <p className="text-xs text-foreground/70">
+                  <span className="font-semibold">{formatEstimate(annualEst.min, annualEst.max)}/year</span>
+                  {annualEst.description && ` — ${annualEst.description}`}
+                </p>
+              )}
+            </div>
+          )}
+
           <p className="text-xs text-muted-foreground mb-3 italic">
             {result.explanation}
           </p>
@@ -162,145 +207,137 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
 
   const totalRelevant = likelyResults.length + maybeResults.length;
 
+  // Calculate total estimated value
+  const totalMonthlyMin = [...likelyResults, ...maybeResults].reduce((sum, r) => {
+    if (r.program.estimatedMonthlyBenefit) return sum + r.program.estimatedMonthlyBenefit.min;
+    if (r.program.estimatedAnnualBenefit) return sum + Math.round(r.program.estimatedAnnualBenefit.min / 12);
+    return sum;
+  }, 0);
+  const totalMonthlyMax = [...likelyResults, ...maybeResults].reduce((sum, r) => {
+    if (r.program.estimatedMonthlyBenefit) return sum + r.program.estimatedMonthlyBenefit.max;
+    if (r.program.estimatedAnnualBenefit) return sum + Math.round(r.program.estimatedAnnualBenefit.max / 12);
+    return sum;
+  }, 0);
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="p-4 md:p-6 max-w-3xl mx-auto">
       {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-2xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
-              <Shield className="w-4 h-4 text-primary-foreground" />
-            </div>
-            <div>
-              <h1 className="text-base font-semibold leading-tight">Your Results</h1>
-              <p className="text-xs text-muted-foreground">Benefits you may qualify for</p>
-            </div>
-          </div>
-          <Button variant="ghost" size="sm" onClick={onStartOver} className="gap-1.5" data-testid="button-start-over">
-            <RotateCcw className="w-3.5 h-3.5" />
-            Start Over
-          </Button>
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          <h1 className="text-xl font-bold">Your Results</h1>
+          <p className="text-sm text-muted-foreground">Benefits you may qualify for</p>
         </div>
-      </header>
+        <Button variant="ghost" size="sm" onClick={onStartOver} className="gap-1.5" data-testid="button-start-over">
+          <RotateCcw className="w-3.5 h-3.5" />
+          Start Over
+        </Button>
+      </div>
 
-      <main className="max-w-2xl mx-auto px-4 py-6">
-        {/* Summary */}
-        <div className="mb-6 p-4 rounded-lg bg-primary/5 border border-primary/10">
-          <p className="text-sm font-medium">
-            We found <span className="text-primary font-bold">{totalRelevant} program{totalRelevant !== 1 ? "s" : ""}</span> you
-            may be eligible for based on your answers.
-          </p>
+      {/* Summary */}
+      <div className="mb-6 p-4 rounded-lg bg-primary/5 border border-primary/10">
+        <p className="text-sm font-medium">
+          We found <span className="text-primary font-bold">{totalRelevant} program{totalRelevant !== 1 ? "s" : ""}</span> you
+          may be eligible for.
+        </p>
+        {totalMonthlyMax > 0 && (
           <p className="text-xs text-muted-foreground mt-1">
-            Remember to verify eligibility on each program's official website.
+            Estimated total value: <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+              ${totalMonthlyMin.toLocaleString()} – ${totalMonthlyMax.toLocaleString()}/month
+            </span> ({formatEstimate(totalMonthlyMin * 12, totalMonthlyMax * 12)}/year)
+          </p>
+        )}
+        <p className="text-[10px] text-muted-foreground mt-1">
+          Estimates are approximate. Verify eligibility on each program's official website.
+        </p>
+      </div>
+
+      {/* Likely Results */}
+      {likelyResults.length > 0 && (
+        <section className="mb-6">
+          <div className="flex items-center gap-2 mb-3">
+            <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400">
+              Likely Eligible ({likelyResults.length})
+            </h2>
+          </div>
+          <div className="space-y-2">
+            {likelyResults.map(r => (
+              <ProgramCard key={r.program.id} result={r} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Maybe Results */}
+      {maybeResults.length > 0 && (
+        <section className="mb-6">
+          <div className="flex items-center gap-2 mb-3">
+            <HelpCircle className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400">
+              Worth Exploring ({maybeResults.length})
+            </h2>
+          </div>
+          <div className="space-y-2">
+            {maybeResults.map(r => (
+              <ProgramCard key={r.program.id} result={r} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Unlikely Results */}
+      {unlikelyResults.length > 0 && (
+        <section className="mb-6">
+          <button
+            className="flex items-center gap-2 mb-3 cursor-pointer group"
+            onClick={() => setShowUnlikely(!showUnlikely)}
+            data-testid="button-toggle-unlikely"
+          >
+            <XCircle className="w-4 h-4 text-slate-400" />
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              Unlikely ({unlikelyResults.length})
+            </h2>
+            {showUnlikely ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
+          </button>
+          {showUnlikely && (
+            <div className="space-y-2">
+              {unlikelyResults.map(r => (
+                <ProgramCard key={r.program.id} result={r} />
+              ))}
+            </div>
+          )}
+        </section>
+      )}
+
+      {totalRelevant === 0 && (
+        <div className="text-center py-12">
+          <Search className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+          <h3 className="text-lg font-semibold mb-2">No strong matches found</h3>
+          <p className="text-sm text-muted-foreground max-w-md mx-auto">
+            Based on your answers, we didn't find programs with a high likelihood of eligibility.
+            Try adjusting your answers or explore the unlikely programs for more options.
           </p>
         </div>
+      )}
 
-        {/* Likely Results */}
-        {likelyResults.length > 0 && (
-          <section className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400">
-                Likely Eligible ({likelyResults.length})
-              </h2>
-            </div>
-            <div className="space-y-2">
-              {likelyResults.map(r => (
-                <ProgramCard key={r.program.id} result={r} />
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Maybe Results */}
-        {maybeResults.length > 0 && (
-          <section className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <HelpCircle className="w-4 h-4 text-amber-600 dark:text-amber-400" />
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400">
-                Worth Exploring ({maybeResults.length})
-              </h2>
-            </div>
-            <div className="space-y-2">
-              {maybeResults.map(r => (
-                <ProgramCard key={r.program.id} result={r} />
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Unlikely Results (collapsed by default) */}
-        {unlikelyResults.length > 0 && (
-          <section className="mb-6">
-            <button
-              className="flex items-center gap-2 mb-3 cursor-pointer group"
-              onClick={() => setShowUnlikely(!showUnlikely)}
-              data-testid="button-toggle-unlikely"
-            >
-              <XCircle className="w-4 h-4 text-slate-400" />
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                Unlikely ({unlikelyResults.length})
-              </h2>
-              {showUnlikely ? (
-                <ChevronUp className="w-4 h-4 text-slate-400" />
-              ) : (
-                <ChevronDown className="w-4 h-4 text-slate-400" />
-              )}
-            </button>
-            {showUnlikely && (
-              <div className="space-y-2">
-                {unlikelyResults.map(r => (
-                  <ProgramCard key={r.program.id} result={r} />
-                ))}
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* No results */}
-        {totalRelevant === 0 && (
-          <div className="text-center py-12">
-            <Info className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-            <h3 className="text-lg font-semibold mb-2">No strong matches found</h3>
-            <p className="text-sm text-muted-foreground max-w-md mx-auto">
-              Based on your answers, we didn't find programs with a high likelihood of eligibility.
-              You can try adjusting your answers or explore the unlikely programs below for more options.
+      {/* Disclaimer */}
+      <Card className="mt-8 p-4 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20">
+        <div className="flex gap-3">
+          <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+          <div className="text-xs text-foreground/80 space-y-2">
+            <p className="font-semibold text-sm">Important Disclaimer</p>
+            <p>
+              This tool is for <span className="font-semibold">informational purposes only</span>.
+              It is <span className="font-semibold">not legal advice</span> and does not guarantee eligibility.
+              Dollar estimates are approximate ranges and actual benefits may differ.
+            </p>
+            <p>
+              Program rules change frequently. Always confirm on official government websites.
+              Your information was <span className="font-semibold">not stored or transmitted</span>.
             </p>
           </div>
-        )}
-
-        {/* Disclaimer */}
-        <Card className="mt-8 p-4 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20">
-          <div className="flex gap-3">
-            <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-            <div className="text-xs text-foreground/80 space-y-2">
-              <p className="font-semibold text-sm">Important Disclaimer</p>
-              <p>
-                This tool is for <span className="font-semibold">informational purposes only</span>.
-                It is <span className="font-semibold">not legal advice</span> and does not guarantee eligibility
-                for any program.
-              </p>
-              <p>
-                Program rules change frequently. Actual eligibility depends on many factors not captured here,
-                including assets, specific household circumstances, and detailed income calculations. Always
-                confirm details on official government websites before relying on these estimates.
-              </p>
-              <p>
-                Your information was <span className="font-semibold">not stored or transmitted</span>.
-                All screening was performed locally in your browser.
-              </p>
-            </div>
-          </div>
-        </Card>
-
-        {/* Footer */}
-        <footer className="mt-8 pt-4 border-t border-border text-center pb-8">
-          <p className="text-xs text-muted-foreground mb-2">
-            Benefits Screener v1.0 &middot; Data reflects simplified 2025 guidelines
-          </p>
-          <PerplexityAttribution />
-        </footer>
-      </main>
+        </div>
+      </Card>
     </div>
   );
 }
