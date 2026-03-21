@@ -1,10 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Newspaper, ExternalLink, AlertTriangle, TrendingUp, Clock, Sparkles } from "lucide-react";
-import { getRecentNews, type NewsItem } from "@/lib/news";
+import { Newspaper, ExternalLink, AlertTriangle, TrendingUp, Clock, Sparkles, RefreshCw } from "lucide-react";
+import { fetchNews, type NewsItem } from "@/lib/news";
 
 const CATEGORY_COLORS: Record<string, string> = {
   "policy-change": "bg-blue-500/10 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-800/40",
@@ -65,19 +64,38 @@ function NewsCard({ item }: { item: NewsItem }) {
 
 export default function NewsPage() {
   const [tab, setTab] = useState("all");
-  const allNews = getRecentNews(20);
+  const [news, setNews] = useState<NewsItem[]>([]);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchNews().then(({ items, lastUpdated: lu }) => {
+      const sorted = [...items].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      setNews(sorted);
+      setLastUpdated(lu);
+      setLoading(false);
+    });
+  }, []);
 
   const filtered = tab === "all"
-    ? allNews
-    : allNews.filter(n => n.category === tab);
+    ? news
+    : news.filter(n => n.category === tab);
 
   return (
     <div className="p-4 md:p-6 max-w-3xl mx-auto space-y-6">
       <div>
-        <h1 className="text-xl font-bold">Policy News & Updates</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-xl font-bold">Policy News & Updates</h1>
+          {loading && <RefreshCw className="w-4 h-4 text-muted-foreground animate-spin" />}
+        </div>
         <p className="text-sm text-muted-foreground mt-0.5">
           Stay informed about changes to benefit programs that may affect your eligibility.
         </p>
+        {lastUpdated && (
+          <p className="text-[10px] text-muted-foreground/60 mt-1">
+            Last updated: {new Date(lastUpdated).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" })}
+          </p>
+        )}
       </div>
 
       <Tabs value={tab} onValueChange={setTab}>
@@ -107,7 +125,7 @@ export default function NewsPage() {
         <div className="flex gap-3">
           <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
           <p className="text-xs text-foreground/80">
-            News items are curated for informational purposes. Program details change frequently —
+            News is updated daily from official government sources. Program details change frequently —
             always verify current rules and deadlines on official government websites before taking action.
           </p>
         </div>

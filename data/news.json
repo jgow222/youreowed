@@ -1,0 +1,128 @@
+{
+  "lastUpdated": "2026-03-21T19:30:00Z",
+  "items": [
+    {
+      "id": "n-20260318-liheap",
+      "title": "Senators Urge Release of $400M in LIHEAP Energy Assistance Funding",
+      "summary": "A bipartisan group of senators is calling on the Trump administration to immediately release remaining FY26 LIHEAP funding. Congress provided $4.045 billion for the program — a $20 million increase — but roughly $400 million remains undistributed as energy costs surge.",
+      "category": "policy-change",
+      "date": "2026-03-18",
+      "source": "U.S. Senate",
+      "sourceUrl": "https://www.gillibrand.senate.gov/news/press/release/amid-surging-energy-costs-gillibrand-and-colleagues-call-on-trump-administration-to-release-energy-assistance-funding/",
+      "programs": ["liheap"],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260304-section8",
+      "title": "HUD Proposes 2-Year Time Limits and Work Requirements for Section 8",
+      "summary": "HUD has proposed new rules that could add work requirements and two-year time limits to Section 8 housing vouchers. Public comments are open until May 1, 2026. If approved, this would significantly change how voucher holders maintain their housing assistance.",
+      "category": "policy-change",
+      "date": "2026-03-04",
+      "source": "HUD.gov",
+      "sourceUrl": "https://www.hud.gov/helping-americans/housing-choice-vouchers-tenants",
+      "programs": ["section-8"],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260302-snap",
+      "title": "Major SNAP Work Requirement Changes Now Taking Effect Nationwide",
+      "summary": "New SNAP rules from the One Big Beautiful Bill Act are kicking in across the U.S. Work requirements now extend to adults up to age 64, parents of children over 14, and remove exemptions for veterans and homeless individuals. Recipients must work, volunteer, or train 80 hours/month. The CBO projects 2.4 million people could lose access monthly.",
+      "category": "policy-change",
+      "date": "2026-03-02",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/03/02/nx-s1-5729137/across-the-u-s-changes-to-snap-benefits-are-kicking-in",
+      "programs": ["snap"],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260301-snap-benefits",
+      "title": "March 2026 SNAP Benefit Amounts: What's Changed",
+      "summary": "March 2026 SNAP benefits reflect the FY2026 COLA adjustment. Maximum allotments are $298 for individuals and $994 for a family of four. States are also under pressure to reduce error rates to 6% or risk losing federal funding. New household verification guidelines are being enforced.",
+      "category": "update",
+      "date": "2026-03-01",
+      "source": "USDA",
+      "sourceUrl": "https://finance.yahoo.com/news/2-key-changes-affecting-snap-111905409.html",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260128-eitc",
+      "title": "2026 Tax Filing Season Open — Claim Your EITC and Child Tax Credit",
+      "summary": "The IRS has opened the 2026 filing season. The Child Tax Credit is now up to $2,200 per child under 17 (up to $1,700 refundable). EITC/ACTC refunds are expected by March 2. Even if you don't normally file taxes, you should file to claim these refundable credits.",
+      "category": "deadline",
+      "date": "2026-01-28",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
+      "programs": ["eitc", "ctc"]
+    },
+    {
+      "id": "n-20260123-medicaid",
+      "title": "Medicaid: Major Changes Coming — What to Watch in 2026",
+      "summary": "States will begin implementing Medicaid changes estimated to leave 7.5 million more people uninsured by 2034. New work requirements for Medicaid expansion adults start January 2027, but states like Nebraska are implementing early (May 2026). States can no longer create new provider taxes to fund Medicaid.",
+      "category": "policy-change",
+      "date": "2026-01-23",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
+      "programs": ["medicaid-adult", "medicaid-children"]
+    },
+    {
+      "id": "n-20260105-snap-seniors",
+      "title": "SNAP Work Requirements Hit Older Adults Hard — What You Need to Know",
+      "summary": "New SNAP rules raise the ABAWD age limit from 55 to 64, requiring older adults to work 20 hours/week to keep benefits. The medical expense deduction (for those 60+ with $35+/month in medical costs) can increase your benefit — but only 16% of eligible seniors claim it. Veterans and homeless exemptions have been removed.",
+      "category": "update",
+      "date": "2026-01-05",
+      "source": "Think Global Health",
+      "sourceUrl": "https://www.thinkglobalhealth.org/article/snap-benefits-in-2026-what-older-adults-should-expect-from-work-requirements",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260101-ssi-2026",
+      "title": "SSI & SSDI Benefits Increase 2.8% for 2026",
+      "summary": "The 2026 COLA brings SSI to $994/month for individuals and $1,491 for couples. Average SSDI payments rise to $1,630/month. The Trial Work Period threshold is now $1,210/month, and the Student Earned-Income Exclusion is $2,410/month ($9,730/year).",
+      "category": "policy-change",
+      "date": "2026-01-01",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
+      "programs": ["ssi", "ssdi"]
+    },
+    {
+      "id": "n-20260415-tax-deadline",
+      "title": "Tax Filing Deadline: April 15, 2026",
+      "summary": "The deadline to file your 2025 tax return is April 15, 2026. If you're eligible for the EITC (up to ~$7,830 with 3+ children) or Child Tax Credit ($2,200/child), you must file to claim them — even if your income is too low to normally require filing.",
+      "category": "deadline",
+      "date": "2026-03-21",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
+      "programs": ["eitc", "ctc"]
+    },
+    {
+      "id": "n-20260315-liheap-open",
+      "title": "LIHEAP Heating Assistance Still Available — Apply Before Funds Run Out",
+      "summary": "Many states still have LIHEAP funding available for the current heating season. In Illinois, applications are open through August 15, 2026 or until funds are exhausted. Reconnection assistance up to $1,500 is available for disconnected households. Priority goes to elderly, disabled, and families with young children.",
+      "category": "deadline",
+      "date": "2026-03-15",
+      "source": "ACF / HHS",
+      "sourceUrl": "https://www.acf.hhs.gov/ocs/low-income-home-energy-assistance-program-liheap",
+      "programs": ["liheap"]
+    },
+    {
+      "id": "n-20260206-path-act",
+      "title": "EITC & Child Tax Credit Refunds: PATH Act Delays Explained",
+      "summary": "If you claimed the EITC or Additional Child Tax Credit, the PATH Act requires the IRS to hold your refund until after February 14 for fraud prevention. Most refunds were deposited by March 2. If you haven't received yours yet, check 'Where's My Refund' on IRS.gov.",
+      "category": "update",
+      "date": "2026-02-06",
+      "source": "IRS / Jackson Hewitt",
+      "sourceUrl": "https://www.jacksonhewitt.com/tax-help/tax-tips-topics/filing-your-taxes/refund-schedule-and-the-path-act/",
+      "programs": ["eitc", "ctc"]
+    },
+    {
+      "id": "n-20260128-ctc-calculator",
+      "title": "New CTC & EITC Calculator — Find Out Exactly What You're Owed",
+      "summary": "The Bipartisan Policy Center released a free calculator to estimate your Child Tax Credit and EITC for the 2026 filing season. The max CTC is $2,200/child (up to $1,700 refundable). EITC varies by income and number of children. Investment income must be under $11,950 to qualify for EITC.",
+      "category": "new-program",
+      "date": "2026-01-28",
+      "source": "Bipartisan Policy Center",
+      "sourceUrl": "https://bipartisanpolicy.org/article/how-much-is-my-child-tax-credit-or-earned-income-tax-credit-2026-filing-season/",
+      "programs": ["eitc", "ctc"]
+    }
+  ]
+}

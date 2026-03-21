@@ -1,14 +1,22 @@
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight } from "lucide-react";
 import { useAppState } from "@/lib/store";
-import { getRecentNews } from "@/lib/news";
+import { fetchNews, type NewsItem } from "@/lib/news";
 
 export default function DashboardPage() {
   const { state } = useAppState();
-  const recentNews = getRecentNews(3);
+  const [recentNews, setRecentNews] = useState<NewsItem[]>([]);
+
+  useEffect(() => {
+    fetchNews().then(({ items }) => {
+      const sorted = [...items].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      setRecentNews(sorted.slice(0, 3));
+    });
+  }, []);
   const memberCount = state.user?.householdMembers.length || 1;
 
   return (
