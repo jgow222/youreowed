@@ -36,8 +36,8 @@ export const PLANS: Record<string, PlanConfig> = {
     monthlyPrice: 7,
     annualPrice: 70,
     setupFee: 29,
-    stripeLinkMonthly: "https://buy.stripe.com/test_basic_monthly",
-    stripeLinkAnnual: "https://buy.stripe.com/test_basic_annual",
+    stripeLinkMonthly: "https://buy.stripe.com/5kQ28t3GCfNW0zgfrj7Zu01",
+    stripeLinkAnnual: "https://buy.stripe.com/5kQ28t3GCfNW0zgfrj7Zu01",
   },
   pro: {
     id: "pro",
@@ -45,8 +45,8 @@ export const PLANS: Record<string, PlanConfig> = {
     monthlyPrice: 19,
     annualPrice: 190,
     setupFee: 29,
-    stripeLinkMonthly: "https://buy.stripe.com/test_pro_monthly",
-    stripeLinkAnnual: "https://buy.stripe.com/test_pro_annual",
+    stripeLinkMonthly: "https://buy.stripe.com/3cI4gBelg45e0zg4MF7Zu02",
+    stripeLinkAnnual: "https://buy.stripe.com/3cI4gBelg45e0zg4MF7Zu02",
   },
   family: {
     id: "family",
@@ -54,8 +54,8 @@ export const PLANS: Record<string, PlanConfig> = {
     monthlyPrice: 29,
     annualPrice: 290,
     setupFee: 29,
-    stripeLinkMonthly: "https://buy.stripe.com/test_family_monthly",
-    stripeLinkAnnual: "https://buy.stripe.com/test_family_annual",
+    stripeLinkMonthly: "https://buy.stripe.com/5kQfZjcd8gS0dm20wp7Zu03",
+    stripeLinkAnnual: "https://buy.stripe.com/5kQfZjcd8gS0dm20wp7Zu03",
   },
 };
 
@@ -69,35 +69,35 @@ export const GUIDES: GuideConfig[] = [
     programId: "snap",
     name: "SNAP Application Guide",
     price: GUIDE_PRICE,
-    stripeLink: "https://buy.stripe.com/test_guide_snap",
+    stripeLink: "https://buy.stripe.com/8x2fZj90WfNW6XEdjb7Zu00",
   },
   {
     id: "guide-medicaid",
     programId: "medicaid-adult",
     name: "Medicaid Application Guide",
     price: GUIDE_PRICE,
-    stripeLink: "https://buy.stripe.com/test_guide_medicaid",
+    stripeLink: "https://buy.stripe.com/8x2fZj90WfNW6XEdjb7Zu00",
   },
   {
     id: "guide-ssdi",
     programId: "ssdi",
     name: "SSDI Application Guide",
     price: GUIDE_PRICE,
-    stripeLink: "https://buy.stripe.com/test_guide_ssdi",
+    stripeLink: "https://buy.stripe.com/8x2fZj90WfNW6XEdjb7Zu00",
   },
   {
     id: "guide-section8",
     programId: "section8",
     name: "Section 8 Application Guide",
     price: GUIDE_PRICE,
-    stripeLink: "https://buy.stripe.com/test_guide_section8",
+    stripeLink: "https://buy.stripe.com/8x2fZj90WfNW6XEdjb7Zu00",
   },
   {
     id: "guide-eitc",
     programId: "eitc",
     name: "EITC Tax Credit Guide",
     price: GUIDE_PRICE,
-    stripeLink: "https://buy.stripe.com/test_guide_eitc",
+    stripeLink: "https://buy.stripe.com/8x2fZj90WfNW6XEdjb7Zu00",
   },
 ];
 
