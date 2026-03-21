@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Newspaper, ExternalLink, AlertTriangle, TrendingUp, Clock, Sparkles, RefreshCw } from "lucide-react";
 import { fetchNews, type NewsItem } from "@/lib/news";
+import EmailCapture from "@/components/EmailCapture";
 
 const CATEGORY_COLORS: Record<string, string> = {
   "policy-change": "bg-blue-500/10 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-800/40",
@@ -120,6 +121,8 @@ export default function NewsPage() {
           </div>
         </TabsContent>
       </Tabs>
+
+      <EmailCapture source="news" variant="banner" />
 
       <Card className="p-4 border border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20">
         <div className="flex gap-3">

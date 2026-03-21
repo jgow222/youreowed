@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { Link } from "wouter";
+import EmailCapture from "@/components/EmailCapture";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -333,6 +334,9 @@ export default function BlogPage() {
 
       {/* Article grid */}
       <ArticleGrid />
+
+      {/* Email Capture */}
+      <EmailCapture source="blog" />
 
       {/* Bottom CTA */}
       <Card className="p-6 text-center border-2 border-primary bg-primary/[0.03]">

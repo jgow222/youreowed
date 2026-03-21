@@ -99,3 +99,19 @@ create policy "Users can view own leads"
 create policy "Users can view own purchases"
   on public.guide_purchases for all
   using (auth.uid() = user_id);
+
+-- Email list subscribers
+create table if not exists public.email_subscribers (
+  id bigint primary key generated always as identity,
+  email text unique not null,
+  source text default 'dashboard', -- where they signed up: dashboard, blog, footer, popup
+  created_at timestamp with time zone default now()
+);
+
+-- Allow the service key to insert (webhook/API), but no public RLS needed
+alter table public.email_subscribers enable row level security;
+
+-- Allow inserts from authenticated and anonymous users (email capture is public)
+create policy "Anyone can subscribe"
+  on public.email_subscribers for insert
+  with check (true);

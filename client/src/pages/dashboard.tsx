@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { fetchNews, type NewsItem } from "@/lib/news";
+import EmailCapture from "@/components/EmailCapture";
 
 export default function DashboardPage() {
   const { state } = useAppState();
@@ -116,6 +117,11 @@ export default function DashboardPage() {
           </Card>
         </Link>
       </div>
+
+      {/* Email Capture — for non-subscribers */}
+      {(!state.isLoggedIn || state.user?.subscriptionTier === "free") && (
+        <EmailCapture source="dashboard" />
+      )}
 
       {/* News — Compact */}
       <div>
