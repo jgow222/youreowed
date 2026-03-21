@@ -7,7 +7,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AppContext, appReducer, type AppState } from "@/lib/store";
 import AppShell from "@/components/AppShell";
-import AuthPage from "@/pages/auth";
 import NotFound from "@/pages/not-found";
 import DashboardPage from "@/pages/dashboard";
 import ScreenerPage from "@/pages/screener";
@@ -19,8 +18,9 @@ import SettingsPage from "@/pages/settings";
 import ApplyGuidePage from "@/pages/apply-guide";
 import BlogPage from "@/pages/blog";
 import EnterprisePage from "@/pages/enterprise";
+import AuthGate from "@/components/AuthGate";
 
-// Start logged out — user must create an account
+// Start logged out — user sees everything but must sign up to use features
 const initialState: AppState = {
   user: null,
   isLoggedIn: false,
@@ -30,16 +30,20 @@ const initialState: AppState = {
 function AppRouter() {
   return (
     <Switch>
+      {/* Public pages — no account needed */}
       <Route path="/" component={DashboardPage} />
-      <Route path="/screener" component={ScreenerPage} />
-      <Route path="/household" component={HouseholdPage} />
       <Route path="/pricing" component={PricingPage} />
-      <Route path="/assistant" component={AssistantPage} />
       <Route path="/news" component={NewsPage} />
-      <Route path="/settings" component={SettingsPage} />
-      <Route path="/apply-guide" component={ApplyGuidePage} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/enterprise" component={EnterprisePage} />
+
+      {/* Protected pages — require sign in */}
+      <Route path="/screener">{() => <AuthGate><ScreenerPage /></AuthGate>}</Route>
+      <Route path="/household">{() => <AuthGate><HouseholdPage /></AuthGate>}</Route>
+      <Route path="/assistant">{() => <AuthGate><AssistantPage /></AuthGate>}</Route>
+      <Route path="/settings">{() => <AuthGate><SettingsPage /></AuthGate>}</Route>
+      <Route path="/apply-guide">{() => <AuthGate><ApplyGuidePage /></AuthGate>}</Route>
+
       <Route component={NotFound} />
     </Switch>
   );
@@ -48,7 +52,6 @@ function AppRouter() {
 function App() {
   const [state, dispatch] = useReducer(appReducer, initialState);
 
-  // Apply theme on mount and changes
   useEffect(() => {
     if (state.theme === "system") {
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -64,13 +67,9 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router hook={useHashLocation}>
-            {state.isLoggedIn ? (
-              <AppShell>
-                <AppRouter />
-              </AppShell>
-            ) : (
-              <AuthPage />
-            )}
+            <AppShell>
+              <AppRouter />
+            </AppShell>
           </Router>
         </TooltipProvider>
       </QueryClientProvider>

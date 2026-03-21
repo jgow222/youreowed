@@ -175,6 +175,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             </Button>
 
             {/* Account menu */}
+            {state.isLoggedIn ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="gap-2 h-8 pl-1 pr-2" data-testid="button-account-menu">
@@ -219,6 +220,13 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+            ) : (
+              <Link href="/screener">
+                <Button size="sm" className="h-8 text-xs gap-1.5 font-semibold" data-testid="button-signin">
+                  <User className="w-3.5 h-3.5" /> Sign in
+                </Button>
+              </Link>
+            )}
           </div>
         </header>
 
