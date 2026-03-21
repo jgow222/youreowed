@@ -5,8 +5,9 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { AppContext, appReducer, defaultUser, type AppState } from "@/lib/store";
+import { AppContext, appReducer, type AppState } from "@/lib/store";
 import AppShell from "@/components/AppShell";
+import AuthPage from "@/pages/auth";
 import NotFound from "@/pages/not-found";
 import DashboardPage from "@/pages/dashboard";
 import ScreenerPage from "@/pages/screener";
@@ -19,9 +20,10 @@ import ApplyGuidePage from "@/pages/apply-guide";
 import BlogPage from "@/pages/blog";
 import EnterprisePage from "@/pages/enterprise";
 
+// Start logged out — user must create an account
 const initialState: AppState = {
-  user: defaultUser,
-  isLoggedIn: true,
+  user: null,
+  isLoggedIn: false,
   theme: "dark",
 };
 
@@ -62,9 +64,13 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router hook={useHashLocation}>
-            <AppShell>
-              <AppRouter />
-            </AppShell>
+            {state.isLoggedIn ? (
+              <AppShell>
+                <AppRouter />
+              </AppShell>
+            ) : (
+              <AuthPage />
+            )}
           </Router>
         </TooltipProvider>
       </QueryClientProvider>
