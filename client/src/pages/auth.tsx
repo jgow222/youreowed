@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowRight, Mail, Lock, User, Eye, EyeOff } from "lucide-react";
 import { useAppState, type UserProfile } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
+import { isSupabaseConfigured, signUp as supaSignUp, signIn as supaSignIn } from "@/lib/supabase";
 
 export default function AuthPage() {
   const { dispatch } = useAppState();
@@ -32,14 +33,35 @@ export default function AuthPage() {
     if (!validate()) return;
     setLoading(true);
 
-    // In production, this would call your auth API (Supabase, Firebase, etc.)
-    // For now, create a local user session
-    await new Promise(r => setTimeout(r, 800));
+    const trimmedEmail = email.trim();
+    const trimmedName = mode === "signup" ? name.trim() : trimmedEmail.split("@")[0];
+
+    // Try Supabase auth if configured
+    if (isSupabaseConfigured()) {
+      if (mode === "signup") {
+        const { user: authUser, error } = await supaSignUp(trimmedEmail, password, trimmedName);
+        if (error) {
+          setLoading(false);
+          setErrors({ email: error });
+          return;
+        }
+      } else {
+        const { user: authUser, error } = await supaSignIn(trimmedEmail, password);
+        if (error) {
+          setLoading(false);
+          setErrors({ email: error });
+          return;
+        }
+      }
+    } else {
+      // Fallback: local session (no Supabase yet)
+      await new Promise(r => setTimeout(r, 600));
+    }
 
     const user: UserProfile = {
       id: `user-${Date.now()}`,
-      email: email.trim(),
-      name: mode === "signup" ? name.trim() : email.split("@")[0],
+      email: trimmedEmail,
+      name: trimmedName,
       state: "",
       zipCode: "",
       citizenshipStatus: "",
