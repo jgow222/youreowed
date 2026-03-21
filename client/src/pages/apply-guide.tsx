@@ -28,6 +28,7 @@ import {
   Clock,
   Scale,
   ShoppingCart,
+  Lock,
 } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
@@ -1064,7 +1065,12 @@ function GuideCard({
   onPurchased?: (programId: string) => void;
 }) {
   const { toast } = useToast();
+  const { state } = useAppState();
   const [purchasing, setPurchasing] = useState<"guide" | "ai" | null>(null);
+  const tier = state.user?.subscriptionTier || "free";
+  const isPro = tier === "premium" || tier === "pro";
+  const isBasic = tier === "basic";
+  const isPaid = isPro || isBasic;
 
   const handlePurchase = async (type: "guide" | "ai") => {
     setPurchasing(type);
@@ -1109,39 +1115,56 @@ function GuideCard({
           : "Complete application guide with document checklist and AI assistance."}
       </p>
       <div className="flex items-center gap-2">
-        <Button
-          variant="outline"
-          size="sm"
-          className="flex-1 gap-1.5 text-xs h-9"
-          onClick={() => handlePurchase("guide")}
-          disabled={purchasing !== null}
-          data-testid={`button-buy-guide-${guideConfig.programId}`}
-        >
-          {purchasing === "guide" ? (
-            <span className="animate-pulse">Processing...</span>
-          ) : (
-            <>
-              <ShoppingCart className="w-3 h-3" />
-              Get Guide — ${GUIDE_PRICE}
-            </>
-          )}
-        </Button>
-        <Button
-          size="sm"
-          className="flex-1 gap-1.5 text-xs h-9"
-          onClick={() => handlePurchase("ai")}
-          disabled={purchasing !== null}
-          data-testid={`button-buy-ai-${guideConfig.programId}`}
-        >
-          {purchasing === "ai" ? (
-            <span className="animate-pulse">Processing...</span>
-          ) : (
-            <>
-              <Sparkles className="w-3 h-3" />
-              AI-Assisted — ${AI_GUIDE_PRICE}
-            </>
-          )}
-        </Button>
+        {/* Pro/Family: AI guidance is free */}
+        {isPro ? (
+          <Button
+            size="sm"
+            className="flex-1 gap-1.5 text-xs h-9"
+            onClick={() => handlePurchase("ai")}
+            disabled={purchasing !== null}
+            data-testid={`button-start-${guideConfig.programId}`}
+          >
+            {purchasing === "ai" ? (
+              <span className="animate-pulse">Loading...</span>
+            ) : (
+              <>
+                <Sparkles className="w-3 h-3" />
+                Start AI-Guided Walkthrough
+              </>
+            )}
+          </Button>
+        ) : isBasic ? (
+          /* Basic: $5 per guide */
+          <Button
+            size="sm"
+            className="flex-1 gap-1.5 text-xs h-9"
+            onClick={() => handlePurchase("guide")}
+            disabled={purchasing !== null}
+            data-testid={`button-buy-guide-${guideConfig.programId}`}
+          >
+            {purchasing === "guide" ? (
+              <span className="animate-pulse">Processing...</span>
+            ) : (
+              <>
+                <ShoppingCart className="w-3 h-3" />
+                Get AI Guide — $5
+              </>
+            )}
+          </Button>
+        ) : (
+          /* Free: show upgrade prompt */
+          <Link href="/pricing" className="flex-1">
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-full gap-1.5 text-xs h-9"
+              data-testid={`button-upgrade-${guideConfig.programId}`}
+            >
+              <Lock className="w-3 h-3" />
+              Subscribe to access
+            </Button>
+          </Link>
+        )}
       </div>
     </Card>
   );

@@ -253,7 +253,7 @@ function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult
               >
                 <Button variant="outline" size="sm" className="h-7 text-xs gap-1.5 px-2.5">
                   <ShoppingCart className="w-3 h-3" />
-                  Get Application Guide — $29
+                  Get Application Guide — $5
                 </Button>
               </Link>
             )}

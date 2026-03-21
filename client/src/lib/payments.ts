@@ -60,8 +60,8 @@ export const PLANS: Record<string, PlanConfig> = {
 };
 
 // ─── Application Guides ─────────────────────────────────────────────────────
-export const GUIDE_PRICE = 29;
-export const AI_GUIDE_PRICE = 49;
+export const GUIDE_PRICE = 5;  // $5 for basic subscribers
+export const AI_GUIDE_PRICE = 0; // Free for Pro/Family subscribers
 
 export const GUIDES: GuideConfig[] = [
   {
