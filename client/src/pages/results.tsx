@@ -36,6 +36,7 @@ import { type ProgramResult, type EligibilityStatus } from "@/lib/eligibility";
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
 import { PLANS, openCheckout, isStripeConfigured, simulatePurchase } from "@/lib/payments";
+import { MonetizationSection, FreeTrialCard } from "@/components/MonetizationCards";
 
 interface ResultsPageProps {
   results: ProgramResult[];
@@ -464,7 +465,8 @@ function ShareButton({ isPaid, totalMonthlyMax }: { isPaid: boolean; totalMonthl
 
 export default function ResultsPage({ results, onStartOver, userState }: ResultsPageProps) {
   const [showUnlikely, setShowUnlikely] = useState(false);
-  const { state } = useAppState();
+  const { state, dispatch } = useAppState();
+  const { toast } = useToast();
   const isPaid = state.user?.subscriptionTier === "basic" || state.user?.subscriptionTier === "premium";
 
   const likelyResults = results.filter(r => r.status === "likely");
@@ -668,8 +670,18 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
             </div>
           </section>
 
-          {/* Paywall CTA */}
-          <div className="my-6">
+          {/* Free Trial + Paywall CTA */}
+          <div className="my-6 space-y-3">
+            <FreeTrialCard onStartTrial={() => {
+              if (isStripeConfigured()) {
+                openCheckout(PLANS.basic.stripeLinkMonthly, { email: state.user?.email });
+              } else {
+                simulatePurchase("basic").then(() => {
+                  dispatch({ type: "UPDATE_PROFILE", payload: { subscriptionTier: "basic" } });
+                  toast({ title: "Trial started", description: "You have 7 days free. All programs are unlocked." });
+                });
+              }
+            }} />
             <PaywallCTA
               programCount={totalRelevant}
               monthlyMin={totalMonthlyMin}
@@ -691,8 +703,13 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
         </div>
       )}
 
+      {/* Monetization — shows attorney leads, tax affiliates, insurance referrals, discounts */}
+      <div className="mt-8">
+        <MonetizationSection results={results} />
+      </div>
+
       {/* Disclaimer */}
-      <Card className="mt-8 p-4 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20">
+      <Card className="mt-6 p-4 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20">
         <div className="flex gap-3">
           <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
           <div className="text-xs text-foreground/80 space-y-2">
