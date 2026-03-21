@@ -42,7 +42,7 @@ import {
   GUIDES,
   openCheckout,
   isStripeConfigured,
-  simulatePurchase,
+  redirectToPricing,
 } from "@/lib/payments";
 import { programs } from "@/lib/programs";
 
@@ -1078,18 +1078,8 @@ function GuideCard({
       openCheckout(guideConfig.stripeLink);
       setPurchasing(null);
     } else {
-      const result = await simulatePurchase(guideConfig.id);
       setPurchasing(null);
-      if (result.success) {
-        toast({
-          title: "Purchase successful!",
-          description: `Your ${guideConfig.name} is ready.`,
-        });
-        // Switch to guided mode via callback
-        if (onPurchased) {
-          onPurchased(guideConfig.programId);
-        }
-      }
+      toast({ title: "Coming soon", description: "Payment processing is being set up. Check back shortly." });
     }
   };
 

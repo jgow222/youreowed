@@ -35,7 +35,7 @@ import {
 import { type ProgramResult, type EligibilityStatus } from "@/lib/eligibility";
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
-import { PLANS, openCheckout, isStripeConfigured, simulatePurchase } from "@/lib/payments";
+import { PLANS, openCheckout, isStripeConfigured, redirectToPricing } from "@/lib/payments";
 import { MonetizationSection, FreeTrialCard } from "@/components/MonetizationCards";
 
 interface ResultsPageProps {
@@ -382,10 +382,7 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
             if (isStripeConfigured()) {
               openCheckout(PLANS.basic.stripeLinkMonthly, { email: state.user?.email });
             } else {
-              simulatePurchase("basic").then(() => {
-                dispatch({ type: "UPDATE_PROFILE", payload: { subscriptionTier: "basic" } });
-                toast({ title: "You're in.", description: "All 335 programs are now unlocked. Go get what's yours." });
-              });
+              redirectToPricing();
             }
           }}
         >
@@ -676,10 +673,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
               if (isStripeConfigured()) {
                 openCheckout(PLANS.basic.stripeLinkMonthly, { email: state.user?.email });
               } else {
-                simulatePurchase("basic").then(() => {
-                  dispatch({ type: "UPDATE_PROFILE", payload: { subscriptionTier: "basic" } });
-                  toast({ title: "Trial started", description: "You have 7 days free. All programs are unlocked." });
-                });
+                redirectToPricing();
               }
             }} />
             <PaywallCTA

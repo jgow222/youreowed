@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
-import { PLANS, openCheckout, isStripeConfigured, simulatePurchase } from "@/lib/payments";
+import { PLANS, openCheckout, isStripeConfigured, redirectToPricing } from "@/lib/payments";
 import {
   Select,
   SelectContent,
@@ -233,10 +233,7 @@ function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
           if (isStripeConfigured()) {
             openCheckout(link, { email: state.user?.email });
           } else {
-            simulatePurchase(tier.id).then(() => {
-              dispatch({ type: "UPDATE_PROFILE", payload: { subscriptionTier: tier.id === "basic" ? "basic" : "premium" } });
-              toast({ title: "Subscription activated", description: `You're now on the ${tier.name} plan. All programs are unlocked.` });
-            });
+            toast({ title: "Coming soon", description: "Payment processing is being set up. Check back shortly." });
           }
         }}
       >
@@ -494,10 +491,7 @@ function PriceCalculator() {
             if (isStripeConfigured()) {
               openCheckout(link, { email: state.user?.email });
             } else {
-              simulatePurchase(selectedTier).then(() => {
-                dispatch({ type: "UPDATE_PROFILE", payload: { subscriptionTier: selectedTier === "basic" ? "basic" : "premium" } });
-                toast({ title: "Subscription activated", description: `You're now on the ${plan.name} plan. Enjoy full access.` });
-              });
+              toast({ title: "Coming soon", description: "Payment processing is being set up. Check back shortly." });
             }
           }}
         >

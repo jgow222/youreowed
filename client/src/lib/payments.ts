@@ -124,15 +124,12 @@ export function openCheckout(stripeLink: string, options?: {
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
-// ─── Demo Mode ──────────────────────────────────────────────────────────────
-// When Stripe isn't configured yet, simulate a purchase flow
+// Check if real Stripe payment links are configured
 export function isStripeConfigured(): boolean {
-  // Check if any link has been replaced from the test placeholder
   return !PLANS.basic.stripeLinkMonthly.includes("test_");
 }
 
-export function simulatePurchase(planId: string): Promise<{ success: boolean }> {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve({ success: true }), 1500);
-  });
+// Redirect to pricing page when Stripe isn't configured yet
+export function redirectToPricing() {
+  window.location.hash = "/pricing";
 }
