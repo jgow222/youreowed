@@ -326,7 +326,7 @@ export default function DocumentsPage() {
   const { state: appState } = useAppState();
 
   // For demo/testing: treat premium users as Pro
-  const isPro = appState.user?.subscriptionTier === "premium";
+  const isPro = appState.user?.subscriptionTier === "premium" || appState.user?.subscriptionTier === "basic";
 
   // Determine which programs the user has tracked or is eligible for
   const trackedProgramIds = useMemo(

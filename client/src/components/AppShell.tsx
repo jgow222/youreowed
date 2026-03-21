@@ -205,7 +205,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                   <p className="text-xs font-medium">{state.user?.name}</p>
                   <p className="text-[10px] text-muted-foreground">{state.user?.email}</p>
                   <Badge variant="secondary" className="mt-1 h-4 text-[10px]">
-                    {state.user?.subscriptionTier === "free" ? "Free Plan" : "Premium"}
+                    {state.user?.subscriptionTier === "free" ? "Free Plan" : state.user?.subscriptionTier === "basic" ? "Basic Plan" : "Pro Plan"}
                   </Badge>
                 </div>
                 <DropdownMenuSeparator />

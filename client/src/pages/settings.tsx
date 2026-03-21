@@ -155,7 +155,7 @@ export default function SettingsPage() {
             <div className="flex items-center gap-2">
               <p className="text-sm font-medium">Current Plan</p>
               <Badge variant="secondary" className="h-4 text-[10px]">
-                {user?.subscriptionTier === "free" ? "Free" : "Premium"}
+                {user?.subscriptionTier === "free" ? "Free" : user?.subscriptionTier === "basic" ? "Basic" : "Pro"}
               </Badge>
             </div>
             <p className="text-xs text-muted-foreground mt-0.5">

@@ -566,7 +566,7 @@ export default function PricingPage() {
   const { toast } = useToast();
   const [isAnnual, setIsAnnual] = useState(false);
   const referralCode = state.user?.referralCode || "BEN-XXXX";
-  const referralLink = `benefitshub.com/ref/${referralCode}`;
+  const referralLink = `youreowed.org?ref=${referralCode}`;
 
   const copyReferralCode = () => {
     navigator.clipboard?.writeText(referralLink).catch(() => {});
@@ -629,7 +629,7 @@ export default function PricingPage() {
       </div>
 
       {/* Tier cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
         {TIERS.map((tier) => (
           <TierCard key={tier.id} tier={tier} isAnnual={isAnnual} />
         ))}
@@ -748,7 +748,7 @@ export default function PricingPage() {
               variant="outline"
               className="gap-2"
               onClick={() =>
-                window.open("mailto:sales@benefitshub.com", "_blank")
+                window.open("mailto:sales@youreowed.org", "_blank")
               }
               data-testid="button-contact-sales"
             >
@@ -775,10 +775,10 @@ export default function PricingPage() {
         <p className="text-xs text-muted-foreground">
           Questions? Reach us at{" "}
           <a
-            href="mailto:support@benefitshub.com"
+            href="mailto:support@youreowed.org"
             className="text-primary hover:underline"
           >
-            support@benefitshub.com
+            support@youreowed.org
           </a>
         </p>
       </div>
