@@ -35,6 +35,7 @@ import {
 import { type ProgramResult, type EligibilityStatus } from "@/lib/eligibility";
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
+import { PLANS, openCheckout, isStripeConfigured, simulatePurchase } from "@/lib/payments";
 
 interface ResultsPageProps {
   results: ProgramResult[];
@@ -333,6 +334,8 @@ function CategoryBreakdown({ results }: { results: ProgramResult[] }) {
 // ─── Enhanced paywall CTA with ROI ───────────────────────────────────────────
 
 function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: number; monthlyMin: number; monthlyMax: number }) {
+  const { state, dispatch } = useAppState();
+  const { toast } = useToast();
   const subscriptionCost = 7; // $7/mo
   const roiRatio = monthlyMax > 0 ? Math.round(monthlyMax / subscriptionCost) : 0;
 
@@ -371,16 +374,32 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
       )}
 
       <div className="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-sm mx-auto">
+        <Button
+          className="gap-1.5 w-full sm:w-auto"
+          data-testid="button-paywall-subscribe"
+          onClick={() => {
+            if (isStripeConfigured()) {
+              openCheckout(PLANS.basic.stripeLinkMonthly, { email: state.user?.email });
+            } else {
+              simulatePurchase("basic").then(() => {
+                dispatch({ type: "UPDATE_PROFILE", payload: { subscriptionTier: "basic" } });
+                toast({ title: "You're in.", description: "All 335 programs are now unlocked. Go get what's yours." });
+              });
+            }
+          }}
+        >
+          <Sparkles className="w-4 h-4" />
+          Unlock now — $7/mo
+          <ArrowRight className="w-4 h-4" />
+        </Button>
         <Link href="/pricing">
-          <Button className="gap-1.5 w-full sm:w-auto" data-testid="button-paywall-subscribe">
-            <Sparkles className="w-4 h-4" />
-            Subscribe — $7/mo
-            <ArrowRight className="w-4 h-4" />
+          <Button variant="ghost" className="text-xs gap-1" data-testid="button-paywall-compare">
+            Compare plans
           </Button>
         </Link>
       </div>
       <p className="text-[10px] text-muted-foreground mt-3">
-        $29 one-time setup fee. Cancel anytime. 7-day money-back guarantee.
+        $29 one-time setup. Cancel anytime. 7-day money-back guarantee.
       </p>
     </Card>
   );

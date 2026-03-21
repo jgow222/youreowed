@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
+import { PLANS, openCheckout, isStripeConfigured, simulatePurchase } from "@/lib/payments";
 import {
   Select,
   SelectContent,
@@ -149,6 +150,8 @@ const TIERS: Tier[] = [
 ];
 
 function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
+  const { state, dispatch } = useAppState();
+  const { toast } = useToast();
   const price = isAnnual ? tier.annualPrice : tier.monthlyPrice;
   const isFree = tier.id === "free";
 
@@ -221,6 +224,20 @@ function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
         className={`w-full ${tier.highlighted ? "bg-primary hover:bg-primary/90" : ""}`}
         disabled={tier.disabled}
         data-testid={`button-select-${tier.id}`}
+        onClick={() => {
+          if (tier.disabled) return;
+          const plan = PLANS[tier.id];
+          if (!plan) return;
+          const link = isAnnual ? plan.stripeLinkAnnual : plan.stripeLinkMonthly;
+          if (isStripeConfigured()) {
+            openCheckout(link, { email: state.user?.email });
+          } else {
+            simulatePurchase(tier.id).then(() => {
+              dispatch({ type: "UPDATE_PROFILE", payload: { subscriptionTier: tier.id === "basic" ? "basic" : "premium" } });
+              toast({ title: "Subscription activated", description: `You're now on the ${tier.name} plan. All programs are unlocked.` });
+            });
+          }
+        }}
       >
         {tier.cta}
       </Button>
@@ -229,6 +246,8 @@ function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
 }
 
 function PriceCalculator() {
+  const { state, dispatch } = useAppState();
+  const { toast } = useToast();
   const [selectedTier, setSelectedTier] = useState<"basic" | "pro" | "family">(
     "pro"
   );
@@ -463,7 +482,24 @@ function PriceCalculator() {
           </div>
         )}
 
-        <Button className="w-full" size="lg" data-testid="button-subscribe">
+        <Button
+          className="w-full"
+          size="lg"
+          data-testid="button-subscribe"
+          onClick={() => {
+            const plan = PLANS[selectedTier];
+            if (!plan) return;
+            const link = isAnnual ? plan.stripeLinkAnnual : plan.stripeLinkMonthly;
+            if (isStripeConfigured()) {
+              openCheckout(link, { email: state.user?.email });
+            } else {
+              simulatePurchase(selectedTier).then(() => {
+                dispatch({ type: "UPDATE_PROFILE", payload: { subscriptionTier: selectedTier === "basic" ? "basic" : "premium" } });
+                toast({ title: "Subscription activated", description: `You're now on the ${plan.name} plan. Enjoy full access.` });
+              });
+            }
+          }}
+        >
           Subscribe — ${firstPayment.toFixed(2)} today
         </Button>
         <p className="text-[10px] text-muted-foreground text-center">
