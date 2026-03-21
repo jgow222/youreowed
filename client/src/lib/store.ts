@@ -29,10 +29,18 @@ export interface UserProfile {
   theme: "light" | "dark" | "system";
 }
 
+// Screener progress — saved form data for resume functionality
+export interface SavedScreenerAnswers {
+  step: number;
+  form: Record<string, string | boolean>;
+  savedAt: number; // timestamp
+}
+
 export interface AppState {
   user: UserProfile | null;
   isLoggedIn: boolean;
   theme: "light" | "dark" | "system";
+  savedScreenerAnswers: SavedScreenerAnswers | null;
 }
 
 export const defaultUser: UserProfile = {
@@ -73,7 +81,9 @@ export type AppAction =
   | { type: "SET_THEME"; payload: "light" | "dark" | "system" }
   | { type: "ADD_MEMBER"; payload: HouseholdMember }
   | { type: "REMOVE_MEMBER"; payload: string }
-  | { type: "UPDATE_MEMBER"; payload: { id: string; data: Partial<HouseholdMember> } };
+  | { type: "UPDATE_MEMBER"; payload: { id: string; data: Partial<HouseholdMember> } }
+  | { type: "SAVE_SCREENER_PROGRESS"; payload: SavedScreenerAnswers }
+  | { type: "CLEAR_SCREENER_PROGRESS" };
 
 export function appReducer(state: AppState, action: AppAction): AppState {
   switch (action.type) {
@@ -115,6 +125,10 @@ export function appReducer(state: AppState, action: AppAction): AppState {
           ),
         },
       };
+    case "SAVE_SCREENER_PROGRESS":
+      return { ...state, savedScreenerAnswers: action.payload };
+    case "CLEAR_SCREENER_PROGRESS":
+      return { ...state, savedScreenerAnswers: null };
     default:
       return state;
   }

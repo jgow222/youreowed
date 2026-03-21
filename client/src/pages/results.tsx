@@ -31,6 +31,10 @@ import {
   Copy,
   ShoppingCart,
   TrendingUp,
+  Twitter,
+  Facebook,
+  MessageSquare,
+  Check,
 } from "lucide-react";
 import { type ProgramResult, type EligibilityStatus } from "@/lib/eligibility";
 import { useAppState } from "@/lib/store";
@@ -403,18 +407,89 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
   );
 }
 
-// ─── Share button ────────────────────────────────────────────────────────────
+// ─── Social share helpers ────────────────────────────────────────────────────
 
-function ShareButton({ isPaid, totalMonthlyMax }: { isPaid: boolean; totalMonthlyMax: number }) {
+function openShareWindow(url: string) {
+  window.open(url, "_blank", "width=600,height=500,noopener,noreferrer");
+}
+
+// ─── Visual share card that looks great on social media ──────────────────────
+
+function ShareCard({ totalMonthlyMax, programCount }: { totalMonthlyMax: number; programCount: number }) {
+  return (
+    <div
+      className="rounded-xl border border-[#00E676]/30 bg-gradient-to-br from-[#0a1a0f] to-[#0d1f13] p-5 relative overflow-hidden"
+      data-testid="share-card-preview"
+    >
+      {/* Decorative glow */}
+      <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-[#00E676]/10 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-12 -left-12 w-32 h-32 rounded-full bg-[#00E676]/5 blur-2xl pointer-events-none" />
+
+      {/* Logo row */}
+      <div className="flex items-center gap-2 mb-4">
+        <div className="w-7 h-7 rounded-lg bg-[#00E676] flex items-center justify-center flex-shrink-0">
+          <span className="text-[10px] font-black text-black">YO</span>
+        </div>
+        <div>
+          <span className="text-xs font-black tracking-tight leading-tight text-white block">YoureOwed</span>
+          <span className="text-[9px] text-[#00E676]/70 leading-tight block">youreowed.org</span>
+        </div>
+      </div>
+
+      {/* Value */}
+      <div className="mb-3">
+        <p className="text-xs text-[#00E676]/70 mb-0.5 font-medium tracking-wide uppercase">I found</p>
+        <p className="text-4xl font-extrabold text-[#00E676] tabular-nums tracking-tight leading-none">
+          ${totalMonthlyMax.toLocaleString()}
+          <span className="text-lg font-semibold text-[#00E676]/60">/mo</span>
+        </p>
+        <p className="text-xs text-white/50 mt-1">
+          in benefits I wasn&apos;t claiming &mdash; across{" "}
+          <span className="text-white/80 font-semibold">{programCount} programs</span>
+        </p>
+      </div>
+
+      {/* Divider */}
+      <div className="h-px bg-[#00E676]/15 my-3" />
+
+      {/* CTA */}
+      <div className="flex items-center justify-between">
+        <p className="text-xs text-white/60">
+          Check what <span className="text-white font-semibold">you&apos;re owed</span>
+        </p>
+        <div className="flex items-center gap-1 text-[#00E676] text-xs font-bold">
+          youreowed.org
+          <ArrowRight className="w-3 h-3" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Share button (enhanced with share card modal) ────────────────────────────
+
+function ShareButton({ isPaid, totalMonthlyMax, totalRelevant }: { isPaid: boolean; totalMonthlyMax: number; totalRelevant: number }) {
   const { toast } = useToast();
-  const shareUrl = typeof window !== "undefined" ? window.location.origin : "https://benefitshub.com";
+  const [showCard, setShowCard] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const shareUrl = "https://youreowed.org";
 
-  const shareText = isPaid
-    ? `I just found out I may qualify for up to $${totalMonthlyMax.toLocaleString()}/month in government benefits through YoureOwed! Check what you're missing.`
-    : `I just found out I may qualify for $${totalMonthlyMax.toLocaleString()}/month in government benefits! Check what you're missing \u2192 ${shareUrl}`;
+  const formattedAmount = `$${totalMonthlyMax.toLocaleString()}`;
+  const shareText = `I just found ${formattedAmount}/month in benefits I wasn't claiming. YoureOwed scanned 335 programs in minutes. Check what you're owed → ${shareUrl}`;
+  const twitterText = `I just found ${formattedAmount}/mo in government benefits I wasn't claiming 💵 YoureOwed found me ${totalRelevant} programs in minutes. Check what you're owed →`;
 
-  const handleShare = useCallback(async () => {
-    // Try native share first (mobile)
+  const handleCopy = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setCopied(true);
+      toast({ title: "Copied!", description: "Share text copied to clipboard." });
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      toast({ title: "Could not copy", description: "Please copy manually.", variant: "destructive" });
+    }
+  }, [shareText, toast]);
+
+  const handleNativeShare = useCallback(async () => {
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({
@@ -424,37 +499,114 @@ function ShareButton({ isPaid, totalMonthlyMax }: { isPaid: boolean; totalMonthl
         });
         return;
       } catch {
-        // User cancelled or share failed — fall through to clipboard
+        // cancelled
       }
     }
+    handleCopy();
+  }, [shareText, shareUrl, handleCopy]);
 
-    // Fallback: copy to clipboard
-    try {
-      await navigator.clipboard.writeText(shareText);
-      toast({
-        title: "Copied to clipboard",
-        description: "Share text copied! Paste it anywhere to share your results.",
-      });
-    } catch {
-      toast({
-        title: "Could not copy",
-        description: "Please manually copy and share your results.",
-        variant: "destructive",
-      });
-    }
-  }, [shareText, shareUrl, toast]);
+  if (!showCard) {
+    return (
+      <Button
+        variant="outline"
+        size="sm"
+        className="gap-1.5"
+        onClick={() => setShowCard(true)}
+        data-testid="button-share"
+      >
+        <Share2 className="w-3.5 h-3.5" />
+        Share My Results
+      </Button>
+    );
+  }
 
   return (
-    <Button
-      variant="outline"
-      size="sm"
-      className="gap-1.5"
-      onClick={handleShare}
-      data-testid="button-share"
-    >
-      <Share2 className="w-3.5 h-3.5" />
-      Share My Results
-    </Button>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" data-testid="share-modal">
+      <div className="w-full max-w-sm rounded-2xl bg-card border border-border shadow-2xl p-5 space-y-4">
+        {/* Header */}
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="text-sm font-bold">Share Your Results</h3>
+            <p className="text-xs text-muted-foreground">Show friends what they might be missing</p>
+          </div>
+          <Button variant="ghost" size="sm" className="w-7 h-7 p-0 text-lg" onClick={() => setShowCard(false)}>
+            ×
+          </Button>
+        </div>
+
+        {/* Visual share card preview */}
+        <ShareCard totalMonthlyMax={totalMonthlyMax} programCount={totalRelevant} />
+
+        {/* Social share buttons */}
+        <div className="grid grid-cols-2 gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            className="gap-1.5 text-xs border-sky-500/30 text-sky-400 hover:bg-sky-500/10"
+            onClick={() =>
+              openShareWindow(
+                `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterText)}&url=${encodeURIComponent(shareUrl)}`
+              )
+            }
+            data-testid="button-share-twitter"
+          >
+            <Twitter className="w-3.5 h-3.5" />
+            X / Twitter
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            className="gap-1.5 text-xs border-blue-600/30 text-blue-400 hover:bg-blue-600/10"
+            onClick={() =>
+              openShareWindow(
+                `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(shareText)}`
+              )
+            }
+            data-testid="button-share-facebook"
+          >
+            <Facebook className="w-3.5 h-3.5" />
+            Facebook
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            className="gap-1.5 text-xs border-green-600/30 text-green-400 hover:bg-green-600/10"
+            onClick={() =>
+              openShareWindow(`https://wa.me/?text=${encodeURIComponent(shareText)}`)
+            }
+            data-testid="button-share-whatsapp"
+          >
+            <MessageSquare className="w-3.5 h-3.5" />
+            WhatsApp
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            className="gap-1.5 text-xs"
+            onClick={handleNativeShare}
+            data-testid="button-share-more"
+          >
+            <Share2 className="w-3.5 h-3.5" />
+            More...
+          </Button>
+        </div>
+
+        {/* Copy text */}
+        <Button
+          variant="secondary"
+          size="sm"
+          className="w-full gap-1.5 text-xs"
+          onClick={handleCopy}
+          data-testid="button-share-copy"
+        >
+          {copied ? <Check className="w-3.5 h-3.5 text-[#00E676]" /> : <Copy className="w-3.5 h-3.5" />}
+          {copied ? "Copied!" : "Copy Share Text"}
+        </Button>
+      </div>
+    </div>
   );
 }
 
@@ -498,7 +650,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
         </div>
         <div className="flex items-center gap-2">
           {totalRelevant > 0 && totalMonthlyMax > 0 && (
-            <ShareButton isPaid={isPaid} totalMonthlyMax={totalMonthlyMax} />
+            <ShareButton isPaid={isPaid} totalMonthlyMax={totalMonthlyMax} totalRelevant={totalRelevant} />
           )}
           <Button variant="ghost" size="sm" onClick={onStartOver} className="gap-1.5" data-testid="button-start-over">
             <RotateCcw className="w-3.5 h-3.5" />

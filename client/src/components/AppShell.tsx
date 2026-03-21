@@ -29,20 +29,30 @@ import {
   BookOpen,
   Building2,
   FileText,
+  Gift,
+  ClipboardCheck,
+  FolderOpen,
+  Bell,
+  Handshake,
 } from "lucide-react";
 import { useAppState } from "@/lib/store";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 
 const NAV_ITEMS = [
   { path: "/", label: "Dashboard", icon: Home },
   { path: "/screener", label: "Benefit Finder", icon: Search },
+  { path: "/tracker", label: "My Tracker", icon: ClipboardCheck },
+  { path: "/documents", label: "Documents", icon: FolderOpen },
+  { path: "/reminders", label: "Reminders", icon: Bell },
   { path: "/household", label: "Household", icon: Users },
   { path: "/news", label: "News & Updates", icon: Newspaper },
   { path: "/assistant", label: "AI Assistant", icon: MessageCircle },
   { path: "/blog", label: "Benefits Guide", icon: BookOpen },
   { path: "/apply-guide", label: "Apply Guides", icon: FileText },
   { path: "/pricing", label: "Subscription", icon: CreditCard },
-  { path: "/enterprise", label: "For Organizations", icon: Building2 },
+  { path: "/referral", label: "Refer & Earn", icon: Gift },
+  { path: "/partners", label: "For Organizations", icon: Handshake },
   { path: "/settings", label: "Settings", icon: Settings },
 ];
 
@@ -158,6 +168,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           </div>
 
           <div className="flex items-center gap-2">
+            {/* Language switcher */}
+            <LanguageSwitcher />
+
             {/* Theme toggle */}
             <Button
               variant="ghost"

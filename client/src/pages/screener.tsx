@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -11,6 +11,8 @@ import { ArrowLeft, ArrowRight, AlertTriangle } from "lucide-react";
 import { US_STATES } from "@/lib/states";
 import { type UserAnswers, DEFAULT_ANSWERS, evaluateEligibility, type ProgramResult } from "@/lib/eligibility";
 import ResultsPage from "./results";
+import { useAppState } from "@/lib/store";
+import { CheckCircle, Clock } from "lucide-react";
 
 // ─── Form state uses strings for number inputs; converted on submit ──────────
 
@@ -195,10 +197,51 @@ function SwitchRow({
 // ─── Main Component ──────────────────────────────────────────────────────────
 
 export default function ScreenerPage() {
+  const { state, dispatch } = useAppState();
   const [step, setStep] = useState(0);
   const [form, setForm] = useState<FormData>(INITIAL_FORM);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [results, setResults] = useState<ProgramResult[] | null>(null);
+  const [showResume, setShowResume] = useState(false);
+  const [progressSaved, setProgressSaved] = useState(false);
+
+  // Check for saved progress on mount
+  useEffect(() => {
+    if (state.savedScreenerAnswers && state.savedScreenerAnswers.step > 0) {
+      setShowResume(true);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Save progress to context after each step change
+  useEffect(() => {
+    if (step > 0 && !results) {
+      dispatch({
+        type: "SAVE_SCREENER_PROGRESS",
+        payload: {
+          step,
+          form: form as unknown as Record<string, string | boolean>,
+          savedAt: Date.now(),
+        },
+      });
+      // Show "Progress saved" indicator briefly
+      setProgressSaved(true);
+      const t = setTimeout(() => setProgressSaved(false), 2500);
+      return () => clearTimeout(t);
+    }
+  }, [step]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleResume = useCallback(() => {
+    if (state.savedScreenerAnswers) {
+      setForm(state.savedScreenerAnswers.form as unknown as FormData);
+      setStep(state.savedScreenerAnswers.step);
+    }
+    setShowResume(false);
+  }, [state.savedScreenerAnswers]);
+
+  const handleStartFresh = useCallback(() => {
+    dispatch({ type: "CLEAR_SCREENER_PROGRESS" });
+    setShowResume(false);
+  }, [dispatch]);
 
   const updateField = useCallback((field: keyof FormData, value: string | boolean) => {
     setForm(prev => ({ ...prev, [field]: value }));
@@ -327,8 +370,9 @@ export default function ScreenerPage() {
 
       const evaluated = evaluateEligibility(answers);
       setResults(evaluated);
+      dispatch({ type: "CLEAR_SCREENER_PROGRESS" });
     }
-  }, [step, form, validateStep]);
+  }, [step, form, validateStep, dispatch]);
 
   const goBack = useCallback(() => {
     if (step > 0) {
@@ -342,7 +386,8 @@ export default function ScreenerPage() {
     setStep(0);
     setResults(null);
     setErrors({});
-  }, []);
+    dispatch({ type: "CLEAR_SCREENER_PROGRESS" });
+  }, [dispatch]);
 
   // ── Results page ───────────────────────────────────────────────────────────
 
@@ -361,6 +406,44 @@ export default function ScreenerPage() {
 
   return (
     <div className="p-4 md:p-6 max-w-2xl mx-auto">
+      {/* Resume prompt */}
+      {showResume && state.savedScreenerAnswers && (
+        <div className="mb-4 p-4 rounded-xl border border-[#00E676]/30 bg-[#00E676]/[0.04] flex items-start gap-3" data-testid="resume-prompt">
+          <Clock className="w-4 h-4 text-[#00E676] flex-shrink-0 mt-0.5" />
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold">Resume where you left off?</p>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              You were on step {state.savedScreenerAnswers.step + 1} of {STEPS.length}. Your answers are saved.
+            </p>
+            <div className="flex gap-2 mt-2">
+              <button
+                className="text-xs font-semibold text-[#00E676] hover:underline"
+                onClick={handleResume}
+                data-testid="button-resume"
+              >
+                Resume
+              </button>
+              <span className="text-muted-foreground text-xs">·</span>
+              <button
+                className="text-xs text-muted-foreground hover:text-foreground hover:underline"
+                onClick={handleStartFresh}
+                data-testid="button-start-fresh"
+              >
+                Start fresh
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Progress saved indicator */}
+      {progressSaved && (
+        <div className="mb-3 flex items-center gap-1.5 text-xs text-[#00E676] animate-in fade-in duration-300" data-testid="progress-saved-indicator">
+          <CheckCircle className="w-3.5 h-3.5" />
+          Progress saved
+        </div>
+      )}
+
       {/* Progress */}
       <div className="mb-6">
         <div className="flex justify-between items-center mb-2">
