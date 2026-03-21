@@ -5,7 +5,8 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { AppContext, appReducer, type AppState } from "@/lib/store";
+import { AppContext, appReducer, type AppState, type UserProfile } from "@/lib/store";
+import { supabase, getUserProfile } from "@/lib/supabase";
 import { TrackerProvider } from "@/lib/tracker-state";
 import { I18nProvider } from "@/lib/i18n";
 import AppShell from "@/components/AppShell";
@@ -64,6 +65,54 @@ function AppRouter() {
 
 function App() {
   const [state, dispatch] = useReducer(appReducer, initialState);
+
+  // Restore session from Supabase on page load/refresh
+  useEffect(() => {
+    if (!supabase) return;
+
+    // Check for existing session
+    supabase.auth.getSession().then(async ({ data: { session } }) => {
+      if (session?.user) {
+        const profile = await getUserProfile(session.user.id);
+        let tier: "free" | "basic" | "premium" = "free";
+        if (profile?.subscription_tier === "basic") tier = "basic";
+        if (profile?.subscription_tier === "premium" || profile?.subscription_tier === "pro") tier = "premium";
+
+        const user: UserProfile = {
+          id: session.user.id,
+          email: session.user.email || "",
+          name: (profile?.name as string) || session.user.user_metadata?.full_name || session.user.email?.split("@")[0] || "User",
+          state: (profile?.state as string) || "",
+          zipCode: (profile?.zip_code as string) || "",
+          citizenshipStatus: "",
+          housingSituation: "",
+          householdMembers: [{
+            id: "self-1",
+            name: "You",
+            relationship: "self",
+            age: 0,
+            hasDisability: false,
+            isVeteran: false,
+            employmentStatus: "",
+            monthlyIncome: 0,
+          }],
+          subscriptionTier: tier,
+          referralCode: (profile?.referral_code as string) || "YO-" + Math.random().toString(36).substring(2, 8).toUpperCase(),
+          theme: "dark",
+        };
+        dispatch({ type: "LOGIN", payload: user });
+      }
+    });
+
+    // Listen for auth state changes (login/logout from other tabs)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (event === "SIGNED_OUT") {
+        dispatch({ type: "LOGOUT" });
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   useEffect(() => {
     if (state.theme === "system") {

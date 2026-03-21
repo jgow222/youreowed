@@ -12,7 +12,12 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowRight, Mail, Lock, User, Eye, EyeOff, Shield } from "lucide-react";
 import { useAppState, type UserProfile } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
-import { isSupabaseConfigured, signUp as supaSignUp, signIn as supaSignIn } from "@/lib/supabase";
+import {
+  isSupabaseConfigured,
+  signUp as supaSignUp,
+  signIn as supaSignIn,
+  getUserProfile,
+} from "@/lib/supabase";
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {
   const { state, dispatch } = useAppState();
@@ -53,14 +58,24 @@ function InlineAuth() {
     const trimmedEmail = email.trim();
     const trimmedName = mode === "signup" ? name.trim() : trimmedEmail.split("@")[0];
 
+    let supaUserId: string | null = null;
+    let supaProfile: Record<string, unknown> | null = null;
+
     try {
       if (isSupabaseConfigured()) {
         if (mode === "signup") {
-          const { error } = await supaSignUp(trimmedEmail, password, trimmedName);
+          const { user: authUser, error } = await supaSignUp(trimmedEmail, password, trimmedName);
           if (error) { setLoading(false); setErrors({ email: error }); return; }
+          supaUserId = authUser?.id || null;
         } else {
-          const { error } = await supaSignIn(trimmedEmail, password);
+          const { user: authUser, error } = await supaSignIn(trimmedEmail, password);
           if (error) { setLoading(false); setErrors({ email: error }); return; }
+          supaUserId = authUser?.id || null;
+        }
+
+        // Fetch the user's profile from Supabase (includes subscription_tier set by webhook)
+        if (supaUserId) {
+          supaProfile = await getUserProfile(supaUserId);
         }
       } else {
         // No Supabase — local account only
@@ -71,12 +86,18 @@ function InlineAuth() {
       console.warn("Auth service unavailable, using local account", err);
     }
 
+    // Map Supabase subscription_tier to app tier
+    let tier: "free" | "basic" | "premium" = "free";
+    if (supaProfile?.subscription_tier === "basic") tier = "basic";
+    if (supaProfile?.subscription_tier === "premium") tier = "premium";
+    if (supaProfile?.subscription_tier === "pro") tier = "premium";
+
     const user: UserProfile = {
-      id: `user-${Date.now()}`,
+      id: supaUserId || `user-${Date.now()}`,
       email: trimmedEmail,
-      name: trimmedName,
-      state: "",
-      zipCode: "",
+      name: (supaProfile?.name as string) || trimmedName,
+      state: (supaProfile?.state as string) || "",
+      zipCode: (supaProfile?.zip_code as string) || "",
       citizenshipStatus: "",
       housingSituation: "",
       householdMembers: [{
@@ -89,16 +110,18 @@ function InlineAuth() {
         employmentStatus: "",
         monthlyIncome: 0,
       }],
-      subscriptionTier: "free",
-      referralCode: "YO-" + Math.random().toString(36).substring(2, 8).toUpperCase(),
+      subscriptionTier: tier,
+      referralCode: (supaProfile?.referral_code as string) || "YO-" + Math.random().toString(36).substring(2, 8).toUpperCase(),
       theme: "dark",
     };
 
     dispatch({ type: "LOGIN", payload: user });
     setLoading(false);
+
+    const tierLabel = tier === "free" ? "" : tier === "basic" ? " (Basic Plan)" : " (Pro Plan)";
     toast({
       title: mode === "signup" ? "You're in." : "Welcome back.",
-      description: "Let's find what you're owed.",
+      description: `Let's find what you're owed.${tierLabel}`,
     });
   };
 

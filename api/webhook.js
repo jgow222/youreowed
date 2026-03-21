@@ -24,14 +24,16 @@ export const config = {
 
 // Map Stripe price/product to subscription tier
 function getTierFromPrice(amount) {
-  // Match based on the price amount in cents
-  if (amount === 700) return "basic";    // $7/month
-  if (amount === 1900) return "premium"; // $19/month (pro)
-  if (amount === 2900) return "premium"; // $29/month (family)
-  if (amount === 7000) return "basic";   // $70/year
-  if (amount === 19000) return "premium"; // $190/year
-  if (amount === 29000) return "premium"; // $290/year
-  return "basic"; // fallback
+  // Match based on the price amount in cents (with some flexibility for tax/rounding)
+  if (amount >= 500 && amount <= 999) return "basic";      // ~$7/month Basic
+  if (amount >= 1500 && amount <= 2200) return "premium";   // ~$19/month Pro
+  if (amount >= 2500 && amount <= 3500) return "premium";   // ~$29/month Family
+  if (amount >= 6000 && amount <= 8000) return "basic";     // ~$70/year
+  if (amount >= 15000 && amount <= 22000) return "premium";  // ~$190/year
+  if (amount >= 25000 && amount <= 35000) return "premium";  // ~$290/year
+  // $5 application guide — don't change subscription
+  if (amount >= 400 && amount <= 600) return null;
+  return "basic"; // fallback for any other subscription amount
 }
 
 export default async function handler(req, res) {
@@ -58,11 +60,15 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Invalid signature" });
     }
 
+    console.log(`Webhook event received: ${event.type}`);
+
     // Handle checkout completion
     if (event.type === "checkout.session.completed") {
       const session = event.data.object;
       const customerEmail = session.customer_details?.email || session.customer_email;
       const amountTotal = session.amount_total; // in cents
+
+      console.log(`Checkout completed: email=${customerEmail}, amount=${amountTotal}`);
 
       if (!customerEmail) {
         console.log("No customer email found in session");
@@ -70,6 +76,14 @@ export default async function handler(req, res) {
       }
 
       const tier = getTierFromPrice(amountTotal);
+      
+      // Skip tier update for one-time guide purchases
+      if (!tier) {
+        console.log(`Guide purchase ($${amountTotal / 100}) — no tier change for ${customerEmail}`);
+        return res.status(200).json({ received: true });
+      }
+
+      console.log(`Upgrading ${customerEmail} to ${tier} (amount: $${amountTotal / 100})`);
 
       // Update user's subscription tier in Supabase by email
       const { data, error } = await supabase
@@ -83,7 +97,7 @@ export default async function handler(req, res) {
       if (error) {
         console.error("Supabase update error:", error);
       } else {
-        console.log(`Upgraded ${customerEmail} to ${tier}`);
+        console.log(`Successfully upgraded ${customerEmail} to ${tier}`);
       }
     }
 
