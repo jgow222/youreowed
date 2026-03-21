@@ -93,7 +93,7 @@ export default function DashboardPage() {
             <Shield className="w-3.5 h-3.5" />
             <span className="text-xs font-medium uppercase tracking-wide">Programs Available</span>
           </div>
-          <p className="text-2xl font-bold">50+</p>
+          <p className="text-2xl font-bold">335</p>
           <p className="text-xs text-muted-foreground">Federal & state programs</p>
         </Card>
         <Card className="p-4 border border-card-border">
@@ -109,8 +109,8 @@ export default function DashboardPage() {
             <TrendingUp className="w-3.5 h-3.5" />
             <span className="text-xs font-medium uppercase tracking-wide">States Covered</span>
           </div>
-          <p className="text-2xl font-bold">8</p>
-          <p className="text-xs text-muted-foreground">With state-specific programs</p>
+          <p className="text-2xl font-bold">50 + DC</p>
+          <p className="text-xs text-muted-foreground">All states covered</p>
         </Card>
       </div>
 

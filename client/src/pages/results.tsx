@@ -262,13 +262,13 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
         <Link href="/pricing">
           <Button className="gap-1.5 w-full sm:w-auto" data-testid="button-paywall-subscribe">
             <Sparkles className="w-4 h-4" />
-            Subscribe — $17/mo
+            Subscribe — $7/mo
             <ArrowRight className="w-4 h-4" />
           </Button>
         </Link>
       </div>
       <p className="text-[10px] text-muted-foreground mt-3">
-        $50 one-time setup fee. Cancel anytime. 7-day money-back guarantee.
+        $29 one-time setup fee. Cancel anytime. 7-day money-back guarantee.
       </p>
     </Card>
   );

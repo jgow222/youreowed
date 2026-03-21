@@ -9,8 +9,8 @@ import { Check, X, Copy, Gift, Users, Sparkles, Shield, ChevronDown, ChevronUp }
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
 
-const BASE_PRICE = 17; // $/month
-const SETUP_FEE = 50;
+const BASE_PRICE = 7; // $/month
+const SETUP_FEE = 29;
 const DISCOUNT_PER_USER = 0.25; // 25% discount per additional user
 const REFERRAL_DISCOUNT = 0.15; // 15% off first 3 months
 
