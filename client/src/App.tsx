@@ -19,7 +19,7 @@ import SettingsPage from "@/pages/settings";
 const initialState: AppState = {
   user: defaultUser,
   isLoggedIn: true,
-  theme: "light",
+  theme: "dark",
 };
 
 function AppRouter() {

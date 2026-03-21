@@ -4,19 +4,94 @@
 
 import { type Program, type EligibilityStatus, getMonthlyFPL, programs } from "./programs";
 
+export type { EligibilityStatus };
+
 export interface UserAnswers {
+  // Step 1: Location
   state: string;
   zipCode: string;
+
+  // Step 2: Personal
   age: number;
+  maritalStatus: "single" | "married" | "separated" | "widowed" | "domestic-partner";
+  isPregnant: boolean;
+  isStudent: boolean;
+  educationLevel: "none" | "high-school" | "some-college" | "bachelors" | "graduate";
+
+  // Step 3: Household
   householdSize: number;
   numChildren: number;
+  numChildrenUnder5: number;
+  numChildrenUnder18: number;
+  hasElderlyInHousehold: boolean; // 60+ in household
+
+  // Step 4: Income & Assets
   monthlyIncome: number;
-  employmentStatus: "employed" | "unemployed" | "self-employed" | "retired" | "unable-to-work";
+  incomeFromWork: number;       // earned income specifically (for EITC)
+  hasOtherIncome: boolean;      // SS, pension, child support, etc.
+  totalAssets: number;           // savings, checking, investments (not home/car)
+  hasFiledTaxes: boolean;        // filed taxes last year
+
+  // Step 5: Employment
+  employmentStatus: "employed-full" | "employed-part" | "self-employed" | "unemployed-looking" | "unemployed-not-looking" | "retired" | "unable-to-work" | "student-only";
+  recentlyLostJob: boolean;      // lost job in the last 12 months
+  currentlyReceivingUI: boolean; // currently on unemployment insurance
+  monthsUnemployed: number;
+
+  // Step 6: Health & Disability
   hasDisability: boolean;
+  disabilityPreventsWork: boolean;
+  hasHealthInsurance: boolean;
+  healthInsuranceType: "employer" | "marketplace" | "medicaid" | "medicare" | "va" | "none" | "other";
+  hasChronicCondition: boolean;
+
+  // Step 7: Additional
   citizenshipStatus: "citizen" | "permanent-resident" | "other-qualified" | "not-qualified" | "prefer-not-to-say";
   isVeteran: boolean;
-  housingSituation: "rent" | "own" | "homeless" | "other";
+  veteranServiceConnectedDisability: boolean;
+  housingSituation: "rent" | "own" | "homeless" | "with-family" | "subsidized" | "other";
+  monthlyRent: number;
+  paysUtilities: boolean;
+  hasChildcareCosts: boolean;
+  monthlyChildcareCost: number;
 }
+
+export const DEFAULT_ANSWERS: UserAnswers = {
+  state: "",
+  zipCode: "",
+  age: 0,
+  maritalStatus: "single",
+  isPregnant: false,
+  isStudent: false,
+  educationLevel: "none",
+  householdSize: 1,
+  numChildren: 0,
+  numChildrenUnder5: 0,
+  numChildrenUnder18: 0,
+  hasElderlyInHousehold: false,
+  monthlyIncome: 0,
+  incomeFromWork: 0,
+  hasOtherIncome: false,
+  totalAssets: 0,
+  hasFiledTaxes: false,
+  employmentStatus: "employed-full",
+  recentlyLostJob: false,
+  currentlyReceivingUI: false,
+  monthsUnemployed: 0,
+  hasDisability: false,
+  disabilityPreventsWork: false,
+  hasHealthInsurance: false,
+  healthInsuranceType: "none",
+  hasChronicCondition: false,
+  citizenshipStatus: "citizen",
+  isVeteran: false,
+  veteranServiceConnectedDisability: false,
+  housingSituation: "rent",
+  monthlyRent: 0,
+  paysUtilities: false,
+  hasChildcareCosts: false,
+  monthlyChildcareCost: 0,
+};
 
 export interface ProgramResult {
   program: Program;
@@ -34,21 +109,27 @@ function isCitizenOrQualified(status: string): boolean {
   return status === "citizen" || status === "permanent-resident" || status === "other-qualified";
 }
 
+function isEmployed(status: string): boolean {
+  return status === "employed-full" || status === "employed-part" || status === "self-employed";
+}
+
+function isUnemployed(status: string): boolean {
+  return status === "unemployed-looking" || status === "unemployed-not-looking";
+}
+
 export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
   const results: ProgramResult[] = [];
   const incomePctFPL = getIncomePctFPL(answers.monthlyIncome, answers.householdSize);
-  const monthlyFPL = getMonthlyFPL(answers.householdSize);
 
   for (const program of programs) {
     const reasons: string[] = [];
-    let score = 0; // positive = more likely, negative = less likely
+    let score = 0;
     let hardFail = false;
 
     const { rules } = program;
 
     // ── State Filter ──
     if (rules.applicableStates && !rules.applicableStates.includes(answers.state)) {
-      // Skip state-specific programs that don't apply to user's state
       continue;
     }
     if (rules.excludedStates && rules.excludedStates.includes(answers.state)) {
@@ -60,26 +141,25 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
       const threshold = rules.maxIncomePctFPL;
       if (incomePctFPL <= threshold * 0.8) {
         score += 2;
-        reasons.push(`Your household income is well within the income guideline (under ${Math.round(threshold)}% of poverty level).`);
+        reasons.push(`Your household income is well within the income guideline (under ${Math.round(threshold)}% FPL).`);
       } else if (incomePctFPL <= threshold) {
         score += 1;
-        reasons.push(`Your household income is near the income limit (${Math.round(threshold)}% of poverty level).`);
+        reasons.push(`Your income is near the limit (${Math.round(threshold)}% FPL). Deductions may help.`);
       } else if (incomePctFPL <= threshold * 1.15) {
         score -= 1;
-        reasons.push(`Your income is slightly above the typical limit, but deductions or other factors may help.`);
+        reasons.push(`Your income is slightly above the typical limit, but deductions may help.`);
       } else {
         score -= 3;
-        reasons.push(`Your household income appears to exceed the income limit for this program.`);
+        reasons.push(`Your household income exceeds the income limit for this program.`);
       }
     }
 
     if (rules.maxIncomeMonthly !== undefined) {
       if (answers.monthlyIncome <= rules.maxIncomeMonthly) {
         score += 2;
-        reasons.push(`Your income is within the monthly limit of $${rules.maxIncomeMonthly.toLocaleString()}.`);
       } else {
         score -= 3;
-        reasons.push(`Your income exceeds the monthly limit of $${rules.maxIncomeMonthly.toLocaleString()}.`);
+        reasons.push(`Your income exceeds the $${rules.maxIncomeMonthly.toLocaleString()}/mo limit.`);
       }
     }
 
@@ -87,37 +167,68 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
     if (rules.minAge !== undefined) {
       if (answers.age >= rules.minAge) {
         score += 1;
-        reasons.push(`You meet the minimum age requirement (${rules.minAge}+).`);
+        reasons.push(`You meet the age requirement (${rules.minAge}+).`);
       } else {
-        // For programs like SS retirement, this is a hard requirement
         if (program.id === "ss-retirement" || program.id === "medicare") {
           hardFail = true;
-          reasons.push(`This program requires you to be at least ${rules.minAge}. You indicated you are ${answers.age}.`);
+          reasons.push(`Requires age ${rules.minAge}+. You are ${answers.age}.`);
         } else {
           score -= 2;
-          reasons.push(`This program is primarily for people age ${rules.minAge}+.`);
+          reasons.push(`Primarily for age ${rules.minAge}+.`);
         }
       }
     }
 
-    if (rules.maxAge !== undefined) {
-      if (answers.age <= rules.maxAge) {
-        // Age is within range, no penalty
-      } else {
-        score -= 1;
-        reasons.push(`This program is primarily for people under ${rules.maxAge + 1}.`);
-      }
+    if (rules.maxAge !== undefined && answers.age > rules.maxAge) {
+      score -= 1;
+      reasons.push(`Primarily for people under ${rules.maxAge + 1}.`);
     }
 
     // ── Children Check ──
     if (rules.requiresChildren) {
-      if (answers.numChildren > 0) {
+      if (answers.numChildren > 0 || answers.numChildrenUnder18 > 0) {
         score += 1;
-        reasons.push(`You have children in your household, which is a requirement.`);
+        reasons.push(`You have children in your household.`);
       } else {
         score -= 3;
-        reasons.push(`This program requires children in the household.`);
         hardFail = true;
+        reasons.push(`Requires children in the household.`);
+      }
+    }
+
+    // ── Children Under 5 ──
+    if (rules.hasChildrenUnder5) {
+      if (answers.numChildrenUnder5 > 0) {
+        score += 2;
+        reasons.push(`You have young children (under 5), which is a key requirement.`);
+      } else if (answers.numChildren > 0) {
+        score -= 1;
+        reasons.push(`This program is for families with children under 5.`);
+      } else {
+        hardFail = true;
+        reasons.push(`Requires children under age 5.`);
+      }
+    }
+
+    // ── Pregnancy Check ──
+    if (rules.requiresPregnant) {
+      if (answers.isPregnant) {
+        score += 2;
+        reasons.push(`You indicated you are pregnant.`);
+      } else {
+        hardFail = true;
+        reasons.push(`This program requires pregnancy.`);
+      }
+    }
+
+    // ── Student Check ──
+    if (rules.requiresStudent) {
+      if (answers.isStudent) {
+        score += 2;
+        reasons.push(`You are currently a student.`);
+      } else {
+        hardFail = true;
+        reasons.push(`Requires current student enrollment.`);
       }
     }
 
@@ -125,7 +236,12 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
     if (rules.requiresDisability) {
       if (answers.hasDisability) {
         score += 2;
-        reasons.push(`You indicated a disability, which is relevant to this program.`);
+        if (answers.disabilityPreventsWork) {
+          score += 1;
+          reasons.push(`Your disability prevents work, which strengthens eligibility.`);
+        } else {
+          reasons.push(`You indicated a disability.`);
+        }
       } else if (answers.employmentStatus === "unable-to-work") {
         score += 1;
         reasons.push(`Your work status suggests a possible qualifying condition.`);
@@ -134,7 +250,7 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
           hardFail = true;
         }
         score -= 3;
-        reasons.push(`This program requires a qualifying disability.`);
+        reasons.push(`Requires a qualifying disability.`);
       }
     }
 
@@ -144,33 +260,42 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
         // Fine
       } else if (answers.citizenshipStatus === "prefer-not-to-say") {
         score -= 1;
-        reasons.push(`Citizenship or qualified immigrant status may be required. Check the official site for details.`);
+        reasons.push(`Citizenship may be required — check the official site.`);
       } else {
         score -= 2;
-        reasons.push(`This program typically requires U.S. citizenship or qualified immigrant status.`);
+        reasons.push(`Typically requires U.S. citizenship or qualified immigrant status.`);
       }
     }
 
     // ── Employment Check ──
     if (rules.requiresEmployed) {
-      if (answers.employmentStatus === "employed" || answers.employmentStatus === "self-employed") {
+      if (isEmployed(answers.employmentStatus)) {
         score += 1;
-        reasons.push(`You have earned income, which is required.`);
+        if (answers.incomeFromWork > 0) {
+          score += 1;
+          reasons.push(`You have earned income of $${answers.incomeFromWork.toLocaleString()}/mo from work.`);
+        } else {
+          reasons.push(`You are employed.`);
+        }
       } else {
         score -= 3;
-        reasons.push(`This program requires earned income from work.`);
         hardFail = true;
+        reasons.push(`Requires earned income from work.`);
       }
     }
 
-    if (rules.requiresUnemployed) {
-      if (answers.employmentStatus === "unemployed") {
+    if (rules.requiresUnemployed || rules.requiresRecentlyUnemployed) {
+      if (isUnemployed(answers.employmentStatus) || answers.recentlyLostJob) {
         score += 2;
-        reasons.push(`You indicated you are currently unemployed.`);
+        if (answers.recentlyLostJob) {
+          reasons.push(`You recently lost your job.`);
+        } else {
+          reasons.push(`You are currently unemployed.`);
+        }
       } else {
         score -= 3;
-        reasons.push(`This program is for people who have recently lost their job.`);
         hardFail = true;
+        reasons.push(`For people who recently lost their job.`);
       }
     }
 
@@ -178,33 +303,41 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
     if (rules.requiresVeteran) {
       if (answers.isVeteran) {
         score += 2;
-        reasons.push(`You indicated veteran status, which qualifies you to apply.`);
+        if (answers.veteranServiceConnectedDisability && (program.id.includes("va-disability") || program.id.includes("va-"))) {
+          score += 1;
+          reasons.push(`Veteran with service-connected disability.`);
+        } else {
+          reasons.push(`You are a veteran.`);
+        }
       } else {
         hardFail = true;
-        reasons.push(`This program is exclusively for military veterans.`);
+        reasons.push(`Exclusively for military veterans.`);
       }
     }
 
-    // ── Senior Check (for programs that target 65+) ──
+    // ── Senior Check ──
     if (rules.requiresSenior) {
       if (answers.age >= 65) {
         score += 1;
       } else {
         score -= 2;
-        reasons.push(`This program is primarily for people 65 and older.`);
+        reasons.push(`Primarily for people 65+.`);
       }
     }
 
-    // ── Renter Check ──
+    // ── Housing Checks ──
     if (rules.requiresRenter) {
       if (answers.housingSituation === "rent") {
         score += 1;
+        if (answers.monthlyRent > 0 && answers.monthlyRent > answers.monthlyIncome * 0.3) {
+          score += 1;
+          reasons.push(`You spend over 30% of income on rent — a sign of housing cost burden.`);
+        }
       } else {
         score -= 1;
       }
     }
 
-    // ── Homeless Check ──
     if (rules.requiresHomeless) {
       if (answers.housingSituation === "homeless") {
         score += 2;
@@ -213,22 +346,74 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
       }
     }
 
-    // ── Special program-specific logic ──
-    // SSI: must be 65+, blind, or disabled
-    if (program.id === "ssi") {
-      if (answers.age < 65 && !answers.hasDisability && answers.employmentStatus !== "unable-to-work") {
-        score -= 2;
-        reasons.push(`SSI requires you to be 65+, blind, or have a qualifying disability.`);
+    // ── Health Insurance Check (for programs that require being uninsured) ──
+    if (program.category === "Healthcare" && program.level === "state") {
+      if (answers.healthInsuranceType === "none") {
+        score += 1;
+        reasons.push(`You don't currently have health insurance.`);
+      } else if (answers.healthInsuranceType === "medicaid" || answers.healthInsuranceType === "medicare") {
+        // Already on government health insurance — may still qualify for other programs
       }
     }
 
-    // Medicare: also covers disabled people under 65 who've received SSDI for 24 months
+    // ── Utility programs: check if they pay utilities ──
+    if (program.category === "Utilities") {
+      if (answers.paysUtilities) {
+        score += 1;
+      } else if (answers.housingSituation === "rent" || answers.housingSituation === "own") {
+        // Likely pays utilities even if not explicitly said
+      } else {
+        score -= 1;
+      }
+    }
+
+    // ── Childcare programs ──
+    if (program.category === "Childcare" || program.id.includes("childcare") || program.id.includes("head-start")) {
+      if (answers.hasChildcareCosts && answers.monthlyChildcareCost > 0) {
+        score += 2;
+        reasons.push(`You have childcare costs of $${answers.monthlyChildcareCost.toLocaleString()}/mo.`);
+      } else if (answers.numChildrenUnder5 > 0) {
+        score += 1;
+      }
+    }
+
+    // ── Tax credit specific: need to have filed taxes ──
+    if (program.category === "Tax Credits") {
+      if (answers.hasFiledTaxes) {
+        score += 1;
+      } else {
+        reasons.push(`You may need to file a tax return to claim this credit.`);
+      }
+    }
+
+    // ── Asset check for programs with strict resource limits ──
+    if (program.id === "ssi" && answers.totalAssets > 2000) {
+      score -= 2;
+      reasons.push(`SSI has a $2,000 resource limit ($3,000 for couples). You reported $${answers.totalAssets.toLocaleString()} in assets.`);
+    }
+
+    // ── Special program-specific logic ──
+    if (program.id === "ssi") {
+      if (answers.age < 65 && !answers.hasDisability && answers.employmentStatus !== "unable-to-work") {
+        score -= 2;
+        reasons.push(`SSI requires age 65+, blindness, or a qualifying disability.`);
+      }
+    }
+
     if (program.id === "medicare" && answers.age < 65) {
       if (answers.hasDisability) {
         hardFail = false;
         score = 0;
         reasons.length = 0;
-        reasons.push(`While under 65, people with disabilities who have received SSDI for 24 months may qualify for Medicare.`);
+        reasons.push(`Under 65 with a disability — may qualify via SSDI after 24 months.`);
+      }
+    }
+
+    // ── EITC: boost score for families with children + earned income ──
+    if (program.id === "eitc") {
+      if (answers.numChildren > 0 && answers.incomeFromWork > 0) {
+        score += 1;
+        reasons.push(`Working families with children get the largest EITC amounts.`);
       }
     }
 
@@ -244,7 +429,6 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
       status = "unlikely";
     }
 
-    // Build explanation
     const explanation = reasons.length > 0
       ? reasons.join(" ")
       : getDefaultExplanation(status, program);

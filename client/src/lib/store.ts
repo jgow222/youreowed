@@ -55,7 +55,7 @@ export const defaultUser: UserProfile = {
   }],
   subscriptionTier: "free",
   referralCode: "BEN-" + Math.random().toString(36).substring(2, 8).toUpperCase(),
-  theme: "system",
+  theme: "dark",
 };
 
 export const AppContext = createContext<{
