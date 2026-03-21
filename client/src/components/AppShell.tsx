@@ -31,7 +31,7 @@ import {
   FileText,
 } from "lucide-react";
 import { useAppState } from "@/lib/store";
-import { PerplexityAttribution } from "@/components/PerplexityAttribution";
+
 
 const NAV_ITEMS = [
   { path: "/", label: "Dashboard", icon: Home },
@@ -111,7 +111,7 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
 
       {/* Footer */}
       <div className="p-3 border-t border-border">
-        <PerplexityAttribution />
+
       </div>
     </div>
   );
