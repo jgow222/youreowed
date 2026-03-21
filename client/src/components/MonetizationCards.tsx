@@ -336,7 +336,7 @@ export function FreeTrialCard({ onStartTrial }: { onStartTrial: () => void }) {
         </Button>
       </div>
       <p className="text-[10px] text-muted-foreground mt-2">
-        Then $7/mo. Cancel anytime in settings.
+        Then $4.99/mo. Cancel anytime in settings.
       </p>
     </Card>
   );

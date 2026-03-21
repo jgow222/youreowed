@@ -25,14 +25,14 @@ export const config = {
 // Map Stripe price/product to subscription tier
 function getTierFromPrice(amount) {
   // Match based on the price amount in cents (with some flexibility for tax/rounding)
-  if (amount >= 500 && amount <= 999) return "basic";      // ~$7/month Basic
-  if (amount >= 1500 && amount <= 2200) return "premium";   // ~$19/month Pro
-  if (amount >= 2500 && amount <= 3500) return "premium";   // ~$29/month Family
-  if (amount >= 6000 && amount <= 8000) return "basic";     // ~$70/year
-  if (amount >= 15000 && amount <= 22000) return "premium";  // ~$190/year
-  if (amount >= 25000 && amount <= 35000) return "premium";  // ~$290/year
-  // $5 application guide — don't change subscription
-  if (amount >= 400 && amount <= 600) return null;
+  if (amount >= 399 && amount <= 699) return "basic";       // ~$4.99/month Basic
+  if (amount >= 799 && amount <= 1299) return "premium";    // ~$9.99/month Pro
+  if (amount >= 1300 && amount <= 1799) return "premium";   // ~$14.99/month Family
+  if (amount >= 4500 && amount <= 5500) return "basic";     // ~$49.99/year
+  if (amount >= 9000 && amount <= 11000) return "premium";  // ~$99.99/year
+  if (amount >= 13000 && amount <= 17000) return "premium"; // ~$149.99/year
+  // $2.99 application guide — don't change subscription
+  if (amount >= 200 && amount <= 399) return null;
   return "basic"; // fallback for any other subscription amount
 }
 

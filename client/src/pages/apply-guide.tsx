@@ -1124,7 +1124,7 @@ function GuideCard({
             )}
           </Button>
         ) : isBasic ? (
-          /* Basic: $5 per guide */
+          /* Basic: $2.99 per guide */
           <Button
             size="sm"
             className="flex-1 gap-1.5 text-xs h-9"
@@ -1137,7 +1137,7 @@ function GuideCard({
             ) : (
               <>
                 <ShoppingCart className="w-3 h-3" />
-                Get AI Guide — $5
+                Get AI Guide — $2.99
               </>
             )}
           </Button>

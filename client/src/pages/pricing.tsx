@@ -39,7 +39,7 @@ import {
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
 
-const SETUP_FEE = 29;
+const SETUP_FEE = 0;
 const DISCOUNT_PER_USER = 0.25;
 const REFERRAL_DISCOUNT = 0.15;
 
@@ -87,9 +87,9 @@ const TIERS: Tier[] = [
     id: "basic",
     name: "Basic",
     tagline: "Full screening access",
-    monthlyPrice: 7,
-    annualPrice: 70,
-    setupFee: SETUP_FEE,
+    monthlyPrice: 4.99,
+    annualPrice: 49.99,
+    setupFee: 0,
     maxUsers: 1,
     features: [
       { text: "Full screening (335+ programs)", included: true },
@@ -98,7 +98,7 @@ const TIERS: Tier[] = [
       { text: "AI assistant (5 questions/day)", included: true },
       { text: "Real-time policy news alerts", included: true },
       { text: "1 user", included: true },
-      { text: "Application guides ($5 each)", included: true },
+      { text: "Application guides ($2.99 each)", included: true },
       { text: "AI-guided walkthroughs", included: false },
     ],
     cta: "Get Basic",
@@ -108,9 +108,9 @@ const TIERS: Tier[] = [
     id: "pro",
     name: "Pro",
     tagline: "Everything + guidance",
-    monthlyPrice: 19,
-    annualPrice: 190,
-    setupFee: SETUP_FEE,
+    monthlyPrice: 9.99,
+    annualPrice: 99.99,
+    setupFee: 0,
     maxUsers: 3,
     badge: "Most Popular",
     highlighted: true,
@@ -131,9 +131,9 @@ const TIERS: Tier[] = [
     id: "family",
     name: "Family",
     tagline: "Whole household covered",
-    monthlyPrice: 29,
-    annualPrice: 290,
-    setupFee: SETUP_FEE,
+    monthlyPrice: 14.99,
+    annualPrice: 149.99,
+    setupFee: 0,
     maxUsers: null,
     features: [
       { text: "Everything in Pro", included: true },
@@ -188,9 +188,11 @@ function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
               ${(tier.annualPrice / 12).toFixed(2)}/mo &middot; Save $
               {tier.monthlyPrice * 12 - tier.annualPrice}
             </p>
-            <p className="text-[10px] text-muted-foreground mt-0.5">
-              +${tier.setupFee} one-time setup
-            </p>
+            {tier.setupFee > 0 && (
+              <p className="text-[10px] text-muted-foreground mt-0.5">
+                +${tier.setupFee} one-time setup
+              </p>
+            )}
           </div>
         ) : (
           <div>
@@ -200,9 +202,11 @@ function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
                 /mo
               </span>
             </p>
-            <p className="text-[10px] text-muted-foreground mt-0.5">
-              +${tier.setupFee} one-time setup
-            </p>
+            {tier.setupFee > 0 && (
+              <p className="text-[10px] text-muted-foreground mt-0.5">
+                +${tier.setupFee} one-time setup
+              </p>
+            )}
           </div>
         )}
       </div>
@@ -306,9 +310,9 @@ function PriceCalculator() {
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="basic">Basic — $7/mo</SelectItem>
-              <SelectItem value="pro">Pro — $19/mo</SelectItem>
-              <SelectItem value="family">Family — $29/mo</SelectItem>
+              <SelectItem value="basic">Basic — $4.99/mo</SelectItem>
+              <SelectItem value="pro">Pro — $9.99/mo</SelectItem>
+              <SelectItem value="family">Family — $14.99/mo</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -422,10 +426,12 @@ function PriceCalculator() {
             <span>Monthly total</span>
             <span className="text-primary">${monthlyTotal.toFixed(2)}/mo</span>
           </div>
-          <div className="flex justify-between text-xs text-muted-foreground">
-            <span>One-time setup fee</span>
-            <span>${tier.setupFee.toFixed(2)}</span>
-          </div>
+          {tier.setupFee > 0 && (
+            <div className="flex justify-between text-xs text-muted-foreground">
+              <span>One-time setup fee</span>
+              <span>${tier.setupFee.toFixed(2)}</span>
+            </div>
+          )}
           <div className="flex justify-between text-xs text-muted-foreground">
             <span>
               {isAnnual ? "First payment (annual + setup)" : "First month total"}
@@ -524,7 +530,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Do you offer refunds?",
-    a: "Yes — we offer a 7-day money-back guarantee. If you're not satisfied within your first week, contact support for a full refund of your subscription. The setup fee is non-refundable.",
+    a: "Yes — we offer a 7-day money-back guarantee. If you're not satisfied within your first week, contact support for a full refund of your subscription.",
   },
 ];
 

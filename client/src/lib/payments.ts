@@ -1,13 +1,12 @@
 // ─── Payment Configuration ────────────────────────────────────────────────
 // Uses Stripe Payment Links for a backend-free checkout experience.
-// Replace the placeholder URLs with real Stripe Payment Link URLs
-// after creating products in your Stripe Dashboard.
 //
-// To set up:
-// 1. Go to Stripe Dashboard → Products → Create products for each tier
-// 2. Create Payment Links for each product
-// 3. Replace the URLs below with your real payment links
-// 4. For subscriptions, use recurring pricing in Stripe
+// IMPORTANT: You need to create NEW Stripe Payment Links at the updated prices:
+//   Basic: $4.99/mo | $49.99/yr
+//   Pro:   $9.99/mo | $99.99/yr
+//   Family: $14.99/mo | $149.99/yr
+//   Guide: $2.99 each
+// Then replace the URLs below with your new payment links.
 
 export interface PlanConfig {
   id: string;
@@ -28,39 +27,39 @@ export interface GuideConfig {
 }
 
 // ─── Subscription Plans ─────────────────────────────────────────────────────
-// Replace these URLs with your actual Stripe Payment Links
+// TODO: Create new Stripe Payment Links at these prices and replace URLs
 export const PLANS: Record<string, PlanConfig> = {
   basic: {
     id: "basic",
     name: "Basic",
-    monthlyPrice: 7,
-    annualPrice: 70,
-    setupFee: 29,
+    monthlyPrice: 4.99,
+    annualPrice: 49.99,
+    setupFee: 0,
     stripeLinkMonthly: "https://buy.stripe.com/5kQ28t3GCfNW0zgfrj7Zu01",
     stripeLinkAnnual: "https://buy.stripe.com/5kQ28t3GCfNW0zgfrj7Zu01",
   },
   pro: {
     id: "pro",
     name: "Pro",
-    monthlyPrice: 19,
-    annualPrice: 190,
-    setupFee: 29,
+    monthlyPrice: 9.99,
+    annualPrice: 99.99,
+    setupFee: 0,
     stripeLinkMonthly: "https://buy.stripe.com/3cI4gBelg45e0zg4MF7Zu02",
     stripeLinkAnnual: "https://buy.stripe.com/3cI4gBelg45e0zg4MF7Zu02",
   },
   family: {
     id: "family",
     name: "Family",
-    monthlyPrice: 29,
-    annualPrice: 290,
-    setupFee: 29,
+    monthlyPrice: 14.99,
+    annualPrice: 149.99,
+    setupFee: 0,
     stripeLinkMonthly: "https://buy.stripe.com/5kQfZjcd8gS0dm20wp7Zu03",
     stripeLinkAnnual: "https://buy.stripe.com/5kQfZjcd8gS0dm20wp7Zu03",
   },
 };
 
 // ─── Application Guides ─────────────────────────────────────────────────────
-export const GUIDE_PRICE = 5;  // $5 for basic subscribers
+export const GUIDE_PRICE = 2.99;  // $2.99 for basic subscribers
 export const AI_GUIDE_PRICE = 0; // Free for Pro/Family subscribers
 
 export const GUIDES: GuideConfig[] = [
@@ -102,14 +101,10 @@ export const GUIDES: GuideConfig[] = [
 ];
 
 // ─── Checkout Helper ────────────────────────────────────────────────────────
-// Opens a Stripe Payment Link in a new tab. In production, you'd use
-// Stripe Checkout Sessions via a backend API for more control.
-
 export function openCheckout(stripeLink: string, options?: {
   email?: string;
   referralCode?: string;
 }) {
-  // Build URL with prefill params
   let url = stripeLink;
   const params = new URLSearchParams();
   if (options?.email) params.set("prefilled_email", options.email);
@@ -120,7 +115,6 @@ export function openCheckout(stripeLink: string, options?: {
     url += (url.includes("?") ? "&" : "?") + paramString;
   }
 
-  // Open in new tab (required for sandboxed iframes)
   window.open(url, "_blank", "noopener,noreferrer");
 }
 

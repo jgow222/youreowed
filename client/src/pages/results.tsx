@@ -258,7 +258,7 @@ function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult
               >
                 <Button variant="outline" size="sm" className="h-7 text-xs gap-1.5 px-2.5">
                   <ShoppingCart className="w-3 h-3" />
-                  Get Application Guide — $5
+                  Get Application Guide — $2.99
                 </Button>
               </Link>
             )}
@@ -341,7 +341,7 @@ function CategoryBreakdown({ results }: { results: ProgramResult[] }) {
 function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: number; monthlyMin: number; monthlyMax: number }) {
   const { state, dispatch } = useAppState();
   const { toast } = useToast();
-  const subscriptionCost = 7; // $7/mo
+  const subscriptionCost = 4.99; // $4.99/mo
   const roiRatio = monthlyMax > 0 ? Math.round(monthlyMax / subscriptionCost) : 0;
 
   return (
@@ -391,7 +391,7 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
           }}
         >
           <Sparkles className="w-4 h-4" />
-          Unlock now — $7/mo
+          Unlock now — $4.99/mo
           <ArrowRight className="w-4 h-4" />
         </Button>
         <Link href="/pricing">
@@ -401,7 +401,7 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
         </Link>
       </div>
       <p className="text-[10px] text-muted-foreground mt-3">
-        $29 one-time setup. Cancel anytime. 7-day money-back guarantee.
+        Cancel anytime. 7-day money-back guarantee.
       </p>
     </Card>
   );
