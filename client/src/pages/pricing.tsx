@@ -544,17 +544,17 @@ export default function PricingPage() {
 
   const shareViaEmail = () => {
     const subject = encodeURIComponent(
-      "Check out BenefitsHub — find benefits you're missing"
+      "Check out YoureOwed — find benefits you're missing"
     );
     const body = encodeURIComponent(
-      `I've been using BenefitsHub to find government benefits I qualify for. Use my referral link and we both get 15% off:\n\nhttps://${referralLink}`
+      `I've been using YoureOwed to find government benefits I qualify for. Use my referral link and we both get 15% off:\n\nhttps://${referralLink}`
     );
     window.open(`mailto:?subject=${subject}&body=${body}`, "_blank");
   };
 
   const shareViaText = () => {
     const body = encodeURIComponent(
-      `Check out BenefitsHub — I found benefits I didn't know about! Use my link and we both save 15%: https://${referralLink}`
+      `Check out YoureOwed — I found benefits I didn't know about! Use my link and we both save 15%: https://${referralLink}`
     );
     window.open(`sms:?body=${body}`, "_blank");
   };

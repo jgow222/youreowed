@@ -365,7 +365,7 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
         <div className="flex items-center justify-center gap-2 mb-4 text-sm">
           <TrendingUp className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
           <span className="font-semibold">
-            That's up to <span className="text-emerald-600 dark:text-emerald-400">${roiRatio}</span> for every $1 you spend on BenefitsHub.
+            That's up to <span className="text-emerald-600 dark:text-emerald-400">${roiRatio}</span> for every $1 you spend on YoureOwed.
           </span>
         </div>
       )}
@@ -393,7 +393,7 @@ function ShareButton({ isPaid, totalMonthlyMax }: { isPaid: boolean; totalMonthl
   const shareUrl = typeof window !== "undefined" ? window.location.origin : "https://benefitshub.com";
 
   const shareText = isPaid
-    ? `I just found out I may qualify for up to $${totalMonthlyMax.toLocaleString()}/month in government benefits through BenefitsHub! Check what you're missing.`
+    ? `I just found out I may qualify for up to $${totalMonthlyMax.toLocaleString()}/month in government benefits through YoureOwed! Check what you're missing.`
     : `I just found out I may qualify for $${totalMonthlyMax.toLocaleString()}/month in government benefits! Check what you're missing \u2192 ${shareUrl}`;
 
   const handleShare = useCallback(async () => {
@@ -401,7 +401,7 @@ function ShareButton({ isPaid, totalMonthlyMax }: { isPaid: boolean; totalMonthl
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({
-          title: "My Benefits Results — BenefitsHub",
+          title: "My Benefits Results — YoureOwed",
           text: shareText,
           url: shareUrl,
         });

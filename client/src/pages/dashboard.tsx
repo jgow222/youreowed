@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Search, Users, Newspaper, MessageCircle, ArrowRight, TrendingUp, DollarSign, Shield } from "lucide-react";
+import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { getRecentNews } from "@/lib/news";
 
@@ -12,132 +12,122 @@ export default function DashboardPage() {
   const memberCount = state.user?.householdMembers.length || 1;
 
   return (
-    <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-6">
-      {/* Welcome */}
-      <div>
-        <h1 className="text-xl font-bold" data-testid="text-welcome">
-          Welcome{state.user?.name ? `, ${state.user.name.split(" ")[0]}` : ""}
+    <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8">
+      {/* Hero — Bold, direct */}
+      <div className="py-4">
+        <p className="text-sm font-medium text-primary tracking-wide uppercase mb-2">Welcome back</p>
+        <h1 className="text-2xl md:text-3xl font-black tracking-tight leading-tight" data-testid="text-welcome">
+          You might be leaving<br />
+          <span className="text-primary money-glow">thousands on the table.</span>
         </h1>
-        <p className="text-sm text-muted-foreground mt-0.5">
-          Find government benefits your household may qualify for.
+        <p className="text-sm text-muted-foreground mt-3 max-w-lg">
+          The average household qualifies for $5,000–$50,000+ per year in government benefits they never claim. Let's find yours in 2 minutes.
         </p>
+        <Link href="/screener">
+          <Button size="lg" className="mt-4 gap-2 font-bold text-sm h-11 px-6" data-testid="button-hero-cta">
+            Check what you're owed <ArrowRight className="w-4 h-4" />
+          </Button>
+        </Link>
       </div>
 
-      {/* Quick Actions */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-        <Link href="/screener">
-          <Card className="p-4 cursor-pointer hover:border-primary/30 transition-colors border border-card-border" data-testid="card-quick-screener">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
-                <Search className="w-4 h-4 text-primary" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold">Run Screener</p>
-                <p className="text-[11px] text-muted-foreground">Check eligibility</p>
-              </div>
-              <ArrowRight className="w-4 h-4 text-muted-foreground" />
-            </div>
-          </Card>
-        </Link>
+      {/* Stats — Big numbers, no fluff */}
+      <div className="grid grid-cols-3 gap-3">
+        <Card className="p-4 border border-card-border bg-card">
+          <p className="text-3xl font-black text-primary">335</p>
+          <p className="text-xs text-muted-foreground mt-1">programs we check</p>
+        </Card>
+        <Card className="p-4 border border-card-border bg-card">
+          <p className="text-3xl font-black">50<span className="text-lg text-muted-foreground">+DC</span></p>
+          <p className="text-xs text-muted-foreground mt-1">states covered</p>
+        </Card>
+        <Card className="p-4 border border-card-border bg-card">
+          <p className="text-3xl font-black text-primary">$50K<span className="text-lg text-muted-foreground">+</span></p>
+          <p className="text-xs text-muted-foreground mt-1">potential per year</p>
+        </Card>
+      </div>
 
-        <Link href="/household">
-          <Card className="p-4 cursor-pointer hover:border-primary/30 transition-colors border border-card-border">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-blue-500/10 flex items-center justify-center">
-                <Users className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+      {/* Quick actions — Bigger, bolder */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <Link href="/screener">
+          <Card className="p-5 cursor-pointer border border-primary/20 bg-primary/[0.03] hover:bg-primary/[0.06] transition-colors group" data-testid="card-quick-screener">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
+                  <Search className="w-5 h-5 text-primary" />
+                </div>
+                <p className="text-base font-bold">Run your screening</p>
+                <p className="text-xs text-muted-foreground mt-0.5">Takes 2 minutes. 100% private.</p>
               </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold">Household</p>
-                <p className="text-[11px] text-muted-foreground">{memberCount} member{memberCount !== 1 ? "s" : ""}</p>
-              </div>
-              <ArrowRight className="w-4 h-4 text-muted-foreground" />
+              <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
             </div>
           </Card>
         </Link>
 
         <Link href="/assistant">
-          <Card className="p-4 cursor-pointer hover:border-primary/30 transition-colors border border-card-border">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-violet-500/10 flex items-center justify-center">
-                <MessageCircle className="w-4 h-4 text-violet-600 dark:text-violet-400" />
+          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center mb-3">
+                  <MessageCircle className="w-5 h-5 text-violet-500" />
+                </div>
+                <p className="text-base font-bold">Ask the AI</p>
+                <p className="text-xs text-muted-foreground mt-0.5">"How do I apply for SNAP?"</p>
               </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold">AI Assistant</p>
-                <p className="text-[11px] text-muted-foreground">Ask questions</p>
+              <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Card>
+        </Link>
+
+        <Link href="/household">
+          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3">
+                  <Users className="w-5 h-5 text-blue-500" />
+                </div>
+                <p className="text-base font-bold">Your household</p>
+                <p className="text-xs text-muted-foreground mt-0.5">{memberCount} member{memberCount !== 1 ? "s" : ""} — add more for better results</p>
               </div>
-              <Badge variant="secondary" className="h-4 text-[10px]">AI</Badge>
+              <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
             </div>
           </Card>
         </Link>
 
         <Link href="/news">
-          <Card className="p-4 cursor-pointer hover:border-primary/30 transition-colors border border-card-border">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-amber-500/10 flex items-center justify-center">
-                <Newspaper className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center mb-3">
+                  <Zap className="w-5 h-5 text-amber-500" />
+                </div>
+                <p className="text-base font-bold">Policy updates</p>
+                <p className="text-xs text-muted-foreground mt-0.5">Rules change. Stay ahead.</p>
               </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold">News</p>
-                <p className="text-[11px] text-muted-foreground">Policy updates</p>
-              </div>
-              <Badge variant="destructive" className="h-4 text-[10px]">3 new</Badge>
+              <Badge variant="destructive" className="h-5 text-[10px] px-2">3 new</Badge>
             </div>
           </Card>
         </Link>
       </div>
 
-      {/* Stats Overview */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <Card className="p-4 border border-card-border">
-          <div className="flex items-center gap-2 text-muted-foreground mb-2">
-            <Shield className="w-3.5 h-3.5" />
-            <span className="text-xs font-medium uppercase tracking-wide">Programs Available</span>
-          </div>
-          <p className="text-2xl font-bold">335</p>
-          <p className="text-xs text-muted-foreground">Federal & state programs</p>
-        </Card>
-        <Card className="p-4 border border-card-border">
-          <div className="flex items-center gap-2 text-muted-foreground mb-2">
-            <DollarSign className="w-3.5 h-3.5" />
-            <span className="text-xs font-medium uppercase tracking-wide">Potential Value</span>
-          </div>
-          <p className="text-2xl font-bold">$5K-50K+</p>
-          <p className="text-xs text-muted-foreground">Annual benefit estimate</p>
-        </Card>
-        <Card className="p-4 border border-card-border">
-          <div className="flex items-center gap-2 text-muted-foreground mb-2">
-            <TrendingUp className="w-3.5 h-3.5" />
-            <span className="text-xs font-medium uppercase tracking-wide">States Covered</span>
-          </div>
-          <p className="text-2xl font-bold">50 + DC</p>
-          <p className="text-xs text-muted-foreground">All states covered</p>
-        </Card>
-      </div>
-
-      {/* Recent News */}
+      {/* News — Compact */}
       <div>
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-semibold">Latest Policy Updates</h2>
+          <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Latest changes</h2>
           <Link href="/news">
             <Button variant="ghost" size="sm" className="text-xs gap-1 h-7">
-              View all <ArrowRight className="w-3 h-3" />
+              See all <ArrowRight className="w-3 h-3" />
             </Button>
           </Link>
         </div>
         <div className="space-y-2">
           {recentNews.map(item => (
             <Card key={item.id} className="p-3 border border-card-border">
-              <div className="flex items-start gap-3">
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-0.5">
-                    {item.isBreaking && <Badge variant="destructive" className="h-4 text-[10px]">Breaking</Badge>}
-                    <Badge variant="secondary" className="h-4 text-[10px] capitalize">{item.category.replace("-", " ")}</Badge>
-                    <span className="text-[10px] text-muted-foreground">{new Date(item.date).toLocaleDateString()}</span>
-                  </div>
-                  <p className="text-sm font-medium leading-snug">{item.title}</p>
-                  <p className="text-xs text-muted-foreground mt-0.5 line-clamp-2">{item.summary}</p>
-                </div>
+              <div className="flex items-center gap-2 mb-0.5">
+                {item.isBreaking && <Badge variant="destructive" className="h-4 text-[10px]">New</Badge>}
+                <Badge variant="secondary" className="h-4 text-[10px] capitalize">{item.category.replace("-", " ")}</Badge>
+                <span className="text-[10px] text-muted-foreground">{new Date(item.date).toLocaleDateString()}</span>
               </div>
+              <p className="text-sm font-semibold leading-snug">{item.title}</p>
             </Card>
           ))}
         </div>

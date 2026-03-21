@@ -35,7 +35,7 @@ import { PerplexityAttribution } from "@/components/PerplexityAttribution";
 
 const NAV_ITEMS = [
   { path: "/", label: "Dashboard", icon: Home },
-  { path: "/screener", label: "Benefits Screener", icon: Search },
+  { path: "/screener", label: "Benefit Finder", icon: Search },
   { path: "/household", label: "Household", icon: Users },
   { path: "/news", label: "News & Updates", icon: Newspaper },
   { path: "/assistant", label: "AI Assistant", icon: MessageCircle },
@@ -56,12 +56,12 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
       <div className="p-4 pb-2">
         <Link href="/" onClick={onNavigate}>
           <div className="flex items-center gap-2.5 cursor-pointer">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
-              <Shield className="w-4 h-4 text-primary-foreground" />
+            <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
+              <span className="text-sm font-black text-primary-foreground">YO</span>
             </div>
             <div>
-              <span className="text-sm font-bold leading-tight block">BenefitsHub</span>
-              <span className="text-[10px] text-muted-foreground leading-tight block">Government Benefits Platform</span>
+              <span className="text-sm font-black tracking-tight leading-tight block">YoureOwed</span>
+              <span className="text-[10px] text-muted-foreground leading-tight block">Get what's yours.</span>
             </div>
           </div>
         </Link>
@@ -99,8 +99,8 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
       {/* Subscription upsell */}
       {state.user?.subscriptionTier === "free" && (
         <div className="mx-3 mb-3 p-3 rounded-lg bg-primary/5 border border-primary/10">
-          <p className="text-xs font-medium mb-1">Upgrade to Premium</p>
-          <p className="text-[10px] text-muted-foreground mb-2">Get AI assistance, detailed estimates, and more.</p>
+          <p className="text-xs font-bold mb-1">See what you're owed</p>
+          <p className="text-[10px] text-muted-foreground mb-2">Unlock all 335 programs + dollar estimates.</p>
           <Link href="/pricing" onClick={onNavigate}>
             <Button size="sm" className="w-full h-7 text-xs gap-1">
               View Plans <ChevronRight className="w-3 h-3" />
@@ -154,7 +154,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 <NavContent onNavigate={() => setMobileOpen(false)} />
               </SheetContent>
             </Sheet>
-            <span className="text-sm font-medium lg:hidden">BenefitsHub</span>
+            <span className="text-sm font-black tracking-tight lg:hidden">YoureOwed</span>
           </div>
 
           <div className="flex items-center gap-2">

@@ -169,7 +169,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Can we white-label the entire experience?",
-    a: "Yes. White-Label customers get full control over branding — logo, color scheme, fonts, domain, and email templates. Your clients will interact with a seamless, branded experience with no mention of BenefitsHub.",
+    a: "Yes. White-Label customers get full control over branding — logo, color scheme, fonts, domain, and email templates. Your clients will interact with a seamless, branded experience with no mention of YoureOwed.",
   },
 ];
 
@@ -374,7 +374,7 @@ export default function EnterprisePage() {
 
       {/* Use Cases */}
       <div>
-        <h2 className="text-base font-bold mb-1">Who Uses BenefitsHub</h2>
+        <h2 className="text-base font-bold mb-1">Who Uses YoureOwed</h2>
         <p className="text-sm text-muted-foreground mb-4">
           Organizations across sectors use benefits screening to improve outcomes
           for the people they serve.
@@ -426,7 +426,7 @@ export default function EnterprisePage() {
       <div className="text-center max-w-lg mx-auto space-y-4">
         <h2 className="text-lg font-bold">Get Started</h2>
         <p className="text-sm text-muted-foreground">
-          See how BenefitsHub can help your organization connect people with the
+          See how YoureOwed can help your organization connect people with the
           benefits they qualify for. Start with a demo or a 14-day free trial.
         </p>
 
@@ -484,7 +484,7 @@ export default function EnterprisePage() {
 
       {/* Footer note */}
       <p className="text-[10px] text-muted-foreground text-center pb-4">
-        BenefitsHub is a screening tool for directional guidance only. Results do
+        YoureOwed is a screening tool for directional guidance only. Results do
         not constitute a guarantee of eligibility or benefits. Organizations
         should verify all eligibility determinations through official channels.
       </p>
