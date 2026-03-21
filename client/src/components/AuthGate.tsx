@@ -53,16 +53,22 @@ function InlineAuth() {
     const trimmedEmail = email.trim();
     const trimmedName = mode === "signup" ? name.trim() : trimmedEmail.split("@")[0];
 
-    if (isSupabaseConfigured()) {
-      if (mode === "signup") {
-        const { error } = await supaSignUp(trimmedEmail, password, trimmedName);
-        if (error) { setLoading(false); setErrors({ email: error }); return; }
+    try {
+      if (isSupabaseConfigured()) {
+        if (mode === "signup") {
+          const { error } = await supaSignUp(trimmedEmail, password, trimmedName);
+          if (error) { setLoading(false); setErrors({ email: error }); return; }
+        } else {
+          const { error } = await supaSignIn(trimmedEmail, password);
+          if (error) { setLoading(false); setErrors({ email: error }); return; }
+        }
       } else {
-        const { error } = await supaSignIn(trimmedEmail, password);
-        if (error) { setLoading(false); setErrors({ email: error }); return; }
+        // No Supabase — local account only
+        await new Promise(r => setTimeout(r, 400));
       }
-    } else {
-      await new Promise(r => setTimeout(r, 500));
+    } catch (err) {
+      // Network error or Supabase not reachable — fall through to local account
+      console.warn("Auth service unavailable, using local account", err);
     }
 
     const user: UserProfile = {

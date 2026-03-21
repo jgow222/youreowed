@@ -36,26 +36,21 @@ export default function AuthPage() {
     const trimmedEmail = email.trim();
     const trimmedName = mode === "signup" ? name.trim() : trimmedEmail.split("@")[0];
 
-    // Try Supabase auth if configured
-    if (isSupabaseConfigured()) {
-      if (mode === "signup") {
-        const { user: authUser, error } = await supaSignUp(trimmedEmail, password, trimmedName);
-        if (error) {
-          setLoading(false);
-          setErrors({ email: error });
-          return;
+    // Try Supabase auth if configured, otherwise fall through to local account
+    try {
+      if (isSupabaseConfigured()) {
+        if (mode === "signup") {
+          const { error } = await supaSignUp(trimmedEmail, password, trimmedName);
+          if (error) { setLoading(false); setErrors({ email: error }); return; }
+        } else {
+          const { error } = await supaSignIn(trimmedEmail, password);
+          if (error) { setLoading(false); setErrors({ email: error }); return; }
         }
       } else {
-        const { user: authUser, error } = await supaSignIn(trimmedEmail, password);
-        if (error) {
-          setLoading(false);
-          setErrors({ email: error });
-          return;
-        }
+        await new Promise(r => setTimeout(r, 400));
       }
-    } else {
-      // Fallback: local session (no Supabase yet)
-      await new Promise(r => setTimeout(r, 600));
+    } catch (err) {
+      console.warn("Auth service unavailable, using local account", err);
     }
 
     const user: UserProfile = {
