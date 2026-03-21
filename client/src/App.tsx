@@ -15,6 +15,9 @@ import PricingPage from "@/pages/pricing";
 import AssistantPage from "@/pages/assistant";
 import NewsPage from "@/pages/news";
 import SettingsPage from "@/pages/settings";
+import ApplyGuidePage from "@/pages/apply-guide";
+import BlogPage from "@/pages/blog";
+import EnterprisePage from "@/pages/enterprise";
 
 const initialState: AppState = {
   user: defaultUser,
@@ -32,6 +35,9 @@ function AppRouter() {
       <Route path="/assistant" component={AssistantPage} />
       <Route path="/news" component={NewsPage} />
       <Route path="/settings" component={SettingsPage} />
+      <Route path="/apply-guide" component={ApplyGuidePage} />
+      <Route path="/blog" component={BlogPage} />
+      <Route path="/enterprise" component={EnterprisePage} />
       <Route component={NotFound} />
     </Switch>
   );

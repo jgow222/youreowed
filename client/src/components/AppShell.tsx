@@ -26,6 +26,9 @@ import {
   LogOut,
   User,
   ChevronRight,
+  BookOpen,
+  Building2,
+  FileText,
 } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { PerplexityAttribution } from "@/components/PerplexityAttribution";
@@ -36,7 +39,10 @@ const NAV_ITEMS = [
   { path: "/household", label: "Household", icon: Users },
   { path: "/news", label: "News & Updates", icon: Newspaper },
   { path: "/assistant", label: "AI Assistant", icon: MessageCircle },
+  { path: "/blog", label: "Benefits Guide", icon: BookOpen },
+  { path: "/apply-guide", label: "Apply Guides", icon: FileText },
   { path: "/pricing", label: "Subscription", icon: CreditCard },
+  { path: "/enterprise", label: "For Organizations", icon: Building2 },
   { path: "/settings", label: "Settings", icon: Settings },
 ];
 
