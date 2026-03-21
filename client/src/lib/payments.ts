@@ -35,8 +35,8 @@ export const PLANS: Record<string, PlanConfig> = {
     monthlyPrice: 4.99,
     annualPrice: 49.99,
     setupFee: 0,
-    stripeLinkMonthly: "https://buy.stripe.com/5kQ28t3GCfNW0zgfrj7Zu01",
-    stripeLinkAnnual: "https://buy.stripe.com/5kQ28t3GCfNW0zgfrj7Zu01",
+    stripeLinkMonthly: "https://buy.stripe.com/4gM28tcd8cBKdm24MF7Zu07",
+    stripeLinkAnnual: "https://buy.stripe.com/4gM28tcd8cBKdm24MF7Zu07",
   },
   pro: {
     id: "pro",
@@ -44,8 +44,8 @@ export const PLANS: Record<string, PlanConfig> = {
     monthlyPrice: 9.99,
     annualPrice: 99.99,
     setupFee: 0,
-    stripeLinkMonthly: "https://buy.stripe.com/3cI4gBelg45e0zg4MF7Zu02",
-    stripeLinkAnnual: "https://buy.stripe.com/3cI4gBelg45e0zg4MF7Zu02",
+    stripeLinkMonthly: "https://buy.stripe.com/fZuaEZ5OK31a3Ls5QJ7Zu05",
+    stripeLinkAnnual: "https://buy.stripe.com/fZuaEZ5OK31a3Ls5QJ7Zu05",
   },
   family: {
     id: "family",
@@ -53,8 +53,8 @@ export const PLANS: Record<string, PlanConfig> = {
     monthlyPrice: 14.99,
     annualPrice: 149.99,
     setupFee: 0,
-    stripeLinkMonthly: "https://buy.stripe.com/5kQfZjcd8gS0dm20wp7Zu03",
-    stripeLinkAnnual: "https://buy.stripe.com/5kQfZjcd8gS0dm20wp7Zu03",
+    stripeLinkMonthly: "https://buy.stripe.com/8x24gB4KG45efuacf77Zu06",
+    stripeLinkAnnual: "https://buy.stripe.com/8x24gB4KG45efuacf77Zu06",
   },
 };
 
