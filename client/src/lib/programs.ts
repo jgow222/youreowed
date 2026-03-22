@@ -78,6 +78,7 @@ export function getMonthlyFPL(householdSize: number): number {
 
 import { statePrograms1 } from './programs-states-1';
 import { statePrograms2 } from './programs-states-2';
+import { allNewPrograms } from './programs-new';
 
 const federalPrograms: Program[] = [
   // ─── FEDERAL PROGRAMS ─────────────────────────────────────────────────────
@@ -727,6 +728,7 @@ export const programs: Program[] = [
   ...federalPrograms,
   ...statePrograms1,
   ...statePrograms2,
+  ...allNewPrograms,
 ];
 
 // Category icons (Lucide icon names) for UI

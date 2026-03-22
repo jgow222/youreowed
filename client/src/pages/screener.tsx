@@ -89,6 +89,21 @@ interface FormData {
   paysUtilities: boolean;
   hasChildcareCosts: boolean;
   monthlyChildcareCost: string;
+
+  // New fields for expanded program matching
+  hasSchoolAgeChildren: boolean;
+  numSchoolAgeChildren: string;
+  needsChildcare: boolean;
+  numChildrenUnder13: string;
+  workedForRailroad: boolean;
+  isNativeAmerican: boolean;
+  hasHighPrescriptionCosts: boolean;
+  monthlyPrescriptionCost: string;
+  needsNursingCare: boolean;
+  propertyTaxAmount: string;
+  hasEBTCard: boolean;
+  receivesSSI: boolean;
+  receivesMedicaid: boolean;
 }
 
 const INITIAL_FORM: FormData = {
@@ -125,6 +140,21 @@ const INITIAL_FORM: FormData = {
   paysUtilities: false,
   hasChildcareCosts: false,
   monthlyChildcareCost: "",
+
+  // New fields for expanded program matching
+  hasSchoolAgeChildren: false,
+  numSchoolAgeChildren: "0",
+  needsChildcare: false,
+  numChildrenUnder13: "0",
+  workedForRailroad: false,
+  isNativeAmerican: false,
+  hasHighPrescriptionCosts: false,
+  monthlyPrescriptionCost: "",
+  needsNursingCare: false,
+  propertyTaxAmount: "",
+  hasEBTCard: false,
+  receivesSSI: false,
+  receivesMedicaid: false,
 };
 
 const STEPS = [
@@ -402,6 +432,25 @@ export default function ScreenerPage() {
         paysUtilities: form.paysUtilities,
         hasChildcareCosts: form.hasChildcareCosts,
         monthlyChildcareCost: parseNum(form.monthlyChildcareCost),
+
+        // New fields
+        hasSchoolAgeChildren: form.hasSchoolAgeChildren,
+        numSchoolAgeChildren: parseInt10(form.numSchoolAgeChildren),
+        receivesFreeLunch: false,
+        needsChildcare: form.needsChildcare,
+        numChildrenUnder13: parseInt10(form.numChildrenUnder13),
+        isHomeowner: form.housingSituation === "own",
+        paysMortgage: form.housingSituation === "own",
+        monthlyMortgage: form.housingSituation === "own" ? parseNum(form.monthlyRent) : 0,
+        hasHighPrescriptionCosts: form.hasHighPrescriptionCosts,
+        monthlyPrescriptionCost: parseNum(form.monthlyPrescriptionCost),
+        isNativeAmerican: form.isNativeAmerican,
+        workedForRailroad: form.workedForRailroad,
+        hasEBTCard: form.hasEBTCard,
+        receivesSSI: form.receivesSSI,
+        receivesMedicaid: form.receivesMedicaid,
+        needsNursingCare: form.needsNursingCare,
+        propertyTaxAmount: parseNum(form.propertyTaxAmount),
       };
 
       const evaluated = evaluateEligibility(answers);
@@ -714,6 +763,65 @@ export default function ScreenerPage() {
               checked={form.hasElderlyInHousehold}
               onChange={(v) => updateField("hasElderlyInHousehold", v)}
             />
+
+            {/* School-age children — show if has children */}
+            {hasChildren && (
+              <>
+                <SwitchRow
+                  label="Do any children attend school (K-12)?"
+                  testId="switch-school-age-children"
+                  checked={form.hasSchoolAgeChildren}
+                  onChange={(v) => updateField("hasSchoolAgeChildren", v)}
+                />
+
+                {form.hasSchoolAgeChildren && (
+                  <div>
+                    <Label htmlFor="numSchoolAgeChildren" className="text-sm font-medium mb-1.5 block">
+                      How many school-age children?
+                    </Label>
+                    <Select value={form.numSchoolAgeChildren} onValueChange={(v) => updateField("numSchoolAgeChildren", v)}>
+                      <SelectTrigger id="numSchoolAgeChildren" data-testid="select-school-age-children" className="max-w-[200px]">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {Array.from({ length: numChildrenUnder18 + 1 }, (_, i) => i).map(n => (
+                          <SelectItem key={n} value={n.toString()}>
+                            {n === 0 ? "None" : n}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+
+                <SwitchRow
+                  label="Do you need help paying for childcare?"
+                  testId="switch-needs-childcare"
+                  checked={form.needsChildcare}
+                  onChange={(v) => updateField("needsChildcare", v)}
+                />
+
+                {form.needsChildcare && (
+                  <div>
+                    <Label htmlFor="numChildrenUnder13" className="text-sm font-medium mb-1.5 block">
+                      How many children under 13 need care?
+                    </Label>
+                    <Select value={form.numChildrenUnder13} onValueChange={(v) => updateField("numChildrenUnder13", v)}>
+                      <SelectTrigger id="numChildrenUnder13" data-testid="select-children-under-13" className="max-w-[200px]">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {Array.from({ length: numChildrenUnder18 + 1 }, (_, i) => i).map(n => (
+                          <SelectItem key={n} value={n.toString()}>
+                            {n === 0 ? "None" : n}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+              </>
+            )}
           </div>
         )}
 
@@ -867,6 +975,22 @@ export default function ScreenerPage() {
                 </Select>
               </div>
             )}
+
+            {/* Railroad work history */}
+            <SwitchRow
+              label="Have you worked for a railroad?"
+              testId="switch-railroad"
+              checked={form.workedForRailroad}
+              onChange={(v) => updateField("workedForRailroad", v)}
+            />
+
+            {/* Native American / Alaska Native */}
+            <SwitchRow
+              label="Are you Native American or Alaska Native?"
+              testId="switch-native-american"
+              checked={form.isNativeAmerican}
+              onChange={(v) => updateField("isNativeAmerican", v)}
+            />
           </div>
         )}
 
@@ -933,6 +1057,36 @@ export default function ScreenerPage() {
               checked={form.hasChronicCondition}
               onChange={(v) => updateField("hasChronicCondition", v)}
               description="Such as diabetes, heart disease, asthma, or a mental health condition."
+            />
+
+            {/* Prescription costs */}
+            <SwitchRow
+              label="Do you spend a lot on prescription medications?"
+              testId="switch-prescription-costs"
+              checked={form.hasHighPrescriptionCosts}
+              onChange={(v) => updateField("hasHighPrescriptionCosts", v)}
+            />
+
+            {form.hasHighPrescriptionCosts && (
+              <div>
+                <Label htmlFor="monthlyPrescriptionCost" className="text-sm font-medium mb-1.5 block">
+                  Estimated monthly prescription cost
+                </Label>
+                <DollarInput
+                  id="monthlyPrescriptionCost"
+                  testId="input-prescription-cost"
+                  value={form.monthlyPrescriptionCost}
+                  onChange={(v) => updateField("monthlyPrescriptionCost", v)}
+                />
+              </div>
+            )}
+
+            {/* Nursing care */}
+            <SwitchRow
+              label="Does anyone in your household need nursing home-level care?"
+              testId="switch-nursing-care"
+              checked={form.needsNursingCare}
+              onChange={(v) => updateField("needsNursingCare", v)}
             />
           </div>
         )}
@@ -1066,6 +1220,49 @@ export default function ScreenerPage() {
                 )}
               </>
             )}
+
+            {/* Property tax — show if homeowner */}
+            {form.housingSituation === "own" && (
+              <div>
+                <Label htmlFor="propertyTaxAmount" className="text-sm font-medium mb-1.5 block">
+                  Annual property tax amount
+                </Label>
+                <p className="text-xs text-muted-foreground mb-1.5">
+                  Found on your property tax bill or mortgage statement.
+                </p>
+                <DollarInput
+                  id="propertyTaxAmount"
+                  testId="input-property-tax"
+                  value={form.propertyTaxAmount}
+                  onChange={(v) => updateField("propertyTaxAmount", v)}
+                />
+              </div>
+            )}
+
+            {/* EBT / SNAP card */}
+            <SwitchRow
+              label="Do you currently have an EBT/SNAP card?"
+              testId="switch-ebt-card"
+              checked={form.hasEBTCard}
+              onChange={(v) => updateField("hasEBTCard", v)}
+            />
+            <HelpHint>If you currently receive SNAP (food stamps), you have an EBT card. Some retailers offer discounts to EBT cardholders, like 50% off Amazon Prime and Walmart+.</HelpHint>
+
+            {/* SSI */}
+            <SwitchRow
+              label="Do you currently receive SSI (Supplemental Security Income)?"
+              testId="switch-receives-ssi"
+              checked={form.receivesSSI}
+              onChange={(v) => updateField("receivesSSI", v)}
+            />
+
+            {/* Medicaid */}
+            <SwitchRow
+              label="Do you currently receive Medicaid?"
+              testId="switch-receives-medicaid"
+              checked={form.receivesMedicaid}
+              onChange={(v) => updateField("receivesMedicaid", v)}
+            />
           </div>
         )}
 
@@ -1097,6 +1294,8 @@ export default function ScreenerPage() {
               </div>
               <p className="text-sm text-muted-foreground">
                 Age: {form.age || "—"} · Household: {form.householdSize || "1"} people · Children: {form.numChildrenUnder18 || "0"}
+                {form.hasSchoolAgeChildren ? ` · School-age: ${form.numSchoolAgeChildren}` : ""}
+                {form.isNativeAmerican ? " · Native American/Alaska Native" : ""}
               </p>
             </div>
 
@@ -1125,6 +1324,9 @@ export default function ScreenerPage() {
               </div>
               <p className="text-sm text-muted-foreground">
                 Insurance: {form.hasHealthInsurance ? "Yes" : "No"} · Disability: {form.hasDisability ? "Yes" : "No"} · Pregnant: {form.isPregnant ? "Yes" : "No"}
+                {form.hasHighPrescriptionCosts ? ` · High Rx costs${form.monthlyPrescriptionCost ? `: $${form.monthlyPrescriptionCost}/mo` : ""}` : ""}
+                {form.needsNursingCare ? " · Needs nursing care" : ""}
+                {form.receivesMedicaid ? " · On Medicaid" : ""}
               </p>
             </div>
 
@@ -1139,6 +1341,9 @@ export default function ScreenerPage() {
               </div>
               <p className="text-sm text-muted-foreground">
                 {form.housingSituation?.replace(/-/g, " ") || "Not specified"}{form.monthlyRent ? ` · $${form.monthlyRent}/mo` : ""}
+                {form.housingSituation === "own" && form.propertyTaxAmount ? ` · Property tax: $${form.propertyTaxAmount}/yr` : ""}
+                {form.hasEBTCard ? " · Has EBT/SNAP" : ""}
+                {form.receivesSSI ? " · Receives SSI" : ""}
               </p>
             </div>
 

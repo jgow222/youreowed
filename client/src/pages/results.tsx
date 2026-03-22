@@ -42,6 +42,7 @@ import { useElderlyMode } from "@/lib/elderly-mode";
 import { useToast } from "@/hooks/use-toast";
 import { PLANS, openCheckout, isStripeConfigured, redirectToPricing } from "@/lib/payments";
 import { MonetizationSection, FreeTrialCard } from "@/components/MonetizationCards";
+import { ConfettiExplosion, AnimatedCheckmark } from "@/components/Animations";
 
 interface ResultsPageProps {
   results: ProgramResult[];
@@ -615,10 +616,20 @@ function ShareButton({ isPaid, totalMonthlyMax, totalRelevant, isElderlyMode = f
 
 export default function ResultsPage({ results, onStartOver, userState }: ResultsPageProps) {
   const [showUnlikely, setShowUnlikely] = useState(false);
+  const [confettiFired, setConfettiFired] = useState(false);
   const { state, dispatch } = useAppState();
   const { isElderlyMode } = useElderlyMode();
   const { toast } = useToast();
   const isPaid = state.user?.subscriptionTier === "basic" || state.user?.subscriptionTier === "premium";
+
+  // Fire confetti once when results first render
+  useEffect(() => {
+    const totalRelevantCount = results.filter(r => r.status === "likely" || r.status === "maybe").length;
+    if (totalRelevantCount > 0) {
+      const t = setTimeout(() => setConfettiFired(true), 400);
+      return () => clearTimeout(t);
+    }
+  }, []);
 
   const likelyResults = results.filter(r => r.status === "likely");
   const maybeResults = results.filter(r => r.status === "maybe");
@@ -667,9 +678,13 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
         </div>
       </div>
 
+      {/* Confetti — fires when results render */}
+      <ConfettiExplosion trigger={confettiFired} />
+
       {/* Summary — always visible */}
       <div className={`mb-6 rounded-lg bg-primary/5 border border-primary/10 ${isElderlyMode ? "p-6" : "p-4"}`}>
-        <p className={`font-medium ${isElderlyMode ? "text-base" : "text-sm"}`}>
+        <p className={`font-medium flex items-center gap-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
+          {totalRelevant > 0 && <AnimatedCheckmark size={isElderlyMode ? 32 : 24} />}
           We found <span className="text-primary font-bold">{totalRelevant} program{totalRelevant !== 1 ? "s" : ""}</span> you
           may be eligible for.
         </p>

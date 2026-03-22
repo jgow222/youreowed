@@ -8,6 +8,7 @@ import { useAppState } from "@/lib/store";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { fetchNews, type NewsItem } from "@/lib/news";
 import EmailCapture from "@/components/EmailCapture";
+import { ExitIntentPopup, SocialProofToast, PulseCTA } from "@/components/Animations";
 
 export default function DashboardPage() {
   const { state } = useAppState();
@@ -94,6 +95,7 @@ export default function DashboardPage() {
 
   // ─── Standard layout ────────────────────────────────────────────────────────
   return (
+    <>
     <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8">
       {/* Hero — Bold, direct */}
       <div className="py-4">
@@ -106,9 +108,11 @@ export default function DashboardPage() {
           The average household qualifies for $5,000–$50,000+ per year in government benefits they never claim. Let's find yours in 2 minutes.
         </p>
         <Link href="/screener">
-          <Button size="lg" className="mt-4 gap-2 font-bold text-sm h-11 px-6" data-testid="button-hero-cta">
-            Check what you're owed <ArrowRight className="w-4 h-4" />
-          </Button>
+          <PulseCTA active={!state.isLoggedIn}>
+            <Button size="lg" className="mt-4 gap-2 font-bold text-sm h-11 px-6" data-testid="button-hero-cta">
+              Check what you're owed <ArrowRight className="w-4 h-4" />
+            </Button>
+          </PulseCTA>
         </Link>
 
         {/* Trust badges */}
@@ -218,6 +222,9 @@ export default function DashboardPage() {
         <EmailCapture source="dashboard" />
       )}
 
+      {/* Social Proof Toast — visible on public page for non-logged-in users */}
+      <SocialProofToast show={!state.isLoggedIn} />
+
       {/* News — Compact */}
       <div>
         <div className="flex items-center justify-between mb-3">
@@ -242,5 +249,9 @@ export default function DashboardPage() {
         </div>
       </div>
     </div>
+
+    {/* Exit Intent Popup */}
+    <ExitIntentPopup isLoggedIn={!!state.isLoggedIn} />
+    </>
   );
 }

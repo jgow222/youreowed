@@ -54,6 +54,25 @@ export interface UserAnswers {
   paysUtilities: boolean;
   hasChildcareCosts: boolean;
   monthlyChildcareCost: number;
+
+  // New fields for expanded program matching
+  hasSchoolAgeChildren: boolean;       // children ages 5-18 in school
+  numSchoolAgeChildren: number;        // how many school-age children
+  receivesFreeLunch: boolean;          // already getting free/reduced lunch
+  needsChildcare: boolean;             // needs help paying for childcare
+  numChildrenUnder13: number;          // children under 13 (for childcare)
+  isHomeowner: boolean;                // owns their home
+  paysMortgage: boolean;               // paying a mortgage
+  monthlyMortgage: number;             // mortgage amount
+  hasHighPrescriptionCosts: boolean;   // spends a lot on prescriptions
+  monthlyPrescriptionCost: number;     // monthly prescription spending
+  isNativeAmerican: boolean;           // Native American / Alaska Native
+  workedForRailroad: boolean;          // worked for a railroad
+  hasEBTCard: boolean;                 // currently has EBT/SNAP card
+  receivesSSI: boolean;               // currently receives SSI
+  receivesMedicaid: boolean;           // currently receives Medicaid
+  needsNursingCare: boolean;          // needs nursing-level care (for PACE)
+  propertyTaxAmount: number;           // annual property tax paid
 }
 
 export const DEFAULT_ANSWERS: UserAnswers = {
@@ -91,6 +110,25 @@ export const DEFAULT_ANSWERS: UserAnswers = {
   paysUtilities: false,
   hasChildcareCosts: false,
   monthlyChildcareCost: 0,
+
+  // New fields for expanded program matching
+  hasSchoolAgeChildren: false,
+  numSchoolAgeChildren: 0,
+  receivesFreeLunch: false,
+  needsChildcare: false,
+  numChildrenUnder13: 0,
+  isHomeowner: false,
+  paysMortgage: false,
+  monthlyMortgage: 0,
+  hasHighPrescriptionCosts: false,
+  monthlyPrescriptionCost: 0,
+  isNativeAmerican: false,
+  workedForRailroad: false,
+  hasEBTCard: false,
+  receivesSSI: false,
+  receivesMedicaid: false,
+  needsNursingCare: false,
+  propertyTaxAmount: 0,
 };
 
 export interface ProgramResult {
@@ -414,6 +452,100 @@ export function evaluateEligibility(answers: UserAnswers): ProgramResult[] {
       if (answers.numChildren > 0 && answers.incomeFromWork > 0) {
         score += 1;
         reasons.push(`Working families with children get the largest EITC amounts.`);
+      }
+    }
+
+    // ── Derived: isHomeowner ──
+    const isHomeowner = answers.isHomeowner || answers.housingSituation === "own";
+
+    // ── School-age children programs (NSLP, SBP, Summer EBT) ──
+    if ((program.rules.requiresChildren && (program.id.includes('school') || program.id.includes('nslp') || program.id.includes('sbp') || program.id.includes('summer-ebt')))) {
+      if (answers.hasSchoolAgeChildren && answers.numSchoolAgeChildren > 0) {
+        score += 2;
+        reasons.push("Has school-age children");
+      } else if (answers.numChildrenUnder18 > 0) {
+        score += 1;
+        reasons.push("Has children who may be school-age");
+      } else {
+        hardFail = true;
+      }
+    }
+
+    // ── Childcare programs ──
+    if (program.id.includes('childcare') || program.id.includes('ccdf')) {
+      if (answers.needsChildcare && answers.numChildrenUnder13 > 0) {
+        score += 2;
+      } else if (answers.numChildrenUnder18 > 0) {
+        score += 1;
+      }
+    }
+
+    // ── EBT discount programs (Amazon, Walmart) ──
+    if (program.id.includes('amazon') || program.id.includes('walmart')) {
+      if (answers.hasEBTCard || answers.receivesSSI || answers.receivesMedicaid) {
+        score += 3;
+        reasons.push("Has qualifying assistance");
+      } else if (incomePctFPL <= 200) {
+        score += 1;
+        reasons.push("May qualify for SNAP/Medicaid first");
+      } else {
+        hardFail = true;
+      }
+    }
+
+    // ── Prescription drug programs ──
+    if (program.id.includes('prescription') || program.id.includes('spap') || program.id.includes('epic') || program.id.includes('paad') || program.id.includes('pace-rx') || program.id.includes('pacenet')) {
+      if (answers.hasHighPrescriptionCosts && answers.age >= 65) {
+        score += 2;
+      } else if (answers.age >= 65) {
+        score += 1;
+      }
+    }
+
+    // ── Property tax relief ──
+    if (program.id.includes('property-tax') || program.id.includes('circuit-breaker')) {
+      if (isHomeowner && answers.propertyTaxAmount > 0) {
+        score += 2;
+      } else if (answers.housingSituation === "own") {
+        score += 1;
+      }
+    }
+
+    // ── Railroad retirement ──
+    if (program.id.includes('railroad')) {
+      if (answers.workedForRailroad) {
+        score += 3;
+      } else {
+        hardFail = true;
+      }
+    }
+
+    // ── Tribal programs ──
+    if (program.id.includes('tribal')) {
+      if (answers.isNativeAmerican) {
+        score += 3;
+      } else {
+        hardFail = true;
+      }
+    }
+
+    // ── PACE (nursing care) ──
+    if (program.id.includes('pace') && !program.id.includes('pacenet')) {
+      if (answers.needsNursingCare && answers.age >= 55) {
+        score += 2;
+      } else if (answers.age >= 55 && answers.hasDisability) {
+        score += 1;
+      } else {
+        hardFail = true;
+      }
+    }
+
+    // ── State EITC programs ──
+    if (program.id.includes('state-eitc')) {
+      if (answers.hasFiledTaxes && answers.incomeFromWork > 0) {
+        score += 2;
+      } else if (answers.incomeFromWork > 0) {
+        score += 1;
       }
     }
 
