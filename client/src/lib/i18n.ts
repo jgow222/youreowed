@@ -200,7 +200,7 @@ const en: TranslationDict = {
       subtitle: "You're seeing a preview. Subscribe to see all {count} programs and estimated dollar amounts.",
       cta: "See All Results",
       features: [
-        "Full screening (335+ programs)",
+        "Full screening (415+ programs)",
         "Estimated dollar amounts",
         "Application guides",
         "AI assistant",
@@ -211,7 +211,7 @@ const en: TranslationDict = {
   // Pricing page
   pricing: {
     title: "Simple, Transparent Pricing",
-    subtitle: "Screen for 335+ federal and state programs. Find benefits you're missing.",
+    subtitle: "Screen for 415+ federal and state programs. Find benefits you're missing.",
     monthly: "Monthly",
     annual: "Annual",
     twoMonthsFree: "2 months free",
@@ -282,7 +282,7 @@ const en: TranslationDict = {
   paywall: {
     title: "Upgrade to See All Results",
     subtitle: "You've used your free screening. Subscribe to unlock all {count}+ programs and estimated dollar amounts.",
-    feature1: "Full screening (335+ programs)",
+    feature1: "Full screening (415+ programs)",
     feature2: "Estimated dollar amounts for each benefit",
     feature3: "State-specific programs",
     feature4: "AI assistant to help you apply",
@@ -307,7 +307,7 @@ const en: TranslationDict = {
     heroBadge: "Partner Program",
     heroTitle: "Help Your Clients Get Every Dollar They're Owed",
     heroSubtitle:
-      "YoureOwed for Organizations gives your team powerful tools to screen clients for 335+ government benefit programs.",
+      "YoureOwed for Organizations gives your team powerful tools to screen clients for 415+ government benefit programs.",
     heroCta: "Get Started",
     heroSecondary: "Schedule a Demo",
     pricing: {
@@ -343,7 +343,7 @@ const en: TranslationDict = {
       subtitle: "Trusted by teams across the social services sector.",
       socialWorkers: "Social Workers",
       socialWorkersDesc:
-        "Screen clients during intake to maximize benefits access. Our tool checks 335+ programs in under 2 minutes.",
+        "Screen clients during intake to maximize benefits access. Our tool checks 415+ programs in under 2 minutes.",
       nonprofits: "Nonprofits",
       nonprofitsDesc:
         "Connect your community to every dollar they're owed. Track outcomes and demonstrate impact to funders.",
@@ -551,7 +551,7 @@ const es: TranslationDict = {
       subtitle: "Estás viendo una vista previa. Suscríbete para ver los {count} programas y los montos estimados en dólares.",
       cta: "Ver todos los resultados",
       features: [
-        "Evaluación completa (335+ programas)",
+        "Evaluación completa (415+ programas)",
         "Montos estimados en dólares",
         "Guías de solicitud",
         "Asistente de IA",
@@ -562,7 +562,7 @@ const es: TranslationDict = {
   // Precios
   pricing: {
     title: "Precios simples y transparentes",
-    subtitle: "Evalúa más de 335 programas federales y estatales. Encuentra los beneficios que te faltan.",
+    subtitle: "Evalúa más de 415 programas federales y estatales. Encuentra los beneficios que te faltan.",
     monthly: "Mensual",
     annual: "Anual",
     twoMonthsFree: "2 meses gratis",
@@ -633,7 +633,7 @@ const es: TranslationDict = {
   paywall: {
     title: "Actualiza para ver todos los resultados",
     subtitle: "Usaste tu evaluación gratuita. Suscríbete para desbloquear más de {count} programas y los montos estimados en dólares.",
-    feature1: "Evaluación completa (335+ programas)",
+    feature1: "Evaluación completa (415+ programas)",
     feature2: "Montos estimados en dólares para cada beneficio",
     feature3: "Programas específicos por estado",
     feature4: "Asistente de IA para ayudarte a solicitar",
@@ -658,7 +658,7 @@ const es: TranslationDict = {
     heroBadge: "Programa de socios",
     heroTitle: "Ayuda a tus clientes a obtener cada dólar que les deben",
     heroSubtitle:
-      "YoureOwed para organizaciones le brinda a tu equipo herramientas poderosas para evaluar clientes en más de 335 programas de beneficios gubernamentales.",
+      "YoureOwed para organizaciones le brinda a tu equipo herramientas poderosas para evaluar clientes en más de 415 programas de beneficios gubernamentales.",
     heroCta: "Comenzar",
     heroSecondary: "Programar una demostración",
     pricing: {
@@ -694,7 +694,7 @@ const es: TranslationDict = {
       subtitle: "De confianza para equipos de todo el sector de servicios sociales.",
       socialWorkers: "Trabajadores sociales",
       socialWorkersDesc:
-        "Evalúa a los clientes durante la admisión para maximizar el acceso a beneficios. Nuestra herramienta revisa 335+ programas en menos de 2 minutos.",
+        "Evalúa a los clientes durante la admisión para maximizar el acceso a beneficios. Nuestra herramienta revisa 415+ programas en menos de 2 minutos.",
       nonprofits: "Organizaciones sin fines de lucro",
       nonprofitsDesc:
         "Conecta a tu comunidad con cada dólar que les deben. Realiza seguimiento de resultados y demuestra impacto a los patrocinadores.",

@@ -197,7 +197,7 @@ export default function AuthPage() {
 
         {/* Trust signals */}
         <div className="text-center space-y-1">
-          <p className="text-[10px] text-muted-foreground">335 programs across all 50 states + DC</p>
+          <p className="text-[10px] text-muted-foreground">415 programs across all 50 states + DC</p>
           <p className="text-[10px] text-muted-foreground">Your data stays in your browser. We don't sell your info.</p>
         </div>
       </div>

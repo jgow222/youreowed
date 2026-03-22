@@ -32,7 +32,7 @@ import {
 // ─── Stats ───────────────────────────────────────────────────────────────────
 
 const STATS = [
-  { label: "Programs", value: "335" },
+  { label: "Programs", value: "415" },
   { label: "States + DC", value: "50" },
   { label: "Accuracy", value: "85-90%" },
   { label: "Individuals Served", value: "8,000+" },
@@ -64,7 +64,7 @@ const OFFERINGS: Offering[] = [
     features: [
       "REST API with JSON responses",
       "Real-time eligibility checks",
-      "335 programs across all 50 states",
+      "415 programs across all 50 states",
       "Webhook notifications",
       "Rate-limited to 10,000 requests/mo",
       "Standard API documentation",
@@ -339,7 +339,7 @@ export default function EnterprisePage() {
         <h2 className="text-base font-bold mb-1">Plans & Pricing</h2>
         <p className="text-sm text-muted-foreground mb-4">
           Choose the integration model that fits your organization. All plans
-          include access to 335 programs across all 50 states and DC.
+          include access to 415 programs across all 50 states and DC.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {OFFERINGS.map((offering) => (

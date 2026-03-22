@@ -477,7 +477,7 @@ function ShareButton({ isPaid, totalMonthlyMax, totalRelevant, isElderlyMode = f
   const shareUrl = "https://youreowed.org";
 
   const formattedAmount = `$${totalMonthlyMax.toLocaleString()}`;
-  const shareText = `I just found ${formattedAmount}/month in benefits I wasn't claiming. YoureOwed scanned 335 programs in minutes. Check what you're owed → ${shareUrl}`;
+  const shareText = `I just found ${formattedAmount}/month in benefits I wasn't claiming. YoureOwed scanned 415 programs in minutes. Check what you're owed → ${shareUrl}`;
   const twitterText = `I just found ${formattedAmount}/mo in government benefits I wasn't claiming 💵 YoureOwed found me ${totalRelevant} programs in minutes. Check what you're owed →`;
 
   const handleCopy = useCallback(async () => {

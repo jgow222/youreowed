@@ -69,7 +69,7 @@ const PARTNER_TIERS: PartnerTier[] = [
       "Email support (48-hour response)",
       "Client results dashboard",
       "CSV export",
-      "335+ programs covered",
+      "415+ programs covered",
     ],
     cta: "Get Started",
   },
@@ -174,7 +174,7 @@ const USE_CASES: UseCase[] = [
     icon: <HandHeart className="w-6 h-6" />,
     title: "Social Workers",
     description:
-      "Screen clients during intake to maximize benefits access. Our tool checks 335+ programs in under 2 minutes, giving you more time to focus on the people you serve.",
+      "Screen clients during intake to maximize benefits access. Our tool checks 415+ programs in under 2 minutes, giving you more time to focus on the people you serve.",
     stat: "$13,400",
     statLabel: "avg. unclaimed benefits per client",
   },
@@ -183,7 +183,7 @@ const USE_CASES: UseCase[] = [
     title: "Nonprofits",
     description:
       "Connect your community to every dollar they're owed. Track outcomes and demonstrate impact to funders with detailed reporting on benefits accessed.",
-    stat: "335+",
+    stat: "415+",
     statLabel: "programs screened per client",
   },
   {
@@ -656,7 +656,7 @@ export default function PartnersPage() {
 
         <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
           YoureOwed for Organizations gives your team powerful tools to screen
-          clients for 335+ government benefit programs — in under 2 minutes per
+          clients for 415+ government benefit programs — in under 2 minutes per
           client.
         </p>
 
@@ -703,7 +703,7 @@ export default function PartnersPage() {
           </div>
           <div className="flex items-center gap-1.5">
             <Zap className="w-3.5 h-3.5 text-primary" />
-            335+ programs
+            415+ programs
           </div>
           <div className="flex items-center gap-1.5">
             <Users className="w-3.5 h-3.5 text-primary" />
@@ -720,7 +720,7 @@ export default function PartnersPage() {
           <h2 className="text-2xl font-bold mb-2">Plans & Pricing</h2>
           <p className="text-sm text-muted-foreground">
             Choose the plan that fits your organization's size and needs. All
-            plans include access to 335+ programs and our client results
+            plans include access to 415+ programs and our client results
             dashboard.
           </p>
         </div>
@@ -738,7 +738,7 @@ export default function PartnersPage() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5">
             {[
-              "335+ programs covered",
+              "415+ programs covered",
               "All 50 states + DC",
               "Real-time eligibility data",
               "Regular rule updates",

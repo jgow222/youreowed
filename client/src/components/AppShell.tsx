@@ -304,7 +304,7 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
       {!isElderlyMode && state.user?.subscriptionTier === "free" && (
         <div className="mx-3 mb-3 p-3 rounded-lg bg-primary/5 border border-primary/10">
           <p className="text-xs font-bold mb-1">See what you're owed</p>
-          <p className="text-[10px] text-muted-foreground mb-2">Unlock all 335 programs + dollar estimates.</p>
+          <p className="text-[10px] text-muted-foreground mb-2">Unlock all 415 programs + dollar estimates.</p>
           <Link href="/pricing" onClick={onNavigate}>
             <Button size="sm" className="w-full h-7 text-xs gap-1">
               View Plans <ChevronRight className="w-3 h-3" />

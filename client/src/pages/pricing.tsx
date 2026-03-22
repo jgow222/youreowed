@@ -92,7 +92,7 @@ const TIERS: Tier[] = [
     setupFee: 0,
     maxUsers: 1,
     features: [
-      { text: "Full screening (335+ programs)", included: true },
+      { text: "Full screening (415+ programs)", included: true },
       { text: "All state-specific programs", included: true },
       { text: "Estimated dollar amounts", included: true },
       { text: "AI assistant (5 questions/day)", included: true },
@@ -526,7 +526,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "What happens after I subscribe?",
-    a: "You get instant access to all 335+ programs, estimated dollar amounts for every benefit, and the AI assistant to help you understand your options and next steps.",
+    a: "You get instant access to all 415+ programs, estimated dollar amounts for every benefit, and the AI assistant to help you understand your options and next steps.",
   },
   {
     q: "Do you offer refunds?",
@@ -602,7 +602,7 @@ export default function PricingPage() {
       <div className="text-center max-w-lg mx-auto">
         <h1 className="text-xl font-bold">Simple, Transparent Pricing</h1>
         <p className="text-sm text-muted-foreground mt-1">
-          Screen for 335+ federal and state programs. Find benefits you're
+          Screen for 415+ federal and state programs. Find benefits you're
           missing and get dollar estimates on what you could receive.
         </p>
       </div>

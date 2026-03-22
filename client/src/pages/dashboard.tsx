@@ -35,7 +35,7 @@ export default function DashboardPage() {
             <span className="text-primary money-glow">you're owed.</span>
           </h1>
           <p className="text-base text-muted-foreground mt-4 max-w-lg">
-            We check over 335 government programs to find benefits you may qualify for — free of charge.
+            We check over 415 government programs to find benefits you may qualify for — free of charge.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ export default function DashboardPage() {
       {/* Stats — Big numbers, no fluff */}
       <div className="grid grid-cols-3 gap-3">
         <Card className="p-4 border border-card-border bg-card">
-          <p className="text-3xl font-black text-primary">335</p>
+          <p className="text-3xl font-black text-primary">415</p>
           <p className="text-xs text-muted-foreground mt-1">programs we check</p>
         </Card>
         <Card className="p-4 border border-card-border bg-card">

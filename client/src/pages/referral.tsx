@@ -25,7 +25,7 @@ import { useToast } from "@/hooks/use-toast";
 // ─── Share text templates ─────────────────────────────────────────────────────
 
 const SHARE_TEXT =
-  "I just found $1,400+ in benefits I wasn't claiming. YoureOwed scans 335 federal & state programs in minutes. Check what you're owed \u2192";
+  "I just found $1,400+ in benefits I wasn't claiming. YoureOwed scans 415 federal & state programs in minutes. Check what you're owed \u2192";
 
 const SHARE_URL_BASE = "https://youreowed.org";
 
