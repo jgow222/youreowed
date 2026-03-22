@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
-import { User, Moon, Sun, Bell, Shield, Trash2, Monitor } from "lucide-react";
+import { User, Moon, Sun, Bell, Shield, Trash2, Monitor, Accessibility, CheckCircle2 } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { US_STATES } from "@/lib/states";
 import { useToast } from "@/hooks/use-toast";
@@ -141,6 +141,32 @@ export default function SettingsPage() {
             </div>
             <Switch checked={policyAlerts} onCheckedChange={setPolicyAlerts} data-testid="switch-policy-alerts" />
           </div>
+        </div>
+      </Card>
+
+      {/* Easy Mode */}
+      <Card className="p-5 border border-card-border">
+        <div className="flex items-center gap-2 mb-1">
+          <Accessibility className="w-4 h-4 text-muted-foreground" />
+          <h2 className="text-sm font-semibold">Easy Mode</h2>
+        </div>
+        <p className="text-xs text-muted-foreground mb-4">
+          Larger text, bigger buttons, and simplified navigation. Designed for users who prefer a cleaner, easier experience.
+        </p>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            {state.elderlyMode && (
+              <span className="flex items-center gap-1 text-xs text-emerald-500 font-medium">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                Easy Mode enabled
+              </span>
+            )}
+          </div>
+          <Switch
+            checked={state.elderlyMode}
+            onCheckedChange={checked => dispatch({ type: "SET_ELDERLY_MODE", payload: checked })}
+            data-testid="switch-elderly-mode"
+          />
         </div>
       </Card>
 

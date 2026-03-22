@@ -13,6 +13,7 @@ import { type UserAnswers, DEFAULT_ANSWERS, evaluateEligibility, type ProgramRes
 import ResultsPage from "./results";
 import { useAppState } from "@/lib/store";
 import { trackActivity } from "@/lib/activity";
+import { useElderlyMode } from "@/lib/elderly-mode";
 import { CheckCircle, Clock } from "lucide-react";
 
 // ─── Form state uses strings for number inputs; converted on submit ──────────
@@ -205,6 +206,7 @@ export default function ScreenerPage() {
   const [results, setResults] = useState<ProgramResult[] | null>(null);
   const [showResume, setShowResume] = useState(false);
   const [progressSaved, setProgressSaved] = useState(false);
+  const { isElderlyMode } = useElderlyMode();
 
   // Check for saved progress on mount
   useEffect(() => {
@@ -413,7 +415,7 @@ export default function ScreenerPage() {
   const progress = ((step + 1) / STEPS.length) * 100;
 
   return (
-    <div className="p-4 md:p-6 max-w-2xl mx-auto">
+    <div className={isElderlyMode ? "p-6 md:p-8 max-w-2xl mx-auto" : "p-4 md:p-6 max-w-2xl mx-auto"}>
       {/* Resume prompt */}
       {showResume && state.savedScreenerAnswers && (
         <div className="mb-4 p-4 rounded-xl border border-[#00E676]/30 bg-[#00E676]/[0.04] flex items-start gap-3" data-testid="resume-prompt">
@@ -455,20 +457,20 @@ export default function ScreenerPage() {
       {/* Progress */}
       <div className="mb-6">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-sm font-medium text-muted-foreground">
+          <span className={isElderlyMode ? "text-base font-semibold" : "text-sm font-medium text-muted-foreground"}>
             Step {step + 1} of {STEPS.length}
           </span>
-          <span className="text-sm text-muted-foreground">
+          <span className={isElderlyMode ? "text-base" : "text-sm text-muted-foreground"}>
             {STEPS[step].title}
           </span>
         </div>
-        <Progress value={progress} className="h-1.5" data-testid="progress-bar" />
+        <Progress value={progress} className={isElderlyMode ? "h-3" : "h-1.5"} data-testid="progress-bar" />
       </div>
 
       {/* Step Card */}
-      <Card className="p-6 border border-card-border" data-testid={`step-${STEPS[step].id}`}>
-        <h2 className="text-lg font-semibold mb-1">{STEPS[step].subtitle}</h2>
-        <p className="text-sm text-muted-foreground mb-6">{STEP_DESCRIPTIONS[step]}</p>
+      <Card className={isElderlyMode ? "p-8 border border-card-border" : "p-6 border border-card-border"} data-testid={`step-${STEPS[step].id}`}>
+        <h2 className={isElderlyMode ? "text-2xl font-bold mb-2" : "text-lg font-semibold mb-1"}>{STEPS[step].subtitle}</h2>
+        <p className={isElderlyMode ? "text-base text-muted-foreground mb-8" : "text-sm text-muted-foreground mb-6"}>{STEP_DESCRIPTIONS[step]}</p>
 
         {/* ── Step 0: Location ──────────────────────────────────────────── */}
         {step === 0 && (
@@ -1020,24 +1022,24 @@ export default function ScreenerPage() {
         )}
 
         {/* ── Navigation Buttons ─────────────────────────────────────────── */}
-        <div className="flex justify-between mt-8 pt-4 border-t border-border">
+        <div className={isElderlyMode ? "flex justify-between mt-10 pt-6 border-t border-border" : "flex justify-between mt-8 pt-4 border-t border-border"}>
           <Button
             variant="ghost"
             onClick={goBack}
             disabled={step === 0}
             data-testid="button-back"
-            className="gap-1.5"
+            className={isElderlyMode ? "gap-2 h-14 text-lg px-6" : "gap-1.5"}
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className={isElderlyMode ? "w-5 h-5" : "w-4 h-4"} />
             Back
           </Button>
           <Button
             onClick={goNext}
             data-testid="button-next"
-            className="gap-1.5"
+            className={isElderlyMode ? "gap-2 h-14 text-lg px-8 font-bold" : "gap-1.5"}
           >
             {step === STEPS.length - 1 ? "See My Results" : "Continue"}
-            {step < STEPS.length - 1 && <ArrowRight className="w-4 h-4" />}
+            {step < STEPS.length - 1 && <ArrowRight className={isElderlyMode ? "w-5 h-5" : "w-4 h-4"} />}
           </Button>
         </div>
       </Card>

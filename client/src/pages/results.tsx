@@ -38,6 +38,7 @@ import {
 } from "lucide-react";
 import { type ProgramResult, type EligibilityStatus } from "@/lib/eligibility";
 import { useAppState } from "@/lib/store";
+import { useElderlyMode } from "@/lib/elderly-mode";
 import { useToast } from "@/hooks/use-toast";
 import { PLANS, openCheckout, isStripeConfigured, redirectToPricing } from "@/lib/payments";
 import { MonetizationSection, FreeTrialCard } from "@/components/MonetizationCards";
@@ -147,7 +148,7 @@ function AnimatedCounter({ target, prefix = "$", suffix = "" }: { target: number
 
 // ─── Full program card (for paid users) ─────────────────────────────────────
 
-function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult; showApplyGuide?: boolean }) {
+function ProgramCard({ result, showApplyGuide = false, isElderlyMode = false }: { result: ProgramResult; showApplyGuide?: boolean; isElderlyMode?: boolean }) {
   const [expanded, setExpanded] = useState(result.status !== "unlikely");
   const config = STATUS_CONFIG[result.status];
   const StatusIcon = config.icon;
@@ -162,7 +163,7 @@ function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult
       data-testid={`card-program-${result.program.id}`}
     >
       <button
-        className="w-full text-left p-4 flex items-start gap-3 cursor-pointer"
+        className={`w-full text-left flex items-start gap-3 cursor-pointer ${isElderlyMode ? "p-6" : "p-4"}`}
         onClick={() => setExpanded(!expanded)}
         data-testid={`button-expand-${result.program.id}`}
         aria-expanded={expanded}
@@ -173,19 +174,19 @@ function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0">
-              <h3 className="text-sm font-semibold leading-tight">{result.program.name}</h3>
+              <h3 className={`font-semibold leading-tight ${isElderlyMode ? "text-base" : "text-sm"}`}>{result.program.name}</h3>
               <div className="flex items-center gap-2 mt-1 flex-wrap">
-                <Badge variant="secondary" className="text-[11px] py-0 px-1.5 h-5 gap-1">
+                <Badge variant="secondary" className={`py-0 px-1.5 gap-1 ${isElderlyMode ? "text-sm h-6" : "text-[11px] h-5"}`}>
                   <CategoryIcon className="w-3 h-3" />
                   {result.program.category}
                 </Badge>
                 {result.program.level === "state" && result.program.stateCode && (
-                  <Badge variant="outline" className="text-[11px] py-0 px-1.5 h-5">
+                  <Badge variant="outline" className={`py-0 px-1.5 ${isElderlyMode ? "text-sm h-6" : "text-[11px] h-5"}`}>
                     {result.program.stateCode}
                   </Badge>
                 )}
                 {result.status !== "unlikely" && (monthlyEst || annualEst) && (
-                  <Badge variant="outline" className="text-[11px] py-0 px-1.5 h-5 gap-0.5 border-emerald-300 dark:border-emerald-700 text-emerald-700 dark:text-emerald-400 bg-emerald-50/50 dark:bg-emerald-950/20">
+                  <Badge variant="outline" className={`py-0 px-1.5 gap-0.5 border-emerald-300 dark:border-emerald-700 text-emerald-700 dark:text-emerald-400 bg-emerald-50/50 dark:bg-emerald-950/20 ${isElderlyMode ? "text-sm h-6" : "text-[11px] h-5"}`}>
                     <DollarSign className="w-2.5 h-2.5" />
                     {monthlyEst
                       ? `${formatEstimate(monthlyEst.min, monthlyEst.max)}/mo`
@@ -198,7 +199,7 @@ function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult
               </div>
             </div>
             <div className="flex items-center gap-2 flex-shrink-0">
-              <Badge className={`text-[11px] py-0 px-2 h-5 ${config.bgColor} ${config.color} border ${config.borderColor}`}>
+              <Badge className={`py-0 px-2 ${config.bgColor} ${config.color} border ${config.borderColor} ${isElderlyMode ? "text-sm h-6" : "text-[11px] h-5"}`}>
                 {config.label}
               </Badge>
               {expanded ? <ChevronUp className="w-4 h-4 text-muted-foreground" /> : <ChevronDown className="w-4 h-4 text-muted-foreground" />}
@@ -208,35 +209,35 @@ function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult
       </button>
 
       {expanded && (
-        <div className="px-4 pb-4 pt-0 pl-12">
-          <p className="text-sm text-foreground/80 mb-2">
+        <div className={`pt-0 pl-12 ${isElderlyMode ? "px-6 pb-6" : "px-4 pb-4"}`}>
+          <p className={`text-foreground/80 mb-2 ${isElderlyMode ? "text-sm" : "text-sm"}`}>
             {result.program.description}
           </p>
           {(monthlyEst || annualEst) && result.status !== "unlikely" && (
             <div className="p-2.5 rounded-md bg-emerald-50/80 dark:bg-emerald-950/20 border border-emerald-200/50 dark:border-emerald-800/30 mb-2">
               <div className="flex items-center gap-1.5 mb-1">
                 <DollarSign className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-400">Estimated Value</span>
+                <span className={`font-semibold text-emerald-700 dark:text-emerald-400 ${isElderlyMode ? "text-sm" : "text-xs"}`}>Estimated Value</span>
               </div>
               {monthlyEst && (
-                <p className="text-xs text-foreground/70">
+                <p className={`text-foreground/70 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
                   <span className="font-semibold">{formatEstimate(monthlyEst.min, monthlyEst.max)}/month</span>
                   {monthlyEst.description && ` — ${monthlyEst.description}`}
                 </p>
               )}
               {annualEst && (
-                <p className="text-xs text-foreground/70">
+                <p className={`text-foreground/70 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
                   <span className="font-semibold">{formatEstimate(annualEst.min, annualEst.max)}/year</span>
                   {annualEst.description && ` — ${annualEst.description}`}
                 </p>
               )}
             </div>
           )}
-          <p className="text-xs text-muted-foreground mb-3 italic">
+          <p className={`text-muted-foreground mb-3 italic ${isElderlyMode ? "text-sm" : "text-xs"}`}>
             {result.explanation}
           </p>
           {result.program.notes && (
-            <p className="text-xs text-muted-foreground mb-3">
+            <p className={`text-muted-foreground mb-3 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
               <span className="font-medium">Note:</span> {result.program.notes}
             </p>
           )}
@@ -245,7 +246,7 @@ function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult
               href={result.program.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+              className={`inline-flex items-center gap-1.5 font-medium text-primary hover:underline ${isElderlyMode ? "text-base" : "text-sm"}`}
               data-testid={`link-program-${result.program.id}`}
             >
               Learn more & apply
@@ -256,7 +257,7 @@ function ProgramCard({ result, showApplyGuide = false }: { result: ProgramResult
                 href={`/apply-guide?program=${result.program.id}`}
                 data-testid={`link-apply-guide-${result.program.id}`}
               >
-                <Button variant="outline" size="sm" className="h-7 text-xs gap-1.5 px-2.5">
+                <Button variant="outline" size="sm" className={isElderlyMode ? "h-9 text-sm gap-1.5 px-3" : "h-7 text-xs gap-1.5 px-2.5"}>
                   <ShoppingCart className="w-3 h-3" />
                   Get Application Guide — $2.99
                 </Button>
@@ -338,7 +339,7 @@ function CategoryBreakdown({ results }: { results: ProgramResult[] }) {
 
 // ─── Enhanced paywall CTA with ROI ───────────────────────────────────────────
 
-function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: number; monthlyMin: number; monthlyMax: number }) {
+function PaywallCTA({ programCount, monthlyMin, monthlyMax, isElderlyMode = false }: { programCount: number; monthlyMin: number; monthlyMax: number; isElderlyMode?: boolean }) {
   const { state, dispatch } = useAppState();
   const { toast } = useToast();
   const subscriptionCost = 4.99; // $4.99/mo
@@ -349,21 +350,21 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
         <Lock className="w-5 h-5 text-primary" />
       </div>
-      <h3 className="text-base font-bold mb-1">
+      <h3 className={`font-bold mb-1 ${isElderlyMode ? "text-lg" : "text-base"}`}>
         Unlock Your {programCount} Matching Programs
       </h3>
-      <p className="text-sm text-muted-foreground mb-4 max-w-md mx-auto">
+      <p className={`text-muted-foreground mb-4 max-w-md mx-auto ${isElderlyMode ? "text-base" : "text-sm"}`}>
         See exactly which benefits you qualify for, with program names,
         descriptions, estimated dollar amounts, and direct links to apply.
       </p>
 
       {monthlyMax > 0 && (
         <div className="p-3 rounded-lg bg-emerald-50/80 dark:bg-emerald-950/30 border border-emerald-200/60 dark:border-emerald-800/40 mb-4 max-w-sm mx-auto">
-          <p className="text-xs text-muted-foreground mb-0.5">Your estimated total benefit value</p>
+          <p className={`text-muted-foreground mb-0.5 ${isElderlyMode ? "text-sm" : "text-xs"}`}>Your estimated total benefit value</p>
           <p className="text-xl font-bold text-emerald-600 dark:text-emerald-400">
             {formatEstimate(monthlyMin, monthlyMax)}<span className="text-sm font-medium">/month</span>
           </p>
-          <p className="text-xs text-muted-foreground">
+          <p className={`text-muted-foreground ${isElderlyMode ? "text-sm" : "text-xs"}`}>
             {formatEstimate(monthlyMin * 12, monthlyMax * 12)}/year
           </p>
         </div>
@@ -380,7 +381,7 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax }: { programCount: nu
 
       <div className="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-sm mx-auto">
         <Button
-          className="gap-1.5 w-full sm:w-auto"
+          className={`gap-1.5 w-full sm:w-auto ${isElderlyMode ? "h-14 text-lg" : ""}`}
           data-testid="button-paywall-subscribe"
           onClick={() => {
             if (isStripeConfigured()) {
@@ -468,7 +469,7 @@ function ShareCard({ totalMonthlyMax, programCount }: { totalMonthlyMax: number;
 
 // ─── Share button (enhanced with share card modal) ────────────────────────────
 
-function ShareButton({ isPaid, totalMonthlyMax, totalRelevant }: { isPaid: boolean; totalMonthlyMax: number; totalRelevant: number }) {
+function ShareButton({ isPaid, totalMonthlyMax, totalRelevant, isElderlyMode = false }: { isPaid: boolean; totalMonthlyMax: number; totalRelevant: number; isElderlyMode?: boolean }) {
   const { toast } = useToast();
   const [showCard, setShowCard] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -510,7 +511,7 @@ function ShareButton({ isPaid, totalMonthlyMax, totalRelevant }: { isPaid: boole
       <Button
         variant="outline"
         size="sm"
-        className="gap-1.5"
+        className={`gap-1.5 ${isElderlyMode ? "h-10 text-sm px-4" : ""}`}
         onClick={() => setShowCard(true)}
         data-testid="button-share"
       >
@@ -615,6 +616,7 @@ function ShareButton({ isPaid, totalMonthlyMax, totalRelevant }: { isPaid: boole
 export default function ResultsPage({ results, onStartOver, userState }: ResultsPageProps) {
   const [showUnlikely, setShowUnlikely] = useState(false);
   const { state, dispatch } = useAppState();
+  const { isElderlyMode } = useElderlyMode();
   const { toast } = useToast();
   const isPaid = state.user?.subscriptionTier === "basic" || state.user?.subscriptionTier === "premium";
 
@@ -645,14 +647,20 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h1 className="text-xl font-bold">Your Results</h1>
-          <p className="text-sm text-muted-foreground">Benefits you may qualify for</p>
+          <h1 className={`font-bold ${isElderlyMode ? "text-2xl" : "text-xl"}`}>Your Results</h1>
+          <p className={`text-muted-foreground ${isElderlyMode ? "text-base" : "text-sm"}`}>Benefits you may qualify for</p>
         </div>
         <div className="flex items-center gap-2">
           {totalRelevant > 0 && totalMonthlyMax > 0 && (
-            <ShareButton isPaid={isPaid} totalMonthlyMax={totalMonthlyMax} totalRelevant={totalRelevant} />
+            <ShareButton isPaid={isPaid} totalMonthlyMax={totalMonthlyMax} totalRelevant={totalRelevant} isElderlyMode={isElderlyMode} />
           )}
-          <Button variant="ghost" size="sm" onClick={onStartOver} className="gap-1.5" data-testid="button-start-over">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={onStartOver}
+            className={`gap-1.5 ${isElderlyMode ? "h-10 text-sm px-4" : ""}`}
+            data-testid="button-start-over"
+          >
             <RotateCcw className="w-3.5 h-3.5" />
             Start Over
           </Button>
@@ -660,25 +668,25 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
       </div>
 
       {/* Summary — always visible */}
-      <div className="mb-6 p-4 rounded-lg bg-primary/5 border border-primary/10">
-        <p className="text-sm font-medium">
+      <div className={`mb-6 rounded-lg bg-primary/5 border border-primary/10 ${isElderlyMode ? "p-6" : "p-4"}`}>
+        <p className={`font-medium ${isElderlyMode ? "text-base" : "text-sm"}`}>
           We found <span className="text-primary font-bold">{totalRelevant} program{totalRelevant !== 1 ? "s" : ""}</span> you
           may be eligible for.
         </p>
         {totalMonthlyMax > 0 && isPaid && (
-          <p className="text-sm mt-1">
+          <p className={`mt-1 ${isElderlyMode ? "text-base" : "text-sm"}`}>
             Estimated total value: <span className="font-bold text-emerald-600 dark:text-emerald-400">
               ${totalMonthlyMin.toLocaleString()} – ${totalMonthlyMax.toLocaleString()}/month
             </span>
           </p>
         )}
         {totalMonthlyMax > 0 && isPaid && (
-          <p className="text-xs text-muted-foreground mt-0.5">
+          <p className={`text-muted-foreground mt-0.5 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
             That's up to <span className="font-semibold">{formatEstimate(totalMonthlyMin * 12, totalMonthlyMax * 12)}/year</span> in potential benefits.
           </p>
         )}
         {isPaid && (
-          <p className="text-[10px] text-muted-foreground mt-1">
+          <p className={`text-muted-foreground mt-1 ${isElderlyMode ? "text-xs" : "text-[10px]"}`}>
             Estimates are approximate. Verify eligibility on each program's official website.
           </p>
         )}
@@ -694,13 +702,13 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
             <section className="mb-6">
               <div className="flex items-center gap-2 mb-3">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                <h2 className="text-sm font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400">
+                <h2 className={`font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
                   Likely Eligible ({likelyResults.length})
                 </h2>
               </div>
               <div className="space-y-2">
                 {likelyResults.map(r => (
-                  <ProgramCard key={r.program.id} result={r} showApplyGuide />
+                  <ProgramCard key={r.program.id} result={r} showApplyGuide isElderlyMode={isElderlyMode} />
                 ))}
               </div>
             </section>
@@ -711,13 +719,13 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
             <section className="mb-6">
               <div className="flex items-center gap-2 mb-3">
                 <HelpCircle className="w-4 h-4 text-amber-600 dark:text-amber-400" />
-                <h2 className="text-sm font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400">
+                <h2 className={`font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
                   Worth Exploring ({maybeResults.length})
                 </h2>
               </div>
               <div className="space-y-2">
                 {maybeResults.map(r => (
-                  <ProgramCard key={r.program.id} result={r} showApplyGuide />
+                  <ProgramCard key={r.program.id} result={r} showApplyGuide isElderlyMode={isElderlyMode} />
                 ))}
               </div>
             </section>
@@ -732,7 +740,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
                 data-testid="button-toggle-unlikely"
               >
                 <XCircle className="w-4 h-4 text-slate-400" />
-                <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                <h2 className={`font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
                   Unlikely ({unlikelyResults.length})
                 </h2>
                 {showUnlikely ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
@@ -740,7 +748,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
               {showUnlikely && (
                 <div className="space-y-2">
                   {unlikelyResults.map(r => (
-                    <ProgramCard key={r.program.id} result={r} />
+                    <ProgramCard key={r.program.id} result={r} isElderlyMode={isElderlyMode} />
                   ))}
                 </div>
               )}
@@ -757,12 +765,12 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
           {/* Animated value counter */}
           {totalMonthlyMax > 0 && (
             <div className="text-center mb-6 py-6 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 dark:from-emerald-950/40 dark:to-emerald-900/20 border border-emerald-200/60 dark:border-emerald-800/40" data-testid="value-counter">
-              <p className="text-sm text-muted-foreground mb-2">Your estimated monthly benefit value</p>
+              <p className={`text-muted-foreground mb-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>Your estimated monthly benefit value</p>
               <p className="text-5xl font-extrabold text-emerald-600 dark:text-emerald-400 tabular-nums tracking-tight">
                 <AnimatedCounter target={totalMonthlyMax} />
                 <span className="text-lg font-semibold text-emerald-600/70 dark:text-emerald-400/70">/mo</span>
               </p>
-              <p className="text-sm text-muted-foreground mt-2">
+              <p className={`text-muted-foreground mt-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
                 Up to <span className="font-semibold">${(totalMonthlyMax * 12).toLocaleString()}/year</span> in potential benefits
               </p>
             </div>
@@ -770,7 +778,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
 
           {/* Category breakdown */}
           <div className="mb-6">
-            <h3 className="text-sm font-semibold mb-3 flex items-center gap-2">
+            <h3 className={`font-semibold mb-3 flex items-center gap-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
               <Info className="w-4 h-4 text-muted-foreground" />
               Programs by Category
             </h3>
@@ -782,11 +790,11 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
             <section className="mb-4">
               <div className="flex items-center gap-2 mb-3">
                 <Sparkles className="w-4 h-4 text-primary" />
-                <h2 className="text-sm font-semibold uppercase tracking-wide text-primary">
+                <h2 className={`font-semibold uppercase tracking-wide text-primary ${isElderlyMode ? "text-base" : "text-sm"}`}>
                   Free Preview
                 </h2>
               </div>
-              <ProgramCard result={freeSampleResult} />
+              <ProgramCard result={freeSampleResult} isElderlyMode={isElderlyMode} />
             </section>
           )}
 
@@ -797,7 +805,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
                 <div className="w-full border-t border-border" />
               </div>
               <div className="relative flex justify-center">
-                <span className="bg-background px-4 py-1.5 text-sm font-medium text-muted-foreground flex items-center gap-2 rounded-full border border-border">
+                <span className={`bg-background px-4 py-1.5 font-medium text-muted-foreground flex items-center gap-2 rounded-full border border-border ${isElderlyMode ? "text-base" : "text-sm"}`}>
                   <Lock className="w-3.5 h-3.5" />
                   Subscribe to see your remaining {remainingLockedCount} program{remainingLockedCount !== 1 ? "s" : ""}
                 </span>
@@ -832,6 +840,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
               programCount={totalRelevant}
               monthlyMin={totalMonthlyMin}
               monthlyMax={totalMonthlyMax}
+              isElderlyMode={isElderlyMode}
             />
           </div>
         </>
@@ -841,8 +850,8 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
       {totalRelevant === 0 && (
         <div className="text-center py-12">
           <Search className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-          <h3 className="text-lg font-semibold mb-2">No strong matches found</h3>
-          <p className="text-sm text-muted-foreground max-w-md mx-auto">
+          <h3 className={`font-semibold mb-2 ${isElderlyMode ? "text-xl" : "text-lg"}`}>No strong matches found</h3>
+          <p className={`text-muted-foreground max-w-md mx-auto ${isElderlyMode ? "text-base" : "text-sm"}`}>
             Based on your answers, we didn't find programs with a high likelihood of eligibility.
             Try adjusting your answers or explore different criteria.
           </p>
@@ -855,11 +864,11 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
       </div>
 
       {/* Disclaimer */}
-      <Card className="mt-6 p-4 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20">
+      <Card className={`mt-6 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20 ${isElderlyMode ? "p-6" : "p-4"}`}>
         <div className="flex gap-3">
           <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-          <div className="text-xs text-foreground/80 space-y-2">
-            <p className="font-semibold text-sm">Important Disclaimer</p>
+          <div className={`text-foreground/80 space-y-2 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
+            <p className={`font-semibold ${isElderlyMode ? "text-base" : "text-sm"}`}>Important Disclaimer</p>
             <p>
               This tool is for <span className="font-semibold">informational purposes only</span>.
               It is <span className="font-semibold">not legal advice</span> and does not guarantee eligibility.

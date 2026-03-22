@@ -27,7 +27,7 @@ export function isSupabaseConfigured(): boolean {
 
 // ─── Auth Functions ─────────────────────────────────────────────────────────
 
-export async function signUp(email: string, password: string, name: string) {
+export async function signUp(email: string, password: string, name: string, ageRange?: string) {
   if (!supabase) return { user: null, error: "Supabase not configured" };
 
   const { data, error } = await supabase.auth.signUp({
@@ -48,6 +48,7 @@ export async function signUp(email: string, password: string, name: string) {
       name: name,
       subscription_tier: "free",
       referral_code: "YO-" + Math.random().toString(36).substring(2, 8).toUpperCase(),
+      age_range: ageRange || null,
       created_at: new Date().toISOString(),
     });
   }

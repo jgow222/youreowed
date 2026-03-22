@@ -27,6 +27,7 @@ export interface UserProfile {
   subscriptionTier: "free" | "basic" | "premium";
   referralCode: string;
   theme: "light" | "dark" | "system";
+  ageRange?: "18-29" | "30-44" | "45-59" | "60-74" | "75+";
 }
 
 // Screener progress — saved form data for resume functionality
@@ -41,6 +42,7 @@ export interface AppState {
   isLoggedIn: boolean;
   theme: "light" | "dark" | "system";
   savedScreenerAnswers: SavedScreenerAnswers | null;
+  elderlyMode: boolean;
 }
 
 export const defaultUser: UserProfile = {
@@ -70,7 +72,7 @@ export const AppContext = createContext<{
   state: AppState;
   dispatch: (action: AppAction) => void;
 }>({
-  state: { user: null, isLoggedIn: false, theme: "system" },
+  state: { user: null, isLoggedIn: false, theme: "system", savedScreenerAnswers: null, elderlyMode: false },
   dispatch: () => {},
 });
 
@@ -83,7 +85,8 @@ export type AppAction =
   | { type: "REMOVE_MEMBER"; payload: string }
   | { type: "UPDATE_MEMBER"; payload: { id: string; data: Partial<HouseholdMember> } }
   | { type: "SAVE_SCREENER_PROGRESS"; payload: SavedScreenerAnswers }
-  | { type: "CLEAR_SCREENER_PROGRESS" };
+  | { type: "CLEAR_SCREENER_PROGRESS" }
+  | { type: "SET_ELDERLY_MODE"; payload: boolean };
 
 export function appReducer(state: AppState, action: AppAction): AppState {
   switch (action.type) {
@@ -129,6 +132,8 @@ export function appReducer(state: AppState, action: AppAction): AppState {
       return { ...state, savedScreenerAnswers: action.payload };
     case "CLEAR_SCREENER_PROGRESS":
       return { ...state, savedScreenerAnswers: null };
+    case "SET_ELDERLY_MODE":
+      return { ...state, elderlyMode: action.payload };
     default:
       return state;
   }

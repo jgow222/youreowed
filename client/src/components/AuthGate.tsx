@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRight, Mail, Lock, User, Eye, EyeOff, Shield } from "lucide-react";
+import { ArrowRight, Mail, Lock, User, Eye, EyeOff, Shield, ChevronDown } from "lucide-react";
 import { useAppState, type UserProfile } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
 import {
@@ -39,6 +39,7 @@ function InlineAuth() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [ageRange, setAgeRange] = useState<"" | "18-29" | "30-44" | "45-59" | "60-74" | "75+">("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -65,7 +66,7 @@ function InlineAuth() {
     try {
       if (isSupabaseConfigured()) {
         if (mode === "signup") {
-          const { user: authUser, error } = await supaSignUp(trimmedEmail, password, trimmedName);
+          const { user: authUser, error } = await supaSignUp(trimmedEmail, password, trimmedName, ageRange || undefined);
           if (error) { setLoading(false); setErrors({ email: error }); return; }
           supaUserId = authUser?.id || null;
         } else {
@@ -114,9 +115,20 @@ function InlineAuth() {
       subscriptionTier: tier,
       referralCode: (supaProfile?.referral_code as string) || "YO-" + Math.random().toString(36).substring(2, 8).toUpperCase(),
       theme: "dark",
+      ...(mode === "signup" && ageRange ? { ageRange } : {}),
     };
 
     dispatch({ type: "LOGIN", payload: user });
+
+    // Auto-enable Easy Mode for older age groups
+    if (mode === "signup" && (ageRange === "60-74" || ageRange === "75+")) {
+      dispatch({ type: "SET_ELDERLY_MODE", payload: true });
+      toast({
+        title: "Easy Mode enabled",
+        description: "We've enabled Easy Mode for a simpler experience. You can change this anytime in Settings.",
+      });
+    }
+
     setLoading(false);
 
     // Track signup/login activity for reminder emails
@@ -149,20 +161,45 @@ function InlineAuth() {
         <Card className="p-5 border border-card-border">
           <div className="space-y-3">
             {mode === "signup" && (
-              <div>
-                <Label className="text-xs font-medium mb-1 block">Name</Label>
-                <div className="relative">
-                  <User className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground" />
-                  <Input
-                    placeholder="Your name"
-                    value={name}
-                    onChange={e => { setName(e.target.value); setErrors(p => ({ ...p, name: "" })); }}
-                    className={`h-9 text-sm pl-9 ${errors.name ? "border-destructive" : ""}`}
-                    data-testid="input-gate-name"
-                  />
+              <>
+                <div>
+                  <Label className="text-xs font-medium mb-1 block">Name</Label>
+                  <div className="relative">
+                    <User className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground" />
+                    <Input
+                      placeholder="Your name"
+                      value={name}
+                      onChange={e => { setName(e.target.value); setErrors(p => ({ ...p, name: "" })); }}
+                      className={`h-9 text-sm pl-9 ${errors.name ? "border-destructive" : ""}`}
+                      data-testid="input-gate-name"
+                    />
+                  </div>
+                  {errors.name && <p className="text-[10px] text-destructive mt-0.5">{errors.name}</p>}
                 </div>
-                {errors.name && <p className="text-[10px] text-destructive mt-0.5">{errors.name}</p>}
-              </div>
+
+                <div>
+                  <Label className="text-xs font-medium mb-1 block">
+                    Age Range{" "}
+                    <span className="text-muted-foreground font-normal">(helps us find the right programs)</span>
+                  </Label>
+                  <div className="relative">
+                    <select
+                      value={ageRange}
+                      onChange={e => setAgeRange(e.target.value as typeof ageRange)}
+                      className="w-full h-9 text-sm rounded-md border border-input bg-background px-3 pr-8 text-foreground appearance-none focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-1"
+                      data-testid="select-gate-age-range"
+                    >
+                      <option value="">Select age range</option>
+                      <option value="18-29">18–29</option>
+                      <option value="30-44">30–44</option>
+                      <option value="45-59">45–59</option>
+                      <option value="60-74">60–74</option>
+                      <option value="75+">75+</option>
+                    </select>
+                    <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground pointer-events-none" />
+                  </div>
+                </div>
+              </>
             )}
 
             <div>

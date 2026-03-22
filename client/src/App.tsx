@@ -34,6 +34,7 @@ const initialState: AppState = {
   isLoggedIn: false,
   theme: "dark",
   savedScreenerAnswers: null,
+  elderlyMode: false,
 };
 
 function AppRouter() {
@@ -98,9 +99,16 @@ function App() {
           }],
           subscriptionTier: tier,
           referralCode: (profile?.referral_code as string) || "YO-" + Math.random().toString(36).substring(2, 8).toUpperCase(),
+          ageRange: (profile?.age_range as UserProfile["ageRange"]) || undefined,
           theme: "dark",
         };
         dispatch({ type: "LOGIN", payload: user });
+
+        // Auto-enable elderly mode for 60+ users
+        const age = user.ageRange;
+        if (age === "60-74" || age === "75+") {
+          dispatch({ type: "SET_ELDERLY_MODE", payload: true });
+        }
       }
     });
 

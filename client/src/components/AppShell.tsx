@@ -36,6 +36,7 @@ import {
   Handshake,
 } from "lucide-react";
 import { useAppState } from "@/lib/store";
+import { useElderlyMode } from "@/lib/elderly-mode";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 
@@ -56,9 +57,17 @@ const NAV_ITEMS = [
   { path: "/settings", label: "Settings", icon: Settings },
 ];
 
+// Paths shown in elderly / easy mode (simplified nav)
+const ELDERLY_NAV_PATHS = new Set(["/", "/screener", "/tracker", "/news", "/settings"]);
+
 function NavContent({ onNavigate }: { onNavigate?: () => void }) {
   const [location] = useLocation();
   const { state } = useAppState();
+  const { isElderlyMode } = useElderlyMode();
+
+  const visibleItems = isElderlyMode
+    ? NAV_ITEMS.filter((item) => ELDERLY_NAV_PATHS.has(item.path))
+    : NAV_ITEMS;
 
   return (
     <div className="flex flex-col h-full">
@@ -79,25 +88,27 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
 
       {/* Nav links */}
       <nav className="flex-1 px-3 py-2 space-y-0.5 overflow-y-auto">
-        {NAV_ITEMS.map((item) => {
+        {visibleItems.map((item) => {
           const isActive = location === item.path || (item.path !== "/" && location.startsWith(item.path));
           const Icon = item.icon;
           return (
             <Link key={item.path} href={item.path} onClick={onNavigate}>
               <div
-                className={`flex items-center gap-2.5 px-3 py-2 rounded-md text-sm cursor-pointer transition-colors ${
+                className={`flex items-center gap-2.5 rounded-md cursor-pointer transition-colors ${
+                  isElderlyMode ? "px-4 py-3 text-base" : "px-3 py-2 text-sm"
+                } ${
                   isActive
                     ? "bg-primary/10 text-primary font-medium"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                 }`}
                 data-testid={`nav-${item.path.replace("/", "") || "dashboard"}`}
               >
-                <Icon className="w-4 h-4 flex-shrink-0" />
+                <Icon className={isElderlyMode ? "w-5 h-5 flex-shrink-0" : "w-4 h-4 flex-shrink-0"} />
                 <span>{item.label}</span>
                 {item.path === "/news" && (
                   <Badge variant="destructive" className="ml-auto h-4 px-1.5 text-[10px]">3</Badge>
                 )}
-                {item.path === "/assistant" && (
+                {item.path === "/assistant" && !isElderlyMode && (
                   <Badge variant="secondary" className="ml-auto h-4 px-1.5 text-[10px]">AI</Badge>
                 )}
               </div>
@@ -106,8 +117,8 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
         })}
       </nav>
 
-      {/* Subscription upsell */}
-      {state.user?.subscriptionTier === "free" && (
+      {/* Subscription upsell — hide in elderly mode to reduce clutter */}
+      {!isElderlyMode && state.user?.subscriptionTier === "free" && (
         <div className="mx-3 mb-3 p-3 rounded-lg bg-primary/5 border border-primary/10">
           <p className="text-xs font-bold mb-1">See what you're owed</p>
           <p className="text-[10px] text-muted-foreground mb-2">Unlock all 335 programs + dollar estimates.</p>
@@ -130,6 +141,7 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { state, dispatch } = useAppState();
+  const { isElderlyMode } = useElderlyMode();
 
   const toggleTheme = () => {
     const next = state.theme === "dark" ? "light" : "dark";
@@ -165,6 +177,12 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               </SheetContent>
             </Sheet>
             <span className="text-sm font-black tracking-tight lg:hidden">YoureOwed</span>
+            {/* Easy Mode badge — shown in top bar when elderly mode is on */}
+            {isElderlyMode && (
+              <Badge className="bg-green-600 hover:bg-green-600 text-white text-xs px-2 py-0.5 rounded-full font-semibold">
+                Easy Mode
+              </Badge>
+            )}
           </div>
 
           <div className="flex items-center gap-2">

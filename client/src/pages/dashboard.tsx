@@ -3,13 +3,15 @@ import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight } from "lucide-react";
+import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight, Phone } from "lucide-react";
 import { useAppState } from "@/lib/store";
+import { useElderlyMode } from "@/lib/elderly-mode";
 import { fetchNews, type NewsItem } from "@/lib/news";
 import EmailCapture from "@/components/EmailCapture";
 
 export default function DashboardPage() {
   const { state } = useAppState();
+  const { isElderlyMode } = useElderlyMode();
   const [recentNews, setRecentNews] = useState<NewsItem[]>([]);
 
   useEffect(() => {
@@ -20,6 +22,77 @@ export default function DashboardPage() {
   }, []);
   const memberCount = state.user?.householdMembers.length || 1;
 
+  // ─── Elderly / Easy Mode layout ────────────────────────────────────────────
+  if (isElderlyMode) {
+    return (
+      <div className="p-6 md:p-10 max-w-2xl mx-auto space-y-8">
+        {/* Hero */}
+        <div className="py-4">
+          <p className="text-base font-medium text-primary tracking-wide uppercase mb-3">Welcome back</p>
+          <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight" data-testid="text-welcome">
+            Find out what benefits<br />
+            <span className="text-primary money-glow">you're owed.</span>
+          </h1>
+          <p className="text-base text-muted-foreground mt-4 max-w-lg">
+            We check over 335 government programs to find benefits you may qualify for — free of charge.
+          </p>
+        </div>
+
+        {/* Two big action cards */}
+        <div className="space-y-4">
+          {/* Card 1: Check My Benefits */}
+          <Link href="/screener">
+            <Card className="w-full p-8 cursor-pointer border-2 border-primary/30 bg-primary/[0.04] hover:bg-primary/[0.08] transition-colors" data-testid="card-elderly-screener">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Search className="w-7 h-7 text-primary" />
+                  </div>
+                  <p className="text-xl font-bold mb-2">Check My Benefits</p>
+                  <p className="text-base text-muted-foreground">Answer a few simple questions to see which programs you may qualify for.</p>
+                </div>
+                <ChevronRight className="w-8 h-8 text-primary flex-shrink-0" />
+              </div>
+              <div className="mt-6">
+                <Button className="h-16 text-xl px-10 gap-2 font-bold w-full sm:w-auto" data-testid="button-hero-cta">
+                  Get Started <ArrowRight className="w-5 h-5" />
+                </Button>
+              </div>
+            </Card>
+          </Link>
+
+          {/* Card 2: News & Updates */}
+          <Link href="/news">
+            <Card className="w-full p-8 cursor-pointer border border-card-border hover:border-primary/20 transition-colors" data-testid="card-elderly-news">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center mb-4">
+                    <Newspaper className="w-7 h-7 text-amber-500" />
+                  </div>
+                  <p className="text-xl font-bold mb-2">News & Updates</p>
+                  <p className="text-base text-muted-foreground">Stay up to date on the latest changes to benefit programs that may affect you.</p>
+                </div>
+                <div className="flex flex-col items-end gap-2">
+                  <Badge variant="destructive" className="text-sm px-3 py-1">3 new</Badge>
+                  <ChevronRight className="w-8 h-8 text-muted-foreground" />
+                </div>
+              </div>
+            </Card>
+          </Link>
+        </div>
+
+        {/* Help text */}
+        <div className="pt-4 pb-2 border-t border-border">
+          <p className="text-base text-muted-foreground flex items-start gap-2">
+            <Phone className="w-5 h-5 flex-shrink-0 mt-0.5 text-muted-foreground/60" />
+            Need help? Call a family member or visit your local benefits office.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Standard layout ────────────────────────────────────────────────────────
   return (
     <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8">
       {/* Hero — Bold, direct */}

@@ -168,3 +168,6 @@ alter table public.email_nudges_sent enable row level security;
 create policy "Service key only"
   on public.email_nudges_sent for all
   using (false);
+
+-- Add age range column to user profiles
+alter table public.user_profiles add column if not exists age_range text default null;
