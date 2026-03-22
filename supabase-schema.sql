@@ -152,3 +152,19 @@ select
   extract(day from now() - up.created_at)::int as days_since_signup
 from public.user_profiles up
 where up.email is not null;
+
+-- Track which reminder emails have been sent (prevents duplicates)
+create table if not exists public.email_nudges_sent (
+  id bigint primary key generated always as identity,
+  user_id uuid references public.user_profiles(id) on delete cascade,
+  email text not null,
+  nudge_type text not null check (nudge_type in ('no_scan', 'abandoned', 'no_pay')),
+  sent_at timestamp with time zone default now()
+);
+
+alter table public.email_nudges_sent enable row level security;
+
+-- Only the service key (webhook/API) can read/write this table
+create policy "Service key only"
+  on public.email_nudges_sent for all
+  using (false);
