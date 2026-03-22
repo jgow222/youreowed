@@ -156,6 +156,11 @@ function NavSectionGroup({
     );
   }
 
+  // Collect badges from child items to show on the section header when collapsed
+  const sectionBadges = section.items
+    .filter((item) => item.badge)
+    .map((item) => ({ badge: item.badge!, variant: item.badgeVariant || "secondary" as const, label: item.label }));
+
   return (
     <div>
       <button
@@ -165,6 +170,21 @@ function NavSectionGroup({
       >
         <SectionIcon className="w-3.5 h-3.5" />
         <span className="flex-1 text-left">{section.label}</span>
+        {/* Show child badges on section header when collapsed */}
+        {!open && sectionBadges.length > 0 && (
+          <div className="flex items-center gap-1">
+            {sectionBadges.map((b, i) => (
+              <Badge
+                key={i}
+                variant={b.variant}
+                className="h-4 px-1.5 text-[10px]"
+                title={b.label}
+              >
+                {b.badge}
+              </Badge>
+            ))}
+          </div>
+        )}
         <ChevronDown
           className={`w-3 h-3 transition-transform duration-200 ${open ? "rotate-0" : "-rotate-90"}`}
         />
