@@ -41,7 +41,7 @@ import { useAppState } from "@/lib/store";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { useToast } from "@/hooks/use-toast";
 import { PLANS, openCheckout, isStripeConfigured, redirectToPricing } from "@/lib/payments";
-import { MonetizationSection, FreeTrialCard } from "@/components/MonetizationCards";
+import { FreeTrialCard, SidebarMonetization, MobileOffersStrip } from "@/components/MonetizationCards";
 import { ConfettiExplosion, AnimatedCheckmark } from "@/components/Animations";
 
 interface ResultsPageProps {
@@ -654,7 +654,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
   const remainingLockedCount = totalRelevant - (freeSampleResult ? 1 : 0);
 
   return (
-    <div className="p-4 md:p-6 max-w-3xl mx-auto">
+    <div className="p-4 md:p-6 max-w-6xl mx-auto">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>
@@ -681,221 +681,235 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
       {/* Confetti — fires when results render */}
       <ConfettiExplosion trigger={confettiFired} />
 
-      {/* Summary — always visible */}
-      <div className={`mb-6 rounded-lg bg-primary/5 border border-primary/10 ${isElderlyMode ? "p-6" : "p-4"}`}>
-        <p className={`font-medium flex items-center gap-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-          {totalRelevant > 0 && <AnimatedCheckmark size={isElderlyMode ? 32 : 24} />}
-          We found <span className="text-primary font-bold">{totalRelevant} program{totalRelevant !== 1 ? "s" : ""}</span> you
-          may be eligible for.
-        </p>
-        {totalMonthlyMax > 0 && isPaid && (
-          <p className={`mt-1 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-            Estimated total value: <span className="font-bold text-emerald-600 dark:text-emerald-400">
-              ${totalMonthlyMin.toLocaleString()} – ${totalMonthlyMax.toLocaleString()}/month
-            </span>
-          </p>
-        )}
-        {totalMonthlyMax > 0 && isPaid && (
-          <p className={`text-muted-foreground mt-0.5 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
-            That's up to <span className="font-semibold">{formatEstimate(totalMonthlyMin * 12, totalMonthlyMax * 12)}/year</span> in potential benefits.
-          </p>
-        )}
-        {isPaid && (
-          <p className={`text-muted-foreground mt-1 ${isElderlyMode ? "text-xs" : "text-[10px]"}`}>
-            Estimates are approximate. Verify eligibility on each program's official website.
-          </p>
-        )}
+      {/* Mobile: offers strip at top (hidden on lg+) */}
+      <div className="lg:hidden mb-4">
+        <MobileOffersStrip results={results} />
       </div>
 
-      {/* ═══════════════════════════════════════════════════════════════════════ */}
-      {/*  PAID VIEW — show full program details                                */}
-      {/* ═══════════════════════════════════════════════════════════════════════ */}
-      {isPaid && (
-        <>
-          {/* Likely Results */}
-          {likelyResults.length > 0 && (
-            <section className="mb-6">
-              <div className="flex items-center gap-2 mb-3">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                <h2 className={`font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                  Likely Eligible ({likelyResults.length})
-                </h2>
-              </div>
-              <div className="space-y-2">
-                {likelyResults.map(r => (
-                  <ProgramCard key={r.program.id} result={r} showApplyGuide isElderlyMode={isElderlyMode} />
-                ))}
-              </div>
-            </section>
+      {/* Two-column layout: main results + desktop sidebar */}
+      <div className="flex gap-6">
+        {/* Main results column */}
+        <div className="flex-1 min-w-0 max-w-3xl">
+
+          {/* Summary — always visible */}
+          <div className={`mb-6 rounded-lg bg-primary/5 border border-primary/10 ${isElderlyMode ? "p-6" : "p-4"}`}>
+            <p className={`font-medium flex items-center gap-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
+              {totalRelevant > 0 && <AnimatedCheckmark size={isElderlyMode ? 32 : 24} />}
+              We found <span className="text-primary font-bold">{totalRelevant} program{totalRelevant !== 1 ? "s" : ""}</span> you
+              may be eligible for.
+            </p>
+            {totalMonthlyMax > 0 && isPaid && (
+              <p className={`mt-1 ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                Estimated total value: <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                  ${totalMonthlyMin.toLocaleString()} – ${totalMonthlyMax.toLocaleString()}/month
+                </span>
+              </p>
+            )}
+            {totalMonthlyMax > 0 && isPaid && (
+              <p className={`text-muted-foreground mt-0.5 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
+                That's up to <span className="font-semibold">{formatEstimate(totalMonthlyMin * 12, totalMonthlyMax * 12)}/year</span> in potential benefits.
+              </p>
+            )}
+            {isPaid && (
+              <p className={`text-muted-foreground mt-1 ${isElderlyMode ? "text-xs" : "text-[10px]"}`}>
+                Estimates are approximate. Verify eligibility on each program's official website.
+              </p>
+            )}
+          </div>
+
+          {/* ═════════════════════════════════════════════════════════════════ */}
+          {/*  PAID VIEW — show full program details                          */}
+          {/* ═════════════════════════════════════════════════════════════════ */}
+          {isPaid && (
+            <>
+              {/* Likely Results */}
+              {likelyResults.length > 0 && (
+                <section className="mb-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                    <h2 className={`font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                      Likely Eligible ({likelyResults.length})
+                    </h2>
+                  </div>
+                  <div className="space-y-2">
+                    {likelyResults.map(r => (
+                      <ProgramCard key={r.program.id} result={r} showApplyGuide isElderlyMode={isElderlyMode} />
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* Maybe Results */}
+              {maybeResults.length > 0 && (
+                <section className="mb-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <HelpCircle className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                    <h2 className={`font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                      Worth Exploring ({maybeResults.length})
+                    </h2>
+                  </div>
+                  <div className="space-y-2">
+                    {maybeResults.map(r => (
+                      <ProgramCard key={r.program.id} result={r} showApplyGuide isElderlyMode={isElderlyMode} />
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* Unlikely Results */}
+              {unlikelyResults.length > 0 && (
+                <section className="mb-6">
+                  <button
+                    className="flex items-center gap-2 mb-3 cursor-pointer group"
+                    onClick={() => setShowUnlikely(!showUnlikely)}
+                    data-testid="button-toggle-unlikely"
+                  >
+                    <XCircle className="w-4 h-4 text-slate-400" />
+                    <h2 className={`font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                      Unlikely ({unlikelyResults.length})
+                    </h2>
+                    {showUnlikely ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
+                  </button>
+                  {showUnlikely && (
+                    <div className="space-y-2">
+                      {unlikelyResults.map(r => (
+                        <ProgramCard key={r.program.id} result={r} isElderlyMode={isElderlyMode} />
+                      ))}
+                    </div>
+                  )}
+                </section>
+              )}
+            </>
           )}
 
-          {/* Maybe Results */}
-          {maybeResults.length > 0 && (
-            <section className="mb-6">
-              <div className="flex items-center gap-2 mb-3">
-                <HelpCircle className="w-4 h-4 text-amber-600 dark:text-amber-400" />
-                <h2 className={`font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                  Worth Exploring ({maybeResults.length})
-                </h2>
-              </div>
-              <div className="space-y-2">
-                {maybeResults.map(r => (
-                  <ProgramCard key={r.program.id} result={r} showApplyGuide isElderlyMode={isElderlyMode} />
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Unlikely Results */}
-          {unlikelyResults.length > 0 && (
-            <section className="mb-6">
-              <button
-                className="flex items-center gap-2 mb-3 cursor-pointer group"
-                onClick={() => setShowUnlikely(!showUnlikely)}
-                data-testid="button-toggle-unlikely"
-              >
-                <XCircle className="w-4 h-4 text-slate-400" />
-                <h2 className={`font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                  Unlikely ({unlikelyResults.length})
-                </h2>
-                {showUnlikely ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
-              </button>
-              {showUnlikely && (
-                <div className="space-y-2">
-                  {unlikelyResults.map(r => (
-                    <ProgramCard key={r.program.id} result={r} isElderlyMode={isElderlyMode} />
-                  ))}
+          {/* ═════════════════════════════════════════════════════════════════ */}
+          {/*  FREE VIEW — animated counter, category breakdown, sample, paywall */}
+          {/* ═════════════════════════════════════════════════════════════════ */}
+          {!isPaid && totalRelevant > 0 && (
+            <>
+              {/* Animated value counter */}
+              {totalMonthlyMax > 0 && (
+                <div className="text-center mb-6 py-6 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 dark:from-emerald-950/40 dark:to-emerald-900/20 border border-emerald-200/60 dark:border-emerald-800/40" data-testid="value-counter">
+                  <p className={`text-muted-foreground mb-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>Your estimated monthly benefit value</p>
+                  <p className="text-5xl font-extrabold text-emerald-600 dark:text-emerald-400 tabular-nums tracking-tight">
+                    <AnimatedCounter target={totalMonthlyMax} />
+                    <span className="text-lg font-semibold text-emerald-600/70 dark:text-emerald-400/70">/mo</span>
+                  </p>
+                  <p className={`text-muted-foreground mt-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                    Up to <span className="font-semibold">${(totalMonthlyMax * 12).toLocaleString()}/year</span> in potential benefits
+                  </p>
                 </div>
               )}
-            </section>
-          )}
-        </>
-      )}
 
-      {/* ═══════════════════════════════════════════════════════════════════════ */}
-      {/*  FREE VIEW — animated counter, category breakdown, sample, paywall    */}
-      {/* ═══════════════════════════════════════════════════════════════════════ */}
-      {!isPaid && totalRelevant > 0 && (
-        <>
-          {/* Animated value counter */}
-          {totalMonthlyMax > 0 && (
-            <div className="text-center mb-6 py-6 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 dark:from-emerald-950/40 dark:to-emerald-900/20 border border-emerald-200/60 dark:border-emerald-800/40" data-testid="value-counter">
-              <p className={`text-muted-foreground mb-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>Your estimated monthly benefit value</p>
-              <p className="text-5xl font-extrabold text-emerald-600 dark:text-emerald-400 tabular-nums tracking-tight">
-                <AnimatedCounter target={totalMonthlyMax} />
-                <span className="text-lg font-semibold text-emerald-600/70 dark:text-emerald-400/70">/mo</span>
-              </p>
-              <p className={`text-muted-foreground mt-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                Up to <span className="font-semibold">${(totalMonthlyMax * 12).toLocaleString()}/year</span> in potential benefits
-              </p>
-            </div>
-          )}
-
-          {/* Category breakdown */}
-          <div className="mb-6">
-            <h3 className={`font-semibold mb-3 flex items-center gap-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-              <Info className="w-4 h-4 text-muted-foreground" />
-              Programs by Category
-            </h3>
-            <CategoryBreakdown results={results} />
-          </div>
-
-          {/* Free sample: one fully expanded program */}
-          {freeSampleResult && (
-            <section className="mb-4">
-              <div className="flex items-center gap-2 mb-3">
-                <Sparkles className="w-4 h-4 text-primary" />
-                <h2 className={`font-semibold uppercase tracking-wide text-primary ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                  Free Preview
-                </h2>
+              {/* Category breakdown */}
+              <div className="mb-6">
+                <h3 className={`font-semibold mb-3 flex items-center gap-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                  <Info className="w-4 h-4 text-muted-foreground" />
+                  Programs by Category
+                </h3>
+                <CategoryBreakdown results={results} />
               </div>
-              <ProgramCard result={freeSampleResult} isElderlyMode={isElderlyMode} />
-            </section>
-          )}
 
-          {/* Divider with lock message */}
-          {remainingLockedCount > 0 && (
-            <div className="relative my-6" data-testid="lock-divider">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-border" />
-              </div>
-              <div className="relative flex justify-center">
-                <span className={`bg-background px-4 py-1.5 font-medium text-muted-foreground flex items-center gap-2 rounded-full border border-border ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                  <Lock className="w-3.5 h-3.5" />
-                  Subscribe to see your remaining {remainingLockedCount} program{remainingLockedCount !== 1 ? "s" : ""}
-                </span>
-              </div>
-            </div>
-          )}
-
-          {/* Blurred locked cards */}
-          <section className="mb-4">
-            <div className="space-y-2">
-              {Array.from({ length: Math.min(remainingLockedCount, 4) }, (_, i) => (
-                <LockedProgramCard key={`locked-${i}`} index={i} />
-              ))}
-              {remainingLockedCount > 4 && (
-                <p className="text-xs text-muted-foreground text-center py-1">
-                  + {remainingLockedCount - 4} more program{remainingLockedCount - 4 !== 1 ? "s" : ""}
-                </p>
+              {/* Free sample: one fully expanded program */}
+              {freeSampleResult && (
+                <section className="mb-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Sparkles className="w-4 h-4 text-primary" />
+                    <h2 className={`font-semibold uppercase tracking-wide text-primary ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                      Free Preview
+                    </h2>
+                  </div>
+                  <ProgramCard result={freeSampleResult} isElderlyMode={isElderlyMode} />
+                </section>
               )}
+
+              {/* Divider with lock message */}
+              {remainingLockedCount > 0 && (
+                <div className="relative my-6" data-testid="lock-divider">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-border" />
+                  </div>
+                  <div className="relative flex justify-center">
+                    <span className={`bg-background px-4 py-1.5 font-medium text-muted-foreground flex items-center gap-2 rounded-full border border-border ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                      <Lock className="w-3.5 h-3.5" />
+                      Subscribe to see your remaining {remainingLockedCount} program{remainingLockedCount !== 1 ? "s" : ""}
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              {/* Blurred locked cards */}
+              <section className="mb-4">
+                <div className="space-y-2">
+                  {Array.from({ length: Math.min(remainingLockedCount, 4) }, (_, i) => (
+                    <LockedProgramCard key={`locked-${i}`} index={i} />
+                  ))}
+                  {remainingLockedCount > 4 && (
+                    <p className="text-xs text-muted-foreground text-center py-1">
+                      + {remainingLockedCount - 4} more program{remainingLockedCount - 4 !== 1 ? "s" : ""}
+                    </p>
+                  )}
+                </div>
+              </section>
+
+              {/* Free Trial + Paywall CTA */}
+              <div className="my-6 space-y-3">
+                <FreeTrialCard onStartTrial={() => {
+                  if (isStripeConfigured()) {
+                    openCheckout(PLANS.basic.stripeLinkMonthly, { email: state.user?.email });
+                  } else {
+                    redirectToPricing();
+                  }
+                }} />
+                <PaywallCTA
+                  programCount={totalRelevant}
+                  monthlyMin={totalMonthlyMin}
+                  monthlyMax={totalMonthlyMax}
+                  isElderlyMode={isElderlyMode}
+                />
+              </div>
+            </>
+          )}
+
+          {/* No results */}
+          {totalRelevant === 0 && (
+            <div className="text-center py-12">
+              <Search className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+              <h3 className={`font-semibold mb-2 ${isElderlyMode ? "text-xl" : "text-lg"}`}>No strong matches found</h3>
+              <p className={`text-muted-foreground max-w-md mx-auto ${isElderlyMode ? "text-base" : "text-sm"}`}>
+                Based on your answers, we didn't find programs with a high likelihood of eligibility.
+                Try adjusting your answers or explore different criteria.
+              </p>
             </div>
-          </section>
+          )}
 
-          {/* Free Trial + Paywall CTA */}
-          <div className="my-6 space-y-3">
-            <FreeTrialCard onStartTrial={() => {
-              if (isStripeConfigured()) {
-                openCheckout(PLANS.basic.stripeLinkMonthly, { email: state.user?.email });
-              } else {
-                redirectToPricing();
-              }
-            }} />
-            <PaywallCTA
-              programCount={totalRelevant}
-              monthlyMin={totalMonthlyMin}
-              monthlyMax={totalMonthlyMax}
-              isElderlyMode={isElderlyMode}
-            />
-          </div>
-        </>
-      )}
-
-      {/* No results */}
-      {totalRelevant === 0 && (
-        <div className="text-center py-12">
-          <Search className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-          <h3 className={`font-semibold mb-2 ${isElderlyMode ? "text-xl" : "text-lg"}`}>No strong matches found</h3>
-          <p className={`text-muted-foreground max-w-md mx-auto ${isElderlyMode ? "text-base" : "text-sm"}`}>
-            Based on your answers, we didn't find programs with a high likelihood of eligibility.
-            Try adjusting your answers or explore different criteria.
-          </p>
+          {/* Disclaimer */}
+          <Card className={`mt-6 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20 ${isElderlyMode ? "p-6" : "p-4"}`}>
+            <div className="flex gap-3">
+              <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+              <div className={`text-foreground/80 space-y-2 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
+                <p className={`font-semibold ${isElderlyMode ? "text-base" : "text-sm"}`}>Important Disclaimer</p>
+                <p>
+                  This tool is for <span className="font-semibold">informational purposes only</span>.
+                  It is <span className="font-semibold">not legal advice</span> and does not guarantee eligibility.
+                  Dollar estimates are approximate ranges and actual benefits may differ.
+                </p>
+                <p>
+                  Program rules change frequently. Always confirm on official government websites.
+                  Your information was <span className="font-semibold">not stored or transmitted</span>.
+                </p>
+              </div>
+            </div>
+          </Card>
         </div>
-      )}
 
-      {/* Monetization — shows attorney leads, tax affiliates, insurance referrals, discounts */}
-      <div className="mt-8">
-        <MonetizationSection results={results} />
+        {/* Desktop sidebar — sticky, only visible on lg+ screens */}
+        <aside className="hidden lg:block w-72 flex-shrink-0">
+          <div className="sticky top-4">
+            <SidebarMonetization results={results} />
+          </div>
+        </aside>
       </div>
-
-      {/* Disclaimer */}
-      <Card className={`mt-6 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20 ${isElderlyMode ? "p-6" : "p-4"}`}>
-        <div className="flex gap-3">
-          <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-          <div className={`text-foreground/80 space-y-2 ${isElderlyMode ? "text-sm" : "text-xs"}`}>
-            <p className={`font-semibold ${isElderlyMode ? "text-base" : "text-sm"}`}>Important Disclaimer</p>
-            <p>
-              This tool is for <span className="font-semibold">informational purposes only</span>.
-              It is <span className="font-semibold">not legal advice</span> and does not guarantee eligibility.
-              Dollar estimates are approximate ranges and actual benefits may differ.
-            </p>
-            <p>
-              Program rules change frequently. Always confirm on official government websites.
-              Your information was <span className="font-semibold">not stored or transmitted</span>.
-            </p>
-          </div>
-        </div>
-      </Card>
     </div>
   );
 }
