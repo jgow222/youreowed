@@ -115,3 +115,40 @@ alter table public.email_subscribers enable row level security;
 create policy "Anyone can subscribe"
   on public.email_subscribers for insert
   with check (true);
+
+-- User activity tracking for reminder emails
+-- Tracks key milestones: signed_up, screened, paid
+create table if not exists public.user_activity (
+  id bigint primary key generated always as identity,
+  user_id uuid references public.user_profiles(id) on delete cascade,
+  email text not null,
+  event_type text not null check (event_type in ('signed_up', 'started_screener', 'completed_screener', 'viewed_results', 'subscribed')),
+  created_at timestamp with time zone default now()
+);
+
+alter table public.user_activity enable row level security;
+
+create policy "Users can view own activity"
+  on public.user_activity for select
+  using (auth.uid() = user_id);
+
+create policy "Users can insert own activity"
+  on public.user_activity for insert
+  with check (auth.uid() = user_id);
+
+-- View: users who signed up but never completed a screening (for reminder emails)
+create or replace view public.users_needing_nudge as
+select 
+  up.id,
+  up.email,
+  up.name,
+  up.subscription_tier,
+  up.created_at as signed_up_at,
+  -- Has the user completed a screening?
+  exists(select 1 from public.user_activity ua where ua.user_id = up.id and ua.event_type = 'completed_screener') as has_screened,
+  -- Has the user subscribed?
+  (up.subscription_tier != 'free') as has_paid,
+  -- How many days since signup?
+  extract(day from now() - up.created_at)::int as days_since_signup
+from public.user_profiles up
+where up.email is not null;

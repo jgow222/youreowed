@@ -18,6 +18,7 @@ import {
   signIn as supaSignIn,
   getUserProfile,
 } from "@/lib/supabase";
+import { trackActivity } from "@/lib/activity";
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {
   const { state, dispatch } = useAppState();
@@ -117,6 +118,9 @@ function InlineAuth() {
 
     dispatch({ type: "LOGIN", payload: user });
     setLoading(false);
+
+    // Track signup/login activity for reminder emails
+    trackActivity(mode === "signup" ? "signed_up" : "signed_up", user.id, user.email);
 
     const tierLabel = tier === "free" ? "" : tier === "basic" ? " (Basic Plan)" : " (Pro Plan)";
     toast({

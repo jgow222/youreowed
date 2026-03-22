@@ -12,6 +12,7 @@ import { US_STATES } from "@/lib/states";
 import { type UserAnswers, DEFAULT_ANSWERS, evaluateEligibility, type ProgramResult } from "@/lib/eligibility";
 import ResultsPage from "./results";
 import { useAppState } from "@/lib/store";
+import { trackActivity } from "@/lib/activity";
 import { CheckCircle, Clock } from "lucide-react";
 
 // ─── Form state uses strings for number inputs; converted on submit ──────────
@@ -311,6 +312,10 @@ export default function ScreenerPage() {
     if (!validateStep()) return;
 
     if (step < STEPS.length - 1) {
+      // Track first step as "started_screener"
+      if (step === 0) {
+        trackActivity("started_screener", state.user?.id, state.user?.email);
+      }
       setStep(s => s + 1);
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
@@ -371,6 +376,9 @@ export default function ScreenerPage() {
       const evaluated = evaluateEligibility(answers);
       setResults(evaluated);
       dispatch({ type: "CLEAR_SCREENER_PROGRESS" });
+
+      // Track screener completion for reminder emails
+      trackActivity("completed_screener", state.user?.id, state.user?.email);
     }
   }, [step, form, validateStep, dispatch]);
 
