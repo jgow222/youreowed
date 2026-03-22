@@ -157,14 +157,14 @@ export function CountUpOnScroll({
   duration = 1500,
 }: CountUpOnScrollProps) {
   const [current, setCurrent] = useState(0);
-  const [hasStarted, setHasStarted] = useState(false);
+  const hasStartedRef = useRef(false);
   const elementRef = useRef<HTMLSpanElement>(null);
   const rafRef = useRef<number | null>(null);
   const startTimeRef = useRef<number | null>(null);
 
   const startCounting = useCallback(() => {
-    if (hasStarted) return;
-    setHasStarted(true);
+    if (hasStartedRef.current) return;
+    hasStartedRef.current = true;
     startTimeRef.current = null;
 
     function animate(timestamp: number) {
@@ -180,11 +180,19 @@ export function CountUpOnScroll({
     }
 
     rafRef.current = requestAnimationFrame(animate);
-  }, [hasStarted, target, duration]);
+  }, [target, duration]);
 
   useEffect(() => {
     const el = elementRef.current;
     if (!el) return;
+
+    // Check if already visible (e.g. on mobile where it's in viewport on load)
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      // Delay slightly so the page-enter animation finishes first
+      setTimeout(() => startCounting(), 300);
+      return;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -193,7 +201,7 @@ export function CountUpOnScroll({
           observer.disconnect();
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     observer.observe(el);
