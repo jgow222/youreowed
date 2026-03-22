@@ -7,7 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Progress } from "@/components/ui/progress";
 import { Switch } from "@/components/ui/switch";
-import { ArrowLeft, ArrowRight, AlertTriangle } from "lucide-react";
+import { ArrowLeft, ArrowRight, AlertTriangle, Lock, ShieldCheck, CheckCircle2, HelpCircle } from "lucide-react";
 import { US_STATES } from "@/lib/states";
 import { type UserAnswers, DEFAULT_ANSWERS, evaluateEligibility, type ProgramResult } from "@/lib/eligibility";
 import ResultsPage from "./results";
@@ -15,6 +15,30 @@ import { useAppState } from "@/lib/store";
 import { trackActivity } from "@/lib/activity";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { CheckCircle, Clock } from "lucide-react";
+
+// ─── Expandable help hint component ─────────────────────────────────────────
+
+function HelpHint({ children }: { children: React.ReactNode }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="mt-1.5">
+      <button
+        type="button"
+        className="text-xs text-primary/70 hover:text-primary flex items-center gap-1 cursor-pointer"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
+        <HelpCircle className="w-3 h-3" />
+        {open ? "Hide help" : "Need help with this?"}
+      </button>
+      {open && (
+        <div className="mt-1.5 p-3 rounded-lg bg-muted/50 border border-border/50 text-xs text-muted-foreground leading-relaxed">
+          {children}
+        </div>
+      )}
+    </div>
+  );
+}
 
 // ─── Form state uses strings for number inputs; converted on submit ──────────
 
@@ -111,6 +135,7 @@ const STEPS = [
   { id: "employment", title: "Employment", subtitle: "Your work situation" },
   { id: "health", title: "Health", subtitle: "Health and disability" },
   { id: "additional", title: "Additional", subtitle: "A few more details" },
+  { id: "review", title: "Review", subtitle: "Let's make sure everything looks right" },
 ];
 
 const STEP_DESCRIPTIONS = [
@@ -121,6 +146,7 @@ const STEP_DESCRIPTIONS = [
   "Employment status helps determine programs like unemployment insurance and EITC.",
   "Some programs are specifically for people with disabilities or health needs.",
   "These final details help refine your results.",
+  "Review your answers below. Tap 'Edit' on any section to make changes.",
 ];
 
 function parseNum(val: string, fallback = 0): number {
@@ -302,6 +328,9 @@ export default function ScreenerPage() {
         if (!form.citizenshipStatus) errs.citizenshipStatus = "Please select an option.";
         if (!form.housingSituation) errs.housingSituation = "Please select your housing situation.";
         break;
+
+      case 7: // Review — no fields to validate
+        break;
     }
 
     setErrors(errs);
@@ -453,6 +482,13 @@ export default function ScreenerPage() {
           Progress saved
         </div>
       )}
+
+      {/* Trust badges — compact */}
+      <div className="flex flex-wrap items-center gap-3 mb-4 text-xs text-muted-foreground">
+        <span className="flex items-center gap-1"><Lock className="w-3 h-3 text-emerald-500" /> Private & secure</span>
+        <span className="flex items-center gap-1"><ShieldCheck className="w-3 h-3 text-blue-500" /> Won't affect benefits</span>
+        <span className="flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-primary" /> Free screening</span>
+      </div>
 
       {/* Progress */}
       <div className="mb-6">
@@ -620,6 +656,9 @@ export default function ScreenerPage() {
                   ))}
                 </SelectContent>
               </Select>
+              <HelpHint>
+                Count everyone who lives with you and shares meals, including yourself. Include your spouse or partner, children, parents, and anyone else in your home.
+              </HelpHint>
               {errors.householdSize && <p className="text-xs text-destructive mt-1">{errors.householdSize}</p>}
             </div>
 
@@ -696,6 +735,9 @@ export default function ScreenerPage() {
                 onChange={(v) => updateField("monthlyIncome", v)}
                 error={!!errors.monthlyIncome}
               />
+              <HelpHint>
+                Include all money coming into your household: wages, tips, self-employment income, Social Security, disability payments, child support, alimony, rental income, and money from apps like Cash App or Venmo. Use your total before taxes.
+              </HelpHint>
               {errors.monthlyIncome && <p className="text-xs text-destructive mt-1">{errors.monthlyIncome}</p>}
             </div>
 
@@ -779,6 +821,9 @@ export default function ScreenerPage() {
                   </div>
                 ))}
               </RadioGroup>
+              <HelpHint>
+                If you work multiple jobs, select the one that best describes your main situation. Part-time work counts as "employed." Gig work (Uber, DoorDash, etc.) counts as "self-employed."
+              </HelpHint>
               {errors.employmentStatus && <p className="text-xs text-destructive mt-1">{errors.employmentStatus}</p>}
             </div>
 
@@ -965,6 +1010,9 @@ export default function ScreenerPage() {
                   </div>
                 ))}
               </RadioGroup>
+              <HelpHint>
+                "Living with family" means you don't pay rent or a mortgage — someone else covers housing costs. If you pay rent to a family member, select "Renting."
+              </HelpHint>
               {errors.housingSituation && <p className="text-xs text-destructive mt-1">{errors.housingSituation}</p>}
             </div>
 
@@ -1021,6 +1069,87 @@ export default function ScreenerPage() {
           </div>
         )}
 
+        {/* ── Step 7: Review ────────────────────────────────────────────── */}
+        {step === STEPS.length - 1 && (
+          <div className="space-y-4">
+            {/* Location */}
+            <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500" />
+                  <span className="text-sm font-semibold">Location</span>
+                </div>
+                <button className="text-xs text-primary hover:underline cursor-pointer" onClick={() => setStep(0)}>Edit</button>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                {US_STATES.find(s => s.code === form.state)?.name || "Not selected"}{form.zipCode ? ` (${form.zipCode})` : ""}
+              </p>
+            </div>
+
+            {/* Personal Info */}
+            <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500" />
+                  <span className="text-sm font-semibold">Personal Info</span>
+                </div>
+                <button className="text-xs text-primary hover:underline cursor-pointer" onClick={() => setStep(1)}>Edit</button>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Age: {form.age || "—"} · Household: {form.householdSize || "1"} people · Children: {form.numChildrenUnder18 || "0"}
+              </p>
+            </div>
+
+            {/* Income */}
+            <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500" />
+                  <span className="text-sm font-semibold">Income</span>
+                </div>
+                <button className="text-xs text-primary hover:underline cursor-pointer" onClick={() => setStep(2)}>Edit</button>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                ${form.monthlyIncome || "0"}/month · {form.employmentStatus?.replace(/-/g, " ") || "Not specified"}
+              </p>
+            </div>
+
+            {/* Health */}
+            <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500" />
+                  <span className="text-sm font-semibold">Health &amp; Insurance</span>
+                </div>
+                <button className="text-xs text-primary hover:underline cursor-pointer" onClick={() => setStep(3)}>Edit</button>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Insurance: {form.hasHealthInsurance ? "Yes" : "No"} · Disability: {form.hasDisability ? "Yes" : "No"} · Pregnant: {form.isPregnant ? "Yes" : "No"}
+              </p>
+            </div>
+
+            {/* Housing */}
+            <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500" />
+                  <span className="text-sm font-semibold">Housing &amp; Expenses</span>
+                </div>
+                <button className="text-xs text-primary hover:underline cursor-pointer" onClick={() => setStep(5)}>Edit</button>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                {form.housingSituation?.replace(/-/g, " ") || "Not specified"}{form.monthlyRent ? ` · $${form.monthlyRent}/mo` : ""}
+              </p>
+            </div>
+
+            {/* Privacy reassurance */}
+            <div className="flex items-center gap-2 p-3 rounded-lg bg-emerald-500/5 border border-emerald-500/10 text-xs text-muted-foreground">
+              <Lock className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0" />
+              <span>Your answers are private and processed in your browser. Nothing is shared until you choose to apply for a program.</span>
+            </div>
+          </div>
+        )}
+
         {/* ── Navigation Buttons ─────────────────────────────────────────── */}
         <div className={isElderlyMode ? "flex justify-between mt-10 pt-6 border-t border-border" : "flex justify-between mt-8 pt-4 border-t border-border"}>
           <Button
@@ -1038,7 +1167,7 @@ export default function ScreenerPage() {
             data-testid="button-next"
             className={isElderlyMode ? "gap-2 h-14 text-lg px-8 font-bold" : "gap-1.5"}
           >
-            {step === STEPS.length - 1 ? "See My Results" : "Continue"}
+            {step === STEPS.length - 1 ? "See My Results" : step === STEPS.length - 2 ? "Review My Answers" : "Continue"}
             {step < STEPS.length - 1 && <ArrowRight className={isElderlyMode ? "w-5 h-5" : "w-4 h-4"} />}
           </Button>
         </div>

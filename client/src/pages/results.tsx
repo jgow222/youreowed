@@ -174,7 +174,7 @@ function ProgramCard({ result, showApplyGuide = false, isElderlyMode = false }: 
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0">
-              <h3 className={`font-semibold leading-tight ${isElderlyMode ? "text-base" : "text-sm"}`}>{result.program.name}</h3>
+              <h3 className={`font-semibold leading-tight ${isElderlyMode ? "text-base" : "text-sm"}`}>{result.program.displayName || result.program.name}</h3>
               <div className="flex items-center gap-2 mt-1 flex-wrap">
                 <Badge variant="secondary" className={`py-0 px-1.5 gap-1 ${isElderlyMode ? "text-sm h-6" : "text-[11px] h-5"}`}>
                   <CategoryIcon className="w-3 h-3" />

@@ -39,6 +39,7 @@ export interface EligibilityRule {
 export interface Program {
   id: string;
   name: string;
+  displayName?: string;                // Plain-language name shown to users
   level: ProgramLevel;
   stateCode?: string;                  // For state-level programs
   category: string;
@@ -85,6 +86,7 @@ const federalPrograms: Program[] = [
   {
     id: "snap",
     name: "SNAP (Food Stamps)",
+    displayName: "Food Assistance (SNAP)",
     level: "federal",
     category: "Food Assistance",
     description: "Provides monthly benefits on an EBT card to buy groceries. Most households must have gross income below 130% of the federal poverty level.",
@@ -111,6 +113,7 @@ const federalPrograms: Program[] = [
   {
     id: "medicaid-adult",
     name: "Medicaid (Adults)",
+    displayName: "Health Coverage (Medicaid)",
     level: "federal",
     category: "Healthcare",
     description: "Free or low-cost health coverage for adults with limited income. In expansion states, adults under 65 with income up to 138% FPL may qualify.",
@@ -136,6 +139,7 @@ const federalPrograms: Program[] = [
   {
     id: "chip",
     name: "CHIP (Children's Health Insurance)",
+    displayName: "Children's Health Insurance (CHIP)",
     level: "federal",
     category: "Healthcare",
     description: "Provides health coverage for children in families that earn too much for Medicaid but cannot afford private insurance. Income limits vary by state, typically up to 200-300% FPL.",
@@ -161,6 +165,7 @@ const federalPrograms: Program[] = [
   {
     id: "medicare",
     name: "Medicare",
+    displayName: "Health Coverage for Seniors (Medicare)",
     level: "federal",
     category: "Healthcare",
     description: "Federal health insurance for people 65 and older, and some younger people with disabilities. Part A (hospital) is generally premium-free if you paid Medicare taxes for 10+ years.",
@@ -209,6 +214,7 @@ const federalPrograms: Program[] = [
   {
     id: "ssdi",
     name: "SSDI (Social Security Disability)",
+    displayName: "Disability Benefits (SSDI)",
     level: "federal",
     category: "Retirement & Disability",
     description: "Monthly benefits for people who can no longer work due to a significant disability expected to last at least 12 months. Based on your prior work history.",
@@ -232,6 +238,7 @@ const federalPrograms: Program[] = [
   {
     id: "ssi",
     name: "SSI (Supplemental Security Income)",
+    displayName: "Supplemental Income (SSI)",
     level: "federal",
     category: "Retirement & Disability",
     description: "Monthly cash assistance for people who are aged 65+, blind, or disabled and have very limited income and resources. Maximum federal benefit is $967/month for an individual in 2025.",
@@ -284,6 +291,7 @@ const federalPrograms: Program[] = [
   {
     id: "section8",
     name: "Section 8 / Housing Choice Voucher",
+    displayName: "Housing Assistance (Section 8)",
     level: "federal",
     category: "Housing",
     description: "Helps very low-income families, the elderly, and people with disabilities afford safe housing in the private market. You pay about 30% of your income toward rent; the voucher covers the rest.",
@@ -332,6 +340,7 @@ const federalPrograms: Program[] = [
   {
     id: "liheap",
     name: "LIHEAP (Energy Assistance)",
+    displayName: "Energy Bill Help (LIHEAP)",
     level: "federal",
     category: "Utilities",
     description: "Helps low-income households pay heating and cooling bills. May also help with energy-related home repairs and weatherization.",
@@ -357,6 +366,7 @@ const federalPrograms: Program[] = [
   {
     id: "eitc",
     name: "Earned Income Tax Credit (EITC)",
+    displayName: "Earned Income Tax Credit (EITC)",
     level: "federal",
     category: "Tax Credits",
     description: "A refundable tax credit for working people with low to moderate income. Worth up to $7,830 for a family with 3+ children (2025 tax year). You must file a tax return to claim it.",
@@ -382,6 +392,7 @@ const federalPrograms: Program[] = [
   {
     id: "ctc",
     name: "Child Tax Credit",
+    displayName: "Child Tax Credit",
     level: "federal",
     category: "Tax Credits",
     description: "A tax credit of up to $2,000 per qualifying child under 17. A portion (up to $1,700) is refundable even if you owe no tax.",
@@ -433,6 +444,7 @@ const federalPrograms: Program[] = [
   {
     id: "wic",
     name: "WIC (Women, Infants, and Children)",
+    displayName: "Women & Children Nutrition (WIC)",
     level: "federal",
     category: "Food Assistance",
     description: "Provides nutritious foods, nutrition education, and healthcare referrals for pregnant women, new mothers, infants, and children under 5.",
@@ -484,6 +496,7 @@ const federalPrograms: Program[] = [
   {
     id: "va-healthcare",
     name: "VA Healthcare",
+    displayName: "Veterans Health Care",
     level: "federal",
     category: "Veterans",
     description: "Comprehensive healthcare services for eligible military veterans through the VA system, including preventive care, mental health, and specialty care.",
@@ -507,6 +520,7 @@ const federalPrograms: Program[] = [
   {
     id: "va-disability",
     name: "VA Disability Compensation",
+    displayName: "Veterans Disability Benefits",
     level: "federal",
     category: "Veterans",
     description: "Tax-free monthly payments for veterans with service-connected disabilities. Amount depends on disability rating (10-100%).",
@@ -558,6 +572,7 @@ const federalPrograms: Program[] = [
   {
     id: "tanf",
     name: "TANF (Temporary Assistance for Needy Families)",
+    displayName: "Cash Assistance (TANF)",
     level: "federal",
     category: "Cash Assistance",
     description: "Cash assistance for families with children who have very low income. Includes work requirements and time limits. States administer their own programs under federal guidelines.",
@@ -583,6 +598,7 @@ const federalPrograms: Program[] = [
   {
     id: "pell-grant",
     name: "Pell Grant",
+    displayName: "College Financial Aid (Pell Grant)",
     level: "federal",
     category: "Education",
     description: "Federal grant for undergraduate students with financial need. Does not have to be repaid. Maximum award is $7,395 for the 2024-2025 award year.",
@@ -608,6 +624,7 @@ const federalPrograms: Program[] = [
   {
     id: "lifeline",
     name: "Lifeline (Phone/Internet Discount)",
+    displayName: "Phone/Internet Discount (Lifeline)",
     level: "federal",
     category: "Utilities",
     description: "Provides a $9.25/month discount on phone or internet service for qualifying low-income households. Enhanced support of up to $34.25/month for eligible residents of Tribal lands.",
@@ -632,6 +649,7 @@ const federalPrograms: Program[] = [
   {
     id: "acp",
     name: "Affordable Connectivity Program (ACP)",
+    displayName: "Internet Discount (ACP)",
     level: "federal",
     category: "Utilities",
     description: "Provided a $30/month discount on internet service for eligible households (up to $75/month on Tribal lands). Note: The ACP stopped accepting new applications and the final benefit was applied in June 2024.",

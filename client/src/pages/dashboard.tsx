@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight, Phone } from "lucide-react";
+import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight, Phone, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { fetchNews, type NewsItem } from "@/lib/news";
@@ -110,6 +110,28 @@ export default function DashboardPage() {
             Check what you're owed <ArrowRight className="w-4 h-4" />
           </Button>
         </Link>
+
+        {/* Trust badges */}
+        <div className="flex flex-wrap items-center gap-4 md:gap-6 mt-6">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+              <Lock className="w-4 h-4 text-emerald-500" />
+            </div>
+            <span>Your answers are <span className="text-foreground font-medium">100% private</span></span>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center flex-shrink-0">
+              <ShieldCheck className="w-4 h-4 text-blue-500" />
+            </div>
+            <span>Won't affect <span className="text-foreground font-medium">current benefits</span></span>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <CheckCircle2 className="w-4 h-4 text-primary" />
+            </div>
+            <span><span className="text-foreground font-medium">Free</span> to screen</span>
+          </div>
+        </div>
       </div>
 
       {/* Stats — Big numbers, no fluff */}
