@@ -218,7 +218,7 @@ function NavLink({
   return (
     <Link href={item.path} onClick={onNavigate}>
       <div
-        className={`flex items-center gap-2.5 rounded-md cursor-pointer transition-colors ${
+        className={`flex items-center gap-2.5 rounded-md cursor-pointer transition-colors nav-item-transition ${
           isElderlyMode ? "px-4 py-3 text-base" : "px-3 py-1.5 text-sm"
         } ${
           isActive
@@ -377,7 +377,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               variant="ghost"
               size="sm"
               onClick={toggleTheme}
-              className="w-8 h-8 p-0"
+              className="w-8 h-8 p-0 btn-press"
               data-testid="button-theme-toggle"
               aria-label="Toggle theme"
             >
@@ -436,7 +436,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             </DropdownMenu>
             ) : (
               <Link href="/screener">
-                <Button size="sm" className="h-8 text-xs gap-1.5 font-semibold" data-testid="button-signin">
+                <Button size="sm" className="h-8 text-xs gap-1.5 font-semibold btn-press" data-testid="button-signin">
                   <User className="w-3.5 h-3.5" /> Sign in
                 </Button>
               </Link>

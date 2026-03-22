@@ -493,7 +493,7 @@ export default function ScreenerPage() {
   const progress = ((step + 1) / STEPS.length) * 100;
 
   return (
-    <div className={isElderlyMode ? "p-6 md:p-8 max-w-2xl mx-auto" : "p-4 md:p-6 max-w-2xl mx-auto"}>
+    <div className={isElderlyMode ? "p-6 md:p-8 max-w-2xl mx-auto page-enter" : "p-4 md:p-6 max-w-2xl mx-auto page-enter"}>
       {/* Resume prompt */}
       {showResume && state.savedScreenerAnswers && (
         <div className="mb-4 p-4 rounded-xl border border-[#00E676]/30 bg-[#00E676]/[0.04] flex items-start gap-3" data-testid="resume-prompt">
@@ -540,7 +540,7 @@ export default function ScreenerPage() {
       </div>
 
       {/* Progress */}
-      <div className="mb-6">
+      <div className="mb-6 animate-fade-in-up">
         <div className="flex justify-between items-center mb-2">
           <span className={isElderlyMode ? "text-base font-semibold" : "text-sm font-medium text-muted-foreground"}>
             Step {step + 1} of {STEPS.length}
@@ -553,7 +553,7 @@ export default function ScreenerPage() {
       </div>
 
       {/* Step Card */}
-      <Card className={isElderlyMode ? "p-8 border border-card-border" : "p-6 border border-card-border"} data-testid={`step-${STEPS[step].id}`}>
+      <Card className={isElderlyMode ? "p-8 border border-card-border animate-fade-in" : "p-6 border border-card-border animate-fade-in"} data-testid={`step-${STEPS[step].id}`}>
         <h2 className={isElderlyMode ? "text-2xl font-bold mb-2" : "text-lg font-semibold mb-1"}>{STEPS[step].subtitle}</h2>
         <p className={isElderlyMode ? "text-base text-muted-foreground mb-8" : "text-sm text-muted-foreground mb-6"}>{STEP_DESCRIPTIONS[step]}</p>
 
@@ -1362,7 +1362,7 @@ export default function ScreenerPage() {
             onClick={goBack}
             disabled={step === 0}
             data-testid="button-back"
-            className={isElderlyMode ? "gap-2 h-14 text-lg px-6" : "gap-1.5"}
+            className={isElderlyMode ? "gap-2 h-14 text-lg px-6 btn-press" : "gap-1.5 btn-press"}
           >
             <ArrowLeft className={isElderlyMode ? "w-5 h-5" : "w-4 h-4"} />
             Back
@@ -1370,7 +1370,7 @@ export default function ScreenerPage() {
           <Button
             onClick={goNext}
             data-testid="button-next"
-            className={isElderlyMode ? "gap-2 h-14 text-lg px-8 font-bold" : "gap-1.5"}
+            className={isElderlyMode ? "gap-2 h-14 text-lg px-8 font-bold btn-press" : "gap-1.5 btn-press"}
           >
             {step === STEPS.length - 1 ? "See My Results" : step === STEPS.length - 2 ? "Review My Answers" : "Continue"}
             {step < STEPS.length - 1 && <ArrowRight className={isElderlyMode ? "w-5 h-5" : "w-4 h-4"} />}

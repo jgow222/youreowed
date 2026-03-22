@@ -160,7 +160,7 @@ function ProgramCard({ result, showApplyGuide = false, isElderlyMode = false }: 
 
   return (
     <Card
-      className={`border transition-all ${config.borderColor} ${expanded ? config.bgColor : ""}`}
+      className={`border transition-all card-hover-lift ${config.borderColor} ${expanded ? config.bgColor : ""}`}
       data-testid={`card-program-${result.program.id}`}
     >
       <button
@@ -382,7 +382,7 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax, isElderlyMode = fals
 
       <div className="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-sm mx-auto">
         <Button
-          className={`gap-1.5 w-full sm:w-auto ${isElderlyMode ? "h-14 text-lg" : ""}`}
+          className={`gap-1.5 w-full sm:w-auto btn-press ${isElderlyMode ? "h-14 text-lg" : ""}`}
           data-testid="button-paywall-subscribe"
           onClick={() => {
             if (isStripeConfigured()) {
@@ -397,7 +397,7 @@ function PaywallCTA({ programCount, monthlyMin, monthlyMax, isElderlyMode = fals
           <ArrowRight className="w-4 h-4" />
         </Button>
         <Link href="/pricing">
-          <Button variant="ghost" className="text-xs gap-1" data-testid="button-paywall-compare">
+          <Button variant="ghost" className="text-xs gap-1 btn-press" data-testid="button-paywall-compare">
             Compare plans
           </Button>
         </Link>
@@ -654,7 +654,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
   const remainingLockedCount = totalRelevant - (freeSampleResult ? 1 : 0);
 
   return (
-    <div className="p-4 md:p-6 max-w-6xl mx-auto">
+    <div className="p-4 md:p-6 max-w-6xl mx-auto page-enter">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>
@@ -692,7 +692,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
         <div className="flex-1 min-w-0 max-w-3xl">
 
           {/* Summary — always visible */}
-          <div className={`mb-6 rounded-lg bg-primary/5 border border-primary/10 ${isElderlyMode ? "p-6" : "p-4"}`}>
+          <div className={`mb-6 rounded-lg bg-primary/5 border border-primary/10 animate-fade-in-up ${isElderlyMode ? "p-6" : "p-4"}`}>
             <p className={`font-medium flex items-center gap-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
               {totalRelevant > 0 && <AnimatedCheckmark size={isElderlyMode ? 32 : 24} />}
               We found <span className="text-primary font-bold">{totalRelevant} program{totalRelevant !== 1 ? "s" : ""}</span> you
@@ -732,8 +732,10 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
                     </h2>
                   </div>
                   <div className="space-y-2">
-                    {likelyResults.map(r => (
-                      <ProgramCard key={r.program.id} result={r} showApplyGuide isElderlyMode={isElderlyMode} />
+                    {likelyResults.map((r, index) => (
+                      <div key={r.program.id} className="result-card-enter" style={{ animationDelay: `${index * 0.06}s` }}>
+                        <ProgramCard result={r} showApplyGuide isElderlyMode={isElderlyMode} />
+                      </div>
                     ))}
                   </div>
                 </section>
@@ -749,8 +751,10 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
                     </h2>
                   </div>
                   <div className="space-y-2">
-                    {maybeResults.map(r => (
-                      <ProgramCard key={r.program.id} result={r} showApplyGuide isElderlyMode={isElderlyMode} />
+                    {maybeResults.map((r, index) => (
+                      <div key={r.program.id} className="result-card-enter" style={{ animationDelay: `${index * 0.06}s` }}>
+                        <ProgramCard result={r} showApplyGuide isElderlyMode={isElderlyMode} />
+                      </div>
                     ))}
                   </div>
                 </section>
@@ -772,8 +776,10 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
                   </button>
                   {showUnlikely && (
                     <div className="space-y-2">
-                      {unlikelyResults.map(r => (
-                        <ProgramCard key={r.program.id} result={r} isElderlyMode={isElderlyMode} />
+                      {unlikelyResults.map((r, index) => (
+                        <div key={r.program.id} className="result-card-enter" style={{ animationDelay: `${index * 0.06}s` }}>
+                          <ProgramCard result={r} isElderlyMode={isElderlyMode} />
+                        </div>
                       ))}
                     </div>
                   )}
@@ -789,7 +795,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
             <>
               {/* Animated value counter */}
               {totalMonthlyMax > 0 && (
-                <div className="text-center mb-6 py-6 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 dark:from-emerald-950/40 dark:to-emerald-900/20 border border-emerald-200/60 dark:border-emerald-800/40" data-testid="value-counter">
+                <div className="text-center mb-6 py-6 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 dark:from-emerald-950/40 dark:to-emerald-900/20 border border-emerald-200/60 dark:border-emerald-800/40 glow-pulse" data-testid="value-counter">
                   <p className={`text-muted-foreground mb-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>Your estimated monthly benefit value</p>
                   <p className="text-5xl font-extrabold text-emerald-600 dark:text-emerald-400 tabular-nums tracking-tight">
                     <AnimatedCounter target={totalMonthlyMax} />
@@ -853,7 +859,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
               </section>
 
               {/* Free Trial + Paywall CTA */}
-              <div className="my-6 space-y-3">
+              <div className="my-6 space-y-3 animate-fade-in-up">
                 <FreeTrialCard onStartTrial={() => {
                   if (isStripeConfigured()) {
                     openCheckout(PLANS.basic.stripeLinkMonthly, { email: state.user?.email });
@@ -905,7 +911,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
 
         {/* Desktop sidebar — sticky, only visible on lg+ screens */}
         <aside className="hidden lg:block w-80 flex-shrink-0">
-          <div className="sticky top-4">
+          <div className="sticky top-4 animate-fade-in-right">
             <SidebarMonetization results={results} />
           </div>
         </aside>

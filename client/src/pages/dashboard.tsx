@@ -96,9 +96,9 @@ export default function DashboardPage() {
   // ─── Standard layout ────────────────────────────────────────────────────────
   return (
     <>
-    <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8">
+    <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8 page-enter">
       {/* Hero — Bold, direct */}
-      <div className="py-4">
+      <div className="py-4 animate-fade-in-up">
         <p className="text-sm font-medium text-primary tracking-wide uppercase mb-2">Welcome back</p>
         <h1 className="text-2xl md:text-3xl font-black tracking-tight leading-tight" data-testid="text-welcome">
           You might be leaving<br />
@@ -109,14 +109,14 @@ export default function DashboardPage() {
         </p>
         <Link href="/screener">
           <PulseCTA active={!state.isLoggedIn}>
-            <Button size="lg" className="mt-4 gap-2 font-bold text-sm h-11 px-6" data-testid="button-hero-cta">
+            <Button size="lg" className="mt-4 gap-2 font-bold text-sm h-11 px-6 btn-press" data-testid="button-hero-cta">
               Check what you're owed <ArrowRight className="w-4 h-4" />
             </Button>
           </PulseCTA>
         </Link>
 
         {/* Trust badges */}
-        <div className="flex flex-wrap items-center gap-4 md:gap-6 mt-6">
+        <div className="flex flex-wrap items-center gap-4 md:gap-6 mt-6 animate-fade-in stagger-5">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <div className="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
               <Lock className="w-4 h-4 text-emerald-500" />
@@ -140,15 +140,15 @@ export default function DashboardPage() {
 
       {/* Stats — Big numbers, no fluff */}
       <div className="grid grid-cols-3 gap-3">
-        <Card className="p-4 border border-card-border bg-card">
+        <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-1">
           <p className="text-3xl font-black text-primary">415</p>
           <p className="text-xs text-muted-foreground mt-1">programs we check</p>
         </Card>
-        <Card className="p-4 border border-card-border bg-card">
+        <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-2">
           <p className="text-3xl font-black">50<span className="text-lg text-muted-foreground">+DC</span></p>
           <p className="text-xs text-muted-foreground mt-1">states covered</p>
         </Card>
-        <Card className="p-4 border border-card-border bg-card">
+        <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-3">
           <p className="text-3xl font-black text-primary">$50K<span className="text-lg text-muted-foreground">+</span></p>
           <p className="text-xs text-muted-foreground mt-1">potential per year</p>
         </Card>
@@ -157,7 +157,7 @@ export default function DashboardPage() {
       {/* Quick actions — Bigger, bolder */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <Link href="/screener">
-          <Card className="p-5 cursor-pointer border border-primary/20 bg-primary/[0.03] hover:bg-primary/[0.06] transition-colors group" data-testid="card-quick-screener">
+          <Card className="p-5 cursor-pointer border border-primary/20 bg-primary/[0.03] hover:bg-primary/[0.06] transition-colors group card-hover-lift animate-fade-in-up stagger-1" data-testid="card-quick-screener">
             <div className="flex items-center justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
@@ -172,7 +172,7 @@ export default function DashboardPage() {
         </Link>
 
         <Link href="/assistant">
-          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group">
+          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift animate-fade-in-up stagger-2">
             <div className="flex items-center justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center mb-3">
@@ -187,7 +187,7 @@ export default function DashboardPage() {
         </Link>
 
         <Link href="/household">
-          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group">
+          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift animate-fade-in-up stagger-3">
             <div className="flex items-center justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3">
@@ -202,7 +202,7 @@ export default function DashboardPage() {
         </Link>
 
         <Link href="/news">
-          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group">
+          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift animate-fade-in-up stagger-4">
             <div className="flex items-center justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center mb-3">
@@ -211,7 +211,7 @@ export default function DashboardPage() {
                 <p className="text-base font-bold">Policy updates</p>
                 <p className="text-xs text-muted-foreground mt-0.5">Rules change. Stay ahead.</p>
               </div>
-              <Badge variant="destructive" className="h-5 text-[10px] px-2">3 new</Badge>
+              <Badge variant="destructive" className="h-5 text-[10px] px-2 badge-pop">3 new</Badge>
             </div>
           </Card>
         </Link>
@@ -219,7 +219,9 @@ export default function DashboardPage() {
 
       {/* Email Capture — for non-subscribers */}
       {(!state.isLoggedIn || state.user?.subscriptionTier === "free") && (
-        <EmailCapture source="dashboard" />
+        <div className="animate-fade-in stagger-6">
+          <EmailCapture source="dashboard" />
+        </div>
       )}
 
       {/* Social Proof Toast — visible on public page for non-logged-in users */}

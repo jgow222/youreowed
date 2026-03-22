@@ -158,9 +158,9 @@ function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
 
   return (
     <Card
-      className={`p-5 relative overflow-hidden flex flex-col ${
+      className={`p-5 relative overflow-hidden flex flex-col card-hover-lift ${
         tier.highlighted
-          ? "border-2 border-primary shadow-lg"
+          ? "border-2 border-primary shadow-lg glow-pulse"
           : "border border-card-border"
       }`}
     >
@@ -226,7 +226,7 @@ function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
       </ul>
       <Button
         variant={tier.ctaVariant}
-        className={`w-full ${tier.highlighted ? "bg-primary hover:bg-primary/90" : ""}`}
+        className={`w-full btn-press ${tier.highlighted ? "bg-primary hover:bg-primary/90" : ""}`}
         disabled={tier.disabled}
         data-testid={`button-select-${tier.id}`}
         onClick={() => {
@@ -487,7 +487,7 @@ function PriceCalculator() {
         )}
 
         <Button
-          className="w-full"
+          className="w-full btn-press"
           size="lg"
           data-testid="button-subscribe"
           onClick={() => {
@@ -597,7 +597,7 @@ export default function PricingPage() {
   };
 
   return (
-    <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8">
+    <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8 page-enter">
       {/* Header */}
       <div className="text-center max-w-lg mx-auto">
         <h1 className="text-xl font-bold">Simple, Transparent Pricing</h1>
@@ -636,8 +636,10 @@ export default function PricingPage() {
 
       {/* Tier cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
-        {TIERS.map((tier) => (
-          <TierCard key={tier.id} tier={tier} isAnnual={isAnnual} />
+        {TIERS.map((tier, index) => (
+          <div key={tier.id} className={`animate-fade-in-up stagger-${index + 1}`}>
+            <TierCard tier={tier} isAnnual={isAnnual} />
+          </div>
         ))}
       </div>
 

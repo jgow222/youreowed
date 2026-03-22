@@ -410,7 +410,7 @@ function SidebarAttorneyCard() {
   }
 
   return (
-    <Card className="p-4 border border-card-border bg-card">
+    <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-4">
       <div className="flex items-center gap-2 mb-2">
         <div className="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
           <Scale className="w-3.5 h-3.5 text-primary" />
@@ -436,7 +436,7 @@ function SidebarAttorneyCard() {
         />
       </div>
       <Button
-        className="w-full h-9 text-sm gap-1.5"
+        className="w-full h-9 text-sm gap-1.5 btn-press"
         onClick={handleSubmit}
         disabled={!name || !phone}
       >
@@ -471,14 +471,14 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
   if (!hasAnyCard) return null;
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 animate-fade-in-right">
       <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground px-0.5">
         Recommended for You
       </p>
 
       {/* URGENT: Tax Filing CTA — always show prominently */}
       {showTaxCard && (
-        <Card className="p-4 border-2 border-emerald-500/30 bg-gradient-to-br from-emerald-500/[0.06] to-emerald-500/[0.02]">
+        <Card className="p-4 border-2 border-emerald-500/30 bg-gradient-to-br from-emerald-500/[0.06] to-emerald-500/[0.02] card-hover-lift animate-fade-in-up stagger-1">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
               <DollarSign className="w-4 h-4 text-emerald-500" />
@@ -535,7 +535,7 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
 
       {/* Card 2: Discounts You Qualify For */}
       {showDiscounts && (
-        <Card className="p-4 border border-card-border bg-card">
+        <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-2">
           <div className="flex items-center gap-2 mb-3">
             <div className="w-7 h-7 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
               <ShoppingBag className="w-3.5 h-3.5 text-amber-500" />
@@ -581,7 +581,7 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
       )}
 
       {/* Card 3: Save on Internet & Phone */}
-      <Card className="p-4 border border-card-border bg-card">
+      <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-3">
         <div className="flex items-center gap-2 mb-3">
           <div className="w-7 h-7 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
             <Wifi className="w-3.5 h-3.5 text-blue-500" />
@@ -619,7 +619,7 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
 
       {/* Card 5: Health Coverage Help (if health-eligible) */}
       {showHealthCard && (
-        <Card className="p-4 border border-card-border bg-card">
+        <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-5">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-7 h-7 rounded-lg bg-rose-500/10 flex items-center justify-center flex-shrink-0">
               <Heart className="w-3.5 h-3.5 text-rose-500" />
@@ -633,7 +633,7 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
             rel="noopener noreferrer"
             className="block"
           >
-            <Button variant="outline" className="w-full h-9 text-sm gap-1.5">
+            <Button variant="outline" className="w-full h-9 text-sm gap-1.5 btn-press">
               Get a free quote
               <ExternalLink className="w-3.5 h-3.5" />
             </Button>
