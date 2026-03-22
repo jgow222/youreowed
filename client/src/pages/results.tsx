@@ -43,6 +43,7 @@ import { useToast } from "@/hooks/use-toast";
 import { PLANS, openCheckout, isStripeConfigured, redirectToPricing } from "@/lib/payments";
 import { FreeTrialCard, SidebarMonetization, MobileOffersStrip } from "@/components/MonetizationCards";
 import { ConfettiExplosion, AnimatedCheckmark } from "@/components/Animations";
+import { ScrollProgress, AnimatedGradientText } from "@/components/Effects";
 
 interface ResultsPageProps {
   results: ProgramResult[];
@@ -655,6 +656,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
 
   return (
     <div className="p-4 md:p-6 max-w-6xl mx-auto page-enter">
+      <ScrollProgress />
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>
@@ -700,9 +702,10 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
             </p>
             {totalMonthlyMax > 0 && isPaid && (
               <p className={`mt-1 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                Estimated total value: <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                Estimated total value:{" "}
+                <AnimatedGradientText className="font-bold">
                   ${totalMonthlyMin.toLocaleString()} – ${totalMonthlyMax.toLocaleString()}/month
-                </span>
+                </AnimatedGradientText>
               </p>
             )}
             {totalMonthlyMax > 0 && isPaid && (
@@ -797,10 +800,10 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
               {totalMonthlyMax > 0 && (
                 <div className="text-center mb-6 py-6 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 dark:from-emerald-950/40 dark:to-emerald-900/20 border border-emerald-200/60 dark:border-emerald-800/40 glow-pulse" data-testid="value-counter">
                   <p className={`text-muted-foreground mb-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>Your estimated monthly benefit value</p>
-                  <p className="text-5xl font-extrabold text-emerald-600 dark:text-emerald-400 tabular-nums tracking-tight">
+                  <AnimatedGradientText className="text-5xl font-extrabold tabular-nums tracking-tight">
                     <AnimatedCounter target={totalMonthlyMax} />
-                    <span className="text-lg font-semibold text-emerald-600/70 dark:text-emerald-400/70">/mo</span>
-                  </p>
+                    <span className="text-lg font-semibold">/mo</span>
+                  </AnimatedGradientText>
                   <p className={`text-muted-foreground mt-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
                     Up to <span className="font-semibold">${(totalMonthlyMax * 12).toLocaleString()}/year</span> in potential benefits
                   </p>

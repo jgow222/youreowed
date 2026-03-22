@@ -43,6 +43,7 @@ import {
 import { useAppState } from "@/lib/store";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { ScrollProgress } from "@/components/Effects";
 
 // ─── Nav item type ──────────────────────────────────────────────────────────
 interface NavItem {
@@ -446,6 +447,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         {/* Page Content */}
         <main className="flex-1 overflow-y-auto">
+          <ScrollProgress />
           {children}
         </main>
       </div>

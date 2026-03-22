@@ -38,6 +38,7 @@ import {
 } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
+import { GlowingBorder, HoverTilt, AnimatedGradientText } from "@/components/Effects";
 
 const SETUP_FEE = 0;
 const DISCOUNT_PER_USER = 0.25;
@@ -150,23 +151,23 @@ const TIERS: Tier[] = [
   },
 ];
 
-function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
-  const { state, dispatch } = useAppState();
+function TierCardInner({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
+  const { state } = useAppState();
   const { toast } = useToast();
   const price = isAnnual ? tier.annualPrice : tier.monthlyPrice;
   const isFree = tier.id === "free";
 
   return (
     <Card
-      className={`p-5 relative overflow-hidden flex flex-col card-hover-lift ${
+      className={`p-5 relative overflow-hidden flex flex-col card-hover-lift h-full ${
         tier.highlighted
-          ? "border-2 border-primary shadow-lg glow-pulse"
+          ? "border-0 shadow-lg glow-pulse"
           : "border border-card-border"
       }`}
     >
       {tier.badge && (
         <Badge className="absolute top-3 right-3 bg-primary text-primary-foreground">
-          {tier.badge}
+          <AnimatedGradientText>{tier.badge}</AnimatedGradientText>
         </Badge>
       )}
       <div className="mb-4">
@@ -245,6 +246,17 @@ function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
       </Button>
     </Card>
   );
+}
+
+function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
+  if (tier.highlighted) {
+    return (
+      <GlowingBorder className="h-full">
+        <TierCardInner tier={tier} isAnnual={isAnnual} />
+      </GlowingBorder>
+    );
+  }
+  return <TierCardInner tier={tier} isAnnual={isAnnual} />;
 }
 
 function PriceCalculator() {
@@ -637,9 +649,9 @@ export default function PricingPage() {
       {/* Tier cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
         {TIERS.map((tier, index) => (
-          <div key={tier.id} className={`animate-fade-in-up stagger-${index + 1}`}>
+          <HoverTilt key={tier.id} className={`animate-fade-in-up stagger-${index + 1} h-full`}>
             <TierCard tier={tier} isAnnual={isAnnual} />
-          </div>
+          </HoverTilt>
         ))}
       </div>
 

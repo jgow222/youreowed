@@ -9,6 +9,7 @@ import { useElderlyMode } from "@/lib/elderly-mode";
 import { fetchNews, type NewsItem } from "@/lib/news";
 import EmailCapture from "@/components/EmailCapture";
 import { ExitIntentPopup, SocialProofToast, PulseCTA } from "@/components/Animations";
+import { ParticleBackground, AnimatedGradientText, CountUpOnScroll, HoverTilt, PulsingDot } from "@/components/Effects";
 
 export default function DashboardPage() {
   const { state } = useAppState();
@@ -98,11 +99,12 @@ export default function DashboardPage() {
     <>
     <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8 page-enter">
       {/* Hero — Bold, direct */}
-      <div className="py-4 animate-fade-in-up">
+      <div className="py-4 animate-fade-in-up relative">
+        <ParticleBackground />
         <p className="text-sm font-medium text-primary tracking-wide uppercase mb-2">Welcome back</p>
         <h1 className="text-2xl md:text-3xl font-black tracking-tight leading-tight" data-testid="text-welcome">
           You might be leaving<br />
-          <span className="text-primary money-glow">thousands on the table.</span>
+          <AnimatedGradientText>thousands on the table.</AnimatedGradientText>
         </h1>
         <p className="text-sm text-muted-foreground mt-3 max-w-lg">
           The average household qualifies for $5,000–$50,000+ per year in government benefits they never claim. Let's find yours in 2 minutes.
@@ -141,15 +143,21 @@ export default function DashboardPage() {
       {/* Stats — Big numbers, no fluff */}
       <div className="grid grid-cols-3 gap-3">
         <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-1">
-          <p className="text-3xl font-black text-primary">415</p>
+          <p className="text-3xl font-black text-primary">
+            <CountUpOnScroll target={415} />
+          </p>
           <p className="text-xs text-muted-foreground mt-1">programs we check</p>
         </Card>
         <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-2">
-          <p className="text-3xl font-black">50<span className="text-lg text-muted-foreground">+DC</span></p>
+          <p className="text-3xl font-black">
+            <CountUpOnScroll target={50} suffix="+" /><span className="text-lg text-muted-foreground">DC</span>
+          </p>
           <p className="text-xs text-muted-foreground mt-1">states covered</p>
         </Card>
         <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-3">
-          <p className="text-3xl font-black text-primary">$50K<span className="text-lg text-muted-foreground">+</span></p>
+          <p className="text-3xl font-black text-primary">
+            $<CountUpOnScroll target={50} suffix="K+" />
+          </p>
           <p className="text-xs text-muted-foreground mt-1">potential per year</p>
         </Card>
       </div>
@@ -157,63 +165,74 @@ export default function DashboardPage() {
       {/* Quick actions — Bigger, bolder */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <Link href="/screener">
-          <Card className="p-5 cursor-pointer border border-primary/20 bg-primary/[0.03] hover:bg-primary/[0.06] transition-colors group card-hover-lift animate-fade-in-up stagger-1" data-testid="card-quick-screener">
-            <div className="flex items-center justify-between">
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
-                  <Search className="w-5 h-5 text-primary" />
+          <HoverTilt className="animate-fade-in-up stagger-1">
+            <Card className="p-5 cursor-pointer border border-primary/20 bg-primary/[0.03] hover:bg-primary/[0.06] transition-colors group card-hover-lift" data-testid="card-quick-screener">
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
+                    <Search className="w-5 h-5 text-primary" />
+                  </div>
+                  <p className="text-base font-bold">Run your screening</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">Takes 2 minutes. 100% private.</p>
                 </div>
-                <p className="text-base font-bold">Run your screening</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Takes 2 minutes. 100% private.</p>
+                <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
               </div>
-              <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Card>
+            </Card>
+          </HoverTilt>
         </Link>
 
         <Link href="/assistant">
-          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift animate-fade-in-up stagger-2">
-            <div className="flex items-center justify-between">
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center mb-3">
-                  <MessageCircle className="w-5 h-5 text-violet-500" />
+          <HoverTilt className="animate-fade-in-up stagger-2">
+            <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift">
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center mb-3">
+                    <MessageCircle className="w-5 h-5 text-violet-500" />
+                  </div>
+                  <p className="text-base font-bold">Ask the AI</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">"How do I apply for SNAP?"</p>
                 </div>
-                <p className="text-base font-bold">Ask the AI</p>
-                <p className="text-xs text-muted-foreground mt-0.5">"How do I apply for SNAP?"</p>
+                <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
               </div>
-              <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Card>
+            </Card>
+          </HoverTilt>
         </Link>
 
         <Link href="/household">
-          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift animate-fade-in-up stagger-3">
-            <div className="flex items-center justify-between">
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3">
-                  <Users className="w-5 h-5 text-blue-500" />
+          <HoverTilt className="animate-fade-in-up stagger-3">
+            <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift">
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3">
+                    <Users className="w-5 h-5 text-blue-500" />
+                  </div>
+                  <p className="text-base font-bold">Your household</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{memberCount} member{memberCount !== 1 ? "s" : ""} — add more for better results</p>
                 </div>
-                <p className="text-base font-bold">Your household</p>
-                <p className="text-xs text-muted-foreground mt-0.5">{memberCount} member{memberCount !== 1 ? "s" : ""} — add more for better results</p>
+                <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
               </div>
-              <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Card>
+            </Card>
+          </HoverTilt>
         </Link>
 
         <Link href="/news">
-          <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift animate-fade-in-up stagger-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center mb-3">
-                  <Zap className="w-5 h-5 text-amber-500" />
+          <HoverTilt className="animate-fade-in-up stagger-4">
+            <Card className="p-5 cursor-pointer border border-card-border hover:border-primary/20 transition-colors group card-hover-lift">
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center mb-3">
+                    <Zap className="w-5 h-5 text-amber-500" />
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <p className="text-base font-bold">Policy updates</p>
+                    <PulsingDot />
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-0.5">Rules change. Stay ahead.</p>
                 </div>
-                <p className="text-base font-bold">Policy updates</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Rules change. Stay ahead.</p>
+                <Badge variant="destructive" className="h-5 text-[10px] px-2 badge-pop">3 new</Badge>
               </div>
-              <Badge variant="destructive" className="h-5 text-[10px] px-2 badge-pop">3 new</Badge>
-            </div>
-          </Card>
+            </Card>
+          </HoverTilt>
         </Link>
       </div>
 
