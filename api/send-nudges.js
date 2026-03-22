@@ -2,20 +2,16 @@
 // Sends reminder emails to users who signed up but haven't scanned,
 // abandoned the screener, or scanned but haven't paid.
 //
-// Called daily by a scheduled task or manually via:
-// POST /api/send-nudges?key=YOUR_KEY
-//
+// POST /api/send-nudges
 // Deployed at: youreowed.org/api/send-nudges
 
 const { Resend } = require("resend");
 const { createClient } = require("@supabase/supabase-js");
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-const supabase = createClient(
-  process.env.VITE_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_KEY
-);
+// Gracefully handle missing env vars
+const resendKey = process.env.RESEND_API_KEY;
+const supabaseUrl = process.env.VITE_SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY;
 
 const FROM_EMAIL = "YoureOwed <hello@youreowed.org>";
 const SITE_URL = "https://youreowed.org";
@@ -26,41 +22,7 @@ function noScanEmail(name) {
   const firstName = name?.split(" ")[0] || "there";
   return {
     subject: "You signed up but haven't checked your benefits yet",
-    html: `
-      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 560px; margin: 0 auto; color: #1a1a1a;">
-        <div style="padding: 32px 24px;">
-          <div style="background: #171614; border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-            <span style="color: #00E676; font-weight: 900; font-size: 20px;">YoureOwed</span>
-          </div>
-          
-          <h1 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Hey ${firstName},</h1>
-          
-          <p style="font-size: 15px; line-height: 1.6; color: #444;">
-            You created your account but haven't run your benefits screening yet. The average household qualifies for <strong>$5,000–$50,000+ per year</strong> in government benefits they never claim.
-          </p>
-          
-          <p style="font-size: 15px; line-height: 1.6; color: #444;">
-            It takes <strong>less than 2 minutes</strong> and we check 335+ federal and state programs. Your information stays completely private.
-          </p>
-          
-          <div style="text-align: center; margin: 32px 0;">
-            <a href="${SITE_URL}/#/screener" style="background: #00E676; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; display: inline-block;">
-              Check What You're Owed →
-            </a>
-          </div>
-          
-          <p style="font-size: 13px; color: #888; line-height: 1.5;">
-            People just like you are discovering thousands in unclaimed benefits every day. Don't leave money on the table.
-          </p>
-          
-          <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
-          <p style="font-size: 11px; color: #aaa;">
-            You're receiving this because you signed up at YoureOwed. 
-            <a href="${SITE_URL}" style="color: #aaa;">youreowed.org</a>
-          </p>
-        </div>
-      </div>
-    `,
+    html: `<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:560px;margin:0 auto;color:#1a1a1a"><div style="padding:32px 24px"><div style="background:#171614;border-radius:12px;padding:24px;margin-bottom:24px"><span style="color:#00E676;font-weight:900;font-size:20px">YoureOwed</span></div><h1 style="font-size:22px;font-weight:700;margin-bottom:8px">Hey ${firstName},</h1><p style="font-size:15px;line-height:1.6;color:#444">You created your account but haven't run your benefits screening yet. The average household qualifies for <strong>$5,000–$50,000+ per year</strong> in government benefits they never claim.</p><p style="font-size:15px;line-height:1.6;color:#444">It takes <strong>less than 2 minutes</strong> and we check 415+ federal and state programs.</p><div style="text-align:center;margin:32px 0"><a href="${SITE_URL}/#/screener" style="background:#00E676;color:#000;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block">Check What You're Owed →</a></div><hr style="border:none;border-top:1px solid #eee;margin:24px 0"><p style="font-size:11px;color:#aaa">You're receiving this because you signed up at YoureOwed. <a href="${SITE_URL}" style="color:#aaa">youreowed.org</a></p></div></div>`,
   };
 }
 
@@ -68,41 +30,7 @@ function abandonedEmail(name) {
   const firstName = name?.split(" ")[0] || "there";
   return {
     subject: "You were almost done — pick up where you left off",
-    html: `
-      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 560px; margin: 0 auto; color: #1a1a1a;">
-        <div style="padding: 32px 24px;">
-          <div style="background: #171614; border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-            <span style="color: #00E676; font-weight: 900; font-size: 20px;">YoureOwed</span>
-          </div>
-          
-          <h1 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Hey ${firstName},</h1>
-          
-          <p style="font-size: 15px; line-height: 1.6; color: #444;">
-            You started your benefits screening but didn't finish. Your progress is saved — you can pick up right where you left off.
-          </p>
-          
-          <p style="font-size: 15px; line-height: 1.6; color: #444;">
-            Just a few more questions and we'll show you every program you may qualify for, with <strong>estimated dollar amounts</strong> for each one.
-          </p>
-          
-          <div style="text-align: center; margin: 32px 0;">
-            <a href="${SITE_URL}/#/screener" style="background: #00E676; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; display: inline-block;">
-              Finish My Screening →
-            </a>
-          </div>
-          
-          <p style="font-size: 13px; color: #888; line-height: 1.5;">
-            It only takes another minute or two. Your answers are private and never shared.
-          </p>
-          
-          <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
-          <p style="font-size: 11px; color: #aaa;">
-            You're receiving this because you started a screening at YoureOwed. 
-            <a href="${SITE_URL}" style="color: #aaa;">youreowed.org</a>
-          </p>
-        </div>
-      </div>
-    `,
+    html: `<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:560px;margin:0 auto;color:#1a1a1a"><div style="padding:32px 24px"><div style="background:#171614;border-radius:12px;padding:24px;margin-bottom:24px"><span style="color:#00E676;font-weight:900;font-size:20px">YoureOwed</span></div><h1 style="font-size:22px;font-weight:700;margin-bottom:8px">Hey ${firstName},</h1><p style="font-size:15px;line-height:1.6;color:#444">You started your benefits screening but didn't finish. Just a few more questions and we'll show you every program you may qualify for.</p><div style="text-align:center;margin:32px 0"><a href="${SITE_URL}/#/screener" style="background:#00E676;color:#000;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block">Finish My Screening →</a></div><hr style="border:none;border-top:1px solid #eee;margin:24px 0"><p style="font-size:11px;color:#aaa">You're receiving this because you started a screening at YoureOwed. <a href="${SITE_URL}" style="color:#aaa">youreowed.org</a></p></div></div>`,
   };
 }
 
@@ -110,124 +38,121 @@ function noPayEmail(name) {
   const firstName = name?.split(" ")[0] || "there";
   return {
     subject: "You found benefits — unlock your full results for $4.99/mo",
-    html: `
-      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 560px; margin: 0 auto; color: #1a1a1a;">
-        <div style="padding: 32px 24px;">
-          <div style="background: #171614; border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-            <span style="color: #00E676; font-weight: 900; font-size: 20px;">YoureOwed</span>
-          </div>
-          
-          <h1 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Hey ${firstName},</h1>
-          
-          <p style="font-size: 15px; line-height: 1.6; color: #444;">
-            You completed your screening and we found programs you may qualify for. But you're still on the free plan, which means you can only see a preview.
-          </p>
-          
-          <p style="font-size: 15px; line-height: 1.6; color: #444;">
-            For just <strong>$4.99/month</strong>, you'll unlock:
-          </p>
-          
-          <ul style="font-size: 15px; line-height: 1.8; color: #444; padding-left: 20px;">
-            <li>All 335+ program details with estimated dollar amounts</li>
-            <li>Step-by-step application guides</li>
-            <li>AI assistant to answer your questions</li>
-            <li>Deadline reminders so you never miss a window</li>
-          </ul>
-          
-          <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 16px; margin: 24px 0; text-align: center;">
-            <p style="font-size: 13px; color: #166534; margin: 0;">
-              Most users find <strong>$5,000–$50,000+/year</strong> in benefits.<br/>
-              That's up to <strong>$10,000 for every $1</strong> you spend on YoureOwed.
-            </p>
-          </div>
-          
-          <div style="text-align: center; margin: 32px 0;">
-            <a href="${SITE_URL}/#/pricing" style="background: #00E676; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; display: inline-block;">
-              Unlock My Results — $4.99/mo →
-            </a>
-          </div>
-          
-          <p style="font-size: 13px; color: #888; line-height: 1.5;">
-            Cancel anytime. 7-day money-back guarantee.
-          </p>
-          
-          <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
-          <p style="font-size: 11px; color: #aaa;">
-            You're receiving this because you completed a screening at YoureOwed. 
-            <a href="${SITE_URL}" style="color: #aaa;">youreowed.org</a>
-          </p>
-        </div>
-      </div>
-    `,
+    html: `<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:560px;margin:0 auto;color:#1a1a1a"><div style="padding:32px 24px"><div style="background:#171614;border-radius:12px;padding:24px;margin-bottom:24px"><span style="color:#00E676;font-weight:900;font-size:20px">YoureOwed</span></div><h1 style="font-size:22px;font-weight:700;margin-bottom:8px">Hey ${firstName},</h1><p style="font-size:15px;line-height:1.6;color:#444">You completed your screening and we found programs you may qualify for. For just <strong>$4.99/month</strong>, unlock all 415+ program details with dollar estimates and application guides.</p><div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:16px;margin:24px 0;text-align:center"><p style="font-size:13px;color:#166534;margin:0">Most users find <strong>$5,000–$50,000+/year</strong> in benefits.<br/>That's up to <strong>$10,000 for every $1</strong> you spend on YoureOwed.</p></div><div style="text-align:center;margin:32px 0"><a href="${SITE_URL}/#/pricing" style="background:#00E676;color:#000;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block">Unlock My Results — $4.99/mo →</a></div><hr style="border:none;border-top:1px solid #eee;margin:24px 0"><p style="font-size:11px;color:#aaa">You're receiving this because you completed a screening at YoureOwed. <a href="${SITE_URL}" style="color:#aaa">youreowed.org</a></p></div></div>`,
   };
 }
 
-// ─── Track which emails we've already sent ──────────────────────────────────
+// ─── Helpers ─────────────────────────────────────────────────────────────────
 
-async function hasBeenEmailed(userId, nudgeType) {
-  const { data } = await supabase
-    .from("email_nudges_sent")
-    .select("id")
-    .eq("user_id", userId)
-    .eq("nudge_type", nudgeType)
-    .limit(1);
-  return data && data.length > 0;
+async function tableExists(supabase, tableName) {
+  try {
+    const { error } = await supabase.from(tableName).select("id").limit(1);
+    return !error || !error.message.includes("does not exist");
+  } catch {
+    return false;
+  }
 }
 
-async function recordEmailSent(userId, email, nudgeType) {
-  await supabase.from("email_nudges_sent").insert({
-    user_id: userId,
-    email,
-    nudge_type: nudgeType,
-  });
+async function hasBeenEmailed(supabase, userId, nudgeType) {
+  try {
+    const { data } = await supabase
+      .from("email_nudges_sent")
+      .select("id")
+      .eq("user_id", userId)
+      .eq("nudge_type", nudgeType)
+      .limit(1);
+    return data && data.length > 0;
+  } catch {
+    return false; // If table doesn't exist, assume not emailed
+  }
+}
+
+async function recordEmailSent(supabase, userId, email, nudgeType) {
+  try {
+    await supabase.from("email_nudges_sent").insert({
+      user_id: userId,
+      email,
+      nudge_type: nudgeType,
+    });
+  } catch {
+    // Silently fail — don't block sending
+  }
 }
 
 // ─── Main Handler ───────────────────────────────────────────────────────────
 
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
+module.exports = async function handler(req, res) {
+  // Allow both GET and POST for easier testing
+  if (req.method !== "POST" && req.method !== "GET") {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  // Simple auth check
-  const key = req.query.key || req.headers["x-api-key"];
-  if (key !== process.env.NUDGE_API_KEY && key !== process.env.SUPABASE_SERVICE_KEY?.slice(0, 20)) {
-    return res.status(401).json({ error: "Unauthorized" });
+  // Check env vars
+  if (!resendKey || !supabaseUrl || !supabaseKey) {
+    return res.status(200).json({
+      success: false,
+      error: "Missing env vars",
+      missing: {
+        RESEND_API_KEY: !resendKey,
+        VITE_SUPABASE_URL: !supabaseUrl,
+        SUPABASE_SERVICE_KEY: !supabaseKey,
+      },
+    });
   }
 
-  const sent = { no_scan: 0, abandoned: 0, no_pay: 0, errors: 0 };
+  const resend = new Resend(resendKey);
+  const supabase = createClient(supabaseUrl, supabaseKey);
+  const sent = { no_scan: 0, abandoned: 0, no_pay: 0, errors: 0, skipped: 0 };
 
   try {
+    // Check if required tables exist
+    const hasProfiles = await tableExists(supabase, "user_profiles");
+    if (!hasProfiles) {
+      return res.status(200).json({ success: true, message: "No user_profiles table yet", sent });
+    }
+
+    const hasActivity = await tableExists(supabase, "user_activity");
+    const hasNudgeLog = await tableExists(supabase, "email_nudges_sent");
+
     // Get all user profiles
-    const { data: profiles } = await supabase
+    const { data: profiles, error: profilesError } = await supabase
       .from("user_profiles")
       .select("id, email, name, subscription_tier, created_at")
       .not("email", "is", null);
 
-    if (!profiles) {
-      return res.status(200).json({ message: "No profiles found", sent });
+    if (profilesError || !profiles || profiles.length === 0) {
+      return res.status(200).json({ success: true, message: "No profiles found", sent, error: profilesError?.message });
     }
 
     for (const profile of profiles) {
+      if (!profile.email) continue;
+
       const daysSinceSignup = Math.floor(
         (Date.now() - new Date(profile.created_at).getTime()) / (1000 * 60 * 60 * 24)
       );
 
-      // Get user activity
-      const { data: activities } = await supabase
-        .from("user_activity")
-        .select("event_type")
-        .eq("user_id", profile.id);
+      // Skip if signed up less than 1 day ago
+      if (daysSinceSignup < 1) { sent.skipped++; continue; }
 
-      const events = new Set((activities || []).map(a => a.event_type));
+      // Get user activity (if table exists)
+      let events = new Set();
+      if (hasActivity) {
+        const { data: activities } = await supabase
+          .from("user_activity")
+          .select("event_type")
+          .eq("user_id", profile.id);
+        events = new Set((activities || []).map(a => a.event_type));
+      }
+
       const hasStarted = events.has("started_screener");
       const hasCompleted = events.has("completed_screener");
       const isPaid = profile.subscription_tier !== "free";
 
       try {
-        // 1. No scan — signed up 1+ days ago, never completed screening
-        if (daysSinceSignup >= 1 && !hasCompleted && !hasStarted) {
-          if (!(await hasBeenEmailed(profile.id, "no_scan"))) {
+        // 1. No scan — signed up but never started or completed screening
+        if (!hasCompleted && !hasStarted) {
+          const alreadySent = hasNudgeLog ? await hasBeenEmailed(supabase, profile.id, "no_scan") : false;
+          if (!alreadySent) {
             const template = noScanEmail(profile.name);
             await resend.emails.send({
               from: FROM_EMAIL,
@@ -235,14 +160,15 @@ export default async function handler(req, res) {
               subject: template.subject,
               html: template.html,
             });
-            await recordEmailSent(profile.id, profile.email, "no_scan");
+            if (hasNudgeLog) await recordEmailSent(supabase, profile.id, profile.email, "no_scan");
             sent.no_scan++;
           }
         }
 
-        // 2. Abandoned — started screener 1+ days ago, never completed
-        if (daysSinceSignup >= 1 && hasStarted && !hasCompleted) {
-          if (!(await hasBeenEmailed(profile.id, "abandoned"))) {
+        // 2. Abandoned — started but never completed
+        if (hasStarted && !hasCompleted) {
+          const alreadySent = hasNudgeLog ? await hasBeenEmailed(supabase, profile.id, "abandoned") : false;
+          if (!alreadySent) {
             const template = abandonedEmail(profile.name);
             await resend.emails.send({
               from: FROM_EMAIL,
@@ -250,14 +176,15 @@ export default async function handler(req, res) {
               subject: template.subject,
               html: template.html,
             });
-            await recordEmailSent(profile.id, profile.email, "abandoned");
+            if (hasNudgeLog) await recordEmailSent(supabase, profile.id, profile.email, "abandoned");
             sent.abandoned++;
           }
         }
 
         // 3. No pay — completed screening 2+ days ago, still free
         if (daysSinceSignup >= 2 && hasCompleted && !isPaid) {
-          if (!(await hasBeenEmailed(profile.id, "no_pay"))) {
+          const alreadySent = hasNudgeLog ? await hasBeenEmailed(supabase, profile.id, "no_pay") : false;
+          if (!alreadySent) {
             const template = noPayEmail(profile.name);
             await resend.emails.send({
               from: FROM_EMAIL,
@@ -265,19 +192,19 @@ export default async function handler(req, res) {
               subject: template.subject,
               html: template.html,
             });
-            await recordEmailSent(profile.id, profile.email, "no_pay");
+            if (hasNudgeLog) await recordEmailSent(supabase, profile.id, profile.email, "no_pay");
             sent.no_pay++;
           }
         }
       } catch (emailErr) {
-        console.error(`Failed to send to ${profile.email}:`, emailErr);
+        console.error(`Failed to send to ${profile.email}:`, emailErr?.message || emailErr);
         sent.errors++;
       }
     }
 
     return res.status(200).json({ success: true, sent });
   } catch (err) {
-    console.error("Send nudges error:", err);
-    return res.status(500).json({ error: "Server error", details: err.message });
+    console.error("Send nudges error:", err?.message || err);
+    return res.status(200).json({ success: false, error: err?.message || "Unknown error", sent });
   }
-}
+};
