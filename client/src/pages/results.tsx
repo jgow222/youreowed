@@ -904,7 +904,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
         </div>
 
         {/* Desktop sidebar — sticky, only visible on lg+ screens */}
-        <aside className="hidden lg:block w-72 flex-shrink-0">
+        <aside className="hidden lg:block w-80 flex-shrink-0">
           <div className="sticky top-4">
             <SidebarMonetization results={results} />
           </div>

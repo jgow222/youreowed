@@ -410,39 +410,41 @@ function SidebarAttorneyCard() {
   }
 
   return (
-    <Card className="p-3 border border-card-border bg-card">
-      <div className="flex items-center gap-1.5 mb-2">
-        <Scale className="w-3.5 h-3.5 text-primary flex-shrink-0" />
-        <p className="text-xs font-bold leading-tight">Free Legal Help</p>
+    <Card className="p-4 border border-card-border bg-card">
+      <div className="flex items-center gap-2 mb-2">
+        <div className="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+          <Scale className="w-3.5 h-3.5 text-primary" />
+        </div>
+        <p className="text-sm font-bold">Free Legal Help</p>
       </div>
-      <p className="text-[10px] text-muted-foreground mb-2 leading-relaxed">
-        Get a free disability attorney consultation. They only get paid if you win.
+      <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+        Get a free disability attorney consultation. They only get paid if you win — zero upfront cost.
       </p>
-      <div className="space-y-1.5 mb-2">
+      <div className="space-y-2 mb-3">
         <Input
           placeholder="Your name"
           value={name}
           onChange={e => setSbName(e.target.value)}
-          className="h-7 text-xs"
+          className="h-9 text-sm"
         />
         <Input
           placeholder="Phone number"
           type="tel"
           value={phone}
           onChange={e => setSbPhone(e.target.value)}
-          className="h-7 text-xs"
+          className="h-9 text-sm"
         />
       </div>
       <Button
-        className="w-full h-7 text-xs gap-1"
+        className="w-full h-9 text-sm gap-1.5"
         onClick={handleSubmit}
         disabled={!name || !phone}
       >
-        <Scale className="w-3 h-3" />
-        Connect me
+        <Scale className="w-3.5 h-3.5" />
+        Connect me to an attorney
       </Button>
-      <p className="text-[9px] text-muted-foreground text-center mt-1.5">
-        No cost unless you win.
+      <p className="text-[10px] text-muted-foreground text-center mt-2">
+        No cost unless you win your case.
       </p>
     </Card>
   );
@@ -469,118 +471,144 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
   if (!hasAnyCard) return null;
 
   return (
-    <div className="space-y-2">
-      <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground px-0.5">
+    <div className="space-y-3">
+      <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground px-0.5">
         Recommended for You
       </p>
 
-      {/* Card 1: Save on Taxes */}
+      {/* URGENT: Tax Filing CTA — always show prominently */}
       {showTaxCard && (
-        <Card className="p-3 border border-card-border bg-card">
-          <div className="flex items-center gap-1.5 mb-2">
-            <DollarSign className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0" />
-            <p className="text-xs font-bold leading-tight">Save on Taxes</p>
+        <Card className="p-4 border-2 border-emerald-500/30 bg-gradient-to-br from-emerald-500/[0.06] to-emerald-500/[0.02]">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+              <DollarSign className="w-4 h-4 text-emerald-500" />
+            </div>
+            <div>
+              <p className="text-sm font-bold">Claim Your Tax Credits</p>
+              <Badge variant="destructive" className="h-4 text-[10px] mt-0.5">Don't miss out</Badge>
+            </div>
           </div>
-          <p className="text-[10px] text-muted-foreground mb-2">File free &amp; claim your credits</p>
-          <div className="space-y-1">
+          <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+            <span className="text-foreground font-semibold">Haven't filed your taxes yet?</span> You could be leaving thousands on the table. The EITC alone is worth up to $7,830. File for free and claim every credit you're owed.
+          </p>
+          <div className="space-y-1.5 mb-3">
             <a
               href="https://www.freetaxusa.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between p-1.5 rounded-md border border-card-border hover:border-primary/30 transition-colors group"
+              className="flex items-center justify-between p-2.5 rounded-lg border border-emerald-500/20 bg-emerald-500/[0.04] hover:bg-emerald-500/[0.08] transition-colors group"
             >
-              <span className="text-[10px] font-medium">FreeTaxUSA <span className="text-muted-foreground font-normal">(Free)</span></span>
-              <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-primary flex-shrink-0" />
+              <div>
+                <span className="text-sm font-semibold block">FreeTaxUSA</span>
+                <span className="text-[11px] text-muted-foreground">100% free federal filing</span>
+              </div>
+              <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-emerald-500 flex-shrink-0" />
             </a>
             <a
               href="https://www.taxslayer.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between p-1.5 rounded-md border border-card-border hover:border-primary/30 transition-colors group"
+              className="flex items-center justify-between p-2.5 rounded-lg border border-card-border hover:border-primary/30 transition-colors group"
             >
-              <span className="text-[10px] font-medium">TaxSlayer</span>
-              <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-primary flex-shrink-0" />
+              <div>
+                <span className="text-sm font-semibold block">TaxSlayer</span>
+                <span className="text-[11px] text-muted-foreground">Budget pick — starts at $0</span>
+              </div>
+              <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary flex-shrink-0" />
             </a>
           </div>
           <a
             href="https://www.irs.gov/freefile"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-0.5 text-[10px] text-primary hover:underline mt-2"
+            className="inline-flex items-center gap-1 text-xs text-primary hover:underline font-medium"
           >
-            IRS Free File <ArrowRight className="w-2.5 h-2.5" />
+            IRS Free File (income under $84K) <ArrowRight className="w-3 h-3" />
           </a>
+          <div className="mt-3 p-2.5 rounded-lg bg-amber-500/[0.06] border border-amber-500/20">
+            <p className="text-[11px] text-amber-200 leading-relaxed">
+              <span className="font-bold">Filing deadline: April 15.</span> Even if you don't owe taxes, you MUST file to claim EITC, Child Tax Credit, and other refundable credits. Many people miss out on $2,000–$8,000+ because they don't file.
+            </p>
+          </div>
         </Card>
       )}
 
       {/* Card 2: Discounts You Qualify For */}
       {showDiscounts && (
-        <Card className="p-3 border border-card-border bg-card">
-          <div className="flex items-center gap-1.5 mb-2">
-            <ShoppingBag className="w-3.5 h-3.5 text-amber-500 flex-shrink-0" />
-            <p className="text-xs font-bold leading-tight">Discounts You Qualify For</p>
+        <Card className="p-4 border border-card-border bg-card">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-7 h-7 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
+              <ShoppingBag className="w-3.5 h-3.5 text-amber-500" />
+            </div>
+            <p className="text-sm font-bold">Discounts You Qualify For</p>
           </div>
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <a
               href="https://www.amazon.com/b?ie=UTF8&node=16256994011"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between p-1.5 rounded-md border border-card-border hover:border-primary/30 transition-colors group"
+              className="flex items-center justify-between p-2 rounded-lg border border-card-border hover:border-primary/30 transition-colors group"
             >
-              <span className="text-[10px] font-medium flex-1 min-w-0 truncate">Amazon Prime — 50% off</span>
-              <Badge variant="secondary" className="text-[8px] h-3.5 px-1 mx-1.5 flex-shrink-0">Save $7/mo</Badge>
-              <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-primary flex-shrink-0" />
+              <span className="text-xs font-medium">Amazon Prime — 50% off</span>
+              <div className="flex items-center gap-1.5 flex-shrink-0">
+                <Badge variant="secondary" className="text-[10px] h-4 px-1.5">Save $7/mo</Badge>
+                <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary" />
+              </div>
             </a>
             <a
               href="https://www.walmart.com/plus/assist"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between p-1.5 rounded-md border border-card-border hover:border-primary/30 transition-colors group"
+              className="flex items-center justify-between p-2 rounded-lg border border-card-border hover:border-primary/30 transition-colors group"
             >
-              <span className="text-[10px] font-medium flex-1 min-w-0 truncate">Walmart+ — 50% off</span>
-              <Badge variant="secondary" className="text-[8px] h-3.5 px-1 mx-1.5 flex-shrink-0">Save $6/mo</Badge>
-              <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-primary flex-shrink-0" />
+              <span className="text-xs font-medium">Walmart+ — 50% off</span>
+              <div className="flex items-center gap-1.5 flex-shrink-0">
+                <Badge variant="secondary" className="text-[10px] h-4 px-1.5">Save $6/mo</Badge>
+                <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary" />
+              </div>
             </a>
             <a
               href="https://www.museums4all.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between p-1.5 rounded-md border border-card-border hover:border-primary/30 transition-colors group"
+              className="flex items-center justify-between p-2 rounded-lg border border-card-border hover:border-primary/30 transition-colors group"
             >
-              <span className="text-[10px] font-medium">Museums for All — $3 entry</span>
-              <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-primary flex-shrink-0" />
+              <span className="text-xs font-medium">Museums for All — $3 entry</span>
+              <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary flex-shrink-0" />
             </a>
           </div>
         </Card>
       )}
 
-      {/* Card 3: Save on Internet & Phone (always show) */}
-      <Card className="p-3 border border-card-border bg-card">
-        <div className="flex items-center gap-1.5 mb-2">
-          <Wifi className="w-3.5 h-3.5 text-blue-500 flex-shrink-0" />
-          <p className="text-xs font-bold leading-tight">Save on Internet &amp; Phone</p>
+      {/* Card 3: Save on Internet & Phone */}
+      <Card className="p-4 border border-card-border bg-card">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-7 h-7 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
+            <Wifi className="w-3.5 h-3.5 text-blue-500" />
+          </div>
+          <p className="text-sm font-bold">Save on Internet & Phone</p>
         </div>
-        <div className="space-y-1.5">
+        <div className="space-y-2">
           <div className="flex items-center justify-between">
-            <span className="text-[10px] text-muted-foreground">Discounted Internet — $30/mo or less</span>
+            <span className="text-xs text-muted-foreground">Discounted Internet — $30/mo or less</span>
             <a
               href="https://www.lifelinesupport.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[10px] text-primary hover:underline inline-flex items-center gap-0.5 flex-shrink-0 ml-1"
+              className="text-xs text-primary hover:underline inline-flex items-center gap-1 flex-shrink-0 ml-2 font-medium"
             >
-              Learn more <ExternalLink className="w-2.5 h-2.5" />
+              Apply <ExternalLink className="w-3 h-3" />
             </a>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-[10px] text-muted-foreground">Free Government Phone</span>
+            <span className="text-xs text-muted-foreground">Free Government Phone</span>
             <a
               href="https://www.lifelinesupport.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[10px] text-primary hover:underline inline-flex items-center gap-0.5 flex-shrink-0 ml-1"
+              className="text-xs text-primary hover:underline inline-flex items-center gap-1 flex-shrink-0 ml-2 font-medium"
             >
-              Learn more <ExternalLink className="w-2.5 h-2.5" />
+              Apply <ExternalLink className="w-3 h-3" />
             </a>
           </div>
         </div>
@@ -591,21 +619,23 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
 
       {/* Card 5: Health Coverage Help (if health-eligible) */}
       {showHealthCard && (
-        <Card className="p-3 border border-card-border bg-card">
-          <div className="flex items-center gap-1.5 mb-2">
-            <Heart className="w-3.5 h-3.5 text-rose-500 flex-shrink-0" />
-            <p className="text-xs font-bold leading-tight">Health Coverage Help</p>
+        <Card className="p-4 border border-card-border bg-card">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-7 h-7 rounded-lg bg-rose-500/10 flex items-center justify-center flex-shrink-0">
+              <Heart className="w-3.5 h-3.5 text-rose-500" />
+            </div>
+            <p className="text-sm font-bold">Health Coverage Help</p>
           </div>
-          <p className="text-[10px] text-muted-foreground mb-2">Find affordable health insurance</p>
+          <p className="text-xs text-muted-foreground mb-3">Find affordable health insurance — many plans are $0–$50/mo after subsidies.</p>
           <a
             href="https://www.healthcare.gov/"
             target="_blank"
             rel="noopener noreferrer"
             className="block"
           >
-            <Button variant="outline" className="w-full h-7 text-xs gap-1">
+            <Button variant="outline" className="w-full h-9 text-sm gap-1.5">
               Get a free quote
-              <ExternalLink className="w-3 h-3" />
+              <ExternalLink className="w-3.5 h-3.5" />
             </Button>
           </a>
         </Card>
