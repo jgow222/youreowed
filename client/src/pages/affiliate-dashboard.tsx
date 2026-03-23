@@ -87,18 +87,17 @@ const PARTNERS: PartnerConfig[] = [
   },
 ];
 
-// ── Demo seed data ─────────────────────────────────────────────────────────────
+// ── Empty initial state ──────────────────────────────────────────────────────
 
-// Realistic pre-populated numbers for demo purposes
-const DEMO_CLICKS: Record<string, { clicks: number; lastClick: number }> = {
-  FreeTaxUSA: { clicks: 412, lastClick: Date.now() - 1000 * 60 * 14 },
-  TaxSlayer: { clicks: 287, lastClick: Date.now() - 1000 * 60 * 47 },
-  "IRS Free File": { clicks: 198, lastClick: Date.now() - 1000 * 60 * 92 },
-  "Amazon Prime": { clicks: 543, lastClick: Date.now() - 1000 * 60 * 6 },
-  "Walmart+": { clicks: 371, lastClick: Date.now() - 1000 * 60 * 28 },
-  "Museums for All": { clicks: 84, lastClick: Date.now() - 1000 * 60 * 180 },
-  Lifeline: { clicks: 256, lastClick: Date.now() - 1000 * 60 * 35 },
-  "Healthcare.gov": { clicks: 629, lastClick: Date.now() - 1000 * 60 * 3 },
+const EMPTY_CLICKS: Record<string, { clicks: number; lastClick: number }> = {
+  FreeTaxUSA: { clicks: 0, lastClick: 0 },
+  TaxSlayer: { clicks: 0, lastClick: 0 },
+  "IRS Free File": { clicks: 0, lastClick: 0 },
+  "Amazon Prime": { clicks: 0, lastClick: 0 },
+  "Walmart+": { clicks: 0, lastClick: 0 },
+  "Museums for All": { clicks: 0, lastClick: 0 },
+  Lifeline: { clicks: 0, lastClick: 0 },
+  "Healthcare.gov": { clicks: 0, lastClick: 0 },
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
@@ -166,7 +165,7 @@ function ClickBar({
 // ── Main dashboard ─────────────────────────────────────────────────────────────
 
 export default function AffiliateDashboardPage() {
-  const [clickData, setClickData] = useState(DEMO_CLICKS);
+  const [clickData, setClickData] = useState(EMPTY_CLICKS);
   const [isLiveData, setIsLiveData] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [lastRefresh, setLastRefresh] = useState(Date.now());
@@ -175,23 +174,18 @@ export default function AffiliateDashboardPage() {
     setIsLoading(true);
     try {
       const apiData = await fetchAffiliateStats();
-      if (apiData.totalClicks > 0) {
-        // Merge API data with demo structure
-        const merged: Record<string, { clicks: number; lastClick: number }> = { ...DEMO_CLICKS };
-        for (const [partner, stat] of Object.entries(apiData.stats)) {
-          merged[partner] = {
-            clicks: stat.clicks,
-            lastClick: stat.lastClick ? new Date(stat.lastClick).getTime() : Date.now(),
-          };
-        }
-        setClickData(merged);
-        setIsLiveData(true);
-      } else {
-        // No real data — keep demo data
-        setIsLiveData(false);
+      // Merge API data into the partner structure
+      const merged: Record<string, { clicks: number; lastClick: number }> = { ...EMPTY_CLICKS };
+      for (const [partner, stat] of Object.entries(apiData.stats)) {
+        merged[partner] = {
+          clicks: stat.clicks,
+          lastClick: stat.lastClick ? new Date(stat.lastClick).getTime() : Date.now(),
+        };
       }
+      setClickData(merged);
+      setIsLiveData(true);
     } catch {
-      // API error — keep demo data
+      // API error — keep empty state
       setIsLiveData(false);
     } finally {
       setIsLoading(false);
@@ -226,15 +220,7 @@ export default function AffiliateDashboardPage() {
     PARTNERS[0]
   );
 
-  function handleSimulateClick(partnerName: string) {
-    setClickData((prev) => ({
-      ...prev,
-      [partnerName]: {
-        clicks: (prev[partnerName]?.clicks ?? 0) + 1,
-        lastClick: Date.now(),
-      },
-    }));
-  }
+
 
   function handleRefresh() {
     loadStats();
@@ -255,8 +241,8 @@ export default function AffiliateDashboardPage() {
         <div className="flex items-center gap-3 p-3 rounded-lg border border-amber-500/20 bg-amber-500/[0.05]">
           <Info className="w-4 h-4 text-amber-400 flex-shrink-0" />
           <p className="text-xs text-muted-foreground leading-relaxed">
-            <span className="font-semibold text-foreground">Showing demo data.</span>{" "}
-            No real clicks recorded yet — affiliate links in the sidebar will start tracking automatically as users interact with them.
+            <span className="font-semibold text-foreground">No clicks yet.</span>{" "}
+            Affiliate links in the results sidebar will start tracking automatically as users interact with them.
           </p>
         </div>
       )}
@@ -404,9 +390,7 @@ export default function AffiliateDashboardPage() {
                 <th className="text-center px-4 py-3 text-xs font-semibold text-muted-foreground uppercase tracking-wide">
                   Status
                 </th>
-                <th className="text-center px-4 py-3 text-xs font-semibold text-muted-foreground uppercase tracking-wide">
-                  Simulate
-                </th>
+
               </tr>
             </thead>
             <tbody>
@@ -461,17 +445,7 @@ export default function AffiliateDashboardPage() {
                         {partner.status}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-center">
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="h-7 text-xs gap-1 hover:text-primary"
-                        onClick={() => handleSimulateClick(partner.name)}
-                      >
-                        <MousePointerClick className="w-3 h-3" />
-                        +1
-                      </Button>
-                    </td>
+
                   </tr>
                 );
               })}
