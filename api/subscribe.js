@@ -2,7 +2,8 @@
 // Captures email addresses for the weekly benefits newsletter.
 // Deployed at: youreowed.org/api/subscribe
 
-const { createClient } = require("@supabase/supabase-js");
+let createClient;
+try { createClient = require("@supabase/supabase-js").createClient; } catch (e) {}
 
 const supabase = createClient(
   process.env.VITE_SUPABASE_URL,

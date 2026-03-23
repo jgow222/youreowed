@@ -5,10 +5,14 @@
 // POST /api/send-nudges
 // Deployed at: youreowed.org/api/send-nudges
 
-const { Resend } = require("resend");
-const { createClient } = require("@supabase/supabase-js");
+let Resend, createClient;
+try {
+  Resend = require("resend").Resend;
+  createClient = require("@supabase/supabase-js").createClient;
+} catch (e) {
+  // Modules not available
+}
 
-// Gracefully handle missing env vars
 const resendKey = process.env.RESEND_API_KEY;
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_KEY;
@@ -88,11 +92,13 @@ module.exports = async function handler(req, res) {
   }
 
   // Check env vars
-  if (!resendKey || !supabaseUrl || !supabaseKey) {
+  if (!Resend || !createClient || !resendKey || !supabaseUrl || !supabaseKey) {
     return res.status(200).json({
       success: false,
-      error: "Missing env vars",
+      error: "Missing dependencies or env vars",
       missing: {
+        Resend: !Resend,
+        createClient: !createClient,
         RESEND_API_KEY: !resendKey,
         VITE_SUPABASE_URL: !supabaseUrl,
         SUPABASE_SERVICE_KEY: !supabaseKey,
@@ -100,8 +106,13 @@ module.exports = async function handler(req, res) {
     });
   }
 
-  const resend = new Resend(resendKey);
-  const supabase = createClient(supabaseUrl, supabaseKey);
+  let resend, supabase;
+  try {
+    resend = new Resend(resendKey);
+    supabase = createClient(supabaseUrl, supabaseKey);
+  } catch (initErr) {
+    return res.status(200).json({ success: false, error: "Client init failed: " + String(initErr) });
+  }
   const sent = { no_scan: 0, abandoned: 0, no_pay: 0, errors: 0, skipped: 0 };
 
   try {

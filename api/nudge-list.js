@@ -11,7 +11,8 @@
 //
 // Deployed at: youreowed.org/api/nudge-list
 
-const { createClient } = require("@supabase/supabase-js");
+let createClient;
+try { createClient = require("@supabase/supabase-js").createClient; } catch (e) {}
 
 const supabase = createClient(
   process.env.VITE_SUPABASE_URL,
