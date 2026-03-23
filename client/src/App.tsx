@@ -114,9 +114,9 @@ function App() {
       }
     });
 
-    // Listen for auth state changes (login/logout from other tabs)
+    // Listen for auth state changes (login/logout from other tabs, token refresh)
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-      if (event === "SIGNED_OUT") {
+      if (event === "SIGNED_OUT" || !session) {
         dispatch({ type: "LOGOUT" });
       }
     });

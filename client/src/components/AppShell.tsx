@@ -430,7 +430,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem
                   className="cursor-pointer text-xs gap-2 text-destructive"
-                  onClick={() => { supaSignOut(); dispatch({ type: "LOGOUT" }); }}
+                  onClick={async () => { await supaSignOut(); dispatch({ type: "LOGOUT" }); }}
                 >
                   <LogOut className="w-3.5 h-3.5" /> Sign Out
                 </DropdownMenuItem>

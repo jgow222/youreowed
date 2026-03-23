@@ -70,7 +70,7 @@ export async function signIn(email: string, password: string) {
 
 export async function signOut() {
   if (!supabase) return;
-  await supabase.auth.signOut();
+  await supabase.auth.signOut({ scope: 'global' });
 }
 
 export async function getCurrentUser() {
