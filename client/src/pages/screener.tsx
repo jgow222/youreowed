@@ -14,6 +14,7 @@ import ResultsPage from "./results";
 import { useAppState } from "@/lib/store";
 import { trackActivity } from "@/lib/activity";
 import { useElderlyMode } from "@/lib/elderly-mode";
+import { useI18n } from "@/lib/i18n";
 import { CheckCircle, Clock } from "lucide-react";
 
 // ─── Expandable help hint component ─────────────────────────────────────────
@@ -263,6 +264,7 @@ export default function ScreenerPage() {
   const [showResume, setShowResume] = useState(false);
   const [progressSaved, setProgressSaved] = useState(false);
   const { isElderlyMode } = useElderlyMode();
+  const { t } = useI18n();
 
   // Check for saved progress on mount
   useEffect(() => {
@@ -501,7 +503,7 @@ export default function ScreenerPage() {
           <div className="flex-1 min-w-0">
             <p className="text-sm font-semibold">Resume where you left off?</p>
             <p className="text-xs text-muted-foreground mt-0.5">
-              You were on step {state.savedScreenerAnswers.step + 1} of {STEPS.length}. Your answers are saved.
+              {t("screener.stepOf", { current: state.savedScreenerAnswers.step + 1, total: STEPS.length })}. Your answers are saved.
             </p>
             <div className="flex gap-2 mt-2">
               <button
@@ -534,8 +536,8 @@ export default function ScreenerPage() {
 
       {/* Trust badges — compact */}
       <div className="flex flex-wrap items-center gap-3 mb-4 text-xs text-muted-foreground">
-        <span className="flex items-center gap-1"><Lock className="w-3 h-3 text-emerald-500" /> Private & secure</span>
-        <span className="flex items-center gap-1"><ShieldCheck className="w-3 h-3 text-blue-500" /> Won't affect benefits</span>
+        <span className="flex items-center gap-1"><Lock className="w-3 h-3 text-emerald-500" /> Private &amp; secure</span>
+        <span className="flex items-center gap-1"><ShieldCheck className="w-3 h-3 text-blue-500" /> Won&apos;t affect benefits</span>
         <span className="flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-primary" /> Free screening</span>
       </div>
 
@@ -543,7 +545,7 @@ export default function ScreenerPage() {
       <div className="mb-6 animate-fade-in-up">
         <div className="flex justify-between items-center mb-2">
           <span className={isElderlyMode ? "text-base font-semibold" : "text-sm font-medium text-muted-foreground"}>
-            Step {step + 1} of {STEPS.length}
+            {t("screener.stepOf", { current: step + 1, total: STEPS.length })}
           </span>
           <span className={isElderlyMode ? "text-base" : "text-sm text-muted-foreground"}>
             {STEPS[step].title}
@@ -1365,14 +1367,14 @@ export default function ScreenerPage() {
             className={isElderlyMode ? "gap-2 h-14 text-lg px-6 btn-press" : "gap-1.5 btn-press"}
           >
             <ArrowLeft className={isElderlyMode ? "w-5 h-5" : "w-4 h-4"} />
-            Back
+            {t("screener.back")}
           </Button>
           <Button
             onClick={goNext}
             data-testid="button-next"
             className={isElderlyMode ? "gap-2 h-14 text-lg px-8 font-bold btn-press" : "gap-1.5 btn-press"}
           >
-            {step === STEPS.length - 1 ? "See My Results" : step === STEPS.length - 2 ? "Review My Answers" : "Continue"}
+            {step === STEPS.length - 1 ? t("screener.seeResults") : step === STEPS.length - 2 ? "Review My Answers" : t("screener.next")}
             {step < STEPS.length - 1 && <ArrowRight className={isElderlyMode ? "w-5 h-5" : "w-4 h-4"} />}
           </Button>
         </div>

@@ -40,6 +40,7 @@ import {
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
 import { HoverTilt } from "@/components/Effects";
+import { useI18n } from "@/lib/i18n";
 
 const SETUP_FEE = 0;
 const DISCOUNT_PER_USER = 0.25;
@@ -578,6 +579,7 @@ function FAQSection() {
 export default function PricingPage() {
   const { state } = useAppState();
   const { toast } = useToast();
+  const { t } = useI18n();
   const [isAnnual, setIsAnnual] = useState(false);
   const pricingVariant = getVariant("pricing-headline-v1");
   const referralCode = state.user?.referralCode || "BEN-XXXX";
@@ -609,10 +611,10 @@ export default function PricingPage() {
     <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8 page-enter">
       {/* Header */}
       <div className="text-center max-w-lg mx-auto" data-ab-variant={pricingVariant}>
-        <h1 className="text-xl font-bold">Simple, Transparent Pricing</h1>
+        <h1 className="text-xl font-bold">{t("pricing.title")}</h1>
         <p className="text-sm text-muted-foreground mt-1">
           {pricingVariant === "A"
-            ? "Screen for 415+ federal and state programs. Find benefits you're missing and get dollar estimates on what you could receive."
+            ? t("pricing.subtitle")
             : "Join thousands of families who discovered benefits they didn't know about. Plans start at $4.99/mo."}
         </p>
       </div>
@@ -622,7 +624,7 @@ export default function PricingPage() {
         <span
           className={`text-sm ${!isAnnual ? "font-semibold" : "text-muted-foreground"}`}
         >
-          Monthly
+          {t("pricing.monthly")}
         </span>
         <Switch
           checked={isAnnual}
@@ -632,14 +634,14 @@ export default function PricingPage() {
         <span
           className={`text-sm ${isAnnual ? "font-semibold" : "text-muted-foreground"}`}
         >
-          Annual
+          {t("pricing.annual")}
         </span>
         {isAnnual && (
           <Badge
             variant="secondary"
             className="text-xs text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950"
           >
-            2 months free
+            {t("pricing.twoMonthsFree")}
           </Badge>
         )}
       </div>
@@ -733,7 +735,7 @@ export default function PricingPage() {
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-2">
               <Building2 className="w-5 h-5 text-slate-600 dark:text-slate-400" />
-              <h2 className="text-base font-bold">For Organizations</h2>
+              <h2 className="text-base font-bold">{t("pricing.forOrganizations")}</h2>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               White-label our screening tool for your nonprofit, hospital, or
@@ -771,7 +773,7 @@ export default function PricingPage() {
               data-testid="button-contact-sales"
             >
               <Mail className="w-4 h-4" />
-              Contact Sales
+              {t("pricing.contactSales")}
             </Button>
           </div>
 

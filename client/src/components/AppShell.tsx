@@ -45,6 +45,18 @@ import { useElderlyMode } from "@/lib/elderly-mode";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { signOut as supaSignOut } from "@/lib/supabase";
 import { ScrollProgress } from "@/components/Effects";
+import { useI18n } from "@/lib/i18n";
+
+// ─── Nav translation key mapping ─────────────────────────────────────────────
+const NAV_TRANSLATIONS: Record<string, string> = {
+  "/": "nav.dashboard",
+  "/screener": "nav.benefitFinder",
+  "/household": "nav.household",
+  "/news": "nav.news",
+  "/assistant": "nav.assistant",
+  "/pricing": "nav.pricing",
+  "/partners": "nav.partners",
+};
 
 // ─── Nav item type ──────────────────────────────────────────────────────────
 interface NavItem {
@@ -139,6 +151,7 @@ function NavSectionGroup({
   location: string;
   onNavigate?: () => void;
 }) {
+  const { t } = useI18n();
   // Auto-open if any child is active, or if defaultOpen
   const hasActiveChild = section.items.some(
     (item) => location === item.path || (item.path !== "/" && location.startsWith(item.path))
@@ -171,7 +184,7 @@ function NavSectionGroup({
         aria-expanded={open}
       >
         <SectionIcon className="w-3.5 h-3.5" />
-        <span className="flex-1 text-left">{section.label}</span>
+        <span className="flex-1 text-left">{t(`nav.section.${section.id}`) || section.label}</span>
         {/* Show child badges on section header when collapsed */}
         {!open && sectionBadges.length > 0 && (
           <div className="flex items-center gap-1">
@@ -214,8 +227,10 @@ function NavLink({
   onNavigate?: () => void;
   isElderlyMode?: boolean;
 }) {
+  const { t } = useI18n();
   const isActive = location === item.path || (item.path !== "/" && location.startsWith(item.path));
   const Icon = item.icon;
+  const translatedLabel = NAV_TRANSLATIONS[item.path] ? t(NAV_TRANSLATIONS[item.path]) : item.label;
 
   return (
     <Link href={item.path} onClick={onNavigate}>
@@ -230,7 +245,7 @@ function NavLink({
         data-testid={`nav-${item.path.replace("/", "") || "dashboard"}`}
       >
         <Icon className={isElderlyMode ? "w-5 h-5 flex-shrink-0" : "w-4 h-4 flex-shrink-0"} />
-        <span>{item.label}</span>
+        <span>{translatedLabel}</span>
         {item.badge && (
           <Badge
             variant={item.badgeVariant || "secondary"}

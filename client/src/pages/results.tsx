@@ -40,6 +40,7 @@ import { type ProgramResult, type EligibilityStatus } from "@/lib/eligibility";
 import { useAppState } from "@/lib/store";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { useToast } from "@/hooks/use-toast";
+import { useI18n } from "@/lib/i18n";
 import { PLANS, openCheckout, isStripeConfigured, redirectToPricing } from "@/lib/payments";
 import { FreeTrialCard, SidebarMonetization, MobileOffersStrip } from "@/components/MonetizationCards";
 import { ConfettiExplosion, AnimatedCheckmark } from "@/components/Animations";
@@ -621,6 +622,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
   const { state, dispatch } = useAppState();
   const { isElderlyMode } = useElderlyMode();
   const { toast } = useToast();
+  const { t } = useI18n();
   const isPaid = state.user?.subscriptionTier === "basic" || state.user?.subscriptionTier === "premium";
 
   // Fire confetti once when results first render
@@ -660,8 +662,8 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h1 className={`font-bold ${isElderlyMode ? "text-2xl" : "text-xl"}`}>Your Results</h1>
-          <p className={`text-muted-foreground ${isElderlyMode ? "text-base" : "text-sm"}`}>Benefits you may qualify for</p>
+          <h1 className={`font-bold ${isElderlyMode ? "text-2xl" : "text-xl"}`}>{t("results.title")}</h1>
+          <p className={`text-muted-foreground ${isElderlyMode ? "text-base" : "text-sm"}`}>{t("results.subtitle")}</p>
         </div>
         <div className="flex items-center gap-2">
           {totalRelevant > 0 && totalMonthlyMax > 0 && (
@@ -675,7 +677,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
             data-testid="button-start-over"
           >
             <RotateCcw className="w-3.5 h-3.5" />
-            Start Over
+            {t("results.runNewScreening")}
           </Button>
         </div>
       </div>
@@ -697,7 +699,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
           <div className={`mb-6 rounded-lg bg-primary/5 border border-primary/10 animate-fade-in-up ${isElderlyMode ? "p-6" : "p-4"}`}>
             <p className={`font-medium flex items-center gap-2 ${isElderlyMode ? "text-base" : "text-sm"}`}>
               {totalRelevant > 0 && <AnimatedCheckmark size={isElderlyMode ? 32 : 24} />}
-              We found <span className="text-primary font-bold">{totalRelevant} program{totalRelevant !== 1 ? "s" : ""}</span> you
+              We found <span className="text-primary font-bold">{totalRelevant} {t("results.programsFound")}</span> you
               may be eligible for.
             </p>
             {totalMonthlyMax > 0 && isPaid && (
@@ -731,7 +733,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
                   <div className="flex items-center gap-2 mb-3">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                     <h2 className={`font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                      Likely Eligible ({likelyResults.length})
+                      {t("results.likelyEligible")} ({likelyResults.length})
                     </h2>
                   </div>
                   <div className="space-y-2">
@@ -750,7 +752,7 @@ export default function ResultsPage({ results, onStartOver, userState }: Results
                   <div className="flex items-center gap-2 mb-3">
                     <HelpCircle className="w-4 h-4 text-amber-600 dark:text-amber-400" />
                     <h2 className={`font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-400 ${isElderlyMode ? "text-base" : "text-sm"}`}>
-                      Worth Exploring ({maybeResults.length})
+                      {t("results.possiblyEligible")} ({maybeResults.length})
                     </h2>
                   </div>
                   <div className="space-y-2">

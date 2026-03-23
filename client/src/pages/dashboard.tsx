@@ -7,6 +7,7 @@ import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, Trendi
 import { useAppState } from "@/lib/store";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { fetchNews, type NewsItem } from "@/lib/news";
+import { useI18n } from "@/lib/i18n";
 import EmailCapture from "@/components/EmailCapture";
 import { ExitIntentPopup, SocialProofToast, PulseCTA } from "@/components/Animations";
 import { ParticleBackground, AnimatedGradientText, CountUpOnScroll, HoverTilt, PulsingDot } from "@/components/Effects";
@@ -14,6 +15,7 @@ import { ParticleBackground, AnimatedGradientText, CountUpOnScroll, HoverTilt, P
 export default function DashboardPage() {
   const { state } = useAppState();
   const { isElderlyMode } = useElderlyMode();
+  const { t } = useI18n();
   const [recentNews, setRecentNews] = useState<NewsItem[]>([]);
 
   useEffect(() => {
@@ -101,18 +103,18 @@ export default function DashboardPage() {
       {/* Hero — Bold, direct */}
       <div className="py-4 animate-fade-in-up relative">
         <ParticleBackground />
-        <p className="text-sm font-medium text-primary tracking-wide uppercase mb-2">Welcome back</p>
+        <p className="text-sm font-medium text-primary tracking-wide uppercase mb-2">{t("dashboard.welcomeBack")}</p>
         <h1 className="text-2xl md:text-3xl font-black tracking-tight leading-tight" data-testid="text-welcome">
-          You might be leaving<br />
-          <AnimatedGradientText>thousands on the table.</AnimatedGradientText>
+          {t("dashboard.heroHeadline")}<br />
+          <AnimatedGradientText>{t("dashboard.heroHighlight")}</AnimatedGradientText>
         </h1>
         <p className="text-sm text-muted-foreground mt-3 max-w-lg">
-          The average household qualifies for $5,000–$50,000+ per year in government benefits they never claim. Let's find yours in 2 minutes.
+          {t("dashboard.heroSubtext")}
         </p>
         <Link href="/screener">
           <PulseCTA active={!state.isLoggedIn}>
             <Button size="lg" className="mt-4 gap-2 font-bold text-sm h-11 px-6 btn-press" data-testid="button-hero-cta">
-              Check what you're owed <ArrowRight className="w-4 h-4" />
+              {t("dashboard.heroCta")} <ArrowRight className="w-4 h-4" />
             </Button>
           </PulseCTA>
         </Link>
@@ -146,19 +148,19 @@ export default function DashboardPage() {
           <p className="text-3xl font-black text-primary">
             <CountUpOnScroll target={415} />
           </p>
-          <p className="text-xs text-muted-foreground mt-1">programs we check</p>
+          <p className="text-xs text-muted-foreground mt-1">{t("dashboard.programsChecked")}</p>
         </Card>
         <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-2">
           <p className="text-3xl font-black">
             <CountUpOnScroll target={50} suffix="+" /><span className="text-lg text-muted-foreground">DC</span>
           </p>
-          <p className="text-xs text-muted-foreground mt-1">states covered</p>
+          <p className="text-xs text-muted-foreground mt-1">{t("dashboard.statesCovered")}</p>
         </Card>
         <Card className="p-4 border border-card-border bg-card card-hover-lift animate-fade-in-up stagger-3">
           <p className="text-3xl font-black text-primary">
             $<CountUpOnScroll target={50} suffix="K+" />
           </p>
-          <p className="text-xs text-muted-foreground mt-1">potential per year</p>
+          <p className="text-xs text-muted-foreground mt-1">{t("dashboard.potentialPerYear")}</p>
         </Card>
       </div>
 
@@ -172,8 +174,8 @@ export default function DashboardPage() {
                   <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
                     <Search className="w-5 h-5 text-primary" />
                   </div>
-                  <p className="text-base font-bold">Run your screening</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">Takes 2 minutes. 100% private.</p>
+                  <p className="text-base font-bold">{t("dashboard.runScreening")}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{t("dashboard.screeningSubtext")}</p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
               </div>
@@ -189,8 +191,8 @@ export default function DashboardPage() {
                   <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center mb-3">
                     <MessageCircle className="w-5 h-5 text-violet-500" />
                   </div>
-                  <p className="text-base font-bold">Ask the AI</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">"How do I apply for SNAP?"</p>
+                  <p className="text-base font-bold">{t("dashboard.askAI")}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{t("dashboard.askAISubtext")}</p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
               </div>
@@ -206,8 +208,8 @@ export default function DashboardPage() {
                   <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3">
                     <Users className="w-5 h-5 text-blue-500" />
                   </div>
-                  <p className="text-base font-bold">Your household</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">{memberCount} member{memberCount !== 1 ? "s" : ""} — add more for better results</p>
+                  <p className="text-base font-bold">{t("dashboard.yourHousehold")}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{memberCount} {t("dashboard.householdSubtext")}</p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:translate-x-1 transition-transform" />
               </div>
@@ -224,10 +226,10 @@ export default function DashboardPage() {
                     <Zap className="w-5 h-5 text-amber-500" />
                   </div>
                   <div className="flex items-center gap-2">
-                    <p className="text-base font-bold">Policy updates</p>
+                    <p className="text-base font-bold">{t("dashboard.policyUpdates")}</p>
                     <PulsingDot />
                   </div>
-                  <p className="text-xs text-muted-foreground mt-0.5">Rules change. Stay ahead.</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{t("dashboard.policySubtext")}</p>
                 </div>
                 <Badge variant="destructive" className="h-5 text-[10px] px-2 badge-pop">3 new</Badge>
               </div>
@@ -244,19 +246,19 @@ export default function DashboardPage() {
             { name: "Maria G.", state: "Texas", amount: "$14,200", quote: "I had no idea I qualified for so many programs. Between SNAP, Medicaid, and the EITC, I'm getting over $14,000 a year I was leaving on the table.", programs: 8 },
             { name: "James T.", state: "Ohio", amount: "$8,400", quote: "As a veteran, I didn't know about half the benefits available to me. YoureOwed found 11 programs in under 2 minutes. Already applied for three.", programs: 11 },
             { name: "Sandra L.", state: "Florida", amount: "$22,800", quote: "Single mom with 3 kids. The screener found CHIP, free school lunch, childcare assistance, and EITC. I'm saving almost $2,000 a month now.", programs: 14 },
-          ].map((t, i) => (
+          ].map((testimonial, i) => (
             <div key={i} className={`card-hover-lift p-4 rounded-xl border border-card-border bg-card stagger-${i + 1}`}>
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">
-                  {t.name.split(" ").map(n => n[0]).join("")}
+                  {testimonial.name.split(" ").map(n => n[0]).join("")}
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">{t.name}</p>
-                  <p className="text-[10px] text-muted-foreground">{t.state} · {t.programs} programs found</p>
+                  <p className="text-sm font-semibold">{testimonial.name}</p>
+                  <p className="text-[10px] text-muted-foreground">{testimonial.state} · {testimonial.programs} programs found</p>
                 </div>
               </div>
-              <p className="text-xs text-muted-foreground leading-relaxed mb-2">"{t.quote}"</p>
-              <p className="text-lg font-black text-primary">{t.amount}<span className="text-xs font-normal text-muted-foreground">/year found</span></p>
+              <p className="text-xs text-muted-foreground leading-relaxed mb-2">"{testimonial.quote}"</p>
+              <p className="text-lg font-black text-primary">{testimonial.amount}<span className="text-xs font-normal text-muted-foreground">/year found</span></p>
             </div>
           ))}
         </div>
@@ -309,10 +311,10 @@ export default function DashboardPage() {
       {/* News — Compact */}
       <div>
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Latest changes</h2>
+          <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">{t("dashboard.latestChanges")}</h2>
           <Link href="/news">
             <Button variant="ghost" size="sm" className="text-xs gap-1 h-7">
-              See all <ArrowRight className="w-3 h-3" />
+              {t("dashboard.seeAll")} <ArrowRight className="w-3 h-3" />
             </Button>
           </Link>
         </div>
