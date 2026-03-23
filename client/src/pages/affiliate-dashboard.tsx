@@ -1,7 +1,7 @@
 // Affiliate Click Tracking Dashboard
 // Admin-only page — access via /affiliate-dashboard directly (not in nav)
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,9 @@ import {
   Info,
   BarChart3,
   Clock,
+  CheckCircle2,
 } from "lucide-react";
+import { fetchAffiliateStats, PARTNER_REVENUE } from "@/lib/affiliate-tracking";
 
 // ── Partner config ────────────────────────────────────────────────────────────
 
@@ -165,7 +167,42 @@ function ClickBar({
 
 export default function AffiliateDashboardPage() {
   const [clickData, setClickData] = useState(DEMO_CLICKS);
+  const [isLiveData, setIsLiveData] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [lastRefresh, setLastRefresh] = useState(Date.now());
+
+  const loadStats = useCallback(async () => {
+    setIsLoading(true);
+    try {
+      const apiData = await fetchAffiliateStats();
+      if (apiData.totalClicks > 0) {
+        // Merge API data with demo structure
+        const merged: Record<string, { clicks: number; lastClick: number }> = { ...DEMO_CLICKS };
+        for (const [partner, stat] of Object.entries(apiData.stats)) {
+          merged[partner] = {
+            clicks: stat.clicks,
+            lastClick: stat.lastClick ? new Date(stat.lastClick).getTime() : Date.now(),
+          };
+        }
+        setClickData(merged);
+        setIsLiveData(true);
+      } else {
+        // No real data — keep demo data
+        setIsLiveData(false);
+      }
+    } catch {
+      // API error — keep demo data
+      setIsLiveData(false);
+    } finally {
+      setIsLoading(false);
+      setLastRefresh(Date.now());
+    }
+  }, []);
+
+  // Fetch on mount
+  useEffect(() => {
+    loadStats();
+  }, [loadStats]);
 
   const totalClicks = Object.values(clickData).reduce(
     (sum, d) => sum + d.clicks,
@@ -200,11 +237,30 @@ export default function AffiliateDashboardPage() {
   }
 
   function handleRefresh() {
-    setLastRefresh(Date.now());
+    loadStats();
   }
 
   return (
     <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-6 page-enter">
+      {/* Live data banner */}
+      {isLiveData ? (
+        <div className="flex items-center gap-3 p-3 rounded-lg border border-emerald-500/30 bg-emerald-500/[0.06]">
+          <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+          <p className="text-xs text-emerald-300 leading-relaxed">
+            <span className="font-semibold">Showing live data from your site.</span>{" "}
+            Clicks are tracked when users click affiliate links in the results sidebar.
+          </p>
+        </div>
+      ) : (
+        <div className="flex items-center gap-3 p-3 rounded-lg border border-amber-500/20 bg-amber-500/[0.05]">
+          <Info className="w-4 h-4 text-amber-400 flex-shrink-0" />
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            <span className="font-semibold text-foreground">Showing demo data.</span>{" "}
+            No real clicks recorded yet — affiliate links in the sidebar will start tracking automatically as users interact with them.
+          </p>
+        </div>
+      )}
+
       {/* Header */}
       <div className="flex items-start justify-between gap-4">
         <div>
@@ -217,10 +273,19 @@ export default function AffiliateDashboardPage() {
             >
               Admin Only
             </Badge>
+            {!isLiveData && (
+              <Badge
+                variant="outline"
+                className="text-[10px] h-5 px-1.5 text-slate-400 border-slate-400/30 bg-slate-400/10"
+              >
+                demo
+              </Badge>
+            )}
           </div>
           <p className="text-sm text-muted-foreground">
-            Track affiliate link clicks and estimated revenue. Demo data
-            pre-populated — connect a real backend to see live numbers.
+            {isLiveData
+              ? `Live affiliate click data · Last updated ${formatRelativeTime(lastRefresh)}`
+              : "Track affiliate link clicks and estimated revenue. Demo data pre-populated — connect a real backend to see live numbers."}
           </p>
         </div>
         <Button
@@ -228,9 +293,10 @@ export default function AffiliateDashboardPage() {
           size="sm"
           className="gap-1.5 flex-shrink-0"
           onClick={handleRefresh}
+          disabled={isLoading}
         >
-          <RefreshCw className="w-3.5 h-3.5" />
-          Refresh
+          <RefreshCw className={`w-3.5 h-3.5 ${isLoading ? "animate-spin" : ""}`} />
+          {isLoading ? "Loading..." : "Refresh"}
         </Button>
       </div>
 
@@ -287,6 +353,9 @@ export default function AffiliateDashboardPage() {
         <div className="flex items-center gap-2 mb-5">
           <BarChart3 className="w-4 h-4 text-muted-foreground" />
           <h2 className="text-sm font-semibold">Clicks by Partner</h2>
+          {!isLiveData && (
+            <span className="text-[10px] text-muted-foreground">(demo)</span>
+          )}
         </div>
         <div className="space-y-4">
           {PARTNERS.slice()
@@ -312,6 +381,9 @@ export default function AffiliateDashboardPage() {
         <div className="p-4 border-b border-border flex items-center gap-2">
           <ExternalLink className="w-4 h-4 text-muted-foreground" />
           <h2 className="text-sm font-semibold">Partner Details</h2>
+          {!isLiveData && (
+            <span className="text-[10px] text-muted-foreground ml-1">(demo data)</span>
+          )}
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
@@ -412,23 +484,42 @@ export default function AffiliateDashboardPage() {
       <Card className="p-4 border border-blue-500/20 bg-blue-500/5 flex items-start gap-3">
         <Info className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
         <p className="text-xs text-muted-foreground leading-relaxed">
-          <span className="font-semibold text-foreground">
-            Demo data — not live.
-          </span>{" "}
-          Connect to a real analytics backend (Google Analytics events, PostHog,
-          or custom API) to track actual conversions. Use{" "}
-          <code className="text-xs bg-muted px-1 py-0.5 rounded font-mono">
-            trackAffiliateClick()
-          </code>{" "}
-          from{" "}
-          <code className="text-xs bg-muted px-1 py-0.5 rounded font-mono">
-            @/lib/affiliate-tracking
-          </code>{" "}
-          on every affiliate link click, then POST to{" "}
-          <code className="text-xs bg-muted px-1 py-0.5 rounded font-mono">
-            /api/track-affiliate
-          </code>{" "}
-          to persist data.
+          {isLiveData ? (
+            <>
+              <span className="font-semibold text-foreground">
+                Live tracking active.
+              </span>{" "}
+              Every affiliate link click in the sidebar fires{" "}
+              <code className="text-xs bg-muted px-1 py-0.5 rounded font-mono">
+                trackAffiliateClick()
+              </code>{" "}
+              and POSTs to{" "}
+              <code className="text-xs bg-muted px-1 py-0.5 rounded font-mono">
+                /api/affiliate-clicks
+              </code>
+              . Data refreshes automatically on page load, or click Refresh above.
+            </>
+          ) : (
+            <>
+              <span className="font-semibold text-foreground">
+                Demo data — not live.
+              </span>{" "}
+              Connect to a real analytics backend (Google Analytics events, PostHog,
+              or custom API) to track actual conversions. Use{" "}
+              <code className="text-xs bg-muted px-1 py-0.5 rounded font-mono">
+                trackAffiliateClick()
+              </code>{" "}
+              from{" "}
+              <code className="text-xs bg-muted px-1 py-0.5 rounded font-mono">
+                @/lib/affiliate-tracking
+              </code>{" "}
+              on every affiliate link click, then POST to{" "}
+              <code className="text-xs bg-muted px-1 py-0.5 rounded font-mono">
+                /api/track-affiliate
+              </code>{" "}
+              to persist data.
+            </>
+          )}
         </p>
       </Card>
     </div>

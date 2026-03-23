@@ -171,3 +171,25 @@ create policy "Service key only"
 
 -- Add age range column to user profiles
 alter table public.user_profiles add column if not exists age_range text default null;
+
+-- Affiliate click tracking
+create table if not exists public.affiliate_clicks (
+  id bigint primary key generated always as identity,
+  partner text not null,
+  url text not null,
+  page text default 'results',
+  user_id uuid references public.user_profiles(id) on delete set null,
+  created_at timestamp with time zone default now()
+);
+
+alter table public.affiliate_clicks enable row level security;
+
+-- Allow inserts from anyone (clicks happen before/after login)
+create policy "Anyone can log clicks"
+  on public.affiliate_clicks for insert
+  with check (true);
+
+-- Only service key can read (for the dashboard)
+create policy "Service key reads clicks"
+  on public.affiliate_clicks for select
+  using (false);

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { trackAffiliateClick } from "@/lib/affiliate-tracking";
 import {
   Scale,
   FileText,
@@ -26,6 +27,25 @@ import {
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import type { ProgramResult } from "@/lib/eligibility";
+
+// Tracked affiliate link — logs clicks before navigating
+function TrackedLink({ 
+  href, partner, page = "sidebar", children, className 
+}: { 
+  href: string; partner: string; page?: string; children: React.ReactNode; className?: string 
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+      onClick={() => trackAffiliateClick(partner, href, page)}
+    >
+      {children}
+    </a>
+  );
+}
 
 // ═══════════════════════════════════════════════════════════════════════════
 //  1. DISABILITY ATTORNEY LEAD CAPTURE
@@ -492,10 +512,9 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
             <span className="text-foreground font-semibold">Haven't filed your taxes yet?</span> You could be leaving thousands on the table. The EITC alone is worth up to $7,830. File for free and claim every credit you're owed.
           </p>
           <div className="space-y-1.5 mb-3">
-            <a
+            <TrackedLink
               href="https://www.freetaxusa.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              partner="FreeTaxUSA"
               className="flex items-center justify-between p-2.5 rounded-lg border border-emerald-500/20 bg-emerald-500/[0.04] hover:bg-emerald-500/[0.08] transition-colors group"
             >
               <div>
@@ -503,11 +522,10 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
                 <span className="text-[11px] text-muted-foreground">100% free federal filing</span>
               </div>
               <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-emerald-500 flex-shrink-0" />
-            </a>
-            <a
+            </TrackedLink>
+            <TrackedLink
               href="https://www.taxslayer.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              partner="TaxSlayer"
               className="flex items-center justify-between p-2.5 rounded-lg border border-card-border hover:border-primary/30 transition-colors group"
             >
               <div>
@@ -515,16 +533,15 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
                 <span className="text-[11px] text-muted-foreground">Budget pick — starts at $0</span>
               </div>
               <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary flex-shrink-0" />
-            </a>
+            </TrackedLink>
           </div>
-          <a
+          <TrackedLink
             href="https://www.irs.gov/freefile"
-            target="_blank"
-            rel="noopener noreferrer"
+            partner="IRS Free File"
             className="inline-flex items-center gap-1 text-xs text-primary hover:underline font-medium"
           >
             IRS Free File (income under $84K) <ArrowRight className="w-3 h-3" />
-          </a>
+          </TrackedLink>
           <div className="mt-3 p-2.5 rounded-lg bg-amber-500/[0.06] border border-amber-500/20">
             <p className="text-[11px] text-amber-200 leading-relaxed">
               <span className="font-bold">Filing deadline: April 15.</span> Even if you don't owe taxes, you MUST file to claim EITC, Child Tax Credit, and other refundable credits. Many people miss out on $2,000–$8,000+ because they don't file.
@@ -543,10 +560,9 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
             <p className="text-sm font-bold">Discounts You Qualify For</p>
           </div>
           <div className="space-y-1.5">
-            <a
+            <TrackedLink
               href="https://www.amazon.com/b?ie=UTF8&node=16256994011"
-              target="_blank"
-              rel="noopener noreferrer"
+              partner="Amazon Prime"
               className="flex items-center justify-between p-2 rounded-lg border border-card-border hover:border-primary/30 transition-colors group"
             >
               <span className="text-xs font-medium">Amazon Prime — 50% off</span>
@@ -554,11 +570,10 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
                 <Badge variant="secondary" className="text-[10px] h-4 px-1.5">Save $7/mo</Badge>
                 <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary" />
               </div>
-            </a>
-            <a
+            </TrackedLink>
+            <TrackedLink
               href="https://www.walmart.com/plus/assist"
-              target="_blank"
-              rel="noopener noreferrer"
+              partner="Walmart+"
               className="flex items-center justify-between p-2 rounded-lg border border-card-border hover:border-primary/30 transition-colors group"
             >
               <span className="text-xs font-medium">Walmart+ — 50% off</span>
@@ -566,16 +581,15 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
                 <Badge variant="secondary" className="text-[10px] h-4 px-1.5">Save $6/mo</Badge>
                 <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary" />
               </div>
-            </a>
-            <a
+            </TrackedLink>
+            <TrackedLink
               href="https://www.museums4all.org"
-              target="_blank"
-              rel="noopener noreferrer"
+              partner="Museums for All"
               className="flex items-center justify-between p-2 rounded-lg border border-card-border hover:border-primary/30 transition-colors group"
             >
               <span className="text-xs font-medium">Museums for All — $3 entry</span>
               <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary flex-shrink-0" />
-            </a>
+            </TrackedLink>
           </div>
         </Card>
       )}
@@ -591,25 +605,23 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-xs text-muted-foreground">Discounted Internet — $30/mo or less</span>
-            <a
+            <TrackedLink
               href="https://www.lifelinesupport.org"
-              target="_blank"
-              rel="noopener noreferrer"
+              partner="Lifeline"
               className="text-xs text-primary hover:underline inline-flex items-center gap-1 flex-shrink-0 ml-2 font-medium"
             >
               Apply <ExternalLink className="w-3 h-3" />
-            </a>
+            </TrackedLink>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-xs text-muted-foreground">Free Government Phone</span>
-            <a
+            <TrackedLink
               href="https://www.lifelinesupport.org"
-              target="_blank"
-              rel="noopener noreferrer"
+              partner="Lifeline"
               className="text-xs text-primary hover:underline inline-flex items-center gap-1 flex-shrink-0 ml-2 font-medium"
             >
               Apply <ExternalLink className="w-3 h-3" />
-            </a>
+            </TrackedLink>
           </div>
         </div>
       </Card>
@@ -627,17 +639,16 @@ export function SidebarMonetization({ results }: { results: ProgramResult[] }) {
             <p className="text-sm font-bold">Health Coverage Help</p>
           </div>
           <p className="text-xs text-muted-foreground mb-3">Find affordable health insurance — many plans are $0–$50/mo after subsidies.</p>
-          <a
+          <TrackedLink
             href="https://www.healthcare.gov/"
-            target="_blank"
-            rel="noopener noreferrer"
+            partner="Healthcare.gov"
             className="block"
           >
             <Button variant="outline" className="w-full h-9 text-sm gap-1.5 btn-press">
               Get a free quote
               <ExternalLink className="w-3.5 h-3.5" />
             </Button>
-          </a>
+          </TrackedLink>
         </Card>
       )}
     </div>
@@ -741,6 +752,7 @@ export function MobileOffersStrip({ results }: { results: ProgramResult[] }) {
               target={isInternal ? undefined : "_blank"}
               rel={isInternal ? undefined : "noopener noreferrer"}
               className="flex-shrink-0 w-48 rounded-xl border border-card-border bg-card p-3 flex flex-col gap-2 hover:border-primary/30 transition-colors"
+              onClick={() => !isInternal && trackAffiliateClick(pill.title, pill.ctaUrl, "mobile-strip")}
             >
               <div className={`w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0 ${pill.iconColor}`}>
                 <Icon className="w-3.5 h-3.5" />
