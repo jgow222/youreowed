@@ -39,7 +39,7 @@ import {
 } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
-import { GlowingBorder, HoverTilt } from "@/components/Effects";
+import { HoverTilt } from "@/components/Effects";
 
 const SETUP_FEE = 0;
 const DISCOUNT_PER_USER = 0.25;
@@ -162,7 +162,7 @@ function TierCardInner({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
     <Card
       className={`p-5 relative overflow-hidden flex flex-col card-hover-lift h-full ${
         tier.highlighted
-          ? "border-0 shadow-lg glow-pulse"
+          ? "border-2 border-primary shadow-lg shadow-primary/10"
           : "border border-card-border"
       }`}
     >
@@ -252,13 +252,6 @@ function TierCardInner({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
 }
 
 function TierCard({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
-  if (tier.highlighted) {
-    return (
-      <GlowingBorder className="h-full">
-        <TierCardInner tier={tier} isAnnual={isAnnual} />
-      </GlowingBorder>
-    );
-  }
   return <TierCardInner tier={tier} isAnnual={isAnnual} />;
 }
 
