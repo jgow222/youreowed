@@ -39,7 +39,7 @@ import {
 } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { useToast } from "@/hooks/use-toast";
-import { GlowingBorder, HoverTilt, AnimatedGradientText } from "@/components/Effects";
+import { GlowingBorder, HoverTilt } from "@/components/Effects";
 
 const SETUP_FEE = 0;
 const DISCOUNT_PER_USER = 0.25;
@@ -166,14 +166,16 @@ function TierCardInner({ tier, isAnnual }: { tier: Tier; isAnnual: boolean }) {
           : "border border-card-border"
       }`}
     >
-      {tier.badge && (
-        <Badge className="absolute top-3 right-3 bg-primary text-primary-foreground">
-          <AnimatedGradientText>{tier.badge}</AnimatedGradientText>
-        </Badge>
-      )}
       <div className="mb-4">
-        <h3 className="text-base font-bold">{tier.name}</h3>
-        <p className="text-xs text-muted-foreground">{tier.tagline}</p>
+        <div className="flex items-center justify-between gap-2">
+          <h3 className="text-base font-bold">{tier.name}</h3>
+          {tier.badge && (
+            <Badge className="bg-primary text-primary-foreground text-[11px] font-bold px-2 py-0.5">
+              {tier.badge}
+            </Badge>
+          )}
+        </div>
+        <p className="text-xs text-muted-foreground mt-0.5">{tier.tagline}</p>
       </div>
       <div className="mb-4">
         {isFree ? (
