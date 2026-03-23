@@ -1,186 +1,118 @@
 {
-  "lastUpdated": "2026-03-22T11:05:03Z",
+  "lastUpdated": "2026-03-23T11:03:00Z",
   "items": [
     {
-      "id": "n-20260306-pell-workforce",
-      "title": "Education Department proposes rules for new Workforce Pell Grants (starts July 2026)",
-      "summary": "The U.S. Department of Education issued proposed rules to create Workforce Pell Grants, allowing Pell funding for short-term workforce programs of 150–599 clock hours that last at least 8 weeks but less than 15 weeks. Public comments are due by April 8, 2026, and the Department says students could begin using Workforce Pell starting July 2026.",
-      "category": "new-program",
-      "date": "2026-03-06",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "http://www.ed.gov/about/news/press-release/us-department-of-education-issues-proposed-rules-implement-working-families-tax-cuts-acts-workforce-pell-grants",
-      "programs": [
-        "pell-grants"
-      ],
+      "id": "n-20260311-snap",
+      "title": "SNAP recipients sue USDA over state waivers restricting sugary drinks and candy purchases",
+      "summary": "Five SNAP recipients sued the U.S. Department of Agriculture in federal court seeking to block USDA-approved waivers that restrict SNAP purchases of sugary drinks, energy drinks, and candy. Reuters reported the restrictions were approved for 22 states as part of the administration’s ‘Make Healthy Again (MAHA)’ initiative.",
+      "category": "policy-change",
+      "date": "2026-03-11",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/legal/government/us-sued-by-food-stamp-recipients-over-restrictions-sugary-drinks-candy-2026-03-11/",
+      "programs": ["snap"],
       "isBreaking": true
     },
     {
-      "id": "n-20260312-medicaid-macpac-hcbs",
-      "title": "MACPAC March 2026 report urges wage transparency to strengthen Medicaid HCBS workforce",
-      "summary": "The Medicaid and CHIP Payment and Access Commission (MACPAC) released its March 2026 Report to Congress with a recommendation to require states to report hourly wages paid to certain home- and community-based services (HCBS) workers. MACPAC says better wage data can help states set more effective HCBS payment rates amid workforce shortages.",
+      "id": "n-20260220-snap",
+      "title": "USDA publishes FY 2026 SNAP cost-of-living adjustments (COLA) with higher max benefits",
+      "summary": "USDA’s FY 2026 SNAP COLA memo lists the maximum monthly allotment for a 4-person household in the 48 states and D.C. as $994, and raises the minimum benefit in the 48 states and D.C. to $24. The memo states the FY 2026 COLA applies from October 1, 2025 through September 30, 2026.",
+      "category": "update",
+      "date": "2026-02-20",
+      "source": "USDA (FNS)",
+      "sourceUrl": "https://www.usda.gov/sites/default/files/guidance-documents/fns.snap-cola-fy26memo.pdf",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260306-medicaid",
+      "title": "CMS guidance explains move to 6-month Medicaid eligibility renewals for the adult expansion group starting in 2027",
+      "summary": "CMS issued a State Medicaid Director letter outlining a new federal requirement for most Medicaid expansion adults to have eligibility redetermined every 6 months (instead of every 12 months), beginning with renewals scheduled on or after January 1, 2027. CMS says states covering the adult expansion group under their state plan must submit a state plan amendment attesting to 6-month renewals no later than March 31, 2027.",
+      "category": "policy-change",
+      "date": "2026-03-06",
+      "source": "CMS (Medicaid.gov)",
+      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26001.pdf",
+      "programs": ["medicaid", "chip"],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260312-medicaid-chip",
+      "title": "MACPAC March 2026 report highlights Medicaid/CHIP priorities, including HCBS workforce wage reporting recommendation",
+      "summary": "MACPAC’s March 2026 Report to Congress includes a recommendation aimed at strengthening the home- and community-based services (HCBS) workforce by requiring states to report hourly wages paid to HCBS workers. The report also includes chapters on behavioral health in Medicaid/CHIP and coverage/access issues for justice-involved youth and youth in foster care.",
       "category": "update",
       "date": "2026-03-12",
       "source": "MACPAC",
-      "sourceUrl": "https://www.macpac.gov/news/macpac-releases-march-2026-report-to-congress/",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
+      "sourceUrl": "https://www.macpac.gov/publication/march-2026-report-to-congress-on-medicaid-and-chip/",
+      "programs": ["medicaid", "chip"]
     },
     {
-      "id": "n-20260306-medicaid-6mo-renewals",
-      "title": "CMS: Medicaid expansion adults must renew eligibility every 6 months starting Jan. 1, 2027",
-      "summary": "CMS issued guidance implementing a new requirement for most Medicaid expansion adults (including equivalent coverage under certain waivers) to complete eligibility redeterminations twice per year, beginning with renewals scheduled on or after January 1, 2027. CMS says states must submit a State Plan Amendment attesting to the change, and the SPA may be submitted no later than March 31, 2027.",
-      "category": "policy-change",
-      "date": "2026-03-06",
-      "source": "Centers for Medicare & Medicaid Services (CMS)",
-      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26001.pdf",
-      "programs": [
-        "medicaid",
-        "chip"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260226-snap-data-injunction",
-      "title": "Judge blocks USDA from withholding SNAP admin funding over states’ refusal to provide recipient data",
-      "summary": "A federal judge issued a temporary injunction preventing USDA from cutting off administrative funding to 22 states unless they turn over detailed SNAP recipient data (including names, addresses, and immigration status). Reuters reported the court said USDA’s funding threats conflicted with the legal framework governing SNAP and raised concerns about unauthorized sharing of sensitive information.",
-      "category": "policy-change",
-      "date": "2026-02-26",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/legal/government/trump-administration-cannot-force-states-supply-food-stamp-data-us-judge-rules-2026-02-26/",
-      "programs": [
-        "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260220-snap-fy26-cola",
-      "title": "USDA posts FY2026 SNAP COLA tables (max benefit $298 for 1 person in most states; minimum $24)",
-      "summary": "USDA’s FY2026 SNAP cost-of-living adjustment tables show the maximum monthly allotment for a 1-person household in the 48 states and D.C. is $298, with a minimum monthly allotment of $24 for 1–2 person households. The FY2026 standards are effective October 1, 2025 through September 30, 2026, and also update deductions and income limits.",
-      "category": "update",
-      "date": "2026-02-20",
-      "source": "USDA Food and Nutrition Service (FNS)",
-      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260305-hud-ehv-sv-verification",
-      "title": "HUD changes EHV/Stability Voucher verification rules; PHAs must comply within 60 days",
-      "summary": "HUD issued PIH Notice 2026-05 removing a prior waiver that let PHAs admit Emergency Housing Voucher (EHV) and Stability Voucher applicants without first verifying SSNs and eligible immigration status. PHAs must comply with standard SSN and citizenship/eligible immigration status verification rules, and HUD set a 60-day compliance deadline (by May 4, 2026) for new Stability Voucher admissions and current EHV/SV families.",
-      "category": "policy-change",
-      "date": "2026-03-05",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
-      "programs": [
-        "section-8",
-        "housing-vouchers"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260205-hud-ehv-service-fees",
-      "title": "HUD to recapture and reallocate unused Emergency Housing Voucher services fees to cover 2026 shortfalls",
-      "summary": "HUD issued PIH Notice 2026-02 establishing a process to recapture undisbursed and unspent EHV services fees and reallocate them as housing assistance payments (HAP) to cover EHV shortfalls and extend assistance. HUD said it planned to send a final reconciliation/closeout enclosure to PHAs by the end of February 2026.",
-      "category": "update",
-      "date": "2026-02-05",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/dfiles/PIH/documents/PIH-2026-02.pdf",
-      "programs": [
-        "housing-vouchers",
-        "section-8"
-      ]
-    },
-    {
-      "id": "n-20260115-hud-vash-fees-deadline",
-      "title": "HUD makes $10 million available in additional HUD-VASH admin fees; PHA applications due March 2, 2026",
-      "summary": "HUD issued PIH Notice 2026-01 announcing $10 million in additional administrative fees for public housing agencies administering HUD-VASH vouchers to support leasing and related administration. HUD said applications must be received by midnight on March 2, 2026 (local time for the PHA).",
-      "category": "deadline",
-      "date": "2026-01-15",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-01.pdf",
-      "programs": [
-        "housing-vouchers"
-      ]
-    },
-    {
-      "id": "n-20260316-hud-waivers-rescinded",
-      "title": "HUD rescinds many COVID-era Housing Choice Voucher/Public Housing waivers and guidance (PIH 2026-06)",
-      "summary": "HUD issued PIH Notice 2026-06 rescinding numerous CARES Act and COVID-era notices affecting Housing Choice Voucher and public housing operations, and partially rescinding portions of PIH 2021-14 related to HCV and public housing programs. HUD also revised PIH 2020-32 by removing certain limited-English-proficiency guidance related to remote hearings and briefings.",
+      "id": "n-20260316-section8",
+      "title": "HUD rescinds a slate of COVID-era PIH notices affecting Housing Choice Voucher and related programs",
+      "summary": "HUD PIH Notice 2026-06 fully rescinds numerous COVID-era PIH notices tied to CARES Act supplemental HAP/admin fee guidance and pandemic-related waivers for the Housing Choice Voucher (HCV) program (including Mainstream and Mod Rehab). The notice also partially rescinds parts of PIH 2021-14 related to HCV/public housing and revises PIH 2020-32 by removing specific LEP requirements for remote hearings/briefings.",
       "category": "policy-change",
       "date": "2026-03-16",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
+      "source": "HUD",
       "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-06.pdf",
-      "programs": [
-        "section-8",
-        "housing-vouchers"
-      ]
+      "programs": ["section8", "public_housing"],
+      "isBreaking": true
     },
     {
-      "id": "n-20260126-irs-eitc-actc",
-      "title": "IRS: Most EITC/ACTC refunds expected by March 2, 2026; 'Where’s My Refund?' updates by Feb. 21",
-      "summary": "The IRS said it expects most refunds for Earned Income Tax Credit (EITC) and Additional Child Tax Credit (ACTC) filers who use direct deposit to be available by March 2, 2026, assuming there are no other issues with the return. The IRS also said 'Where’s My Refund?' should show projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026.",
+      "id": "n-20260305-ehv",
+      "title": "HUD tightens documentation requirements for Emergency Housing Vouchers and Stability Vouchers",
+      "summary": "HUD PIH Notice 2026-05 removes a waiver that previously let PHAs admit certain EHV/Stability Voucher households without verifying SSN and citizenship/eligible noncitizen documentation at initial eligibility determination. HUD directs PHAs to follow 24 CFR 5.210–5.218 for SSN verification and 24 CFR 5.508 for citizenship/eligible immigration evidence, with compliance required within 60 days of publication.",
+      "category": "policy-change",
+      "date": "2026-03-05",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
+      "programs": ["ehv", "stability_voucher", "section8"]
+    },
+    {
+      "id": "n-20260126-eitc-ctc",
+      "title": "IRS opens 2026 filing season and reminds filers when EITC/ACTC refunds are expected",
+      "summary": "The IRS said most refunds for Earned Income Tax Credit (EITC) and Additional Child Tax Credit (ACTC) filers using direct deposit are expected to be available by March 2, 2026, assuming no other issues with the return. The IRS also said its ‘Where’s My Refund?’ tool would provide projected deposit dates for most early EITC/ACTC filers by February 21, 2026.",
       "category": "deadline",
       "date": "2026-01-26",
-      "source": "Internal Revenue Service (IRS)",
+      "source": "IRS",
       "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
+      "programs": ["eitc", "ctc"]
     },
     {
-      "id": "n-20260113-wic-food-packages",
-      "title": "USDA: WIC food package changes must be implemented within 24 months; some items sooner",
-      "summary": "USDA’s WIC Q&A says state agencies must implement the final WIC food package revisions within 24 months of the final rule’s publication date, with exceptions. USDA says increased fruit-and-vegetable cash-value benefit (CVB) amounts must be implemented no later than 60 days after publication, and yogurt vitamin D requirements (for states that authorize yogurt) must be implemented within 36 months; the page cites FY2024 CVB amounts of $26 (children), $47 (pregnant/postpartum), and $52 (mostly/fully breastfeeding).",
+      "id": "n-20260126-irs-refunds",
+      "title": "IRS notes shift away from paper refund checks; most refunds still expected within ~21 days",
+      "summary": "In its 2026 filing season announcement, the IRS said it began phasing out paper tax refund checks on September 30, 2025, meaning many taxpayers will need to provide routing and account numbers for direct deposit. The IRS also reiterated that most refunds are issued within 21 days, though some returns require additional review.",
       "category": "update",
+      "date": "2026-01-26",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
+      "programs": ["eitc", "ctc"]
+    },
+    {
+      "id": "n-20260113-wic",
+      "title": "USDA details science-based WIC food package updates and implementation timelines",
+      "summary": "USDA’s WIC food package Q&A describes updates including adding canned fish (6 oz for children ages 1–4; 10 oz for pregnant/postpartum; 15 oz for partially breastfeeding; and reducing fully breastfeeding from 30 oz to 20 oz), expanding non-dairy milk substitution options, and adjusting juice and dairy quantities. USDA says state agencies must implement provisions within 24 months of the final rule publication date, with some exceptions (e.g., increased CVB within 60 days; vitamin D yogurt requirement within 36 months).",
+      "category": "policy-change",
       "date": "2026-01-13",
-      "source": "USDA Food and Nutrition Service (FNS)",
+      "source": "USDA (FNS)",
       "sourceUrl": "https://www.fns.usda.gov/wic/food-packages/qas",
-      "programs": [
-        "wic"
-      ]
+      "programs": ["wic"]
     },
     {
-      "id": "n-20251001-ssa-cola-2026",
-      "title": "SSA: 2026 Social Security and SSI COLA set at 2.8% (SSI federal payment standard $994/month for individuals)",
-      "summary": "SSA’s 2026 COLA fact sheet lists a 2.8% cost-of-living adjustment for 2026 and shows the SSI federal payment standard rising to $994/month for an eligible individual and $1,491/month for an eligible couple. The fact sheet also lists the 2026 Social Security taxable earnings maximum as $184,500.",
-      "category": "update",
-      "date": "2025-10-01",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
+      "id": "n-20251211-wic-deadline",
+      "title": "USDA WIC memo reminds states to expand fruit/vegetable forms by April 2026",
+      "summary": "USDA’s WIC Policy Memorandum #2026-2 notes that recent WIC food package changes require state agencies to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) besides fresh by April 2026. The memo also states that as of November 2025, 95% of state agencies were already compliant with this requirement.",
+      "category": "deadline",
+      "date": "2025-12-11",
+      "source": "USDA (FNS)",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": ["wic"]
     },
     {
-      "id": "n-20260101-ssi-ssdi-work-2026",
-      "title": "SSA updates 2026 disability work thresholds (SGA $1,690/month; trial work period $1,210/month)",
-      "summary": "SSA’s Red Book 'What’s New in 2026' lists the Substantial Gainful Activity (SGA) level at $1,690/month for non-blind individuals and $2,830/month for blind individuals. It also lists the trial work period (TWP) monthly amount at $1,210 and the SSI student earned income exclusion at $2,410/month (up to $9,730/year).",
+      "id": "n-20260316-ssa-disability",
+      "title": "SSA publishes 2026 disability work incentives and SSI payment amounts in the Red Book",
+      "summary": "SSA’s Red Book ‘What’s New in 2026’ lists Substantial Gainful Activity (SGA) amounts of $1,690/month for non-blind individuals and $2,830/month for blind individuals, and a Trial Work Period (TWP) monthly earnings amount of $1,210. SSA also lists the 2026 federal SSI payment (FBR) as $994/month for an eligible individual and $1,491/month for an eligible couple.",
       "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration (SSA)",
+      "date": "2026-03-16",
+      "source": "SSA",
       "sourceUrl": "https://www.ssa.gov/redbook/newfor2026.htm",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
-    },
-    {
-      "id": "n-20260123-medicaid-watch-kff",
-      "title": "KFF outlines Medicaid policy issues to watch in 2026, including provider tax changes and work requirement timelines",
-      "summary": "KFF’s 2026 outlook says states face fiscal pressure as they implement Medicaid changes from the 2025 reconciliation law, including new federal work requirements starting January 1, 2027 and restrictions on provider taxes, with some 'uniformity waiver' provider tax revisions as early as April 1, 2026. KFF also cites estimates that Medicaid policy changes would increase the uninsured by 7.5 million by 2034, with 5.3 million tied to work requirements.",
-      "category": "update",
-      "date": "2026-01-23",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
+      "programs": ["ssi", "ssdi"]
     }
   ]
 }
