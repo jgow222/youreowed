@@ -43,6 +43,7 @@ import {
 import { useAppState } from "@/lib/store";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { signOut as supaSignOut } from "@/lib/supabase";
 import { ScrollProgress } from "@/components/Effects";
 
 // ─── Nav item type ──────────────────────────────────────────────────────────
@@ -429,7 +430,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem
                   className="cursor-pointer text-xs gap-2 text-destructive"
-                  onClick={() => dispatch({ type: "LOGOUT" })}
+                  onClick={() => { supaSignOut(); dispatch({ type: "LOGOUT" }); }}
                 >
                   <LogOut className="w-3.5 h-3.5" /> Sign Out
                 </DropdownMenuItem>
