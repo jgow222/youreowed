@@ -5,6 +5,9 @@ import { useState, useEffect, useCallback } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useAppState } from "@/lib/store";
+import { isAdmin } from "@/lib/admin";
+import { ShieldAlert } from "lucide-react";
 import {
   ExternalLink,
   TrendingUp,
@@ -164,7 +167,20 @@ function ClickBar({
 
 // ── Main dashboard ─────────────────────────────────────────────────────────────
 
+function AccessDenied() {
+  return (
+    <div className="flex items-center justify-center min-h-[60vh] p-6">
+      <Card className="p-8 text-center max-w-sm border border-destructive/20">
+        <ShieldAlert className="w-10 h-10 text-destructive mx-auto mb-3" />
+        <h2 className="text-lg font-bold mb-1">Access Denied</h2>
+        <p className="text-sm text-muted-foreground">This page is restricted to administrators only.</p>
+      </Card>
+    </div>
+  );
+}
+
 export default function AffiliateDashboardPage() {
+  const { state } = useAppState();
   const [clickData, setClickData] = useState(EMPTY_CLICKS);
   const [isLiveData, setIsLiveData] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -174,7 +190,6 @@ export default function AffiliateDashboardPage() {
     setIsLoading(true);
     try {
       const apiData = await fetchAffiliateStats();
-      // Merge API data into the partner structure
       const merged: Record<string, { clicks: number; lastClick: number }> = { ...EMPTY_CLICKS };
       for (const [partner, stat] of Object.entries(apiData.stats)) {
         merged[partner] = {
@@ -185,7 +200,6 @@ export default function AffiliateDashboardPage() {
       setClickData(merged);
       setIsLiveData(true);
     } catch {
-      // API error — keep empty state
       setIsLiveData(false);
     } finally {
       setIsLoading(false);
@@ -193,10 +207,14 @@ export default function AffiliateDashboardPage() {
     }
   }, []);
 
-  // Fetch on mount
   useEffect(() => {
     loadStats();
   }, [loadStats]);
+
+  // Admin-only access check (after all hooks)
+  if (!isAdmin(state.user?.email)) {
+    return <AccessDenied />;
+  }
 
   const totalClicks = Object.values(clickData).reduce(
     (sum, d) => sum + d.clicks,
