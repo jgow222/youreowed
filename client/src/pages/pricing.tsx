@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { getVariant } from "@/lib/ab-test";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -583,6 +584,7 @@ export default function PricingPage() {
   const { state } = useAppState();
   const { toast } = useToast();
   const [isAnnual, setIsAnnual] = useState(false);
+  const pricingVariant = getVariant("pricing-headline-v1");
   const referralCode = state.user?.referralCode || "BEN-XXXX";
   const referralLink = `youreowed.org?ref=${referralCode}`;
 
@@ -611,11 +613,12 @@ export default function PricingPage() {
   return (
     <div className="p-4 md:p-6 max-w-5xl mx-auto space-y-8 page-enter">
       {/* Header */}
-      <div className="text-center max-w-lg mx-auto">
+      <div className="text-center max-w-lg mx-auto" data-ab-variant={pricingVariant}>
         <h1 className="text-xl font-bold">Simple, Transparent Pricing</h1>
         <p className="text-sm text-muted-foreground mt-1">
-          Screen for 415+ federal and state programs. Find benefits you're
-          missing and get dollar estimates on what you could receive.
+          {pricingVariant === "A"
+            ? "Screen for 415+ federal and state programs. Find benefits you're missing and get dollar estimates on what you could receive."
+            : "Join thousands of families who discovered benefits they didn't know about. Plans start at $4.99/mo."}
         </p>
       </div>
 

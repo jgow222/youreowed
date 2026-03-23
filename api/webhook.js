@@ -4,19 +4,19 @@
 //
 // Deployed automatically at: youreowed.org/api/webhook
 
-import Stripe from "stripe";
-import { createClient } from "@supabase/supabase-js";
-import { buffer } from "micro";
+const Stripe = require("stripe");
+const { createClient } = require("@supabase/supabase-js");
+const { buffer } = require("micro");
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const supabase = createClient(
   process.env.VITE_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_KEY // Use the SECRET key here, not the anon key
+  process.env.SUPABASE_SERVICE_KEY
 );
 
 // Disable Vercel's default body parser so we can read the raw body for signature verification
-export const config = {
+module.exports.config = {
   api: {
     bodyParser: false,
   },
@@ -24,31 +24,27 @@ export const config = {
 
 // Map Stripe price/product to subscription tier
 function getTierFromPrice(amount) {
-  // Match based on the price amount in cents (with some flexibility for tax/rounding)
-  if (amount >= 399 && amount <= 699) return "basic";       // ~$4.99/month Basic
-  if (amount >= 799 && amount <= 1299) return "premium";    // ~$9.99/month Pro
-  if (amount >= 1300 && amount <= 1799) return "premium";   // ~$14.99/month Family
-  if (amount >= 4500 && amount <= 5500) return "basic";     // ~$49.99/year
-  if (amount >= 9000 && amount <= 11000) return "premium";  // ~$99.99/year
-  if (amount >= 13000 && amount <= 17000) return "premium"; // ~$149.99/year
-  // $2.99 application guide — don't change subscription
+  if (amount >= 399 && amount <= 699) return "basic";
+  if (amount >= 799 && amount <= 1299) return "premium";
+  if (amount >= 1300 && amount <= 1799) return "premium";
+  if (amount >= 4500 && amount <= 5500) return "basic";
+  if (amount >= 9000 && amount <= 11000) return "premium";
+  if (amount >= 13000 && amount <= 17000) return "premium";
   if (amount >= 200 && amount <= 399) return null;
-  return "basic"; // fallback for any other subscription amount
+  return "basic";
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
   try {
-    // Read raw body for signature verification
     const rawBody = await buffer(req);
     const sig = req.headers["stripe-signature"];
 
     let event;
 
-    // Verify the webhook signature
     try {
       event = stripe.webhooks.constructEvent(
         rawBody,
@@ -62,11 +58,10 @@ export default async function handler(req, res) {
 
     console.log(`Webhook event received: ${event.type}`);
 
-    // Handle checkout completion
     if (event.type === "checkout.session.completed") {
       const session = event.data.object;
       const customerEmail = session.customer_details?.email || session.customer_email;
-      const amountTotal = session.amount_total; // in cents
+      const amountTotal = session.amount_total;
 
       console.log(`Checkout completed: email=${customerEmail}, amount=${amountTotal}`);
 
@@ -77,7 +72,6 @@ export default async function handler(req, res) {
 
       const tier = getTierFromPrice(amountTotal);
       
-      // Skip tier update for one-time guide purchases
       if (!tier) {
         console.log(`Guide purchase ($${amountTotal / 100}) — no tier change for ${customerEmail}`);
         return res.status(200).json({ received: true });
@@ -85,7 +79,6 @@ export default async function handler(req, res) {
 
       console.log(`Upgrading ${customerEmail} to ${tier} (amount: $${amountTotal / 100})`);
 
-      // Update user's subscription tier in Supabase by email
       const { data, error } = await supabase
         .from("user_profiles")
         .update({
@@ -101,7 +94,6 @@ export default async function handler(req, res) {
       }
     }
 
-    // Handle subscription cancellation
     if (event.type === "customer.subscription.deleted") {
       const subscription = event.data.object;
       const customerEmail = subscription.customer_email;
@@ -124,4 +116,4 @@ export default async function handler(req, res) {
     console.error("Webhook error:", err);
     return res.status(400).json({ error: "Webhook processing failed" });
   }
-}
+};

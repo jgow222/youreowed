@@ -4,10 +4,9 @@
 //
 // Deployed at: youreowed.org/api/news
 
-// Vercel bundles this import at deploy time
 const newsData = require("../data/news.json");
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   // Allow CORS
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET");
@@ -39,4 +38,4 @@ export default function handler(req, res) {
     console.error("News API error:", err);
     return res.status(500).json({ error: "Failed to load news" });
   }
-}
+};

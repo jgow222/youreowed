@@ -26,6 +26,7 @@ import TrackerPage from "@/pages/tracker";
 import DocumentsPage from "@/pages/documents";
 import RemindersPage from "@/pages/reminders";
 import PartnersPage from "@/pages/partners";
+import AffiliateDashboardPage from "@/pages/affiliate-dashboard";
 import AuthGate from "@/components/AuthGate";
 
 // Start logged out — user sees everything but must sign up to use features
@@ -58,6 +59,7 @@ function AppRouter() {
       <Route path="/tracker">{() => <AuthGate><TrackerPage /></AuthGate>}</Route>
       <Route path="/documents">{() => <AuthGate><DocumentsPage /></AuthGate>}</Route>
       <Route path="/reminders">{() => <AuthGate><RemindersPage /></AuthGate>}</Route>
+      <Route path="/affiliate-dashboard">{() => <AuthGate><AffiliateDashboardPage /></AuthGate>}</Route>
 
       <Route component={NotFound} />
     </Switch>
