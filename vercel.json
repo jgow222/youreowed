@@ -2,11 +2,5 @@
   "buildCommand": "npm run build:static",
   "outputDirectory": "dist/public",
   "installCommand": "npm install",
-  "framework": null,
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs20.x",
-      "includeFiles": "data/**"
-    }
-  }
+  "framework": null
 }
