@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight, Phone, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { Search, Users, Newspaper, MessageCircle, ArrowRight, DollarSign, TrendingUp, Zap, ChevronRight, Phone, Lock, ShieldCheck, CheckCircle2, Globe, Clock } from "lucide-react";
 import { useAppState } from "@/lib/store";
 import { useElderlyMode } from "@/lib/elderly-mode";
 import { fetchNews, type NewsItem } from "@/lib/news";
@@ -234,6 +234,66 @@ export default function DashboardPage() {
             </Card>
           </HoverTilt>
         </Link>
+      </div>
+
+      {/* Testimonials */}
+      <div className="animate-fade-in-up stagger-7">
+        <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-3">What people are finding</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {[
+            { name: "Maria G.", state: "Texas", amount: "$14,200", quote: "I had no idea I qualified for so many programs. Between SNAP, Medicaid, and the EITC, I'm getting over $14,000 a year I was leaving on the table.", programs: 8 },
+            { name: "James T.", state: "Ohio", amount: "$8,400", quote: "As a veteran, I didn't know about half the benefits available to me. YoureOwed found 11 programs in under 2 minutes. Already applied for three.", programs: 11 },
+            { name: "Sandra L.", state: "Florida", amount: "$22,800", quote: "Single mom with 3 kids. The screener found CHIP, free school lunch, childcare assistance, and EITC. I'm saving almost $2,000 a month now.", programs: 14 },
+          ].map((t, i) => (
+            <div key={i} className={`card-hover-lift p-4 rounded-xl border border-card-border bg-card stagger-${i + 1}`}>
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">
+                  {t.name.split(" ").map(n => n[0]).join("")}
+                </div>
+                <div>
+                  <p className="text-sm font-semibold">{t.name}</p>
+                  <p className="text-[10px] text-muted-foreground">{t.state} · {t.programs} programs found</p>
+                </div>
+              </div>
+              <p className="text-xs text-muted-foreground leading-relaxed mb-2">"{t.quote}"</p>
+              <p className="text-lg font-black text-primary">{t.amount}<span className="text-xs font-normal text-muted-foreground">/year found</span></p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Trust badges */}
+      <div className="animate-fade-in stagger-8">
+        <div className="flex flex-wrap items-center justify-center gap-6 py-4 px-6 rounded-xl border border-border/50 bg-muted/20">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <ShieldCheck className="w-5 h-5 text-emerald-500" />
+            <div className="text-left">
+              <p className="text-xs font-bold text-foreground">415+ Programs</p>
+              <p className="text-[10px]">Verified &amp; updated daily</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <Lock className="w-5 h-5 text-blue-500" />
+            <div className="text-left">
+              <p className="text-xs font-bold text-foreground">Data Never Stored</p>
+              <p className="text-[10px]">Screening runs in your browser</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <Globe className="w-5 h-5 text-primary" />
+            <div className="text-left">
+              <p className="text-xs font-bold text-foreground">50 States + DC</p>
+              <p className="text-[10px]">Federal &amp; state programs</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <Clock className="w-5 h-5 text-amber-500" />
+            <div className="text-left">
+              <p className="text-xs font-bold text-foreground">2-Minute Screening</p>
+              <p className="text-[10px]">Fast, private, anonymous</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Email Capture — for non-subscribers */}

@@ -1,0 +1,22 @@
+{
+  "name": "YoureOwed — Find Your Benefits",
+  "short_name": "YoureOwed",
+  "description": "Check what government benefits you qualify for. 415+ programs across all 50 states.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171614",
+  "theme_color": "#00E676",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
