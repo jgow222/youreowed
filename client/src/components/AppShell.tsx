@@ -184,7 +184,7 @@ function NavSectionGroup({
         aria-expanded={open}
       >
         <SectionIcon className="w-3.5 h-3.5" />
-        <span className="flex-1 text-left">{t(`nav.section.${section.id}`) || section.label}</span>
+        <span className="flex-1 text-left">{section.label}</span>
         {/* Show child badges on section header when collapsed */}
         {!open && sectionBadges.length > 0 && (
           <div className="flex items-center gap-1">

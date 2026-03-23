@@ -281,14 +281,15 @@ function PricingCard({ tier }: { tier: PartnerTier }) {
           : "border border-card-border"
       }`}
     >
-      {tier.badge && (
-        <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground text-[10px]">
-          {tier.badge}
-        </Badge>
-      )}
-
       <div className="mb-1">
-        <h3 className="text-lg font-bold">{tier.name}</h3>
+        <div className="flex items-center justify-between gap-2">
+          <h3 className="text-lg font-bold">{tier.name}</h3>
+          {tier.badge && (
+            <Badge className="bg-primary text-primary-foreground text-[10px] font-bold px-2 py-0.5">
+              {tier.badge}
+            </Badge>
+          )}
+        </div>
       </div>
 
       <div className="mb-3">
