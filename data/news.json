@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-03-23T11:03:00Z",
+  "lastUpdated": "2026-03-24T11:04:00Z",
   "items": [
+    {
+      "id": "n-20260319-snap",
+      "title": "USDA lists approved SNAP waivers that restrict soda and candy purchases in multiple states",
+      "summary": "USDA’s Food and Nutrition Service published a list of approved SNAP “food restriction” waivers that limit purchases of items like soda/soft drinks, energy drinks, and candy. The page lists varied target implementation dates, including Florida (04/20/26) restricting soda, energy drinks, candy, and prepared desserts, and Texas (04/01/26) restricting sweetened drinks and candy.",
+      "category": "policy-change",
+      "date": "2026-03-19",
+      "source": "USDA (FNS)",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "programs": ["snap"],
+      "isBreaking": true
+    },
     {
       "id": "n-20260311-snap",
       "title": "SNAP recipients sue USDA over state waivers restricting sugary drinks and candy purchases",
@@ -11,16 +22,6 @@
       "sourceUrl": "https://www.reuters.com/legal/government/us-sued-by-food-stamp-recipients-over-restrictions-sugary-drinks-candy-2026-03-11/",
       "programs": ["snap"],
       "isBreaking": true
-    },
-    {
-      "id": "n-20260220-snap",
-      "title": "USDA publishes FY 2026 SNAP cost-of-living adjustments (COLA) with higher max benefits",
-      "summary": "USDA’s FY 2026 SNAP COLA memo lists the maximum monthly allotment for a 4-person household in the 48 states and D.C. as $994, and raises the minimum benefit in the 48 states and D.C. to $24. The memo states the FY 2026 COLA applies from October 1, 2025 through September 30, 2026.",
-      "category": "update",
-      "date": "2026-02-20",
-      "source": "USDA (FNS)",
-      "sourceUrl": "https://www.usda.gov/sites/default/files/guidance-documents/fns.snap-cola-fy26memo.pdf",
-      "programs": ["snap"]
     },
     {
       "id": "n-20260306-medicaid",
@@ -34,16 +35,6 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260312-medicaid-chip",
-      "title": "MACPAC March 2026 report highlights Medicaid/CHIP priorities, including HCBS workforce wage reporting recommendation",
-      "summary": "MACPAC’s March 2026 Report to Congress includes a recommendation aimed at strengthening the home- and community-based services (HCBS) workforce by requiring states to report hourly wages paid to HCBS workers. The report also includes chapters on behavioral health in Medicaid/CHIP and coverage/access issues for justice-involved youth and youth in foster care.",
-      "category": "update",
-      "date": "2026-03-12",
-      "source": "MACPAC",
-      "sourceUrl": "https://www.macpac.gov/publication/march-2026-report-to-congress-on-medicaid-and-chip/",
-      "programs": ["medicaid", "chip"]
-    },
-    {
       "id": "n-20260316-section8",
       "title": "HUD rescinds a slate of COVID-era PIH notices affecting Housing Choice Voucher and related programs",
       "summary": "HUD PIH Notice 2026-06 fully rescinds numerous COVID-era PIH notices tied to CARES Act supplemental HAP/admin fee guidance and pandemic-related waivers for the Housing Choice Voucher (HCV) program (including Mainstream and Mod Rehab). The notice also partially rescinds parts of PIH 2021-14 related to HCV/public housing and revises PIH 2020-32 by removing specific LEP requirements for remote hearings/briefings.",
@@ -55,14 +46,24 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260305-ehv",
-      "title": "HUD tightens documentation requirements for Emergency Housing Vouchers and Stability Vouchers",
-      "summary": "HUD PIH Notice 2026-05 removes a waiver that previously let PHAs admit certain EHV/Stability Voucher households without verifying SSN and citizenship/eligible noncitizen documentation at initial eligibility determination. HUD directs PHAs to follow 24 CFR 5.210–5.218 for SSN verification and 24 CFR 5.508 for citizenship/eligible immigration evidence, with compliance required within 60 days of publication.",
-      "category": "policy-change",
-      "date": "2026-03-05",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
-      "programs": ["ehv", "stability_voucher", "section8"]
+      "id": "n-20260312-medicaid-chip",
+      "title": "MACPAC March 2026 report highlights Medicaid/CHIP priorities, including HCBS workforce wage reporting recommendation",
+      "summary": "MACPAC’s March 2026 Report to Congress includes a recommendation aimed at strengthening the home- and community-based services (HCBS) workforce by requiring states to report hourly wages paid to HCBS workers. The report also includes chapters on behavioral health in Medicaid/CHIP and coverage/access issues for justice-involved youth and youth in foster care.",
+      "category": "update",
+      "date": "2026-03-12",
+      "source": "MACPAC",
+      "sourceUrl": "https://www.macpac.gov/publication/march-2026-report-to-congress-on-medicaid-and-chip/",
+      "programs": ["medicaid", "chip"]
+    },
+    {
+      "id": "n-20260129-liheap",
+      "title": "Federal Register notice finalizes reallotment of $2.29M in FY2024 LIHEAP funds to FY2025 grantees",
+      "summary": "The Federal Register published a notice stating that $2,293,415 in FY2024 LIHEAP funds were reallotted (effective upon publication) to states, territories, tribes, and tribal organizations that received FY2025 direct LIHEAP grants. The notice lists amounts returned for reallotment, including Idaho ($611,750) and the Navajo Nation ($599,956).",
+      "category": "update",
+      "date": "2026-01-29",
+      "source": "Federal Register (ACF/OCS)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-01-29/pdf/2026-01784.pdf",
+      "programs": ["liheap"]
     },
     {
       "id": "n-20260126-eitc-ctc",
@@ -85,20 +86,10 @@
       "programs": ["eitc", "ctc"]
     },
     {
-      "id": "n-20260113-wic",
-      "title": "USDA details science-based WIC food package updates and implementation timelines",
-      "summary": "USDA’s WIC food package Q&A describes updates including adding canned fish (6 oz for children ages 1–4; 10 oz for pregnant/postpartum; 15 oz for partially breastfeeding; and reducing fully breastfeeding from 30 oz to 20 oz), expanding non-dairy milk substitution options, and adjusting juice and dairy quantities. USDA says state agencies must implement provisions within 24 months of the final rule publication date, with some exceptions (e.g., increased CVB within 60 days; vitamin D yogurt requirement within 36 months).",
-      "category": "policy-change",
-      "date": "2026-01-13",
-      "source": "USDA (FNS)",
-      "sourceUrl": "https://www.fns.usda.gov/wic/food-packages/qas",
-      "programs": ["wic"]
-    },
-    {
-      "id": "n-20251211-wic-deadline",
-      "title": "USDA WIC memo reminds states to expand fruit/vegetable forms by April 2026",
-      "summary": "USDA’s WIC Policy Memorandum #2026-2 notes that recent WIC food package changes require state agencies to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) besides fresh by April 2026. The memo also states that as of November 2025, 95% of state agencies were already compliant with this requirement.",
-      "category": "deadline",
+      "id": "n-20251211-wic-amounts",
+      "title": "USDA sets FY2026 WIC fruit/vegetable cash-value benefit amounts (children $26; pregnant/postpartum $48; breastfeeding $52)",
+      "summary": "USDA’s WIC Policy Memo #2026-2 lists FY2026 monthly cash-value voucher/benefit (CVV/B) amounts of $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. The memo also notes state agencies must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
+      "category": "update",
       "date": "2025-12-11",
       "source": "USDA (FNS)",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
