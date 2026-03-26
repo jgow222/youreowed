@@ -1,31 +1,50 @@
 {
-  "lastUpdated": "2026-03-25T11:02:00Z",
+  "lastUpdated": "2026-03-26T11:03:00Z",
   "items": [
     {
+      "id": "n-20260326-medicaid-rural-fund",
+      "title": "NPR: $50B rural health fund rolls out amid projected Medicaid cuts",
+      "summary": "NPR reports states are planning how to use a $50 billion Rural Health Transformation fund created in the One Big Beautiful Bill Act to offset rural impacts, while the law is projected to cut Medicaid spending by nearly $1 trillion over the next decade. The story highlights how some states may steer hospitals toward service reductions or conversions (e.g., Rural Emergency Hospital status) as they pursue funding.",
+      "category": "update",
+      "date": "2026-03-26",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/03/26/nx-s1-5760925/rural-health-transformation-fund-hospitals-montana",
+      "programs": ["medicaid"]
+    },
+    {
+      "id": "n-20260325-medicaid-expansion-enrollment-projection",
+      "title": "Urban Institute projects 4.9M–10.1M fewer Medicaid expansion enrollees in 2028 under new work rules",
+      "summary": "The Urban Institute estimates the One Big Beautiful Bill Act’s Medicaid expansion work requirements and increased redeterminations (starting January 2027) could reduce average monthly Medicaid expansion enrollment in 2028 by 4.9 million (high-mitigation scenario) to 10.1 million (low-mitigation scenario). The analysis also projects 3.0 million–7.0 million coverage losses from work requirements alone, plus 2.0 million–3.1 million fewer enrollees due to six-month redeterminations.",
+      "category": "update",
+      "date": "2026-03-25",
+      "source": "Urban Institute",
+      "sourceUrl": "https://www.urban.org/research/publication/projected-reductions-medicaid-expansion-enrollment-under-obbbas-work",
+      "programs": ["medicaid"]
+    },
+    {
       "id": "n-20260319-snap-food-restriction-waivers",
-      "title": "USDA posts updated list of SNAP food restriction waivers with 2026 implementation dates",
-      "summary": "USDA FNS updated its SNAP Food Restriction Waivers tracker and lists multiple states restricting purchases like soda, candy, and energy drinks, with several target implementation dates in 2026. Examples include Florida (04/20/26) restricting soda, energy drinks, candy, and prepared desserts; Texas (04/01/26) restricting sweetened drinks and candy; and Arkansas (07/01/26) restricting soda and certain low-juice drinks plus candy.",
+      "title": "USDA posts SNAP food restriction waivers with state implementation dates",
+      "summary": "USDA’s SNAP Food Restriction Waivers page lists approved state waivers restricting purchases such as soda/candy and includes target implementation dates. Examples include Florida (target 04/20/26) restricting soda, energy drinks, candy, and prepared desserts; Arkansas (07/01/26) restricting soda and candy; and Texas (04/01/26) restricting sweetened drinks and candy.",
       "category": "policy-change",
       "date": "2026-03-19",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": ["snap"],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260324-snap-mass-replacements-california-winter-storms",
-      "title": "USDA approves SNAP mass replacement benefits for California households impacted by Feb. 2026 winter storms",
-      "summary": "USDA FNS notes it approved California’s request on March 2, 2026 to issue mass replacements of SNAP benefits due to power outages from winter storms that began Feb. 17, 2026. The approval applies to specified ZIP codes across multiple counties (including Placer, El Dorado, Fresno, Humboldt, and others), allowing affected households to receive replacement benefits without individual loss reporting.",
-      "category": "update",
-      "date": "2026-03-24",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/disaster/california",
       "programs": ["snap"]
     },
     {
-      "id": "n-20260312-medicaid-chip-managed-care-oversight-bulletin",
-      "title": "CMS issues bulletin on Medicaid/CHIP managed care monitoring and oversight",
-      "summary": "CMS’s March 12, 2026 informational bulletin reminds states they must maintain a managed care monitoring system covering at least 14 program areas under 42 CFR 438.66(b) (and 42 CFR 457.1285 for CHIP), including program integrity and network adequacy. The bulletin also reiterates annual submission requirements like the Managed Care Program Annual Report (MCPAR) due within 180 days after each contract year and network adequacy assurance documentation (NAAAR).",
+      "id": "n-20260311-snap-food-restriction-lawsuit",
+      "title": "Reuters: SNAP recipients sue USDA over sugary drinks/candy purchase restrictions",
+      "summary": "Reuters reports five SNAP recipients sued USDA to overturn the administration’s efforts to limit SNAP purchases of items like sugary drinks, energy drinks, and candy, challenging USDA’s approval of food restriction waivers for 22 states. Plaintiffs say the restrictions disrupt food access and can create checkout confusion and added out-of-pocket costs for households managing health needs.",
+      "category": "policy-change",
+      "date": "2026-03-11",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/legal/government/us-sued-by-food-stamp-recipients-over-restrictions-sugary-drinks-candy-2026-03-11/",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260312-medicaid-managed-care-oversight",
+      "title": "CMS issues bulletin on Medicaid/CHIP managed care monitoring (prior auth, networks, reporting)",
+      "summary": "CMS’ March 12, 2026 informational bulletin highlights state responsibilities to monitor managed care plans, including network adequacy (with a focus on maternal health) and oversight of prior authorization decisions to prevent inappropriate denials and support EPSDT compliance. The bulletin also summarizes required reporting (e.g., MCPAR, MLR Summary, network adequacy reports) and notes upcoming operational milestones like mandatory use of the MC-Review portal for certain submissions after July 1, 2026. ",
       "category": "update",
       "date": "2026-03-12",
       "source": "Centers for Medicare & Medicaid Services",
@@ -33,59 +52,59 @@
       "programs": ["medicaid", "chip"]
     },
     {
-      "id": "n-20260312-medicaid-chip-macpac-march-report",
-      "title": "MACPAC March 2026 report recommends wage transparency reporting for Medicaid HCBS workers",
-      "summary": "MACPAC’s March 2026 Report to Congress includes a recommendation aimed at supporting the home- and community-based services (HCBS) workforce by requiring states to report hourly wages paid to HCBS workers. The report also covers behavioral health in Medicaid/CHIP and Medicaid’s role for justice-involved youth and children in foster care.",
+      "id": "n-20260316-section8-cares-guidance-rescinded",
+      "title": "HUD rescinds/revises multiple COVID-era PIH notices affecting Housing Choice Vouchers and other programs",
+      "summary": "HUD Notice PIH 2026-06 (issued March 16, 2026) rescinds numerous COVID-19/CARES Act related PIH notices and revises others, including removing certain LEP-related guidance from PIH 2020-32 and rescinding portions of PIH 2021-14 related to HCV and Public Housing. The notice applies to PHAs operating Housing Choice Voucher (Section 8), Public Housing, and Section 8 Moderate Rehabilitation programs, among others. ",
       "category": "update",
-      "date": "2026-03-12",
-      "source": "Medicaid and CHIP Payment and Access Commission (MACPAC)",
-      "sourceUrl": "https://www.macpac.gov/publication/march-2026-report-to-congress-on-medicaid-and-chip/",
-      "programs": ["medicaid", "chip"]
+      "date": "2026-03-16",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-06.pdf",
+      "programs": ["section8"]
     },
     {
-      "id": "n-20260305-hud-ehv-sv-ssn-immigration-verification",
-      "title": "HUD updates Emergency Housing Voucher/Stability Voucher rules, requiring SSN and eligible immigration status verification",
-      "summary": "HUD Notice PIH 2026-05 removes the prior waiver allowing PHAs to admit EHV/SV families without initially obtaining/verifying SSN or eligible immigration status documentation. HUD instructs PHAs to follow 24 CFR 5.508 for citizenship/eligible immigration evidence and 24 CFR 5.210–5.218 for SSN disclosure/verification, with PHAs required to be in compliance within 60 days of the March 5, 2026 publication.",
-      "category": "policy-change",
-      "date": "2026-03-05",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
-      "programs": ["section8", "ehv"]
-    },
-    {
-      "id": "n-20260317-fema-helene-direct-housing-extension",
-      "title": "FEMA extends direct temporary housing for Hurricane Helene survivors through Sept. 30, 2026; phased rent begins after March 29",
-      "summary": "FEMA extended direct temporary housing for Hurricane Helene survivors, allowing households in FEMA-provided units to remain until Sept. 30, 2026. The report states residents occupying units after March 29 must pay monthly rent on a phase-in schedule: 25% of HUD Fair Market Rent (April–May), 50% (June–July), 75% (August–September), and full HUD Fair Market Rent in October.",
+      "id": "n-20260304-liheap-quarterly-reports-comments",
+      "title": "ACF seeks comments on LIHEAP quarterly reports (OMB 0970-0589) changes; deadline April 3, 2026",
+      "summary": "ACF published a Federal Register notice requesting a 3-year extension of the LIHEAP Quarterly Reports (OMB Control No. 0970-0589) and proposing changes intended to reduce redundancy and administrative burden for grantees. Comments are due April 3, 2026, and the notice proposes incorporating data elements from the LIHEAP Carryover and Reallotment Report into the quarterly reporting process. ",
       "category": "deadline",
-      "date": "2026-03-17",
-      "source": "WFAE (NPR member station)",
-      "sourceUrl": "https://www.wfae.org/2026-03-17/fema-extends-housing-rental-assistance-for-helene-survivors",
-      "programs": ["housing-assistance"]
-    },
-    {
-      "id": "n-20260129-liheap-fy24-reallotment",
-      "title": "HHS/ACF proposes reallotment of $2.29 million in FY24 LIHEAP funds to FY25 LIHEAP grantees",
-      "summary": "A Federal Register notice states $2,293,415 in LIHEAP funds from federal FY24 are proposed for reallotment. The notice explains the reallotted funds go to FY25 direct LIHEAP grant recipients (with certain exclusions such as very small allocations under $25), and that no subrecipients or other entities may apply for these reallotted funds.",
-      "category": "update",
-      "date": "2026-01-29",
-      "source": "Federal Register (HHS Administration for Children and Families)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-01-29/pdf/2026-01784.pdf",
+      "date": "2026-03-04",
+      "source": "Federal Register (via GovInfo.gov)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04249.pdf",
       "programs": ["liheap"]
     },
     {
-      "id": "n-20251210-wic-fy26-cvb-amounts",
-      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash-value benefit amounts; states must authorize at least one non-fresh form by April 2026",
-      "summary": "USDA FNS WIC Policy Memorandum #2026-2 lists FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts for fruits and vegetables: $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. The memo also notes the WIC food package changes require state agencies to authorize at least one additional form of fruits/vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
-      "category": "policy-change",
-      "date": "2025-12-10",
+      "id": "n-20260303-snap-nac-comments",
+      "title": "USDA requests comments on SNAP National Accuracy Clearinghouse data matching collection; deadline May 4, 2026",
+      "summary": "USDA FNS published a notice inviting public comment on a revised information collection tied to the National Accuracy Clearinghouse (NAC), an interstate data matching system to prevent duplicate SNAP participation across states. Written comments must be received by May 4, 2026, and can be submitted by mail, fax, email, or through Regulations.gov. ",
+      "category": "deadline",
+      "date": "2026-03-03",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-030326",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260219-wic-milk-mma-increase",
+      "title": "USDA memo: WIC temporarily increases fluid milk maximum monthly allowances through Sept. 30, 2026",
+      "summary": "USDA WIC Policy Memorandum #2026-1 says the FY2026 maximum monthly allowance (MMA) of fluid milk is updated effective immediately, with authority terminating Sept. 30, 2026. The memo lists temporary milk amounts including 16 quarts (Food Packages IV A/B and VI), 22 quarts (Food Package V A/B), and 24 quarts (Food Package VII), and instructs state agencies to maintain updated milk MMAs through Sept. 30, 2026. ",
+      "category": "policy-change",
+      "date": "2026-02-19",
+      "source": "U.S. Department of Agriculture",
+      "sourceUrl": "https://www.usda.gov/sites/default/files/guidance-documents/fns.wic-2026-1-mma-increase.pdf",
       "programs": ["wic"]
     },
     {
-      "id": "n-20260126-irs-eitc-actc-refund-timing",
-      "title": "IRS: most EITC/ACTC refunds expected by March 2, 2026; refund status updates by Feb. 21",
-      "summary": "In its 2026 filing season announcement, the IRS says most refunds for taxpayers claiming the Earned Income Tax Credit (EITC) and Additional Child Tax Credit (ACTC) should be available by March 2, 2026 for filers using direct deposit with no issues. The IRS also states its “Where’s My Refund?” tool should provide projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026.",
+      "id": "n-20260130-pell-maximum-minimum",
+      "title": "Federal Student Aid posts 2026–27 Pell Grant maximum/minimum award amounts page",
+      "summary": "Federal Student Aid posted a Dear Colleague Letter page for 2026–27 Pell Grant maximum and minimum award amounts (award year July 1, 2026–June 30, 2027). The page indicates the maximum Pell Grant award remains fixed at $7,395 under continuing appropriations, and references a minimum scheduled award of $740 (10% of the maximum, rounded to the nearest $5).",
+      "category": "update",
+      "date": "2026-01-30",
+      "source": "Federal Student Aid (FSA Partner Connect)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters/2026-01-30/2026-27-federal-pell-grant-maximum-and-minimum-award-amounts",
+      "programs": ["pell"]
+    },
+    {
+      "id": "n-20260126-eitc-actc-refund-timing",
+      "title": "IRS: 2026 filing season opened Jan. 26; EITC/ACTC refunds expected by March 2 (most direct deposits)",
+      "summary": "The IRS opened the 2026 filing season on Jan. 26, 2026 and said most refunds claiming the Earned Income Tax Credit (EITC) and Additional Child Tax Credit (ACTC) should be available by March 2, 2026 for taxpayers using direct deposit with no other issues. The IRS also said Where’s My Refund? should provide projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026. ",
       "category": "deadline",
       "date": "2026-01-26",
       "source": "Internal Revenue Service",
@@ -93,24 +112,14 @@
       "programs": ["eitc", "ctc"]
     },
     {
-      "id": "n-20260130-pell-grant-2026-27-dcl",
-      "title": "ED Federal Student Aid issues Dear Colleague letter on 2026–27 Pell Grant maximum/minimum award amounts",
-      "summary": "Federal Student Aid published Dear Colleague Letter GEN-26-01 (Jan. 30, 2026) stating it contains the 2026–27 Award Year Federal Pell Grant Program maximum and minimum award amounts. The public page currently displays only metadata (not the award figures), so YoureOwed should verify the maximum/minimum award amounts from the official letter attachment once accessible.",
-      "category": "update",
-      "date": "2026-01-30",
-      "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters/2026-01-30/2026-27-federal-pell-grant-maximum-and-minimum-award-amounts",
-      "programs": ["pell"]
-    },
-    {
-      "id": "n-20260101-ssi-federal-payment-amounts-2026",
-      "title": "SSA publishes 2026 federal SSI payment amounts (max $994 individual; $1,491 couple)",
-      "summary": "SSA’s COLA/SSI payment table lists 2026 maximum federal SSI payment amounts of $994 per month for an eligible individual, $1,491 per month for an eligible couple, and $498 for an essential person. The same page notes the 2.8% COLA becomes effective January 2026.",
+      "id": "n-20260101-ssi-ssdi-2026-thresholds",
+      "title": "SSA: 2026 SSI federal benefit rate is $994 (individual) / $1,491 (couple); SSDI work thresholds updated",
+      "summary": "SSA’s Red Book ‘What’s New in 2026’ lists the SSI federal benefit rate (FBR) at $994 per month for an eligible individual and $1,491 per month for an eligible couple. It also lists the 2026 trial work period (TWP) monthly earnings amount as $1,210 and substantial gainful activity (SGA) as $1,690 per month for non-blind individuals or $2,830 for blind individuals. ",
       "category": "update",
       "date": "2026-01-01",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
-      "programs": ["ssi"]
+      "sourceUrl": "https://www.ssa.gov/redbook/newfor2026.htm",
+      "programs": ["ssi", "ssdi"]
     }
   ]
 }
