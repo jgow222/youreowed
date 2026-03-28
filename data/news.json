@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-27T11:06:45Z",
+  "lastUpdated": "2026-03-28T11:08:30Z",
   "items": [
     {
-      "id": "n-20260327-snap-waivers",
-      "title": "USDA posts 2026 timeline for SNAP food-restriction waivers in multiple states",
-      "summary": "USDA's Food and Nutrition Service lists approved state waivers that restrict SNAP purchases of items like soda, energy drinks, and candy. The page shows target implementation dates including Texas (Apr. 1, 2026), Florida (Apr. 20, 2026), and Colorado (Apr. 30, 2026), with additional states scheduled later in 2026.",
+      "id": "n-20260327-snap-food-restriction-waivers",
+      "title": "USDA posts updated list of SNAP food-restriction waivers with new implementation dates",
+      "summary": "USDA FNS updated its SNAP food-restriction waiver list with multiple state waivers approved, including Florida (target implementation 04/20/26) restricting soda, energy drinks, candy and prepared desserts, and Colorado (04/30/26) restricting soft drinks. The list also includes Arkansas (07/01/26) and Texas (04/01/26) among others, indicating rollout dates extending into 2028 depending on the state.",
       "category": "policy-change",
-      "date": "2026-03-19",
+      "date": "2026-03-27",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
       "programs": [
@@ -15,9 +15,9 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260327-medicaid-managedcare-oversight",
-      "title": "CMS issues Medicaid/CHIP managed care monitoring and oversight bulletin with new reporting timing",
-      "summary": "CMS reminded states they must monitor managed care plans across at least 14 program areas under 42 CFR §438.66(b) and use monitoring data to improve plan performance. The bulletin highlights upcoming data/reporting timing, including reporting new T-MSIS state-directed payment (SDP) fields as soon as possible but no later than September 2026.",
+      "id": "n-20260312-medicaid-chip-managed-care-oversight",
+      "title": "CMS issues bulletin on Medicaid/CHIP managed care monitoring, including encounter data and SDP reporting",
+      "summary": "CMS released a March 12, 2026 CMCS Informational Bulletin outlining Medicaid/CHIP managed care oversight expectations, including monitoring prior-authorization denial trends and enforcing quantitative network adequacy standards for OB/GYN care. The bulletin also reminds states to use audited financial and encounter data and notes that T-MSIS fields for state directed payment (SDP) data are due no later than September 2026.",
       "category": "update",
       "date": "2026-03-12",
       "source": "Centers for Medicare & Medicaid Services (CMS)",
@@ -28,10 +28,10 @@
       ]
     },
     {
-      "id": "n-20260327-housing-hud-pih-2026-06",
-      "title": "HUD rescinds and revises multiple COVID-era PIH notices affecting Housing Choice Voucher and public housing operations",
-      "summary": "HUD Notice PIH 2026-06 (issued March 16, 2026) rescinds numerous COVID-era PIH notices and amends prior guidance, including changes related to remote hearings/briefings provisions. HUD notes that while certain COVID-era guidance is withdrawn, PHAs still must comply with federal civil rights and language access requirements.",
-      "category": "update",
+      "id": "n-20260316-section8-hcv-pih-2026-06",
+      "title": "HUD rescinds multiple COVID-era PIH notices affecting HCV (Section 8) and public housing guidance",
+      "summary": "HUD Notice PIH 2026-06 (issued March 16, 2026) rescinds a list of COVID-19-related PIH notices and partially rescinds prior guidance affecting Housing Choice Voucher (HCV) and public housing programs. The notice also amends PIH 2020-32 by striking certain remote-hearing language-access instructions while stating PHAs must still comply with federal language access laws.",
+      "category": "policy-change",
       "date": "2026-03-16",
       "source": "U.S. Department of Housing and Urban Development (HUD)",
       "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-06.pdf",
@@ -41,36 +41,24 @@
       ]
     },
     {
-      "id": "n-20260327-liheap-omb-comment-deadline",
-      "title": "HHS/ACF opens comment period to extend LIHEAP Quarterly Reports information collection",
-      "summary": "The Administration for Children and Families requested public comment on a 3-year extension of the LIHEAP Quarterly Reports (OMB No. 0970-0589). Comments are due April 3, 2026, and proposed changes would move carryover/reallotment data elements into the quarterly report to reduce redundant reporting.",
+      "id": "n-20260304-liheap-omb-review-quarterly-reports",
+      "title": "Federal Register notice opens comment window on LIHEAP quarterly reports information collection",
+      "summary": "The Federal Register published a March 4, 2026 notice for OMB review of LIHEAP Quarterly Reports (OMB Control No. 0970-0589) as ACF seeks a 3-year extension and proposes changes intended to reduce burden. Comments are due by April 3, 2026.",
       "category": "deadline",
       "date": "2026-03-04",
-      "source": "Federal Register (via GovInfo)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04249.pdf",
+      "source": "Federal Register",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/03/04/2026-04249/submission-for-office-of-management-and-budget-review-low-income-home-energy-assistance-program",
       "programs": [
         "liheap"
       ]
     },
     {
-      "id": "n-20260327-wic-milk-mma",
-      "title": "USDA temporarily increases WIC maximum monthly milk allowance through Sept. 30, 2026",
-      "summary": "USDA's WIC Policy Memorandum #2026-1 updates the maximum monthly allowance (MMA) of fluid milk for FY 2026, with amounts including 16 quarts for Food Packages IV A/B and VI, 22 quarts for Food Package V A/B, and 24 quarts for Food Package VII. USDA says the temporary amounts must be maintained through September 30, 2026.",
-      "category": "policy-change",
-      "date": "2025-12-05",
-      "source": "USDA (WIC Policy Memorandum #2026-1)",
-      "sourceUrl": "https://www.usda.gov/sites/default/files/guidance-documents/fns.wic-2026-1-mma-increase.pdf",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20260327-irs-eitc-actc-refunds",
-      "title": "IRS: most EITC and Additional Child Tax Credit refunds expected by March 2, 2026",
-      "summary": "The IRS says most refunds for filers claiming the Earned Income Tax Credit (EITC) and the Additional Child Tax Credit (ACTC) should be available by March 2, 2026 for taxpayers using direct deposit and with no other issues. The agency also says its Where's My Refund tool will show projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026.",
+      "id": "n-20260126-eitc-actc-refunds-timing",
+      "title": "IRS: 2026 filing season opened Jan. 26; early EITC/ACTC refunds expected by March 2",
+      "summary": "The IRS opened the 2026 filing season on January 26, 2026 and said most EITC and Additional Child Tax Credit (ACTC) refunds will be available by March 2, 2026 for taxpayers using direct deposit with no issues. The IRS said Where’s My Refund? would show projected deposit dates for most early EITC/ACTC filers by February 21, 2026.",
       "category": "deadline",
       "date": "2026-01-26",
-      "source": "Internal Revenue Service",
+      "source": "Internal Revenue Service (IRS)",
       "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
       "programs": [
         "eitc",
@@ -78,53 +66,90 @@
       ]
     },
     {
-      "id": "n-20260327-ssa-ssi-2026-numbers",
-      "title": "SSA posts key 2026 SSI/SSDI work and benefit thresholds (SGA, TWP, SSI federal benefit rate)",
-      "summary": "SSA's 2026 Red Book update lists the SSI federal benefit rate as $994/month for an eligible individual and $1,491/month for an eligible couple. It also lists 2026 Substantial Gainful Activity (SGA) levels at $1,690/month (non-blind) and $2,830/month (blind), and the Trial Work Period amount at $1,210/month.",
-      "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/redbook/newfor2026.htm",
+      "id": "n-20260129-irs-free-file-agi-limit",
+      "title": "IRS reminds taxpayers IRS Free File available for 2025 returns with AGI $89,000 or less",
+      "summary": "In a January 29, 2026 tax tip, the IRS highlighted that IRS Free File guided software is available for eligible taxpayers with 2025 adjusted gross income (AGI) of $89,000 or less. The IRS also reiterated that most e-file refunds are issued within 21 days when returns are complete and accurate and direct deposit is selected.",
+      "category": "deadline",
+      "date": "2026-01-29",
+      "source": "Internal Revenue Service (IRS)",
+      "sourceUrl": "https://www.irs.gov/newsroom/2026-tax-filing-season-opens-with-several-free-filing-options-available",
       "programs": [
-        "ssi",
-        "ssdi"
+        "eitc",
+        "ctc"
       ]
     },
     {
-      "id": "n-20260327-snap-fy26-cola",
-      "title": "USDA publishes SNAP FY 2026 cost-of-living adjustments",
-      "summary": "USDA's SNAP FY 2026 cost-of-living adjustments page posts updated benefit parameters for the fiscal year, including maximum allotments and deductions used to calculate SNAP benefits. These COLA updates typically take effect with the new fiscal year on Oct. 1, and states use them to update benefit calculations.",
+      "id": "n-20260301-medicaid-work-requirements-implementation",
+      "title": "AP: New Medicaid work requirements require 80 hours/month and major state system upgrades ahead of Jan. 1 start",
+      "summary": "The Associated Press reports that new Medicaid eligibility mandates will require certain adults ages 19–64 (without young children) to work or do community service at least 80 hours per month (or be half-time students), with eligibility checks moving to every six months. AP cites CBO estimates that the provisions save $388 billion over a decade with about 6 million fewer insured, and reports a $200 million federal allotment to states even as projected state implementation costs exceed $1 billion.",
+      "category": "policy-change",
+      "date": "2026-03-01",
+      "source": "The Associated Press",
+      "sourceUrl": "https://apnews.com/article/medicaid-work-requirements-trump-baea2561c67b0d24eddacbeb77ce6ec3",
+      "programs": [
+        "medicaid"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260226-snap-recipient-data-injunction",
+      "title": "Reuters: Judge blocks USDA from cutting SNAP admin funds over states’ refusal to provide recipient data",
+      "summary": "Reuters reports a federal judge issued an injunction preventing USDA from cutting off administrative funding for 22 states unless they turn over SNAP recipient data such as names, addresses and immigration status. The decision notes about 42 million people receive SNAP and raises concerns about data sharing protocols.",
       "category": "update",
-      "date": "2026-02-20",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola/fy26",
+      "date": "2026-02-26",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/legal/government/trump-administration-cannot-force-states-supply-food-stamp-data-us-judge-rules-2026-02-26/",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260327-medicaid-chip-macpac-march-report",
-      "title": "MACPAC releases March 2026 Report to Congress on Medicaid and CHIP",
-      "summary": "MACPAC's March 2026 Report to Congress includes a recommendation to promote the home- and community-based services (HCBS) workforce by requiring states to report hourly wages paid to HCBS workers. The report also covers behavioral health in Medicaid/CHIP and Medicaid's role for justice-involved youth and children in foster care.",
-      "category": "update",
-      "date": "2026-03-12",
-      "source": "MACPAC",
-      "sourceUrl": "https://www.macpac.gov/publication/march-2026-report-to-congress-on-medicaid-and-chip/",
+      "id": "n-20260302-snap-expanded-work-requirements",
+      "title": "NPR: SNAP work requirement expansion begins rolling out; some states had waivers delaying enforcement past March 1",
+      "summary": "NPR reports expanded SNAP work requirements tied to President Trump’s One Big Beautiful Bill Act began rolling out across states and counties around March 1, 2026, with some states enforcing earlier and others receiving waivers to delay. NPR says expanded groups subject to the 80-hours-per-month requirement include veterans, people experiencing homelessness, former foster youth, parents with children older than 14, and some adults ages 55–64.",
+      "category": "policy-change",
+      "date": "2026-03-02",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/03/02/nx-s1-5729137/across-the-u-s-changes-to-snap-benefits-are-kicking-in",
       "programs": [
-        "medicaid",
-        "chip"
+        "snap"
       ]
     },
     {
-      "id": "n-20260327-housing-senate-affordability-bill",
-      "title": "Reuters: U.S. Senate passes housing affordability bill; House vote next",
-      "summary": "Reuters reports the Senate passed a housing affordability package 89-10 aimed at boosting affordable housing development and modernizing rural housing. The bill would also increase availability of federal block grants to states and raise loan limits for federally-backed multifamily mortgages; it next heads to the House.",
-      "category": "update",
-      "date": "2026-03-12",
+      "id": "n-20260108-snap-cost-shift-provisions",
+      "title": "Reuters: States urge Congress to delay SNAP cost shifts (up to 75% admin share in FY2027; up to 15% benefit share in FY2028)",
+      "summary": "Reuters reports state and local government groups asked Congress to delay SNAP cost-shift provisions in President Trump’s tax and spending law. The provisions would increase states’ share of SNAP administrative costs to as much as 75% starting in fiscal year 2027 and require states to pay up to 15% of SNAP benefits starting in fiscal year 2028 (with the percentage tied to payment error rates), compared with prior full federal funding of benefits.",
+      "category": "policy-change",
+      "date": "2026-01-08",
       "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/legal/government/housing-affordability-bill-sailing-toward-us-senate-passage-2026-03-12/",
+      "sourceUrl": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-states-urge-congress-delay-food-aid-cost-provisions-trumps-tax-bill-2026-01-08/",
       "programs": [
-        "housing"
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20251211-wic-cvvb-fy26-amounts",
+      "title": "USDA sets FY2026 WIC fruit-and-vegetable cash-value benefit amounts and notes April 2026 compliance deadline",
+      "summary": "USDA FNS guidance lists FY2026 monthly WIC cash-value benefit amounts of $26 for children, $48 for pregnant/postpartum participants, and $52 for fully or partially breastfeeding participants, reflecting an 11.8% inflation adjustment over the FY2022 baseline. The memo also notes WIC state agencies must authorize at least one non-fresh form of fruits and vegetables (frozen, canned, and/or dried) by April 2026.",
+      "category": "update",
+      "date": "2025-12-11",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260101-ssi-ssdi-work-incentives-2026",
+      "title": "SSA posts 2026 work incentive thresholds (SSI FBR, SGA, trial work period, student exclusion)",
+      "summary": "SSA’s 2026 Red Book update lists the SSI Federal Benefit Rate as $994/month for an eligible individual and $1,491/month for an eligible couple. It also lists 2026 Substantial Gainful Activity at $1,690/month (non-blind) and $2,830/month (blind), a Trial Work Period threshold of $1,210/month, and a Student Earned-Income Exclusion of up to $9,730/year ($2,410/month until the yearly max is reached).",
+      "category": "update",
+      "date": "2026-01-01",
+      "source": "Social Security Administration (SSA)",
+      "sourceUrl": "https://www.ssa.gov/redbook/newfor2026.htm",
+      "programs": [
+        "ssi",
+        "ssdi"
       ]
     }
   ]
