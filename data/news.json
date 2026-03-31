@@ -1,97 +1,47 @@
 {
-  "lastUpdated": "2026-03-30T11:02:00Z",
+  "lastUpdated": "2026-03-31T11:05:18Z",
   "items": [
     {
-      "id": "n-20260306-snap-food-restriction-waivers-clarifications",
-      "title": "USDA updates guidance on SNAP food-restriction waivers and retailer compliance (page updated March 6, 2026)",
-      "summary": "USDA’s Food and Nutrition Service updated its guidance page on SNAP food-restriction waivers and retailer compliance on 2026-03-06. The update signals ongoing federal oversight as states pursue waivers to restrict certain items; applicants should confirm their state’s approved waiver scope and retailer compliance requirements on USDA’s guidance portal.",
-      "category": "update",
-      "date": "2026-03-06",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/admin/foodrestriction-waivers-retailer-compliance",
+      "id": "n-20260302-snap-work-requirements",
+      "title": "New SNAP work requirement rules expand time limit to older adults and some caregivers",
+      "summary": "NPR reports that the time limit tied to SNAP work rules (often described as a three-month limit for many adults without qualifying work) has been extended from ages 18\u201354 to include adults up to age 65, and now also applies to caregivers of children as young as 14. NPR also says exemptions previously applied to veterans, people experiencing homelessness, and former foster youth were removed under the new rules, and households can lose benefits when adults are cut off.",
+      "category": "policy-change",
+      "date": "2026-03-02",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/03/02/nx-s1-5728945/what-to-know-about-the-new-changes-to-snap-benefits",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260220-snap-fy2026-cola",
-      "title": "USDA posts SNAP FY 2026 cost-of-living adjustments (COLA) tables",
-      "summary": "USDA’s Food and Nutrition Service posted SNAP FY 2026 cost-of-living adjustment information on 2026-02-20. Households should check the FY 2026 COLA tables for updated maximum allotments, deductions, and income eligibility standards that affect benefit amounts.",
+      "id": "n-20260123-medicaid-work-requirements-2027",
+      "title": "KFF: States preparing for Medicaid work requirements starting Jan. 1, 2027; Nebraska to start May 1, 2026",
+      "summary": "KFF says the 2025 reconciliation law\u2019s Medicaid changes are estimated to increase the number of uninsured people by 7.5 million by 2034, with 5.3 million of that attributed to new work requirements for ACA Medicaid expansion (and certain waiver) adults beginning Jan. 1, 2027. KFF also notes Nebraska announced it will begin enforcing federal work requirements early starting May 1, 2026.",
       "category": "update",
-      "date": "2026-02-20",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola/fy26",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260217-snap-online-purchasing-availability",
-      "title": "USDA: SNAP online purchasing available in all 50 states and D.C. (territories still limited)",
-      "summary": "USDA says SNAP online purchasing is available in all 50 states and the District of Columbia, with Guam and the U.S. Virgin Islands listed as not yet implemented. USDA also reminds participants that SNAP benefits can only be used for eligible food and cannot be used to pay delivery, service, or convenience fees.",
-      "category": "update",
-      "date": "2026-02-17",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/online",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260327-medicaid-unwinding-tracker-update",
-      "title": "KFF updates Medicaid enrollment and unwinding tracker (posted March 27, 2026)",
-      "summary": "KFF’s Medicaid Enrollment and Unwinding Tracker notes that, in the archived unwinding data, at least 25,198,000 people were disenrolled during the continuous coverage unwinding as of 2024-09-12, with 56.4 million renewals reported in states that provided data. KFF also lists enrollment trend data through December 2025 and highlights that most states completed unwinding renewals by August 2024.",
-      "category": "update",
-      "date": "2026-03-27",
+      "date": "2026-01-23",
       "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260126-eitc-actc-filing-season-open",
-      "title": "IRS: 2026 filing season opened Jan. 26; Where’s My Refund? updates Feb. 21 for early EITC/ACTC filers",
-      "summary": "The IRS opened the 2026 tax filing season on 2026-01-26 and said Where’s My Refund? would show projected deposit dates for most early Earned Income Tax Credit (EITC) and Additional Child Tax Credit (ACTC) filers by 2026-02-21. The IRS also said most EITC/ACTC refunds should be available by 2026-03-02 for taxpayers using direct deposit with no other issues, and noted the federal filing deadline is 2026-04-15.",
-      "category": "deadline",
-      "date": "2026-01-26",
-      "source": "Internal Revenue Service (IRS)",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
+      "id": "n-20260311-medicaid-redeterminations-guidance",
+      "title": "CMS guidance outlines Medicaid eligibility redeterminations for certain beneficiaries",
+      "summary": "The Alliance of Safety-Net Hospitals reports CMS issued formal guidance directing states on how to handle more frequent Medicaid eligibility redeterminations under recent federal law, including relying first on ex parte information (like SSA data) and sending prepopulated renewal forms when needed. The report says affected individuals must receive advance notice and fair hearing rights at least 10 days prior to termination.",
+      "category": "update",
+      "date": "2026-03-11",
+      "source": "Alliance of Safety-Net Hospitals",
+      "sourceUrl": "https://safetynetalliance.org/cms-lays-out-medicaid-eligibility-redeterminations/",
       "programs": [
-        "eitc",
-        "ctc"
+        "medicaid"
       ]
     },
     {
-      "id": "n-20260313-liheap-remaining-fy26-funds-letter",
-      "title": "Senators urge HHS to release remaining FY 2026 LIHEAP funds (about $400 million)",
-      "summary": "A bipartisan group of 40 U.S. Senators urged HHS to immediately release the remaining roughly $400 million in FY 2026 LIHEAP funding, after about $3.7 billion had already been released. The release cites total FY 2026 LIHEAP funding of $4.045 billion (about a $20 million increase over the prior year).",
-      "category": "update",
-      "date": "2026-03-13",
-      "source": "U.S. Senator Jack Reed (press release)",
-      "sourceUrl": "https://www.reed.senate.gov/news/releases/amid-rising-costs-and-growing-demand-for-energy-assistance-40-us-senators-urge-hhs-to-release-remaining-liheap-funds",
-      "programs": [
-        "liheap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20251204-liheap-initial-fy26-funds-released",
-      "title": "FFIS: HHS releases initial FY 2026 LIHEAP funds (reported as $3.7 billion)",
-      "summary": "Federal Funds Information for States (FFIS) reports that HHS released initial FY 2026 LIHEAP funding totaling $3.7 billion. Households should check their state LIHEAP administering agency for application timelines and benefit availability as states receive and distribute their allocations.",
-      "category": "update",
-      "date": "2025-12-04",
-      "source": "Federal Funds Information for States (FFIS)",
-      "sourceUrl": "https://ffis.org/issue-brief/hhs-releases-initial-fy-2026-liheap-funds/",
-      "programs": [
-        "liheap"
-      ]
-    },
-    {
-      "id": "n-20251211-wic-fy2026-nonfresh-fruit-veg-april-2026",
-      "title": "USDA: WIC state agencies must authorize at least one non-fresh fruit/vegetable option by April 2026; 95% already compliant",
-      "summary": "USDA says recent WIC food package changes require state agencies to authorize at least one form of fruits and vegetables beyond fresh (frozen, canned, and/or dried) by April 2026. USDA also reports that, as of November 2025, 95% of WIC state agencies were already in compliance.",
+      "id": "n-20251211-wic-cvvb-fy26",
+      "title": "USDA WIC memo: states must allow non-fresh fruit/veg options by April 2026; FY26 CVV inflation update",
+      "summary": "USDA FNS says WIC state agencies must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. FNS also says the FY 2026 cash-value voucher/benefit (CVV/B) inflation adjustment is 11.8% over the FY 2022 baseline, resulting in a $1 increase for pregnant and postpartum participants (with no change for children and breastfeeding participants).",
       "category": "deadline",
       "date": "2025-12-11",
       "source": "USDA Food and Nutrition Service",
@@ -101,52 +51,92 @@
       ]
     },
     {
-      "id": "n-20260203-section8-hcv-2026-budget-letter",
-      "title": "HUD: 2026 Housing Choice Voucher funding signed Feb. 3; PHAs told to plan for cost-saving measures and spring HAP allocations",
-      "summary": "HUD’s 2026 Budget Management Letter says the Consolidated Appropriations Act, 2026 was signed into law on 2026-02-03, providing 2026 funding for the Housing Choice Voucher program. HUD says PHAs should expect their 2026 Housing Assistance Payments (HAP) funding amounts in the spring after reconciliation of 2025 Voucher Management System data, and notes an estimated HAP proration factor of 99% for planning.",
-      "category": "update",
-      "date": "2026-02-03",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/2026-Budget-Management-Letter.pdf",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20251217-section8-hotma-compliance-extended",
-      "title": "HUD extends HOTMA compliance date for multifamily owners to Jan. 1, 2027",
-      "summary": "HUD Notice H 2025-07 extends the compliance date for multifamily owners to be in full compliance with the HOTMA final rule (and updated income/asset documentation requirements) to 2027-01-01. The notice revises earlier guidance that had set the compliance date as 2025-01-01 and then 2026-01-01.",
+      "id": "n-20260126-irs-filing-season-open",
+      "title": "IRS opens 2026 tax filing season; April 15 deadline and refundable credit refund timing",
+      "summary": "The IRS says it opened the 2026 filing season on Jan. 26, 2026 and expects returns to be filed ahead of the Wednesday, April 15 federal deadline. The IRS also says most early filers who claim EITC or ACTC and choose direct deposit should receive refunds by March 2, 2026 (assuming no issues), with Where\u2019s My Refund showing projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026.",
       "category": "deadline",
-      "date": "2025-12-17",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/dfiles/hudclips/documents/HSGN-07.pdf",
+      "date": "2026-01-26",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
       "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260128-irs-eitc-actc-refunds",
+      "title": "IRS: EITC/ACTC refunds can\u2019t be issued before mid-February; Where\u2019s My Refund updates by Feb. 21",
+      "summary": "The IRS says that by law it can\u2019t issue refunds for returns claiming the Earned Income Tax Credit (EITC) or Additional Child Tax Credit (ACTC) before mid-February, and the entire refund is held (not just the credit portion). The IRS says Where\u2019s My Refund should show an updated status by Feb. 21 for most early EITC/ACTC filers and that refunds are expected by March 2 if the return was filed online, direct deposit was selected, and there are no issues.",
+      "category": "deadline",
+      "date": "2026-01-28",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/when-to-expect-your-refund-if-you-claimed-the-earned-income-tax-credit-or-additional-child-tax-credit",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260121-fy26-thud-tpvs-ehv",
+      "title": "FY2026 HUD funding summary: $600M Tenant Protection Vouchers; can be used to support Emergency Housing Voucher households",
+      "summary": "Bipartisan Policy Center\u2019s summary of the enacted FY2026 THUD bill says it includes $600 million for new Tenant Protection Vouchers (TPVs), an increase of $263 million from FY2025. The summary also notes the bill allows housing authorities to use TPVs for households currently assisted by the Emergency Housing Voucher program.",
+      "category": "update",
+      "date": "2026-02-23",
+      "source": "Bipartisan Policy Center",
+      "sourceUrl": "https://bipartisanpolicy.org/explainer/appropriations-update-final-fy2026-thud-funding-summary/",
+      "programs": [
+        "section8",
+        "ehv"
+      ]
+    },
+    {
+      "id": "n-20260211-hud-ehv-portability",
+      "title": "HUD notice updates Emergency Housing Voucher service fee recapture and portability policy",
+      "summary": "NAHRO reports HUD published Notice PIH 2026-02 describing how unobligated EHV service fee funds may be recaptured and reallocated to cover 2026 Housing Assistance Payment (HAP) and administrative fee shortfalls. NAHRO also says the notice revises EHV portability policy so agencies billing ported EHVs can absorb those vouchers into their regular Housing Choice Voucher program.",
+      "category": "policy-change",
+      "date": "2026-02-11",
+      "source": "NAHRO",
+      "sourceUrl": "https://www.nahro.org/news/hud-publishes-notice-on-recapture-and-reallocation-of-service-fees-and-certain-portability-changes-for-the-emergency-housing-voucher-program/",
+      "programs": [
+        "ehv",
         "section8"
       ]
     },
     {
-      "id": "n-20260101-ssi-2026-cola-federal-rates",
-      "title": "SSA: 2026 COLA is 2.8%; SSI federal payment standard rises to $994 (individual) and $1,491 (couple)",
-      "summary": "SSA says Social Security and SSI recipients receive a 2.8% cost-of-living adjustment for 2026, based on CPI-W changes through Q3 2025. SSA’s fact sheet lists the 2026 SSI federal payment standard at $994 per month for an individual (up from $967) and $1,491 per month for a couple (up from $1,450).",
+      "id": "n-20251001-ssa-cola-2026",
+      "title": "SSA: 2026 COLA is 2.8% for Social Security and SSI",
+      "summary": "The Social Security Administration says Social Security and SSI benefits will increase 2.8% in 2026. SSA says the COLA begins with Social Security benefits payable in January 2026, and increased SSI payments begin on Dec. 31, 2025.",
       "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+      "date": "2025-10-01",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/cola/",
       "programs": [
         "ssi",
         "ssdi"
       ]
     },
     {
-      "id": "n-20260330-fafsa-2026-27-federal-deadline",
-      "title": "Federal Student Aid posts 2026–27 FAFSA deadlines (federal submission deadline June 30, 2027)",
-      "summary": "Federal Student Aid lists the 2026–27 FAFSA form submission deadline as 11:59 p.m. Central time on 2027-06-30, with corrections/updates due by 11:59 p.m. Central time on 2027-09-12. The page also notes that states and colleges may have earlier deadlines and provides a state-by-state list.",
+      "id": "n-20260320-taxpayer-advocate-tax-dates",
+      "title": "Taxpayer Advocate Service: Key 2026 tax dates include April 15 filing deadline",
+      "summary": "The IRS Taxpayer Advocate Service lists April 15 as the due date for individual taxes (or for requesting an extension) in its 2026 tax dates guide. The guide also lists other key dates like March 16 for partnerships and S-corporations and June 15 for certain taxpayers abroad.",
       "category": "deadline",
-      "date": "2026-03-30",
-      "source": "Federal Student Aid (StudentAid.gov)",
-      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
+      "date": "2026-03-20",
+      "source": "Taxpayer Advocate Service",
+      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/news/tax-tips/your-tax-to-do-list-important-tax-dates/2026/03/",
       "programs": [
-        "fafsa",
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20250701-fafsa-2025-26-deadline",
+      "title": "Federal Student Aid: 2025\u201326 FAFSA must be received by June 30, 2026",
+      "summary": "The Federal Student Aid 2025\u201326 FAFSA form says the application must be received no later than June 30, 2026 for the 2025\u201326 award year. The award year runs from July 1, 2025 through June 30, 2026.",
+      "category": "deadline",
+      "date": "2025-07-01",
+      "source": "Federal Student Aid",
+      "sourceUrl": "https://studentaid.gov/sites/default/files/2025-26-fafsa.pdf",
+      "programs": [
         "pell"
       ]
     }
