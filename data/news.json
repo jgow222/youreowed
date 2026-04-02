@@ -1,97 +1,125 @@
 {
-  "lastUpdated": "2026-04-01T11:06:00Z",
+  "lastUpdated": "2026-04-02T11:06:00Z",
   "items": [
     {
-      "id": "n-20260401-snap-texas-food-restrictions",
-      "title": "Texas SNAP begins restricting sweetened drinks and candy starting April 1, 2026",
-      "summary": "USDA FNS says Texas begins restricting SNAP purchases of sweetened drinks and candy starting April 1, 2026. In FNS’s retailer notice, “sweetened drinks” are defined as non-alcoholic beverages made with water that contain 5 grams or more of added sugar (or any amount of artificial sweetener), with exclusions for milk/milk substitutes, beverages with more than 50% juice, certain low-sugar drinks sweetened with stevia/monk fruit, and medical-grade electrolyte drinks.",
+      "id": "n-20260402-snap-waivers-rollout-april",
+      "title": "USDA lists April 2026 SNAP waiver rollouts: Texas (Apr. 1), Florida (Apr. 20), Colorado (Apr. 30)",
+      "summary": "USDA Food and Nutrition Service’s SNAP Food Restriction Waivers summary lists three April 2026 implementation dates: Texas (04/01/26) restricting sweetened drinks and candy, Florida (04/20/26) restricting soda, energy drinks, candy, and prepared desserts, and Colorado (04/30/26) restricting soft drinks. The same USDA summary also lists Arkansas’s waiver beginning 07/01/26 restricting soda, certain drinks with less than 50% juice, other unhealthy drinks, and candy.",
       "category": "policy-change",
-      "date": "2026-04-01",
+      "date": "2026-03-19",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://fns-prod.azureedge.us/sites/default/files/resource-files/snap-retailernotice-foodrestrictionwaiver-texas.pdf",
+      "sourceUrl": "https://www.fns.usda.gov/print/pdf/node/22093",
       "programs": [
         "snap"
       ],
       "isBreaking": true
     },
     {
-      "id": "n-20260420-snap-florida-food-restrictions",
-      "title": "USDA: Florida SNAP restrictions on soda, energy drinks, candy, and prepared desserts take effect April 20, 2026",
-      "summary": "USDA’s SNAP Food Restriction Waivers page lists Florida’s target implementation date as April 20, 2026 for restrictions on soda, energy drinks, candy, and prepared desserts purchased with SNAP benefits. The same USDA page lists other April 2026 start dates in Texas (April 1) and Colorado (April 30).",
+      "id": "n-20260402-snap-waivers-usda-press-release-ark-id-ut",
+      "title": "USDA press release details SNAP food-choice waivers for Arkansas, Idaho, and Utah starting in 2026",
+      "summary": "USDA announced new SNAP waiver approvals for Arkansas (effective July 1, 2026), Idaho (effective Jan. 1, 2026), and Utah (effective Jan. 1, 2026) that expand items excluded from SNAP purchases beyond the nationwide exclusions. USDA says Arkansas will exclude soda (including low/no-calorie soda), certain fruit/vegetable drinks with less than 50% juice, other “unhealthy drinks,” and candy; Idaho will exclude soda and candy; and Utah will exclude soft drinks.",
       "category": "policy-change",
-      "date": "2026-04-20",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "date": "2025-06-10",
+      "source": "USDA",
+      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2025/06/10/secretary-rollins-signs-state-waivers-make-america-healthy-again-removing-unhealthy-foods-snap",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260430-snap-colorado-soft-drinks-restriction",
-      "title": "USDA: Colorado SNAP soft drink restriction scheduled for April 30, 2026",
-      "summary": "USDA’s SNAP Food Restriction Waivers page lists Colorado’s target implementation date as April 30, 2026 for restrictions on soft drinks purchased with SNAP benefits. USDA’s list also shows April 2026 restriction start dates in Texas (April 1) and Florida (April 20).",
-      "category": "policy-change",
-      "date": "2026-04-30",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260309-medicaid-six-month-renewals-guidance",
-      "title": "CMS guidance: states transition certain Medicaid expansion adults to six-month renewals in 2027",
-      "summary": "A CMS letter issued March 6, 2026 outlines how states may transition adult Medicaid expansion beneficiaries to six-month eligibility redeterminations in 2027. CMS describes two approaches: rescheduling renewals to begin no earlier than Jan. 1, 2027, or applying the six-month renewal requirement at an enrollee’s next scheduled renewal in 2027.",
+      "id": "n-20260402-medicaid-chip-enrollment-renewals-oct2025",
+      "title": "Medicaid/CHIP enrollment and renewals update: 76.8M enrolled in Oct. 2025; 71% of renewals retained coverage",
+      "summary": "CMS’s Feb. 24, 2026 All-State Medicaid and CHIP call slides report 76.8 million people enrolled in Medicaid and CHIP in October 2025 (69.5M Medicaid and 7.2M CHIP), down 2.6 million (4%) from October 2024. The same slides report that among people due for renewal in October 2025, 71% had coverage renewed (49% ex parte), 19% were disenrolled (13% for procedural reasons), and 10% were pending.",
       "category": "update",
-      "date": "2026-03-09",
-      "source": "American Hospital Association",
-      "sourceUrl": "https://www.aha.org/news/headline/2026-03-09-cms-notifies-states-options-transitioning-6-month-medicaid-renewals",
+      "date": "2026-02-24",
+      "source": "Medicaid.gov (CMS)",
+      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260317-medicaid-six-month-renewals-spa-deadline",
-      "title": "NACo summary: Medicaid six-month renewals begin Jan. 1, 2027; State Plan Amendment due March 31, 2027",
-      "summary": "The National Association of Counties summarizes CMS guidance stating that, beginning Jan. 1, 2027, states must conduct eligibility redeterminations every six months for adults in Medicaid expansion coverage (and equivalent coverage under certain Section 1115 waivers). NACo also notes CMS says states must submit a State Plan Amendment by March 31, 2027 to confirm they will conduct six-month renewals.",
-      "category": "deadline",
-      "date": "2026-03-17",
-      "source": "National Association of Counties",
-      "sourceUrl": "https://www.naco.org/news/cms-issues-guidance-six-month-medicaid-renewals",
+      "id": "n-20260402-ssi-ssdi-cdrs-federal-processing",
+      "title": "SSA moves medical Continuing Disability Reviews (CDRs) to federal processing; cites backlog improvements",
+      "summary": "SSA says it will transition medical Continuing Disability Reviews (CDRs) from State Disability Determination Services to SSA’s federal Disability Case Review site, aiming to free states to focus on initial disability claims. SSA says the DDS initial-claims backlog fell from over 1.26 million pending claims in June 2024 to 831,000 as of February 2026 (a reduction of more than 33%).",
+      "category": "policy-change",
+      "date": "2026-03-12",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-03-12.html",
       "programs": [
-        "medicaid"
+        "ssdi",
+        "ssi"
       ]
     },
     {
-      "id": "n-20251009-irs-eitc-2026-inflation-adjustment",
-      "title": "IRS: Maximum Earned Income Tax Credit for 2026 rises to $8,231 for families with 3+ children",
-      "summary": "In its annual inflation adjustments for tax year 2026, the IRS says the maximum Earned Income Tax Credit amount is $8,231 for eligible filers with three or more qualifying children (up from $8,046 for tax year 2025). The IRS noted these figures apply to tax year 2026 returns typically filed in 2027.",
+      "id": "n-20260402-ssi-ssdi-oig-183-recommendations",
+      "title": "SSA OIG: 183 unimplemented audit recommendations could represent $4.9B in potential savings",
+      "summary": "SSA’s Office of Inspector General says its annual oversight report (status as of Jan. 29, 2026) identified 183 unimplemented audit recommendations, representing about $4.9 billion in potential taxpayer savings and program improvements. SSA OIG says 94 recommendations remained open and 89 were previously reported as closed by SSA but were not implemented at the time of OIG’s review.",
       "category": "update",
-      "date": "2025-10-09",
+      "date": "2026-03-04",
+      "source": "SSA Office of Inspector General",
+      "sourceUrl": "https://oig.ssa.gov/news-releases/2026-03-04-ssa-oig-flags-4-9-billion-in-cost-savings-from-unimplemented-recommendations-in-annual-oversight-report/",
+      "programs": [
+        "ssdi",
+        "ssi"
+      ]
+    },
+    {
+      "id": "n-20260402-eitc-ctc-irs-filing-season-eitc-actc-march2",
+      "title": "IRS: most EITC/ACTC refunds expected by March 2, 2026; filing deadline April 15",
+      "summary": "IRS opened the 2026 filing season on Jan. 26, 2026 and reiterated that the deadline to file 2025 returns is April 15. IRS also says most refunds for the Earned Income Tax Credit (EITC) and the Additional Child Tax Credit (ACTC) are expected to be available by March 2, 2026 for taxpayers using direct deposit and with no other issues.",
+      "category": "deadline",
+      "date": "2026-01-26",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
       "programs": [
         "eitc",
         "ctc"
       ]
     },
     {
-      "id": "n-20251119-hud-hcv-cost-savings-notice",
-      "title": "HUD guidance lists cost-saving options for Housing Choice Voucher agencies facing funding shortfalls",
-      "summary": "HUD’s PIH Notice 2025-28 (summarized by NAHRO) lists steps public housing agencies can take to reduce Housing Assistance Payment (HAP) expenses and prevent voucher funding shortfalls. Examples include reviewing payment standards to stay within 90%–110% of Fair Market Rent, reducing or stopping issuance of turnover vouchers, revising subsidy standards, and requesting HUD approval for deeper actions like applying payment-standard decreases during a HAP contract term.",
+      "id": "n-20260402-eitc-ctc-irs-eitc-awareness-day",
+      "title": "IRS EITC Awareness Day: Where’s My Refund projected dates by Feb. 21; most early EITC/ACTC refunds by March 2",
+      "summary": "In its Jan. 23, 2026 EITC Awareness Day release, IRS says Where’s My Refund? will show projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026. IRS also reiterates that most early EITC or Additional Child Tax Credit refunds are expected to be available by March 2, 2026 for direct-deposit filers with no other issues.",
       "category": "update",
-      "date": "2025-11-19",
-      "source": "NAHRO",
-      "sourceUrl": "https://www.nahro.org/news/hud-publishes-hcv-cost-savings-notice/",
+      "date": "2026-01-23",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-joins-national-partners-to-launch-eitc-awareness-day",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260402-section8-hudvash-admin-fees-deadline-apr14",
+      "title": "HUD sets April 14, 2026 deadline for HUD-VASH additional administrative fee requests (supports voucher leasing)",
+      "summary": "HUD’s revised PIH Notice 2026-01 announces $10 million in additional administrative fee funding for PHAs that administer HUD-VASH, with applications due April 14, 2026 (by midnight in the PHA’s time zone). HUD says the Full-Year Continuing Appropriations and Extensions Act, 2025 provided $15 million for HUD-VASH, including up to $10 million for administrative and other expenses, and the additional fees must be used only for HUD-VASH eligible expenses.",
+      "category": "deadline",
+      "date": "2026-03-25",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-01.pdf",
       "programs": [
         "section8"
       ]
     },
     {
-      "id": "n-20251211-wic-frozen-canned-dried-deadline",
-      "title": "USDA: WIC state agencies must allow at least one non-fresh fruit/vegetable form by April 2026",
-      "summary": "USDA Food and Nutrition Service says recent WIC food package changes require state agencies to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. USDA also says that as of November 2025, 95% of state agencies were already in compliance.",
+      "id": "n-20260402-liheap-hhs-fy2026-budget-proposes-elimination",
+      "title": "HHS budget justification proposes eliminating LIHEAP funding in FY 2026 (from $4.025B to $0)",
+      "summary": "HHS’s FY 2026 Administration for Children, Families, and Communities Congressional Justification states that the budget would eliminate funding for the Low Income Home Energy Assistance Program (LIHEAP). The document’s tables show LIHEAP at $4.025 billion in FY 2024 and FY 2025, with a FY 2026 request of $0 (a change of -$4.025 billion).",
+      "category": "policy-change",
+      "date": "2026-03-01",
+      "source": "U.S. Department of Health & Human Services",
+      "sourceUrl": "https://www.hhs.gov/sites/default/files/fy-2026-acfc-cj.pdf",
+      "programs": [
+        "liheap"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260402-wic-fy2026-cvvb-inflation-adjustment-forms-deadline-apr2026",
+      "title": "USDA WIC memo: FY 2026 CVV/B inflation adjustment 11.8% (vs FY 2022 baseline) and April 2026 deadline to add non-fresh produce options",
+      "summary": "USDA FNS’s WIC Policy Memorandum #2026-2 states that FY 2026 cash-value voucher/benefit (CVV/B) amounts reflect an 11.8% inflation adjustment over the FY 2022 baseline. The memo also notes that state agencies must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026, and that as of November 2025, 95% of state agencies were already in compliance.",
       "category": "deadline",
       "date": "2025-12-11",
       "source": "USDA Food and Nutrition Service",
@@ -101,40 +129,15 @@
       ]
     },
     {
-      "id": "n-20251001-ssa-cola-2026",
-      "title": "SSA: 2026 COLA is 2.8% for Social Security and SSI",
-      "summary": "The Social Security Administration says Social Security and SSI benefits increase 2.8% in 2026. SSA says increased Social Security benefits are payable in January 2026 and increased SSI payments begin on December 31, 2025.",
+      "id": "n-20260402-pell-2026-27-max-7395-year-round-150",
+      "title": "Federal Student Aid: maximum Pell Grant is $7,395 for 2026–27; some students can get up to 150% with year-round Pell",
+      "summary": "Federal Student Aid says the maximum Federal Pell Grant award for the 2026–27 award year is $7,395. The same guidance notes some students may be able to receive up to 150% of their yearly Pell award if they attend an additional term in the same award year (often called “year-round Pell”), and it emphasizes that submitting the FAFSA is required to be considered.",
       "category": "update",
-      "date": "2025-10-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/cola/",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
-    },
-    {
-      "id": "n-20260309-pell-workforce-comment-deadline",
-      "title": "Workforce Pell proposed rule: public comments due April 8, 2026",
-      "summary": "Higher Ed Dive reports the Department of Education issued a proposed rule to govern the new Workforce Pell Grant program, opening a 30-day public comment period. The article notes the proposal would expand Pell eligibility to certain short-term programs as short as eight weeks, with comments due April 8, 2026.",
-      "category": "deadline",
-      "date": "2026-03-09",
-      "source": "Higher Ed Dive",
-      "sourceUrl": "https://www.highereddive.com/news/public-comment-workforce-pell-regulations/814247/",
+      "date": "2026-03-01",
+      "source": "Federal Student Aid",
+      "sourceUrl": "https://studentaid.gov/articles/dont-miss-out-on-pell-grants/",
       "programs": [
         "pell"
-      ]
-    },
-    {
-      "id": "n-20260330-snap-food-restriction-waivers",
-      "title": "USDA posts updated list of SNAP food restriction waivers and target implementation dates",
-      "summary": "USDA Food and Nutrition Service published an updated SNAP Food Restriction Waivers list on March 30, 2026, including April 2026 target start dates for restrictions in Texas (April 1), Florida (April 20), and Colorado (April 30). The USDA list specifies the restricted product categories by state (for example, Texas: sweetened drinks and candy).",
-      "category": "update",
-      "date": "2026-03-30",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": [
-        "snap"
       ]
     }
   ]
