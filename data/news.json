@@ -1,35 +1,35 @@
 {
-  "lastUpdated": "2026-04-02T11:06:00Z",
+  "lastUpdated": "2026-04-03T11:04:36Z",
   "items": [
     {
-      "id": "n-20260402-snap-waivers-rollout-april",
-      "title": "USDA lists April 2026 SNAP waiver rollouts: Texas (Apr. 1), Florida (Apr. 20), Colorado (Apr. 30)",
-      "summary": "USDA Food and Nutrition Service’s SNAP Food Restriction Waivers summary lists three April 2026 implementation dates: Texas (04/01/26) restricting sweetened drinks and candy, Florida (04/20/26) restricting soda, energy drinks, candy, and prepared desserts, and Colorado (04/30/26) restricting soft drinks. The same USDA summary also lists Arkansas’s waiver beginning 07/01/26 restricting soda, certain drinks with less than 50% juice, other unhealthy drinks, and candy.",
+      "id": "n-20260403-snap-waivers-page-march30",
+      "title": "USDA updates SNAP Food Restriction Waivers list: Texas (Apr. 1), Florida (Apr. 20), Colorado (Apr. 30) and new long-dated waivers (e.g., Kansas Feb. 15, 2027; Nevada Feb. 1, 2028)",
+      "summary": "USDA\u2019s SNAP Food Restriction Waivers page lists multiple state implementation dates, including Texas starting 04/01/26 (restricts sweetened drinks and candy), Florida starting 04/20/26 (restricts soda, energy drinks, candy, and prepared desserts), and Colorado starting 04/30/26 (restricts soft drinks). The same USDA list also shows recently approved waivers with later start dates, including Kansas (02/15/27) restricting candy and soft drinks and Nevada (02/01/28) restricting candy and sugar-sweetened beverages.",
       "category": "policy-change",
-      "date": "2026-03-19",
+      "date": "2026-03-30",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/print/pdf/node/22093",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
       "programs": [
         "snap"
       ],
       "isBreaking": true
     },
     {
-      "id": "n-20260402-snap-waivers-usda-press-release-ark-id-ut",
-      "title": "USDA press release details SNAP food-choice waivers for Arkansas, Idaho, and Utah starting in 2026",
-      "summary": "USDA announced new SNAP waiver approvals for Arkansas (effective July 1, 2026), Idaho (effective Jan. 1, 2026), and Utah (effective Jan. 1, 2026) that expand items excluded from SNAP purchases beyond the nationwide exclusions. USDA says Arkansas will exclude soda (including low/no-calorie soda), certain fruit/vegetable drinks with less than 50% juice, other “unhealthy drinks,” and candy; Idaho will exclude soda and candy; and Utah will exclude soft drinks.",
+      "id": "n-20260403-snap-waivers-usda-press-release-march4",
+      "title": "USDA: Secretary Rollins signs four new SNAP restriction waivers (Kansas, Nevada, Ohio, Wyoming) and previews retailer stocking standards final rule",
+      "summary": "In a March 4, 2026 press release, USDA says Secretary Brooke Rollins signed four new SNAP restriction waivers for Kansas, Nevada, Ohio, and Wyoming. USDA also says a SNAP retailer \u201cStocking Standards\u201d final rule is impending and would raise the minimum staple-food stocking requirements for stores that accept SNAP.",
       "category": "policy-change",
-      "date": "2025-06-10",
+      "date": "2026-03-04",
       "source": "USDA",
-      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2025/06/10/secretary-rollins-signs-state-waivers-make-america-healthy-again-removing-unhealthy-foods-snap",
+      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/03/04/usda-announces-new-partnerships-advance-maha-agenda",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260402-medicaid-chip-enrollment-renewals-oct2025",
-      "title": "Medicaid/CHIP enrollment and renewals update: 76.8M enrolled in Oct. 2025; 71% of renewals retained coverage",
-      "summary": "CMS’s Feb. 24, 2026 All-State Medicaid and CHIP call slides report 76.8 million people enrolled in Medicaid and CHIP in October 2025 (69.5M Medicaid and 7.2M CHIP), down 2.6 million (4%) from October 2024. The same slides report that among people due for renewal in October 2025, 71% had coverage renewed (49% ex parte), 19% were disenrolled (13% for procedural reasons), and 10% were pending.",
+      "id": "n-20260403-medicaid-chip-allstatecall-feb24",
+      "title": "CMS: Medicaid/CHIP renewals in Oct. 2025\u201471% renewed (49% ex parte), 19% disenrolled (13% procedural), 10% pending",
+      "summary": "CMS\u2019s Feb. 24, 2026 All-State Medicaid and CHIP call slides report that for people due for renewal in October 2025, 71% had coverage renewed, including 49% renewed on an ex parte basis. The same CMS slides report 19% were disenrolled (13% for procedural reasons) and 10% were pending at the end of the month.",
       "category": "update",
       "date": "2026-02-24",
       "source": "Medicaid.gov (CMS)",
@@ -40,9 +40,22 @@
       ]
     },
     {
-      "id": "n-20260402-ssi-ssdi-cdrs-federal-processing",
-      "title": "SSA moves medical Continuing Disability Reviews (CDRs) to federal processing; cites backlog improvements",
-      "summary": "SSA says it will transition medical Continuing Disability Reviews (CDRs) from State Disability Determination Services to SSA’s federal Disability Case Review site, aiming to free states to focus on initial disability claims. SSA says the DDS initial-claims backlog fell from over 1.26 million pending claims in June 2024 to 831,000 as of February 2026 (a reduction of more than 33%).",
+      "id": "n-20260403-medicaid-chip-oct2025-snapshot",
+      "title": "CMS enrollment snapshot: 76.8M enrolled in Medicaid/CHIP in Oct. 2025; down 260,000 from Sept. 2025",
+      "summary": "CMS\u2019s October 2025 Eligibility Operations and Enrollment Snapshot reports 76.8 million people enrolled in Medicaid and CHIP (69.5M Medicaid; 7.2M CHIP). CMS also reports total enrollment decreased by 260,000 (0.3%) from September 2025 to October 2025.",
+      "category": "update",
+      "date": "2025-10-01",
+      "source": "Medicaid.gov (CMS)",
+      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/eligib-oper-and-enrol-snap-oct2025.pdf",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260403-ssi-ssdi-cdrs-federal-processing-march12",
+      "title": "SSA shifts medical Continuing Disability Reviews (CDRs) to federal processing; says initial-claims backlog down from 1.26M (June 2024) to 831K (Feb. 2026)",
+      "summary": "SSA says it is transitioning medical Continuing Disability Reviews (CDRs) from State Disability Determination Services to SSA\u2019s federal Disability Case Review site. SSA says the DDS initial-claims backlog fell from over 1.26 million pending claims in June 2024 to 831,000 as of February 2026 (down more than 33%).",
       "category": "policy-change",
       "date": "2026-03-12",
       "source": "Social Security Administration",
@@ -50,25 +63,13 @@
       "programs": [
         "ssdi",
         "ssi"
-      ]
+      ],
+      "isBreaking": true
     },
     {
-      "id": "n-20260402-ssi-ssdi-oig-183-recommendations",
-      "title": "SSA OIG: 183 unimplemented audit recommendations could represent $4.9B in potential savings",
-      "summary": "SSA’s Office of Inspector General says its annual oversight report (status as of Jan. 29, 2026) identified 183 unimplemented audit recommendations, representing about $4.9 billion in potential taxpayer savings and program improvements. SSA OIG says 94 recommendations remained open and 89 were previously reported as closed by SSA but were not implemented at the time of OIG’s review.",
-      "category": "update",
-      "date": "2026-03-04",
-      "source": "SSA Office of Inspector General",
-      "sourceUrl": "https://oig.ssa.gov/news-releases/2026-03-04-ssa-oig-flags-4-9-billion-in-cost-savings-from-unimplemented-recommendations-in-annual-oversight-report/",
-      "programs": [
-        "ssdi",
-        "ssi"
-      ]
-    },
-    {
-      "id": "n-20260402-eitc-ctc-irs-filing-season-eitc-actc-march2",
-      "title": "IRS: most EITC/ACTC refunds expected by March 2, 2026; filing deadline April 15",
-      "summary": "IRS opened the 2026 filing season on Jan. 26, 2026 and reiterated that the deadline to file 2025 returns is April 15. IRS also says most refunds for the Earned Income Tax Credit (EITC) and the Additional Child Tax Credit (ACTC) are expected to be available by March 2, 2026 for taxpayers using direct deposit and with no other issues.",
+      "id": "n-20260403-eitc-ctc-irs-filing-season-jan26",
+      "title": "IRS: 2026 filing season opened Jan. 26; most EITC/ACTC refunds expected by March 2; filing deadline April 15",
+      "summary": "IRS says the 2026 tax filing season opened on Jan. 26, 2026 and the deadline to file 2025 federal returns is April 15. IRS also says most refunds claiming EITC or the Additional Child Tax Credit (ACTC) are expected to be available by March 2, 2026 for direct-deposit filers with no other issues, and Where\u2019s My Refund? should show projected deposit dates for most early EITC/ACTC filers by Feb. 21.",
       "category": "deadline",
       "date": "2026-01-26",
       "source": "Internal Revenue Service",
@@ -79,24 +80,11 @@
       ]
     },
     {
-      "id": "n-20260402-eitc-ctc-irs-eitc-awareness-day",
-      "title": "IRS EITC Awareness Day: Where’s My Refund projected dates by Feb. 21; most early EITC/ACTC refunds by March 2",
-      "summary": "In its Jan. 23, 2026 EITC Awareness Day release, IRS says Where’s My Refund? will show projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026. IRS also reiterates that most early EITC or Additional Child Tax Credit refunds are expected to be available by March 2, 2026 for direct-deposit filers with no other issues.",
-      "category": "update",
-      "date": "2026-01-23",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-joins-national-partners-to-launch-eitc-awareness-day",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260402-section8-hudvash-admin-fees-deadline-apr14",
-      "title": "HUD sets April 14, 2026 deadline for HUD-VASH additional administrative fee requests (supports voucher leasing)",
-      "summary": "HUD’s revised PIH Notice 2026-01 announces $10 million in additional administrative fee funding for PHAs that administer HUD-VASH, with applications due April 14, 2026 (by midnight in the PHA’s time zone). HUD says the Full-Year Continuing Appropriations and Extensions Act, 2025 provided $15 million for HUD-VASH, including up to $10 million for administrative and other expenses, and the additional fees must be used only for HUD-VASH eligible expenses.",
+      "id": "n-20260403-section8-hudvash-fees-apr14-deadline",
+      "title": "HUD: $10M in additional HUD-VASH administrative fee funding available; applications due April 14, 2026",
+      "summary": "HUD\u2019s PIH Notice 2026-01 (Revised) makes $10 million available for additional administrative fees to support the HUD-VASH program. HUD states applications must be received no later than midnight on April 14, 2026 (in the PHA\u2019s time zone) and the funds must be used exclusively for HUD-VASH eligible administrative and related expenses.",
       "category": "deadline",
-      "date": "2026-03-25",
+      "date": "2026-01-15",
       "source": "U.S. Department of Housing and Urban Development",
       "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-01.pdf",
       "programs": [
@@ -104,9 +92,21 @@
       ]
     },
     {
-      "id": "n-20260402-liheap-hhs-fy2026-budget-proposes-elimination",
-      "title": "HHS budget justification proposes eliminating LIHEAP funding in FY 2026 (from $4.025B to $0)",
-      "summary": "HHS’s FY 2026 Administration for Children, Families, and Communities Congressional Justification states that the budget would eliminate funding for the Low Income Home Energy Assistance Program (LIHEAP). The document’s tables show LIHEAP at $4.025 billion in FY 2024 and FY 2025, with a FY 2026 request of $0 (a change of -$4.025 billion).",
+      "id": "n-20260403-section8-hud-30day-notice-comments-apr27",
+      "title": "Federal Register: HUD interim final rule would revoke 30-day notice requirement for nonpayment evictions in public housing and PBRA; comments due April 27, 2026",
+      "summary": "A Feb. 26, 2026 Federal Register notice says HUD issued an interim final rule revoking prior rules requiring PHAs and owners of properties with project-based rental assistance (PBRA) to provide 30-day notice before lease termination for nonpayment of rent. The notice states comments must be received by April 27, 2026.",
+      "category": "deadline",
+      "date": "2026-02-26",
+      "source": "Federal Register",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/02/26/2026-03921/revocation-of-the-30-day-notification-requirement-prior-to-termination-of-lease-for-nonpayment-of",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20260403-liheap-hhs-fy2026-cj-elimination",
+      "title": "HHS FY 2026 budget justification proposes eliminating LIHEAP: $4.025B (FY 2025) to $0 (FY 2026 request)",
+      "summary": "HHS\u2019s FY 2026 Administration for Children, Families, and Communities congressional justification shows LIHEAP Block Grants at $4.025 billion for FY 2024 and FY 2025, with a FY 2026 budget request of $0 (a -$4.025B change). The same document\u2019s \u201cPrograms Proposed for Elimination\u201d table cites concerns including limited impact on self-sufficiency and a history of fraud and abuse.",
       "category": "policy-change",
       "date": "2026-03-01",
       "source": "U.S. Department of Health & Human Services",
@@ -117,9 +117,21 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260402-wic-fy2026-cvvb-inflation-adjustment-forms-deadline-apr2026",
-      "title": "USDA WIC memo: FY 2026 CVV/B inflation adjustment 11.8% (vs FY 2022 baseline) and April 2026 deadline to add non-fresh produce options",
-      "summary": "USDA FNS’s WIC Policy Memorandum #2026-2 states that FY 2026 cash-value voucher/benefit (CVV/B) amounts reflect an 11.8% inflation adjustment over the FY 2022 baseline. The memo also notes that state agencies must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026, and that as of November 2025, 95% of state agencies were already in compliance.",
+      "id": "n-20260403-liheap-federalregister-icr-comments-apr3",
+      "title": "Federal Register: HHS seeks comments by April 3, 2026 on extending LIHEAP Quarterly Reports information collection (OMB 0970-0589)",
+      "summary": "A March 4, 2026 Federal Register notice (full-text XML) says HHS/ACF is requesting a 3-year extension of the LIHEAP Quarterly Reports information collection (OMB #0970-0589, expiring Oct. 31, 2025) with proposed changes intended to reduce redundancy and burden. The notice says public comments are due April 3, 2026 and directs commenters to reginfo.gov.",
+      "category": "deadline",
+      "date": "2026-03-04",
+      "source": "Federal Register",
+      "sourceUrl": "https://www.federalregister.gov/documents/full_text/xml/2026/03/04/2026-04249.xml",
+      "programs": [
+        "liheap"
+      ]
+    },
+    {
+      "id": "n-20260403-wic-cvvb-fy2026-april-deadline",
+      "title": "USDA WIC memo: FY 2026 CVV/B inflation adjustment 11.8% and April 2026 deadline to allow at least one non-fresh fruit/veg option",
+      "summary": "USDA FNS\u2019s WIC Policy Memorandum #2026-2 says FY 2026 cash-value voucher/benefit (CVV/B) amounts reflect an 11.8% inflation adjustment over the FY 2022 baseline, resulting in monthly amounts of $26 (children), $48 (pregnant/postpartum), and $52 (breastfeeding). The memo also says state agencies must authorize at least one additional form (frozen, canned, and/or dried) of fruits and vegetables in addition to fresh by April 2026.",
       "category": "deadline",
       "date": "2025-12-11",
       "source": "USDA Food and Nutrition Service",
@@ -129,9 +141,9 @@
       ]
     },
     {
-      "id": "n-20260402-pell-2026-27-max-7395-year-round-150",
-      "title": "Federal Student Aid: maximum Pell Grant is $7,395 for 2026–27; some students can get up to 150% with year-round Pell",
-      "summary": "Federal Student Aid says the maximum Federal Pell Grant award for the 2026–27 award year is $7,395. The same guidance notes some students may be able to receive up to 150% of their yearly Pell award if they attend an additional term in the same award year (often called “year-round Pell”), and it emphasizes that submitting the FAFSA is required to be considered.",
+      "id": "n-20260403-pell-max-7395-yearround",
+      "title": "Federal Student Aid: maximum Pell Grant is $7,395 for 2026\u201327; some students can receive up to 150% with year-round Pell",
+      "summary": "Federal Student Aid says the maximum Federal Pell Grant award for the 2026\u201327 award year is $7,395. The same guidance explains that some students may be able to receive up to 150% of their yearly Pell award (often called year-round Pell) if they attend an additional term in the same award year, giving an example where a $3,000 annual award could add up to another $1,500 for summer enrollment.",
       "category": "update",
       "date": "2026-03-01",
       "source": "Federal Student Aid",
