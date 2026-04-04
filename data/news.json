@@ -1,6 +1,108 @@
 {
-  "lastUpdated": "2026-04-03T11:04:36Z",
+  "lastUpdated": "2026-04-04T11:09:57Z",
   "items": [
+    {
+      "id": "n-20260404-section8-hudvash-adminfees-deadline",
+      "title": "HUD deadline: Apr. 14, 2026 to apply for HUD-VASH administrative fee funding",
+      "summary": "HUD issued PIH Notice 2026-01 (Revised) on March 25, 2026, announcing $10 million in available funding for public housing agencies administering HUD-VASH to support leasing HUD-VASH vouchers. Applications must be received by midnight April 14, 2026 (local time zone of the PHA).",
+      "category": "deadline",
+      "date": "2026-03-25",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-01.pdf",
+      "programs": [
+        "section8",
+        "hud-vash"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260404-liheap-recs-datamatch-comments",
+      "title": "HHS seeks comments (due Apr. 14, 2026) on updated LIHEAP RECS data match collection",
+      "summary": "HHS/ACF\u2019s Office of Community Services is proposing to reinstate (with changes) its collection of administrative LIHEAP beneficiary household data from states for the 2024\u20132025 RECS data match. The Federal Register notice says the changes would remove eight fields and reduce the estimated time per response from 24 to 16 hours, with comments due April 14, 2026.",
+      "category": "deadline",
+      "date": "2026-02-13",
+      "source": "Federal Register (govinfo.gov)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-02-13/html/2026-02928.htm",
+      "programs": [
+        "liheap"
+      ]
+    },
+    {
+      "id": "n-20260404-pell-workforcepell-comments-deadline",
+      "title": "Workforce Pell proposed rule: public comments due Apr. 8, 2026",
+      "summary": "The Department of Education posted an NPRM titled \u201cAccountability In Higher Education and Access Through Demand-Driven Workforce Pell,\u201d with an NPRM comment due date of April 8, 2026. The proposal addresses Workforce Pell implementation and how Pell interacts with other grant aid.",
+      "category": "deadline",
+      "date": "2026-03-09",
+      "source": "Federal Student Aid (FSA Partner Connect)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/federal-registers/2026-03-10/accountability-higher-education-and-access-through-demand-driven-workforce-pell-pell-grant-exclusion-relating-other-grant-aid-and-workforce-pell-grants",
+      "programs": [
+        "pell-grant"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260404-wic-cvvb-fy26-april-compliance",
+      "title": "USDA sets FY 2026 WIC fruit/veg cash benefit amounts; states must add frozen/canned/dried produce options by April 2026",
+      "summary": "USDA FNS says FY 2026 monthly WIC cash-value voucher/benefit (CVV/B) amounts are $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/mostly breastfeeding participants. The memo also notes states must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
+      "category": "update",
+      "date": "2025-12-11",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260404-snap-fy26-allotments-minimum",
+      "title": "SNAP FY 2026: maximum allotment is $298 (1 person) / $994 (4 people) in the 48 states + DC; minimum benefit is $24",
+      "summary": "USDA\u2019s SNAP COLA tables list FY 2026 maximum monthly SNAP allotments of $298 for a 1-person household and $994 for a 4-person household in the 48 states and DC. The tables also show a $24 minimum monthly allotment for 1\u20132 person households in the 48 states and DC, effective Oct. 1, 2025 through Sept. 30, 2026.",
+      "category": "update",
+      "date": "2025-10-01",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260404-ssi-ssdi-cola-2026-28",
+      "title": "Social Security COLA for 2026: benefits rise 2.8%; SSI increases start Dec. 31, 2025",
+      "summary": "SSA announced a 2.8% cost-of-living adjustment for 2026 affecting about 75 million Americans, with nearly 71 million Social Security beneficiaries seeing the increase starting in January 2026. SSA said increased payments for nearly 7.5 million SSI recipients begin Dec. 31, 2025.",
+      "category": "update",
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260404-medicaid-managedcare-rate-guide-2026-2027",
+      "title": "CMS releases 2026\u20132027 Medicaid managed care rate development guide (rating periods starting July 1, 2026)",
+      "summary": "A CMS informational bulletin dated March 12, 2026 says CMS released the 2026\u20132027 Medicaid Managed Care Rate Development Guide on Feb. 19, 2026. The bulletin says states use the guide for rating periods starting between July 1, 2026 and June 30, 2027 when preparing actuarial rate certifications.",
+      "category": "update",
+      "date": "2026-03-12",
+      "source": "CMS (Medicaid.gov)",
+      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib03112026.pdf",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260404-eitc-ty2026-max-8231",
+      "title": "IRS: Tax year 2026 inflation adjustments set max EITC at $8,231 (3+ qualifying children)",
+      "summary": "IRS guidance on tax year 2026 inflation adjustments states the maximum Earned Income Tax Credit (EITC) is $8,231 for qualifying taxpayers with three or more qualifying children. The same IRS materials list a 2026 standard deduction of $32,200 (married filing jointly), $16,100 (single/MFS), and $24,150 (head of household).",
+      "category": "update",
+      "date": "2025-10-09",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
     {
       "id": "n-20260403-snap-waivers-page-march30",
       "title": "USDA updates SNAP Food Restriction Waivers list: Texas (Apr. 1), Florida (Apr. 20), Colorado (Apr. 30) and new long-dated waivers (e.g., Kansas Feb. 15, 2027; Nevada Feb. 1, 2028)",
@@ -50,106 +152,6 @@
       "programs": [
         "medicaid",
         "chip"
-      ]
-    },
-    {
-      "id": "n-20260403-ssi-ssdi-cdrs-federal-processing-march12",
-      "title": "SSA shifts medical Continuing Disability Reviews (CDRs) to federal processing; says initial-claims backlog down from 1.26M (June 2024) to 831K (Feb. 2026)",
-      "summary": "SSA says it is transitioning medical Continuing Disability Reviews (CDRs) from State Disability Determination Services to SSA\u2019s federal Disability Case Review site. SSA says the DDS initial-claims backlog fell from over 1.26 million pending claims in June 2024 to 831,000 as of February 2026 (down more than 33%).",
-      "category": "policy-change",
-      "date": "2026-03-12",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-03-12.html",
-      "programs": [
-        "ssdi",
-        "ssi"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260403-eitc-ctc-irs-filing-season-jan26",
-      "title": "IRS: 2026 filing season opened Jan. 26; most EITC/ACTC refunds expected by March 2; filing deadline April 15",
-      "summary": "IRS says the 2026 tax filing season opened on Jan. 26, 2026 and the deadline to file 2025 federal returns is April 15. IRS also says most refunds claiming EITC or the Additional Child Tax Credit (ACTC) are expected to be available by March 2, 2026 for direct-deposit filers with no other issues, and Where\u2019s My Refund? should show projected deposit dates for most early EITC/ACTC filers by Feb. 21.",
-      "category": "deadline",
-      "date": "2026-01-26",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260403-section8-hudvash-fees-apr14-deadline",
-      "title": "HUD: $10M in additional HUD-VASH administrative fee funding available; applications due April 14, 2026",
-      "summary": "HUD\u2019s PIH Notice 2026-01 (Revised) makes $10 million available for additional administrative fees to support the HUD-VASH program. HUD states applications must be received no later than midnight on April 14, 2026 (in the PHA\u2019s time zone) and the funds must be used exclusively for HUD-VASH eligible administrative and related expenses.",
-      "category": "deadline",
-      "date": "2026-01-15",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-01.pdf",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260403-section8-hud-30day-notice-comments-apr27",
-      "title": "Federal Register: HUD interim final rule would revoke 30-day notice requirement for nonpayment evictions in public housing and PBRA; comments due April 27, 2026",
-      "summary": "A Feb. 26, 2026 Federal Register notice says HUD issued an interim final rule revoking prior rules requiring PHAs and owners of properties with project-based rental assistance (PBRA) to provide 30-day notice before lease termination for nonpayment of rent. The notice states comments must be received by April 27, 2026.",
-      "category": "deadline",
-      "date": "2026-02-26",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/documents/2026/02/26/2026-03921/revocation-of-the-30-day-notification-requirement-prior-to-termination-of-lease-for-nonpayment-of",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260403-liheap-hhs-fy2026-cj-elimination",
-      "title": "HHS FY 2026 budget justification proposes eliminating LIHEAP: $4.025B (FY 2025) to $0 (FY 2026 request)",
-      "summary": "HHS\u2019s FY 2026 Administration for Children, Families, and Communities congressional justification shows LIHEAP Block Grants at $4.025 billion for FY 2024 and FY 2025, with a FY 2026 budget request of $0 (a -$4.025B change). The same document\u2019s \u201cPrograms Proposed for Elimination\u201d table cites concerns including limited impact on self-sufficiency and a history of fraud and abuse.",
-      "category": "policy-change",
-      "date": "2026-03-01",
-      "source": "U.S. Department of Health & Human Services",
-      "sourceUrl": "https://www.hhs.gov/sites/default/files/fy-2026-acfc-cj.pdf",
-      "programs": [
-        "liheap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260403-liheap-federalregister-icr-comments-apr3",
-      "title": "Federal Register: HHS seeks comments by April 3, 2026 on extending LIHEAP Quarterly Reports information collection (OMB 0970-0589)",
-      "summary": "A March 4, 2026 Federal Register notice (full-text XML) says HHS/ACF is requesting a 3-year extension of the LIHEAP Quarterly Reports information collection (OMB #0970-0589, expiring Oct. 31, 2025) with proposed changes intended to reduce redundancy and burden. The notice says public comments are due April 3, 2026 and directs commenters to reginfo.gov.",
-      "category": "deadline",
-      "date": "2026-03-04",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/documents/full_text/xml/2026/03/04/2026-04249.xml",
-      "programs": [
-        "liheap"
-      ]
-    },
-    {
-      "id": "n-20260403-wic-cvvb-fy2026-april-deadline",
-      "title": "USDA WIC memo: FY 2026 CVV/B inflation adjustment 11.8% and April 2026 deadline to allow at least one non-fresh fruit/veg option",
-      "summary": "USDA FNS\u2019s WIC Policy Memorandum #2026-2 says FY 2026 cash-value voucher/benefit (CVV/B) amounts reflect an 11.8% inflation adjustment over the FY 2022 baseline, resulting in monthly amounts of $26 (children), $48 (pregnant/postpartum), and $52 (breastfeeding). The memo also says state agencies must authorize at least one additional form (frozen, canned, and/or dried) of fruits and vegetables in addition to fresh by April 2026.",
-      "category": "deadline",
-      "date": "2025-12-11",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20260403-pell-max-7395-yearround",
-      "title": "Federal Student Aid: maximum Pell Grant is $7,395 for 2026\u201327; some students can receive up to 150% with year-round Pell",
-      "summary": "Federal Student Aid says the maximum Federal Pell Grant award for the 2026\u201327 award year is $7,395. The same guidance explains that some students may be able to receive up to 150% of their yearly Pell award (often called year-round Pell) if they attend an additional term in the same award year, giving an example where a $3,000 annual award could add up to another $1,500 for summer enrollment.",
-      "category": "update",
-      "date": "2026-03-01",
-      "source": "Federal Student Aid",
-      "sourceUrl": "https://studentaid.gov/articles/dont-miss-out-on-pell-grants/",
-      "programs": [
-        "pell"
       ]
     }
   ]
