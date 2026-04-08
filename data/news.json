@@ -1,106 +1,119 @@
 {
-  "lastUpdated": "2026-04-07T11:04:00Z",
+  "lastUpdated": "2026-04-08T11:11:02Z",
   "items": [
     {
-      "id": "n-20260407-hudvash-deadline",
-      "title": "HUD opens $10M in extra admin fees for HUD-VASH voucher leasing; applications due April 14, 2026",
-      "summary": "HUD’s PIH Notice 2026-01 (Revised) makes $10 million available in additional administrative fees for public housing agencies (PHAs) that currently administer HUD-VASH to help lease HUD-VASH vouchers. PHAs must submit applications by midnight on April 14, 2026 (in the PHA’s time zone), and funds are allocated based on the number of HUD-VASH vouchers a PHA administers and how many PHAs apply.",
-      "category": "deadline",
-      "date": "2026-03-25",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-01.pdf",
-      "programs": ["hud-vash", "section-8"]
-    },
-    {
-      "id": "n-20260227-section8-rule",
-      "title": "HUD proposes time limits (as short as 2 years) and work requirements (up to 40 hours/week) for rental aid",
-      "summary": "HUD proposed a rule that would let local housing authorities and private landlords impose time limits on rental assistance, potentially as short as two years, and require up to 40 hours of work per week as a condition of receiving aid. The proposal would exempt elderly and disabled recipients and would be open for public comment for 60 days.",
-      "category": "policy-change",
-      "date": "2026-02-27",
-      "source": "NPR",
-      "sourceUrl": "https://www.npr.org/2026/02/27/nx-s1-5728988/hud-proposes-time-limits-work-requirements-for-rental-aid",
-      "programs": ["section-8"],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20251210-wic-cvvb-fy26",
-      "title": "USDA sets FY2026 WIC fruit-and-vegetable cash benefit amounts; states must offer at least one non-fresh option by April 2026",
-      "summary": "USDA set FY 2026 monthly WIC cash-value voucher/benefit (CVV/B) amounts at $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/partially breastfeeding participants. USDA also noted that WIC food package changes require state agencies to authorize at least one form of fruits and vegetables beyond fresh (frozen, canned, and/or dried) by April 2026.",
+      "id": "n-20260408-ssi-ssdi-cola",
+      "title": "SSA: Social Security and SSI benefits rise 2.8% in 2026",
+      "summary": "The Social Security Administration says Social Security and SSI benefits will increase 2.8% in 2026. The increase starts with benefits payable in January 2026 for most Social Security beneficiaries, and SSI recipients begin receiving increased payments on December 31, 2025.",
       "category": "update",
-      "date": "2025-12-10",
-      "source": "USDA Food and Nutrition Service (FNS)",
+      "date": "2025-11-01",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20260408-medicaid-chip-caa2026",
+      "title": "Medicaid.gov: Consolidated Appropriations Act, 2026 adds multiple Medicaid/CHIP provisions",
+      "summary": "CMS highlighted Medicaid and CHIP provisions in the Consolidated Appropriations Act, 2026 (P.L. 119-75), including a streamlined Medicaid/CHIP enrollment process for eligible out-of-state providers treating individuals under age 21 (effective 3 years after enactment, with a 5-year enrollment period). CMS also noted the law expands Medicaid Buy-In eligibility groups to include individuals age 65+ (states already offering the groups must cover 65+ by January 1, 2028).",
+      "category": "policy-change",
+      "date": "2026-02-24",
+      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
+      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260408-medicaid-dsh-cuts-delay",
+      "title": "CMS: Medicaid DSH cuts delayed until FY 2028 in CAA 2026",
+      "summary": "CMS says the Consolidated Appropriations Act, 2026 delays implementation of Medicaid Disproportionate Share Hospital (DSH) cuts until fiscal year 2028. CMS also summarized a related provision that modifies the DSH payment adjustment formula to allow certain unreimbursed costs for patients dually eligible for Medicaid and other coverage to be included in the Medicaid shortfall calculation (effective upon enactment).",
+      "category": "policy-change",
+      "date": "2026-02-24",
+      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
+      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
+      "programs": [
+        "medicaid"
+      ]
+    },
+    {
+      "id": "n-20260408-wic-cvvb-fy2026",
+      "title": "USDA WIC memo: FY 2026 fruit/vegetable cash-value benefit amounts and April 2026 state requirement",
+      "summary": "USDA’s WIC Policy Memorandum #2026-2 lists FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts for fruits and vegetables: $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. USDA also notes WIC food package changes require state agencies to authorize at least one additional form of fruits/vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
+      "category": "update",
+      "date": "2025-12-11",
+      "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": ["wic"]
+      "programs": [
+        "wic"
+      ]
     },
     {
-      "id": "n-20251024-ssi-ssdi-cola-2026",
-      "title": "Social Security announces 2.8% COLA for 2026 affecting Social Security and SSI payments",
-      "summary": "The Social Security Administration announced a 2.8% cost-of-living adjustment (COLA) for 2026 affecting more than 75 million people receiving Social Security and SSI. The increase takes effect in January for Social Security recipients and on December 31, 2025 for nearly 7.5 million SSI beneficiaries.",
+      "id": "n-20260408-liheap-fy2026-funding",
+      "title": "NEADA: LIHEAP funded at $4.045B for FY 2026 (up $20M)",
+      "summary": "The National Energy Assistance Directors Association (NEADA) reports LIHEAP received $4.045 billion in FY 2026 funding, which it describes as a $20 million increase from FY 2025. NEADA also notes HHS released the remaining FY 2025 LIHEAP funds totaling $401.5 million on April 30, 2025 (states could draw down beginning May 1, 2025).",
       "category": "update",
-      "date": "2025-10-24",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/us/us-retirees-receive-28-social-security-increase-2026-2025-10-24/",
-      "programs": ["ssi", "ssdi"]
+      "date": "2026-02-25",
+      "source": "National Energy Assistance Directors Association (NEADA)",
+      "sourceUrl": "https://neada.org/press/liheap-under-threat/",
+      "programs": [
+        "liheap"
+      ]
     },
     {
-      "id": "n-20260407-fafsa-deadline-2526",
-      "title": "Federal FAFSA deadline for 2025–26 aid is June 30, 2026 (11:59 p.m. CT); corrections due Sept. 12, 2026",
-      "summary": "Federal Student Aid says students must submit the 2025–26 FAFSA by 11:59 p.m. CT on June 30, 2026 to be considered for federal student aid for that award year. Corrections or updates must be submitted by 11:59 p.m. CT on Sept. 12, 2026.",
+      "id": "n-20260408-hcv-cost-savings-notice",
+      "title": "HUD PIH Notice 2025-28 highlights cost-saving options for Housing Choice Voucher agencies",
+      "summary": "A NAHRO summary of HUD’s PIH Notice 2025-28 says public housing agencies can use multiple strategies to reduce Housing Assistance Payment (HAP) expenses to prevent shortfalls. Examples include reviewing payment standards to stay within 90%–110% of Fair Market Rent, adjusting utility allowances, reducing/stopping issuing turnover vouchers, and (with HUD approval in some cases) rescinding issued vouchers that have not yet resulted in an executed HAP contract.",
+      "category": "update",
+      "date": "2025-11-19",
+      "source": "NAHRO (summarizing HUD PIH Notice 2025-28)",
+      "sourceUrl": "https://www.nahro.org/news/hud-publishes-hcv-cost-savings-notice/",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20260408-tax-deadline-apr15",
+      "title": "IRS: 2025 individual tax returns due April 15, 2026",
+      "summary": "The IRS states that calendar-year filers should file their 2025 federal individual income tax return by April 15, 2026. The IRS also notes you can request an automatic 6-month extension to file by submitting Form 4868 by the original due date, but an extension to file is not an extension to pay.",
       "category": "deadline",
-      "date": "2026-04-07",
-      "source": "Federal Student Aid (studentaid.gov)",
-      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
-      "programs": ["pell-grant", "fafsa"]
+      "date": "2026-01-20",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/filing/individuals/when-to-file",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
     },
     {
-      "id": "n-20251201-liheap-fy26-release",
-      "title": "HHS releases about $3.7B in LIHEAP funding to states (about 90% of FY2026 allocation)",
-      "summary": "HHS’s Administration for Children and Families released about $3.6 billion in regular LIHEAP block grant funding plus an additional $100 million in supplemental Infrastructure Investment and Jobs Act funding to states. The release represented about 90% of the $4.015 billion allocated for LIHEAP for FY 2026 under a continuing resolution.",
+      "id": "n-20260408-medicaid-enrollment-oct2025",
+      "title": "CMS snapshot: 76.8M enrolled in Medicaid/CHIP in Oct. 2025",
+      "summary": "CMS reports that in October 2025, 76.8 million people were enrolled in Medicaid and CHIP (69.5 million in Medicaid and 7.2 million in CHIP). CMS also reports that between October 2024 and October 2025, Medicaid enrollment decreased by 2.6 million (4%), and CHIP enrollment decreased by 13,000 (less than 1%).",
       "category": "update",
-      "date": "2025-12-01",
-      "source": "Public Power (reporting on HHS/ACF)",
-      "sourceUrl": "https://www.publicpower.org/periodical/article/hhs-releases-37-billion-liheap-funding-states",
-      "programs": ["liheap"]
+      "date": "2026-02-24",
+      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
+      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
     },
     {
-      "id": "n-20260115-hudvash-notice",
-      "title": "HUD reissues PIH Notice 2026-01 with HUD-VASH admin fee guidance (revised March 25, 2026)",
-      "summary": "HUD’s PIH Notice 2026-01 (Revised) provides guidance on requesting and using HUD-VASH administrative fee funding, including eligible uses like landlord recruitment, housing search assistance, landlord/tenant mediation, owner incentives, and security deposits (subject to program rules). The revised notice was issued March 25, 2026 and references earlier HUD guidance on voucher funding provisions and HUD-VASH admin fees.",
+      "id": "n-20260408-medicaid-epsdt-toolkit",
+      "title": "CMS announces new EPSDT behavioral health toolkit for states",
+      "summary": "CMS said it published a new toolkit on Medicaid.gov on February 20, 2026: “State Medicaid & CHIP Toolkit for Children’s Behavioral Health Services and the Early and Periodic Screening, Diagnostic and Treatment (EPSDT) Requirements.” CMS describes it as a resource for state Medicaid and CHIP agencies to help children and youth with behavioral health conditions access needed care.",
       "category": "update",
-      "date": "2026-03-25",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-01.pdf",
-      "programs": ["hud-vash", "section-8"]
-    },
-    {
-      "id": "n-20260407-path-eitc-actc",
-      "title": "PATH Act delay: EITC/ACTC refunds typically held until mid-February; IRS updates expected starting Feb. 17, 2026",
-      "summary": "Under the PATH Act, refunds claiming the Earned Income Tax Credit (EITC) or Additional Child Tax Credit (ACTC) are held until after mid-February to allow extra verification. Jackson Hewitt notes that in 2026 the IRS lifts the hold on Feb. 16 (Presidents’ Day), begins processing Feb. 17, and most refunds are expected to be deposited by March 6, 2026.",
-      "category": "deadline",
-      "date": "2026-02-06",
-      "source": "Jackson Hewitt",
-      "sourceUrl": "https://www.jacksonhewitt.com/tax-help/tax-tips-topics/filing-your-taxes/refund-schedule-and-the-path-act/",
-      "programs": ["eitc", "ctc"]
-    },
-    {
-      "id": "n-20260331-medicaid-workreq-summary",
-      "title": "Federal policy groups summarize Medicaid work requirement framework under 2025 budget law (implementation targeted for 2027)",
-      "summary": "Center for Health Care Strategies and other policy organizations summarize that the 2025 budget reconciliation law established Medicaid work requirements (often 80 hours per month) for certain adults ages 19–64, with states required to implement by January 1, 2027 (with possible earlier start dates). The summaries highlight exemptions and implementation timelines that states and enrollees will need to track.",
-      "category": "policy-change",
-      "date": "2025-12-29",
-      "source": "Center for Health Care Strategies (CHCS)",
-      "sourceUrl": "https://www.chcs.org/resource/a-summary-of-national-medicaid-work-requirements/",
-      "programs": ["medicaid"]
-    },
-    {
-      "id": "n-20260407-liheap-fy26-funding",
-      "title": "LIHEAP FY2026 funding totals reported at about $4.015B (with early-season funding releases emphasized)",
-      "summary": "A Public Power report on LIHEAP funding said the FY2026 allocation totaled about $4.015 billion and described an HHS/ACF release of roughly $3.7 billion (regular plus supplemental funds) to states. The report emphasized that the early release represented about 90% of annual funding, which can matter for state program start-up and winter heating/cooling assistance.",
-      "category": "update",
-      "date": "2025-12-01",
-      "source": "Public Power (reporting on HHS/ACF)",
-      "sourceUrl": "https://www.publicpower.org/periodical/article/hhs-releases-37-billion-liheap-funding-states",
-      "programs": ["liheap"]
+      "date": "2026-02-24",
+      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
+      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
     }
   ]
 }
