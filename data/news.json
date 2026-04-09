@@ -1,118 +1,131 @@
 {
-  "lastUpdated": "2026-04-08T11:11:02Z",
+  "lastUpdated": "2026-04-09T11:06:00Z",
   "items": [
     {
-      "id": "n-20260408-ssi-ssdi-cola",
-      "title": "SSA: Social Security and SSI benefits rise 2.8% in 2026",
-      "summary": "The Social Security Administration says Social Security and SSI benefits will increase 2.8% in 2026. The increase starts with benefits payable in January 2026 for most Social Security beneficiaries, and SSI recipients begin receiving increased payments on December 31, 2025.",
+      "id": "n-20260409-snap-max-allotments",
+      "title": "USDA: SNAP max benefit is $298/month for a 1-person household (Oct 2025–Sept 2026)",
+      "summary": "USDA’s Food and Nutrition Service lists the maximum SNAP monthly allotment for the 48 contiguous states and D.C. as $298 for a 1-person household and $994 for a 4-person household. The agency notes these figures apply for applications between Oct. 1, 2025 and Sept. 30, 2026 (amounts vary in Alaska, Hawaii, Guam, and the U.S. Virgin Islands).",
       "category": "update",
-      "date": "2025-11-01",
+      "date": "2025-09-30",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260409-irs-eitc-2026",
+      "title": "IRS: 2026 EITC max credit rises to $8,231 for families with 3+ qualifying children",
+      "summary": "The IRS says the maximum Earned Income Tax Credit for tax year 2026 is $8,231 for qualifying taxpayers with three or more qualifying children (up from $8,046 for tax year 2025). The IRS notes these 2026 inflation adjustments generally apply to tax returns filed in 2027.",
+      "category": "update",
+      "date": "2025-10-09",
+      "source": "IRS Newsroom",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "programs": [
+        "eitc"
+      ]
+    },
+    {
+      "id": "n-20260409-irs-adoption-credit-2026",
+      "title": "IRS: 2026 adoption credit increases to $17,670 (with $5,120 potentially refundable)",
+      "summary": "The IRS’ 2026 inflation adjustments set the maximum adoption credit at up to $17,670 of qualified adoption expenses (up from $17,280 for 2025). The IRS also lists $5,120 as the amount of the credit that may be refundable.",
+      "category": "update",
+      "date": "2025-10-09",
+      "source": "IRS Newsroom",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "programs": [
+        "tax-credits"
+      ]
+    },
+    {
+      "id": "n-20260409-irs-employer-childcare-credit-2026",
+      "title": "IRS: Employer-provided childcare credit max increases to $500,000 for 2026",
+      "summary": "In its 2026 inflation adjustments release, the IRS says the maximum employer-provided childcare tax credit increases from $150,000 to $500,000 for tax year 2026 ($600,000 if the employer is an eligible small business). This change is part of the broader set of inflation adjustments the IRS publishes for 2026.",
+      "category": "policy-change",
+      "date": "2025-10-09",
+      "source": "IRS Newsroom",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "programs": [
+        "child-care"
+      ]
+    },
+    {
+      "id": "n-20260409-ssa-cola-2026",
+      "title": "SSA: Social Security and SSI benefits increase 2.8% in 2026",
+      "summary": "SSA announced a 2.8% cost-of-living adjustment (COLA) for 2026. SSA says nearly 71 million Social Security beneficiaries will see the increase beginning in January 2026, and increased payments to nearly 7.5 million SSI recipients begin December 31, 2025.",
+      "category": "update",
+      "date": "2025-10-24",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
       "programs": [
         "ssi",
         "ssdi"
       ],
-      "isBreaking": false
+      "isBreaking": true
     },
     {
-      "id": "n-20260408-medicaid-chip-caa2026",
-      "title": "Medicaid.gov: Consolidated Appropriations Act, 2026 adds multiple Medicaid/CHIP provisions",
-      "summary": "CMS highlighted Medicaid and CHIP provisions in the Consolidated Appropriations Act, 2026 (P.L. 119-75), including a streamlined Medicaid/CHIP enrollment process for eligible out-of-state providers treating individuals under age 21 (effective 3 years after enactment, with a 5-year enrollment period). CMS also noted the law expands Medicaid Buy-In eligibility groups to include individuals age 65+ (states already offering the groups must cover 65+ by January 1, 2028).",
-      "category": "policy-change",
-      "date": "2026-02-24",
-      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
-      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
+      "id": "n-20260409-ssa-ssi-payment-standard-2026",
+      "title": "SSA: 2026 SSI federal payment standard is $994/month (individual) and $1,491/month (couple)",
+      "summary": "SSA’s 2026 COLA fact sheet lists the SSI federal payment standard at $994 per month for an eligible individual and $1,491 per month for an eligible couple. The same fact sheet includes estimated average benefits after the COLA, including $1,630 for all disabled workers.",
+      "category": "update",
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260409-ssa-taxable-maximum-2026",
+      "title": "SSA: Maximum earnings subject to Social Security tax increases to $184,500 in 2026",
+      "summary": "SSA’s 2026 COLA announcement says the taxable maximum (the maximum amount of earnings subject to the Social Security tax) is slated to rise to $184,500, up from $176,100. SSA includes the same $184,500 figure in its 2026 COLA fact sheet.",
+      "category": "update",
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
+      "programs": [
+        "ssdi",
+        "ssi"
+      ]
+    },
+    {
+      "id": "n-20260409-medicaid-chip-enrollment-2025",
+      "title": "KFF: Medicaid/CHIP enrollment was 77.7 million as of June 2025 (down 18% from March 2023)",
+      "summary": "KFF reports total Medicaid and CHIP enrollment was 77.7 million as of June 2025, reflecting an 18% decline from March 2023 as states continued the post-pandemic eligibility redetermination process. KFF also notes enrollment remained 9% higher than pre-pandemic levels in February 2020.",
+      "category": "update",
+      "date": "2025-11-13",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/50-state-medicaid-budget-survey-fy-2025-2026/",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260408-medicaid-dsh-cuts-delay",
-      "title": "CMS: Medicaid DSH cuts delayed until FY 2028 in CAA 2026",
-      "summary": "CMS says the Consolidated Appropriations Act, 2026 delays implementation of Medicaid Disproportionate Share Hospital (DSH) cuts until fiscal year 2028. CMS also summarized a related provision that modifies the DSH payment adjustment formula to allow certain unreimbursed costs for patients dually eligible for Medicaid and other coverage to be included in the Medicaid shortfall calculation (effective upon enactment).",
+      "id": "n-20260409-medicaid-federal-cuts-hr1",
+      "title": "KFF: H.R. 1 Medicaid provisions estimated to reduce federal Medicaid spending by $911B (14%) over 10 years",
+      "summary": "KFF’s Medicaid budget survey overview says Medicaid provisions in H.R. 1 are estimated to reduce federal Medicaid spending by $911 billion (14%) over a decade. KFF highlights specific components including provider tax policy changes estimated at $191 billion over ten years and revisions to State Directed Payments estimated at $149 billion.",
       "category": "policy-change",
-      "date": "2026-02-24",
-      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
-      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
+      "date": "2025-11-13",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/50-state-medicaid-budget-survey-fy-2025-2026/",
       "programs": [
         "medicaid"
       ]
     },
     {
-      "id": "n-20260408-wic-cvvb-fy2026",
-      "title": "USDA WIC memo: FY 2026 fruit/vegetable cash-value benefit amounts and April 2026 state requirement",
-      "summary": "USDA’s WIC Policy Memorandum #2026-2 lists FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts for fruits and vegetables: $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. USDA also notes WIC food package changes require state agencies to authorize at least one additional form of fruits/vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
-      "category": "update",
-      "date": "2025-12-11",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20260408-liheap-fy2026-funding",
-      "title": "NEADA: LIHEAP funded at $4.045B for FY 2026 (up $20M)",
-      "summary": "The National Energy Assistance Directors Association (NEADA) reports LIHEAP received $4.045 billion in FY 2026 funding, which it describes as a $20 million increase from FY 2025. NEADA also notes HHS released the remaining FY 2025 LIHEAP funds totaling $401.5 million on April 30, 2025 (states could draw down beginning May 1, 2025).",
-      "category": "update",
-      "date": "2026-02-25",
-      "source": "National Energy Assistance Directors Association (NEADA)",
-      "sourceUrl": "https://neada.org/press/liheap-under-threat/",
-      "programs": [
-        "liheap"
-      ]
-    },
-    {
-      "id": "n-20260408-hcv-cost-savings-notice",
-      "title": "HUD PIH Notice 2025-28 highlights cost-saving options for Housing Choice Voucher agencies",
-      "summary": "A NAHRO summary of HUD’s PIH Notice 2025-28 says public housing agencies can use multiple strategies to reduce Housing Assistance Payment (HAP) expenses to prevent shortfalls. Examples include reviewing payment standards to stay within 90%–110% of Fair Market Rent, adjusting utility allowances, reducing/stopping issuing turnover vouchers, and (with HUD approval in some cases) rescinding issued vouchers that have not yet resulted in an executed HAP contract.",
-      "category": "update",
-      "date": "2025-11-19",
-      "source": "NAHRO (summarizing HUD PIH Notice 2025-28)",
-      "sourceUrl": "https://www.nahro.org/news/hud-publishes-hcv-cost-savings-notice/",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260408-tax-deadline-apr15",
-      "title": "IRS: 2025 individual tax returns due April 15, 2026",
-      "summary": "The IRS states that calendar-year filers should file their 2025 federal individual income tax return by April 15, 2026. The IRS also notes you can request an automatic 6-month extension to file by submitting Form 4868 by the original due date, but an extension to file is not an extension to pay.",
+      "id": "n-20260409-fsa-title-iii-deadline-apr23",
+      "title": "FSA: Apply by April 23, 2026 for Title III designation and a waiver of the FWS/FSEOG non-federal share",
+      "summary": "Federal Student Aid published an electronic announcement reminding institutions to apply by April 23, 2026 for designation as a Title III institution. The announcement also notes eligible institutions can receive a waiver of the non-federal share requirement for Federal Work-Study (FWS) and Federal Supplemental Educational Opportunity Grant (FSEOG).",
       "category": "deadline",
-      "date": "2026-01-20",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/filing/individuals/when-to-file",
+      "date": "2026-03-31",
+      "source": "Federal Student Aid (FSA)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-03-31/apply-april-23-2026-designation-title-iii-institution-and-waiver-non-federal-share-requirement-fws-and-fseog",
       "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260408-medicaid-enrollment-oct2025",
-      "title": "CMS snapshot: 76.8M enrolled in Medicaid/CHIP in Oct. 2025",
-      "summary": "CMS reports that in October 2025, 76.8 million people were enrolled in Medicaid and CHIP (69.5 million in Medicaid and 7.2 million in CHIP). CMS also reports that between October 2024 and October 2025, Medicaid enrollment decreased by 2.6 million (4%), and CHIP enrollment decreased by 13,000 (less than 1%).",
-      "category": "update",
-      "date": "2026-02-24",
-      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
-      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
-    },
-    {
-      "id": "n-20260408-medicaid-epsdt-toolkit",
-      "title": "CMS announces new EPSDT behavioral health toolkit for states",
-      "summary": "CMS said it published a new toolkit on Medicaid.gov on February 20, 2026: “State Medicaid & CHIP Toolkit for Children’s Behavioral Health Services and the Early and Periodic Screening, Diagnostic and Treatment (EPSDT) Requirements.” CMS describes it as a resource for state Medicaid and CHIP agencies to help children and youth with behavioral health conditions access needed care.",
-      "category": "update",
-      "date": "2026-02-24",
-      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
-      "sourceUrl": "https://www.medicaid.gov/resources-for-states/downloads/covid19allstatecall02242026.pdf",
-      "programs": [
-        "medicaid",
-        "chip"
+        "pell",
+        "fws",
+        "fseog"
       ]
     }
   ]
