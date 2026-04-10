@@ -1,132 +1,125 @@
 {
-  "lastUpdated": "2026-04-09T11:06:00Z",
+  "lastUpdated": "2026-04-10T11:00:00Z",
   "items": [
     {
-      "id": "n-20260409-snap-max-allotments",
-      "title": "USDA: SNAP max benefit is $298/month for a 1-person household (Oct 2025–Sept 2026)",
-      "summary": "USDA’s Food and Nutrition Service lists the maximum SNAP monthly allotment for the 48 contiguous states and D.C. as $298 for a 1-person household and $994 for a 4-person household. The agency notes these figures apply for applications between Oct. 1, 2025 and Sept. 30, 2026 (amounts vary in Alaska, Hawaii, Guam, and the U.S. Virgin Islands).",
+      "id": "n-20260410-snap-cola-fy2026",
+      "title": "USDA sets SNAP FY2026 maximum allotments (Oct 2025–Sept 2026): $298 for 1 person, $994 for 4 in the 48 states/DC",
+      "summary": "USDA Food and Nutrition Service published FY2026 SNAP standards effective Oct. 1, 2025 through Sept. 30, 2026. The maximum monthly allotment in the 48 states and D.C. is $298 for a household of 1, $546 for 2, $785 for 3, and $994 for 4; standard deductions range from $209 (1–3 people) to $299 (6+).",
       "category": "update",
-      "date": "2025-09-30",
+      "date": "2025-08-14",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/recipient/eligibility",
-      "programs": [
-        "snap"
-      ]
+      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola",
+      "programs": ["snap"]
     },
     {
-      "id": "n-20260409-irs-eitc-2026",
-      "title": "IRS: 2026 EITC max credit rises to $8,231 for families with 3+ qualifying children",
-      "summary": "The IRS says the maximum Earned Income Tax Credit for tax year 2026 is $8,231 for qualifying taxpayers with three or more qualifying children (up from $8,046 for tax year 2025). The IRS notes these 2026 inflation adjustments generally apply to tax returns filed in 2027.",
-      "category": "update",
-      "date": "2025-10-09",
-      "source": "IRS Newsroom",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
-      "programs": [
-        "eitc"
-      ]
-    },
-    {
-      "id": "n-20260409-irs-adoption-credit-2026",
-      "title": "IRS: 2026 adoption credit increases to $17,670 (with $5,120 potentially refundable)",
-      "summary": "The IRS’ 2026 inflation adjustments set the maximum adoption credit at up to $17,670 of qualified adoption expenses (up from $17,280 for 2025). The IRS also lists $5,120 as the amount of the credit that may be refundable.",
-      "category": "update",
-      "date": "2025-10-09",
-      "source": "IRS Newsroom",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
-      "programs": [
-        "tax-credits"
-      ]
-    },
-    {
-      "id": "n-20260409-irs-employer-childcare-credit-2026",
-      "title": "IRS: Employer-provided childcare credit max increases to $500,000 for 2026",
-      "summary": "In its 2026 inflation adjustments release, the IRS says the maximum employer-provided childcare tax credit increases from $150,000 to $500,000 for tax year 2026 ($600,000 if the employer is an eligible small business). This change is part of the broader set of inflation adjustments the IRS publishes for 2026.",
+      "id": "n-20260410-snap-food-restriction-waivers-2026",
+      "title": "USDA lists new SNAP food-restriction waivers with 2026 target dates (e.g., Arkansas 7/1/26; South Carolina 8/31/26)",
+      "summary": "USDA FNS updated its tracker of approved SNAP food-restriction waivers showing multiple states with 2026 target implementation dates. Examples include Arkansas targeting July 1, 2026 to restrict soda and candy (and certain drinks with less than 50% juice) and South Carolina targeting Aug. 31, 2026 to restrict candy, energy drinks, and sweetened beverages.",
       "category": "policy-change",
-      "date": "2025-10-09",
-      "source": "IRS Newsroom",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
-      "programs": [
-        "child-care"
-      ]
+      "date": "2026-03-30",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "programs": ["snap"]
     },
     {
-      "id": "n-20260409-ssa-cola-2026",
-      "title": "SSA: Social Security and SSI benefits increase 2.8% in 2026",
-      "summary": "SSA announced a 2.8% cost-of-living adjustment (COLA) for 2026. SSA says nearly 71 million Social Security beneficiaries will see the increase beginning in January 2026, and increased payments to nearly 7.5 million SSI recipients begin December 31, 2025.",
+      "id": "n-20260410-medicaid-chip-sdp-rate-limits-2026",
+      "title": "CMS issues revised Medicaid managed care guidance limiting certain state directed payments tied to Medicare rates (effective for rating periods starting on/after July 4, 2025)",
+      "summary": "CMS issued revised guidance implementing Section 71116 of Public Law 119-21 that reduces the total payment rate limit for certain Medicaid managed care state directed payments (SDPs), including inpatient/outpatient hospital, nursing facility, and certain academic medical center practitioner services. The guidance describes limits of 100% of published Medicare rates for expansion states and 110% for non-expansion states, with temporary grandfathering for specified SDPs until rating periods beginning on/after Jan. 1, 2028.",
+      "category": "policy-change",
+      "date": "2026-02-02",
+      "source": "Medicaid.gov (CMS)",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/managed-care/downloads/sdp-letter-02022026.pdf",
+      "programs": ["medicaid", "chip"]
+    },
+    {
+      "id": "n-20260410-medicaid-managed-care-portal-july2026",
+      "title": "CMS: Starting July 1, 2026, Medicaid managed care contract and rate submissions must use the MC-Review state portal",
+      "summary": "In a March 2026 informational bulletin, CMS reminded states that beginning July 1, 2026, all Medicaid managed care contract and rate submissions transmitted after that date must use the MC-Review state portal (submissions before July 1, 2026 can still be sent via email). The bulletin also notes states should begin reporting SDP-specific T-MSIS fields as soon as possible, but no later than September 2026.",
+      "category": "deadline",
+      "date": "2026-03-12",
+      "source": "Medicaid.gov (CMS)",
+      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib03112026.pdf",
+      "programs": ["medicaid", "chip"]
+    },
+    {
+      "id": "n-20260410-ssi-ssdi-cola-2026",
+      "title": "SSA announces 2.8% COLA for 2026; new benefit amounts payable January 2026 (SSI starts Dec. 31, 2025)",
+      "summary": "The Social Security Administration announced a 2.8% cost-of-living adjustment (COLA) for 2026. SSA says increased Social Security benefits are payable beginning in January 2026, and SSI payments reflecting the COLA begin on Dec. 31, 2025.",
       "category": "update",
       "date": "2025-10-24",
       "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ],
-      "isBreaking": true
+      "programs": ["ssi", "ssdi"]
     },
     {
-      "id": "n-20260409-ssa-ssi-payment-standard-2026",
-      "title": "SSA: 2026 SSI federal payment standard is $994/month (individual) and $1,491/month (couple)",
-      "summary": "SSA’s 2026 COLA fact sheet lists the SSI federal payment standard at $994 per month for an eligible individual and $1,491 per month for an eligible couple. The same fact sheet includes estimated average benefits after the COLA, including $1,630 for all disabled workers.",
+      "id": "n-20260410-eitc-2026-max-credit",
+      "title": "IRS: 2026 EITC maximum credit is $8,231 for taxpayers with 3+ qualifying children",
+      "summary": "The IRS published inflation adjustments for tax year 2026 and stated the maximum Earned Income Tax Credit (EITC) amount is $8,231 for qualifying taxpayers with three or more qualifying children (up from $8,046 for 2025). The IRS directs filers to Revenue Procedure 2025-32 for the full EITC table, including thresholds and phase-outs.",
       "category": "update",
-      "date": "2025-10-24",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
+      "date": "2025-10-09",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "programs": ["eitc"]
     },
     {
-      "id": "n-20260409-ssa-taxable-maximum-2026",
-      "title": "SSA: Maximum earnings subject to Social Security tax increases to $184,500 in 2026",
-      "summary": "SSA’s 2026 COLA announcement says the taxable maximum (the maximum amount of earnings subject to the Social Security tax) is slated to rise to $184,500, up from $176,100. SSA includes the same $184,500 figure in its 2026 COLA fact sheet.",
-      "category": "update",
-      "date": "2025-10-24",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
-      "programs": [
-        "ssdi",
-        "ssi"
-      ]
-    },
-    {
-      "id": "n-20260409-medicaid-chip-enrollment-2025",
-      "title": "KFF: Medicaid/CHIP enrollment was 77.7 million as of June 2025 (down 18% from March 2023)",
-      "summary": "KFF reports total Medicaid and CHIP enrollment was 77.7 million as of June 2025, reflecting an 18% decline from March 2023 as states continued the post-pandemic eligibility redetermination process. KFF also notes enrollment remained 9% higher than pre-pandemic levels in February 2020.",
-      "category": "update",
-      "date": "2025-11-13",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/50-state-medicaid-budget-survey-fy-2025-2026/",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
-    },
-    {
-      "id": "n-20260409-medicaid-federal-cuts-hr1",
-      "title": "KFF: H.R. 1 Medicaid provisions estimated to reduce federal Medicaid spending by $911B (14%) over 10 years",
-      "summary": "KFF’s Medicaid budget survey overview says Medicaid provisions in H.R. 1 are estimated to reduce federal Medicaid spending by $911 billion (14%) over a decade. KFF highlights specific components including provider tax policy changes estimated at $191 billion over ten years and revisions to State Directed Payments estimated at $149 billion.",
+      "id": "n-20260410-wic-food-package-april2026",
+      "title": "USDA: WIC state agencies must allow at least one non-fresh fruit/vegetable option (frozen/canned/dried) by April 2026",
+      "summary": "USDA FNS said recent WIC food package changes require state agencies to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. FNS reported that as of November 2025, 95% of state agencies were already in compliance.",
       "category": "policy-change",
-      "date": "2025-11-13",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/50-state-medicaid-budget-survey-fy-2025-2026/",
-      "programs": [
-        "medicaid"
-      ]
+      "date": "2025-12-11",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": ["wic"]
     },
     {
-      "id": "n-20260409-fsa-title-iii-deadline-apr23",
-      "title": "FSA: Apply by April 23, 2026 for Title III designation and a waiver of the FWS/FSEOG non-federal share",
-      "summary": "Federal Student Aid published an electronic announcement reminding institutions to apply by April 23, 2026 for designation as a Title III institution. The announcement also notes eligible institutions can receive a waiver of the non-federal share requirement for Federal Work-Study (FWS) and Federal Supplemental Educational Opportunity Grant (FSEOG).",
+      "id": "n-20260410-pell-grant-2026-27-award-amounts",
+      "title": "Federal Student Aid: 2026–27 Pell Grant maximum remains $7,395; minimum is $740 (effective July 1, 2026–June 30, 2027)",
+      "summary": "Federal Student Aid issued a Dear Colleague Letter stating that for the 2026–27 award year (July 1, 2026 through June 30, 2027), the maximum Pell Grant award remains fixed at $7,395 under continuing appropriations. The minimum Pell Grant award is 10% of the maximum, or $740 (after rounding rules).",
+      "category": "update",
+      "date": "2026-01-30",
+      "source": "Federal Student Aid",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters/2026-01-30/2026-27-federal-pell-grant-maximum-and-minimum-award-amounts",
+      "programs": ["pell-grant"]
+    },
+    {
+      "id": "n-20260410-fafsa-2025-26-submission-deadline",
+      "title": "Federal Student Aid: 2025–26 FAFSA submission deadline is June 30, 2026",
+      "summary": "The 2025–26 FAFSA form can be submitted up through June 30, 2026 (for the 2025–26 award year). Students should confirm school and state deadlines may be earlier, but the federal processing deadline is June 30, 2026.",
+      "category": "deadline",
+      "date": "2026-04-10",
+      "source": "Federal Student Aid",
+      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
+      "programs": ["fafsa", "pell-grant"]
+    },
+    {
+      "id": "n-20260410-title-iii-fws-fseog-waiver-deadline",
+      "title": "Federal Student Aid: Apply by April 23, 2026 for Title III designation and waiver of FWS/FSEOG non-federal share requirement",
+      "summary": "Federal Student Aid reminded institutions to apply by April 23, 2026 for designation as a Title III institution and to request a waiver of the non-federal share requirement for Federal Work-Study (FWS) and Federal Supplemental Educational Opportunity Grant (FSEOG). Eligible institutions seeking the waiver must complete the application process by the April 23 deadline.",
       "category": "deadline",
       "date": "2026-03-31",
-      "source": "Federal Student Aid (FSA)",
+      "source": "Federal Student Aid",
       "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-03-31/apply-april-23-2026-designation-title-iii-institution-and-waiver-non-federal-share-requirement-fws-and-fseog",
-      "programs": [
-        "pell",
-        "fws",
-        "fseog"
-      ]
+      "programs": ["fws", "fseog"]
+    },
+    {
+      "id": "n-20260410-liheap-pa-deadline-may8-2026",
+      "title": "Pennsylvania LIHEAP deadline extended to May 8, 2026 for 2025–26 season (cash grants $200–$1,000; crisis grants up to $1,000)",
+      "summary": "Legal Aid of Southeastern Pennsylvania reported Pennsylvania's 2025–26 LIHEAP season is open Dec. 3, 2025 through May 8, 2026 after an extension. The update notes cash grants of $200–$1,000 to help pay heating bills and crisis grants of $25–$1,000 for emergencies.",
+      "category": "deadline",
+      "date": "2026-03-20",
+      "source": "Legal Aid of Southeastern Pennsylvania",
+      "sourceUrl": "https://www.lasp.org/news/liheap-home-heating-flyer-for-4-counties",
+      "programs": ["liheap"]
+    },
+    {
+      "id": "n-20260410-kff-medicaid-budget-survey-fy2026",
+      "title": "KFF: In FY2026, 41 of 48 responding states reported implementing Medicaid fee-for-service rate increases; 36 states planned benefit enhancements",
+      "summary": "KFF’s annual Medicaid budget survey overview reported that three-quarters of responding states (41 of 48) implemented fee-for-service provider rate increases for at least one provider category in FY2026, while 6 states reported rate restrictions. KFF also reported 36 states planned to add or enhance benefits in FY2026, while 4 reported benefit cuts or limitations.",
+      "category": "update",
+      "date": "2025-11-13",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/50-state-medicaid-budget-survey-fy-2025-2026/",
+      "programs": ["medicaid"]
     }
   ]
 }
