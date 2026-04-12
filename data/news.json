@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-11T11:11:53.551550Z",
+  "lastUpdated": "2026-04-12T11:09:00Z",
   "items": [
     {
       "id": "n-20260408-medicaid-chip",
-      "title": "CMS issues guidance on new limits to federal Medicaid/CHIP matching funds for certain noncitizens",
-      "summary": "CMS released a State Health Official letter to help states implement limits on claiming federal matching funds for Medicaid and CHIP for certain noncitizens starting October 1, 2026. The guidance notes exceptions, including federal matching funds for treatment of emergency medical conditions and continued options for covering lawfully residing children and pregnant people in Medicaid/CHIP.",
+      "title": "CMS issues guidance on upcoming limits to federal Medicaid/CHIP matching funds for certain noncitizens",
+      "summary": "CMS released a State Health Official letter advising states that beginning 2026-10-01 they must limit federal financial participation (FFP) for Medicaid and CHIP to eligible categories of noncitizens under the new statutory limits. CMS noted exceptions including continued federal matching funds for emergency medical conditions and that the change does not apply to states\u2019 options to cover lawfully residing children and pregnant people in Medicaid/CHIP.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "CMS",
@@ -16,61 +16,75 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260401-snap-texas-restrictions",
-      "title": "Texas SNAP waiver starts restricting sweetened drinks and candy purchases",
-      "summary": "A USDA retailer notice says Texas’ SNAP food restriction waiver took effect April 1, 2026, limiting purchases of sweetened drinks and candy with SNAP EBT. The notice defines sweetened drinks as non-alcoholic beverages made with water that contain five grams or more of added sugar or any amount of artificial sweetener.",
+      "id": "n-20260408-medicaid-sho",
+      "title": "Medicaid.gov posts SHO #26-001 detailing implementation steps for section 71109 noncitizen FFP limits",
+      "summary": "The SHO letter states the implementation date is 2026-10-01 and describes operational impacts for applicants and existing enrollees on that date, including eligibility systems and proper FFP claiming for Medicaid and CHIP. It also notes CHIP-specific implications, including that beginning 2026-10-01 FFP will no longer be available for some CHIP beneficiaries in a continuous eligibility period under specified statutory provisions.",
+      "category": "update",
+      "date": "2026-04-08",
+      "source": "Medicaid.gov",
+      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/sho26001.pdf",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260316-section8-hcv",
+      "title": "HUD PIH Notice 2026-06 rescinds multiple COVID-era notices affecting Housing Choice Vouchers and public housing administration",
+      "summary": "HUD\u2019s PIH Notice 2026-06 (issued 2026-03-16) rescinds a long list of COVID-19-related PIH notices (including CARES Act HCV admin fee and HAP supplemental funding guidance) and revises some remaining guidance. HUD said this is because pandemic-related guidance is no longer necessary or has become obsolete, while emphasizing PHAs must still comply with federal civil-rights language-access obligations.",
       "category": "policy-change",
-      "date": "2026-04-01",
+      "date": "2026-03-16",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-06.pdf",
+      "programs": [
+        "section8",
+        "housing-choice-voucher",
+        "public-housing"
+      ]
+    },
+    {
+      "id": "n-20260306-section8-notices",
+      "title": "HUD publishes PIH Notices 2026-04 and 2026-05 rolling back certain flexibilities for vouchers and homelessness-related admissions",
+      "summary": "HUD Notice PIH 2026-04 rescinds Notice PIH 2024-17, which had allowed streamlined verification flexibilities (e.g., temporary self-certification for certain documents) to expedite admissions for people experiencing homelessness. HUD Notice PIH 2026-05 revises the Emergency Housing Voucher and Stability Voucher programs by rescinding flexibility that allowed PHAs to delay collecting Social Security and citizenship/eligible immigration documentation within 180 days of admission.",
+      "category": "policy-change",
+      "date": "2026-03-06",
+      "source": "NAHRO (summarizing HUD notices)",
+      "sourceUrl": "https://www.nahro.org/news/two-new-hud-notices-rescind-flexibilities-for-hcvs-public-housing-ehvs-and-stability-vouchers/",
+      "programs": [
+        "section8",
+        "housing-choice-voucher",
+        "ehv",
+        "stability-vouchers"
+      ]
+    },
+    {
+      "id": "n-20260304-snap-kansas",
+      "title": "USDA approves Kansas SNAP demonstration to restrict purchases of candy and soft drinks (effective 2027-02-15)",
+      "summary": "USDA FNS approved Kansas\u2019 request to amend the SNAP definition of eligible food to exclude candy and soft drinks. The approval is for two years and is effective 2027-02-15.",
+      "category": "policy-change",
+      "date": "2026-03-04",
       "source": "USDA FNS",
-      "sourceUrl": "https://fns-prod.azureedge.us/sites/default/files/resource-files/snap-retailernotice-foodrestrictionwaiver-texas.pdf",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction/kansas",
       "programs": [
         "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260409-irs-extension-deadline",
-      "title": "IRS reminds taxpayers: April 15 filing deadline; extensions give until Oct. 15 but taxes still due April 15",
-      "summary": "The IRS says the deadline to file 2025 federal income tax returns is April 15, 2026, and taxpayers who need more time should request an extension by that date. The IRS notes an extension moves the filing deadline to October 15, but it does not extend the time to pay—tax due is still owed by April 15 to avoid penalties and interest.",
-      "category": "deadline",
-      "date": "2026-04-09",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/need-more-time-to-file-dont-wait-request-an-extension",
-      "programs": [
-        "eitc",
-        "ctc"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260126-eitc-ctc-refunds",
-      "title": "IRS: most EITC/ACTC refunds expected by March 2; refund tracker updates for early EITC/ACTC filers by Feb. 21",
-      "summary": "In its announcement opening the 2026 filing season, the IRS said it expects most refunds for filers claiming the Earned Income Tax Credit (EITC) or the Additional Child Tax Credit (ACTC) to be available by March 2, 2026 (for direct deposit filers with no other issues). The IRS also said Where’s My Refund? will provide projected deposit dates for most early EITC/ACTC refund filers by February 21, 2026.",
-      "category": "update",
-      "date": "2026-01-26",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
-      "programs": [
-        "eitc",
-        "ctc"
       ]
     },
     {
-      "id": "n-20260409-liheap-comments",
-      "title": "Federal Register: HHS seeks comments on reinstating LIHEAP Household Report information collection",
-      "summary": "The Federal Register published a notice that HHS (including the Administration for Children and Families) is seeking to reinstate the LIHEAP Household Report (OMB No. 0970-0060). Comments are due June 8, 2026.",
-      "category": "deadline",
-      "date": "2026-04-09",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/09/2026-06804/proposed-information-collection-activity-annual-report-on-households-assisted-by-the-low-income-home?format=json",
+      "id": "n-20260304-snap-ohio",
+      "title": "USDA approves Ohio SNAP demonstration to restrict purchases of sugar-sweetened beverages (effective 2026-10-01)",
+      "summary": "USDA FNS approved Ohio\u2019s request to amend the SNAP definition of eligible food to exclude sugar-sweetened beverages. The approval is for two years and is effective 2026-10-01.",
+      "category": "policy-change",
+      "date": "2026-03-04",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction/ohio",
       "programs": [
-        "liheap"
+        "snap"
       ]
     },
     {
-      "id": "n-20251211-wic-fruit-veg",
-      "title": "USDA: WIC state agencies must allow at least one additional form of fruits/vegetables (frozen/canned/dried) by April 2026",
-      "summary": "USDA FNS says recent WIC food package changes require state agencies to authorize at least one form of fruits and vegetables beyond fresh (frozen, canned, and/or dried) by April 2026. FNS also notes that as of November 2025, 95% of state agencies were already in compliance with this requirement.",
+      "id": "n-20251211-wic-cvvb",
+      "title": "USDA reminds WIC agencies: by April 2026, authorize at least one non-fresh form of fruits/vegetables for the cash-value benefit",
+      "summary": "USDA FNS said recent WIC food package changes require state agencies to allow participants to buy at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. FNS reported that as of November 2025, 95% of state agencies were already in compliance.",
       "category": "deadline",
       "date": "2025-12-11",
       "source": "USDA FNS",
@@ -80,77 +94,28 @@
       ]
     },
     {
-      "id": "n-20250924-fafsa-2026-27",
-      "title": "2026–27 FAFSA is available; online submissions typically processed in 1–3 days",
-      "summary": "Federal Student Aid announced the 2026–27 FAFSA is available for students seeking aid for attendance between July 1, 2026 and June 30, 2027. The announcement says online FAFSA submissions are typically processed in one to three days.",
-      "category": "deadline",
-      "date": "2025-09-24",
-      "source": "Federal Student Aid",
-      "sourceUrl": "https://financialaidtoolkit.ed.gov/tk/announcement-detail.jsp?id=fafsa-updates",
+      "id": "n-20251128-liheap",
+      "title": "About $3.6B in LIHEAP heating assistance released to states and tribes after delay",
+      "summary": "An AP report published by PBS NewsHour said about $3.6 billion in postponed LIHEAP funding was released to states and tribes, citing the National Energy Assistance Directors Association (NEADA). The report notes the delay was tied to a federal government shutdown that ended 2025-11-12.",
+      "category": "update",
+      "date": "2025-11-28",
+      "source": "PBS NewsHour (AP)",
+      "sourceUrl": "https://www.pbs.org/newshour/politics/long-awaited-3-6-billion-in-federal-heating-assistance-released-to-states-and-tribes",
       "programs": [
-        "pell-grant"
+        "liheap"
       ]
     },
     {
-      "id": "n-20260312-medicaid-expansion",
-      "title": "KFF update: 41 states (including DC) have adopted ACA Medicaid expansion; eligibility up to 138% FPL",
-      "summary": "KFF reports that 41 states (including DC) have adopted the ACA Medicaid expansion, while 10 states have not. KFF notes expansion eligibility is generally up to 138% of the federal poverty level, which it lists as $21,597 for an individual in 2025.",
+      "id": "n-20251001-ssi-cola",
+      "title": "SSA posts 2026 SSI federal payment amounts after 2.8% COLA",
+      "summary": "SSA\u2019s COLA page shows a 2.8% cost-of-living adjustment effective January 2026. The maximum federal SSI monthly payment amounts for 2026 are $994 for an eligible individual, $1,491 for an eligible couple, and $498 for an essential person.",
       "category": "update",
-      "date": "2026-03-12",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
-      "programs": [
-        "medicaid"
-      ]
-    },
-    {
-      "id": "n-20251024-ssi-ssdi-cola-2026",
-      "title": "SSA: Social Security and SSI benefits increase 2.8% in 2026",
-      "summary": "SSA announced a 2.8% cost-of-living adjustment (COLA) for 2026, with Social Security benefits increasing in January 2026 and SSI payments beginning December 31, 2025. SSA also said the taxable maximum will rise to $184,500 (from $176,100).",
-      "category": "update",
-      "date": "2025-10-24",
+      "date": "2025-10-01",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
+      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
       "programs": [
         "ssi",
         "ssdi"
-      ]
-    },
-    {
-      "id": "n-20260330-snap-waivers",
-      "title": "USDA posts state list of SNAP food restriction waivers with target implementation dates",
-      "summary": "USDA’s SNAP Food Restriction Waivers page lists states with approved waivers and their target implementation dates. The list includes examples of restrictions such as soft drinks, sweetened carbonated beverages, and candy, depending on the state waiver.",
-      "category": "update",
-      "date": "2026-03-30",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260402-student-aid-handbook",
-      "title": "Federal Student Aid releases 2026–27 Student Aid Handbook Application and Verification Guide",
-      "summary": "Federal Student Aid posted an electronic announcement that the 2026–27 Federal Student Aid Handbook’s Application and Verification Guide is now available. Schools use the guide for FAFSA application processing and verification rules for the 2026–27 cycle.",
-      "category": "update",
-      "date": "2026-04-02",
-      "source": "FSA Partner Connect",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters",
-      "programs": [
-        "pell-grant"
-      ]
-    },
-    {
-      "id": "n-20260409-tax-mailing-postmark",
-      "title": "Taxpayer Advocate warns new USPS rules could affect whether mailed tax filings count as on time",
-      "summary": "The Taxpayer Advocate Service cautioned that new USPS rules could result in postmarks that are later than the day a return or payment was actually mailed, which matters because the IRS generally treats documents as timely if postmarked on or before the due date. TAS notes the due date for most 2025 individual returns is April 15, 2026.",
-      "category": "update",
-      "date": "2026-04-09",
-      "source": "Taxpayer Advocate Service",
-      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/news/nta-blog/new-u-s-postal-service-rules-could-affect-whether-your-tax-filing-is-considered-on-time/2026/04/",
-      "programs": [
-        "eitc",
-        "ctc"
       ]
     }
   ]
