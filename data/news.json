@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-12T11:09:00Z",
+  "lastUpdated": "2026-04-13T11:00:00Z",
   "items": [
     {
       "id": "n-20260408-medicaid-chip",
       "title": "CMS issues guidance on upcoming limits to federal Medicaid/CHIP matching funds for certain noncitizens",
-      "summary": "CMS released a State Health Official letter advising states that beginning 2026-10-01 they must limit federal financial participation (FFP) for Medicaid and CHIP to eligible categories of noncitizens under the new statutory limits. CMS noted exceptions including continued federal matching funds for emergency medical conditions and that the change does not apply to states\u2019 options to cover lawfully residing children and pregnant people in Medicaid/CHIP.",
+      "summary": "CMS said states must implement new statutory limits on when they can claim federal matching funds (FFP) for Medicaid and CHIP for certain noncitizens starting 2026-10-01. CMS noted exceptions, including continued federal matching for treatment of emergency medical conditions and that the changes do not apply to the option to cover lawfully residing children and pregnant women in Medicaid/CHIP.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "CMS",
@@ -16,26 +16,50 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260408-medicaid-sho",
-      "title": "Medicaid.gov posts SHO #26-001 detailing implementation steps for section 71109 noncitizen FFP limits",
-      "summary": "The SHO letter states the implementation date is 2026-10-01 and describes operational impacts for applicants and existing enrollees on that date, including eligibility systems and proper FFP claiming for Medicaid and CHIP. It also notes CHIP-specific implications, including that beginning 2026-10-01 FFP will no longer be available for some CHIP beneficiaries in a continuous eligibility period under specified statutory provisions.",
+      "id": "n-20260408-medicaid-wftc",
+      "title": "Medicaid.gov posts Working Families Tax Cut implementation hub (includes new guidance links for eligibility reforms)",
+      "summary": "CMS posted a dedicated page to centralize guidance and technical assistance for Medicaid/CHIP changes in Public Law 119-21 (the \"Working Families Tax Cut\"). The page highlights an \"Alien Medicaid Eligibility\" item posted 2026-04-08 (section 71109) and other Medicaid eligibility redetermination resources posted in March and April 2026.",
       "category": "update",
       "date": "2026-04-08",
       "source": "Medicaid.gov",
-      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/sho26001.pdf",
+      "sourceUrl": "https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260316-section8-hcv",
-      "title": "HUD PIH Notice 2026-06 rescinds multiple COVID-era notices affecting Housing Choice Vouchers and public housing administration",
-      "summary": "HUD\u2019s PIH Notice 2026-06 (issued 2026-03-16) rescinds a long list of COVID-19-related PIH notices (including CARES Act HCV admin fee and HAP supplemental funding guidance) and revises some remaining guidance. HUD said this is because pandemic-related guidance is no longer necessary or has become obsolete, while emphasizing PHAs must still comply with federal civil-rights language-access obligations.",
+      "id": "n-20260330-snap-waivers",
+      "title": "USDA posts tracker of SNAP food restriction waivers (multiple 2026 implementation dates)",
+      "summary": "USDA published a table of states with approved SNAP food restriction waivers, including target implementation dates such as Florida (2026-04-20) and Colorado (2026-04-30). The waivers generally restrict purchases of items like soda, candy, energy drinks, and other specified products depending on the state.",
       "category": "policy-change",
-      "date": "2026-03-16",
+      "date": "2026-03-30",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260408-liheap-pa",
+      "title": "Pennsylvania extends 2025-26 LIHEAP application season to May 8, 2026",
+      "summary": "Pennsylvania DHS extended the 2025-26 LIHEAP season from April 10 to May 8, 2026, citing adequate funding to continue the season after a delayed opening due to a federal shutdown. DHS reported LIHEAP has helped more than 233,000 households with an average $282 cash benefit and nearly 83,000 households with an average $558 crisis benefit so far this season.",
+      "category": "deadline",
+      "date": "2026-04-08",
+      "source": "Pennsylvania Department of Human Services",
+      "sourceUrl": "https://www.pa.gov/agencies/dhs/newsroom/shapiro-administration-extends-liheap-season-to-may-8",
+      "programs": [
+        "liheap"
+      ]
+    },
+    {
+      "id": "n-20260305-section8-pih202604",
+      "title": "HUD rescinds streamlined waiver process meant to expedite voucher admissions for people experiencing homelessness",
+      "summary": "HUD Notice PIH 2026-04 rescinds prior guidance (Notice PIH 2024-17) that described a streamlined review process for regulatory waivers to expedite admission to Housing Choice Vouchers (HCV), Project-based Vouchers (PBV), and public housing for people experiencing homelessness. HUD says waivers already approved or granted under the prior process remain valid until their stated expiration.",
+      "category": "policy-change",
+      "date": "2026-03-05",
       "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-06.pdf",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-04.pdf",
       "programs": [
         "section8",
         "housing-choice-voucher",
@@ -43,79 +67,68 @@
       ]
     },
     {
-      "id": "n-20260306-section8-notices",
-      "title": "HUD publishes PIH Notices 2026-04 and 2026-05 rolling back certain flexibilities for vouchers and homelessness-related admissions",
-      "summary": "HUD Notice PIH 2026-04 rescinds Notice PIH 2024-17, which had allowed streamlined verification flexibilities (e.g., temporary self-certification for certain documents) to expedite admissions for people experiencing homelessness. HUD Notice PIH 2026-05 revises the Emergency Housing Voucher and Stability Voucher programs by rescinding flexibility that allowed PHAs to delay collecting Social Security and citizenship/eligible immigration documentation within 180 days of admission.",
-      "category": "policy-change",
-      "date": "2026-03-06",
-      "source": "NAHRO (summarizing HUD notices)",
-      "sourceUrl": "https://www.nahro.org/news/two-new-hud-notices-rescind-flexibilities-for-hcvs-public-housing-ehvs-and-stability-vouchers/",
+      "id": "n-20260325-section8-adminfees",
+      "title": "HUD releases CY 2026 Housing Choice Voucher administrative fee rate guidance (including proration and Mainstream voucher change)",
+      "summary": "HUD said CY 2026 HCV administrative fees will be paid based on units leased as of the first day of each month (from Voucher Management System data), with Column A rates applying to the first 7,200 unit-months and Column B to additional unit-months. HUD also said advanced administrative fees for January through March 2026 were at 88% proration, and starting in CY 2026 renewal funding for Mainstream vouchers will be included with the regular HCV program.",
+      "category": "update",
+      "date": "2026-03-25",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/2026-Administrative-Fee-Rate-Descriptions.pdf",
       "programs": [
         "section8",
-        "housing-choice-voucher",
-        "ehv",
-        "stability-vouchers"
+        "housing-choice-voucher"
       ]
     },
     {
-      "id": "n-20260304-snap-kansas",
-      "title": "USDA approves Kansas SNAP demonstration to restrict purchases of candy and soft drinks (effective 2027-02-15)",
-      "summary": "USDA FNS approved Kansas\u2019 request to amend the SNAP definition of eligible food to exclude candy and soft drinks. The approval is for two years and is effective 2027-02-15.",
-      "category": "policy-change",
-      "date": "2026-03-04",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction/kansas",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260304-snap-ohio",
-      "title": "USDA approves Ohio SNAP demonstration to restrict purchases of sugar-sweetened beverages (effective 2026-10-01)",
-      "summary": "USDA FNS approved Ohio\u2019s request to amend the SNAP definition of eligible food to exclude sugar-sweetened beverages. The approval is for two years and is effective 2026-10-01.",
-      "category": "policy-change",
-      "date": "2026-03-04",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction/ohio",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20251211-wic-cvvb",
-      "title": "USDA reminds WIC agencies: by April 2026, authorize at least one non-fresh form of fruits/vegetables for the cash-value benefit",
-      "summary": "USDA FNS said recent WIC food package changes require state agencies to allow participants to buy at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. FNS reported that as of November 2025, 95% of state agencies were already in compliance.",
+      "id": "n-20260414-hudvash-fees",
+      "title": "HUD sets April 14, 2026 deadline for PHAs to apply for $10 million in additional HUD-VASH administrative fees",
+      "summary": "HUD Notice PIH 2026-01 (Revised) announces $10 million in additional administrative fee funding for public housing agencies administering HUD-VASH vouchers. HUD says applications must be received no later than midnight on April 14, 2026 (in the PHA\u2019s time zone).",
       "category": "deadline",
-      "date": "2025-12-11",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "date": "2026-03-25",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-01.pdf",
       "programs": [
-        "wic"
+        "hud-vash",
+        "section8",
+        "housing-choice-voucher"
       ]
     },
     {
-      "id": "n-20251128-liheap",
-      "title": "About $3.6B in LIHEAP heating assistance released to states and tribes after delay",
-      "summary": "An AP report published by PBS NewsHour said about $3.6 billion in postponed LIHEAP funding was released to states and tribes, citing the National Energy Assistance Directors Association (NEADA). The report notes the delay was tied to a federal government shutdown that ended 2025-11-12.",
-      "category": "update",
-      "date": "2025-11-28",
-      "source": "PBS NewsHour (AP)",
-      "sourceUrl": "https://www.pbs.org/newshour/politics/long-awaited-3-6-billion-in-federal-heating-assistance-released-to-states-and-tribes",
+      "id": "n-20260126-eitc-actc",
+      "title": "IRS opens 2026 filing season; EITC/ACTC refunds expected by March 2, 2026 for many early filers",
+      "summary": "The IRS said the federal filing deadline for 2025 tax returns is April 15, 2026. The agency also said most refunds claiming the Earned Income Tax Credit (EITC) or Additional Child Tax Credit (ACTC) should be available by March 2, 2026 for taxpayers who choose direct deposit and have no other issues, and that \"Where\u2019s My Refund?\" will provide projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026.",
+      "category": "deadline",
+      "date": "2026-01-26",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
       "programs": [
-        "liheap"
+        "eitc",
+        "ctc"
       ]
     },
     {
-      "id": "n-20251001-ssi-cola",
+      "id": "n-20260401-ssi-amounts",
       "title": "SSA posts 2026 SSI federal payment amounts after 2.8% COLA",
-      "summary": "SSA\u2019s COLA page shows a 2.8% cost-of-living adjustment effective January 2026. The maximum federal SSI monthly payment amounts for 2026 are $994 for an eligible individual, $1,491 for an eligible couple, and $498 for an essential person.",
+      "summary": "SSA said the 2.8% COLA becomes effective in January 2026 and increases maximum federal SSI payment amounts. The monthly maximum federal SSI amounts for 2026 are $994 for an eligible individual, $1,491 for an eligible couple, and $498 for an essential person.",
       "category": "update",
-      "date": "2025-10-01",
+      "date": "2026-01-01",
       "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
       "programs": [
         "ssi",
         "ssdi"
+      ]
+    },
+    {
+      "id": "n-20251211-wic-cvvb",
+      "title": "USDA reminds WIC agencies: by April 2026, authorize at least one non-fresh form of fruits/vegetables for the cash-value benefit",
+      "summary": "USDA FNS said recent WIC food package changes require state agencies to allow participants to buy at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. FNS also published FY 2026 monthly cash-value voucher/benefit amounts, including $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants.",
+      "category": "deadline",
+      "date": "2025-12-11",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": [
+        "wic"
       ]
     }
   ]
