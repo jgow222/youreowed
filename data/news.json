@@ -1,128 +1,106 @@
 {
-  "lastUpdated": "2026-04-14T14:10:00Z",
+  "lastUpdated": "2026-04-15T11:06:07Z",
   "items": [
     {
-      "id": "n-20260414-snap-florida-restrictions-apr20",
-      "title": "Florida SNAP food restrictions take effect April 20, 2026: soda, energy drinks, candy, and prepared desserts banned",
-      "summary": "Starting April 20, 2026, Florida SNAP recipients will no longer be able to purchase soda, energy drinks (65+ mg caffeine per 8 oz), candy, or prepared desserts with EBT benefits. The waiver remains in effect for two years through April 19, 2028. Coffee and tea are not affected.",
-      "category": "policy-change",
-      "date": "2026-03-23",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": ["snap"],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260414-snap-colorado-restrictions-apr30",
-      "title": "Colorado SNAP Healthy Choice Waiver restricts soft drink purchases starting April 30, 2026",
-      "summary": "Colorado will restrict SNAP purchases of soft drinks starting April 30, 2026. The restriction covers sodas, sweetened iced teas, energy drinks, sports drinks, and beverages with less than 50% fruit/vegetable juice. Water, unsweetened seltzers, milk, and 100% juice remain purchasable.",
-      "category": "policy-change",
-      "date": "2026-01-28",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": ["snap"]
-    },
-    {
-      "id": "n-20260414-medicaid-provider-tax-apr1",
-      "title": "KFF: Medicaid provider-tax waiver limits may force changes in some states as early as April 1, 2026",
-      "summary": "KFF reports that new limits on CMS 'uniformity waivers' for provider taxes could require some states to revise provider taxes as early as April 1, 2026, with at least seven states estimated to be affected (including CA, IL, MA, MI, OH, NY, and WV). The 2025 reconciliation law's Medicaid changes are projected to reduce federal Medicaid spending by $911 billion over 10 years.",
-      "category": "policy-change",
-      "date": "2026-01-23",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
-      "programs": ["medicaid", "chip"],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260414-medicaid-work-req-2027",
-      "title": "KFF: New Medicaid work requirements for expansion adults slated to start Jan. 1, 2027",
-      "summary": "KFF says the 2025 reconciliation law creates new work requirements for Medicaid enrollees in the ACA expansion group starting January 1, 2027. KFF estimates more than half (5.3 million) of people newly uninsured from these Medicaid changes would be tied to the new work requirements.",
-      "category": "policy-change",
-      "date": "2026-01-23",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
-      "programs": ["medicaid"]
-    },
-    {
-      "id": "n-20260414-medicaid-noncitizen-limits",
-      "title": "CMS issues guidance on new limits to federal Medicaid/CHIP matching funds for certain noncitizens effective Oct. 1, 2026",
-      "summary": "CMS is preparing states for an upcoming change that will limit the ability to claim federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens or nationals. Exceptions include emergency medical conditions and lawfully residing children and pregnant people under state options.",
+      "id": "n-20260408-medicaid-chip-funding",
+      "title": "CMS issues guidance on new limits for federal Medicaid/CHIP matching funds for certain noncitizens (effective Oct. 1, 2026)",
+      "summary": "CMS released operational guidance for states on implementing a statutory change that limits claiming federal matching funds in Medicaid and CHIP for individuals who are not U.S. citizens or U.S. nationals (or who fall into specified noncitizen categories). The change takes effect October 1, 2026, with exceptions that still allow federal matching funds for emergency medical conditions and for optional coverage of lawfully residing children and pregnant women.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "CMS",
       "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
-      "programs": ["medicaid", "chip"]
-    },
-    {
-      "id": "n-20260414-medicaid-enrollment-dec2025",
-      "title": "CMS: Medicaid/CHIP enrollment at 75.7 million in December 2025, down 3.7 million from December 2024",
-      "summary": "December 2025 data shows 68.5 million individuals enrolled in Medicaid and 7.2 million in CHIP, for a total of 75.7 million. Enrollment dropped about 1.0% from November 2025 (727,000 people) and is down 4.7% from December 2024.",
-      "category": "update",
-      "date": "2026-03-30",
-      "source": "CMS (Medicaid.gov)",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html",
-      "programs": ["medicaid", "chip"]
-    },
-    {
-      "id": "n-20260414-irs-tax-day-apr15",
-      "title": "IRS deadline: April 15, 2026 is the federal filing and payment deadline for 2025 tax returns",
-      "summary": "The federal deadline to file 2025 individual income tax returns (Form 1040) and pay taxes owed is April 15, 2026. Taxpayers can request an extension to October 15, 2026 for filing only — taxes are still due April 15. EITC/ACTC refunds were available by March 2 for most early filers who used direct deposit.",
-      "category": "deadline",
-      "date": "2026-01-26",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
-      "programs": ["eitc", "ctc"],
+      "programs": [
+        "medicaid",
+        "chip"
+      ],
       "isBreaking": true
     },
     {
-      "id": "n-20260414-pell-grant-2026-27",
-      "title": "Pell Grant 2026-27: maximum award set at $7,395; new hard SAI cutoff at $14,790",
-      "summary": "For the 2026-27 award year (July 1, 2026 through June 30, 2027), the maximum Pell Grant is $7,395 and the minimum is $740. Congress locked in a new rule blocking Pell eligibility for students whose Student Aid Index (SAI) is $14,790 or higher. The FAFSA federal deadline is June 30, 2027.",
+      "id": "n-20260414-medicaid-work-requirements-2027",
+      "title": "KFF: Medicaid work requirements for ACA expansion adults required starting Jan. 1, 2027 (states may start earlier)",
+      "summary": "KFF reports that a 2025 reconciliation law requires states to condition Medicaid eligibility for adults in the ACA expansion group (and partial expansion waiver programs in Georgia and Wisconsin) on meeting work requirements starting January 1, 2027. KFF notes states have the option to implement requirements earlier, and implementation will require new eligibility information collection, systems changes, and outreach.",
       "category": "update",
-      "date": "2026-04-08",
-      "source": "Federal Student Aid",
-      "sourceUrl": "https://www.usa.gov/fafsa",
-      "programs": ["pell-grant"]
+      "date": "2026-04-14",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/implementing-medicaid-work-requirements-lessons-from-unwinding/",
+      "programs": [
+        "medicaid"
+      ]
     },
     {
-      "id": "n-20260414-ssi-ssdi-cola-2026",
-      "title": "SSA: 2.8% COLA for 2026; SSI maximum is $994/month (individual) and $1,491/month (couple)",
-      "summary": "SSA confirmed a 2.8% cost-of-living adjustment for 2026 affecting about 75 million Americans. The federal SSI payment standard is $994/month for individuals and $1,491/month for couples. Disability work thresholds are $1,690/month (non-blind SGA) and $2,830/month (blind SGA).",
+      "id": "n-20260408-snap-participation-drop",
+      "title": "CBPP: SNAP participation fell 2.5 million (6%) between July 2025 enactment of H.R. 1 and December 2025 USDA data",
+      "summary": "CBPP’s SNAP Tracker cites USDA data showing nationwide SNAP participation fell by 2.5 million people (6%) between July 2025 (when H.R. 1 was enacted) and December 2025 (the latest month of USDA data). CBPP notes some states saw much larger declines (for example Arizona’s reported 32% decline, and 47% using more recent state data), and links the changes to the implementation of H.R. 1 policies.",
+      "category": "update",
+      "date": "2026-04-08",
+      "source": "Center on Budget and Policy Priorities",
+      "sourceUrl": "https://www.cbpp.org/research/food-assistance/snap-tracker-people-are-losing-food-assistance-as-the-republican-megabill",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260302-hud-section8-proposed-rule-comments",
+      "title": "HUD proposes optional work requirements and term limits for certain assisted households; public comments due May 1, 2026",
+      "summary": "A HUD proposed rule in the Federal Register would amend HUD regulations to allow Public Housing Agencies (PHAs) and certain multifamily owners to choose to implement work requirements for work-eligible adults and term limits for non-elderly, non-disabled families in covered HUD rental assistance programs. The public comment period is open through May 1, 2026.",
+      "category": "deadline",
+      "date": "2026-03-02",
+      "source": "Federal Register (HUD)",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/03/02/2026-04095/establishing-flexibility-for-implementation-of-work-requirements-and-term-limits",
+      "programs": [
+        "section8",
+        "public-housing"
+      ]
+    },
+    {
+      "id": "n-20260409-liheap-household-report-comments",
+      "title": "HHS proposes reinstating LIHEAP Household Report information collection; public comments due June 8, 2026",
+      "summary": "HHS’s Office of Community Services (OCS) published a Federal Register notice to reinstate the LIHEAP Household Report (OMB Control No. 0970-0060), which states use to report households assisted with LIHEAP block grant funds. The notice sets a public comment deadline of June 8, 2026.",
+      "category": "deadline",
+      "date": "2026-04-09",
+      "source": "Federal Register (HHS/OCS)",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/09/2026-06804/proposed-information-collection-activity-annual-report-on-households-assisted-by-the-low-income-home",
+      "programs": [
+        "liheap"
+      ]
+    },
+    {
+      "id": "n-20260316-irs-freefile-extension",
+      "title": "IRS: Anyone can file a free federal tax filing extension through IRS Free File (pay by April 15; file by Oct. 15)",
+      "summary": "The IRS says anyone can use an IRS Free File partner to file an extension, even if they do not qualify for Free File for preparing a return. The extension gives taxpayers until October 15 to file, but taxpayers still need to file the extension and pay any balance due by April 15 to avoid penalties.",
+      "category": "deadline",
+      "date": "2026-03-16",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/filing/file-an-extension-through-irs-free-file",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20251211-wic-cvvb-fy26",
+      "title": "USDA WIC memo: states must authorize at least one non-fresh fruit/veg form by April 2026; FY26 CVV/B amounts include $48 for pregnant/postpartum",
+      "summary": "USDA FNS says WIC food package changes require state agencies to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. For FY 2026, FNS reports an 11.8% inflation adjustment over the FY 2022 baseline and lists monthly CVV/B amounts of $26 for children, $48 for pregnant and postpartum participants, and $52 for breastfeeding participants.",
+      "category": "policy-change",
+      "date": "2025-12-11",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20251024-ssa-cola-2026",
+      "title": "SSA: Social Security and SSI benefits increase 2.8% in 2026 (SSI increases start Dec. 31, 2025)",
+      "summary": "The Social Security Administration announced a 2.8% cost-of-living adjustment (COLA) for 2026, with Social Security benefit increases beginning in January 2026 and SSI increases beginning December 31, 2025. SSA also said the taxable maximum for 2026 is slated to rise to $184,500 (from $176,100).",
       "category": "update",
       "date": "2025-10-24",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": ["ssi", "ssdi"]
-    },
-    {
-      "id": "n-20260414-liheap-reallotment-comments",
-      "title": "Federal Register: ACF proposes reallotment of FY2025 LIHEAP funds; comments due April 30, 2026",
-      "summary": "The Administration for Children and Families (ACF) proposed reallotting unspent FY2025 LIHEAP funds to jurisdictions that received FY2026 direct LIHEAP awards. The Federal Register notice lists a comment period ending April 30, 2026.",
-      "category": "deadline",
-      "date": "2026-03-31",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/documents/2026/03/31/2026-06130/proposed-reallotment-of-fiscal-year-2025-funds-for-the-low-income-home-energy-assistance-program",
-      "programs": ["liheap"]
-    },
-    {
-      "id": "n-20260414-wic-cvv-fy26",
-      "title": "WIC: FY2026 fruit/veg cash benefit set at $26 (kids), $48 (preg/postpartum), $52 (breastfeeding); April 2026 compliance deadline",
-      "summary": "USDA FNS set FY2026 monthly WIC cash-value voucher amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. States must authorize at least one form of fruits/vegetables beyond fresh (frozen, canned, and/or dried) by April 2026.",
-      "category": "update",
-      "date": "2025-12-10",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": ["wic"]
-    },
-    {
-      "id": "n-20260414-section8-hcv-admin-fees-2026",
-      "title": "HUD posts CY 2026 Housing Choice Voucher administrative fee rates; 88% proration for early 2026",
-      "summary": "HUD's CY 2026 Housing Choice Voucher administrative fee rate description says advanced admin fees for January-March 2026 were at 88% proration. Mainstream voucher renewal funding is now included with the regular HCV program starting CY 2026. PHAs are urged to plan for potential 2026 funding constraints.",
-      "category": "update",
-      "date": "2026-01-01",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/2026-Administrative-Fee-Rate-Descriptions.pdf",
-      "programs": ["section8"]
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
     }
   ]
 }
