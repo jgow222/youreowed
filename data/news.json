@@ -1,13 +1,27 @@
 {
-  "lastUpdated": "2026-04-15T11:06:07Z",
+  "lastUpdated": "2026-04-16T11:12:09Z",
   "items": [
     {
-      "id": "n-20260408-medicaid-chip-funding",
-      "title": "CMS issues guidance on new limits for federal Medicaid/CHIP matching funds for certain noncitizens (effective Oct. 1, 2026)",
-      "summary": "CMS released operational guidance for states on implementing a statutory change that limits claiming federal matching funds in Medicaid and CHIP for individuals who are not U.S. citizens or U.S. nationals (or who fall into specified noncitizen categories). The change takes effect October 1, 2026, with exceptions that still allow federal matching funds for emergency medical conditions and for optional coverage of lawfully residing children and pregnant women.",
+      "id": "n-20260414-tax-filing-extension",
+      "title": "IRS reminds taxpayers: request a filing extension by April 15 to file until Oct. 15",
+      "summary": "The IRS said taxpayers can get an automatic extension to file their 2025 federal return until Oct. 15, 2026, but the extension request must be made by April 15, 2026. The IRS emphasized the extension is for filing paperwork only\u2014tax payments are still due April 15 to avoid penalties and interest, and some groups (e.g., taxpayers abroad and some military) have automatic filing extensions to June 15.",
+      "category": "deadline",
+      "date": "2026-04-14",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/if-you-need-more-time-to-file-request-an-extension",
+      "programs": [
+        "eitc",
+        "ctc"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260408-medicaid-chip-noncitizen-fmap",
+      "title": "CMS guidance: new limits on claiming federal Medicaid/CHIP funds for certain noncitizens start Oct. 1, 2026",
+      "summary": "CMS issued guidance to states on implementing a statutory change that limits when states can claim federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens or nationals (or are in certain noncitizen categories identified in law), effective Oct. 1, 2026. CMS noted exceptions including continued federal matching for treatment of emergency medical conditions and that the change does not affect the option to cover lawfully residing children and pregnant people in Medicaid/CHIP.",
       "category": "policy-change",
       "date": "2026-04-08",
-      "source": "CMS",
+      "source": "Centers for Medicare & Medicaid Services",
       "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
       "programs": [
         "medicaid",
@@ -16,90 +30,76 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260414-medicaid-work-requirements-2027",
-      "title": "KFF: Medicaid work requirements for ACA expansion adults required starting Jan. 1, 2027 (states may start earlier)",
-      "summary": "KFF reports that a 2025 reconciliation law requires states to condition Medicaid eligibility for adults in the ACA expansion group (and partial expansion waiver programs in Georgia and Wisconsin) on meeting work requirements starting January 1, 2027. KFF notes states have the option to implement requirements earlier, and implementation will require new eligibility information collection, systems changes, and outreach.",
+      "id": "n-20260331-liheap-reallotment",
+      "title": "HHS/ACF proposes reallotment of FY 2025 LIHEAP funds; public comments due Apr. 30",
+      "summary": "HHS's Administration for Children and Families (Office of Community Services) published a Federal Register notice proposing reallotment of remaining FY 2025 LIHEAP funds to eligible grantees. The notice states the comment period ends April 30, 2026.",
       "category": "update",
-      "date": "2026-04-14",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/implementing-medicaid-work-requirements-lessons-from-unwinding/",
-      "programs": [
-        "medicaid"
-      ]
-    },
-    {
-      "id": "n-20260408-snap-participation-drop",
-      "title": "CBPP: SNAP participation fell 2.5 million (6%) between July 2025 enactment of H.R. 1 and December 2025 USDA data",
-      "summary": "CBPP’s SNAP Tracker cites USDA data showing nationwide SNAP participation fell by 2.5 million people (6%) between July 2025 (when H.R. 1 was enacted) and December 2025 (the latest month of USDA data). CBPP notes some states saw much larger declines (for example Arizona’s reported 32% decline, and 47% using more recent state data), and links the changes to the implementation of H.R. 1 policies.",
-      "category": "update",
-      "date": "2026-04-08",
-      "source": "Center on Budget and Policy Priorities",
-      "sourceUrl": "https://www.cbpp.org/research/food-assistance/snap-tracker-people-are-losing-food-assistance-as-the-republican-megabill",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260302-hud-section8-proposed-rule-comments",
-      "title": "HUD proposes optional work requirements and term limits for certain assisted households; public comments due May 1, 2026",
-      "summary": "A HUD proposed rule in the Federal Register would amend HUD regulations to allow Public Housing Agencies (PHAs) and certain multifamily owners to choose to implement work requirements for work-eligible adults and term limits for non-elderly, non-disabled families in covered HUD rental assistance programs. The public comment period is open through May 1, 2026.",
-      "category": "deadline",
-      "date": "2026-03-02",
-      "source": "Federal Register (HUD)",
-      "sourceUrl": "https://www.federalregister.gov/documents/2026/03/02/2026-04095/establishing-flexibility-for-implementation-of-work-requirements-and-term-limits",
-      "programs": [
-        "section8",
-        "public-housing"
-      ]
-    },
-    {
-      "id": "n-20260409-liheap-household-report-comments",
-      "title": "HHS proposes reinstating LIHEAP Household Report information collection; public comments due June 8, 2026",
-      "summary": "HHS’s Office of Community Services (OCS) published a Federal Register notice to reinstate the LIHEAP Household Report (OMB Control No. 0970-0060), which states use to report households assisted with LIHEAP block grant funds. The notice sets a public comment deadline of June 8, 2026.",
-      "category": "deadline",
-      "date": "2026-04-09",
-      "source": "Federal Register (HHS/OCS)",
-      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/09/2026-06804/proposed-information-collection-activity-annual-report-on-households-assisted-by-the-low-income-home",
+      "date": "2026-03-31",
+      "source": "Federal Register (ACF/OCS)",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/03/31/2026-06130/proposed-reallotment-of-fiscal-year-2025-funds-for-the-low-income-home-energy-assistance-program",
       "programs": [
         "liheap"
       ]
     },
     {
-      "id": "n-20260316-irs-freefile-extension",
-      "title": "IRS: Anyone can file a free federal tax filing extension through IRS Free File (pay by April 15; file by Oct. 15)",
-      "summary": "The IRS says anyone can use an IRS Free File partner to file an extension, even if they do not qualify for Free File for preparing a return. The extension gives taxpayers until October 15 to file, but taxpayers still need to file the extension and pay any balance due by April 15 to avoid penalties.",
-      "category": "deadline",
-      "date": "2026-03-16",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/filing/file-an-extension-through-irs-free-file",
+      "id": "n-20260305-hud-pih-2026-04",
+      "title": "HUD rescinds prior streamlined waiver notice for faster admissions into HCV/PBV/Public Housing for people experiencing homelessness",
+      "summary": "HUD Notice PIH 2026-04 rescinds Notice PIH 2024-17, which had described a streamlined review process for regulatory waivers to expedite admissions into the Housing Choice Voucher (HCV), Project-Based Voucher (PBV), and Public Housing programs for people experiencing homelessness. HUD said waivers already approved under the rescinded process remain valid until their expiration under the terms of approval.",
+      "category": "policy-change",
+      "date": "2026-03-05",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-04.pdf",
       "programs": [
-        "eitc",
-        "ctc"
+        "section8"
       ]
     },
     {
-      "id": "n-20251211-wic-cvvb-fy26",
-      "title": "USDA WIC memo: states must authorize at least one non-fresh fruit/veg form by April 2026; FY26 CVV/B amounts include $48 for pregnant/postpartum",
-      "summary": "USDA FNS says WIC food package changes require state agencies to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. For FY 2026, FNS reports an 11.8% inflation adjustment over the FY 2022 baseline and lists monthly CVV/B amounts of $26 for children, $48 for pregnant and postpartum participants, and $52 for breastfeeding participants.",
-      "category": "policy-change",
+      "id": "n-20260312-section8-waitlist-md",
+      "title": "Maryland Eastern Shore Housing Choice Voucher waiting list opens Apr. 1\u2013Apr. 30 (online only)",
+      "summary": "Maryland DHCD announced its Eastern Shore Housing Choice Voucher waiting list will accept online applications from 9:00 a.m. April 1, 2026 through 5:00 p.m. April 30, 2026. DHCD said applications submitted during the open period will have an equal chance through a computerized random selection process.",
+      "category": "deadline",
+      "date": "2026-03-12",
+      "source": "Maryland DHCD",
+      "sourceUrl": "https://news.maryland.gov/dhcd/2026/03/12/public-notice-maryland-department-of-housing-and-community-developments-housing-choice-voucher-program-waiting-list-for-the-the-eastern-shore-opens-april-1-2026/",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20251211-wic-fy26-cvb",
+      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash benefit; states must allow at least one non-fresh form by April 2026",
+      "summary": "USDA FNS set FY 2026 WIC monthly cash-value benefit amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. FNS also said recent WIC food package changes require state agencies to authorize at least one form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
+      "category": "update",
       "date": "2025-12-11",
-      "source": "USDA FNS",
+      "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
       "programs": [
         "wic"
       ]
     },
     {
-      "id": "n-20251024-ssa-cola-2026",
-      "title": "SSA: Social Security and SSI benefits increase 2.8% in 2026 (SSI increases start Dec. 31, 2025)",
-      "summary": "The Social Security Administration announced a 2.8% cost-of-living adjustment (COLA) for 2026, with Social Security benefit increases beginning in January 2026 and SSI increases beginning December 31, 2025. SSA also said the taxable maximum for 2026 is slated to rise to $184,500 (from $176,100).",
+      "id": "n-20260101-ssi-ssdi-cola",
+      "title": "Social Security: 2026 COLA is 2.8%; SSI federal payment standard rises to $994/month for individuals",
+      "summary": "SSA reported a 2.8% cost-of-living adjustment for 2026 for Social Security beneficiaries and SSI recipients. SSA's fact sheet lists the SSI federal payment standard increasing to $994/month for an individual and $1,491/month for a couple, and the maximum taxable earnings for Social Security increasing to $184,500.",
       "category": "update",
-      "date": "2025-10-24",
+      "date": "2026-01-01",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
       "programs": [
         "ssi",
         "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260101-pell-max-2026-27",
+      "title": "Federal Student Aid: maximum Pell Grant for 2026\u201327 is $7,395",
+      "summary": "The U.S. Department of Education's Federal Student Aid said the maximum Federal Pell Grant award for the 2026\u201327 award year is $7,395. The agency emphasized students must submit the FAFSA each year to be considered for Pell Grants.",
+      "category": "update",
+      "date": "2026-01-01",
+      "source": "Federal Student Aid (studentaid.gov)",
+      "sourceUrl": "https://studentaid.gov/articles/dont-miss-out-on-pell-grants/",
+      "programs": [
+        "pell"
       ]
     }
   ]
