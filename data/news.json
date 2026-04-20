@@ -1,8 +1,83 @@
 {
-  "lastUpdated": "2026-04-19T11:09:28Z",
+  "lastUpdated": "2026-04-20T11:00:00Z",
   "items": [
     {
-      "id": "n-20260414-tax-deadline-extension",
+      "id": "n-20260408-medicaid-chip-federal-match-noncitizens",
+      "title": "CMS guidance: federal Medicaid/CHIP matching funds limited for certain noncitizens starting Oct. 1, 2026",
+      "summary": "CMS issued a State Health Official letter to help states implement a statutory change that limits when states can claim federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens or U.S. nationals, or who fall into certain noncitizen categories in statute, starting October 1, 2026. CMS emphasized that federal match remains available for emergency medical conditions and said the change does not affect states’ option to cover lawfully residing children and pregnant women in Medicaid/CHIP.",
+      "category": "policy-change",
+      "date": "2026-04-08",
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
+      "programs": [
+        "medicaid",
+        "chip"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260101-ssi-ssdi-cola-2026",
+      "title": "SSA: Social Security and SSI benefits increase 2.8% in 2026 (COLA)",
+      "summary": "SSA says Social Security and Supplemental Security Income (SSI) benefits for about 75 million people will increase 2.8% in 2026. SSA says the increase begins with benefits payable in January 2026 for Social Security beneficiaries, and increased SSI payments begin December 31, 2025.",
+      "category": "update",
+      "date": "2026-01-01",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260401-hud-eviction-notice-rule-comments-due-apr27",
+      "title": "Public comment deadline Apr. 27, 2026 for HUD proposed rule changing eviction notice requirements in HUD-assisted housing",
+      "summary": "A state bulletin summarizing HUD’s proposal says HUD is considering removing a requirement that PHAs and housing providers give tenants 30 days’ notice before ending a lease for unpaid rent and 30 days to pay past-due rent. The bulletin says the public comment deadline is Monday, April 27, 2026 at 11:59 p.m. ET.",
+      "category": "deadline",
+      "date": "2026-04-01",
+      "source": "Illinois Commission on Disability Determination",
+      "sourceUrl": "https://icdd.illinois.gov/announcements/sitepages/2026-april-notice-of-proposed-rule-hud.html",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20260406-hud-sfmios-dnp-comments-due-may6",
+      "title": "Federal Register: HUD reopened public comments until May 6, 2026 on SFMIOS privacy notice modification (Do Not Pay routine use)",
+      "summary": "HUD published a Federal Register notice reopening the public comment period until May 6, 2026 on a second modification to the SFMIOS system-of-records notice, after HUD identified an error in the previously published modification. The notice discusses replacing a routine use related to Treasury’s Do Not Pay system for reviewing payment and award eligibility to help identify, prevent, or recover improper payments.",
+      "category": "deadline",
+      "date": "2026-04-06",
+      "source": "Federal Register (via GovInfo)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-04-06/pdf/2026-06624.pdf",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20251211-wic-fy26-food-package-deadline",
+      "title": "USDA WIC memo: states must add at least one non-fresh fruit/vegetable option by April 2026",
+      "summary": "USDA’s WIC Policy Memorandum #2026-2 says state agencies must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. The memo is part of recent WIC food package updates and is intended to expand participants’ options.",
+      "category": "deadline",
+      "date": "2025-12-11",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20241230-hotma-cpd-compliance-date-jan1-2026",
+      "title": "HUD Exchange: HOTMA Final Rule compliance date extended to Jan. 1, 2026 for CPD programs using Part 5 income regs",
+      "summary": "HUD says it extended the compliance date of the HOTMA Final Rule to January 1, 2026 for all Community Planning and Development (CPD) programs that use HUD’s 24 CFR Part 5 income regulations. HUD also noted grantees that are ready may choose an earlier compliance date within the allowed window.",
+      "category": "update",
+      "date": "2024-12-30",
+      "source": "HUD Exchange",
+      "sourceUrl": "https://www.hudexchange.info/news/cpd-guidance-on-hotma-compliance-date-extension/",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20260414-tax-extension-apr15",
       "title": "IRS reminder: request a filing extension by April 15, 2026 to file by Oct. 15",
       "summary": "The IRS reminded taxpayers they can file Form 4868 by April 15, 2026 to get an automatic extension to file their federal return until Oct. 15, 2026. The IRS also emphasized that any tax owed is still due April 15 to avoid interest and possible penalties, even if you extend your filing date.",
       "category": "deadline",
@@ -15,71 +90,7 @@
       ]
     },
     {
-      "id": "n-20260123-medicaid-coverage-changes-watch-2026",
-      "title": "KFF: 2025 reconciliation law Medicaid changes projected to raise uninsured by 7.5M by 2034",
-      "summary": "KFF reports Medicaid policy changes enacted in the 2025 reconciliation law are estimated to increase the number of people without health insurance by 7.5 million in 2034, with 5.3 million of those newly uninsured tied to new Medicaid work requirements. KFF notes the law also pauses parts of prior eligibility/enrollment rules, restricts eligibility for some lawfully present immigrants, and requires more frequent redeterminations for ACA expansion adults.",
-      "category": "policy-change",
-      "date": "2026-01-23",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
-      "programs": [
-        "medicaid",
-        "chip"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260401-medicaid-provider-tax-waiver-deadline",
-      "title": "KFF: some states may need to revise Medicaid provider taxes as early as April 1, 2026",
-      "summary": "KFF notes that states with CMS provider-tax “uniformity waivers” may have to revise those taxes as early as April 1, 2026 (KFF lists California, Illinois, Massachusetts, Michigan, Ohio, New York, and West Virginia as states with these waivers). Provider taxes are a major source of state Medicaid financing, so changes can affect state budgets and potentially benefits, rates, or eligibility.",
-      "category": "update",
-      "date": "2026-04-01",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
-    },
-    {
-      "id": "n-20260413-liheap-la-cooling-season-opens",
-      "title": "Louisiana LIHEAP cooling assistance: local intake runs Apr. 13–Sept. 30, 2026 (funds-limited)",
-      "summary": "Louisiana’s LIHEAP administrator says the cooling season runs April 13, 2026 through September 30, 2026 (or until funds are exhausted), with payments processed between May 1 and July 15, 2026 for applications completed through its online portal. The agency also published 2026 estimated income limits (60% of state median income), including $30,618 for a 1-person household and $58,882 for a 4-person household.",
-      "category": "deadline",
-      "date": "2026-04-13",
-      "source": "Louisiana Housing Corporation",
-      "sourceUrl": "https://www.lhc.la.gov/energy-assistance",
-      "programs": [
-        "liheap"
-      ]
-    },
-    {
-      "id": "n-20251211-wic-fy26-fruit-veg-benefit-deadline",
-      "title": "USDA: WIC states must offer frozen/canned/dried fruits & vegetables in addition to fresh by April 2026",
-      "summary": "USDA’s WIC memo for FY2026 highlights a requirement that state WIC agencies authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. The memo also lists FY2026 monthly cash-value benefit (CVV/B) amounts, including $48 for pregnant/postpartum participants (a $1 increase from FY2025) and $26 for children.",
-      "category": "update",
-      "date": "2025-12-11",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20250829-snap-work-requirements-guidance-update",
-      "title": "USDA SNAP: guidance pending on 2025 law changes to ABAWD exception/waiver criteria",
-      "summary": "USDA’s SNAP work requirements page says it is still developing guidance on how the “One Big Beautiful Bill Act of 2025” changes ABAWD work requirements, including changes to ABAWD exception criteria and ABAWD waiver criteria. The page reiterates that ABAWDs can keep benefits beyond the time limit by meeting an 80-hours-per-month work or qualifying activity requirement.",
-      "category": "update",
-      "date": "2025-08-29",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/work-requirements",
-      "programs": [
-        "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260326-fafsa-10m-completed",
+      "id": "n-20260326-fafsa-10m-forms-completed",
       "title": "Education Department: 10M+ 2026–27 FAFSA forms completed; 17% higher than last cycle",
       "summary": "The U.S. Department of Education said more than 10 million 2026–27 FAFSA forms have been completed and processed, which it described as a 17% increase versus the same point in the prior cycle. The Department also said updated College Scorecard earnings data began powering the FAFSA earnings indicator starting March 22, 2026.",
       "category": "update",
@@ -105,7 +116,7 @@
       ]
     },
     {
-      "id": "n-20260203-hcv-funding-2026-shortfall-policy",
+      "id": "n-20260203-hcv-funding-guidance-spring-2026",
       "title": "HUD: 2026 Housing Choice Voucher funding guidance and shortfall policies expected in spring 2026",
       "summary": "HUD’s 2026 Budget Management Letter says PHAs should receive their 2026 HAP funding amounts in spring 2026 after HUD completes reconciliation of 2025 data, and that final 2026 shortfall policies will be released with the 2026 HCV funding implementation notice. HUD also estimates a 99% HAP proration factor and notes that 2025 shortfall PHAs remain under restrictions unless released after 2026 allocations.",
       "category": "update",
@@ -117,41 +128,31 @@
       ]
     },
     {
-      "id": "n-20260213-hcv-info-collection-comments-due",
-      "title": "Federal Register: comments due April 14, 2026 for HCV/Tribal HUD-VASH information collection",
-      "summary": "A Federal Register notice on HUD’s Housing Choice Voucher Program and Tribal HUD-VASH information collection lists April 14, 2026 as the comment due date. Public comments can influence how HUD collects data from PHAs and program participants.",
-      "category": "deadline",
-      "date": "2026-04-14",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/documents/2026/02/13/2026-02955/60-day-notice-of-proposed-information-collection-housing-choice-voucher-program-and-tribal-hud-vash",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260220-hud-eligible-status-rule-comments",
-      "title": "HUD proposed rule on verifying eligible status: comments due 60 days after Feb. 20, 2026 publication",
-      "summary": "HUD published a proposed rule on Feb. 20, 2026 titled “Housing and Community Development Act of 1980: Verification of Eligible Status,” with a 60-day public comment period. The proposal includes changes such as removing the “do not contend” provision referenced in the proposal document.",
+      "id": "n-20260123-medicaid-kff-watch-2026",
+      "title": "KFF: 2025 reconciliation law Medicaid changes projected to raise uninsured by 7.5M by 2034",
+      "summary": "KFF reports Medicaid policy changes enacted in the 2025 reconciliation law are estimated to increase the number of people without health insurance by 7.5 million in 2034, with 5.3 million of those newly uninsured tied to new Medicaid work requirements. KFF notes the law also pauses parts of prior eligibility/enrollment rules, restricts eligibility for some lawfully present immigrants, and requires more frequent redeterminations for ACA expansion adults.",
       "category": "policy-change",
-      "date": "2026-02-20",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/documents/2026/02/20/2026-03405/housing-and-community-development-act-of-1980-verification-of-eligible-status",
+      "date": "2026-01-23",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
       "programs": [
-        "section8"
-      ]
+        "medicaid",
+        "chip"
+      ],
+      "isBreaking": true
     },
     {
-      "id": "n-20260101-ssi-2026-payment-amounts",
-      "title": "SSA: 2026 SSI maximum monthly federal payments set to $994 (individual) after 2.8% COLA",
-      "summary": "SSA’s COLA page lists the 2026 maximum federal SSI payment as $994 per month for an eligible individual, $1,491 for an eligible individual with an eligible spouse, and $498 for an essential person. SSA says these amounts reflect a 2.8% COLA effective January 2026.",
+      "id": "n-20250829-snap-work-requirements-guidance-pending",
+      "title": "USDA SNAP: guidance pending on 2025 law changes to ABAWD exception/waiver criteria",
+      "summary": "USDA’s SNAP work requirements page says it is still developing guidance on how the “One Big Beautiful Bill Act of 2025” changes ABAWD work requirements, including changes to ABAWD exception criteria and ABAWD waiver criteria. The page reiterates that ABAWDs can keep benefits beyond the time limit by meeting an 80-hours-per-month work or qualifying activity requirement.",
       "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
+      "date": "2025-08-29",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/work-requirements",
       "programs": [
-        "ssi",
-        "ssdi"
-      ]
+        "snap"
+      ],
+      "isBreaking": true
     }
   ]
 }
