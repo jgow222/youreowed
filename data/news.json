@@ -1,158 +1,116 @@
 {
-  "lastUpdated": "2026-04-20T11:00:00Z",
+  "lastUpdated": "2026-04-21T11:00:00.000Z",
   "items": [
     {
-      "id": "n-20260408-medicaid-chip-federal-match-noncitizens",
-      "title": "CMS guidance: federal Medicaid/CHIP matching funds limited for certain noncitizens starting Oct. 1, 2026",
-      "summary": "CMS issued a State Health Official letter to help states implement a statutory change that limits when states can claim federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens or U.S. nationals, or who fall into certain noncitizen categories in statute, starting October 1, 2026. CMS emphasized that federal match remains available for emergency medical conditions and said the change does not affect states’ option to cover lawfully residing children and pregnant women in Medicaid/CHIP.",
+      "id": "n-20260421-snap-waivers",
+      "title": "USDA approves SNAP food-choice waivers; several states begin restrictions in 2026",
+      "summary": "USDA announced it signed state waivers that change what SNAP benefits can buy in Arkansas, Idaho, and Utah (along with earlier waivers for Indiana, Iowa, and Nebraska). The USDA release says Idaho and Utah waivers take effect Jan. 1, 2026, and Arkansas’ waiver takes effect July 1, 2026, excluding items like soda/soft drinks and candy (details vary by state).",
+      "category": "policy-change",
+      "date": "2025-06-10",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/newsroom/usda-0129.25",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260421-medicaid-noncitizens",
+      "title": "CMS issues guidance on limits to federal Medicaid/CHIP matching funds for certain noncitizens starting Oct. 1",
+      "summary": "CMS issued guidance (summarized by AHA) explaining that beginning Oct. 1, federal matching funds for full Medicaid and CHIP benefits are restricted to legal permanent residents and a limited set of other groups; other lawfully present noncitizens (including refugees and asylees) are no longer eligible for full-benefit federal matching funds, though emergency Medicaid matching funds remain available. The guidance says states must conduct eligibility redeterminations, update systems, and submit Medicaid/CHIP state plan amendments to implement the change.",
       "category": "policy-change",
       "date": "2026-04-08",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
-      "programs": [
-        "medicaid",
-        "chip"
-      ],
+      "source": "American Hospital Association (summarizing CMS guidance)",
+      "sourceUrl": "https://www.aha.org/news/headline/2026-04-08-cms-releases-guidance-limits-medicaid-chip-funding-certain-noncitizens",
+      "programs": ["medicaid", "chip"],
       "isBreaking": true
     },
     {
-      "id": "n-20260101-ssi-ssdi-cola-2026",
-      "title": "SSA: Social Security and SSI benefits increase 2.8% in 2026 (COLA)",
-      "summary": "SSA says Social Security and Supplemental Security Income (SSI) benefits for about 75 million people will increase 2.8% in 2026. SSA says the increase begins with benefits payable in January 2026 for Social Security beneficiaries, and increased SSI payments begin December 31, 2025.",
-      "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
+      "id": "n-20260421-hud-ehv-sv-verification",
+      "title": "HUD changes documentation rules for Emergency Housing Vouchers and Stability Vouchers (SSN and eligible immigration status)",
+      "summary": "HUD’s PIH Notice 2026-05 removes a waiver that allowed public housing agencies to admit Emergency Housing Voucher (EHV) and Stability Voucher (SV) applicants without first obtaining and verifying Social Security number documentation and evidence of eligible noncitizen status. The notice requires agencies to follow existing verification rules and says PHAs must comply within 60 days of the notice’s publication (with a 180-day window referenced for continued assistance eligibility, pending verification and any good-faith extensions).",
+      "category": "policy-change",
+      "date": "2026-03-05",
+      "source": "U.S. Department of Housing and Urban Development (HUD)",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
+      "programs": ["section8", "housing-choice-voucher"]
     },
     {
-      "id": "n-20260401-hud-eviction-notice-rule-comments-due-apr27",
-      "title": "Public comment deadline Apr. 27, 2026 for HUD proposed rule changing eviction notice requirements in HUD-assisted housing",
-      "summary": "A state bulletin summarizing HUD’s proposal says HUD is considering removing a requirement that PHAs and housing providers give tenants 30 days’ notice before ending a lease for unpaid rent and 30 days to pay past-due rent. The bulletin says the public comment deadline is Monday, April 27, 2026 at 11:59 p.m. ET.",
-      "category": "deadline",
-      "date": "2026-04-01",
-      "source": "Illinois Commission on Disability Determination",
-      "sourceUrl": "https://icdd.illinois.gov/announcements/sitepages/2026-april-notice-of-proposed-rule-hud.html",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260406-hud-sfmios-dnp-comments-due-may6",
-      "title": "Federal Register: HUD reopened public comments until May 6, 2026 on SFMIOS privacy notice modification (Do Not Pay routine use)",
-      "summary": "HUD published a Federal Register notice reopening the public comment period until May 6, 2026 on a second modification to the SFMIOS system-of-records notice, after HUD identified an error in the previously published modification. The notice discusses replacing a routine use related to Treasury’s Do Not Pay system for reviewing payment and award eligibility to help identify, prevent, or recover improper payments.",
-      "category": "deadline",
-      "date": "2026-04-06",
-      "source": "Federal Register (via GovInfo)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-04-06/pdf/2026-06624.pdf",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20251211-wic-fy26-food-package-deadline",
-      "title": "USDA WIC memo: states must add at least one non-fresh fruit/vegetable option by April 2026",
-      "summary": "USDA’s WIC Policy Memorandum #2026-2 says state agencies must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026. The memo is part of recent WIC food package updates and is intended to expand participants’ options.",
+      "id": "n-20260421-wic-fy26-cvv",
+      "title": "USDA sets FY2026 WIC fruit/vegetable cash-value benefit amounts; April 2026 deadline for added forms of produce",
+      "summary": "USDA’s WIC Policy Memorandum #2026-2 lists FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts of $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants, reflecting an 11.8% inflation adjustment over the FY 2022 baseline. The memo also notes that WIC state agencies must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
       "category": "deadline",
       "date": "2025-12-11",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
-        "wic"
-      ]
+      "programs": ["wic"]
     },
     {
-      "id": "n-20241230-hotma-cpd-compliance-date-jan1-2026",
-      "title": "HUD Exchange: HOTMA Final Rule compliance date extended to Jan. 1, 2026 for CPD programs using Part 5 income regs",
-      "summary": "HUD says it extended the compliance date of the HOTMA Final Rule to January 1, 2026 for all Community Planning and Development (CPD) programs that use HUD’s 24 CFR Part 5 income regulations. HUD also noted grantees that are ready may choose an earlier compliance date within the allowed window.",
+      "id": "n-20260421-ssi-amounts-2026",
+      "title": "SSA posts 2026 SSI federal payment amounts (individual $994/month; couple $1,491/month)",
+      "summary": "The Social Security Administration’s SSI COLA page lists the 2026 monthly maximum federal SSI amounts as $994 for an eligible individual and $1,491 for an eligible couple (with $498 for an essential person). SSA notes these amounts reflect the 2.8% COLA that becomes effective January 2026.",
       "category": "update",
-      "date": "2024-12-30",
-      "source": "HUD Exchange",
-      "sourceUrl": "https://www.hudexchange.info/news/cpd-guidance-on-hotma-compliance-date-extension/",
-      "programs": [
-        "section8"
-      ]
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
+      "programs": ["ssi"]
     },
     {
-      "id": "n-20260414-tax-extension-apr15",
-      "title": "IRS reminder: request a filing extension by April 15, 2026 to file by Oct. 15",
-      "summary": "The IRS reminded taxpayers they can file Form 4868 by April 15, 2026 to get an automatic extension to file their federal return until Oct. 15, 2026. The IRS also emphasized that any tax owed is still due April 15 to avoid interest and possible penalties, even if you extend your filing date.",
-      "category": "deadline",
-      "date": "2026-04-14",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/if-you-need-more-time-to-file-request-an-extension",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260326-fafsa-10m-forms-completed",
-      "title": "Education Department: 10M+ 2026–27 FAFSA forms completed; 17% higher than last cycle",
-      "summary": "The U.S. Department of Education said more than 10 million 2026–27 FAFSA forms have been completed and processed, which it described as a 17% increase versus the same point in the prior cycle. The Department also said updated College Scorecard earnings data began powering the FAFSA earnings indicator starting March 22, 2026.",
+      "id": "n-20260421-ssa-cola-2026",
+      "title": "SSA: 2.8% COLA for 2026; higher payments start Jan. 2026 (SSI starts Dec. 31, 2025)",
+      "summary": "SSA announced a 2.8% cost-of-living adjustment (COLA) for 2026 affecting Social Security benefits and SSI payments for about 75 million Americans. SSA said nearly 71 million Social Security beneficiaries will see the COLA beginning in January 2026, while increased payments to nearly 7.5 million SSI recipients begin on Dec. 31, 2025, and the average retirement benefit increase is about $56 per month.",
       "category": "update",
-      "date": "2026-03-26",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "http://www.ed.gov/about/news/press-release/us-department-of-education-celebrates-more-10-million-fafsar-forms-complete-and-additional-transparency-measures",
-      "programs": [
-        "pell",
-        "fafsa"
-      ]
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
+      "programs": ["ssdi", "ssi"]
     },
     {
-      "id": "n-20260630-fafsa-2025-26-deadline",
-      "title": "Federal Student Aid: 2025–26 FAFSA must be received by June 30, 2026 for federal aid",
-      "summary": "The 2025–26 FAFSA PDF says the federal submission deadline is June 30, 2026 (applications can be submitted as early as Oct. 1, 2024). It also notes state and college deadlines can be earlier, so students should submit as early as possible.",
-      "category": "deadline",
-      "date": "2026-06-30",
-      "source": "Federal Student Aid",
-      "sourceUrl": "https://studentaid.gov/sites/default/files/2025-26-fafsa.pdf",
-      "programs": [
-        "fafsa",
-        "pell"
-      ]
-    },
-    {
-      "id": "n-20260203-hcv-funding-guidance-spring-2026",
-      "title": "HUD: 2026 Housing Choice Voucher funding guidance and shortfall policies expected in spring 2026",
-      "summary": "HUD’s 2026 Budget Management Letter says PHAs should receive their 2026 HAP funding amounts in spring 2026 after HUD completes reconciliation of 2025 data, and that final 2026 shortfall policies will be released with the 2026 HCV funding implementation notice. HUD also estimates a 99% HAP proration factor and notes that 2025 shortfall PHAs remain under restrictions unless released after 2026 allocations.",
+      "id": "n-20260421-ssa-2026-disability-thresholds",
+      "title": "SSA 2026 COLA fact sheet: higher disability earnings thresholds and updated SSI figures for 2026",
+      "summary": "SSA’s 2026 COLA fact sheet lists 2026 Substantial Gainful Activity (SGA) at $1,690/month for non-blind disabled workers and $2,830/month for blind workers, and a Trial Work Period (TWP) amount of $1,210/month. The same fact sheet lists the 2026 federal SSI payment standard as $994/month for an individual and $1,491/month for a couple.",
       "category": "update",
-      "date": "2026-02-03",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/2026-Budget-Management-Letter.pdf",
-      "programs": [
-        "section8"
-      ]
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+      "programs": ["ssdi", "ssi"]
     },
     {
-      "id": "n-20260123-medicaid-kff-watch-2026",
-      "title": "KFF: 2025 reconciliation law Medicaid changes projected to raise uninsured by 7.5M by 2034",
-      "summary": "KFF reports Medicaid policy changes enacted in the 2025 reconciliation law are estimated to increase the number of people without health insurance by 7.5 million in 2034, with 5.3 million of those newly uninsured tied to new Medicaid work requirements. KFF notes the law also pauses parts of prior eligibility/enrollment rules, restricts eligibility for some lawfully present immigrants, and requires more frequent redeterminations for ACA expansion adults.",
-      "category": "policy-change",
-      "date": "2026-01-23",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
-      "programs": [
-        "medicaid",
-        "chip"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20250829-snap-work-requirements-guidance-pending",
-      "title": "USDA SNAP: guidance pending on 2025 law changes to ABAWD exception/waiver criteria",
-      "summary": "USDA’s SNAP work requirements page says it is still developing guidance on how the “One Big Beautiful Bill Act of 2025” changes ABAWD work requirements, including changes to ABAWD exception criteria and ABAWD waiver criteria. The page reiterates that ABAWDs can keep benefits beyond the time limit by meeting an 80-hours-per-month work or qualifying activity requirement.",
+      "id": "n-20260421-pell-max-2026-27",
+      "title": "Federal Student Aid confirms maximum Pell Grant award is $7,395 for the 2026–27 award year",
+      "summary": "StudentAid.gov states that the maximum Federal Pell Grant award for the 2026–27 award year is $7,395. The same article notes students must file the FAFSA to be considered and that some students may qualify for up to 150% of their yearly Pell award if attending an additional term (year-round Pell).",
       "category": "update",
-      "date": "2025-08-29",
+      "date": "2026-04-21",
+      "source": "Federal Student Aid (StudentAid.gov)",
+      "sourceUrl": "https://studentaid.gov/articles/dont-miss-out-on-pell-grants/",
+      "programs": ["pell-grant"]
+    },
+    {
+      "id": "n-20260421-snap-income-limits-2026",
+      "title": "USDA posts SNAP income eligibility limits and maximum allotments for Oct. 2025–Sept. 2026",
+      "summary": "USDA’s SNAP eligibility materials list income limits for applications submitted between Oct. 1, 2025 and Sept. 30, 2026 (for the 48 contiguous states and D.C.), including gross monthly income of $1,696 for a 1-person household and $2,292 for a 2-person household. USDA also lists maximum monthly allotments (48 states + D.C.) such as $298 for 1 person and $546 for 2 people.",
+      "category": "update",
+      "date": "2025-09-30",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/work-requirements",
-      "programs": [
-        "snap"
-      ],
-      "isBreaking": true
+      "sourceUrl": "https://www.fns.usda.gov/snap/eligibility/elderly-disabled-special-rules",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260421-snap-tfp-reevaluation",
+      "title": "USDA notes new limits on timing and method for future Thrifty Food Plan reevaluations (affecting SNAP benefit calculations)",
+      "summary": "USDA’s Thrifty Food Plan page notes that federal law requires periodic reevaluation of the Thrifty Food Plan (which is used in SNAP benefit calculations). The page says the One Big Beautiful Bill Act requires the next reevaluation be no earlier than Oct. 1, 2027, and requires future reevaluations to be held cost-neutral.",
+      "category": "policy-change",
+      "date": "2026-03-24",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/research/cnpp/usda-food-plans",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260421-section8-md-waitlist",
+      "title": "Maryland announces Housing Choice Voucher waiting list opens April 1–30, 2026 (Eastern Shore)",
+      "summary": "Maryland’s Department of Housing and Community Development announced its Housing Choice Voucher Program waiting list for the Eastern Shore region opens April 1, 2026 at 9:00 a.m. and closes April 30, 2026 at 5:00 p.m., with online-only applications. The notice highlights this as a time-limited application window for households seeking Section 8/HCV assistance in that region.",
+      "category": "deadline",
+      "date": "2026-03-12",
+      "source": "Maryland Department of Housing and Community Development",
+      "sourceUrl": "https://news.maryland.gov/dhcd/2026/03/12/public-notice-maryland-department-of-housing-and-community-developments-housing-choice-voucher-program-waiting-list-for-the-the-eastern-shore-opens-april-1-2026/",
+      "programs": ["section8", "housing-choice-voucher"]
     }
   ]
 }
