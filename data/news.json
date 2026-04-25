@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-24T11:12:27Z",
+  "lastUpdated": "2026-04-25T11:09:00Z",
   "items": [
     {
-      "id": "n-20260408-medicaid-chip-noncitizen-fmap",
-      "title": "CMS issues guidance on new limits for federal Medicaid/CHIP matching funds for certain noncitizens (effective Oct. 1, 2026)",
-      "summary": "CMS released a State Health Official letter implementing section 71109 of the Working Families Tax Cut legislation (Public Law 119-21), limiting when states can claim federal matching funds for Medicaid and CHIP for individuals in certain noncitizen categories. The guidance says the change begins October 1, 2026 and notes exceptions such as continued federal matching for emergency medical conditions and that it does not affect the option to cover lawfully residing children and pregnant women in Medicaid/CHIP.",
+      "id": "n-20260408-medicaid-noncitizens",
+      "title": "CMS guidance: limits on federal Medicaid/CHIP matching funds for certain noncitizens start Oct. 1, 2026",
+      "summary": "CMS issued a State Health Official letter to prepare states for an Oct. 1, 2026 change that limits the ability to claim federal matching funds for full Medicaid and CHIP benefits for people who are not U.S. citizens/nationals or who don’t fall into specified noncitizen categories. CMS notes exceptions including continued federal matching for emergency Medicaid and that the change does not apply to states’ option to cover lawfully residing children and pregnant women in Medicaid/CHIP.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "Centers for Medicare & Medicaid Services",
@@ -16,79 +16,80 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260414-irs-extension-deadline",
-      "title": "IRS reminder: request a federal tax filing extension by April 15, 2026 to file by Oct. 15, 2026",
-      "summary": "The IRS said taxpayers can get an extension to file their 2025 federal return until October 15, 2026, but must request it by April 15, 2026. The IRS emphasized an extension is only for filing (not paying) and that taxpayers should estimate and pay any tax owed by April 15 to avoid penalties and interest.",
-      "category": "deadline",
-      "date": "2026-04-14",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/if-you-need-more-time-to-file-request-an-extension",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260305-hud-pih-2026-04-hcv-waivers",
-      "title": "HUD rescinds PIH 2024-17 streamlined waiver process for homelessness admissions in HCV/Public Housing",
-      "summary": "HUD issued Notice PIH 2026-04 rescinding Notice PIH 2024-17, which provided a streamlined process for regulatory waivers intended to expedite admission for people experiencing homelessness into Housing Choice Voucher (HCV), Project-Based Voucher (PBV), and Public Housing programs. HUD said waivers already approved or granted under the prior process remain valid until they expire under their approval terms.",
+      "id": "n-20260305-hcv-waivers-rescinded",
+      "title": "HUD rescinds PIH 2024-17 streamlined waiver process for homelessness admissions (HCV/PBV/Public Housing)",
+      "summary": "HUD Notice PIH 2026-04 (issued March 5, 2026) rescinds the guidance in PIH 2024-17 that provided a streamlined process for regulatory waivers to expedite admission to HCV, PBV, and public housing for people experiencing homelessness. HUD says waivers already approved under PIH 2024-17 remain valid until they expire under their approval terms.",
       "category": "policy-change",
       "date": "2026-03-05",
-      "source": "U.S. Department of Housing and Urban Development",
+      "source": "U.S. Department of Housing and Urban Development (HUD)",
       "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-04.pdf",
       "programs": [
-        "section-8",
-        "public-housing"
+        "section8",
+        "public_housing"
       ]
     },
     {
-      "id": "n-20260115-hud-vash-fees-deadline",
-      "title": "HUD Notice PIH 2026-01 makes $10M available for additional HUD-VASH administrative fees; applications due March 2, 2026",
-      "summary": "HUD Notice PIH 2026-01 announced up to $10 million in additional administrative fee funding for public housing agencies administering HUD-VASH vouchers to support leasing and program administration. The notice says applications must be received by midnight on March 2, 2026 (in the PHA\u2019s time zone) and funds must be used exclusively for eligible HUD-VASH administrative expenses.",
-      "category": "deadline",
-      "date": "2026-01-15",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/dfiles/hudclips/documents/PIH-2026-01.pdf",
-      "programs": [
-        "section-8",
-        "hud-vash"
-      ]
-    },
-    {
-      "id": "n-20251210-snap-state-waivers-unhealthy-foods",
-      "title": "USDA approves six state SNAP waivers to change what items count as eligible \u2018food for purchase\u2019 starting in 2026",
-      "summary": "USDA announced it approved SNAP waivers for Hawai\u2018i, Missouri, North Dakota, South Carolina, Virginia, and Tennessee that amend the statutory definition of eligible food purchases to exclude certain items each state proposed. USDA said the waivers are intended to limit purchases of highly processed/junk foods and will go into effect beginning in 2026, with implementation timelines varying by state.",
+      "id": "n-20260330-snap-texas-purchase-restrictions",
+      "title": "Texas SNAP purchase restrictions take effect April 1, 2026 (state waiver approved by USDA FNS)",
+      "summary": "Texas Public Radio reports that starting April 1, 2026, Texas will restrict certain SNAP purchases under a USDA Food and Nutrition Service-approved waiver. Reported restricted items include candy (e.g., candy bars, gum, taffy) and sweetened drinks with 5 grams or more of added sugar, among other specified products. The waiver also requires Texas to survey SNAP participants after implementation to assess whether purchases shift toward healthier choices.",
       "category": "policy-change",
-      "date": "2025-12-10",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/newsroom/usda-0241.25",
+      "date": "2026-03-30",
+      "source": "Texas Public Radio",
+      "sourceUrl": "https://www.tpr.org/news/2026-03-30/restrictions-on-snap-food-benefits-go-into-effect-in-texas-starting-april-1",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20251210-wic-cvvb-fy26",
-      "title": "USDA sets FY 2026 WIC fruit/vegetable cash-value benefit amounts and reiterates April 2026 food package compliance requirement",
-      "summary": "USDA\u2019s WIC Policy Memorandum 2026-2 set FY 2026 monthly cash-value benefit (CVV/B) amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. The memo also reiterated that recent WIC food package changes require state agencies to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
+      "id": "n-20251211-wic-cvvb-fy26",
+      "title": "USDA sets FY 2026 WIC cash-value benefit amounts; states must allow at least one non-fresh fruit/veg form by April 2026",
+      "summary": "USDA FNS says recent WIC food package changes require state agencies to authorize at least one form of fruits and vegetables beyond fresh (frozen, canned, and/or dried) by April 2026. For FY 2026, USDA lists monthly cash-value voucher/benefit (CVV/B) amounts of $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants; USDA also notes an 11.8% inflation adjustment over FY 2022 baseline amounts.",
       "category": "update",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
       "programs": [
         "wic"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20251024-ssi-cola-2026",
+      "title": "SSA: 2.8% COLA for 2026; SSI federal payment standard is $994 (individual) / $1,491 (couple)",
+      "summary": "SSA announced a 2.8% cost-of-living adjustment (COLA) for 2026 affecting Social Security and SSI payments for 75 million Americans, including nearly 7.5 million SSI recipients. SSA also lists the 2026 maximum federal SSI payment amounts as $994 per month for an eligible individual and $1,491 per month for an eligible couple (with increased SSI payments beginning Dec. 31, 2025).",
+      "category": "update",
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
+      "programs": [
+        "ssi",
+        "ssdi"
       ]
     },
     {
-      "id": "n-20260408-workforce-pell-comment-deadline",
-      "title": "Workforce Pell proposed rule: public comment window through April 8, 2026 (Pell usable for short workforce programs starting July 2026)",
-      "summary": "The Education Department proposed rules to implement Workforce Pell, a change that would allow eligible students to use Pell Grants for certain workforce programs starting in July 2026, including programs as short as 8 weeks. The proposed rule\u2019s public comment period was open through April 8, 2026.",
+      "id": "n-20260409-liheap-household-report-comments",
+      "title": "Federal Register: public comments open on LIHEAP Household Report information collection (comments due June 8, 2026)",
+      "summary": "HHS/OCS published a Federal Register notice seeking comment on reinstating the Annual Report on Households Assisted by LIHEAP (OMB control number 0970-0060). The Federal Register page lists the comment period ending June 8, 2026, for this information-collection request tied to LIHEAP reporting.",
       "category": "deadline",
-      "date": "2026-03-09",
-      "source": "National Association of Workforce Development Professionals",
-      "sourceUrl": "https://www.nawdp.org/news/education-department-issues-proposed-rules-to-implement-workforce-pell/",
+      "date": "2026-04-09",
+      "source": "Federal Register",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/09/2026-06804/proposed-information-collection-activity-annual-report-on-households-assisted-by-the-low-income-home",
       "programs": [
-        "pell-grant"
+        "liheap"
       ]
+    },
+    {
+      "id": "n-20260318-workforce-pell-comments",
+      "title": "Workforce Pell proposed regulations: public comments due April 8, 2026",
+      "summary": "UPCEA reports the U.S. Department of Education opened a public comment period on proposed rules to implement Workforce Pell Grants, with comments due April 8, 2026. The proposed rules would shape eligibility and accountability requirements for short-term workforce training programs that could become Pell-eligible.",
+      "category": "deadline",
+      "date": "2026-03-18",
+      "source": "UPCEA",
+      "sourceUrl": "https://upcea.edu/public-comment-period-opens-on-workforce-pell-implementation-rules-due-april-8-policy-matters-march-2026/",
+      "programs": [
+        "pell_grants"
+      ],
+      "isBreaking": false
     }
   ]
 }
