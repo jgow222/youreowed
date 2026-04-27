@@ -1,10 +1,22 @@
 {
-  "lastUpdated": "2026-04-26T11:00:00Z",
+  "lastUpdated": "2026-04-27T11:00:00Z",
   "items": [
+    {
+      "id": "n-20260427-liheap-household-report",
+      "title": "HHS proposes changes to LIHEAP Household Report; comments due June 8, 2026; next report due September 2026",
+      "summary": "HHS/ACF's Office of Community Services published a Federal Register notice to reinstate and revise the Annual Report on Households Assisted by LIHEAP (OMB #0970-0060), with public comments due June 8, 2026 and the next report due in September 2026. Proposed changes include removing sex/race/ethnicity reporting items, removing expired CARES/ARPA supplemental funding elements, and reducing estimated reporting burden (long format from 67 to 41 hours; short format from 10 to 6 hours).",
+      "category": "deadline",
+      "date": "2026-04-09",
+      "source": "Federal Register (HHS/ACF Office of Community Services)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-04-09/html/2026-06804.htm",
+      "programs": [
+        "liheap"
+      ]
+    },
     {
       "id": "n-20260408-medicaid-noncitizens",
       "title": "CMS guidance: limits on federal Medicaid/CHIP matching funds for certain noncitizens start Oct. 1, 2026",
-      "summary": "CMS issued guidance on implementing a law that restricts federal matching funds for full Medicaid and CHIP benefits for certain lawfully present noncitizens. Beginning Oct. 1, 2026, federal matching funds for full Medicaid and CHIP benefits will be restricted to legal permanent residents, certain Cuban and Haitian immigrants, and Compact of Free Association migrants, while emergency Medicaid federal matching remains available.",
+      "summary": "CMS issued guidance on implementing a law that restricts federal matching funds for full Medicaid and CHIP benefits for certain lawfully present noncitizens. Beginning Oct. 1, 2026, federal matching funds for full benefits will be limited to legal permanent residents, certain Cuban and Haitian immigrants, and Compact of Free Association migrants; CMS guidance also calls for state eligibility redeterminations, system updates, and state plan amendments.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "American Hospital Association (summarizing CMS guidance)",
@@ -16,22 +28,70 @@
       "isBreaking": true
     },
     {
+      "id": "n-20260408-snap-work-requirements-impact",
+      "title": "SNAP work requirement expansion takes effect in some areas; NPR notes newly covered groups and CBO estimate",
+      "summary": "NPR reports that expanded SNAP work requirements (including 80 hours per month of work/volunteering/job training) are taking effect, with implementation varying by state and county. NPR says newly covered groups include adults ages 55–64 without dependents and parents of children over 14, and cites a Congressional Budget Office projection that about 2.4 million people could lose access to SNAP each month over the next 10 years.",
+      "category": "policy-change",
+      "date": "2026-03-02",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/03/02/nx-s1-5729137/across-the-u-s-changes-to-snap-benefits-are-kicking-in",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260427-snap-work-requirements-usda",
+      "title": "USDA FNS updates SNAP work requirements page; ABAWD rule is 80 hours/month and lists key exemptions",
+      "summary": "USDA FNS says ABAWDs who must meet the time-limit work requirement can do so by working and/or participating in an approved program for at least 80 hours per month (or a combination totaling 80 hours). FNS also lists exemptions (including veterans, people experiencing homelessness, and certain former foster youth) and notes it is providing guidance on how the 2025 law changes ABAWD exceptions and waiver criteria.",
+      "category": "update",
+      "date": "2025-08-29",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/work-requirements",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
       "id": "n-20260305-hud-ehv-sv-verification",
       "title": "HUD changes EHV and Stability Voucher verification rules; PHAs must comply within 60 days",
-      "summary": "HUD Notice PIH 2026-05 removes a prior waiver that had allowed some Emergency Housing Voucher (EHV) and Stability Voucher (SV) admissions without first verifying SSNs and eligible noncitizen status. The notice says PHAs must be in compliance with eligible immigration status verification for new SV admissions and current EHV/SV families within 60 days of publication, and must verify SSNs in EIV or collect verification within the same 60-day period.",
+      "summary": "HUD Notice PIH 2026-05 removes a prior waiver that allowed some Emergency Housing Voucher (EHV) and Stability Voucher (SV) admissions without first verifying SSNs and eligible noncitizen status. HUD says PHAs must be in compliance within 60 days of publication, including verifying eligible immigration status and verifying SSNs in EIV (or collecting verification if not verified).",
       "category": "policy-change",
       "date": "2026-03-05",
       "source": "U.S. Department of Housing and Urban Development (HUD)",
       "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
       "programs": [
         "section8"
-      ],
-      "isBreaking": false
+      ]
+    },
+    {
+      "id": "n-20260305-hud-rescinds-homeless-waiver",
+      "title": "HUD rescinds streamlined waiver process for admitting people experiencing homelessness to HCV/PBV/Public Housing",
+      "summary": "HUD Notice PIH 2026-04 rescinds PIH Notice 2024-17, which had created a streamlined process for regulatory waivers intended to expedite admission to the Housing Choice Voucher (HCV), Project-Based Voucher (PBV), and Public Housing programs for people experiencing homelessness. HUD says the rescission applies to all PHAs operating HCV or public housing programs, while waivers already approved under PIH 2024-17 remain valid until they expire.",
+      "category": "policy-change",
+      "date": "2026-03-05",
+      "source": "U.S. Department of Housing and Urban Development (HUD)",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-04.pdf",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20260123-medicaid-watch-2026-kff",
+      "title": "KFF outlines Medicaid eligibility/enrollment changes states must implement following the 2025 reconciliation law",
+      "summary": "KFF reports that the 2025 reconciliation law pauses implementation of some provisions in two prior eligibility/enrollment rules, restricts eligibility for certain lawfully present immigrants, and requires more frequent eligibility redeterminations for ACA expansion adults. KFF also notes that states will begin implementing Medicaid policy changes in 2026 amid fiscal pressure and coverage concerns.",
+      "category": "update",
+      "date": "2026-01-23",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-what-to-watch-in-2026/",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
     },
     {
       "id": "n-20260115-hudvash-admin-fees-deadline",
       "title": "HUD makes $10 million available for HUD-VASH administrative fees; applications due March 2, 2026",
-      "summary": "HUD Notice PIH 2026-01 (issued Jan. 15, 2026) announces $10 million in additional administrative fee funding for public housing agencies administering HUD-VASH vouchers. HUD says applications must be received no later than midnight on March 2, 2026 (in the PHA’s time zone), and the funds are limited to eligible HUD-VASH administrative and related expenses.",
+      "summary": "HUD Notice PIH 2026-01 (issued Jan. 15, 2026) announces $10 million in additional administrative fee funding for public housing agencies administering HUD-VASH vouchers. HUD says applications must be received no later than midnight on March 2, 2026 (in the PHAs time zone), and the funds are limited to eligible HUD-VASH administrative and related expenses.",
       "category": "deadline",
       "date": "2026-01-15",
       "source": "U.S. Department of Housing and Urban Development (HUD)",
@@ -54,12 +114,25 @@
     },
     {
       "id": "n-20251024-ssa-cola-2026",
-      "title": "SSA: 2.8% COLA for 2026; increases start for SSI on Dec. 31, 2025 and Social Security in Jan. 2026",
-      "summary": "SSA says Social Security and SSI benefits will increase 2.8% in 2026, affecting 75 million Americans. SSA says increased payments start for SSI recipients on Dec. 31, 2025 and for nearly 71 million Social Security beneficiaries in January 2026.",
+      "title": "SSA: 2.8% COLA for 2026; SSI increases start Dec. 31, 2025; Social Security increases start Jan. 2026",
+      "summary": "SSA announced a 2.8% cost-of-living adjustment (COLA) for 2026 and said the increase will apply to Social Security and SSI benefits. SSA also said higher SSI payments begin on Dec. 31, 2025 and higher Social Security benefits begin in January 2026, and it set the 2026 taxable maximum at $184,500.",
       "category": "update",
       "date": "2025-10-24",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260427-ssi-ssdi-work-limits-2026",
+      "title": "SSA updates 2026 disability work thresholds and SSI federal benefit rate",
+      "summary": "SSAs 2026 Red Book update lists Substantial Gainful Activity (SGA) at $1,690/month for non-blind individuals and $2,830/month for blind individuals, and sets the Trial Work Period (TWP) monthly earnings amount at $1,210. SSA also lists the 2026 SSI federal benefit rate at $994/month for an eligible individual and $1,491/month for an eligible couple.",
+      "category": "update",
+      "date": "2026-01-01",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/redbook/eng/whatsnew.htm",
       "programs": [
         "ssi",
         "ssdi"
