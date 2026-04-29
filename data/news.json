@@ -1,40 +1,43 @@
 {
-  "lastUpdated": "2026-04-28T11:00:00Z",
+  "lastUpdated": "2026-04-29T11:00:00Z",
   "items": [
     {
-      "id": "n-20260428-snap-cola",
-      "title": "SNAP FY2026 benefit amounts and income limits are in effect through Sept. 30, 2026",
-      "summary": "USDA updated SNAP FY2026 standards effective Oct. 1, 2025 through Sept. 30, 2026, including a maximum monthly allotment of $994 for a 4-person household in the 48 states/DC (and $298 for a 1-person household). The minimum monthly allotment for 1–2 person households in the 48 states/DC is $24, and the gross monthly income limit for a 4-person household is $3,483 (130% of the federal poverty level).",
-      "category": "update",
-      "date": "2025-08-14",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola",
-      "programs": ["snap"]
-    },
-    {
-      "id": "n-20260428-snap-waivers-healthy-food",
-      "title": "USDA approved six more state SNAP waivers to remove certain foods from eligibility starting in 2026",
-      "summary": "USDA announced it approved SNAP waivers submitted by Hawai‘i, Missouri, North Dakota, South Carolina, Virginia, and Tennessee that will amend the statutory definition of “food for purchase” under SNAP beginning in 2026. USDA said the waivers are intended to remove certain “unhealthy” foods (described as highly processed/junk foods) to promote healthier choices.",
+      "id": "n-20260422-snap-food-restriction-waivers",
+      "title": "USDA posts SNAP food restriction waivers with 2026 start dates (Texas April 1; Florida April 20)",
+      "summary": "USDA’s Food and Nutrition Service posted a list of approved SNAP food restriction waivers that restrict purchases of items like sweetened drinks and candy, with target implementation dates across 2026. The page lists Texas starting 2026-04-01 (sweetened drinks and candy), Florida starting 2026-04-20 (soda, energy drinks, candy, and prepared desserts), and Idaho starting 2026-02-15 (soda and candy), among other states.",
       "category": "policy-change",
-      "date": "2025-12-10",
+      "date": "2026-04-22",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/newsroom/usda-0241.25",
-      "programs": ["snap"]
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "programs": ["snap"],
+      "isBreaking": true
     },
     {
-      "id": "n-20260428-medicaid-chip-noncitizens-match",
-      "title": "CMS guidance outlines Oct. 1 limits on federal Medicaid/CHIP matching funds for certain noncitizens",
-      "summary": "CMS issued guidance on April 8, 2026 to implement a reconciliation-law provision affecting federal matching funds for full Medicaid and CHIP benefits. Beginning Oct. 1, federal match for full benefits will be restricted to legal permanent residents, certain Cuban and Haitian immigrants, and Compact of Free Association migrants lawfully residing in the U.S., while federal match remains available for emergency Medicaid.",
+      "id": "n-20260408-medicaid-chip-noncitizen-fmap-guidance",
+      "title": "CMS issues guidance for Oct. 1, 2026 limits on federal Medicaid/CHIP matching funds for certain noncitizens",
+      "summary": "CMS issued guidance to states for a statutory change that limits when states can claim federal matching funds for full Medicaid and CHIP benefits for certain noncitizens beginning 2026-10-01. CMS notes federal match remains available for treatment of emergency medical conditions and that the change does not apply to the option to cover lawfully residing children and pregnant people in Medicaid/CHIP.",
       "category": "policy-change",
       "date": "2026-04-08",
-      "source": "American Hospital Association (summarizing CMS guidance)",
-      "sourceUrl": "https://www.aha.org/news/headline/2026-04-08-cms-releases-guidance-limits-medicaid-chip-funding-certain-noncitizens",
-      "programs": ["medicaid", "chip"]
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
+      "programs": ["medicaid", "chip"],
+      "isBreaking": true
     },
     {
-      "id": "n-20260428-ssi-2026-payments",
-      "title": "SSI federal payment amounts increased for 2026 (effective January 2026)",
-      "summary": "SSA reports that the 2026 cost-of-living increase for SSI is 2.8%, effective January 2026. The monthly maximum federal SSI amounts for 2026 are $994 for an eligible individual, $1,491 for an eligible individual with an eligible spouse, and $498 for an essential person.",
+      "id": "n-20260413-hotma-interim-reexams-household-changes",
+      "title": "HUD: PHAs and multifamily owners must do interim reexaminations when households add/remove members (HOTMA guidance update)",
+      "summary": "HUD Notice PIH 2026-09 / H 2026-05 (issued 2026-04-13) revises HOTMA implementation guidance to require interim reexaminations whenever a household adds or removes members (including foster adults/children and live-in aides), even if adjusted income does not change. HUD also provides a limited exception for agencies/owners with a written policy not to conduct interim reexams for income increases during the last 3 months of a recertification period.",
+      "category": "policy-change",
+      "date": "2026-04-13",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-09.pdf",
+      "programs": ["housing-choice-voucher", "section8"],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260101-ssi-federal-payment-amounts-2026",
+      "title": "SSA: 2026 SSI federal benefit rates increased with the January 2026 COLA",
+      "summary": "SSA says the 2.8% cost-of-living adjustment effective January 2026 increases the maximum federal SSI payment to $994/month for an eligible individual and $1,491/month for an eligible couple. SSA also lists $498/month as the maximum federal payment for an essential person.",
       "category": "update",
       "date": "2026-01-01",
       "source": "Social Security Administration",
@@ -42,64 +45,45 @@
       "programs": ["ssi"]
     },
     {
-      "id": "n-20260428-hud-ehv-sv-docs",
-      "title": "HUD ends EHV/Stability Voucher waiver that allowed delayed SSN/citizenship documentation",
-      "summary": "HUD’s PIH Notice 2026-05 removes (strikes) the waiver/alternative requirement that previously allowed some Emergency Housing Voucher and Stability Voucher applicants to be admitted without SSN or eligible noncitizen documentation, as long as documents were provided within 180 days. HUD says PHAs must follow the standard SSN verification rules (24 CFR 5.210–5.218) and citizenship/immigration documentation requirements (24 CFR 5.508).",
-      "category": "policy-change",
-      "date": "2026-03-05",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
-      "programs": ["housing-choice-voucher", "emergency-housing-voucher"]
-    },
-    {
-      "id": "n-20260428-wic-fy26-cvv",
-      "title": "WIC FY2026 fruit & vegetable cash-value benefit amounts set; states must allow at least one non-fresh option by April 2026",
-      "summary": "USDA WIC Policy Memorandum #2026-2 sets FY2026 monthly cash-value voucher/benefit (CVV/B) amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants, reflecting an 11.8% inflation adjustment over FY2022 baseline amounts. The memo also notes WIC food package changes require state agencies to authorize at least one form of fruits and vegetables beyond fresh (frozen, canned, and/or dried) by April 2026.",
+      "id": "n-20251211-wic-fy2026-cvb-amounts",
+      "title": "USDA: FY2026 WIC fruit/vegetable cash-value benefit amounts set; states must authorize at least one non-fresh option by April 2026",
+      "summary": "USDA WIC Policy Memorandum 2026-2 sets FY2026 monthly fruit/vegetable cash-value benefit amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. The memo also notes WIC food package changes require state agencies to authorize at least one form of fruits/vegetables beyond fresh (frozen, canned, and/or dried) by April 2026.",
       "category": "update",
       "date": "2025-12-11",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": ["wic"]
+      "programs": ["wic"],
+      "isBreaking": true
     },
     {
-      "id": "n-20260428-pell-max-2026-27",
-      "title": "Federal Student Aid says the maximum Pell Grant for award year 2026–27 is $7,395",
-      "summary": "Federal Student Aid’s consumer guidance states that for the 2026–27 award year, the maximum Federal Pell Grant award is $7,395. The article encourages students to submit the FAFSA to be considered for Pell and other aid.",
-      "category": "update",
-      "date": "2026-01-30",
+      "id": "n-20260630-fafsa-2025-26-deadline",
+      "title": "Federal FAFSA deadline for 2025–26 is June 30, 2026 (with corrections due Sept. 12, 2026)",
+      "summary": "Federal Student Aid lists the federal FAFSA submission deadline for the 2025–26 award year as 11:59 p.m. Central Time on 2026-06-30. The site also lists the deadline for corrections/updates as 11:59 p.m. Central Time on 2026-09-12.",
+      "category": "deadline",
+      "date": "2026-06-30",
       "source": "Federal Student Aid (StudentAid.gov)",
-      "sourceUrl": "https://studentaid.gov/articles/dont-miss-out-on-pell-grants/",
-      "programs": ["pell-grant"]
+      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
+      "programs": ["fafsa", "pell-grant"]
     },
     {
-      "id": "n-20260428-pell-sai-cutoff",
-      "title": "ED guidance: Pell Grant ineligibility when Student Aid Index is at least twice the maximum Pell (2026–27)",
-      "summary": "The FSA Handbook guidance for 2026–27 explains a new Pell eligibility limit: students are ineligible for Pell if their Student Aid Index (SAI) equals or exceeds twice the maximum Pell Grant amount (example given: if max Pell is $7,395, the cutoff SAI is 14,790). The same guidance also notes that beginning with 2026–27, the foreign earned income exclusion is added to AGI for determining automatic maximum/minimum Pell eligibility.",
-      "category": "policy-change",
-      "date": "2026-04-02",
-      "source": "U.S. Department of Education (FSA Handbook)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/fsa-handbook/2026-2027/application-and-verification-guide/ch3-student-aid-index-sai-and-pell-grant-eligibility",
-      "programs": ["pell-grant", "fafsa"]
-    },
-    {
-      "id": "n-20260428-irs-eitc-2026",
-      "title": "IRS: 2026 EITC maximum increases to $8,231 for families with 3+ qualifying children",
-      "summary": "The IRS announced annual inflation adjustments for tax year 2026, including that the maximum Earned Income Tax Credit is $8,231 for taxpayers with three or more qualifying children (up from $8,046 for 2025). IRS also notes the investment income limit for claiming EITC for taxable years beginning in 2026 is $12,200.",
+      "id": "n-20260121-irs-eitc-2025-tables",
+      "title": "IRS: EITC tables for tax year 2025 include max credit $8,046 (3+ kids) and investment income limit $11,950",
+      "summary": "IRS EITC tables for tax year 2025 list maximum credit amounts of $649 (no qualifying children), $4,328 (1 child), $7,152 (2 children), and $8,046 (3+ children). IRS also lists an investment income limit of $11,950 or less for claiming EITC for tax year 2025.",
       "category": "update",
-      "date": "2025-10-09",
+      "date": "2026-01-21",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
       "programs": ["eitc"]
     },
     {
-      "id": "n-20260428-irs-ctc-2026",
-      "title": "IRS: Child Tax Credit for tax year 2026 is $2,200 per qualifying child; refundable portion amount is $1,700",
-      "summary": "IRS Revenue Procedure 2025-32 lists the inflation-adjusted child tax credit amounts for taxable years beginning in 2026: the maximum credit under IRC §24(a) is $2,200, and the amount used to determine the refundable portion under §24(d)(1)(A) is $1,700. These figures apply to tax year 2026 (returns typically filed in 2027).",
+      "id": "n-20241230-hotma-cpd-compliance-date-extension",
+      "title": "HUD: HOTMA final rule compliance date for CPD programs extended to Jan. 1, 2026 (with option for earlier compliance)",
+      "summary": "HUD’s CPD guidance says the HOTMA final rule compliance date for CPD programs that use HUD’s 24 CFR Part 5 income regulations was extended to 2026-01-01. HUD also notes grantees ready to comply may set an earlier compliance date between 2024-01-01 and 2026-01-01, and that certain income safe harbors may be implemented prior to the compliance date.",
       "category": "update",
-      "date": "2025-10-09",
-      "source": "Internal Revenue Service (Revenue Procedure 2025-32)",
-      "sourceUrl": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
-      "programs": ["ctc"]
+      "date": "2024-12-30",
+      "source": "HUD Exchange",
+      "sourceUrl": "https://www.hudexchange.info/news/cpd-guidance-on-hotma-compliance-date-extension/",
+      "programs": ["section8", "housing-choice-voucher"]
     }
   ]
 }
