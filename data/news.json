@@ -1,21 +1,20 @@
 {
-  "lastUpdated": "2026-04-29T11:00:00Z",
+  "lastUpdated": "2026-04-30T11:00:00.000Z",
   "items": [
     {
       "id": "n-20260422-snap-food-restriction-waivers",
-      "title": "USDA posts SNAP food restriction waivers with 2026 start dates (Texas April 1; Florida April 20)",
-      "summary": "USDA’s Food and Nutrition Service posted a list of approved SNAP food restriction waivers that restrict purchases of items like sweetened drinks and candy, with target implementation dates across 2026. The page lists Texas starting 2026-04-01 (sweetened drinks and candy), Florida starting 2026-04-20 (soda, energy drinks, candy, and prepared desserts), and Idaho starting 2026-02-15 (soda and candy), among other states.",
+      "title": "USDA posts list of approved SNAP food restriction waivers with 2026 rollout dates",
+      "summary": "USDA’s Food and Nutrition Service published an updated table of 21 states with approved SNAP food restriction waivers and their target implementation dates. The list includes Florida (04/20/26) and Texas (04/01/26), signaling some states plan to begin restricting purchases of items like soda, candy, energy drinks, and certain desserts in 2026.",
       "category": "policy-change",
       "date": "2026-04-22",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": ["snap"],
-      "isBreaking": true
+      "programs": ["snap"]
     },
     {
       "id": "n-20260408-medicaid-chip-noncitizen-fmap-guidance",
-      "title": "CMS issues guidance for Oct. 1, 2026 limits on federal Medicaid/CHIP matching funds for certain noncitizens",
-      "summary": "CMS issued guidance to states for a statutory change that limits when states can claim federal matching funds for full Medicaid and CHIP benefits for certain noncitizens beginning 2026-10-01. CMS notes federal match remains available for treatment of emergency medical conditions and that the change does not apply to the option to cover lawfully residing children and pregnant people in Medicaid/CHIP.",
+      "title": "CMS issues guidance on new limits to federal Medicaid/CHIP matching funds for certain noncitizens",
+      "summary": "CMS released guidance to help states implement statutory limits on federal Medicaid and CHIP matching funds for certain noncitizens beginning 10/01/26. CMS noted exceptions, including continued federal matching for treatment of emergency medical conditions and that the change does not apply to CHIP Health Services Initiatives or state options to cover lawfully residing children and pregnant people.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "Centers for Medicare & Medicaid Services",
@@ -25,65 +24,73 @@
     },
     {
       "id": "n-20260413-hotma-interim-reexams-household-changes",
-      "title": "HUD: PHAs and multifamily owners must do interim reexaminations when households add/remove members (HOTMA guidance update)",
-      "summary": "HUD Notice PIH 2026-09 / H 2026-05 (issued 2026-04-13) revises HOTMA implementation guidance to require interim reexaminations whenever a household adds or removes members (including foster adults/children and live-in aides), even if adjusted income does not change. HUD also provides a limited exception for agencies/owners with a written policy not to conduct interim reexams for income increases during the last 3 months of a recertification period.",
+      "title": "HUD clarifies HOTMA interim reexams must occur when households add or remove members",
+      "summary": "HUD’s Notice PIH 2026-09 / H 2026-05 requires PHAs and multifamily owners to conduct interim reexaminations whenever a household adds or removes a member, even if the change does not affect adjusted income. HUD also describes an exception for agencies/owners with a written policy not to conduct interim reexams for increases in adjusted income during the last 3 months of a recertification period.",
       "category": "policy-change",
       "date": "2026-04-13",
       "source": "U.S. Department of Housing and Urban Development",
       "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-09.pdf",
-      "programs": ["housing-choice-voucher", "section8"],
-      "isBreaking": true
+      "programs": ["section8", "public-housing"]
     },
     {
-      "id": "n-20260101-ssi-federal-payment-amounts-2026",
-      "title": "SSA: 2026 SSI federal benefit rates increased with the January 2026 COLA",
-      "summary": "SSA says the 2.8% cost-of-living adjustment effective January 2026 increases the maximum federal SSI payment to $994/month for an eligible individual and $1,491/month for an eligible couple. SSA also lists $498/month as the maximum federal payment for an essential person.",
+      "id": "n-20260424-medicaid-chip-enrollment-75-3m",
+      "title": "KFF updates tracker: 75.3 million enrolled in Medicaid/CHIP nationally as of January 2026",
+      "summary": "KFF’s Medicaid Enrollment and Unwinding Tracker reports 75.3 million people enrolled in Medicaid/CHIP nationally as of January 2026. The tracker notes this is a 20% decline from March 2023 enrollment levels, but still 5% higher than February 2020 (pre-pandemic) enrollment.",
       "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
-      "programs": ["ssi"]
+      "date": "2026-04-24",
+      "source": "KFF (Kaiser Family Foundation)",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/",
+      "programs": ["medicaid", "chip"]
     },
     {
-      "id": "n-20251211-wic-fy2026-cvb-amounts",
-      "title": "USDA: FY2026 WIC fruit/vegetable cash-value benefit amounts set; states must authorize at least one non-fresh option by April 2026",
-      "summary": "USDA WIC Policy Memorandum 2026-2 sets FY2026 monthly fruit/vegetable cash-value benefit amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. The memo also notes WIC food package changes require state agencies to authorize at least one form of fruits/vegetables beyond fresh (frozen, canned, and/or dried) by April 2026.",
+      "id": "n-20251210-wic-cvvb-fy2026",
+      "title": "USDA sets FY 2026 WIC fruit/vegetable cash-value benefit amounts",
+      "summary": "USDA FNS set FY 2026 WIC cash-value voucher/benefit (CVV/B) amounts at $26/month for children, $48/month for pregnant and postpartum participants, and $52/month for fully/mostly breastfeeding participants. The memo notes the FY 2026 inflation adjustment is 11.8% over the FY 2022 baseline, and FY 2026 runs from 10/01/25 to 09/30/26.",
       "category": "update",
-      "date": "2025-12-11",
+      "date": "2025-12-10",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": ["wic"],
-      "isBreaking": true
+      "programs": ["wic"]
     },
     {
-      "id": "n-20260630-fafsa-2025-26-deadline",
-      "title": "Federal FAFSA deadline for 2025–26 is June 30, 2026 (with corrections due Sept. 12, 2026)",
-      "summary": "Federal Student Aid lists the federal FAFSA submission deadline for the 2025–26 award year as 11:59 p.m. Central Time on 2026-06-30. The site also lists the deadline for corrections/updates as 11:59 p.m. Central Time on 2026-09-12.",
+      "id": "n-20260414-irs-extension-oct15",
+      "title": "IRS reminder: file-extension request due April 15, extends filing to Oct. 15, 2026",
+      "summary": "The IRS reminded taxpayers they can request an automatic extension to file their federal income tax return, but the request must be made by 04/15/26. The extension moves the filing deadline to 10/15/26 (it does not extend time to pay), and the IRS also notes automatic extensions may apply for certain taxpayers, including some members of the military and taxpayers living abroad.",
       "category": "deadline",
-      "date": "2026-06-30",
-      "source": "Federal Student Aid (StudentAid.gov)",
-      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
+      "date": "2026-04-14",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/if-you-need-more-time-to-file-request-an-extension",
+      "programs": ["eitc", "ctc"]
+    },
+    {
+      "id": "n-20251101-fafsa-federal-deadlines-2025-26-2026-27",
+      "title": "Federal FAFSA deadlines: June 30, 2026 (2025–26) and June 30, 2027 (2026–27)",
+      "summary": "USA.gov notes the federal FAFSA deadline for the 2025–26 school year is 06/30/26. It also lists 06/30/27 as the federal FAFSA deadline for the 2026–27 school year, though states and colleges may have earlier priority deadlines.",
+      "category": "deadline",
+      "date": "2025-11-01",
+      "source": "USA.gov",
+      "sourceUrl": "https://www.usa.gov/fafsa",
       "programs": ["fafsa", "pell-grant"]
     },
     {
-      "id": "n-20260121-irs-eitc-2025-tables",
-      "title": "IRS: EITC tables for tax year 2025 include max credit $8,046 (3+ kids) and investment income limit $11,950",
-      "summary": "IRS EITC tables for tax year 2025 list maximum credit amounts of $649 (no qualifying children), $4,328 (1 child), $7,152 (2 children), and $8,046 (3+ children). IRS also lists an investment income limit of $11,950 or less for claiming EITC for tax year 2025.",
+      "id": "n-20251015-ssa-cola-2026-2-8",
+      "title": "Social Security announces 2.8% COLA for 2026 (SSI increase starts Dec. 31, 2025)",
+      "summary": "Social Security announced a 2.8% cost-of-living adjustment (COLA) for 2026 affecting about 75 million people. SSA says the increased payments start in January 2026 for nearly 71 million Social Security beneficiaries and on 12/31/25 for nearly 7.5 million SSI recipients.",
+      "category": "update",
+      "date": "2025-10-15",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
+      "programs": ["ssi", "ssdi"]
+    },
+    {
+      "id": "n-20260121-irs-eitc-max-2025",
+      "title": "IRS posts updated EITC maximums for tax year 2025 (up to $8,046 for 3+ kids)",
+      "summary": "IRS EITC tables list maximum EITC amounts for tax year 2025 of $649 (no qualifying children), $4,328 (1 child), $7,152 (2 children), and $8,046 (3+ children). The same tables list an investment income limit of $11,950 or less for tax year 2025.",
       "category": "update",
       "date": "2026-01-21",
       "source": "Internal Revenue Service",
       "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
       "programs": ["eitc"]
-    },
-    {
-      "id": "n-20241230-hotma-cpd-compliance-date-extension",
-      "title": "HUD: HOTMA final rule compliance date for CPD programs extended to Jan. 1, 2026 (with option for earlier compliance)",
-      "summary": "HUD’s CPD guidance says the HOTMA final rule compliance date for CPD programs that use HUD’s 24 CFR Part 5 income regulations was extended to 2026-01-01. HUD also notes grantees ready to comply may set an earlier compliance date between 2024-01-01 and 2026-01-01, and that certain income safe harbors may be implemented prior to the compliance date.",
-      "category": "update",
-      "date": "2024-12-30",
-      "source": "HUD Exchange",
-      "sourceUrl": "https://www.hudexchange.info/news/cpd-guidance-on-hotma-compliance-date-extension/",
-      "programs": ["section8", "housing-choice-voucher"]
     }
   ]
 }
