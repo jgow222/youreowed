@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-04-30T11:00:00.000Z",
+  "lastUpdated": "2026-05-01T11:00:00Z",
   "items": [
     {
-      "id": "n-20260422-snap-food-restriction-waivers",
-      "title": "USDA posts list of approved SNAP food restriction waivers with 2026 rollout dates",
-      "summary": "USDA’s Food and Nutrition Service published an updated table of 21 states with approved SNAP food restriction waivers and their target implementation dates. The list includes Florida (04/20/26) and Texas (04/01/26), signaling some states plan to begin restricting purchases of items like soda, candy, energy drinks, and certain desserts in 2026.",
-      "category": "policy-change",
-      "date": "2026-04-22",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": ["snap"]
+      "id": "n-20260430-medicaid-chip-kff-policy-changes",
+      "title": "KFF: States gearing up for major Medicaid/CHIP rule changes starting Oct. 2026 and Jan. 2027",
+      "summary": "A new KFF/Georgetown survey says states are preparing for Medicaid eligibility restrictions for certain lawfully residing immigrants starting Oct. 1, 2026, along with new requirements for ACA expansion adults starting Jan. 1, 2027 (including work/community engagement requirements and 6-month renewals). The report also flags future changes like mandatory cost-sharing (up to $35 per service) for some expansion adults beginning Oct. 2028.",
+      "category": "update",
+      "date": "2026-04-30",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-and-chip-eligibility-enrollment-and-renewal-policies-as-states-prepare-for-major-medicaid-policy-changes/",
+      "programs": ["medicaid", "chip"]
     },
     {
-      "id": "n-20260408-medicaid-chip-noncitizen-fmap-guidance",
-      "title": "CMS issues guidance on new limits to federal Medicaid/CHIP matching funds for certain noncitizens",
-      "summary": "CMS released guidance to help states implement statutory limits on federal Medicaid and CHIP matching funds for certain noncitizens beginning 10/01/26. CMS noted exceptions, including continued federal matching for treatment of emergency medical conditions and that the change does not apply to CHIP Health Services Initiatives or state options to cover lawfully residing children and pregnant people.",
+      "id": "n-20260408-medicaid-chip-cms-noncitizen-funding-limits",
+      "title": "CMS issues guidance on new limits for federal Medicaid/CHIP matching funds for certain noncitizens",
+      "summary": "CMS released guidance (via a State Health Official letter) to prepare states for a statutory change that limits when states can claim federal matching funds for Medicaid and CHIP for people who are not U.S. citizens/nationals or who fall into specified noncitizen categories. CMS says the change begins Oct. 1, 2026 and notes exceptions such as continued federal matching for emergency medical conditions.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "Centers for Medicare & Medicaid Services",
@@ -23,74 +23,75 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260413-hotma-interim-reexams-household-changes",
-      "title": "HUD clarifies HOTMA interim reexams must occur when households add or remove members",
-      "summary": "HUD’s Notice PIH 2026-09 / H 2026-05 requires PHAs and multifamily owners to conduct interim reexaminations whenever a household adds or removes a member, even if the change does not affect adjusted income. HUD also describes an exception for agencies/owners with a written policy not to conduct interim reexams for increases in adjusted income during the last 3 months of a recertification period.",
-      "category": "policy-change",
-      "date": "2026-04-13",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-09.pdf",
+      "id": "n-20260801-hud-vouchers-work-requirements-comment-deadline",
+      "title": "Federal Register: Comment deadline (May 1) for HUD proposal allowing optional work requirements/term limits in public housing and some Section 8 programs",
+      "summary": "A HUD proposed rule would give Public Housing Agencies and certain multifamily owners the option to impose work requirements and term limits for some households in public housing and specified HUD-assisted programs. The public comment period ends May 1, 2026, meaning this is a near-term deadline for advocates and the public to weigh in.",
+      "category": "deadline",
+      "date": "2026-05-01",
+      "source": "Federal Register",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/03/02/2026-04095/establishing-flexibility-for-implementation-of-work-requirements-and-term-limits",
       "programs": ["section8", "public-housing"]
     },
     {
-      "id": "n-20260424-medicaid-chip-enrollment-75-3m",
-      "title": "KFF updates tracker: 75.3 million enrolled in Medicaid/CHIP nationally as of January 2026",
-      "summary": "KFF’s Medicaid Enrollment and Unwinding Tracker reports 75.3 million people enrolled in Medicaid/CHIP nationally as of January 2026. The tracker notes this is a 20% decline from March 2023 enrollment levels, but still 5% higher than February 2020 (pre-pandemic) enrollment.",
+      "id": "n-20250814-snap-fy2026-cola-allotments-income-limits",
+      "title": "USDA: SNAP FY 2026 benefit levels (COLA) include $298 max for 1-person households in the 48 states/DC",
+      "summary": "USDA’s FY 2026 SNAP cost-of-living adjustments (effective Oct. 1, 2025–Sept. 30, 2026) set the maximum monthly allotment at $298 for a 1-person household and $994 for a 4-person household in the 48 states and DC. The same update lists a $744 maximum excess shelter deduction and a $24 minimum benefit for 1–2 person households.",
       "category": "update",
-      "date": "2026-04-24",
-      "source": "KFF (Kaiser Family Foundation)",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/",
-      "programs": ["medicaid", "chip"]
+      "date": "2025-08-14",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola",
+      "programs": ["snap"]
     },
     {
-      "id": "n-20251210-wic-cvvb-fy2026",
-      "title": "USDA sets FY 2026 WIC fruit/vegetable cash-value benefit amounts",
-      "summary": "USDA FNS set FY 2026 WIC cash-value voucher/benefit (CVV/B) amounts at $26/month for children, $48/month for pregnant and postpartum participants, and $52/month for fully/mostly breastfeeding participants. The memo notes the FY 2026 inflation adjustment is 11.8% over the FY 2022 baseline, and FY 2026 runs from 10/01/25 to 09/30/26.",
+      "id": "n-20251211-wic-fy2026-cash-value-benefit-amounts",
+      "title": "USDA: WIC FY 2026 fruit-and-vegetable cash-value benefit amounts set at $26 (children), $48 (pregnant/postpartum), $52 (breastfeeding)",
+      "summary": "USDA issued FY 2026 WIC cash-value voucher/benefit (CVV/B) amounts that allow participants to buy fruits and vegetables. The memo lists $26/month for children, $48/month for pregnant and postpartum participants, and $52/month for fully or mostly breastfeeding participants; it also lists a $3/month juice substitution amount.",
       "category": "update",
-      "date": "2025-12-10",
+      "date": "2025-12-11",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
       "programs": ["wic"]
     },
     {
-      "id": "n-20260414-irs-extension-oct15",
-      "title": "IRS reminder: file-extension request due April 15, extends filing to Oct. 15, 2026",
-      "summary": "The IRS reminded taxpayers they can request an automatic extension to file their federal income tax return, but the request must be made by 04/15/26. The extension moves the filing deadline to 10/15/26 (it does not extend time to pay), and the IRS also notes automatic extensions may apply for certain taxpayers, including some members of the military and taxpayers living abroad.",
-      "category": "deadline",
-      "date": "2026-04-14",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/if-you-need-more-time-to-file-request-an-extension",
-      "programs": ["eitc", "ctc"]
-    },
-    {
-      "id": "n-20251101-fafsa-federal-deadlines-2025-26-2026-27",
-      "title": "Federal FAFSA deadlines: June 30, 2026 (2025–26) and June 30, 2027 (2026–27)",
-      "summary": "USA.gov notes the federal FAFSA deadline for the 2025–26 school year is 06/30/26. It also lists 06/30/27 as the federal FAFSA deadline for the 2026–27 school year, though states and colleges may have earlier priority deadlines.",
-      "category": "deadline",
-      "date": "2025-11-01",
-      "source": "USA.gov",
-      "sourceUrl": "https://www.usa.gov/fafsa",
-      "programs": ["fafsa", "pell-grant"]
-    },
-    {
-      "id": "n-20251015-ssa-cola-2026-2-8",
-      "title": "Social Security announces 2.8% COLA for 2026 (SSI increase starts Dec. 31, 2025)",
-      "summary": "Social Security announced a 2.8% cost-of-living adjustment (COLA) for 2026 affecting about 75 million people. SSA says the increased payments start in January 2026 for nearly 71 million Social Security beneficiaries and on 12/31/25 for nearly 7.5 million SSI recipients.",
+      "id": "n-20251001-ssi-ssdi-ssa-cola-2026",
+      "title": "SSA: Social Security and SSI benefits rise 2.8% in 2026",
+      "summary": "The Social Security Administration announced a 2.8% cost-of-living adjustment (COLA) for 2026, affecting about 75 million people. SSA says the increase begins with Social Security benefits payable in January 2026 and SSI payments starting Dec. 31, 2025.",
       "category": "update",
-      "date": "2025-10-15",
+      "date": "2025-10-01",
       "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
       "programs": ["ssi", "ssdi"]
     },
     {
-      "id": "n-20260121-irs-eitc-max-2025",
-      "title": "IRS posts updated EITC maximums for tax year 2025 (up to $8,046 for 3+ kids)",
-      "summary": "IRS EITC tables list maximum EITC amounts for tax year 2025 of $649 (no qualifying children), $4,328 (1 child), $7,152 (2 children), and $8,046 (3+ children). The same tables list an investment income limit of $11,950 or less for tax year 2025.",
-      "category": "update",
-      "date": "2026-01-21",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
-      "programs": ["eitc"]
+      "id": "n-20260417-pell-ed-accountability-nprm-comment-deadline",
+      "title": "Education Department proposes accountability rule that could cut off aid for low-earning programs; comments due May 20",
+      "summary": "The U.S. Department of Education published a proposed rule to hold colleges and programs accountable for low earnings outcomes, including removing federal student loan eligibility for programs whose typical graduates earn less than high school graduates. ED also notes that some low-performing programs could lose access to federal student loans and, in certain cases, Pell Grants; public comments are due May 20, 2026.",
+      "category": "policy-change",
+      "date": "2026-04-17",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "http://www.ed.gov/about/news/press-release/us-department-of-education-issues-proposed-rule-hold-colleges-and-universities-accountable-low-earning-outcomes",
+      "programs": ["pell-grant"],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260420-pell-workforce-pell-stats-comment-deadline",
+      "title": "Federal Register: Education Department NPRM on Workforce Pell/STATS and earnings accountability; comments due May 20",
+      "summary": "A Department of Education proposed rule titled ""Accountability in Higher Education and Access Through Demand-Driven Workforce Pell"" is open for public comment through May 20, 2026. The proposal references Workforce Pell and a new Student Tuition and Transparency System (STATS) alongside earnings accountability.",
+      "category": "deadline",
+      "date": "2026-04-20",
+      "source": "Federal Register",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/20/2026-07666/accountability-in-higher-education-and-access-through-demand-driven-workforce-pell-student-tuition",
+      "programs": ["pell-grant"]
+    },
+    {
+      "id": "n-20250630-fafsa-2025-26-federal-deadline",
+      "title": "Federal Student Aid: 2025–26 FAFSA must be received by June 30, 2026",
+      "summary": "Federal Student Aid’s 2025–26 FAFSA form materials state that applications must be received no later than June 30, 2026 for federal aid. State and school deadlines can be earlier, but June 30 is the final federal cutoff for submitting that year’s FAFSA.",
+      "category": "deadline",
+      "date": "2026-06-30",
+      "source": "Federal Student Aid (U.S. Department of Education)",
+      "sourceUrl": "https://studentaid.gov/sites/default/files/2025-26-fafsa.pdf",
+      "programs": ["pell-grant"]
     }
   ]
 }
