@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-05-02T11:00:00Z",
+  "lastUpdated": "2026-05-03T11:00:00Z",
   "items": [
+    {
+      "id": "n-20260422-snap-food-restriction-waivers-22-states",
+      "title": "USDA posts updated SNAP food-restriction waiver tracker: 22 states approved, with many implementation dates in 2026",
+      "summary": "USDA’s SNAP food-restriction waiver page lists 22 states with approved demonstration waivers that restrict purchases of items like soda and candy. The tracker includes multiple 2026 target implementation dates—for example: Utah, Indiana, Iowa, Nebraska, and West Virginia (Jan. 1, 2026); Texas (Apr. 1, 2026); Florida (Apr. 20, 2026); and Missouri (Oct. 1, 2026).",
+      "category": "policy-change",
+      "date": "2026-04-22",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "programs": ["snap"],
+      "isBreaking": true
+    },
     {
       "id": "n-20260408-medicaid-chip-noncitizen-ffp-limits",
       "title": "CMS issues guidance on new limits for federal Medicaid/CHIP matching funds for certain noncitizens starting Oct. 1, 2026",
@@ -13,83 +24,53 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260430-medicaid-chip-major-policy-changes-kff",
-      "title": "KFF: states prepare for major Medicaid/CHIP policy changes (work requirements, 6-month renewals, immigrant eligibility changes)",
-      "summary": "A KFF/Georgetown survey (policies as of January 2026) summarizes major changes in the 2025 reconciliation law, including immigrant eligibility limits beginning October 2026 and work/community engagement requirements plus 6-month renewals for ACA expansion adults beginning January 2027. KFF also highlights a future cost-sharing change starting October 2028 that would require cost-sharing for non-exempt services up to $35 per service for some expansion adults.",
-      "category": "update",
-      "date": "2026-04-30",
-      "source": "KFF (Kaiser Family Foundation)",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-and-chip-eligibility-enrollment-and-renewal-policies-as-states-prepare-for-major-medicaid-policy-changes/",
-      "programs": ["medicaid", "chip"]
-    },
-    {
-      "id": "n-20260325-hud-vash-admin-fees-deadline",
-      "title": "HUD notice: PHAs can apply for $10 million in additional HUD-VASH administrative fees; applications due April 14, 2026",
-      "summary": "HUD’s PIH 2026-01 (Revised) notice makes $10 million available in additional administrative fees for public housing agencies (PHAs) administering HUD-VASH vouchers. HUD says applications must be received by midnight April 14, 2026 (in the PHA’s time zone) and the funds must be used only for HUD-VASH-related administrative and leasing support activities.",
+      "id": "n-20260203-eitc-refunds-feb21-march2",
+      "title": "IRS reminder: EITC refunds can’t be issued before Feb. 21, 2026; most direct deposits expected by March 2",
+      "summary": "IRS says it must wait until at least Feb. 21, 2026 to issue refunds for returns claiming the Earned Income Tax Credit (EITC). If you e-file, choose direct deposit, and your return has no issues, IRS says most EITC refunds are expected by March 2, 2026; IRS also reports the average EITC amount for tax year 2024 was $2,916.",
       "category": "deadline",
-      "date": "2026-03-25",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/dfiles/hudclips/documents/PIH-2026-01.pdf",
-      "programs": ["section-8", "hud-vash"]
-    },
-    {
-      "id": "n-20251205-wic-milk-mma-fy2026",
-      "title": "USDA WIC policy memo updates the maximum monthly allowance for milk for FY 2026; authority ends Sept. 30, 2026",
-      "summary": "USDA issued WIC Policy Memorandum 2026-1 directing state agencies to implement updated WIC maximum monthly allowances (MMAs) of fluid milk for FY 2026 (including 16 quarts for Food Packages IV and VI, 22 quarts for Food Package V, and 24 quarts for Food Package VII). USDA says the authority for the updated amounts terminates September 30, 2026.",
-      "category": "update",
-      "date": "2025-12-05",
-      "source": "U.S. Department of Agriculture",
-      "sourceUrl": "https://www.usda.gov/sites/default/files/guidance-documents/fns.wic-2026-1-mma-increase.pdf",
-      "programs": ["wic"]
-    },
-    {
-      "id": "n-20260304-liheap-quarterly-report-comments",
-      "title": "Federal Register: ACF seeks OMB extension and changes to LIHEAP Quarterly Reports; comments were due April 3, 2026",
-      "summary": "A Federal Register notice says the Administration for Children and Families is requesting a 3-year extension of the LIHEAP Quarterly Reports information collection (OMB control number 0970-0589) with proposed changes intended to reduce redundancy and administrative burden. The notice set a public comment deadline of April 3, 2026.",
-      "category": "update",
-      "date": "2026-03-04",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/documents/2026/03/04/2026-04249/submission-for-office-of-management-and-budget-review-low-income-home-energy-assistance-program",
-      "programs": ["liheap"]
-    },
-    {
-      "id": "n-20251009-irs-eitc-2026-inflation",
-      "title": "IRS publishes 2026 inflation adjustments: maximum EITC rises to $8,231 for families with 3+ qualifying children",
-      "summary": "IRS Revenue Procedure 2025-32 lists the maximum earned income tax credit (EITC) for 2026 as $664 (no qualifying children), $4,427 (one child), $7,316 (two children), and $8,231 (three or more children). The same document says taxpayers generally cannot claim the EITC if their investment income exceeds $12,200.",
-      "category": "update",
-      "date": "2025-10-09",
+      "date": "2026-02-03",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "sourceUrl": "https://www.irs.gov/newsroom/earned-income-tax-credit-a-valuable-credit-that-supports-millions-of-families",
       "programs": ["eitc", "ctc"]
     },
     {
-      "id": "n-20250630-fafsa-2025-26-federal-deadline",
-      "title": "Federal Student Aid: 2025–26 FAFSA must be received by June 30, 2026",
-      "summary": "Federal Student Aid’s 2025–26 FAFSA materials state that applications must be received no later than June 30, 2026 for federal student aid. The same document warns state and school deadlines can be earlier, so students should submit as early as possible.",
-      "category": "deadline",
-      "date": "2026-06-30",
-      "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://studentaid.gov/sites/default/files/2025-26-fafsa.pdf",
-      "programs": ["pell-grant"]
-    },
-    {
-      "id": "n-20260408-snap-changes-2026-overview-aei",
-      "title": "Overview: major SNAP changes rolling out in 2026 (work rules, waiver restrictions, nutrition-focused purchase limits)",
-      "summary": "An AEI analysis summarizes changes expected in 2026 following recent federal actions, including tighter SNAP work requirements and waiver limits, plus state-level nutrition-focused purchase restrictions under USDA-approved waivers. The piece notes some approved purchase restrictions were set to begin as early as January 1, 2026, with additional restrictions rolling out over the course of 2026.",
+      "id": "n-20260422-summer-ebt-2026-benefit-levels",
+      "title": "USDA publishes 2026 Summer EBT (SUN Bucks) benefit levels: $40/month in most states; higher amounts for Alaska, Hawaii, and territories",
+      "summary": "USDA says 2026 Summer EBT benefits remain $40 per child per month (total $120 for summer) in the 48 states and D.C., effective Jan. 1–Dec. 31, 2026. USDA’s 2026 table lists Alaska benefits of $54/month (Urban), $69/month (Rural 1), and $84/month (Rural 2), plus Hawaii at $63/month and participating U.S. territories at $60/month.",
       "category": "update",
-      "date": "2026-01-13",
-      "source": "American Enterprise Institute (AEI)",
-      "sourceUrl": "https://cosm.aei.org/major-changes-coming-to-snap-in-2026/",
+      "date": "2026-04-22",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/sebt/fr-042226",
       "programs": ["snap"]
     },
     {
-      "id": "n-20251001-ssi-ssdi-2026-cola",
-      "title": "Social Security COLA page: 2026 cost-of-living adjustment is 2.8%",
-      "summary": "SSA’s COLA information page lists the 2026 cost-of-living adjustment (COLA) as 2.8%. COLA-related payment changes generally start with December payments for SSI recipients (paid at the end of November) and January payments for Social Security beneficiaries.",
+      "id": "n-20251211-wic-fy2026-cash-value-benefit",
+      "title": "USDA WIC memo sets FY 2026 fruit-and-vegetable cash-value benefit amounts; states must allow at least one non-fresh option by April 2026",
+      "summary": "USDA’s FY 2026 WIC cash-value benefit memo lists monthly amounts of $26 for children, $48 for pregnant/postpartum participants, and $52 for fully or mostly breastfeeding participants (FY 2026 runs Oct. 1, 2025–Sept. 30, 2026). USDA also notes that WIC food package changes require states to authorize at least one form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
       "category": "update",
-      "date": "2025-10-01",
+      "date": "2025-12-11",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": ["wic"]
+    },
+    {
+      "id": "n-20260305-ehv-sv-document-verification",
+      "title": "HUD rescinds documentation flexibilities for Emergency Housing Vouchers and Stability Vouchers; PHAs must verify SSNs and eligible immigration status",
+      "summary": "HUD’s PIH Notice 2026-05 removes the option that let PHAs admit some Emergency Housing Voucher (EHV) and Stability Voucher (SV) families without verifying Social Security numbers and eligible immigration/citizenship documentation up front (with a 180-day follow-up window). HUD directs PHAs to follow standard verification regulations and says they must be in compliance within 60 days of publication for new SV admissions and current EHV/SV families.",
+      "category": "policy-change",
+      "date": "2026-03-05",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
+      "programs": ["section-8"]
+    },
+    {
+      "id": "n-20251024-ssa-cola-2026",
+      "title": "SSA: 2.8% COLA for 2026; higher payments start in January 2026 (and Dec. 31, 2025 for SSI)",
+      "summary": "SSA announced a 2.8% cost-of-living adjustment (COLA) for 2026, affecting Social Security (OASDI) and SSI benefits. SSA says increased payments begin in January 2026 for nearly 71 million Social Security beneficiaries and on Dec. 31, 2025 for nearly 7.5 million SSI recipients; SSA also says the taxable maximum rises to $184,500.",
+      "category": "update",
+      "date": "2025-10-24",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2025-10-24.html",
       "programs": ["ssi", "ssdi"]
     }
   ]
