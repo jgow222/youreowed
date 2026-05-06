@@ -1,151 +1,95 @@
 {
-  "lastUpdated": "2026-05-05T11:06:50Z",
+  "lastUpdated": "2026-05-06T11:01:00Z",
   "items": [
     {
-      "id": "n-20260422-snap-food-waivers",
-      "title": "USDA posts state SNAP waivers restricting purchases of soda and candy, with 2026 rollout dates",
-      "summary": "USDA's Food and Nutrition Service lists approved state SNAP food restriction waivers that can block purchases like soda, energy drinks, candy, and some prepared desserts. The USDA page shows target implementation dates ranging from Jan. 1, 2026 (e.g., Indiana/Iowa) to Oct. 1, 2026 (e.g., Missouri), with Florida listed for Apr. 20, 2026 and Arkansas for Jul. 1, 2026.",
-      "category": "policy-change",
-      "date": "2026-04-22",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": [
-        "snap"
-      ],
-      "isBreaking": true
-    },
-    {
       "id": "n-20260408-medicaid-chip-noncitizen-match",
-      "title": "CMS guidance: limits on federal Medicaid/CHIP matching funds for certain noncitizens start Oct. 1, 2026",
-      "summary": "CMS issued a State Health Official letter preparing states to implement a statutory change limiting the ability to claim federal matching funds for Medicaid and CHIP for people who are not U.S. citizens or nationals (or who fall into specific noncitizen categories in statute). CMS says the change begins Oct. 1, 2026, with exceptions including continued matching funds for emergency medical conditions and the option to cover lawfully residing children and pregnant people.",
+      "title": "CMS warns states: federal Medicaid/CHIP matching limits for certain noncitizens start Oct. 1, 2026",
+      "summary": "CMS issued guidance preparing states for a statutory change that limits when states can claim federal matching funds for Medicaid and CHIP for people who are not U.S. citizens/nationals or who fall into specific noncitizen categories. The change begins October 1, 2026, with exceptions including continued federal matching for emergency medical conditions and for states’ option to cover lawfully residing children and pregnant people in Medicaid/CHIP.",
       "category": "policy-change",
       "date": "2026-04-08",
-      "source": "Centers for Medicare & Medicaid Services",
+      "source": "CMS",
       "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
-      "programs": [
-        "medicaid",
-        "chip"
-      ],
-      "isBreaking": true
+      "programs": ["medicaid", "chip"]
     },
     {
-      "id": "n-20260424-medicaid-unwinding-disenroll",
-      "title": "Medicaid unwinding tracker: at least 25.198 million disenrolled during renewals (latest compiled data)",
-      "summary": "KFF's Medicaid enrollment and unwinding tracker reports that, as of Sept. 12, 2024, at least 25,198,000 Medicaid enrollees had been disenrolled during the post-continuous-coverage renewal process. The tracker also summarizes that 31% of completed renewals ended in disenrollment in reporting states, while 69% resulted in coverage renewal.",
-      "category": "update",
-      "date": "2026-04-24",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
-    },
-    {
-      "id": "n-20260305-hud-ehv-sv-docs",
-      "title": "HUD updates Emergency Housing Voucher and Stability Voucher rules: removes 180-day document delay; PHAs must comply within 60 days",
-      "summary": "HUD Notice PIH 2026-05 removes the special allowance letting Emergency Housing Voucher (EHV) and Stability Voucher (SV) households provide Social Security number and eligible immigration documentation up to 180 days after admission. HUD directs PHAs to follow the standard SSN and eligible-status verification rules (24 CFR 5.210-5.218 and 24 CFR 5.508) and says PHAs must be in compliance within 60 days of the notice.",
+      "id": "n-20260305-hud-ehv-sv-verification",
+      "title": "HUD reverses EHV/Stability Voucher flexibilities on SSN and immigration-document verification",
+      "summary": "HUD Notice PIH 2026-05 revises Emergency Housing Voucher (EHV) and Stability Voucher (SV) requirements by removing a waiver that allowed PHAs to admit families without Social Security number or eligible immigration-status documentation at intake (with up to 180 days to provide it). PHAs must follow the standard verification rules in 24 CFR 5.508 (citizenship/immigration status) and 24 CFR 5.210–5.218 (SSNs), with a 60-day compliance timeframe described in the notice.",
       "category": "policy-change",
       "date": "2026-03-05",
-      "source": "U.S. Department of Housing and Urban Development",
+      "source": "HUD",
       "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
-      "programs": [
-        "section8",
-        "ehv",
-        "stability-voucher"
-      ]
+      "programs": ["section8", "ehv", "stability-voucher"]
     },
     {
-      "id": "n-20260302-hud-work-req-comments",
-      "title": "Federal Register: HUD proposes optional work requirements and term limits for public housing and vouchers; comments due May 1, 2026",
-      "summary": "A HUD proposed rule would let eligible Public Housing Agencies adopt optional work requirements (up to 40 hours/week of work activities) and optional term limits (minimum 2 years) for non-elderly, non-disabled households in public housing and several voucher programs. The Federal Register notice lists May 1, 2026 as the public comment deadline.",
-      "category": "deadline",
-      "date": "2026-03-02",
-      "source": "Federal Register (via GovInfo)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-03-02/html/2026-04095.htm",
-      "programs": [
-        "public-housing",
-        "section8",
-        "pbv",
-        "pbra"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260331-liheap-reallotment-comments",
-      "title": "Federal Register: HHS proposes reallotment of $3.18M in prior-year LIHEAP funds to FY2026 recipients; comments due Apr. 30, 2026",
-      "summary": "HHS/ACF published a notice proposing to reallocate $3,181,108.07 for FY2026 LIHEAP recipients, including $2,697,089 in FY2025 LIHEAP block grant funds and $484,019.07 in Infrastructure Investment and Jobs Act (IIJA) funds. The notice sets an April 30, 2026 deadline for public comments.",
-      "category": "deadline",
-      "date": "2026-03-31",
-      "source": "Federal Register (via GovInfo)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-03-31/html/2026-06130.htm",
-      "programs": [
-        "liheap"
-      ]
-    },
-    {
-      "id": "n-20260401-ca-wic-foods",
-      "title": "California WIC: expanded package sizes and new food options show up in the WIC app in mid-April",
-      "summary": "California WIC says many whole-grain items are now allowed in packages ranging from 1248 ounces (instead of only 16 ounces), with additional package-size options for items like dry beans and frozen/canned vegetables. The page says new foods and sizes appear in the California WIC App beginning in mid-April.",
+      "id": "n-20260427-hud-hcv-pbv-flexibilities",
+      "title": "HUD rescinds expedited homelessness-admission verification waivers for HCV, PBV, and public housing",
+      "summary": "The National Low Income Housing Coalition reports HUD rescinded PIH 2024-17 (via PIH 2026-04), which had created a streamlined process for certain regulatory waivers to expedite admissions for people experiencing homelessness. NLIHC also notes PIH 2026-05 removed EHV/SV flexibilities that let PHAs delay collecting SSN and citizenship documentation for up to 180 days after admission.",
       "category": "update",
-      "date": "2026-04-01",
-      "source": "California WIC (CA.gov)",
-      "sourceUrl": "https://myfamily.wic.ca.gov/Home/YourWICFoods",
-      "programs": [
-        "wic"
-      ]
+      "date": "2026-04-27",
+      "source": "National Low Income Housing Coalition",
+      "sourceUrl": "https://nlihc.org/resource/hud-rescinds-flexibilities-housing-choice-voucher-project-based-voucher-public-housing",
+      "programs": ["section8", "pbv", "public-housing", "ehv", "stability-voucher"]
     },
     {
-      "id": "n-20260123-eitc-refund-timeline",
-      "title": "IRS: most early EITC/Additional CTC refunds available by March 2, 2026; refund tracker updated by Feb. 21",
-      "summary": "The IRS says most early filers claiming the Earned Income Tax Credit (EITC) or Additional Child Tax Credit who choose direct deposit should see refunds in bank accounts or on debit cards by March 2, 2026 (if there are no issues with the return). The IRS also says its Where's My Refund? tool will be updated with projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026.",
-      "category": "deadline",
-      "date": "2026-01-23",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-joins-national-partners-to-launch-eitc-awareness-day",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
+      "id": "n-20260422-snap-food-restriction-waivers",
+      "title": "USDA posts expanding list of SNAP waivers restricting purchases (e.g., soda/candy) with 2026 rollout dates",
+      "summary": "USDA’s SNAP ‘Food Restriction Waivers’ page lists approved state waivers that restrict purchases of certain items such as soda, candy, energy drinks, and desserts. Examples include Florida (target implementation 04/20/26) restricting soda/energy drinks/candy/prepared desserts and Arkansas (target implementation 07/01/26) restricting soda and certain sweetened drinks and candy.",
+      "category": "policy-change",
+      "date": "2026-04-22",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "programs": ["snap"]
     },
     {
-      "id": "n-20260401-fafsa-2526-deadline",
-      "title": "FAFSA deadline reminder: 202526 FAFSA due June 30, 2026 (federal deadline)",
-      "summary": "USA.gov lists June 30, 2026 as the federal deadline to submit the FAFSA for the 202526 school year. Schools and states may have earlier priority deadlines, but June 30 is the federal cutoff.",
-      "category": "deadline",
-      "date": "2026-04-01",
-      "source": "USA.gov",
-      "sourceUrl": "https://www.usa.gov/fafsa",
-      "programs": [
-        "pell",
-        "fafsa"
-      ]
-    },
-    {
-      "id": "n-20251024-ssa-cola-2026",
-      "title": "SSA: 2026 COLA is 2.8% and the taxable wage base rises to $184,500",
-      "summary": "Social Security says benefits (including SSI) increase 2.8% for 2026, with Social Security beneficiary increases starting in January 2026 and SSI increases beginning Dec. 31, 2025. SSA also lists a 2026 taxable maximum of $184,500 and an annual earnings limit of $24,480 for workers under full retirement age.",
+      "id": "n-20260220-snap-fy26-cola",
+      "title": "USDA publishes SNAP FY 2026 cost-of-living adjustment (COLA) information",
+      "summary": "USDA’s Food and Nutrition Service published a SNAP FY 2026 COLA page that states benefit standards for federal fiscal year 2026. These annual updates affect SNAP maximum allotments, deductions, and net-income limits that states use to calculate monthly benefits.",
       "category": "update",
-      "date": "2025-10-24",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/index.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
+      "date": "2026-02-20",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola/fy26",
+      "programs": ["snap"]
     },
     {
-      "id": "n-20260101-ssi-ssdi-work-thresholds",
-      "title": "SSA Red Book: 2026 disability work thresholds updated (SGA $1,690; Trial Work Period $1,210)",
-      "summary": "SSA's Red Book lists 2026 Substantial Gainful Activity (SGA) as $1,690/month for non-blind disability and $2,830/month for blind disability, and a Trial Work Period amount of $1,210/month. The same SSA page lists the 2026 SSI Federal Benefit Rate as $994/month for an individual and $1,491/month for an eligible couple.",
+      "id": "n-20260219-irs-eitc-income-limit",
+      "title": "IRS reminder: EITC income cap for 2025 tax year is $68,675",
+      "summary": "An IRS Tax Tip for the 2026 filing season notes the Earned Income Tax Credit helps low- to moderate-income workers and families and highlights an income limit for eligibility. The IRS says the maximum income amount for claiming the EITC for tax year 2025 is $68,675, with credit amounts varying by income, family size, and filing status.",
       "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/redbook/newfor2026.htm",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
+      "date": "2026-02-19",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/2026-filing-season-updates-and-resources-for-seniors",
+      "programs": ["eitc"]
+    },
+    {
+      "id": "n-20260126-irs-eitc-actc-refunds",
+      "title": "IRS: 2026 filing season opened Jan. 26; many EITC/ACTC refunds expected by March 2",
+      "summary": "The IRS opened the 2026 tax filing season on Jan. 26, 2026 and began accepting tax-year 2025 individual returns. The IRS also said most Earned Income Tax Credit (EITC) and Additional Child Tax Credit (ACTC) refunds should be available by March 2, 2026 for people using direct deposit (with ‘Where’s My Refund?’ expected to show projected deposit dates for most early EITC/ACTC filers by Feb. 21, 2026).",
+      "category": "deadline",
+      "date": "2026-01-26",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
+      "programs": ["eitc", "ctc"]
+    },
+    {
+      "id": "n-20251210-wic-cvb-amounts-fy26",
+      "title": "USDA WIC memo sets FY 2026 cash-value fruit/vegetable benefit levels",
+      "summary": "USDA’s WIC Policy Memorandum #2026-2 sets monthly cash-value voucher/benefit amounts for fruits and vegetables for FY 2026: $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/mostly breastfeeding participants. The memo also notes state agencies must authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) in addition to fresh by April 2026.",
+      "category": "update",
+      "date": "2025-12-10",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": ["wic"]
+    },
+    {
+      "id": "n-2025xxxx-ssa-cola-2026",
+      "title": "SSA: Social Security and SSI benefits rise 2.8% in 2026 (plus updated SSI federal payment standard and SGA limits)",
+      "summary": "SSA’s 2026 COLA fact sheet reports a 2.8% cost-of-living adjustment for 2026 and provides updated program parameters, including an SSI federal payment standard of $994/month for an individual and $1,491/month for a couple. The fact sheet also lists 2026 disability-related thresholds such as Substantial Gainful Activity of $1,690/month for non-blind individuals ($2,830/month for blind individuals).",
+      "category": "update",
+      "date": "2025-10-01",
+      "source": "SSA",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+      "programs": ["ssi", "ssdi"]
     }
   ]
 }
