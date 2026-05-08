@@ -1,107 +1,96 @@
 {
-  "lastUpdated": "2026-05-07T11:06:28Z",
+  "lastUpdated": "2026-05-08T15:30:00Z",
   "items": [
     {
-      "id": "n-20260507-ssa-cola-2026",
-      "title": "Social Security and SSI payments rise 2.8% in 2026 (new SSA fact sheet details)",
-      "summary": "SSA’s 2026 COLA is 2.8%, effective with benefits payable in January 2026. The SSA fact sheet also lists updated 2026 thresholds including the $184,500 maximum taxable earnings cap and SSI federal payment standards of $994/month for an individual and $1,491/month for a couple.",
-      "category": "update",
-      "date": "2026-05-07",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260507-irs-eitc-actc-refunds",
-      "title": "IRS: 2026 filing season opened Jan. 26; most EITC/ACTC refunds expected by March 2",
-      "summary": "The IRS says the 2026 filing season opened January 26, 2026 (for tax year 2025 returns). For many early filers claiming the Earned Income Tax Credit (EITC) or Additional Child Tax Credit (ACTC), the IRS expects refunds to be available by March 2, 2026 if they choose direct deposit and there are no other issues with the return.",
-      "category": "deadline",
-      "date": "2026-01-26",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260507-ed-fafsa-2025-26-deadline",
-      "title": "Federal Student Aid: 2025–26 FAFSA must be received by June 30, 2026",
-      "summary": "The official 2025–26 FAFSA form states that for federal aid, the Department of Education must receive the application no later than June 30, 2026 (with submission beginning as early as Oct. 1, 2024). The form also notes schools must have correct, complete information by the student’s last day of enrollment in the 2025–26 school year.",
-      "category": "deadline",
-      "date": "2026-05-07",
-      "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://studentaid.gov/sites/default/files/2025-26-fafsa.pdf",
-      "programs": [
-        "pell",
-        "fafsa"
-      ]
-    },
-    {
-      "id": "n-20260507-cms-medicaid-chip-noncitizen-funding",
-      "title": "CMS issues guidance for new limits on federal Medicaid/CHIP matching funds for certain noncitizens (effective Oct. 1, 2026)",
-      "summary": "CMS announced guidance to implement a statutory change that limits states’ ability to claim federal Medicaid and CHIP matching funds for individuals who are not U.S. citizens/nationals or who fall into specified noncitizen categories. CMS says the change begins October 1, 2026, with exceptions including continued matching funds for treatment of emergency medical conditions and no change to the option for states to cover lawfully residing children and pregnant women.",
+      "id": "n-20260508-medicaid-noncitizen-match-oct1",
+      "title": "CMS guidance: federal Medicaid/CHIP matching limits for certain noncitizens take effect Oct. 1, 2026",
+      "summary": "CMS issued implementation guidance on new statutory limits to federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens or nationals, effective October 1, 2026. Exceptions include emergency medical conditions and lawfully residing children/pregnant people under existing state options.",
       "category": "policy-change",
       "date": "2026-04-08",
-      "source": "Centers for Medicare & Medicaid Services",
+      "source": "CMS",
       "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
-      "programs": [
-        "medicaid",
-        "chip"
-      ],
+      "programs": ["medicaid", "chip"],
       "isBreaking": true
     },
     {
-      "id": "n-20260507-usda-wic-cvvb-fy2026",
-      "title": "USDA sets FY 2026 WIC cash-value benefit amounts; states must allow at least one non-fresh produce form by April 2026",
-      "summary": "USDA’s WIC policy memo sets FY 2026 monthly fruit-and-vegetable cash-value benefit amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully or mostly breastfeeding participants. The memo also reiterates that state agencies must authorize at least one form of fruits and vegetables in addition to fresh (frozen, canned, and/or dried) by April 2026.",
+      "id": "n-20260508-hud-pih-2026-05-ehv-sv",
+      "title": "HUD PIH 2026-05 ends EHV/Stability Voucher documentation flexibilities; PHAs have 60 days to comply",
+      "summary": "HUD PIH Notice 2026-05 rescinds prior flexibilities allowing self-certification and other streamlined documentation for Emergency Housing Vouchers (EHV) and Stability Vouchers (SV). PHAs must update their administrative plans and comply within 60 days of issuance.",
+      "category": "policy-change",
+      "date": "2026-04-09",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
+      "programs": ["section8"]
+    },
+    {
+      "id": "n-20260508-snap-state-restrictions",
+      "title": "USDA tracks state SNAP purchase-restriction waivers: Texas, Florida, Colorado start in April 2026",
+      "summary": "USDA's official tracker lists approved state SNAP food-restriction waivers with 2026 effective dates: Texas (April 1), Florida (April 20), Colorado (April 30), Arkansas (July 1). Restrictions vary but generally cover sodas, candy, and certain prepared foods. Kansas and Ohio waivers begin in 2027.",
+      "category": "policy-change",
+      "date": "2026-03-23",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "programs": ["snap"]
+    },
+    {
+      "id": "n-20260508-ssa-cola-2026",
+      "title": "SSA 2026 COLA at 2.8%; SSI federal max is $994/month (individual), $1,491 (couple)",
+      "summary": "SSA confirmed a 2.8% cost-of-living adjustment for 2026 affecting about 75 million Americans. The federal SSI payment standard is $994/month for individuals and $1,491/month for couples. Disability work thresholds are $1,690/month (non-blind SGA) and $2,830/month (blind SGA).",
       "category": "update",
-      "date": "2025-12-11",
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+      "programs": ["ssi", "ssdi"]
+    },
+    {
+      "id": "n-20260508-wic-cvv-fy26",
+      "title": "WIC FY2026 fruit/veg cash benefit: $26 (kids), $48 (preg/postpartum), $52 (breastfeeding)",
+      "summary": "USDA FNS set FY2026 monthly WIC cash-value voucher amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully/mostly breastfeeding participants. States must authorize at least one form of fruits/vegetables beyond fresh (frozen, canned, and/or dried) by April 2026.",
+      "category": "update",
+      "date": "2025-12-10",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
-        "wic"
-      ]
+      "programs": ["wic"]
     },
     {
-      "id": "n-20260507-usda-snap-work-requirements",
-      "title": "USDA reminder: SNAP general work rules include 80-hour monthly requirement for many adults, with exemptions",
-      "summary": "USDA’s SNAP work requirements page explains that some adults must work or participate in a work program for at least 80 hours per month (or a combination) to meet program rules, with exemptions such as caregiving for a child under 6, disability limitations, or participation in treatment programs. The page also outlines separate time-limit-related rules and exemption categories for ABAWD requirements.",
-      "category": "update",
-      "date": "2025-08-29",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/work-requirements",
-      "programs": [
-        "snap"
-      ]
+      "id": "n-20260508-irs-eitc-actc-refund-timing",
+      "title": "IRS: EITC/ACTC refunds were available by March 2 for most early filers; extension deadline October 15",
+      "summary": "Per the PATH Act, the IRS could not issue refunds for returns claiming EITC or ACTC before mid-February. Most early filers using direct deposit who filed online with no errors received refunds by March 2, 2026. Filing extensions to October 15, 2026 must have been requested by April 15, 2026.",
+      "category": "deadline",
+      "date": "2026-01-26",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
+      "programs": ["eitc", "ctc"]
     },
     {
-      "id": "n-20260507-usda-snap-fy2026-cola",
-      "title": "USDA publishes FY 2026 SNAP cost-of-living adjustment (COLA) tables",
-      "summary": "USDA has published FY 2026 SNAP cost-of-living adjustment (COLA) allotment tables for the 48 contiguous states and D.C. and for other jurisdictions. Households can use the tables to see updated maximum allotments, income eligibility standards, and deduction amounts used in benefit calculations.",
-      "category": "update",
-      "date": "2026-02-20",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/allotment/cola/fy26",
-      "programs": [
-        "snap"
-      ]
+      "id": "n-20260508-liheap-fy25-reallotment",
+      "title": "HHS/ACF proposes reallotment of FY2025 LIHEAP funds; Federal Register comments due April 30, 2026",
+      "summary": "The Administration for Children and Families published a Federal Register notice proposing reallotment of unspent FY2025 LIHEAP funds to jurisdictions that received FY2026 direct LIHEAP awards. The comment period ended April 30, 2026.",
+      "category": "deadline",
+      "date": "2026-03-31",
+      "source": "Federal Register",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/03/31/2026-06130/proposed-reallotment-of-fiscal-year-2025-funds-for-the-low-income-home-energy-assistance-program",
+      "programs": ["liheap"]
     },
     {
-      "id": "n-20260507-ed-pell-grant-2025-26-amounts",
-      "title": "Federal Student Aid: 2025–26 Pell Grant maximum is $7,395; minimum is $740 (effective July 1, 2025–June 30, 2026)",
-      "summary": "A Federal Student Aid Dear Colleague Letter notes that under continuing appropriations, the 2025–26 award-year maximum Federal Pell Grant remains fixed at $7,395 and the minimum award is 10% of the maximum (rounded), or $740. The update states these amounts are effective July 1, 2025 through June 30, 2026.",
+      "id": "n-20260508-fafsa-deadlines",
+      "title": "FAFSA federal deadlines: June 30, 2026 for 2025–26; June 30, 2027 for 2026–27",
+      "summary": "USA.gov lists the federal FAFSA submission deadline for the 2025–26 school year as June 30, 2026, and the 2026–27 deadline as June 30, 2027. States and individual schools often set earlier deadlines for state and institutional aid programs.",
+      "category": "deadline",
+      "date": "2026-04-01",
+      "source": "USA.gov",
+      "sourceUrl": "https://www.usa.gov/fafsa",
+      "programs": ["pell-grant"]
+    },
+    {
+      "id": "n-20260508-medicaid-enrollment-dec2025",
+      "title": "CMS: Medicaid/CHIP enrollment at 75.7 million in December 2025, down 4.7% from year ago",
+      "summary": "December 2025 data shows 68.5 million enrolled in Medicaid and 7.2 million in CHIP, totaling 75.7 million. Enrollment is down about 1.0% from November 2025 (727,000 people) and 4.7% from December 2024.",
       "category": "update",
-      "date": "2025-05-29",
-      "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters/2025-01-31/2025-2026-federal-pell-grant-maximum-and-minimum-award-amounts-updated-may-29-2025",
-      "programs": [
-        "pell"
-      ]
+      "date": "2026-03-30",
+      "source": "Medicaid.gov",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html",
+      "programs": ["medicaid", "chip"]
     }
   ]
 }
