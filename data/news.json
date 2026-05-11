@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-10T11:00:00Z",
+  "lastUpdated": "2026-05-11T11:00:00Z",
   "items": [
     {
       "id": "n-20260508-snap-retailer-stocking",
-      "title": "USDA final rule updates SNAP retailer stocking standards; compliance deadline set for Nov. 4, 2026",
-      "summary": "USDA finalized a rule updating how SNAP retailers meet staple food stocking standards, reflecting the 2014 farm bill increase from 3 to 7 varieties in each of 4 staple food categories and expanding the perishable requirement from 2 categories to 3. The rule is effective July 7, 2026, and SNAP retailers must implement the new standards no later than Nov. 4, 2026.",
+      "title": "USDA finalizes stricter SNAP retailer stocking standards; compliance required by Nov. 4, 2026",
+      "summary": "USDA’s final rule increases the minimum staple-food stocking standard for most SNAP-authorized retailers from 3 to 7 varieties in each of 4 staple food categories (dairy, vegetables/fruits, grains, protein). Retailers must also stock at least 1 perishable variety in 3 of the 4 categories, and must implement the rule by Nov. 4, 2026 (effective July 7, 2026).",
       "category": "policy-change",
       "date": "2026-05-08",
       "source": "USDA Food and Nutrition Service",
@@ -12,39 +12,29 @@
       "programs": ["SNAP"]
     },
     {
-      "id": "n-20260507-snap-real-food-press-release",
-      "title": "USDA says SNAP-authorized retailers must carry seven varieties across four staple food categories",
-      "summary": "USDA announced it published a final rule requiring SNAP-authorized retailers to carry seven varieties across four staple categories (protein, grains, dairy, and fruits/vegetables) and described it as aimed at expanding access to nutritious foods. USDA said the updates go into effect in fall 2026 and that additional guidance to retailers is planned in the coming weeks.",
+      "id": "n-20260508-snap-staple-foods-explainer",
+      "title": "USDA explains new SNAP retailer rules and notes some items no longer count as staple foods",
+      "summary": "USDA says that starting Nov. 4, 2026, non-specialty SNAP retailers must stock 7 varieties in each staple food category and offer perishable varieties in at least 3 categories. USDA also notes that butter, jerky, cheese dip, snack bars, and fruit spreads no longer count as staple foods for retailer authorization (though they remain SNAP-eligible purchases).",
       "category": "update",
-      "date": "2026-05-07",
+      "date": "2026-05-08",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/newsroom/usda-0063.26",
+      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/stocking-standards-rule",
       "programs": ["SNAP"]
     },
     {
-      "id": "n-20260506-hcv-fy2026-funding-deadlines",
-      "title": "HUD PIH Notice 2026-12 sets FY 2026 Housing Choice Voucher funding totals and multiple set-aside deadlines",
-      "summary": "HUD’s PIH Notice 2026-12 implements FY 2026 funding provisions for the Housing Choice Voucher (HCV) program, including $34.557B for HAP renewal funding and $400M for the HAP set-aside. The notice lists multiple application deadlines, including June 26, 2026 (several set-aside categories) and Sept. 25, 2026 (HUD-VASH set-aside), with a shortfall prevention deadline of Jan. 29, 2027.",
-      "category": "deadline",
+      "id": "n-20260506-section8-hcv-funding",
+      "title": "HUD issues PIH Notice 2026-12 implementing FY2026 Housing Choice Voucher funding provisions",
+      "summary": "HUD’s PIH Notice 2026-12 lists major Housing Choice Voucher (Section 8) funding amounts for calendar year 2026, including $34.557 billion for HAP renewal funding and $2.836 billion for administrative fees. The notice also provides $600.622 million for Tenant Protection Vouchers and a $400 million HAP set-aside, and includes operational changes such as incorporating Mainstream vouchers into renewal funding while still requiring separate reporting.",
+      "category": "update",
       "date": "2026-05-06",
       "source": "U.S. Department of Housing and Urban Development (HUD)",
       "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
       "programs": ["Section 8", "Housing Choice Voucher"]
     },
     {
-      "id": "n-20260430-hud-eiv-deceased-tenants",
-      "title": "HUD PIH Notice 2026-11 requires PHAs to use EIV Deceased Tenants Report at least monthly",
-      "summary": "HUD issued PIH Notice 2026-11 requiring public housing agencies to generate the EIV Deceased Tenants Report at least once a month (for HCV/PBV/Mod Rehab) to reduce subsidy payment and administrative errors. The notice also directs PHAs to request confirmation within 24 hours after being notified of a household member’s death and includes timelines such as submitting updated Form HUD-50058 actions within 60 calendar days.",
-      "category": "policy-change",
-      "date": "2026-04-30",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-11.pdf",
-      "programs": ["Public Housing", "Section 8", "Housing Choice Voucher"]
-    },
-    {
-      "id": "n-20260408-medicaid-chip-noncitizen-match-limits",
-      "title": "CMS issues guidance on new limits for federal Medicaid/CHIP matching funds for certain noncitizens (effective Oct. 1, 2026)",
-      "summary": "CMS released guidance to prepare states to implement statutory limits on claiming federal matching funds for Medicaid and CHIP for certain noncitizens beginning Oct. 1, 2026. CMS noted the changes do not affect federal matching funds for emergency medical condition treatment and do not apply to the option for states to cover lawfully residing children and pregnant women or to CHIP Health Services Initiatives.",
+      "id": "n-20260408-medicaid-chip-noncitizen-funding",
+      "title": "CMS guidance previews limits on federal Medicaid/CHIP matching funds for certain noncitizens starting Oct. 1, 2026",
+      "summary": "CMS issued guidance to help states implement a statutory change that limits federal matching funds (FFP) for Medicaid and CHIP coverage for certain noncitizens beginning Oct. 1, 2026. CMS says emergency medical condition coverage remains eligible for federal match, and the changes do not apply to the option for states to cover lawfully residing children and pregnant people or to CHIP Health Services Initiatives.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "Centers for Medicare & Medicaid Services (CMS)",
@@ -52,94 +42,54 @@
       "programs": ["Medicaid", "CHIP"]
     },
     {
-      "id": "n-20260305-ehv-sv-immigration-ssn-verification",
-      "title": "HUD ends an EHV/Stability Voucher waiver on SSN and eligible immigration status verification; PHAs must comply within 60 days",
-      "summary": "HUD’s PIH Notice 2026-05 removes a waiver and alternative requirement that allowed Emergency Housing Voucher (EHV) and Stability Voucher (SV) families to provide SSN and eligible immigration status documentation after admission. HUD states PHAs must follow 24 CFR 5.508 for immigration status verification and 24 CFR 5.210–5.218 for SSN disclosure/verification, with compliance required within 60 days of publication.",
-      "category": "policy-change",
-      "date": "2026-03-05",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/PIH-2026-05.pdf",
-      "programs": ["Section 8", "Emergency Housing Voucher", "Stability Voucher"]
-    },
-    {
-      "id": "n-20260429-wic-income-guidelines-2026-2027",
-      "title": "USDA publishes WIC income eligibility guidelines for July 1, 2026–June 30, 2027; states must implement by July 1, 2026",
-      "summary": "USDA published updated WIC income eligibility guidelines for the period July 1, 2026 through June 30, 2027, and said implementation may be coordinated with Medicaid guideline updates but cannot be later than July 1, 2026. For the 48 contiguous states/DC/territories, USDA lists an annual limit of $15,960 for a 1-person household at 100% of poverty guidelines and $33,000 for a 4-person household.",
-      "category": "deadline",
-      "date": "2026-04-29",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/fr-042926",
-      "programs": ["WIC"]
-    },
-    {
-      "id": "n-20251211-wic-cvvb-fy2026",
-      "title": "USDA sets FY 2026 WIC fruit/vegetable cash-value benefit amounts (children $26; pregnant/postpartum $48; breastfeeding $52)",
-      "summary": "USDA’s WIC Policy Memorandum #2026-2 lists FY 2026 monthly cash-value benefit amounts for fruits and vegetables: $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/mostly breastfeeding participants. The memo notes FY 2026 runs from Oct. 1, 2025 to Sept. 30, 2026.",
+      "id": "n-20260430-medicaid-chip-survey",
+      "title": "KFF/Georgetown survey: states prepare for major Medicaid/CHIP policy changes; children’s median eligibility remains 255% FPL",
+      "summary": "A KFF and Georgetown CCF survey (policies as of January 2026) reports the median Medicaid/CHIP income eligibility for children is 255% of the federal poverty level and the median eligibility for pregnancy coverage is 213%. The report also notes upcoming changes set in law, including an Oct. 2026 change affecting some immigrant eligibility and a Jan. 2027 requirement for work/community engagement requirements and 6-month renewals for expansion adults.",
       "category": "update",
-      "date": "2025-12-11",
+      "date": "2026-04-30",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-and-chip-eligibility-enrollment-and-renewal-policies-as-states-prepare-for-major-medicaid-policy-changes/",
+      "programs": ["Medicaid", "CHIP"]
+    },
+    {
+      "id": "n-20260126-tax-season-eitc-actc",
+      "title": "IRS opens 2026 filing season; early EITC/Additional CTC refunds expected by March 2",
+      "summary": "The IRS announced it opened the 2026 filing season on Jan. 26, 2026 and began accepting individual tax returns for tax year 2025, with the federal filing deadline of April 15. The IRS said most refunds for Earned Income Tax Credit (EITC) and Additional Child Tax Credit filers who choose direct deposit should be available by March 2, 2026 (and show up in Where’s My Refund? by Feb. 21, 2026).",
+      "category": "deadline",
+      "date": "2026-01-26",
+      "source": "Internal Revenue Service (IRS)",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
+      "programs": ["EITC", "CTC"]
+    },
+    {
+      "id": "n-20260130-pell-grant-awards",
+      "title": "Education Department publishes 2026–27 Pell Grant maximum and minimum award amounts (Dear Colleague Letter GEN-26-01)",
+      "summary": "The U.S. Department of Education’s Federal Student Aid office published a Dear Colleague Letter on Jan. 30, 2026 covering the Federal Pell Grant Program maximum and minimum award amounts for the 2026–27 award year. Students and schools can use these published amounts to plan for aid eligibility and packaging for the 2026–27 year.",
+      "category": "update",
+      "date": "2026-01-30",
+      "source": "U.S. Department of Education (Federal Student Aid)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters/2026-01-30/2026-27-federal-pell-grant-maximum-and-minimum-award-amounts",
+      "programs": ["Pell Grant"]
+    },
+    {
+      "id": "n-20251210-wic-cvvb-fy2026",
+      "title": "USDA sets FY2026 WIC fruit-and-vegetable cash-value benefit amounts",
+      "summary": "USDA set FY2026 WIC monthly cash-value voucher/benefit (CVV/B) amounts at $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. USDA said the FY2026 inflation adjustment is 11.8% over the FY2022 baseline amounts.",
+      "category": "update",
+      "date": "2025-12-10",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
       "programs": ["WIC"]
     },
     {
-      "id": "n-202601-ssi-amounts-2026",
-      "title": "SSA posts 2026 SSI federal payment amounts: $994/month (individual) and $1,491/month (eligible couple)",
-      "summary": "SSA lists 2026 SSI federal payment amounts of $994 per month for an eligible individual and $1,491 per month for an eligible couple (or an individual with an eligible spouse). SSA says the latest cost-of-living increase is 2.8% and becomes effective January 2026.",
+      "id": "n-20251231-ssi-cola-2026",
+      "title": "SSA: 2026 COLA is 2.8%; maximum federal SSI payment is $994/month for an individual",
+      "summary": "SSA’s 2026 COLA fact sheet reports a 2.8% cost-of-living adjustment for 2026 and lists the SSI federal payment standard at $994/month for an individual and $1,491/month for a couple. The same fact sheet lists 2026 disability Substantial Gainful Activity (SGA) thresholds of $1,690/month for non-blind individuals and $2,830/month for statutorily blind individuals.",
       "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
-      "programs": ["SSI"]
-    },
-    {
-      "id": "n-2026-ssdi-sga-twp-2026",
-      "title": "SSA 2026 COLA fact sheet lists updated SGA and trial work period amounts for disability programs",
-      "summary": "SSA’s 2026 COLA fact sheet lists Social Security disability thresholds of $1,690/month for Substantial Gainful Activity (non-blind) and $2,830/month for SGA (blind). The fact sheet also lists a trial work period (TWP) amount of $1,210/month and states the 2026 COLA is 2.8%.",
-      "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration",
+      "date": "2025-10-24",
+      "source": "Social Security Administration (SSA)",
       "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": ["SSDI", "SSI"]
-    },
-    {
-      "id": "n-20250815-fafsa-federal-deadline",
-      "title": "Federal Student Aid reminder: the federal FAFSA deadline is June 30 (apply earlier for state/school aid)",
-      "summary": "Federal Student Aid says the federal FAFSA deadline is June 30 and that it is the last opportunity to submit that school year’s FAFSA form. The agency also notes state and school deadlines can be earlier and funds may be limited, so applying before those deadlines can help maximize aid eligibility.",
-      "category": "deadline",
-      "date": "2025-08-15",
-      "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://studentaid.gov/articles/3-fafsa-deadlines/",
-      "programs": ["FAFSA", "Pell Grants"]
-    },
-    {
-      "id": "n-20250203-eitc-refund-timing",
-      "title": "IRS Tax Tip: average EITC was $2,916 (tax year 2024); refunds claiming EITC can’t be issued before Feb. 21, 2026",
-      "summary": "The IRS says the average Earned Income Tax Credit (EITC) amount received nationwide for tax year 2024 was $2,916 and estimates about one in five eligible taxpayers don’t claim it. By law, the IRS cannot issue refunds for returns claiming the EITC before Feb. 21, 2026, and says most EITC refunds may be received by March 2, 2026 if filed online with direct deposit and there are no issues.",
-      "category": "update",
-      "date": "2026-02-03",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/earned-income-tax-credit-a-valuable-credit-that-supports-millions-of-families",
-      "programs": ["EITC"]
-    },
-    {
-      "id": "n-20260126-irs-filing-season-eitc-actc",
-      "title": "IRS opens 2026 filing season (tax year 2025); EITC/ACTC refunds expected by March 2, 2026 for many filers",
-      "summary": "IRS announced the 2026 filing season opened Jan. 26, 2026 for tax year 2025 returns. IRS says most refunds for filers claiming the Earned Income Tax Credit (EITC) or Additional Child Tax Credit (ACTC) should be available by March 2, 2026 for taxpayers using direct deposit with no other issues, and that Where’s My Refund? will provide projected deposit dates by Feb. 21, 2026 for many early EITC/ACTC filers.",
-      "category": "deadline",
-      "date": "2026-01-26",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
-      "programs": ["EITC", "CTC"]
-    },
-    {
-      "id": "n-20260303-ctc-actc-amounts-2025",
-      "title": "IRS Tax Tip: Child Tax Credit up to $2,200 per child for 2025; up to $1,700 refundable as ACTC (income limits apply)",
-      "summary": "IRS says for tax year 2025 the Child Tax Credit can be up to $2,200 per qualifying child, and up to $1,700 per child may be refundable as the Additional Child Tax Credit. The IRS also notes income limits of $200,000 (or $400,000 for joint filers) for the full credit.",
-      "category": "update",
-      "date": "2026-03-03",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/tax-benefits-for-parents-and-families",
-      "programs": ["CTC", "EITC"]
+      "programs": ["SSI", "SSDI"]
     }
   ]
 }
