@@ -1,109 +1,75 @@
 {
-  "lastUpdated": "2026-05-13T11:00:00Z",
+  "lastUpdated": "2026-05-14T11:01:00Z",
   "items": [
     {
-      "id": "n-20260506-section8",
-      "title": "HUD issues FY 2026 Housing Choice Voucher (Section 8) funding notice with key set-aside deadlines",
-      "summary": "HUD’s PIH Notice 2026-12 implements FY 2026 Housing Choice Voucher funding provisions, including $34.557 billion for HAP renewal funding and $2.836 billion for administrative fees. The notice also sets multiple application deadlines for HAP set-aside categories (many due June 26, 2026 by 5 p.m. local time) and notes the DocuSign application links go live June 1, 2026.",
-      "category": "update",
-      "date": "2026-05-06",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
-      "programs": [
-        "Section 8",
-        "Housing Choice Voucher"
-      ]
-    },
-    {
-      "id": "n-20260408-medicaid-chip",
-      "title": "CMS guidance outlines upcoming limits on federal Medicaid/CHIP matching funds for certain noncitizens (effective Oct. 1, 2026)",
-      "summary": "CMS released guidance for states to implement statutory limits on claiming federal Medicaid and CHIP matching funds for certain noncitizens, beginning October 1, 2026. CMS notes that federal matching funds for treatment of emergency medical conditions remain available, and the change does not apply to states’ options to cover lawfully residing children or pregnant people in Medicaid/CHIP.",
+      "id": "n-20260408-medicaid-noncitizen-match",
+      "title": "CMS guidance: federal Medicaid/CHIP matching funds will be limited for certain noncitizens starting Oct. 1, 2026",
+      "summary": "CMS issued guidance telling states to prepare for a statutory change that limits the ability to claim federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens or U.S. nationals, or who fall into certain noncitizen categories in statute. CMS said the change takes effect October 1, 2026, while noting exceptions such as continued federal matching for emergency medical conditions and that the change does not apply to states’ option to cover lawfully residing children and pregnant women in Medicaid/CHIP.",
       "category": "policy-change",
       "date": "2026-04-08",
       "source": "CMS",
       "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
-      "programs": [
-        "Medicaid",
-        "CHIP"
-      ]
+      "programs": ["Medicaid", "CHIP"]
     },
     {
-      "id": "n-20260430-snap-usda",
-      "title": "USDA announces reorganization and new \"Food and Nutrition Administration\" with SNAP leadership relocating to Indianapolis",
-      "summary": "USDA announced plans to create a \"Food and Nutrition Administration\" and shift from regional offices to a hub model, with SNAP leadership relocating to Indianapolis, Indiana. USDA says the nutrition portfolio includes 16 programs and the reorganization is intended to improve service and oversight while continuing efforts to reduce fraud, waste, and abuse.",
+      "id": "n-20260129-liheap-fy24-reallotment",
+      "title": "Federal Register: HHS reallotted $2,293,415 in unused FY2024 LIHEAP funds",
+      "summary": "HHS (ACF/Office of Community Services) published a Federal Register notice announcing that $2,293,415 in FY2024 LIHEAP funds were reallotted to eligible LIHEAP recipients. The notice explains the reallotment process under 42 U.S.C. 8626(b) and notes the reallotment became effective upon publication.",
       "category": "update",
-      "date": "2026-04-30",
-      "source": "USDA",
-      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/04/30/usda-announces-actions-better-serve-states-nutrition-program-recipients-and-american-taxpayer",
-      "programs": [
-        "SNAP",
-        "WIC",
-        "Child Nutrition Programs"
-      ]
+      "date": "2026-01-29",
+      "source": "Federal Register (HHS/ACF OCS)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-01-29/pdf/2026-01784.pdf",
+      "programs": ["LIHEAP"]
     },
     {
-      "id": "n-20251211-wic-cvvb",
-      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash-value benefit amounts: $26 (children), $48 (pregnant/postpartum), $52 (breastfeeding)",
-      "summary": "USDA’s WIC Policy Memorandum #2026-2 lists FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts of $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/partially breastfeeding participants. USDA also notes states must authorize at least one form of fruits and vegetables beyond fresh (frozen, canned, and/or dried) by April 2026.",
+      "id": "n-20251210-wic-fy26-cvb",
+      "title": "USDA WIC memo sets FY2026 fruit/veg cash-value benefit at $26 (children), $48 (pregnant/postpartum), $52 (breastfeeding)",
+      "summary": "USDA FNS WIC Policy Memorandum #2026-2 lists FY2026 monthly cash-value benefit (CVV/B) amounts of $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/partially breastfeeding participants. The memo says the FY2026 inflation adjustment is 11.8% over FY2022 baseline amounts and notes states must authorize at least one non-fresh form (frozen, canned, and/or dried) of fruits and vegetables in addition to fresh by April 2026.",
       "category": "update",
-      "date": "2025-12-11",
+      "date": "2025-12-10",
       "source": "USDA FNS",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
-        "WIC"
-      ]
+      "programs": ["WIC"]
     },
     {
-      "id": "n-20260203-eitc-refunds",
-      "title": "IRS reminder: EITC refunds can’t be issued before Feb. 21, 2026; most eligible direct-deposit refunds expected by March 2",
-      "summary": "The IRS says it must wait until at least February 21, 2026 to issue refunds to taxpayers claiming the Earned Income Tax Credit (EITC). For taxpayers who file online, choose direct deposit, and have no issues with their return, the IRS expects most EITC-related refunds to be received by March 2, 2026.",
-      "category": "deadline",
-      "date": "2026-02-03",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/earned-income-tax-credit-a-valuable-credit-that-supports-millions-of-families",
-      "programs": [
-        "EITC"
-      ]
-    },
-    {
-      "id": "n-202601-ssi-ssdi-cola",
-      "title": "Social Security announces 2.8% COLA for 2026, raising average monthly retirement benefit by about $56",
-      "summary": "Social Security’s 2026 COLA is 2.8%, effective for benefits payable in January 2026. The SSA estimates the average monthly benefit for all retired workers will rise from $2,015 to $2,071 (an increase of $56) and the average for all disabled workers will rise from $1,586 to $1,630 (an increase of $44).",
+      "id": "n-20260101-ssa-cola-2026",
+      "title": "SSA: 2.8% COLA for 2026; SSI federal payment standard rises to $994 (individual) and $1,491 (couple)",
+      "summary": "SSA’s 2026 COLA fact sheet says Social Security beneficiaries and SSI recipients will receive a 2.8% cost-of-living adjustment for 2026. The fact sheet lists the 2026 SSI federal payment standards as $994 per month for an individual and $1,491 per month for a couple, and it lists the 2026 maximum taxable earnings amount for OASDI as $184,500.",
       "category": "update",
       "date": "2026-01-01",
       "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": [
-        "SSI",
-        "SSDI",
-        "Social Security"
-      ]
+      "programs": ["SSI", "SSDI", "Social Security"]
     },
     {
-      "id": "n-20260401-fafsa-deadline",
-      "title": "FAFSA deadline reminder: 2026-27 FAFSA due by June 30, 2027 (and 2025-26 FAFSA due by June 30, 2026)",
-      "summary": "USA.gov lists the federal FAFSA deadline for the 2026-27 school year as June 30, 2027, and for the 2025-26 school year as June 30, 2026. Students still need to check state and school deadlines, which can be earlier.",
+      "id": "n-20260303-irs-ctc-2025",
+      "title": "IRS: Child Tax Credit up to $2,200 per qualifying child for 2025 tax year; refundable portion up to $1,700",
+      "summary": "The IRS Child Tax Credit page says the Child Tax Credit is up to $2,200 per qualifying child for the 2025 tax year and that the Additional Child Tax Credit (refundable portion) can be up to $1,700 per qualifying child depending on income. The IRS also notes that if you claim EITC or ACTC, the IRS cannot issue refunds before mid-February.",
+      "category": "update",
+      "date": "2026-03-03",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/child-tax-credit",
+      "programs": ["CTC", "EITC"]
+    },
+    {
+      "id": "n-20260401-fafsa-deadlines",
+      "title": "FAFSA deadlines: federal submission deadline is June 30, 2026 for 2025–26 and June 30, 2027 for 2026–27",
+      "summary": "USA.gov’s FAFSA page lists the federal deadline to submit the FAFSA as June 30, 2026 for the 2025–26 school year. It also lists the federal FAFSA deadline for the 2026–27 school year as June 30, 2027.",
       "category": "deadline",
       "date": "2026-04-01",
       "source": "USA.gov",
       "sourceUrl": "https://www.usa.gov/fafsa",
-      "programs": [
-        "FAFSA",
-        "Pell Grant"
-      ]
+      "programs": ["FAFSA", "Pell Grants"]
     },
     {
-      "id": "n-20260204-pell-sai",
-      "title": "Federal Student Aid: Starting in 2026-27, foreign earned income exclusion is added to AGI for max/min Pell eligibility",
-      "summary": "Federal Student Aid guidance says that beginning with the 2026-27 award year, the foreign earned income exclusion amount reported on the FAFSA will be added to adjusted gross income (AGI) when determining eligibility for maximum and minimum Pell Grants. The guidance says this change was implemented with the official launch of the 2026-27 FAFSA form and means schools no longer need to use professional judgment to move the exclusion into AGI for Pell eligibility.",
-      "category": "policy-change",
-      "date": "2026-02-04",
-      "source": "Federal Student Aid (FSA Partners)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/fsa-handbook/2026-2027/application-and-verification-guide/ch3-student-aid-index-sai-and-pell-grant-eligibility",
-      "programs": [
-        "Pell Grant",
-        "FAFSA"
-      ]
+      "id": "n-20260130-hud-hcv-admin-fees-2026",
+      "title": "HUD posts CY2026 Housing Choice Voucher administrative fee rate descriptions (including 88% proration for Jan–Mar 2026 advances)",
+      "summary": "HUD’s CY2026 HCV administrative fee rate descriptions explain that administrative fees are paid based on units leased as of the first day of each month, using data extracted from the Voucher Management System (VMS). The document notes that advanced administrative fees for January through March 2026 were at 88% proration and that renewal funding for Mainstream Vouchers will be included with the regular HCV program starting in CY2026.",
+      "category": "update",
+      "date": "2026-01-30",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/PIH/documents/2026-Administrative-Fee-Rate-Descriptions.pdf",
+      "programs": ["Section 8", "Housing Choice Voucher"]
     }
   ]
 }
