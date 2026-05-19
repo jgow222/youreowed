@@ -1,75 +1,95 @@
 {
-  "lastUpdated": "2026-05-18T11:00:00Z",
+  "lastUpdated": "2026-05-19T11:01:00Z",
   "items": [
     {
-      "id": "n-20260518-snap-usda-reorg",
-      "title": "USDA plans Food and Nutrition Service reorganization; SNAP leadership to relocate to Indianapolis",
-      "summary": "USDA announced it intends to create a Food and Nutrition Administration and move nutrition program leadership and staff from Washington, D.C. to new hubs and compliance locations around the country. USDA said SNAP will be relocated to Indianapolis, with other nutrition program hubs in Dallas, Kansas City, Raleigh, and Denver, while the Administrator keeps a small presence in D.C.",
-      "category": "update",
-      "date": "2026-04-30",
-      "source": "USDA",
-      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/04/30/usda-announces-actions-better-serve-states-nutrition-program-recipients-and-american-taxpayer",
+      "id": "n-20260513-snap-waivers",
+      "title": "USDA lists approved SNAP waivers restricting purchases like soda and candy in multiple states",
+      "summary": "USDA’s SNAP waiver tracker shows multiple states with approved requests to restrict SNAP purchases of items such as soda/soft drinks and candy. The page lists target implementation dates ranging from 2026-01-01 (e.g., Indiana, Iowa, Nebraska, Utah, West Virginia) to later dates such as 2026-10-30 (Colorado) and 2028-02-01 (Nevada).",
+      "category": "policy-change",
+      "date": "2026-05-13",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
       "programs": ["SNAP"]
     },
     {
-      "id": "n-20260518-medicaid-chip-noncitizens",
-      "title": "CMS guidance says states must implement new limits on federal Medicaid/CHIP matching funds for certain noncitizens starting Oct. 1, 2026",
-      "summary": "CMS issued operational guidance to prepare states for statutory changes that limit when states can claim federal matching funds in Medicaid and CHIP for individuals who are not U.S. citizens or nationals (or who fall into certain noncitizen categories). CMS said the change begins October 1, 2026, and noted exceptions including continued federal matching funds for treatment of emergency medical conditions and that the changes do not apply to the option to cover lawfully residing children and pregnant people.",
+      "id": "n-20260408-medicaid-noncitizen-funding",
+      "title": "CMS issues guidance on new limits for federal Medicaid/CHIP matching funds for certain noncitizens",
+      "summary": "CMS issued guidance to prepare states to implement statutory changes that limit the ability to claim federal matching funds in Medicaid and CHIP for certain noncitizens. CMS says states must implement the change starting 2026-10-01, while federal matching funds remain available for emergency medical conditions and the changes do not apply to lawfully residing children and pregnant people covered under the ICHIA option.",
       "category": "policy-change",
       "date": "2026-04-08",
-      "source": "CMS",
+      "source": "Centers for Medicare & Medicaid Services",
       "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
       "programs": ["Medicaid", "CHIP"]
     },
     {
-      "id": "n-20260518-ssi-ssdi-cola-2026",
-      "title": "SSA: Social Security and SSI recipients will get a 2.8% COLA for 2026; federal SSI maximum rises to $994/month",
-      "summary": "The Social Security Administration announced a 2.8% cost-of-living adjustment (COLA) for 2026. SSA’s fact sheet shows the federal SSI payment standard increasing to $994 per month for an individual and $1,491 per month for an eligible couple (up from $967 and $1,450 in 2025).",
+      "id": "n-20260430-medicaid-work-renewals",
+      "title": "KFF details upcoming Medicaid changes, including work requirements and 6-month renewals starting in 2027",
+      "summary": "KFF reports that federal policy changes will require states to implement work/community engagement requirements for ACA expansion adults starting in 2027-01 and to move expansion adults to 6-month renewal periods starting in 2027-01. The analysis also highlights an immigrant eligibility restriction date of 2026-10-01 and administrative requirements like using the USPS National Change of Address database beginning 2027-01-01.",
       "category": "update",
-      "date": "2026-01-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": ["SSI", "SSDI", "Social Security"]
-    },
-    {
-      "id": "n-20260518-wic-cash-value-benefit-fy26",
-      "title": "USDA WIC memo sets FY 2026 cash-value benefit at $26 (children), $48 (pregnant/postpartum), and $52 (breastfeeding) per month",
-      "summary": "USDA’s WIC Policy Memorandum #2026-2 states the FY 2026 cash-value voucher/benefit (CVV/B) inflation adjustment is 11.8% over the FY 2022 baseline. The memo lists FY 2026 monthly amounts of $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants.",
-      "category": "update",
-      "date": "2025-12-11",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": ["WIC"]
-    },
-    {
-      "id": "n-20260518-medicaid-chip-work-requirements-kff",
-      "title": "KFF/Georgetown survey: many Medicaid expansion parents may face new work requirements starting Jan. 2027; states must add new address/death data checks",
-      "summary": "KFF and Georgetown’s Center for Children and Families reported that many parents of older children in Medicaid expansion states may become subject to new work requirements starting January 2027, depending on whether they qualify under the mandatory Section 1931 parent pathway. The report also highlights new administrative requirements from the 2025 reconciliation law, including obtaining address updates from sources like USPS NCOA and managed care plans by January 1, 2027 and quarterly data matching with SSA’s Master Death File by January 2028.",
-      "category": "policy-change",
       "date": "2026-04-30",
       "source": "KFF",
       "sourceUrl": "https://www.kff.org/medicaid/medicaid-and-chip-eligibility-enrollment-and-renewal-policies-as-states-prepare-for-major-medicaid-policy-changes/",
       "programs": ["Medicaid", "CHIP"]
     },
     {
-      "id": "n-20260518-irs-ctc-actc-amounts",
-      "title": "IRS: Child Tax Credit up to $2,200 per child; refundable Additional CTC up to $1,700 (earned income must be at least $2,500)",
-      "summary": "The IRS says the Child Tax Credit is worth up to $2,200 per qualifying child, and the refundable Additional Child Tax Credit can be up to $1,700 per qualifying child. The IRS also notes that if you claim the Earned Income Tax Credit or ACTC, refunds generally can’t be issued before mid-February.",
+      "id": "n-20260506-hcv-funding-notice",
+      "title": "HUD issues FY 2026 Housing Choice Voucher funding notice with set-aside application deadlines",
+      "summary": "HUD’s PIH Notice 2026-12 lays out FY 2026 Housing Choice Voucher funding and key deadlines, including HAP renewal funding of $34.557B and administrative fees of $2.835935B. The notice also lists a $400M HAP set-aside and deadlines such as 2026-06-26 (multiple set-aside categories), 2026-07-10 (blended-rate and higher admin fee requests), and 2026-12-18 (disaster set-aside requests).",
       "category": "update",
-      "date": "2026-03-03",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/child-tax-credit",
-      "programs": ["CTC", "EITC"]
+      "date": "2026-05-06",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
+      "programs": ["Section 8", "Housing Choice Voucher"]
     },
     {
-      "id": "n-20260518-medicare-partd-insulin-rule",
-      "title": "Federal Register: Medicare Advantage/Part D final rule effective June 1, 2026 (includes insulin cost-sharing provisions for 2026+)",
-      "summary": "The Federal Register published a CMS final rule for Medicare Advantage (Part C) and Medicare Part D with an effective date of June 1, 2026 and applicability for coverage beginning January 1, 2027. The rule text notes that for CY 2026 and subsequent years, cost-sharing for a covered insulin product is capped at the lesser of $35 or 25% of specified prices.",
-      "category": "policy-change",
-      "date": "2026-04-06",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/documents/full_text/text/2026/04/06/2026-06600.txt",
-      "programs": ["Medicare", "Medicare Part D"]
+      "id": "n-20251001-ssi-ssdi-cola-2026",
+      "title": "SSA announces 2.8% COLA for 2026 and updated SSI federal payment standards",
+      "summary": "SSA’s 2026 COLA fact sheet lists a 2.8% cost-of-living adjustment. It also lists the SSI federal payment standard for 2026 as $994 per month for an individual and $1,491 per month for an eligible couple.",
+      "category": "update",
+      "date": "2025-10-01",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+      "programs": ["SSI", "SSDI", "Social Security"]
+    },
+    {
+      "id": "n-20251210-wic-cvvb-fy26",
+      "title": "USDA sets FY 2026 WIC cash-value benefit amounts for fruits and vegetables",
+      "summary": "USDA’s WIC policy memo lists FY 2026 monthly cash-value benefit amounts of $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. The memo states these amounts apply for fiscal year 2026 (2025-10-01 through 2026-09-30).",
+      "category": "update",
+      "date": "2025-12-10",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": ["WIC"]
+    },
+    {
+      "id": "n-20260401-fafsa-deadline",
+      "title": "FAFSA federal deadline: submit 2025–26 FAFSA by June 30, 2026 (and 2026–27 by June 30, 2027)",
+      "summary": "USA.gov states the federal FAFSA deadline for the 2025–26 school year is 2026-06-30 and for the 2026–27 school year is 2027-06-30. The page notes that states and colleges also use FAFSA information to award aid, so earlier submission may matter for non-federal deadlines.",
+      "category": "deadline",
+      "date": "2026-04-01",
+      "source": "USA.gov",
+      "sourceUrl": "https://www.usa.gov/fafsa",
+      "programs": ["FAFSA", "Pell Grant", "Federal Student Aid"]
+    },
+    {
+      "id": "n-20161103-eitc-2025-tables",
+      "title": "IRS posts 2025 Earned Income Tax Credit (EITC) limits and maximum credits",
+      "summary": "IRS EITC tables for tax year 2025 show maximum credit amounts of $649 (no qualifying children), $4,328 (one child), $7,152 (two children), and $8,046 (three or more children). The tables also list maximum AGI limits up to $61,555 (single/HOH) or $68,675 (married filing jointly) for families with 3 children, and an investment income limit of $11,950.",
+      "category": "update",
+      "date": "2016-11-03",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+      "programs": ["EITC"]
+    },
+    {
+      "id": "n-20250330-ctc-actc-2025",
+      "title": "IRS Schedule 8812 instructions list 2025 Child Tax Credit and Additional Child Tax Credit amounts",
+      "summary": "IRS instructions for Schedule 8812 (Form 1040) state the maximum Child Tax Credit for each qualifying child increased to $2,200 for tax year 2025, and the maximum Additional Child Tax Credit is $1,700 per qualifying child. The instructions also list phaseout thresholds starting above $400,000 modified AGI for married filing jointly and $200,000 for all other filing statuses.",
+      "category": "update",
+      "date": "2025-03-30",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/i1040s8.pdf",
+      "programs": ["Child Tax Credit", "CTC", "ACTC"]
     }
   ]
 }
