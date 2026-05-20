@@ -1,95 +1,96 @@
 {
-  "lastUpdated": "2026-05-19T11:01:00Z",
+  "lastUpdated": "2026-05-20T11:01:00Z",
   "items": [
     {
-      "id": "n-20260513-snap-waivers",
-      "title": "USDA lists approved SNAP waivers restricting purchases like soda and candy in multiple states",
-      "summary": "USDA’s SNAP waiver tracker shows multiple states with approved requests to restrict SNAP purchases of items such as soda/soft drinks and candy. The page lists target implementation dates ranging from 2026-01-01 (e.g., Indiana, Iowa, Nebraska, Utah, West Virginia) to later dates such as 2026-10-30 (Colorado) and 2028-02-01 (Nevada).",
+      "id": "n-20260508-snap-stocking-standards",
+      "title": "USDA finalizes new SNAP retailer stocking standards (7 varieties per category)",
+      "summary": "USDA published a final rule updating SNAP retailer stocking standards, requiring most SNAP-authorized retailers to stock at least 7 varieties in each of the 4 staple food categories (dairy, fruits/vegetables, grains, protein). Retailers must also offer a perishable variety in at least 3 of the 4 categories, with compliance required by Nov. 4, 2026.",
       "category": "policy-change",
-      "date": "2026-05-13",
+      "date": "2026-05-08",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/stocking-standards-rule",
       "programs": ["SNAP"]
     },
     {
-      "id": "n-20260408-medicaid-noncitizen-funding",
-      "title": "CMS issues guidance on new limits for federal Medicaid/CHIP matching funds for certain noncitizens",
-      "summary": "CMS issued guidance to prepare states to implement statutory changes that limit the ability to claim federal matching funds in Medicaid and CHIP for certain noncitizens. CMS says states must implement the change starting 2026-10-01, while federal matching funds remain available for emergency medical conditions and the changes do not apply to lawfully residing children and pregnant people covered under the ICHIA option.",
+      "id": "n-20260519-snap-waiver-montana-food-restrictions",
+      "title": "Montana submits SNAP waiver request to restrict soft drinks, junk food, and candy",
+      "summary": "USDA announced that Montana submitted a waiver request seeking to ban soft drinks, junk food, and candy purchases using SNAP benefits. USDA said it expects state waivers to go into effect in 2026, part of a broader initiative encouraging states to propose changes to federal nutrition programs.",
       "category": "policy-change",
-      "date": "2026-04-08",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
-      "programs": ["Medicaid", "CHIP"]
-    },
-    {
-      "id": "n-20260430-medicaid-work-renewals",
-      "title": "KFF details upcoming Medicaid changes, including work requirements and 6-month renewals starting in 2027",
-      "summary": "KFF reports that federal policy changes will require states to implement work/community engagement requirements for ACA expansion adults starting in 2027-01 and to move expansion adults to 6-month renewal periods starting in 2027-01. The analysis also highlights an immigrant eligibility restriction date of 2026-10-01 and administrative requirements like using the USPS National Change of Address database beginning 2027-01-01.",
-      "category": "update",
-      "date": "2026-04-30",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-and-chip-eligibility-enrollment-and-renewal-policies-as-states-prepare-for-major-medicaid-policy-changes/",
-      "programs": ["Medicaid", "CHIP"]
-    },
-    {
-      "id": "n-20260506-hcv-funding-notice",
-      "title": "HUD issues FY 2026 Housing Choice Voucher funding notice with set-aside application deadlines",
-      "summary": "HUD’s PIH Notice 2026-12 lays out FY 2026 Housing Choice Voucher funding and key deadlines, including HAP renewal funding of $34.557B and administrative fees of $2.835935B. The notice also lists a $400M HAP set-aside and deadlines such as 2026-06-26 (multiple set-aside categories), 2026-07-10 (blended-rate and higher admin fee requests), and 2026-12-18 (disaster set-aside requests).",
-      "category": "update",
-      "date": "2026-05-06",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
-      "programs": ["Section 8", "Housing Choice Voucher"]
-    },
-    {
-      "id": "n-20251001-ssi-ssdi-cola-2026",
-      "title": "SSA announces 2.8% COLA for 2026 and updated SSI federal payment standards",
-      "summary": "SSA’s 2026 COLA fact sheet lists a 2.8% cost-of-living adjustment. It also lists the SSI federal payment standard for 2026 as $994 per month for an individual and $1,491 per month for an eligible couple.",
-      "category": "update",
-      "date": "2025-10-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": ["SSI", "SSDI", "Social Security"]
-    },
-    {
-      "id": "n-20251210-wic-cvvb-fy26",
-      "title": "USDA sets FY 2026 WIC cash-value benefit amounts for fruits and vegetables",
-      "summary": "USDA’s WIC policy memo lists FY 2026 monthly cash-value benefit amounts of $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. The memo states these amounts apply for fiscal year 2026 (2025-10-01 through 2026-09-30).",
-      "category": "update",
-      "date": "2025-12-10",
+      "date": "2026-05-19",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": ["WIC"]
+      "sourceUrl": "https://www.fns.usda.gov/newsroom/usda-0068.26",
+      "programs": ["SNAP"],
+      "isBreaking": true
     },
     {
-      "id": "n-20260401-fafsa-deadline",
-      "title": "FAFSA federal deadline: submit 2025–26 FAFSA by June 30, 2026 (and 2026–27 by June 30, 2027)",
-      "summary": "USA.gov states the federal FAFSA deadline for the 2025–26 school year is 2026-06-30 and for the 2026–27 school year is 2027-06-30. The page notes that states and colleges also use FAFSA information to award aid, so earlier submission may matter for non-federal deadlines.",
+      "id": "n-20260518-summer-ebt-120",
+      "title": "SUN Bucks (Summer EBT) provides $120 per eligible child for summer groceries",
+      "summary": "USDA’s Summer EBT (SUN Bucks) program provides $120 in grocery benefits per eligible school-age child when school is out for summer. Many children get benefits automatically if their household already participates in SNAP, FDPIR, or TANF; others may need to apply depending on their state or Tribal program.",
+      "category": "update",
+      "date": "2026-05-18",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/sebt",
+      "programs": ["SNAP", "Summer EBT"]
+    },
+    {
+      "id": "n-20260512-cms-prior-auth-drugs-comments",
+      "title": "CMS proposes extending electronic prior authorization requirements to prescription drugs (comments due June 15, 2026)",
+      "summary": "CMS released a proposed rule to extend electronic prior authorization requirements to cover drugs, aiming for faster and more transparent decisions. CMS says the proposal would require impacted payers to support electronic prior authorization and report API endpoints and usage metrics; public comments are due June 15, 2026.",
       "category": "deadline",
-      "date": "2026-04-01",
-      "source": "USA.gov",
-      "sourceUrl": "https://www.usa.gov/fafsa",
-      "programs": ["FAFSA", "Pell Grant", "Federal Student Aid"]
+      "date": "2026-05-12",
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-standards-prior-authorization-drugs-proposed-rule-cms-0062-p",
+      "programs": ["Medicaid", "CHIP"]
     },
     {
-      "id": "n-20161103-eitc-2025-tables",
-      "title": "IRS posts 2025 Earned Income Tax Credit (EITC) limits and maximum credits",
-      "summary": "IRS EITC tables for tax year 2025 show maximum credit amounts of $649 (no qualifying children), $4,328 (one child), $7,152 (two children), and $8,046 (three or more children). The tables also list maximum AGI limits up to $61,555 (single/HOH) or $68,675 (married filing jointly) for families with 3 children, and an investment income limit of $11,950.",
-      "category": "update",
-      "date": "2016-11-03",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
-      "programs": ["EITC"]
+      "id": "n-20260514-hud-hotma-compliance-2027",
+      "title": "HUD sets Jan. 1, 2027 enforcement date for HOTMA income/asset changes; PHAs may need to start Sept. 2026",
+      "summary": "HUD issued Notice PIH 2026-15 stating it will enforce compliance with HOTMA sections 102 and 104 starting Jan. 1, 2027 for most public housing agencies, affecting programs like Housing Choice Vouchers and public housing. HUD notes PHAs that start annual reexams 120 days ahead may need to begin using HOTMA policies to collect and verify income beginning in September 2026.",
+      "category": "deadline",
+      "date": "2026-05-14",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
+      "programs": ["Section 8", "Public Housing"]
     },
     {
-      "id": "n-20250330-ctc-actc-2025",
-      "title": "IRS Schedule 8812 instructions list 2025 Child Tax Credit and Additional Child Tax Credit amounts",
-      "summary": "IRS instructions for Schedule 8812 (Form 1040) state the maximum Child Tax Credit for each qualifying child increased to $2,200 for tax year 2025, and the maximum Additional Child Tax Credit is $1,700 per qualifying child. The instructions also list phaseout thresholds starting above $400,000 modified AGI for married filing jointly and $200,000 for all other filing statuses.",
+      "id": "n-20260423-ssa-widower-underpayments",
+      "title": "SSA watchdog finds estimated $50.4M underpaid to 8,618 widow(er)s; 41% of sample had issues",
+      "summary": "SSA’s Office of Inspector General reported that 59% of sampled widow(er) beneficiaries were paid correctly, while 41% were paid inappropriately or lacked documentation that SSA employees explained filing options. The audit estimated SSA underpaid 8,618 widow(er)s by about $50.4 million and recommended calculation and documentation fixes.",
       "category": "update",
-      "date": "2025-03-30",
+      "date": "2026-04-23",
+      "source": "SSA Office of Inspector General",
+      "sourceUrl": "https://oig.ssa.gov/news-releases/2026-04-23-report-ssa-needs-to-take-steps-to-ensure-widow-er-s-are-appropriately-paid-and-well-informed-regarding-benefit-options/",
+      "programs": ["Social Security", "SSDI", "SSI"]
+    },
+    {
+      "id": "n-20260501-irs-disaster-relief-wa-aug5",
+      "title": "IRS extends Washington state disaster tax relief deadlines to Aug. 5, 2026",
+      "summary": "The IRS updated its Washington state disaster tax relief notice to postpone various filing and payment deadlines to Aug. 5, 2026 for taxpayers affected by severe storms, flooding, landslides, and mudslides that began Dec. 9, 2025. The postponement includes individual returns and payments, estimated tax payments (including Jan. 15 and April 15, 2026 installments), and certain quarterly payroll and excise tax returns.",
+      "category": "deadline",
+      "date": "2026-05-01",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/i1040s8.pdf",
-      "programs": ["Child Tax Credit", "CTC", "ACTC"]
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-severe-storms-straight-line-winds-flooding-landslides-and-mudslides-in-the-state-of-washington-various-deadlines-postponed-to-may-1-2026",
+      "programs": ["EITC", "CTC"]
+    },
+    {
+      "id": "n-20260503-education-workforce-pell",
+      "title": "Education Department guidance reflects new 'Workforce Pell' eligibility for some short-term training programs",
+      "summary": "In its May 2026 COD Technical Reference updates for 2026–27, the U.S. Department of Education describes legislative changes that extend Pell Grant eligibility to a student enrolled in an eligible workforce program, even if the student already has a bachelor’s degree. The same guidance notes an ineligibility threshold for Pell when a student’s SAI is at least twice the maximum Pell award for the year, stating the 2026–27 threshold as $14,790.",
+      "category": "policy-change",
+      "date": "2026-05-03",
+      "source": "Federal Student Aid (FSA Partners)",
+      "sourceUrl": "https://fsapartners.ed.gov/sites/default/files/2026-05/2627CODTechRefVol3.pdf",
+      "programs": ["Pell Grants"]
+    },
+    {
+      "id": "n-20250730-irs-remittance-excise-tax",
+      "title": "IRS details new 1% excise tax on certain remittance transfers; first deposit due Jan. 29, 2026",
+      "summary": "The IRS says a new 1% excise tax applies to certain remittance transfers beginning Jan. 1, 2026 when the sender pays with cash or similar physical instruments (like money orders or cashier’s checks). Remittance transfer providers must make semimonthly deposits and file quarterly returns, with the first semimonthly deposit due Jan. 29, 2026.",
+      "category": "deadline",
+      "date": "2025-07-30",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      "programs": ["Tax Credits"]
     }
   ]
 }
