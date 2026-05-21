@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-20T11:01:00Z",
+  "lastUpdated": "2026-05-21T11:00:00Z",
   "items": [
     {
       "id": "n-20260508-snap-stocking-standards",
-      "title": "USDA finalizes new SNAP retailer stocking standards (7 varieties per category)",
-      "summary": "USDA published a final rule updating SNAP retailer stocking standards, requiring most SNAP-authorized retailers to stock at least 7 varieties in each of the 4 staple food categories (dairy, fruits/vegetables, grains, protein). Retailers must also offer a perishable variety in at least 3 of the 4 categories, with compliance required by Nov. 4, 2026.",
+      "title": "USDA finalizes new SNAP retailer stocking standards; compliance required by Nov. 4, 2026",
+      "summary": "USDA’s final rule updates the staple food stocking standards for SNAP-authorized retailers. Most retailers (other than specialty stores) must stock at least 7 varieties in each of the 4 staple food categories (dairy; fruits/vegetables; grains; protein) and offer perishable varieties in at least 3 of the 4 categories by Nov. 4, 2026.",
       "category": "policy-change",
       "date": "2026-05-08",
       "source": "USDA Food and Nutrition Service",
@@ -12,85 +12,84 @@
       "programs": ["SNAP"]
     },
     {
-      "id": "n-20260519-snap-waiver-montana-food-restrictions",
-      "title": "Montana submits SNAP waiver request to restrict soft drinks, junk food, and candy",
-      "summary": "USDA announced that Montana submitted a waiver request seeking to ban soft drinks, junk food, and candy purchases using SNAP benefits. USDA said it expects state waivers to go into effect in 2026, part of a broader initiative encouraging states to propose changes to federal nutrition programs.",
-      "category": "policy-change",
-      "date": "2026-05-19",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/newsroom/usda-0068.26",
-      "programs": ["SNAP"],
-      "isBreaking": true
-    },
-    {
       "id": "n-20260518-summer-ebt-120",
-      "title": "SUN Bucks (Summer EBT) provides $120 per eligible child for summer groceries",
-      "summary": "USDA’s Summer EBT (SUN Bucks) program provides $120 in grocery benefits per eligible school-age child when school is out for summer. Many children get benefits automatically if their household already participates in SNAP, FDPIR, or TANF; others may need to apply depending on their state or Tribal program.",
+      "title": "Summer EBT provides $120 per eligible child for summer groceries; some families must apply",
+      "summary": "USDA says Summer EBT provides $120 in grocery benefits per eligible school-age child when school is out for summer. Many children will receive benefits automatically if their household already gets SNAP or TANF, but some families must apply through their state and may need to provide the child’s details plus household income.",
       "category": "update",
       "date": "2026-05-18",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/sebt",
-      "programs": ["SNAP", "Summer EBT"]
+      "programs": ["Summer EBT", "SNAP", "TANF"]
     },
     {
-      "id": "n-20260512-cms-prior-auth-drugs-comments",
-      "title": "CMS proposes extending electronic prior authorization requirements to prescription drugs (comments due June 15, 2026)",
-      "summary": "CMS released a proposed rule to extend electronic prior authorization requirements to cover drugs, aiming for faster and more transparent decisions. CMS says the proposal would require impacted payers to support electronic prior authorization and report API endpoints and usage metrics; public comments are due June 15, 2026.",
-      "category": "deadline",
-      "date": "2026-05-12",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-standards-prior-authorization-drugs-proposed-rule-cms-0062-p",
-      "programs": ["Medicaid", "CHIP"]
-    },
-    {
-      "id": "n-20260514-hud-hotma-compliance-2027",
-      "title": "HUD sets Jan. 1, 2027 enforcement date for HOTMA income/asset changes; PHAs may need to start Sept. 2026",
-      "summary": "HUD issued Notice PIH 2026-15 stating it will enforce compliance with HOTMA sections 102 and 104 starting Jan. 1, 2027 for most public housing agencies, affecting programs like Housing Choice Vouchers and public housing. HUD notes PHAs that start annual reexams 120 days ahead may need to begin using HOTMA policies to collect and verify income beginning in September 2026.",
-      "category": "deadline",
-      "date": "2026-05-14",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
-      "programs": ["Section 8", "Public Housing"]
-    },
-    {
-      "id": "n-20260423-ssa-widower-underpayments",
-      "title": "SSA watchdog finds estimated $50.4M underpaid to 8,618 widow(er)s; 41% of sample had issues",
-      "summary": "SSA’s Office of Inspector General reported that 59% of sampled widow(er) beneficiaries were paid correctly, while 41% were paid inappropriately or lacked documentation that SSA employees explained filing options. The audit estimated SSA underpaid 8,618 widow(er)s by about $50.4 million and recommended calculation and documentation fixes.",
-      "category": "update",
-      "date": "2026-04-23",
-      "source": "SSA Office of Inspector General",
-      "sourceUrl": "https://oig.ssa.gov/news-releases/2026-04-23-report-ssa-needs-to-take-steps-to-ensure-widow-er-s-are-appropriately-paid-and-well-informed-regarding-benefit-options/",
-      "programs": ["Social Security", "SSDI", "SSI"]
-    },
-    {
-      "id": "n-20260501-irs-disaster-relief-wa-aug5",
-      "title": "IRS extends Washington state disaster tax relief deadlines to Aug. 5, 2026",
-      "summary": "The IRS updated its Washington state disaster tax relief notice to postpone various filing and payment deadlines to Aug. 5, 2026 for taxpayers affected by severe storms, flooding, landslides, and mudslides that began Dec. 9, 2025. The postponement includes individual returns and payments, estimated tax payments (including Jan. 15 and April 15, 2026 installments), and certain quarterly payroll and excise tax returns.",
-      "category": "deadline",
-      "date": "2026-05-01",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-severe-storms-straight-line-winds-flooding-landslides-and-mudslides-in-the-state-of-washington-various-deadlines-postponed-to-may-1-2026",
-      "programs": ["EITC", "CTC"]
-    },
-    {
-      "id": "n-20260503-education-workforce-pell",
-      "title": "Education Department guidance reflects new 'Workforce Pell' eligibility for some short-term training programs",
-      "summary": "In its May 2026 COD Technical Reference updates for 2026–27, the U.S. Department of Education describes legislative changes that extend Pell Grant eligibility to a student enrolled in an eligible workforce program, even if the student already has a bachelor’s degree. The same guidance notes an ineligibility threshold for Pell when a student’s SAI is at least twice the maximum Pell award for the year, stating the 2026–27 threshold as $14,790.",
+      "id": "n-20260511-hud-hotma-enforcement-2027",
+      "title": "HUD sets HOTMA sections 102 and 104 enforcement date to Jan. 1, 2027 (most PHAs)",
+      "summary": "HUD’s PIH Notice 2026-15 says HUD will enforce compliance with all provisions of HOTMA sections 102 and 104 starting Jan. 1, 2027 for PHAs that are not MTW and not exclusively using HUD Family Reporting Software. PHAs that start annual reexaminations 120 days before the effective date may need to begin using HOTMA policies for income collection/verification as early as Sept. 2026.",
       "category": "policy-change",
-      "date": "2026-05-03",
-      "source": "Federal Student Aid (FSA Partners)",
-      "sourceUrl": "https://fsapartners.ed.gov/sites/default/files/2026-05/2627CODTechRefVol3.pdf",
-      "programs": ["Pell Grants"]
+      "date": "2026-05-11",
+      "source": "U.S. Department of Housing and Urban Development (HUD)",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
+      "programs": ["Section 8", "Housing Choice Voucher", "Public Housing"]
     },
     {
-      "id": "n-20250730-irs-remittance-excise-tax",
-      "title": "IRS details new 1% excise tax on certain remittance transfers; first deposit due Jan. 29, 2026",
-      "summary": "The IRS says a new 1% excise tax applies to certain remittance transfers beginning Jan. 1, 2026 when the sender pays with cash or similar physical instruments (like money orders or cashier’s checks). Remittance transfer providers must make semimonthly deposits and file quarterly returns, with the first semimonthly deposit due Jan. 29, 2026.",
+      "id": "n-20260508-usda-milk-options-comments",
+      "title": "USDA final rule expands milk options in child nutrition programs; comments due June 8, 2026",
+      "summary": "USDA issued a final rule expanding fluid milk options in child nutrition programs with an effective date of June 8, 2026. USDA is also accepting comments on the final rule through June 8, 2026.",
+      "category": "update",
+      "date": "2026-05-08",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/cn/fr-050826",
+      "programs": ["School Meals", "WIC"]
+    },
+    {
+      "id": "n-20260519-workforce-pell-final-rule",
+      "title": "Education Dept. finalizes Workforce Pell: short-term programs (8–15 weeks; 150–599 hours) can qualify",
+      "summary": "The U.S. Department of Education says its final rule implements Workforce Pell for short-term, workforce-focused programs lasting at least 8 weeks but less than 15 weeks and totaling 150–599 clock hours (or credit-hour equivalent). The rule’s workforce-program provisions are effective July 20, 2026, with an option for institutions to implement early on July 1, 2026.",
+      "category": "new-program",
+      "date": "2026-05-19",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
+      "programs": ["Pell Grants", "Workforce Pell"]
+    },
+    {
+      "id": "n-20260519-workforce-pell-accountability",
+      "title": "Workforce Pell accountability: 70% completion and 70% employment, plus tuition cap tied to earnings",
+      "summary": "Education’s fact sheet says eligible Workforce Pell programs must meet annual performance thresholds: at least 70% of participants must complete within 150% of normal time, and at least 70% of completers must be employed in the second quarter after exit. The rule also limits programs’ published tuition and fees to not exceed “value-added earnings,” defined as the adjusted median earnings of Pell recipients who complete the program minus 150% of the U.S. poverty guidelines for a single individual.",
+      "category": "policy-change",
+      "date": "2026-05-19",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
+      "programs": ["Pell Grants", "Workforce Pell"]
+    },
+    {
+      "id": "n-20260507-ssa-disability-backlog",
+      "title": "SSA says disability claims backlog down 33%, from 1.27M (2024 peak) to 853,000 (April 2026)",
+      "summary": "SSA reported that it reduced the initial disability claims backlog by 33%, from a high of 1.27 million cases in 2024 to 853,000 cases in April 2026. SSA also said it created an SSI Improvement Team to make SSI processing more efficient and help reduce improper payments.",
+      "category": "update",
+      "date": "2026-05-07",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-05-07.html",
+      "programs": ["SSDI", "SSI"]
+    },
+    {
+      "id": "n-20260403-irs-tn-disaster-tax-deadline",
+      "title": "IRS: Tennessee winter storm victims get tax filing/payment relief (deadline extended to June 8, 2026)",
+      "summary": "The IRS announced disaster tax relief for individuals and businesses in Tennessee affected by Winter Storm Fern, postponing many tax filing and payment deadlines. The IRS says Tennessee taxpayers in all 95 counties now have until June 8, 2026, and the postponement generally covers original or extended deadlines occurring on or after Jan. 22, 2026.",
       "category": "deadline",
-      "date": "2025-07-30",
+      "date": "2026-04-03",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
-      "programs": ["Tax Credits"]
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-winter-storm-fern-in-tennessee-various-deadlines-postponed-to-may-22-2026",
+      "programs": ["EITC", "CTC", "Taxes"]
+    },
+    {
+      "id": "n-20260506-irs-tax-2026-inflation",
+      "title": "IRS posts 2026 tax inflation adjustments: standard deduction $32,200 (joint) and $16,100 (single)",
+      "summary": "The IRS published tax-year 2026 inflation-adjusted standard deduction amounts of $32,200 for married couples filing jointly, $16,100 for single filers (and married filing separately), and $24,150 for heads of household. These annual inflation adjustments affect dozens of tax provisions and help set parameters used when families claim credits like the EITC and CTC.",
+      "category": "update",
+      "date": "2026-05-06",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
+      "programs": ["EITC", "CTC", "Taxes"]
     }
   ]
 }
