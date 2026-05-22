@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-21T11:00:00Z",
+  "lastUpdated": "2026-05-22T11:00:00Z",
   "items": [
     {
       "id": "n-20260508-snap-stocking-standards",
-      "title": "USDA finalizes new SNAP retailer stocking standards; compliance required by Nov. 4, 2026",
-      "summary": "USDA’s final rule updates the staple food stocking standards for SNAP-authorized retailers. Most retailers (other than specialty stores) must stock at least 7 varieties in each of the 4 staple food categories (dairy; fruits/vegetables; grains; protein) and offer perishable varieties in at least 3 of the 4 categories by Nov. 4, 2026.",
+      "title": "USDA finalizes tougher SNAP retailer stocking standards (7 varieties per category; compliance by Nov. 4, 2026)",
+      "summary": "USDA updated SNAP retailer stocking rules so most SNAP-authorized retailers must offer at least 7 varieties in each of four staple categories (dairy, fruits/vegetables, grains, protein). The rule also requires at least one perishable variety in at least 3 of the 4 categories, with compliance required by Nov. 4, 2026.",
       "category": "policy-change",
       "date": "2026-05-08",
       "source": "USDA Food and Nutrition Service",
@@ -12,84 +12,84 @@
       "programs": ["SNAP"]
     },
     {
-      "id": "n-20260518-summer-ebt-120",
-      "title": "Summer EBT provides $120 per eligible child for summer groceries; some families must apply",
-      "summary": "USDA says Summer EBT provides $120 in grocery benefits per eligible school-age child when school is out for summer. Many children will receive benefits automatically if their household already gets SNAP or TANF, but some families must apply through their state and may need to provide the child’s details plus household income.",
+      "id": "n-20260519-snap-montana-waiver",
+      "title": "USDA says Montana SNAP waiver to restrict soft drinks, junk food, and candy will take effect in 2026",
+      "summary": "USDA announced it approved a Montana waiver request targeting SNAP purchases of soft drinks, junk food, and candy. USDA said the waiver will go into effect in 2026.",
+      "category": "policy-change",
+      "date": "2026-05-19",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/newsroom/usda-0068.26",
+      "programs": ["SNAP"]
+    },
+    {
+      "id": "n-20260423-snap-nebraska-candy-waiver",
+      "title": "Nebraska requests USDA approval to restrict candy purchases with SNAP benefits (target start: Nov. 1, 2026)",
+      "summary": "Nebraska DHHS says it submitted a request to USDA to expand the state’s SNAP Healthy Choice Waiver to include candy as an ineligible purchase. If approved, the restriction would take effect Nov. 1, 2026, and Nebraska noted its current waiver already restricts soda and energy drinks (effective Jan. 1, 2026).",
+      "category": "policy-change",
+      "date": "2026-04-23",
+      "source": "Nebraska DHHS",
+      "sourceUrl": "https://dhhs.ne.gov/Pages/Nebraska-Moves-to-Restrict-Candy-from-SNAP-Purchases-to-Promote-Improved-Health.aspx",
+      "programs": ["SNAP"]
+    },
+    {
+      "id": "n-20260514-hotma-enforcement-date",
+      "title": "HUD sets Jan. 1, 2027 enforcement date for key HOTMA income/asset changes for most PHAs (work begins Sept. 2026)",
+      "summary": "HUD Notice PIH 2026-15 says HUD will enforce HOTMA sections 102 and 104 starting Jan. 1, 2027 for all public housing agencies except MTW PHAs and PHAs using HUD’s Family Reporting Software (FRS). HUD noted that PHAs starting annual reexams 120 days before the effective date may need to begin using HOTMA policies to collect and verify income beginning in Sept. 2026.",
+      "category": "deadline",
+      "date": "2026-05-14",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
+      "programs": ["Section 8", "Public Housing"]
+    },
+    {
+      "id": "n-20260518-direct-express-transition",
+      "title": "Direct Express transitions to a new bank; new enrollments begin May 2026 (existing users transition later in 2026/early 2027)",
+      "summary": "SSA says Treasury selected Fifth Third Bank as the new financial agent for the Direct Express program, and new card enrollments with Fifth Third begin in May 2026. SSA says existing cardholders’ accounts will begin transitioning later in 2026 or early 2027 and advises beneficiaries to keep contact information updated and continue using Comerica-issued cards until they expire.",
       "category": "update",
       "date": "2026-05-18",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/sebt",
-      "programs": ["Summer EBT", "SNAP", "TANF"]
-    },
-    {
-      "id": "n-20260511-hud-hotma-enforcement-2027",
-      "title": "HUD sets HOTMA sections 102 and 104 enforcement date to Jan. 1, 2027 (most PHAs)",
-      "summary": "HUD’s PIH Notice 2026-15 says HUD will enforce compliance with all provisions of HOTMA sections 102 and 104 starting Jan. 1, 2027 for PHAs that are not MTW and not exclusively using HUD Family Reporting Software. PHAs that start annual reexaminations 120 days before the effective date may need to begin using HOTMA policies for income collection/verification as early as Sept. 2026.",
-      "category": "policy-change",
-      "date": "2026-05-11",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
-      "programs": ["Section 8", "Housing Choice Voucher", "Public Housing"]
-    },
-    {
-      "id": "n-20260508-usda-milk-options-comments",
-      "title": "USDA final rule expands milk options in child nutrition programs; comments due June 8, 2026",
-      "summary": "USDA issued a final rule expanding fluid milk options in child nutrition programs with an effective date of June 8, 2026. USDA is also accepting comments on the final rule through June 8, 2026.",
-      "category": "update",
-      "date": "2026-05-08",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/cn/fr-050826",
-      "programs": ["School Meals", "WIC"]
-    },
-    {
-      "id": "n-20260519-workforce-pell-final-rule",
-      "title": "Education Dept. finalizes Workforce Pell: short-term programs (8–15 weeks; 150–599 hours) can qualify",
-      "summary": "The U.S. Department of Education says its final rule implements Workforce Pell for short-term, workforce-focused programs lasting at least 8 weeks but less than 15 weeks and totaling 150–599 clock hours (or credit-hour equivalent). The rule’s workforce-program provisions are effective July 20, 2026, with an option for institutions to implement early on July 1, 2026.",
-      "category": "new-program",
-      "date": "2026-05-19",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
-      "programs": ["Pell Grants", "Workforce Pell"]
-    },
-    {
-      "id": "n-20260519-workforce-pell-accountability",
-      "title": "Workforce Pell accountability: 70% completion and 70% employment, plus tuition cap tied to earnings",
-      "summary": "Education’s fact sheet says eligible Workforce Pell programs must meet annual performance thresholds: at least 70% of participants must complete within 150% of normal time, and at least 70% of completers must be employed in the second quarter after exit. The rule also limits programs’ published tuition and fees to not exceed “value-added earnings,” defined as the adjusted median earnings of Pell recipients who complete the program minus 150% of the U.S. poverty guidelines for a single individual.",
-      "category": "policy-change",
-      "date": "2026-05-19",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
-      "programs": ["Pell Grants", "Workforce Pell"]
-    },
-    {
-      "id": "n-20260507-ssa-disability-backlog",
-      "title": "SSA says disability claims backlog down 33%, from 1.27M (2024 peak) to 853,000 (April 2026)",
-      "summary": "SSA reported that it reduced the initial disability claims backlog by 33%, from a high of 1.27 million cases in 2024 to 853,000 cases in April 2026. SSA also said it created an SSI Improvement Team to make SSI processing more efficient and help reduce improper payments.",
-      "category": "update",
-      "date": "2026-05-07",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-05-07.html",
-      "programs": ["SSDI", "SSI"]
+      "sourceUrl": "https://www.ssa.gov/news/en/advocates/2026-05-18.html",
+      "programs": ["SSI", "SSDI"]
     },
     {
-      "id": "n-20260403-irs-tn-disaster-tax-deadline",
-      "title": "IRS: Tennessee winter storm victims get tax filing/payment relief (deadline extended to June 8, 2026)",
-      "summary": "The IRS announced disaster tax relief for individuals and businesses in Tennessee affected by Winter Storm Fern, postponing many tax filing and payment deadlines. The IRS says Tennessee taxpayers in all 95 counties now have until June 8, 2026, and the postponement generally covers original or extended deadlines occurring on or after Jan. 22, 2026.",
-      "category": "deadline",
-      "date": "2026-04-03",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-winter-storm-fern-in-tennessee-various-deadlines-postponed-to-may-22-2026",
-      "programs": ["EITC", "CTC", "Taxes"]
-    },
-    {
-      "id": "n-20260506-irs-tax-2026-inflation",
-      "title": "IRS posts 2026 tax inflation adjustments: standard deduction $32,200 (joint) and $16,100 (single)",
-      "summary": "The IRS published tax-year 2026 inflation-adjusted standard deduction amounts of $32,200 for married couples filing jointly, $16,100 for single filers (and married filing separately), and $24,150 for heads of household. These annual inflation adjustments affect dozens of tax provisions and help set parameters used when families claim credits like the EITC and CTC.",
+      "id": "n-20260423-ssa-widow-underpayments",
+      "title": "SSA OIG audit finds widow(er) benefit underpayments and missed filing-option documentation (estimated $50.4M underpaid)",
+      "summary": "SSA’s Office of Inspector General reported that in its sample review, 59% of widow(er) beneficiaries were paid the correct monthly benefit amount and 41% were paid inappropriately or lacked documentation about filing options. The audit estimated 8,618 widow(er)s were underpaid about $50.4 million, and another 5,367 widow(er)s could have received a projected $113.8 million more by delaying retirement claims until age 70.",
       "category": "update",
-      "date": "2026-05-06",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
-      "programs": ["EITC", "CTC", "Taxes"]
+      "date": "2026-04-23",
+      "source": "SSA Office of Inspector General",
+      "sourceUrl": "https://oig.ssa.gov/news-releases/2026-04-23-report-ssa-needs-to-take-steps-to-ensure-widow-er-s-are-appropriately-paid-and-well-informed-regarding-benefit-options/",
+      "programs": ["SSI", "SSDI"]
+    },
+    {
+      "id": "n-20260521-medicaid-expansion-status",
+      "title": "KFF update: 41 states (incl. DC) have adopted Medicaid expansion; 10 states have not",
+      "summary": "KFF reports that Medicaid expansion under the ACA generally covers adults up to 138% of the federal poverty level, which KFF cites as $21,597 for an individual in 2025. As of May 21, 2026, KFF reports 41 states (including DC) have adopted Medicaid expansion and 10 states have not.",
+      "category": "update",
+      "date": "2026-05-21",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
+      "programs": ["Medicaid", "CHIP"]
+    },
+    {
+      "id": "n-20260507-irs-july10-refund-claims",
+      "title": "Taxpayer Advocate warns many taxpayers must file by July 10, 2026 to protect potential COVID-era penalty/interest refunds",
+      "summary": "The Taxpayer Advocate Service says relief is not automatic and that most taxpayers who may be entitled to refunds or abatements of COVID-era penalties and interest generally need to file by July 10, 2026 to protect their rights. TAS says taxpayers can use Form 843 (Claim for Refund and Request for Abatement) and may label protective claims (for example, “Protective Refund Claim Pursuant to Kwong Case”).",
+      "category": "deadline",
+      "date": "2026-05-07",
+      "source": "Taxpayer Advocate Service (IRS)",
+      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/news/nta-blog/protect-your-potential-covid-19-disaster-relief-refunds-by-filing-formal-or-protective-claims-for-refund-part-iii/2026/05/",
+      "programs": ["EITC", "CTC"]
+    },
+    {
+      "id": "n-20260429-wic-income-guidelines-2026-27",
+      "title": "USDA publishes WIC income eligibility guidelines for July 1, 2026–June 30, 2027 (example: $29,526 annual for 1 person at 185% level)",
+      "summary": "USDA published updated WIC income eligibility guidelines effective July 1, 2026. For the 48 contiguous states and DC, the reduced-price meal threshold (185% of poverty) is listed as $29,526 annually ($2,461 monthly) for a household of 1 and $61,050 annually ($5,088 monthly) for a household of 4.",
+      "category": "update",
+      "date": "2026-04-29",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic/fr-042926",
+      "programs": ["WIC"]
     }
   ]
 }
