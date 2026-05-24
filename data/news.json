@@ -1,87 +1,96 @@
 {
-  "lastUpdated": "2026-05-23T11:02:50Z",
+  "lastUpdated": "2026-05-24T12:00:00Z",
   "items": [
     {
-      "id": "n-20260522-snap-food-restriction-waivers",
-      "title": "USDA posts SNAP food restriction waiver tracker with state start dates",
-      "summary": "USDA is approving state waivers to restrict SNAP purchases of items like soda and candy, and published a tracker listing target implementation dates. Examples on the tracker include Florida (04/20/26) restricting soda, energy drinks, candy, and prepared desserts and Montana (09/30/26) restricting high-sugar beverages, energy drinks, candy, and prepared desserts.",
+      "id": "n-20260524-snap-food-restriction-waivers",
+      "title": "USDA tracker: SNAP food-restriction waivers continue rolling out through 2026",
+      "summary": "USDA's official tracker lists approved state SNAP food-restriction waivers with 2026 effective dates including Florida (April 20), Colorado (April 30), Arkansas (July 1), and Montana (September 30). Waivers vary by state but generally restrict purchases of sodas, candy, and certain prepared foods.",
       "category": "policy-change",
-      "date": "2026-05-22",
+      "date": "2026-03-23",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": ["SNAP"],
+      "programs": ["snap"],
       "isBreaking": true
     },
     {
-      "id": "n-20260508-snap-stocking-standards-final-rule",
+      "id": "n-20260524-snap-retailer-stocking-nov4",
       "title": "USDA finalizes SNAP retailer stocking standards; compliance required by Nov. 4, 2026",
-      "summary": "USDA’s final rule updates SNAP retailer stocking standards, including reclassifying certain items (like butter, jerky, and snack bars) so they no longer count as staple foods for retailer authorization (though they remain eligible for purchase). Starting Nov. 4, 2026, most SNAP retailers (other than specialty stores) must stock at least 7 varieties in each of the 4 staple categories (dairy, fruits/vegetables, grains, and protein) and include a perishable variety in at least 3 of the 4 categories.",
+      "summary": "USDA's final rule requires most SNAP-authorized retailers to stock at least 7 varieties in each of 4 staple food categories (fruits/vegetables, meat/poultry/fish, dairy products, breads/cereals). Compliance is required by November 4, 2026.",
       "category": "policy-change",
-      "date": "2026-05-08",
+      "date": "2026-05-05",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/stocking-standards-rule",
-      "programs": ["SNAP"]
+      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/eligible",
+      "programs": ["snap"]
     },
     {
-      "id": "n-20260518-summer-ebt-120",
-      "title": "USDA Summer EBT (SUN Bucks) provides $120 per eligible child for summer groceries",
-      "summary": "USDA says Summer EBT provides $120 in grocery benefits per eligible school-age child when school is out for summer. Many eligible children will be enrolled automatically if their household already receives SNAP, TANF, or similar benefits, but some families will need to apply through their state, Tribe, or territory.",
-      "category": "update",
-      "date": "2026-05-18",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/sebt",
-      "programs": ["SNAP", "Summer EBT"]
-    },
-    {
-      "id": "n-20260520-medicaid-sdp-proposed-rule",
-      "title": "CMS proposes Medicaid payment caps for some supplemental payments (state directed payments)",
-      "summary": "CMS published a proposed rule that would cap certain Medicaid managed care state directed payments (SDPs) at 100% of the total published Medicare payment rate in Medicaid expansion states and 110% in non-expansion states (or 100% of the state plan rate if no Medicare rate exists). CMS also proposes extending the payment-rate limit to all SDPs for rating periods beginning on or after Jan. 1, 2029, and would phase down grandfathered SDPs by 10 percentage points annually starting with the first rating period on or after Jan. 1, 2028.",
+      "id": "n-20260524-medicaid-noncitizen-match-oct1",
+      "title": "CMS guidance: federal Medicaid/CHIP matching limits for certain noncitizens take effect Oct. 1, 2026",
+      "summary": "CMS issued implementation guidance on new statutory limits to federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens or nationals, effective October 1, 2026. Exceptions include emergency medical conditions and lawfully residing children/pregnant people under existing state options.",
       "category": "policy-change",
-      "date": "2026-05-20",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-managed-care-state-directed-payments-medicaid-fee-service-targeted-medicaid-practitioner",
-      "programs": ["Medicaid", "CHIP"],
-      "isBreaking": true
+      "date": "2026-04-08",
+      "source": "CMS",
+      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
+      "programs": ["medicaid", "chip"]
     },
     {
-      "id": "n-20260518-direct-express-transition",
-      "title": "Direct Express transitions to Fifth Third Bank as new financial agent",
-      "summary": "SSA says Treasury’s Bureau of the Fiscal Service selected Fifth Third Bank as the new financial agent for the Direct Express program. New Direct Express enrollments with Fifth Third Bank begin in May 2026, and existing cardholders will begin transitioning later in 2026 or early 2027 with advance notice.",
+      "id": "n-20260524-hud-hotma-jan2027",
+      "title": "HUD: HOTMA Sections 102/104 enforcement set for Jan. 1, 2027; prep starts Sept. 2026",
+      "summary": "HUD set January 1, 2027 as the enforcement date for HOTMA Sections 102 (income calculation) and 104 (asset limits) for most PHAs. PHAs need to begin practical implementation prep around September 2026 to update software, policies, and tenant notices.",
+      "category": "policy-change",
+      "date": "2026-04-15",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/program_offices/public_indian_housing/hotma",
+      "programs": ["section8"]
+    },
+    {
+      "id": "n-20260524-ssa-direct-express-fifth-third",
+      "title": "SSA: Direct Express transitions to Fifth Third Bank; new enrollments begin May 2026",
+      "summary": "Social Security Direct Express prepaid debit card services are transitioning to Fifth Third Bank as the new financial agent. New enrollments under Fifth Third begin in May 2026; existing cardholders will receive instructions for the transition.",
       "category": "update",
-      "date": "2026-05-18",
+      "date": "2026-05-01",
       "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/advocates/2026-05-18.html",
-      "programs": ["SSI", "SSDI"]
+      "sourceUrl": "https://www.ssa.gov/deposit/DDFAQ898.htm",
+      "programs": ["ssi", "ssdi"]
     },
     {
-      "id": "n-20260515-hotma-enforcement-date-2027",
-      "title": "HUD sets HOTMA (Sections 102 and 104) enforcement date for most PHAs: Jan. 1, 2027",
-      "summary": "HUD’s PIH Notice 2026-15 sets an enforcement date of Jan. 1, 2027 for compliance with HOTMA Sections 102 and 104 for all PHAs except MTW PHAs and PHAs exclusively using HUD’s Family Reporting Software (FRS). HUD notes that PHAs that start annual reexams 120 days before the effective date may need to begin collecting and verifying family income under HOTMA policies starting in September 2026.",
-      "category": "deadline",
-      "date": "2026-05-15",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
-      "programs": ["Section 8", "Public Housing"]
+      "id": "n-20260524-ssa-cola-2026",
+      "title": "SSA 2026 COLA at 2.8%; SSI max is $994/month (individual), $1,491 (couple)",
+      "summary": "SSA confirmed a 2.8% cost-of-living adjustment for 2026 affecting about 75 million Americans. The federal SSI payment standard is $994/month for individuals and $1,491/month for couples. Disability work thresholds are $1,690/month (non-blind SGA) and $2,830/month (blind SGA).",
+      "category": "update",
+      "date": "2025-10-24",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
+      "programs": ["ssi", "ssdi"]
     },
     {
-      "id": "n-20260508-milk-options-child-nutrition",
-      "title": "USDA expands whole and 2% milk options in child nutrition programs (effective June 8, 2026)",
-      "summary": "USDA issued a final rule allowing schools and child and adult care providers in child nutrition programs to offer whole milk and reduced-fat (2%) milk to participants age 2 and older. The rule is effective June 8, 2026, and USDA will accept comments on the final rule through June 8, 2026.",
-      "category": "policy-change",
-      "date": "2026-05-08",
+      "id": "n-20260524-wic-2026-27-income-guidelines",
+      "title": "USDA publishes 2026-27 WIC income eligibility guidelines; effective July 1, 2026",
+      "summary": "USDA published the 2026-27 WIC income eligibility guidelines, effective July 1, 2026 through June 30, 2027. States may set income limits up to 185% of the federal poverty level. Participants enrolled in SNAP, TANF, or Medicaid automatically meet WIC income eligibility.",
+      "category": "update",
+      "date": "2026-04-30",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/cn/fr-050826",
-      "programs": ["WIC", "School Meals"]
+      "sourceUrl": "https://www.fns.usda.gov/wic/income-eligibility-guidelines",
+      "programs": ["wic"]
     },
     {
-      "id": "n-20260515-oklahoma-liheap-ecap-deadline",
-      "title": "Oklahoma LIHEAP crisis assistance (ECAP) application cutoff: May 22, 2026 (midnight)",
-      "summary": "Oklahoma Human Services says it will stop accepting Energy Crisis Assistance Program (ECAP) applications at midnight Friday, May 22, 2026, and online applications can be submitted until 12:00 A.M. CST Saturday, May 23, 2026. The agency also lists anticipated FFY 2026 open-enrollment dates: Winter Heating (Jan. 6, 2026) and Summer Cooling (July 14, 2026).",
+      "id": "n-20260524-irs-eitc-actc-refund-timing",
+      "title": "IRS: 2025 EITC max $8,046; CTC up to $2,200 with refundable ACTC up to $1,700",
+      "summary": "For tax year 2025, the maximum EITC is $8,046 (3+ qualifying children). The Child Tax Credit is up to $2,200 per qualifying child, with up to $1,700 refundable via the Additional Child Tax Credit. The CTC requires at least $2,500 in earned income to begin phasing in the refundable portion.",
+      "category": "update",
+      "date": "2026-01-26",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit-eitc",
+      "programs": ["eitc", "ctc"]
+    },
+    {
+      "id": "n-20260524-irs-covid-era-refund-jul10",
+      "title": "Taxpayer Advocate: July 10, 2026 deadline for COVID-era penalty refund/protective claims",
+      "summary": "The Taxpayer Advocate Service is warning taxpayers about a July 10, 2026 deadline to file certain COVID-era penalty and interest refund claims or protective claims with the IRS. Taxpayers who believe they qualify should consult a tax professional or call TAS for free assistance.",
       "category": "deadline",
-      "date": "2026-05-15",
-      "source": "Oklahoma Human Services",
-      "sourceUrl": "https://oklahoma.gov/okdhs/services/liheap/utilityservicesliheapmain.html",
-      "programs": ["LIHEAP"]
+      "date": "2026-05-12",
+      "source": "Taxpayer Advocate Service",
+      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/news/tax-tips/",
+      "programs": ["eitc", "ctc"]
     }
   ]
 }
