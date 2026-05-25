@@ -1,96 +1,95 @@
 {
-  "lastUpdated": "2026-05-24T12:00:00Z",
+  "lastUpdated": "2026-05-25T11:17:01Z",
   "items": [
     {
-      "id": "n-20260524-snap-food-restriction-waivers",
-      "title": "USDA tracker: SNAP food-restriction waivers continue rolling out through 2026",
-      "summary": "USDA's official tracker lists approved state SNAP food-restriction waivers with 2026 effective dates including Florida (April 20), Colorado (April 30), Arkansas (July 1), and Montana (September 30). Waivers vary by state but generally restrict purchases of sodas, candy, and certain prepared foods.",
+      "id": "n-20260525-snap-retailer-stocking-standards",
+      "title": "USDA final rule raises SNAP retailer stocking standards; effective July 7 with Nov. 4 compliance deadline",
+      "summary": "USDA’s Food and Nutrition Service finalized updated SNAP retailer staple food stocking standards that take effect July 7, 2026, and require retailers to comply no later than Nov. 4, 2026. The rule implements the 2014 Farm Bill’s increase from 3 to 7 distinct staple food varieties in each of the 4 staple food categories and increases the number of categories requiring at least one perishable variety from 2 to 3.",
       "category": "policy-change",
-      "date": "2026-03-23",
+      "date": "2026-05-25",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": ["snap"],
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-050826",
+      "programs": [
+        "snap"
+      ],
       "isBreaking": true
     },
     {
-      "id": "n-20260524-snap-retailer-stocking-nov4",
-      "title": "USDA finalizes SNAP retailer stocking standards; compliance required by Nov. 4, 2026",
-      "summary": "USDA's final rule requires most SNAP-authorized retailers to stock at least 7 varieties in each of 4 staple food categories (fruits/vegetables, meat/poultry/fish, dairy products, breads/cereals). Compliance is required by November 4, 2026.",
-      "category": "policy-change",
-      "date": "2026-05-05",
+      "id": "n-20260525-medicaid-chip-immigration-oct-2026",
+      "title": "KFF: States preparing for Oct. 1, 2026 Medicaid/CHIP eligibility restrictions for some lawfully residing immigrants",
+      "summary": "KFF reports that beginning Oct. 1, 2026, Medicaid eligibility for immigrants will be restricted to lawful permanent residents, certain Haitian and Cuban entrants, and Compact of Free Association (COFA) migrants, while some other lawfully residing groups (including asylees and refugees) will lose eligibility. More than half of states (28) said they plan to send 1–3 advance notices 30 to 90+ days before the change, and 22 states plan to engage community-based organizations for outreach.",
+      "category": "update",
+      "date": "2026-05-25",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-and-chip-eligibility-enrollment-and-renewal-policies-as-states-prepare-for-major-medicaid-policy-changes/",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260525-wic-income-guidelines-2026-2027",
+      "title": "USDA posts WIC income eligibility guidelines for 2026–27 (effective July 1)",
+      "summary": "USDA published WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. For the 48 contiguous states and D.C., the 100% federal poverty guideline for a family of 4 is $33,000/year ($2,750/month), and the 185% level used for reduced-price meals is $61,050/year ($5,088/month).",
+      "category": "update",
+      "date": "2026-05-25",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/eligible",
-      "programs": ["snap"]
+      "sourceUrl": "https://www.fns.usda.gov/wic/fr-042926",
+      "programs": [
+        "wic"
+      ]
     },
     {
-      "id": "n-20260524-medicaid-noncitizen-match-oct1",
-      "title": "CMS guidance: federal Medicaid/CHIP matching limits for certain noncitizens take effect Oct. 1, 2026",
-      "summary": "CMS issued implementation guidance on new statutory limits to federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens or nationals, effective October 1, 2026. Exceptions include emergency medical conditions and lawfully residing children/pregnant people under existing state options.",
+      "id": "n-20260525-fafsa-real-time-fraud-detection-update",
+      "title": "FSA reminds schools about APP-26-03 FAFSA real-time fraud detection (updated May 14)",
+      "summary": "Federal Student Aid’s ‘What’s New’ page highlights Electronic Announcement APP-26-03 on FAFSA real-time fraud detection, updated May 14, 2026. Students and families may see additional identity-verification steps during online FAFSA completion as the Department continues its fraud-prevention measures.",
+      "category": "update",
+      "date": "2026-05-25",
+      "source": "Federal Student Aid (FSA Partner Connect)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/whats-new",
+      "programs": [
+        "pell",
+        "fafsa"
+      ]
+    },
+    {
+      "id": "n-20260525-hud-restore-rebuild-wind-down",
+      "title": "HUD wind-down ends Restore-Rebuild (Faircloth-to-RAD) for new deals; key cutoff May 12",
+      "summary": "HUD issued a May 12, 2026 memorandum winding down the Restore-Rebuild initiative (formerly Faircloth-to-RAD), making projects ineligible if a NARR request was not submitted before May 12. HUD will continue processing NARR requests submitted before May 12, but any issued NARR becomes void 90 days after the memo date (Aug. 10, 2026) unless specific advancement milestones are met.",
       "category": "policy-change",
-      "date": "2026-04-08",
-      "source": "CMS",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
-      "programs": ["medicaid", "chip"]
+      "date": "2026-05-25",
+      "source": "National Law Review (summarizing HUD memorandum)",
+      "sourceUrl": "https://natlawreview.com/article/hud-announces-wind-down-restore-rebuild-program-formerly-faircloth-rad?amp",
+      "programs": [
+        "section8",
+        "public-housing"
+      ]
     },
     {
-      "id": "n-20260524-hud-hotma-jan2027",
-      "title": "HUD: HOTMA Sections 102/104 enforcement set for Jan. 1, 2027; prep starts Sept. 2026",
-      "summary": "HUD set January 1, 2027 as the enforcement date for HOTMA Sections 102 (income calculation) and 104 (asset limits) for most PHAs. PHAs need to begin practical implementation prep around September 2026 to update software, policies, and tenant notices.",
-      "category": "policy-change",
-      "date": "2026-04-15",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/program_offices/public_indian_housing/hotma",
-      "programs": ["section8"]
-    },
-    {
-      "id": "n-20260524-ssa-direct-express-fifth-third",
-      "title": "SSA: Direct Express transitions to Fifth Third Bank; new enrollments begin May 2026",
-      "summary": "Social Security Direct Express prepaid debit card services are transitioning to Fifth Third Bank as the new financial agent. New enrollments under Fifth Third begin in May 2026; existing cardholders will receive instructions for the transition.",
-      "category": "update",
-      "date": "2026-05-01",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/deposit/DDFAQ898.htm",
-      "programs": ["ssi", "ssdi"]
-    },
-    {
-      "id": "n-20260524-ssa-cola-2026",
-      "title": "SSA 2026 COLA at 2.8%; SSI max is $994/month (individual), $1,491 (couple)",
-      "summary": "SSA confirmed a 2.8% cost-of-living adjustment for 2026 affecting about 75 million Americans. The federal SSI payment standard is $994/month for individuals and $1,491/month for couples. Disability work thresholds are $1,690/month (non-blind SGA) and $2,830/month (blind SGA).",
-      "category": "update",
-      "date": "2025-10-24",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": ["ssi", "ssdi"]
-    },
-    {
-      "id": "n-20260524-wic-2026-27-income-guidelines",
-      "title": "USDA publishes 2026-27 WIC income eligibility guidelines; effective July 1, 2026",
-      "summary": "USDA published the 2026-27 WIC income eligibility guidelines, effective July 1, 2026 through June 30, 2027. States may set income limits up to 185% of the federal poverty level. Participants enrolled in SNAP, TANF, or Medicaid automatically meet WIC income eligibility.",
-      "category": "update",
-      "date": "2026-04-30",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/income-eligibility-guidelines",
-      "programs": ["wic"]
-    },
-    {
-      "id": "n-20260524-irs-eitc-actc-refund-timing",
-      "title": "IRS: 2025 EITC max $8,046; CTC up to $2,200 with refundable ACTC up to $1,700",
-      "summary": "For tax year 2025, the maximum EITC is $8,046 (3+ qualifying children). The Child Tax Credit is up to $2,200 per qualifying child, with up to $1,700 refundable via the Additional Child Tax Credit. The CTC requires at least $2,500 in earned income to begin phasing in the refundable portion.",
-      "category": "update",
-      "date": "2026-01-26",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit-eitc",
-      "programs": ["eitc", "ctc"]
-    },
-    {
-      "id": "n-20260524-irs-covid-era-refund-jul10",
-      "title": "Taxpayer Advocate: July 10, 2026 deadline for COVID-era penalty refund/protective claims",
-      "summary": "The Taxpayer Advocate Service is warning taxpayers about a July 10, 2026 deadline to file certain COVID-era penalty and interest refund claims or protective claims with the IRS. Taxpayers who believe they qualify should consult a tax professional or call TAS for free assistance.",
+      "id": "n-20260525-irs-extension-deadline-oct-15",
+      "title": "IRS reminder: extension to file is available until Oct. 15, 2026 (but must be requested by April 15)",
+      "summary": "The IRS reminds taxpayers that a filing extension gives extra time to file a federal return until Oct. 15, 2026. However, the extension must be requested by April 15, 2026 to avoid late-filing penalties, and any tax owed is still due by the original deadline.",
       "category": "deadline",
-      "date": "2026-05-12",
-      "source": "Taxpayer Advocate Service",
-      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/news/tax-tips/",
-      "programs": ["eitc", "ctc"]
+      "date": "2026-05-25",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/news-releases-for-current-month",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260525-ssa-may-payment-dates",
+      "title": "SSA: May Social Security payments follow staggered schedule; SSI typically paid on the 1st",
+      "summary": "Social Security benefits are paid on a staggered schedule tied to birth dates (second, third, or fourth Wednesday), while Supplemental Security Income (SSI) is generally paid on the first of the month. For May 2026, payment dates fall on May 13, May 20, and May 27 for many retirement and SSDI beneficiaries depending on birth date.",
+      "category": "update",
+      "date": "2026-05-25",
+      "source": "Kiplinger (based on SSA schedule)",
+      "sourceUrl": "https://www.kiplinger.com/retirement/social-security/social-security-payment-schedule-for-2026",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
     }
   ]
 }
