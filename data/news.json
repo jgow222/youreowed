@@ -1,38 +1,73 @@
 {
-  "lastUpdated": "2026-05-25T11:17:01Z",
+  "lastUpdated": "2026-05-26T11:16:28Z",
   "items": [
     {
-      "id": "n-20260525-snap-retailer-stocking-standards",
-      "title": "USDA final rule raises SNAP retailer stocking standards; effective July 7 with Nov. 4 compliance deadline",
-      "summary": "USDA’s Food and Nutrition Service finalized updated SNAP retailer staple food stocking standards that take effect July 7, 2026, and require retailers to comply no later than Nov. 4, 2026. The rule implements the 2014 Farm Bill’s increase from 3 to 7 distinct staple food varieties in each of the 4 staple food categories and increases the number of categories requiring at least one perishable variety from 2 to 3.",
-      "category": "policy-change",
-      "date": "2026-05-25",
+      "id": "n-20260526-snap-ptig",
+      "title": "USDA opens FY 2026 SNAP Process and Technology Improvement Grants (applications due June 29)",
+      "summary": "USDA’s Food and Nutrition Service posted the FY 2026 SNAP Process and Technology Improvement Grants opportunity, with up to $5 million available and an expectation of 6–12 awards. Applications are due through Grants.gov by June 29, 2026 at 11:59 p.m. EDT, and awards are anticipated in September 2026 for a 3-year project period (Sept. 2026–Sept. 30, 2029).",
+      "category": "deadline",
+      "date": "2026-05-26",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-050826",
+      "sourceUrl": "https://www.fns.usda.gov/grant/snap/ptig-2026",
       "programs": [
         "snap"
-      ],
-      "isBreaking": true
+      ]
     },
     {
-      "id": "n-20260525-medicaid-chip-immigration-oct-2026",
-      "title": "KFF: States preparing for Oct. 1, 2026 Medicaid/CHIP eligibility restrictions for some lawfully residing immigrants",
-      "summary": "KFF reports that beginning Oct. 1, 2026, Medicaid eligibility for immigrants will be restricted to lawful permanent residents, certain Haitian and Cuban entrants, and Compact of Free Association (COFA) migrants, while some other lawfully residing groups (including asylees and refugees) will lose eligibility. More than half of states (28) said they plan to send 1–3 advance notices 30 to 90+ days before the change, and 22 states plan to engage community-based organizations for outreach.",
-      "category": "update",
-      "date": "2026-05-25",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-and-chip-eligibility-enrollment-and-renewal-policies-as-states-prepare-for-major-medicaid-policy-changes/",
+      "id": "n-20260526-snap-nac-comments",
+      "title": "USDA seeks public comments on SNAP operations changes and interstate duplicate-issuance matching (due June 22)",
+      "summary": "USDA published a 30-day comment request covering SNAP ‘Major Changes in Program Design’ reporting requirements and the National Accuracy Clearinghouse (NAC) interstate data matching process meant to prevent duplicate SNAP benefits across states. Comments must be submitted through Regulations.gov by June 22, 2026 (within 30 days of the notice).",
+      "category": "deadline",
+      "date": "2026-05-26",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052126",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260526-medicaid-sdp-nprm",
+      "title": "CMS proposes tighter limits on Medicaid state directed payments and targeted fee-for-service payments",
+      "summary": "CMS issued a proposed rule that would cap certain Medicaid managed care state directed payments at 100% of Medicare rates for expansion states and 110% for non-expansion states, assessed at the claim/service level, for rating periods beginning on or after July 4, 2025. The proposal would also extend payment-rate limits to all state directed payments starting with rating periods beginning on or after Jan. 1, 2029, and requires a 10-percentage-point annual phase-down for qualifying ‘grandfathered’ arrangements starting with the first rating period on or after Jan. 1, 2028.",
+      "category": "policy-change",
+      "date": "2026-05-26",
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-managed-care-state-directed-payments-medicaid-fee-service-targeted-medicaid-practitioner",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260525-wic-income-guidelines-2026-2027",
-      "title": "USDA posts WIC income eligibility guidelines for 2026–27 (effective July 1)",
-      "summary": "USDA published WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. For the 48 contiguous states and D.C., the 100% federal poverty guideline for a family of 4 is $33,000/year ($2,750/month), and the 185% level used for reduced-price meals is $61,050/year ($5,088/month).",
+      "id": "n-20260526-hud-hotma-50058",
+      "title": "HUD sets key HOTMA reporting and income-verification timeline for Housing Choice Voucher and public housing agencies",
+      "summary": "HUD guidance says PHAs should start using HOTMA policies to collect and verify family income beginning in September 2026 for annual reexaminations (about 120 days before the effective date). HUD will enforce full compliance with HOTMA sections 102 and 104 starting Jan. 1, 2027 for most PHAs, and it highlights a 2026 net family assets threshold of $52,787 and a 0.4% passbook savings rate used for imputed asset income calculations.",
       "category": "update",
-      "date": "2026-05-25",
+      "date": "2026-05-26",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
+      "programs": [
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260526-hud-tribal-hudvash-renewal",
+      "title": "HUD opens Tribal HUD-VASH renewal process; packages due June 5 (admin fee capped at $120 per unit per month)",
+      "summary": "HUD’s FY 2026 Tribal HUD-VASH renewal notice includes $10 million provided by the FY 2026 Consolidated Appropriations Act (plus recaptured/prior-year funds) and requires renewal submissions by June 5, 2026 at 11:59:59 p.m. ET. The maximum administrative-fee amount is calculated as allocated units × $120 × 12 months for the Oct. 1, 2026–Sept. 30, 2027 performance period.",
+      "category": "deadline",
+      "date": "2026-05-26",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-14.pdf",
+      "programs": [
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260526-wic-ieg-2026-27",
+      "title": "USDA publishes WIC income eligibility guidelines for July 2026–June 2027 (185% poverty-based caps)",
+      "summary": "USDA’s WIC income eligibility guidelines take effect July 1, 2026 (through June 30, 2027) and reflect the reduced-price school meals standard of 185% of the federal poverty guidelines. For the 48 contiguous states/DC, the 185% annual income limit is $29,526 for a household of 1 and $61,050 for a household of 4 (monthly limits: $2,461 for 1 and $5,088 for 4).",
+      "category": "update",
+      "date": "2026-05-26",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/fr-042926",
       "programs": [
@@ -40,55 +75,42 @@
       ]
     },
     {
-      "id": "n-20260525-fafsa-real-time-fraud-detection-update",
-      "title": "FSA reminds schools about APP-26-03 FAFSA real-time fraud detection (updated May 14)",
-      "summary": "Federal Student Aid’s ‘What’s New’ page highlights Electronic Announcement APP-26-03 on FAFSA real-time fraud detection, updated May 14, 2026. Students and families may see additional identity-verification steps during online FAFSA completion as the Department continues its fraud-prevention measures.",
+      "id": "n-20260526-ssa-myssa-update",
+      "title": "SSA refreshes the my Social Security online account experience and retirement calculator",
+      "summary": "SSA says the my Social Security portal now has a new design and improved navigation aligned with SSA.gov, while keeping access to existing services like direct deposit changes and benefit verification letters. SSA also redesigned the Retirement Calculator to compare up to three estimates at a time using a bar-graph display.",
       "category": "update",
-      "date": "2026-05-25",
-      "source": "Federal Student Aid (FSA Partner Connect)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/whats-new",
+      "date": "2026-05-26",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/blog/en/posts/2026-05-12.html",
       "programs": [
-        "pell",
-        "fafsa"
+        "ssi",
+        "ssdi"
       ]
     },
     {
-      "id": "n-20260525-hud-restore-rebuild-wind-down",
-      "title": "HUD wind-down ends Restore-Rebuild (Faircloth-to-RAD) for new deals; key cutoff May 12",
-      "summary": "HUD issued a May 12, 2026 memorandum winding down the Restore-Rebuild initiative (formerly Faircloth-to-RAD), making projects ineligible if a NARR request was not submitted before May 12. HUD will continue processing NARR requests submitted before May 12, but any issued NARR becomes void 90 days after the memo date (Aug. 10, 2026) unless specific advancement milestones are met.",
-      "category": "policy-change",
-      "date": "2026-05-25",
-      "source": "National Law Review (summarizing HUD memorandum)",
-      "sourceUrl": "https://natlawreview.com/article/hud-announces-wind-down-restore-rebuild-program-formerly-faircloth-rad?amp",
-      "programs": [
-        "section8",
-        "public-housing"
-      ]
-    },
-    {
-      "id": "n-20260525-irs-extension-deadline-oct-15",
-      "title": "IRS reminder: extension to file is available until Oct. 15, 2026 (but must be requested by April 15)",
-      "summary": "The IRS reminds taxpayers that a filing extension gives extra time to file a federal return until Oct. 15, 2026. However, the extension must be requested by April 15, 2026 to avoid late-filing penalties, and any tax owed is still due by the original deadline.",
+      "id": "n-20260526-irs-tn-disaster-relief",
+      "title": "IRS: Tennessee Winter Storm Fern tax deadlines postponed; statewide filing/pay relief runs to June 8",
+      "summary": "The IRS says individuals and businesses across all 95 Tennessee counties affected by Winter Storm Fern now have until June 8, 2026 to file many federal returns and make tax payments that were originally due on or after Jan. 22, 2026. The relief includes postponed deadlines for a wide range of returns and estimated tax payments, while payroll and excise tax deposits are generally not postponed (with penalty relief for certain deposits if made by Feb. 6, 2026).",
       "category": "deadline",
-      "date": "2026-05-25",
+      "date": "2026-05-26",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/news-releases-for-current-month",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-winter-storm-fern-in-tennessee-various-deadlines-postponed-to-may-22-2026",
       "programs": [
         "eitc",
         "ctc"
       ]
     },
     {
-      "id": "n-20260525-ssa-may-payment-dates",
-      "title": "SSA: May Social Security payments follow staggered schedule; SSI typically paid on the 1st",
-      "summary": "Social Security benefits are paid on a staggered schedule tied to birth dates (second, third, or fourth Wednesday), while Supplemental Security Income (SSI) is generally paid on the first of the month. For May 2026, payment dates fall on May 13, May 20, and May 27 for many retirement and SSDI beneficiaries depending on birth date.",
+      "id": "n-20260526-irs-standard-deduction-2026",
+      "title": "IRS posts 2026 tax-year amounts under 'One Big, Beautiful Bill' page (standard deduction and more)",
+      "summary": "IRS guidance lists 2026 standard deduction amounts of $32,200 for married couples filing jointly, $16,100 for single filers (and married filing separately), and $24,150 for heads of household. The same IRS summary also lists a 2026 estate tax exclusion basic exclusion amount of $15,000,000 and notes that up to $5,120 of the 2026 adoption credit may be refundable.",
       "category": "update",
-      "date": "2026-05-25",
-      "source": "Kiplinger (based on SSA schedule)",
-      "sourceUrl": "https://www.kiplinger.com/retirement/social-security/social-security-payment-schedule-for-2026",
+      "date": "2026-05-26",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
       "programs": [
-        "ssi",
-        "ssdi"
+        "eitc",
+        "ctc"
       ]
     }
   ]
