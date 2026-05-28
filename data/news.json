@@ -1,95 +1,102 @@
 {
-  "lastUpdated": "2026-05-27T11:04:02Z",
+  "lastUpdated": "2026-05-28T11:13:58Z",
   "items": [
     {
-      "id": "n-20260527-medicaid-sdp-proposed-rule",
-      "title": "CMS proposes caps on Medicaid state-directed payments; projects $775B savings over 10 years",
-      "summary": "CMS proposed a rule to cap Medicaid managed-care state-directed provider payment rates at 100% of Medicare rates in expansion states and 110% of Medicare rates in non-expansion states (or 100% of the Medicaid state plan rate when no comparable Medicare rate exists). CMS estimates the proposal would save $775 billion over 10 years ($510 billion federal) and notes SDP spending projected at $107 billion in FY 2024 could rise to $296 billion by FY 2034 without changes.",
-      "category": "policy-change",
-      "date": "2026-05-27",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-moves-rein-misused-medicaid-dollars-reward-quality-care",
-      "programs": [
-        "medicaid",
-        "chip"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260527-medicaid-sdp-comments",
-      "title": "Public comments due July 21 on CMS Medicaid payment proposal",
-      "summary": "The Federal Register posting for CMS's proposed rule on Medicaid state-directed payments and targeted fee-for-service practitioner payments lists a public comment deadline of July 21, 2026. Stakeholders who want to weigh in on caps and guardrails for state payment arrangements should submit comments before that date.",
+      "id": "n-20260528-snap-fr-comment-utility-allowance",
+      "title": "USDA invites comments on SNAP utility-allowance and self-employment income reporting burden (due July 27)",
+      "summary": "USDA’s Food and Nutrition Service published a Federal Register notice seeking comments on a revised information collection covering state options for Standard Utility Allowances (SUAs) and self-employment income calculations in SNAP. The notice estimates 53 respondents and a total annual burden of 2,131.25 hours (reporting plus recordkeeping), with comments due July 27, 2026.",
       "category": "deadline",
-      "date": "2026-05-27",
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/d/2026-10292",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
-    },
-    {
-      "id": "n-20260527-section8-deceased-tenants-notice",
-      "title": "HUD issues new Section 8/HCV guidance to reduce overpayments when tenants die",
-      "summary": "HUD's PIH Notice 2026-11 (issued April 30, 2026) requires Housing Choice Voucher agencies to run the EIV Deceased Tenants Report at least monthly before paying housing assistance payments. The notice sets timeframes such as requesting death confirmation within 24 hours, submitting required HUD-50058 actions within 60 days, and requiring landlords to repay any overpaid assistance within 30 days.",
-      "category": "update",
-      "date": "2026-05-27",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-11.pdf",
-      "programs": [
-        "section8",
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260527-snap-obbb-fy2026-guidance",
-      "title": "USDA posts implementation guidance list for SNAP provisions in the One Big Beautiful Bill Act",
-      "summary": "USDA's Food and Nutrition Service updated its One Big Beautiful Bill Act (OBBB) page on May 21, 2026 and lists new SNAP implementation memos tied to FY 2026 changes. The listed materials cover items such as SNAP FY 2026 cost-of-living adjustments (COLA), work-requirement/ABAWD exception guidance, and FY 2026 standard utility allowance (SUA) instructions.",
-      "category": "update",
-      "date": "2026-05-27",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/obbb",
+      "date": "2026-05-28",
+      "source": "Federal Register (USDA/FNS via GovInfo)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-05-27/pdf/2026-10468.pdf",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260527-fafsa-deadline-202526",
-      "title": "FAFSA deadline approaching: submit 2025–26 application by June 30",
-      "summary": "For the 2025–26 aid year, the federal deadline to submit a FAFSA is 11:59 p.m. Central Time on June 30, 2026. If you need to make corrections or updates after filing, at least one school aid office guidance notes a corrections deadline of 11:59 p.m. Central Time on Sept. 12, 2026.",
+      "id": "n-20260528-snap-comment-major-changes-nac",
+      "title": "USDA opens 30-day comment window on SNAP operations-change reporting and National Accuracy Clearinghouse data matching (comments due June 22)",
+      "summary": "USDA’s Food and Nutrition Service is taking public comments on an information collection that covers (1) state reporting when making “major changes in operations” and (2) state participation in the National Accuracy Clearinghouse (NAC) to prevent duplicate SNAP issuance across states. Comments received by June 22, 2026 will be considered.",
       "category": "deadline",
-      "date": "2026-05-27",
-      "source": "Columbus State Community College (FAFSA guidance referencing Federal Student Aid deadlines)",
-      "sourceUrl": "https://www.cscc.edu/services/financial-aid/apply-for-fafsa.shtml",
+      "date": "2026-05-28",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052126",
       "programs": [
-        "pell",
-        "fafsa"
+        "snap"
       ]
     },
     {
-      "id": "n-20260527-irs-obbb-individuals-2026-std-deduction",
-      "title": "IRS outlines 2026 standard deduction amounts under the One Big Beautiful Bill Act",
-      "summary": "IRS guidance on the One Big Beautiful Bill Act says the 2026 standard deduction would be $32,200 for married couples filing jointly, $16,100 for single filers, and $24,150 for heads of household. The page also describes temporary 2025–2028 deductions, including up to a $6,000 additional deduction for taxpayers age 65+ (phasing out above $75,000 MAGI for single filers and $150,000 for joint filers).",
+      "id": "n-20260528-medicaid-proposed-rule-state-directed-payments",
+      "title": "CMS publishes proposed rule on Medicaid managed care state-directed payments (public inspection May 20)",
+      "summary": "CMS has posted a proposed rule titled “Medicaid Program; Medicaid Managed Care State Directed Payments and Medicaid Fee-For-Service Targeted Medicaid Practitioner Payments (CMS-2449-P)” for public inspection on May 20, 2026. The proposal would codify limits on Medicaid state-directed payments (SDPs) and targeted fee-for-service practitioner payments.",
       "category": "policy-change",
-      "date": "2026-05-27",
+      "date": "2026-05-28",
+      "source": "LeadingAge (summarizing CMS proposed rule)",
+      "sourceUrl": "https://leadingage.org/cms-releases-proposed-rule-limiting-state-directed-payments/",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260528-pell-workforce-pell-final-rule",
+      "title": "Education Department finalizes Workforce Pell Grant rules; eligible short-term programs can start as early as July 1",
+      "summary": "The U.S. Department of Education released a fact sheet on its Workforce Pell Grant final rule dated May 19, 2026, with provisions for eligible workforce programs effective July 20, 2026 and an option for institutions to implement early on July 1, 2026. The rule sets program parameters of 150–599 clock hours and at least 8 but fewer than 15 weeks of instructional time, plus 70% completion and 70% employment rate requirements.",
+      "category": "policy-change",
+      "date": "2026-05-28",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
+      "programs": [
+        "pell"
+      ]
+    },
+    {
+      "id": "n-20260528-irs-trump-accounts",
+      "title": "IRS launches “Trump Accounts” for children, including a $1,000 pilot contribution for eligible births in 2025–2028",
+      "summary": "The IRS posted details on a new child savings account type called “Trump Accounts,” established under the Working Families Tax Cuts. The IRS says a $1,000 pilot contribution is available for eligible U.S.-citizen children born between Jan. 1, 2025 and Dec. 31, 2028 (with a valid SSN), and account elections are submitted through an IRS online account using Form 4547.",
+      "category": "new-program",
+      "date": "2026-05-28",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
+      "sourceUrl": "https://www.irs.gov/trumpaccounts",
       "programs": [
         "eitc",
-        "ctc",
-        "tax"
+        "ctc"
       ]
     },
     {
-      "id": "n-20260527-irs-disaster-relief-wa-aug5",
-      "title": "IRS extends Washington disaster tax relief deadlines to Aug. 5, 2026",
-      "summary": "The IRS updated its Washington severe-storms disaster relief announcement to postpone many federal filing and payment deadlines to Aug. 5, 2026 (replacing a previously listed May 1, 2026 date). The relief applies to individual and business returns and payments originally due during the covered period, and the notice references FEMA declaration number 3629-EM.",
+      "id": "n-20260528-social-security-scam-webinar",
+      "title": "SSA and HHS OIG host anti-scam webinar June 4 (2:00 p.m. ET) to help beneficiaries avoid fraud",
+      "summary": "The Social Security Administration and the HHS Office of Inspector General announced a joint webinar on Thursday, June 4, 2026 at 2:00 p.m. ET focused on recognizing, avoiding, and reporting scams and using Social Security online services safely. The event includes a Microsoft Teams join option and a dial-in audio line.",
       "category": "deadline",
-      "date": "2026-05-27",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-severe-storms-straight-line-winds-flooding-landslides-and-mudslides-in-the-state-of-washington-various-deadlines-postponed-to-may-1-2026",
+      "date": "2026-05-28",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/advocates/2026-05-21.html",
       "programs": [
-        "tax",
+        "ssi",
+        "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260528-section8-pittsburgh-pbv-closing",
+      "title": "Pittsburgh housing authority closes three Project-Based Voucher waiting lists May 28 at 1:00 p.m.",
+      "summary": "The Housing Authority of the City of Pittsburgh announced it will close three Project-Based Voucher (PBV) waiting lists effective Thursday, May 28, 2026 at 1:00 p.m. The lists are Allegheny Union Baptist Association (AUBA), Gladstone Residences, and Milliones Manor, and no pre-applications will be accepted after the deadline.",
+      "category": "deadline",
+      "date": "2026-05-28",
+      "source": "Housing Authority of the City of Pittsburgh",
+      "sourceUrl": "https://hacp.org/about/notices/",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20260528-irs-child-dependent-care-credit-day-camp",
+      "title": "IRS reminder: summer day camp costs may count toward the Child and Dependent Care Credit",
+      "summary": "In a May 26, 2026 Tax Tip, the IRS reminded families that sending a child to summer day camp may be an expense that counts toward the Child and Dependent Care Credit. The IRS also noted that taxpayers who move should file Form 8822 to update their address with the agency.",
+      "category": "update",
+      "date": "2026-05-28",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/summer-fun-has-begun-how-common-activities-could-impact-the-next-tax-return",
+      "programs": [
         "eitc",
         "ctc"
       ]
