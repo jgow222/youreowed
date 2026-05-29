@@ -1,105 +1,109 @@
 {
-  "lastUpdated": "2026-05-28T11:13:58Z",
+  "lastUpdated": "2026-05-29T11:25:06Z",
   "items": [
     {
-      "id": "n-20260528-snap-fr-comment-utility-allowance",
-      "title": "USDA invites comments on SNAP utility-allowance and self-employment income reporting burden (due July 27)",
-      "summary": "USDA’s Food and Nutrition Service published a Federal Register notice seeking comments on a revised information collection covering state options for Standard Utility Allowances (SUAs) and self-employment income calculations in SNAP. The notice estimates 53 respondents and a total annual burden of 2,131.25 hours (reporting plus recordkeeping), with comments due July 27, 2026.",
-      "category": "deadline",
-      "date": "2026-05-28",
-      "source": "Federal Register (USDA/FNS via GovInfo)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-05-27/pdf/2026-10468.pdf",
+      "id": "n-20260529-snap-sua-comments",
+      "title": "USDA seeks comments on SNAP state options for standard utility allowances (SUAs) and self-employment income methodology reporting",
+      "summary": "USDA’s Food and Nutrition Service published a notice renewing the information collection tied to SNAP state agency reporting for standard utility allowances (SUAs) and self-employment income calculation options. Written comments are due by July 27, 2026, and the notice references the requirement that states submit SUA methodologies to FNS for approval at least every five years.",
+      "category": "update",
+      "date": "2026-05-29",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052726a",
       "programs": [
         "snap"
-      ]
+      ],
+      "isBreaking": false
     },
     {
-      "id": "n-20260528-snap-comment-major-changes-nac",
-      "title": "USDA opens 30-day comment window on SNAP operations-change reporting and National Accuracy Clearinghouse data matching (comments due June 22)",
-      "summary": "USDA’s Food and Nutrition Service is taking public comments on an information collection that covers (1) state reporting when making “major changes in operations” and (2) state participation in the National Accuracy Clearinghouse (NAC) to prevent duplicate SNAP issuance across states. Comments received by June 22, 2026 will be considered.",
-      "category": "deadline",
-      "date": "2026-05-28",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052126",
+      "id": "n-20260529-snap-incentive-waiver-comments",
+      "title": "USDA renews SNAP waiver request process for nutrition incentive programs at authorized retailers; comments due July 27",
+      "summary": "USDA renewed the paperwork collection for SNAP-authorized retailers (and partner organizations) to request waivers to offer incentives that encourage purchase of healthier foods. USDA estimates about 15 incentive waiver requests per year covering roughly 800 retailers (out of about 267,000 authorized SNAP retailers), and waivers are generally granted for three years; written comments are due July 27, 2026.",
+      "category": "update",
+      "date": "2026-05-29",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052726b",
       "programs": [
         "snap"
-      ]
+      ],
+      "isBreaking": false
     },
     {
-      "id": "n-20260528-medicaid-proposed-rule-state-directed-payments",
-      "title": "CMS publishes proposed rule on Medicaid managed care state-directed payments (public inspection May 20)",
-      "summary": "CMS has posted a proposed rule titled “Medicaid Program; Medicaid Managed Care State Directed Payments and Medicaid Fee-For-Service Targeted Medicaid Practitioner Payments (CMS-2449-P)” for public inspection on May 20, 2026. The proposal would codify limits on Medicaid state-directed payments (SDPs) and targeted fee-for-service practitioner payments.",
-      "category": "policy-change",
-      "date": "2026-05-28",
-      "source": "LeadingAge (summarizing CMS proposed rule)",
-      "sourceUrl": "https://leadingage.org/cms-releases-proposed-rule-limiting-state-directed-payments/",
+      "id": "n-20260529-hcv-funding-deadlines",
+      "title": "HUD outlines 2026 Housing Choice Voucher funding and sets multiple HAP set-aside deadlines (many due June 26, 2026)",
+      "summary": "HUD issued guidance implementing FFY 2026 Housing Choice Voucher funding, listing total available CY 2026 appropriations of $38,438,557,000, including $34,557,000,000 for HAP renewal funding and $2,835,935,000 for administrative fees. HUD set several Housing Assistance Payment (HAP) set-aside request deadlines for Friday, June 26, 2026 (5pm local time), including categories for unforeseen circumstances, portability, project-based vouchers, and other needs.",
+      "category": "deadline",
+      "date": "2026-05-29",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
       "programs": [
-        "medicaid",
-        "chip"
-      ]
+        "section8"
+      ],
+      "isBreaking": false
     },
     {
-      "id": "n-20260528-pell-workforce-pell-final-rule",
-      "title": "Education Department finalizes Workforce Pell Grant rules; eligible short-term programs can start as early as July 1",
-      "summary": "The U.S. Department of Education released a fact sheet on its Workforce Pell Grant final rule dated May 19, 2026, with provisions for eligible workforce programs effective July 20, 2026 and an option for institutions to implement early on July 1, 2026. The rule sets program parameters of 150–599 clock hours and at least 8 but fewer than 15 weeks of instructional time, plus 70% completion and 70% employment rate requirements.",
+      "id": "n-20260529-hcv-fees-reporting-deadline",
+      "title": "HUD deadline: PHAs must submit certain HCV portability special-fee data by May 29, 2026",
+      "summary": "HUD’s FFY 2026 Housing Choice Voucher funding notice includes a reporting deadline of Friday, May 29, 2026 for IMS/PIC submissions tied to Category D (Portability) special fees. The notice describes the portability special-fee formula as up to 12 months of funding equal to 15% of a PHA’s 2026 Column A administrative fee rate per eligible port-in voucher.",
+      "category": "deadline",
+      "date": "2026-05-29",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
+      "programs": [
+        "section8"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20260529-pell-workforce-effective",
+      "title": "Education Department finalizes Workforce Pell Grant expansion for short-term workforce programs, effective July 20, 2026 (early option July 1)",
+      "summary": "The U.S. Department of Education published a fact sheet on its final rule establishing Pell-eligible “workforce programs,” generally 8 to under 15 weeks and 150–599 clock hours. The rule is effective July 20, 2026, with an option for institutions to implement early on July 1, 2026; programs must meet accountability metrics including 70% completion and 70% employment rates.",
       "category": "policy-change",
-      "date": "2026-05-28",
+      "date": "2026-05-29",
       "source": "U.S. Department of Education",
       "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
       "programs": [
         "pell"
-      ]
+      ],
+      "isBreaking": false
     },
     {
-      "id": "n-20260528-irs-trump-accounts",
-      "title": "IRS launches “Trump Accounts” for children, including a $1,000 pilot contribution for eligible births in 2025–2028",
-      "summary": "The IRS posted details on a new child savings account type called “Trump Accounts,” established under the Working Families Tax Cuts. The IRS says a $1,000 pilot contribution is available for eligible U.S.-citizen children born between Jan. 1, 2025 and Dec. 31, 2028 (with a valid SSN), and account elections are submitted through an IRS online account using Form 4547.",
-      "category": "new-program",
-      "date": "2026-05-28",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/trumpaccounts",
+      "id": "n-20260529-pell-nonfederal-aid-limit",
+      "title": "Workforce Pell rule: students may be ineligible for Pell in an award year if non-federal grants and scholarships cover full cost of attendance",
+      "summary": "The Education Department’s Workforce Pell final rule materials state students will not qualify for Pell Grant funds in any award year when grant and scholarship aid from non-federal sources equals or exceeds the student’s cost of attendance. The Department notes this doesn’t change the overall Pell eligibility factors, but it does limit receiving Pell when other non-federal aid fully covers costs.",
+      "category": "policy-change",
+      "date": "2026-05-29",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
       "programs": [
-        "eitc",
-        "ctc"
-      ]
+        "pell"
+      ],
+      "isBreaking": false
     },
     {
-      "id": "n-20260528-social-security-scam-webinar",
-      "title": "SSA and HHS OIG host anti-scam webinar June 4 (2:00 p.m. ET) to help beneficiaries avoid fraud",
-      "summary": "The Social Security Administration and the HHS Office of Inspector General announced a joint webinar on Thursday, June 4, 2026 at 2:00 p.m. ET focused on recognizing, avoiding, and reporting scams and using Social Security online services safely. The event includes a Microsoft Teams join option and a dial-in audio line.",
-      "category": "deadline",
-      "date": "2026-05-28",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/news/en/advocates/2026-05-21.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
-    },
-    {
-      "id": "n-20260528-section8-pittsburgh-pbv-closing",
-      "title": "Pittsburgh housing authority closes three Project-Based Voucher waiting lists May 28 at 1:00 p.m.",
-      "summary": "The Housing Authority of the City of Pittsburgh announced it will close three Project-Based Voucher (PBV) waiting lists effective Thursday, May 28, 2026 at 1:00 p.m. The lists are Allegheny Union Baptist Association (AUBA), Gladstone Residences, and Milliones Manor, and no pre-applications will be accepted after the deadline.",
-      "category": "deadline",
-      "date": "2026-05-28",
-      "source": "Housing Authority of the City of Pittsburgh",
-      "sourceUrl": "https://hacp.org/about/notices/",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260528-irs-child-dependent-care-credit-day-camp",
-      "title": "IRS reminder: summer day camp costs may count toward the Child and Dependent Care Credit",
-      "summary": "In a May 26, 2026 Tax Tip, the IRS reminded families that sending a child to summer day camp may be an expense that counts toward the Child and Dependent Care Credit. The IRS also noted that taxpayers who move should file Form 8822 to update their address with the agency.",
+      "id": "n-20260529-irs-standard-deduction-2026",
+      "title": "IRS posts updated standard deduction amounts for tax year 2026 under the One Big Beautiful Bill provisions",
+      "summary": "An IRS summary of “One, Big, Beautiful Bill” provisions lists a 2026 standard deduction of $32,200 for married couples filing jointly, $16,100 for single filers (and married filing separately), and $24,150 for heads of household. The same page lists 2025 standard deduction amounts of $31,500 (married filing jointly), $15,750 (single/married filing separately), and $23,625 (head of household).",
       "category": "update",
-      "date": "2026-05-28",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/summer-fun-has-begun-how-common-activities-could-impact-the-next-tax-return",
+      "date": "2026-05-29",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
       "programs": [
-        "eitc",
-        "ctc"
-      ]
+        "eitc-ctc"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20260529-irs-refundable-adoption-credit-2026",
+      "title": "IRS: 2026 adoption credit limit increases to $17,670 with up to $5,120 potentially refundable",
+      "summary": "The IRS’s “One, Big, Beautiful Bill” summary lists a maximum adoption credit of $17,670 for tax year 2026 (up from $17,280 for 2025). The IRS also notes that up to $5,120 of the adoption credit may be refundable for 2026.",
+      "category": "update",
+      "date": "2026-05-29",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
+      "programs": [
+        "eitc-ctc"
+      ],
+      "isBreaking": false
     }
   ]
 }
