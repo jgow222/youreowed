@@ -1,109 +1,94 @@
 {
-  "lastUpdated": "2026-05-29T11:25:06Z",
+  "lastUpdated": "2026-05-30T11:07:08Z",
   "items": [
     {
-      "id": "n-20260529-snap-sua-comments",
-      "title": "USDA seeks comments on SNAP state options for standard utility allowances (SUAs) and self-employment income methodology reporting",
-      "summary": "USDA’s Food and Nutrition Service published a notice renewing the information collection tied to SNAP state agency reporting for standard utility allowances (SUAs) and self-employment income calculation options. Written comments are due by July 27, 2026, and the notice references the requirement that states submit SUA methodologies to FNS for approval at least every five years.",
+      "id": "n-20260530-hcv-funding",
+      "title": "HUD issues PIH Notice implementing FY 2026 Housing Choice Voucher (Section 8) funding provisions",
+      "summary": "HUD’s PIH Notice 2026-12 outlines how public housing agencies (PHAs) will receive and apply calendar-year 2026 Housing Choice Voucher funding, including $34.557 billion for HAP renewal funding and $2.836 billion for administrative fees. The notice also lists multiple application deadlines, including June 26, 2026 (5 pm local time) for several HAP set-aside categories and July 10, 2026 (5 pm local time) for certain administrative fee requests.",
       "category": "update",
-      "date": "2026-05-29",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052726a",
+      "date": "2026-05-30",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
       "programs": [
-        "snap"
-      ],
-      "isBreaking": false
+        "section8",
+        "housing"
+      ]
     },
     {
-      "id": "n-20260529-snap-incentive-waiver-comments",
-      "title": "USDA renews SNAP waiver request process for nutrition incentive programs at authorized retailers; comments due July 27",
-      "summary": "USDA renewed the paperwork collection for SNAP-authorized retailers (and partner organizations) to request waivers to offer incentives that encourage purchase of healthier foods. USDA estimates about 15 incentive waiver requests per year covering roughly 800 retailers (out of about 267,000 authorized SNAP retailers), and waivers are generally granted for three years; written comments are due July 27, 2026.",
-      "category": "update",
-      "date": "2026-05-29",
+      "id": "n-20260530-snap-incentives-waiver-comments",
+      "title": "USDA seeks public comment on SNAP retailer waiver process for healthy-food purchase incentives",
+      "summary": "USDA’s Food and Nutrition Service (FNS) published a notice renewing an information collection for SNAP-authorized retailers that request waivers to offer incentives encouraging healthier purchases. FNS says it receives about 15 incentive waiver requests per year (covering roughly 800 retailers out of about 267,000 authorized SNAP retailers) and set a public comment deadline of July 27, 2026.",
+      "category": "deadline",
+      "date": "2026-05-30",
       "source": "USDA FNS",
       "sourceUrl": "https://www.fns.usda.gov/snap/fr-052726b",
       "programs": [
         "snap"
-      ],
-      "isBreaking": false
+      ]
     },
     {
-      "id": "n-20260529-hcv-funding-deadlines",
-      "title": "HUD outlines 2026 Housing Choice Voucher funding and sets multiple HAP set-aside deadlines (many due June 26, 2026)",
-      "summary": "HUD issued guidance implementing FFY 2026 Housing Choice Voucher funding, listing total available CY 2026 appropriations of $38,438,557,000, including $34,557,000,000 for HAP renewal funding and $2,835,935,000 for administrative fees. HUD set several Housing Assistance Payment (HAP) set-aside request deadlines for Friday, June 26, 2026 (5pm local time), including categories for unforeseen circumstances, portability, project-based vouchers, and other needs.",
+      "id": "n-20260530-ssa-payment-schedule",
+      "title": "SSA posts 2026–2027 Social Security and SSI payment schedule",
+      "summary": "SSA’s 2026–2027 payment schedule confirms retirement and SSDI benefits are generally paid on the 2nd, 3rd, or 4th Wednesday of each month based on the beneficiary’s birth date (1–10, 11–20, or 21–31). The schedule also lists SSI payments for June 1, 2026 and July 1, 2026.",
+      "category": "update",
+      "date": "2026-05-30",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260530-hcv-setaside-deadlines",
+      "title": "Key 2026 Section 8 (HCV) set-aside and special fee deadlines are now posted",
+      "summary": "HUD’s HCV funding notice lists several near-term deadlines for PHAs, including June 26, 2026 (5 pm local time) for multiple HAP set-aside categories and October 30, 2026 (5 pm local time) for certain Special Fees requests. It also states the HAP set-aside totals up to $400 million and Tenant Protection Vouchers (TPV) funding totals $600.622 million for CY 2026.",
       "category": "deadline",
-      "date": "2026-05-29",
+      "date": "2026-05-30",
       "source": "HUD",
       "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
       "programs": [
-        "section8"
-      ],
-      "isBreaking": false
+        "section8",
+        "housing"
+      ]
     },
     {
-      "id": "n-20260529-hcv-fees-reporting-deadline",
-      "title": "HUD deadline: PHAs must submit certain HCV portability special-fee data by May 29, 2026",
-      "summary": "HUD’s FFY 2026 Housing Choice Voucher funding notice includes a reporting deadline of Friday, May 29, 2026 for IMS/PIC submissions tied to Category D (Portability) special fees. The notice describes the portability special-fee formula as up to 12 months of funding equal to 15% of a PHA’s 2026 Column A administrative fee rate per eligible port-in voucher.",
+      "id": "n-20260530-irs-missed-filing-actions",
+      "title": "IRS reminds taxpayers who missed the April 15 deadline to file as soon as possible and consider payment options",
+      "summary": "In its April 2026 Tax Tip series, the IRS notes the filing and payment deadline for most 2025 federal tax returns was April 15, 2026 and urges people who missed it to submit their return as soon as possible. The IRS also highlights that taxpayers who need help paying can explore available payment options rather than delaying filing.",
       "category": "deadline",
-      "date": "2026-05-29",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
-      "programs": [
-        "section8"
-      ],
-      "isBreaking": false
-    },
-    {
-      "id": "n-20260529-pell-workforce-effective",
-      "title": "Education Department finalizes Workforce Pell Grant expansion for short-term workforce programs, effective July 20, 2026 (early option July 1)",
-      "summary": "The U.S. Department of Education published a fact sheet on its final rule establishing Pell-eligible “workforce programs,” generally 8 to under 15 weeks and 150–599 clock hours. The rule is effective July 20, 2026, with an option for institutions to implement early on July 1, 2026; programs must meet accountability metrics including 70% completion and 70% employment rates.",
-      "category": "policy-change",
-      "date": "2026-05-29",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
-      "programs": [
-        "pell"
-      ],
-      "isBreaking": false
-    },
-    {
-      "id": "n-20260529-pell-nonfederal-aid-limit",
-      "title": "Workforce Pell rule: students may be ineligible for Pell in an award year if non-federal grants and scholarships cover full cost of attendance",
-      "summary": "The Education Department’s Workforce Pell final rule materials state students will not qualify for Pell Grant funds in any award year when grant and scholarship aid from non-federal sources equals or exceeds the student’s cost of attendance. The Department notes this doesn’t change the overall Pell eligibility factors, but it does limit receiving Pell when other non-federal aid fully covers costs.",
-      "category": "policy-change",
-      "date": "2026-05-29",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "https://www.ed.gov/media/document/workforce-pell-grant-final-rule-fact-sheet-114075.pdf",
-      "programs": [
-        "pell"
-      ],
-      "isBreaking": false
-    },
-    {
-      "id": "n-20260529-irs-standard-deduction-2026",
-      "title": "IRS posts updated standard deduction amounts for tax year 2026 under the One Big Beautiful Bill provisions",
-      "summary": "An IRS summary of “One, Big, Beautiful Bill” provisions lists a 2026 standard deduction of $32,200 for married couples filing jointly, $16,100 for single filers (and married filing separately), and $24,150 for heads of household. The same page lists 2025 standard deduction amounts of $31,500 (married filing jointly), $15,750 (single/married filing separately), and $23,625 (head of household).",
-      "category": "update",
-      "date": "2026-05-29",
+      "date": "2026-05-30",
       "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
+      "sourceUrl": "https://www.irs.gov/newsroom/tax-tips-for-april-2026",
       "programs": [
-        "eitc-ctc"
-      ],
-      "isBreaking": false
+        "eitc",
+        "ctc"
+      ]
     },
     {
-      "id": "n-20260529-irs-refundable-adoption-credit-2026",
-      "title": "IRS: 2026 adoption credit limit increases to $17,670 with up to $5,120 potentially refundable",
-      "summary": "The IRS’s “One, Big, Beautiful Bill” summary lists a maximum adoption credit of $17,670 for tax year 2026 (up from $17,280 for 2025). The IRS also notes that up to $5,120 of the adoption credit may be refundable for 2026.",
+      "id": "n-20260530-medicaid-epsdt-guidance",
+      "title": "CMS releases updated EPSDT coverage guide for children in Medicaid/CHIP",
+      "summary": "A CMS update (summarized by Family Voices) says CMS released updated guidance on May 13, 2026 for Early and Periodic Screening, Diagnostic, and Treatment (EPSDT) coverage in Medicaid and CHIP. The guidance reiterates that states must cover medically necessary services to “correct or ameliorate” conditions for EPSDT-eligible children, including arranging access and informing families about available services.",
       "category": "update",
-      "date": "2026-05-29",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
+      "date": "2026-05-30",
+      "source": "Family Voices (summarizing CMS guidance)",
+      "sourceUrl": "https://familyvoices.org/the-centers-for-medicare-medicaid-services-cms-releases-updated-early-and-periodic-screening-diagnostic-and-treatment-epsdt-coverage-guide/",
       "programs": [
-        "eitc-ctc"
-      ],
-      "isBreaking": false
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260530-irs-eitc-assistant",
+      "title": "IRS highlights its online EITC Assistant for eligibility and credit estimates",
+      "summary": "The IRS directs workers and families to use its EITC Assistant tool to check whether they qualify for the Earned Income Tax Credit and to estimate their credit amount based on filing status and qualifying children. The tool is intended to help households avoid missing out on refundable credits when filing their federal return.",
+      "category": "update",
+      "date": "2026-05-30",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/use-the-eitc-assistant",
+      "programs": [
+        "eitc"
+      ]
     }
   ]
 }
