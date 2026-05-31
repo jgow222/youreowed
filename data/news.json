@@ -1,37 +1,48 @@
 {
-  "lastUpdated": "2026-05-30T11:07:08Z",
+  "lastUpdated": "2026-05-31T11:05:13Z",
   "items": [
     {
-      "id": "n-20260530-hcv-funding",
-      "title": "HUD issues PIH Notice implementing FY 2026 Housing Choice Voucher (Section 8) funding provisions",
-      "summary": "HUD’s PIH Notice 2026-12 outlines how public housing agencies (PHAs) will receive and apply calendar-year 2026 Housing Choice Voucher funding, including $34.557 billion for HAP renewal funding and $2.836 billion for administrative fees. The notice also lists multiple application deadlines, including June 26, 2026 (5 pm local time) for several HAP set-aside categories and July 10, 2026 (5 pm local time) for certain administrative fee requests.",
-      "category": "update",
-      "date": "2026-05-30",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
-      "programs": [
-        "section8",
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260530-snap-incentives-waiver-comments",
-      "title": "USDA seeks public comment on SNAP retailer waiver process for healthy-food purchase incentives",
-      "summary": "USDA’s Food and Nutrition Service (FNS) published a notice renewing an information collection for SNAP-authorized retailers that request waivers to offer incentives encouraging healthier purchases. FNS says it receives about 15 incentive waiver requests per year (covering roughly 800 retailers out of about 267,000 authorized SNAP retailers) and set a public comment deadline of July 27, 2026.",
-      "category": "deadline",
-      "date": "2026-05-30",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052726b",
+      "id": "n-20260531-snap-stocking-standards",
+      "title": "USDA finalizes stricter SNAP retailer stocking standards; enforcement begins this fall",
+      "summary": "USDA’s final rule raises the minimum staple-food varieties a SNAP-authorized retailer must stock from 3 to 7 in each of the four staple-food categories, and increases the perishable requirement from 2 to 3 categories. The rule takes effect July 7, 2026 and retailers must comply no later than Nov. 4, 2026, which could affect which small stores can stay SNAP-authorized in some areas.",
+      "category": "policy-change",
+      "date": "2026-05-31",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-050826",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260530-ssa-payment-schedule",
-      "title": "SSA posts 2026–2027 Social Security and SSI payment schedule",
-      "summary": "SSA’s 2026–2027 payment schedule confirms retirement and SSDI benefits are generally paid on the 2nd, 3rd, or 4th Wednesday of each month based on the beneficiary’s birth date (1–10, 11–20, or 21–31). The schedule also lists SSI payments for June 1, 2026 and July 1, 2026.",
+      "id": "n-20260531-child-nutrition-milk-rule",
+      "title": "USDA allows whole and 2% milk again for kids age 2+ in school meals and CACFP",
+      "summary": "A USDA final rule allows whole and reduced-fat (2%) milk to be offered to participants age 2 and up in the National School Lunch Program, School Breakfast Program, CACFP, and the Special Milk Program. The rule is effective June 8, 2026, and also clarifies that children ages 2–5 may be served unflavored whole, 2%, 1%, or fat-free milk.",
+      "category": "policy-change",
+      "date": "2026-05-31",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/cn/fr-050826",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260531-summer-ebt-120",
+      "title": "Summer EBT (SUN Bucks) delivers $120 per eligible child for groceries during summer break",
+      "summary": "USDA notes that in many states and some Tribal Nations, eligible children can receive Summer EBT grocery benefits of $120 per child for the summer. Families can also use USDA’s site finder and National Hunger Hotline (1-866-348-6479) to locate Summer meal sites and other food resources.",
       "category": "update",
-      "date": "2026-05-30",
+      "date": "2026-05-31",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/sfsp/participant",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260531-ssi-ss-payment-dates",
+      "title": "SSA posts June and July 2026 payment dates: SSI on the 1st; Social Security on Wednesdays",
+      "summary": "SSA’s 2026–2027 calendar shows SSI payments scheduled for June 1 and July 1, 2026. For Social Security beneficiaries who started benefits before May 1997 (or who receive both Social Security and SSI), Social Security is paid June 3 and July 3; other beneficiaries are paid June 10/17/24 and July 8/15/22 depending on birthdate.",
+      "category": "update",
+      "date": "2026-05-31",
       "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
@@ -40,54 +51,40 @@
       ]
     },
     {
-      "id": "n-20260530-hcv-setaside-deadlines",
-      "title": "Key 2026 Section 8 (HCV) set-aside and special fee deadlines are now posted",
-      "summary": "HUD’s HCV funding notice lists several near-term deadlines for PHAs, including June 26, 2026 (5 pm local time) for multiple HAP set-aside categories and October 30, 2026 (5 pm local time) for certain Special Fees requests. It also states the HAP set-aside totals up to $400 million and Tenant Protection Vouchers (TPV) funding totals $600.622 million for CY 2026.",
+      "id": "n-20260531-irs-kwong-deadline",
+      "title": "Taxpayer Advocate warns some taxpayers may need to file protective refund claims by July 10, 2026",
+      "summary": "The Taxpayer Advocate Service says some taxpayers who believe they missed refund opportunities for tax years 2019–2022 may need to file a refund claim or a protective claim on or before July 10, 2026, due to ongoing litigation around disaster-related filing postponements. TAS emphasizes the law is unsettled and taxpayers should not assume the IRS will automatically allow Kwong-based claims.",
       "category": "deadline",
-      "date": "2026-05-30",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
-      "programs": [
-        "section8",
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260530-irs-missed-filing-actions",
-      "title": "IRS reminds taxpayers who missed the April 15 deadline to file as soon as possible and consider payment options",
-      "summary": "In its April 2026 Tax Tip series, the IRS notes the filing and payment deadline for most 2025 federal tax returns was April 15, 2026 and urges people who missed it to submit their return as soon as possible. The IRS also highlights that taxpayers who need help paying can explore available payment options rather than delaying filing.",
-      "category": "deadline",
-      "date": "2026-05-30",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/tax-tips-for-april-2026",
+      "date": "2026-05-31",
+      "source": "IRS Taxpayer Advocate Service",
+      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/news/nta-blog/beyond-penalties-and-interest-how-kwong-may-affect-missed-tax-refunds-part-iv/2026/05/",
       "programs": [
         "eitc",
         "ctc"
       ]
     },
     {
-      "id": "n-20260530-medicaid-epsdt-guidance",
-      "title": "CMS releases updated EPSDT coverage guide for children in Medicaid/CHIP",
-      "summary": "A CMS update (summarized by Family Voices) says CMS released updated guidance on May 13, 2026 for Early and Periodic Screening, Diagnostic, and Treatment (EPSDT) coverage in Medicaid and CHIP. The guidance reiterates that states must cover medically necessary services to “correct or ameliorate” conditions for EPSDT-eligible children, including arranging access and informing families about available services.",
-      "category": "update",
-      "date": "2026-05-30",
-      "source": "Family Voices (summarizing CMS guidance)",
-      "sourceUrl": "https://familyvoices.org/the-centers-for-medicare-medicaid-services-cms-releases-updated-early-and-periodic-screening-diagnostic-and-treatment-epsdt-coverage-guide/",
+      "id": "n-20260531-irs-trump-accounts",
+      "title": "IRS: new child savings Trump Accounts can’t be funded until July 4, 2026; government adds $1,000 per eligible child",
+      "summary": "IRS guidance says Trump Accounts for eligible children cannot be funded before July 4, 2026, and the federal government will make a one-time $1,000 contribution per eligible child. Individuals and employers can contribute up to $5,000 per year, and employers may contribute up to $2,500 per year without it counting as taxable income for the employee.",
+      "category": "new-program",
+      "date": "2026-05-31",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
       "programs": [
-        "medicaid",
-        "chip"
+        "ctc"
       ]
     },
     {
-      "id": "n-20260530-irs-eitc-assistant",
-      "title": "IRS highlights its online EITC Assistant for eligibility and credit estimates",
-      "summary": "The IRS directs workers and families to use its EITC Assistant tool to check whether they qualify for the Earned Income Tax Credit and to estimate their credit amount based on filing status and qualifying children. The tool is intended to help households avoid missing out on refundable credits when filing their federal return.",
+      "id": "n-20260531-fafsa-pell-7395",
+      "title": "2026–27 Pell Grant maximum award is $7,395 as new aid year starts July 1",
+      "summary": "The 2026–2027 federal student aid award year starts July 1, 2026, and the maximum Federal Pell Grant for that year is $7,395. Students who need aid for summer 2026 (July 1, 2025–June 30, 2026) can still submit the 2025–26 FAFSA before the federal deadline.",
       "category": "update",
-      "date": "2026-05-30",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/use-the-eitc-assistant",
+      "date": "2026-05-31",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/personal-finance/student-loans/article/pell-grant-how-it-works-213800488.html",
       "programs": [
-        "eitc"
+        "pell"
       ]
     }
   ]
