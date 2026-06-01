@@ -1,90 +1,91 @@
 {
-  "lastUpdated": "2026-05-31T11:05:13Z",
+  "lastUpdated": "2026-06-01T11:11:23Z",
   "items": [
     {
-      "id": "n-20260531-snap-stocking-standards",
-      "title": "USDA finalizes stricter SNAP retailer stocking standards; enforcement begins this fall",
-      "summary": "USDA’s final rule raises the minimum staple-food varieties a SNAP-authorized retailer must stock from 3 to 7 in each of the four staple-food categories, and increases the perishable requirement from 2 to 3 categories. The rule takes effect July 7, 2026 and retailers must comply no later than Nov. 4, 2026, which could affect which small stores can stay SNAP-authorized in some areas.",
+      "id": "n-20260601-snap-stock",
+      "title": "USDA finalizes tougher SNAP retailer stocking rules; enforcement starts in November",
+      "summary": "USDA’s Food and Nutrition Service finalized a rule requiring SNAP-authorized retailers to stock at least 7 distinct staple-food varieties in each of 4 staple categories, up from 3 varieties previously. Retailers must also offer at least 1 perishable variety in 3 of the 4 staple categories (up from 2), with the rule effective July 7, 2026 and required implementation by Nov. 4, 2026.",
       "category": "policy-change",
-      "date": "2026-05-31",
+      "date": "2026-06-01",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/snap/fr-050826",
       "programs": [
         "snap"
-      ]
+      ],
+      "isBreaking": true
     },
     {
-      "id": "n-20260531-child-nutrition-milk-rule",
-      "title": "USDA allows whole and 2% milk again for kids age 2+ in school meals and CACFP",
-      "summary": "A USDA final rule allows whole and reduced-fat (2%) milk to be offered to participants age 2 and up in the National School Lunch Program, School Breakfast Program, CACFP, and the Special Milk Program. The rule is effective June 8, 2026, and also clarifies that children ages 2–5 may be served unflavored whole, 2%, 1%, or fat-free milk.",
-      "category": "policy-change",
-      "date": "2026-05-31",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/cn/fr-050826",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20260531-summer-ebt-120",
-      "title": "Summer EBT (SUN Bucks) delivers $120 per eligible child for groceries during summer break",
-      "summary": "USDA notes that in many states and some Tribal Nations, eligible children can receive Summer EBT grocery benefits of $120 per child for the summer. Families can also use USDA’s site finder and National Hunger Hotline (1-866-348-6479) to locate Summer meal sites and other food resources.",
+      "id": "n-20260601-snap-realfood",
+      "title": "USDA says SNAP retailers must carry more ‘real food’ starting fall 2026",
+      "summary": "USDA announced updated SNAP retailer stocking standards requiring 7 varieties across the 4 staple food categories (protein, grains, dairy, fruits/vegetables), aiming to increase whole and perishable foods and close loopholes that counted some snack foods. USDA noted SNAP retailer payments exceed $90 billion per year (about $236 million per day) and said it has taken action against nearly 3,200 retailers for stocking-standard issues.",
       "category": "update",
-      "date": "2026-05-31",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/sfsp/participant",
+      "date": "2026-06-01",
+      "source": "USDA",
+      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/05/07/usda-requires-snap-authorized-retailers-carry-more-real-food",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260531-ssi-ss-payment-dates",
-      "title": "SSA posts June and July 2026 payment dates: SSI on the 1st; Social Security on Wednesdays",
-      "summary": "SSA’s 2026–2027 calendar shows SSI payments scheduled for June 1 and July 1, 2026. For Social Security beneficiaries who started benefits before May 1997 (or who receive both Social Security and SSI), Social Security is paid June 3 and July 3; other beneficiaries are paid June 10/17/24 and July 8/15/22 depending on birthdate.",
+      "id": "n-20260601-hcv-funding",
+      "title": "HUD outlines FY 2026 Housing Choice Voucher funding and key set-aside deadlines",
+      "summary": "HUD’s FY 2026 Housing Choice Voucher funding notice includes $34.557 billion for HAP renewals, $2.836 billion for administrative fees, and a $400 million HAP set-aside (among other line items). Housing agencies seeking several set-aside categories (including Unforeseen Circumstances, Portability, and Project-Based Vouchers) have a deadline of June 26, 2026; blended administrative fee rate requests are due July 10, 2026.",
       "category": "update",
-      "date": "2026-05-31",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
+      "date": "2026-06-01",
+      "source": "NAHRO (summarizing HUD PIH Notice 2026-12)",
+      "sourceUrl": "https://www.nahro.org/news/hud-publishes-fy-2026-hcv-funding-notice/",
+      "programs": [
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260601-medicaid-hcbs-comments",
+      "title": "CMS seeks public comments on Medicaid HCBS quality measures (due June 8)",
+      "summary": "CMS opened a public comment period on Home and Community-Based Services (HCBS) measures maintenance and development that runs from May 8, 2026 through June 8, 2026. Stakeholders can submit feedback during this window, which CMS posts as a current Medicaid-related public comment opportunity.",
+      "category": "deadline",
+      "date": "2026-06-01",
+      "source": "CMS (Medicaid and CHIP Program portal)",
+      "sourceUrl": "https://mmshub.cms.gov/get-involved/public-comments/current",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260601-edu-basicneeds-grants",
+      "title": "Education Department posts FY 2026 ‘Basic Needs for Postsecondary Students’ grant details ($10M)",
+      "summary": "The U.S. Department of Education posted FY 2026 funding details for the Basic Needs for Postsecondary Students Program, with $10,000,000 in appropriations and $10,000,000 estimated available funds. ED lists an estimated award range of $1 million to $5 million over a 48-month project period and expects 2 to 10 awards.",
+      "category": "new-program",
+      "date": "2026-06-01",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://www.ed.gov/grants-and-programs/grants-higher-education/improvement-of-postsecondary-education/basic-needs-postsecondary-students-program-84116n",
+      "programs": [
+        "pell"
+      ]
+    },
+    {
+      "id": "n-20260601-ssi-payments",
+      "title": "SSI June payments go out June 1; SSA Social Security schedule continues June 3/10/17/24",
+      "summary": "The Social Security Administration’s payment schedule means SSI recipients are paid on June 1, 2026 (the first of the month, since it’s a weekday). Social Security retirement and SSDI payments for most beneficiaries follow the Wednesday schedule in June—June 10, June 17, and June 24—while people who started benefits before May 1997 (and some dual SSI/Social Security recipients) are paid June 3.",
+      "category": "update",
+      "date": "2026-06-01",
+      "source": "LiveNOW from FOX (citing SSA schedule)",
+      "sourceUrl": "https://www.livenowfox.com/news/social-security-june-payment-schedule-heres-when-recipients-get-checks",
       "programs": [
         "ssi",
         "ssdi"
       ]
     },
     {
-      "id": "n-20260531-irs-kwong-deadline",
-      "title": "Taxpayer Advocate warns some taxpayers may need to file protective refund claims by July 10, 2026",
-      "summary": "The Taxpayer Advocate Service says some taxpayers who believe they missed refund opportunities for tax years 2019–2022 may need to file a refund claim or a protective claim on or before July 10, 2026, due to ongoing litigation around disaster-related filing postponements. TAS emphasizes the law is unsettled and taxpayers should not assume the IRS will automatically allow Kwong-based claims.",
-      "category": "deadline",
-      "date": "2026-05-31",
-      "source": "IRS Taxpayer Advocate Service",
-      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/news/nta-blog/beyond-penalties-and-interest-how-kwong-may-affect-missed-tax-refunds-part-iv/2026/05/",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260531-irs-trump-accounts",
-      "title": "IRS: new child savings Trump Accounts can’t be funded until July 4, 2026; government adds $1,000 per eligible child",
-      "summary": "IRS guidance says Trump Accounts for eligible children cannot be funded before July 4, 2026, and the federal government will make a one-time $1,000 contribution per eligible child. Individuals and employers can contribute up to $5,000 per year, and employers may contribute up to $2,500 per year without it counting as taxable income for the employee.",
-      "category": "new-program",
-      "date": "2026-05-31",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
-      "programs": [
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260531-fafsa-pell-7395",
-      "title": "2026–27 Pell Grant maximum award is $7,395 as new aid year starts July 1",
-      "summary": "The 2026–2027 federal student aid award year starts July 1, 2026, and the maximum Federal Pell Grant for that year is $7,395. Students who need aid for summer 2026 (July 1, 2025–June 30, 2026) can still submit the 2025–26 FAFSA before the federal deadline.",
+      "id": "n-20260601-snap-access-cuts",
+      "title": "CBPP analysis: SNAP enrollment down by more than 3.5 million since July 2025 as new rules take effect",
+      "summary": "A Center on Budget and Policy Priorities analysis cited in reporting found SNAP participation fell by more than 3.5 million people between July 2025 and February 2026 after eligibility changes in the One Big Beautiful Bill Act. The report also notes the law includes $187 billion in SNAP cuts and expands work requirements to more groups (including some adults ages 55–64).",
       "category": "update",
-      "date": "2026-05-31",
-      "source": "Yahoo Finance",
-      "sourceUrl": "https://finance.yahoo.com/personal-finance/student-loans/article/pell-grant-how-it-works-213800488.html",
+      "date": "2026-06-01",
+      "source": "CNBC (citing Center on Budget and Policy Priorities analysis)",
+      "sourceUrl": "https://www.cnbc.com/2026/05/30/snap-food-stamps-big-beautiful-bill.html",
       "programs": [
-        "pell"
+        "snap"
       ]
     }
   ]
