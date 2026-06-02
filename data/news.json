@@ -1,62 +1,49 @@
 {
-  "lastUpdated": "2026-06-01T11:11:23Z",
+  "lastUpdated": "2026-06-02T11:35:38Z",
   "items": [
     {
-      "id": "n-20260601-snap-stock",
-      "title": "USDA finalizes tougher SNAP retailer stocking rules; enforcement starts in November",
-      "summary": "USDA’s Food and Nutrition Service finalized a rule requiring SNAP-authorized retailers to stock at least 7 distinct staple-food varieties in each of 4 staple categories, up from 3 varieties previously. Retailers must also offer at least 1 perishable variety in 3 of the 4 staple categories (up from 2), with the rule effective July 7, 2026 and required implementation by Nov. 4, 2026.",
+      "id": "n-20260602-snap-stock",
+      "title": "USDA finalizes tougher SNAP retailer stocking standards; compliance required starting Nov. 4, 2026",
+      "summary": "USDA’s SNAP Stocking Standards Final Rule requires most SNAP-authorized retailers (excluding specialty stores) to offer at least seven varieties in each of four staple food categories (dairy, fruits/vegetables, grains, protein), including perishable varieties in at least three categories. USDA says all SNAP-authorized retailers must comply with the updated standards starting Nov. 4, 2026; stores that fail to meet requirements can be withdrawn from SNAP and may reapply six months later.",
       "category": "policy-change",
-      "date": "2026-06-01",
+      "date": "2026-06-02",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-050826",
-      "programs": [
-        "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260601-snap-realfood",
-      "title": "USDA says SNAP retailers must carry more ‘real food’ starting fall 2026",
-      "summary": "USDA announced updated SNAP retailer stocking standards requiring 7 varieties across the 4 staple food categories (protein, grains, dairy, fruits/vegetables), aiming to increase whole and perishable foods and close loopholes that counted some snack foods. USDA noted SNAP retailer payments exceed $90 billion per year (about $236 million per day) and said it has taken action against nearly 3,200 retailers for stocking-standard issues.",
-      "category": "update",
-      "date": "2026-06-01",
-      "source": "USDA",
-      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/05/07/usda-requires-snap-authorized-retailers-carry-more-real-food",
+      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/stocking-standards-rule",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260601-hcv-funding",
-      "title": "HUD outlines FY 2026 Housing Choice Voucher funding and key set-aside deadlines",
-      "summary": "HUD’s FY 2026 Housing Choice Voucher funding notice includes $34.557 billion for HAP renewals, $2.836 billion for administrative fees, and a $400 million HAP set-aside (among other line items). Housing agencies seeking several set-aside categories (including Unforeseen Circumstances, Portability, and Project-Based Vouchers) have a deadline of June 26, 2026; blended administrative fee rate requests are due July 10, 2026.",
-      "category": "update",
-      "date": "2026-06-01",
-      "source": "NAHRO (summarizing HUD PIH Notice 2026-12)",
-      "sourceUrl": "https://www.nahro.org/news/hud-publishes-fy-2026-hcv-funding-notice/",
+      "id": "n-20260602-housing-hcv-pih-2026-12",
+      "title": "HUD issues FY 2026 Housing Choice Voucher funding notice with HAP set-aside application deadlines",
+      "summary": "HUD’s PIH Notice 2026-12 details CY 2026 appropriations including $34.557B for HCV renewal funding and a HAP set-aside of up to $400M. HUD lists HAP set-aside deadlines including June 26, 2026 (Categories 2/3/4/5/9/10, by 5 p.m. local time) and Sept. 25, 2026 (Category 6 HUD-VASH, by 5 p.m. local time), and notes TPV adjustment requests must be submitted no later than Dec. 31, 2026.",
+      "category": "deadline",
+      "date": "2026-06-02",
+      "source": "U.S. Department of Housing and Urban Development (PIH Notice 2026-12)",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
       "programs": [
         "housing"
       ]
     },
     {
-      "id": "n-20260601-medicaid-hcbs-comments",
-      "title": "CMS seeks public comments on Medicaid HCBS quality measures (due June 8)",
-      "summary": "CMS opened a public comment period on Home and Community-Based Services (HCBS) measures maintenance and development that runs from May 8, 2026 through June 8, 2026. Stakeholders can submit feedback during this window, which CMS posts as a current Medicaid-related public comment opportunity.",
+      "id": "n-20260602-medicaid-hcbs-comments",
+      "title": "CMS seeks public comments on new Medicaid HCBS quality measures for children and young adults (due June 8, 2026)",
+      "summary": "CMS and its contractor Mathematica are requesting public feedback on new measures being developed to assess the quality of Medicaid home and community-based services (HCBS) for children, youth, and young adults. CMS says the public comment period opened May 8, 2026 and closes June 8, 2026, and the feedback will inform measure specifications, further testing, and potential implementation.",
       "category": "deadline",
-      "date": "2026-06-01",
-      "source": "CMS (Medicaid and CHIP Program portal)",
-      "sourceUrl": "https://mmshub.cms.gov/get-involved/public-comments/current",
+      "date": "2026-06-02",
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://mmshub.cms.gov/news/2026/2026-05/submit-public-comments-children-youth-and-young-adults-hcbs-measures",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260601-edu-basicneeds-grants",
-      "title": "Education Department posts FY 2026 ‘Basic Needs for Postsecondary Students’ grant details ($10M)",
-      "summary": "The U.S. Department of Education posted FY 2026 funding details for the Basic Needs for Postsecondary Students Program, with $10,000,000 in appropriations and $10,000,000 estimated available funds. ED lists an estimated award range of $1 million to $5 million over a 48-month project period and expects 2 to 10 awards.",
-      "category": "new-program",
-      "date": "2026-06-01",
+      "id": "n-20260602-education-basicneeds",
+      "title": "Education Department posts FY 2026 Basic Needs for Postsecondary Students grant details (up to $10 million total)",
+      "summary": "The U.S. Department of Education posted FY 2026 program details for the Basic Needs for Postsecondary Students Program, describing $10,000,000 in appropriations and an estimated 2–10 awards. ED lists an estimated award range of $1,000,000 to $5,000,000 over a 48-month project period, and says the official funding opportunity announcement will be published in the Federal Register.",
+      "category": "update",
+      "date": "2026-06-02",
       "source": "U.S. Department of Education",
       "sourceUrl": "https://www.ed.gov/grants-and-programs/grants-higher-education/improvement-of-postsecondary-education/basic-needs-postsecondary-students-program-84116n",
       "programs": [
@@ -64,28 +51,16 @@
       ]
     },
     {
-      "id": "n-20260601-ssi-payments",
-      "title": "SSI June payments go out June 1; SSA Social Security schedule continues June 3/10/17/24",
-      "summary": "The Social Security Administration’s payment schedule means SSI recipients are paid on June 1, 2026 (the first of the month, since it’s a weekday). Social Security retirement and SSDI payments for most beneficiaries follow the Wednesday schedule in June—June 10, June 17, and June 24—while people who started benefits before May 1997 (and some dual SSI/Social Security recipients) are paid June 3.",
+      "id": "n-20260602-ssa-payment-schedule",
+      "title": "SSA posts June 2026 payment dates for SSI and Social Security/SSDI",
+      "summary": "SSA’s official 2026–2027 payment schedule shows SSI payments dated June 1, 2026. The same schedule lists Social Security payments on June 3, June 10, June 17, and June 24 (based on birth date), and notes that people who received Social Security before May 1997 or who receive both SSI and Social Security are paid Social Security on the 3rd and SSI on the 1st.",
       "category": "update",
-      "date": "2026-06-01",
-      "source": "LiveNOW from FOX (citing SSA schedule)",
-      "sourceUrl": "https://www.livenowfox.com/news/social-security-june-payment-schedule-heres-when-recipients-get-checks",
+      "date": "2026-06-02",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
         "ssi",
         "ssdi"
-      ]
-    },
-    {
-      "id": "n-20260601-snap-access-cuts",
-      "title": "CBPP analysis: SNAP enrollment down by more than 3.5 million since July 2025 as new rules take effect",
-      "summary": "A Center on Budget and Policy Priorities analysis cited in reporting found SNAP participation fell by more than 3.5 million people between July 2025 and February 2026 after eligibility changes in the One Big Beautiful Bill Act. The report also notes the law includes $187 billion in SNAP cuts and expands work requirements to more groups (including some adults ages 55–64).",
-      "category": "update",
-      "date": "2026-06-01",
-      "source": "CNBC (citing Center on Budget and Policy Priorities analysis)",
-      "sourceUrl": "https://www.cnbc.com/2026/05/30/snap-food-stamps-big-beautiful-bill.html",
-      "programs": [
-        "snap"
       ]
     }
   ]
