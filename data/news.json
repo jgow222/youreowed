@@ -1,66 +1,94 @@
 {
-  "lastUpdated": "2026-06-02T11:35:38Z",
+  "lastUpdated": "2026-06-03T11:12:23Z",
   "items": [
     {
-      "id": "n-20260602-snap-stock",
-      "title": "USDA finalizes tougher SNAP retailer stocking standards; compliance required starting Nov. 4, 2026",
-      "summary": "USDA’s SNAP Stocking Standards Final Rule requires most SNAP-authorized retailers (excluding specialty stores) to offer at least seven varieties in each of four staple food categories (dairy, fruits/vegetables, grains, protein), including perishable varieties in at least three categories. USDA says all SNAP-authorized retailers must comply with the updated standards starting Nov. 4, 2026; stores that fail to meet requirements can be withdrawn from SNAP and may reapply six months later.",
+      "id": "n-20260603-medicaid-work-requirements",
+      "title": "CMS issues interim final rule: Medicaid work requirement set at 80 hours/month, states must implement by Jan. 1, 2027",
+      "summary": "CMS issued an interim final rule on June 1, 2026 implementing an 80 hours-per-month work requirement (\"community engagement\") for certain Medicaid adults. The rule says states must generally implement by Jan. 1, 2027 and requires a 30-calendar-day cure period if the state cannot verify compliance or an exemption; it applies to non-pregnant adults ages 19–64 not entitled to or enrolled in Medicare, with exemptions including pregnancy/postpartum and medical frailty.",
       "category": "policy-change",
-      "date": "2026-06-02",
-      "source": "USDA Food and Nutrition Service",
+      "date": "2026-06-03",
+      "source": "Centers for Medicare & Medicaid Services (CMS)",
+      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "programs": [
+        "medicaid",
+        "chip"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260603-snap-retailer-stocking-standards",
+      "title": "USDA finalizes SNAP retailer stocking standards: 7 varieties per staple category; compliance required by Nov. 4, 2026",
+      "summary": "USDA published a final rule updating SNAP retailer stocking standards, requiring most SNAP-authorized retailers to carry at least 7 varieties in each of 4 staple food categories (dairy, fruits/vegetables, grains, and protein). The rule also requires at least 1 perishable variety in at least 3 of the 4 categories and sets Nov. 4, 2026 as the compliance date for SNAP-authorized retailers.",
+      "category": "policy-change",
+      "date": "2026-06-03",
+      "source": "USDA Food and Nutrition Service (FNS)",
       "sourceUrl": "https://www.fns.usda.gov/snap/retailer/stocking-standards-rule",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260602-housing-hcv-pih-2026-12",
-      "title": "HUD issues FY 2026 Housing Choice Voucher funding notice with HAP set-aside application deadlines",
-      "summary": "HUD’s PIH Notice 2026-12 details CY 2026 appropriations including $34.557B for HCV renewal funding and a HAP set-aside of up to $400M. HUD lists HAP set-aside deadlines including June 26, 2026 (Categories 2/3/4/5/9/10, by 5 p.m. local time) and Sept. 25, 2026 (Category 6 HUD-VASH, by 5 p.m. local time), and notes TPV adjustment requests must be submitted no later than Dec. 31, 2026.",
+      "id": "n-20260603-snap-fns-245-comment-deadline",
+      "title": "USDA seeks comments on SNAP quality-control form revisions (FNS-245); comments due July 31, 2026",
+      "summary": "USDA published a notice requesting public comment on a proposed information collection for the SNAP FNS-245 Negative Case Action Review Schedule, with comments due July 31, 2026. The notice says the estimated reporting and recordkeeping burden would increase from about 112,491.43 hours to 121,597 hours.",
       "category": "deadline",
-      "date": "2026-06-02",
-      "source": "U.S. Department of Housing and Urban Development (PIH Notice 2026-12)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
+      "date": "2026-06-03",
+      "source": "USDA Food and Nutrition Service (FNS)",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-060126",
       "programs": [
-        "housing"
+        "snap"
       ]
     },
     {
-      "id": "n-20260602-medicaid-hcbs-comments",
-      "title": "CMS seeks public comments on new Medicaid HCBS quality measures for children and young adults (due June 8, 2026)",
-      "summary": "CMS and its contractor Mathematica are requesting public feedback on new measures being developed to assess the quality of Medicaid home and community-based services (HCBS) for children, youth, and young adults. CMS says the public comment period opened May 8, 2026 and closes June 8, 2026, and the feedback will inform measure specifications, further testing, and potential implementation.",
+      "id": "n-20260603-section-811-pra-nofo",
+      "title": "HUD announces $158 million Section 811 Project Rental Assistance NOFO; applications due July 13, 2026",
+      "summary": "HUD announced a Notice of Funding Opportunity for the Section 811 Project Rental Assistance (PRA) program totaling $158 million. The NOFO aims to expand project-based rental assistance and voluntary supportive services for extremely low-income adults with disabilities, with applications due July 13, 2026.",
       "category": "deadline",
-      "date": "2026-06-02",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://mmshub.cms.gov/news/2026/2026-05/submit-public-comments-children-youth-and-young-adults-hcbs-measures",
+      "date": "2026-06-03",
+      "source": "U.S. Department of Housing and Urban Development (HUD)",
+      "sourceUrl": "https://content.govdelivery.com/accounts/USHUDFHA/bulletins/41445dc",
       "programs": [
-        "medicaid",
-        "chip"
+        "housing",
+        "section8"
       ]
     },
     {
-      "id": "n-20260602-education-basicneeds",
-      "title": "Education Department posts FY 2026 Basic Needs for Postsecondary Students grant details (up to $10 million total)",
-      "summary": "The U.S. Department of Education posted FY 2026 program details for the Basic Needs for Postsecondary Students Program, describing $10,000,000 in appropriations and an estimated 2–10 awards. ED lists an estimated award range of $1,000,000 to $5,000,000 over a 48-month project period, and says the official funding opportunity announcement will be published in the Federal Register.",
+      "id": "n-20260603-ssa-payment-schedule-2026",
+      "title": "SSA posts 2026–2027 payment schedule: SSI on the 1st; Social Security paid on the 2nd/3rd/4th Wednesday by birthday",
+      "summary": "SSA published its 2026–2027 benefit payment calendar: SSI is generally paid on the 1st of the month, while Social Security retirement/disability benefits are typically paid on the second, third, or fourth Wednesday depending on the beneficiary’s birthday (1st–10th, 11th–20th, 21st–31st). The publication also notes that people who started receiving Social Security before May 1997 generally receive payments on the 3rd.",
       "category": "update",
-      "date": "2026-06-02",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "https://www.ed.gov/grants-and-programs/grants-higher-education/improvement-of-postsecondary-education/basic-needs-postsecondary-students-program-84116n",
-      "programs": [
-        "pell"
-      ]
-    },
-    {
-      "id": "n-20260602-ssa-payment-schedule",
-      "title": "SSA posts June 2026 payment dates for SSI and Social Security/SSDI",
-      "summary": "SSA’s official 2026–2027 payment schedule shows SSI payments dated June 1, 2026. The same schedule lists Social Security payments on June 3, June 10, June 17, and June 24 (based on birth date), and notes that people who received Social Security before May 1997 or who receive both SSI and Social Security are paid Social Security on the 3rd and SSI on the 1st.",
-      "category": "update",
-      "date": "2026-06-02",
-      "source": "Social Security Administration",
+      "date": "2026-06-03",
+      "source": "Social Security Administration (SSA)",
       "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
         "ssi",
         "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260603-pell-workforce-programs",
+      "title": "Education Department guidance highlights Workforce Pell eligibility starting July 1, 2026 (short-term programs 150–599 clock hours)",
+      "summary": "A Federal Student Aid Partner Connect briefing on Pell updates says Workforce Pell eligibility begins July 1, 2026 for eligible workforce programs that are between 150 and 599 clock hours and at least 8 weeks but less than 15 weeks. The document also gives an example maximum Pell amount of $7,395 and notes a new rule making students ineligible if their Student Aid Index (SAI) equals or exceeds twice the maximum (example threshold 14,790).",
+      "category": "policy-change",
+      "date": "2026-06-03",
+      "source": "Federal Student Aid (FSA Partner Connect)",
+      "sourceUrl": "https://fsapartners.ed.gov/sites/default/files/attachments/2026-03/Pell%20Eligibility%20for%20Workforce%20Programs.pdf",
+      "programs": [
+        "pell",
+        "student_aid"
+      ]
+    },
+    {
+      "id": "n-20260603-fafsa-2026-27-available",
+      "title": "Federal Student Aid: 2026–27 FAFSA is available for students attending school July 1, 2026–June 30, 2027",
+      "summary": "Federal Student Aid announced that the 2026–27 FAFSA form is available for students seeking aid for attendance dates from July 1, 2026 through June 30, 2027. Applicants should file as early as possible because states and schools often use priority deadlines even though the form applies to the full aid year.",
+      "category": "update",
+      "date": "2026-06-03",
+      "source": "Federal Student Aid (Financial Aid Toolkit)",
+      "sourceUrl": "https://financialaidtoolkit.ed.gov/tk/announcement-detail.jsp?id=fafsa-updates",
+      "programs": [
+        "student_aid",
+        "pell"
       ]
     }
   ]
