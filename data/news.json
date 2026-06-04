@@ -1,95 +1,100 @@
 {
-  "lastUpdated": "2026-06-03T11:12:23Z",
+  "lastUpdated": "2026-06-04T11:03:45Z",
   "items": [
     {
-      "id": "n-20260603-medicaid-work-requirements",
-      "title": "CMS issues interim final rule: Medicaid work requirement set at 80 hours/month, states must implement by Jan. 1, 2027",
-      "summary": "CMS issued an interim final rule on June 1, 2026 implementing an 80 hours-per-month work requirement (\"community engagement\") for certain Medicaid adults. The rule says states must generally implement by Jan. 1, 2027 and requires a 30-calendar-day cure period if the state cannot verify compliance or an exemption; it applies to non-pregnant adults ages 19–64 not entitled to or enrolled in Medicare, with exemptions including pregnancy/postpartum and medical frailty.",
-      "category": "policy-change",
-      "date": "2026-06-03",
-      "source": "Centers for Medicare & Medicaid Services (CMS)",
-      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
-      "programs": [
-        "medicaid",
-        "chip"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260603-snap-retailer-stocking-standards",
-      "title": "USDA finalizes SNAP retailer stocking standards: 7 varieties per staple category; compliance required by Nov. 4, 2026",
-      "summary": "USDA published a final rule updating SNAP retailer stocking standards, requiring most SNAP-authorized retailers to carry at least 7 varieties in each of 4 staple food categories (dairy, fruits/vegetables, grains, and protein). The rule also requires at least 1 perishable variety in at least 3 of the 4 categories and sets Nov. 4, 2026 as the compliance date for SNAP-authorized retailers.",
-      "category": "policy-change",
-      "date": "2026-06-03",
-      "source": "USDA Food and Nutrition Service (FNS)",
-      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/stocking-standards-rule",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260603-snap-fns-245-comment-deadline",
-      "title": "USDA seeks comments on SNAP quality-control form revisions (FNS-245); comments due July 31, 2026",
-      "summary": "USDA published a notice requesting public comment on a proposed information collection for the SNAP FNS-245 Negative Case Action Review Schedule, with comments due July 31, 2026. The notice says the estimated reporting and recordkeeping burden would increase from about 112,491.43 hours to 121,597 hours.",
+      "id": "n-20260604-snap-fns245-comments",
+      "title": "USDA seeks public comments on SNAP quality-control form; deadline July 31, 2026",
+      "summary": "USDA’s Food and Nutrition Service published a Paperwork Reduction Act notice to reinstate and revise Form FNS-245 (Negative Case Action Review Schedule) used for SNAP quality control reviews. Comments are due by July 31, 2026, and FNS estimates total reporting/recordkeeping burden of about 121,597 hours, up from about 112,491.43 hours (an increase of about 9,105 hours).",
       "category": "deadline",
-      "date": "2026-06-03",
-      "source": "USDA Food and Nutrition Service (FNS)",
+      "date": "2026-06-04",
+      "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/snap/fr-060126",
       "programs": [
         "snap"
-      ]
+      ],
+      "isBreaking": false
     },
     {
-      "id": "n-20260603-section-811-pra-nofo",
-      "title": "HUD announces $158 million Section 811 Project Rental Assistance NOFO; applications due July 13, 2026",
-      "summary": "HUD announced a Notice of Funding Opportunity for the Section 811 Project Rental Assistance (PRA) program totaling $158 million. The NOFO aims to expand project-based rental assistance and voluntary supportive services for extremely low-income adults with disabilities, with applications due July 13, 2026.",
-      "category": "deadline",
-      "date": "2026-06-03",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://content.govdelivery.com/accounts/USHUDFHA/bulletins/41445dc",
-      "programs": [
-        "housing",
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260603-ssa-payment-schedule-2026",
-      "title": "SSA posts 2026–2027 payment schedule: SSI on the 1st; Social Security paid on the 2nd/3rd/4th Wednesday by birthday",
-      "summary": "SSA published its 2026–2027 benefit payment calendar: SSI is generally paid on the 1st of the month, while Social Security retirement/disability benefits are typically paid on the second, third, or fourth Wednesday depending on the beneficiary’s birthday (1st–10th, 11th–20th, 21st–31st). The publication also notes that people who started receiving Social Security before May 1997 generally receive payments on the 3rd.",
+      "id": "n-20260604-ssi-ssdi-june-payments",
+      "title": "June 2026 Social Security and SSI payment dates: June 1, 10, 17, and 24",
+      "summary": "SSA’s 2026–2027 payment calendar lists SSI payments for June 2026 on June 1, 2026. For Social Security (RSDI), payments are scheduled for June 10 (birthdays 1–10), June 17 (11–20), and June 24 (21–31), with a separate note that people who got Social Security before May 1997 (or get both SSI and Social Security) are generally paid on the 3rd.",
       "category": "update",
-      "date": "2026-06-03",
-      "source": "Social Security Administration (SSA)",
+      "date": "2026-06-04",
+      "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
         "ssi",
         "ssdi"
-      ]
+      ],
+      "isBreaking": false
     },
     {
-      "id": "n-20260603-pell-workforce-programs",
-      "title": "Education Department guidance highlights Workforce Pell eligibility starting July 1, 2026 (short-term programs 150–599 clock hours)",
-      "summary": "A Federal Student Aid Partner Connect briefing on Pell updates says Workforce Pell eligibility begins July 1, 2026 for eligible workforce programs that are between 150 and 599 clock hours and at least 8 weeks but less than 15 weeks. The document also gives an example maximum Pell amount of $7,395 and notes a new rule making students ineligible if their Student Aid Index (SAI) equals or exceeds twice the maximum (example threshold 14,790).",
-      "category": "policy-change",
-      "date": "2026-06-03",
-      "source": "Federal Student Aid (FSA Partner Connect)",
-      "sourceUrl": "https://fsapartners.ed.gov/sites/default/files/attachments/2026-03/Pell%20Eligibility%20for%20Workforce%20Programs.pdf",
-      "programs": [
-        "pell",
-        "student_aid"
-      ]
-    },
-    {
-      "id": "n-20260603-fafsa-2026-27-available",
-      "title": "Federal Student Aid: 2026–27 FAFSA is available for students attending school July 1, 2026–June 30, 2027",
-      "summary": "Federal Student Aid announced that the 2026–27 FAFSA form is available for students seeking aid for attendance dates from July 1, 2026 through June 30, 2027. Applicants should file as early as possible because states and schools often use priority deadlines even though the form applies to the full aid year.",
+      "id": "n-20260604-medicaid-chip-enrollment-feb2026",
+      "title": "KFF tracker: Medicaid/CHIP enrollment about 74.9 million as of Feb. 2026",
+      "summary": "KFF reports nationwide Medicaid/CHIP enrollment at about 74.9 million people as of February 2026, including 67.7 million enrolled in Medicaid and 7.2 million in CHIP. KFF notes this is a 21% decline from March 2023 enrollment, but still 5% higher than February 2020.",
       "category": "update",
-      "date": "2026-06-03",
-      "source": "Federal Student Aid (Financial Aid Toolkit)",
-      "sourceUrl": "https://financialaidtoolkit.ed.gov/tk/announcement-detail.jsp?id=fafsa-updates",
+      "date": "2026-06-04",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/",
       "programs": [
-        "student_aid",
-        "pell"
-      ]
+        "medicaid",
+        "chip"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20260604-tax-standard-deduction-2026",
+      "title": "IRS: 2026 standard deduction amounts listed at $32,200 (joint) and $16,100 (single)",
+      "summary": "In its overview of provisions for individuals and workers, the IRS lists 2026 standard deduction amounts of $32,200 for married couples filing jointly, $16,100 for single filers (and married filing separately), and $24,150 for heads of household. The same IRS page also lists 2026 AMT exemption amounts of $90,100 (single) and $140,200 (joint), and an estate tax basic exclusion amount of $15,000,000 for 2026 decedents.",
+      "category": "update",
+      "date": "2026-06-04",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
+      "programs": [
+        "eitc",
+        "ctc"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20260604-tax-free-file-window",
+      "title": "IRS Free File is generally available Jan. 15 through Oct. 15; income cap cited at $89,000",
+      "summary": "The IRS Taxpayer Advocate Service says IRS Free File is generally available each year from January 15 through October 15. For 2025 tax returns, TAS cites an income threshold of below $89,000 to use Free File guided software.",
+      "category": "deadline",
+      "date": "2026-06-04",
+      "source": "IRS Taxpayer Advocate Service",
+      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/get-help/filing-returns/free-file-options/",
+      "programs": [
+        "eitc",
+        "ctc"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20260604-wic-program-overview",
+      "title": "WIC program reminder: WIC serves pregnant/postpartum people and young children (up to age 5)",
+      "summary": "USDA’s WIC program page describes WIC as providing supplemental foods, health care referrals, and nutrition education for low-income pregnant, breastfeeding, and postpartum people, plus infants and children up to age 5. Households can use the WIC state agency directory to find eligibility and application details.",
+      "category": "update",
+      "date": "2026-06-04",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/wic",
+      "programs": [
+        "wic"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20260604-snap-apply-state-offices",
+      "title": "SNAP reminder: applications are handled by states; check your local office for benefit dates",
+      "summary": "USDA reminds applicants that SNAP applications are handled by state and local offices rather than USDA, and current participants should use their state’s SNAP information page for benefit availability dates and EBT customer service numbers. This is a good time to confirm your contact information with your SNAP office so you don’t miss renewal notices.",
+      "category": "update",
+      "date": "2026-06-04",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/applicant-participant",
+      "programs": [
+        "snap"
+      ],
+      "isBreaking": false
     }
   ]
 }
