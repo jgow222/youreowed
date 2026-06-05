@@ -1,100 +1,103 @@
 {
-  "lastUpdated": "2026-06-04T11:03:45Z",
+  "lastUpdated": "2026-06-05T11:06:55Z",
   "items": [
     {
-      "id": "n-20260604-snap-fns245-comments",
-      "title": "USDA seeks public comments on SNAP quality-control form; deadline July 31, 2026",
-      "summary": "USDA’s Food and Nutrition Service published a Paperwork Reduction Act notice to reinstate and revise Form FNS-245 (Negative Case Action Review Schedule) used for SNAP quality control reviews. Comments are due by July 31, 2026, and FNS estimates total reporting/recordkeeping burden of about 121,597 hours, up from about 112,491.43 hours (an increase of about 9,105 hours).",
-      "category": "deadline",
-      "date": "2026-06-04",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-060126",
+      "id": "n-20260605-hcv-funding",
+      "title": "HUD sets FY 2026 Housing Choice Voucher funding levels and key application deadlines",
+      "summary": "HUD’s PIH Notice 2026-12 allocates about $34.557 billion for Housing Assistance Payment (HAP) renewals, $600.622 million for Tenant Protection Vouchers, and $2.835935 billion for administrative fees. The notice also sets multiple HAP set-aside application deadlines, including June 26, 2026 (by 5pm local time) for several categories such as unforeseen circumstances and project-based vouchers.",
+      "category": "policy-change",
+      "date": "2026-06-05",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
       "programs": [
-        "snap"
-      ],
-      "isBreaking": false
+        "section8"
+      ]
     },
     {
-      "id": "n-20260604-ssi-ssdi-june-payments",
-      "title": "June 2026 Social Security and SSI payment dates: June 1, 10, 17, and 24",
-      "summary": "SSA’s 2026–2027 payment calendar lists SSI payments for June 2026 on June 1, 2026. For Social Security (RSDI), payments are scheduled for June 10 (birthdays 1–10), June 17 (11–20), and June 24 (21–31), with a separate note that people who got Social Security before May 1997 (or get both SSI and Social Security) are generally paid on the 3rd.",
+      "id": "n-20260605-ssa-payments-june",
+      "title": "SSA posts official June 2026 payment dates for SSI and early Social Security recipients",
+      "summary": "SSA’s 2026–2027 payment schedule shows SSI benefits are paid on June 1, 2026. The same schedule shows Social Security for people who began receiving benefits before May 1997 is paid on June 3, 2026.",
       "category": "update",
-      "date": "2026-06-04",
-      "source": "Social Security Administration",
+      "date": "2026-06-05",
+      "source": "Social Security Administration (SSA)",
       "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
         "ssi",
         "ssdi"
-      ],
-      "isBreaking": false
+      ]
     },
     {
-      "id": "n-20260604-medicaid-chip-enrollment-feb2026",
-      "title": "KFF tracker: Medicaid/CHIP enrollment about 74.9 million as of Feb. 2026",
-      "summary": "KFF reports nationwide Medicaid/CHIP enrollment at about 74.9 million people as of February 2026, including 67.7 million enrolled in Medicaid and 7.2 million in CHIP. KFF notes this is a 21% decline from March 2023 enrollment, but still 5% higher than February 2020.",
+      "id": "n-20260605-summer-ebt-plans",
+      "title": "USDA reiterates Summer EBT planning requirements and deadlines for agencies",
+      "summary": "USDA’s Summer EBT 2026 toolkit states implementing agencies had to submit an initial Program Operations and Management plan (iPOM) by Aug. 15, 2025 to draw administrative funds. The toolkit also says a final POM was due Feb. 15, 2026 and must be approved to draw Summer EBT food benefit funds.",
+      "category": "deadline",
+      "date": "2026-06-05",
+      "source": "USDA Food and Nutrition Service (FNS)",
+      "sourceUrl": "https://www.fns.usda.gov/sebt/implementing-agency/toolkit/templates",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260605-school-meals-income-guidelines",
+      "title": "USDA publishes 2026–2027 income eligibility guidelines for free/reduced-price school meals and Summer EBT",
+      "summary": "USDA’s notice sets income eligibility guidelines effective July 1, 2026 through June 30, 2027 for programs like the National School Lunch Program, School Breakfast Program, and Summer EBT. USDA notes the figures for a family of four in the 48 contiguous states reflect a 2.6% increase over last year’s level.",
       "category": "update",
-      "date": "2026-06-04",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-enrollment-and-unwinding-tracker/",
+      "date": "2026-06-05",
+      "source": "USDA Food and Nutrition Service (FNS)",
+      "sourceUrl": "https://www.fns.usda.gov/schoolmeals/fr-040926",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260605-eitc-2026-max",
+      "title": "IRS inflation adjustments set higher Earned Income Tax Credit maximums for tax year 2026",
+      "summary": "IRS Revenue Procedure 2025-32 increases the maximum EITC to $664 for workers with no qualifying children, $4,427 with one child, $7,316 with two children, and $8,231 with three or more children. The same guidance raises the investment income limit to $12,200 for tax year 2026.",
+      "category": "update",
+      "date": "2026-06-05",
+      "source": "Valor Tax Relief (citing IRS Rev. Proc. 2025-32)",
+      "sourceUrl": "https://valortaxrelief.com/blog/eitc-2026-tax-year-eligibility-maximum-credit-guide",
+      "programs": [
+        "eitc"
+      ]
+    },
+    {
+      "id": "n-20260605-wic-ieg-memo",
+      "title": "USDA issues guidance memo transmitting 2026–2027 WIC income eligibility guidelines",
+      "summary": "USDA’s Food and Nutrition Service posted a guidance document titled “Publication of 2026-2027 WIC Income Eligibility Guidelines” dated April 29, 2026. The memo transmits the updated income eligibility guidelines that WIC state agencies use for determining participant eligibility for the 2026–2027 period.",
+      "category": "update",
+      "date": "2026-06-05",
+      "source": "USDA Food and Nutrition Service (FNS)",
+      "sourceUrl": "https://www.fns.usda.gov/resources?f%5B0%5D=resource_type%3A401",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260605-medicaid-guidance-index",
+      "title": "CMS updates Medicaid.gov Federal Policy Guidance index with new June 2026 entries",
+      "summary": "Medicaid.gov’s Federal Policy Guidance page shows new guidance entries dated June 1, 2026, following prior updates on May 20 and May 5, 2026. The index is CMS’s running list of sub-regulatory guidance states use to interpret and implement Medicaid and CHIP policy.",
+      "category": "update",
+      "date": "2026-06-05",
+      "source": "Centers for Medicare & Medicaid Services (CMS)",
+      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance",
       "programs": [
         "medicaid",
         "chip"
-      ],
-      "isBreaking": false
+      ]
     },
     {
-      "id": "n-20260604-tax-standard-deduction-2026",
-      "title": "IRS: 2026 standard deduction amounts listed at $32,200 (joint) and $16,100 (single)",
-      "summary": "In its overview of provisions for individuals and workers, the IRS lists 2026 standard deduction amounts of $32,200 for married couples filing jointly, $16,100 for single filers (and married filing separately), and $24,150 for heads of household. The same IRS page also lists 2026 AMT exemption amounts of $90,100 (single) and $140,200 (joint), and an estate tax basic exclusion amount of $15,000,000 for 2026 decedents.",
-      "category": "update",
-      "date": "2026-06-04",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers",
+      "id": "n-20260605-cms-telehealth-rhc-fqhc",
+      "title": "CMS flags telehealth billing change for RHCs and FQHCs effective Oct. 1, 2026",
+      "summary": "CMS’s MLN Connects newsletter notes rural health clinics and federally qualified health centers must bill the individual CPT/HCPCS code for distant site telehealth services instead of HCPCS code G2025 starting Oct. 1, 2026. CMS highlights this as an upcoming operational change providers should prepare for in advance of the effective date.",
+      "category": "policy-change",
+      "date": "2026-06-05",
+      "source": "Centers for Medicare & Medicaid Services (CMS)",
+      "sourceUrl": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-june-4-2026",
       "programs": [
-        "eitc",
-        "ctc"
-      ],
-      "isBreaking": false
-    },
-    {
-      "id": "n-20260604-tax-free-file-window",
-      "title": "IRS Free File is generally available Jan. 15 through Oct. 15; income cap cited at $89,000",
-      "summary": "The IRS Taxpayer Advocate Service says IRS Free File is generally available each year from January 15 through October 15. For 2025 tax returns, TAS cites an income threshold of below $89,000 to use Free File guided software.",
-      "category": "deadline",
-      "date": "2026-06-04",
-      "source": "IRS Taxpayer Advocate Service",
-      "sourceUrl": "https://www.taxpayeradvocate.irs.gov/get-help/filing-returns/free-file-options/",
-      "programs": [
-        "eitc",
-        "ctc"
-      ],
-      "isBreaking": false
-    },
-    {
-      "id": "n-20260604-wic-program-overview",
-      "title": "WIC program reminder: WIC serves pregnant/postpartum people and young children (up to age 5)",
-      "summary": "USDA’s WIC program page describes WIC as providing supplemental foods, health care referrals, and nutrition education for low-income pregnant, breastfeeding, and postpartum people, plus infants and children up to age 5. Households can use the WIC state agency directory to find eligibility and application details.",
-      "category": "update",
-      "date": "2026-06-04",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic",
-      "programs": [
-        "wic"
-      ],
-      "isBreaking": false
-    },
-    {
-      "id": "n-20260604-snap-apply-state-offices",
-      "title": "SNAP reminder: applications are handled by states; check your local office for benefit dates",
-      "summary": "USDA reminds applicants that SNAP applications are handled by state and local offices rather than USDA, and current participants should use their state’s SNAP information page for benefit availability dates and EBT customer service numbers. This is a good time to confirm your contact information with your SNAP office so you don’t miss renewal notices.",
-      "category": "update",
-      "date": "2026-06-04",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/applicant-participant",
-      "programs": [
-        "snap"
-      ],
-      "isBreaking": false
+        "medicaid"
+      ]
     }
   ]
 }
