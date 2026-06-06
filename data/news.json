@@ -1,102 +1,91 @@
 {
-  "lastUpdated": "2026-06-05T11:06:55Z",
+  "lastUpdated": "2026-06-06T11:05:36Z",
   "items": [
     {
-      "id": "n-20260605-hcv-funding",
-      "title": "HUD sets FY 2026 Housing Choice Voucher funding levels and key application deadlines",
-      "summary": "HUD’s PIH Notice 2026-12 allocates about $34.557 billion for Housing Assistance Payment (HAP) renewals, $600.622 million for Tenant Protection Vouchers, and $2.835935 billion for administrative fees. The notice also sets multiple HAP set-aside application deadlines, including June 26, 2026 (by 5pm local time) for several categories such as unforeseen circumstances and project-based vouchers.",
+      "id": "n-20260606-snap-retailer-stocking",
+      "title": "USDA final SNAP retailer stocking rule: updated staple-food standards take effect Nov. 4, 2026",
+      "summary": "USDA’s Food and Nutrition Service says the updated SNAP retailer stocking standards published May 8, 2026 must be followed starting Nov. 4, 2026. The eligibility page highlights numeric requirements including at least 36 staple food items, with three varieties in each of four staple-food categories and three stocking units per variety, plus at least one perishable variety in two categories.",
       "category": "policy-change",
-      "date": "2026-06-05",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-12.pdf",
-      "programs": [
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260605-ssa-payments-june",
-      "title": "SSA posts official June 2026 payment dates for SSI and early Social Security recipients",
-      "summary": "SSA’s 2026–2027 payment schedule shows SSI benefits are paid on June 1, 2026. The same schedule shows Social Security for people who began receiving benefits before May 1997 is paid on June 3, 2026.",
-      "category": "update",
-      "date": "2026-06-05",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
-    },
-    {
-      "id": "n-20260605-summer-ebt-plans",
-      "title": "USDA reiterates Summer EBT planning requirements and deadlines for agencies",
-      "summary": "USDA’s Summer EBT 2026 toolkit states implementing agencies had to submit an initial Program Operations and Management plan (iPOM) by Aug. 15, 2025 to draw administrative funds. The toolkit also says a final POM was due Feb. 15, 2026 and must be approved to draw Summer EBT food benefit funds.",
-      "category": "deadline",
-      "date": "2026-06-05",
-      "source": "USDA Food and Nutrition Service (FNS)",
-      "sourceUrl": "https://www.fns.usda.gov/sebt/implementing-agency/toolkit/templates",
+      "date": "2026-06-06",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/eligible",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260605-school-meals-income-guidelines",
-      "title": "USDA publishes 2026–2027 income eligibility guidelines for free/reduced-price school meals and Summer EBT",
-      "summary": "USDA’s notice sets income eligibility guidelines effective July 1, 2026 through June 30, 2027 for programs like the National School Lunch Program, School Breakfast Program, and Summer EBT. USDA notes the figures for a family of four in the 48 contiguous states reflect a 2.6% increase over last year’s level.",
-      "category": "update",
-      "date": "2026-06-05",
-      "source": "USDA Food and Nutrition Service (FNS)",
-      "sourceUrl": "https://www.fns.usda.gov/schoolmeals/fr-040926",
+      "id": "n-20260606-pell-effective-dates",
+      "title": "Education Dept. posts effective dates for Workforce Pell and new Pell ineligibility rules: July 1, 2026",
+      "summary": "Federal Student Aid says Workforce Pell provisions take effect July 1, 2026. The same July 1, 2026 effective date also applies to Federal Pell Grant ineligibility provisions described in the announcement.",
+      "category": "policy-change",
+      "date": "2026-06-06",
+      "source": "Federal Student Aid (U.S. Department of Education)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/effective-dates-workforce-pell-and-federal-pell-grant-ineligibility-provisions",
       "programs": [
-        "wic"
+        "pell"
       ]
     },
     {
-      "id": "n-20260605-eitc-2026-max",
-      "title": "IRS inflation adjustments set higher Earned Income Tax Credit maximums for tax year 2026",
-      "summary": "IRS Revenue Procedure 2025-32 increases the maximum EITC to $664 for workers with no qualifying children, $4,427 with one child, $7,316 with two children, and $8,231 with three or more children. The same guidance raises the investment income limit to $12,200 for tax year 2026.",
+      "id": "n-20260606-sun-bucks-ma-issuance",
+      "title": "Massachusetts says SUN Bucks (Summer EBT) 2026 benefits began issuing June 1: $120 per eligible child",
+      "summary": "Massachusetts’ SUN Bucks FAQ says the first issuance of SUN Bucks 2026 benefits was June 1, 2026. The same page states the benefit is $120 per eligible child as a one-time, lump-sum payment for summer months.",
       "category": "update",
-      "date": "2026-06-05",
-      "source": "Valor Tax Relief (citing IRS Rev. Proc. 2025-32)",
-      "sourceUrl": "https://valortaxrelief.com/blog/eitc-2026-tax-year-eligibility-maximum-credit-guide",
+      "date": "2026-06-06",
+      "source": "Commonwealth of Massachusetts",
+      "sourceUrl": "https://www.mass.gov/info-details/sun-bucks-faq",
       "programs": [
-        "eitc"
-      ]
+        "snap"
+      ],
+      "isBreaking": true
     },
     {
-      "id": "n-20260605-wic-ieg-memo",
-      "title": "USDA issues guidance memo transmitting 2026–2027 WIC income eligibility guidelines",
-      "summary": "USDA’s Food and Nutrition Service posted a guidance document titled “Publication of 2026-2027 WIC Income Eligibility Guidelines” dated April 29, 2026. The memo transmits the updated income eligibility guidelines that WIC state agencies use for determining participant eligibility for the 2026–2027 period.",
-      "category": "update",
-      "date": "2026-06-05",
-      "source": "USDA Food and Nutrition Service (FNS)",
-      "sourceUrl": "https://www.fns.usda.gov/resources?f%5B0%5D=resource_type%3A401",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20260605-medicaid-guidance-index",
-      "title": "CMS updates Medicaid.gov Federal Policy Guidance index with new June 2026 entries",
-      "summary": "Medicaid.gov’s Federal Policy Guidance page shows new guidance entries dated June 1, 2026, following prior updates on May 20 and May 5, 2026. The index is CMS’s running list of sub-regulatory guidance states use to interpret and implement Medicaid and CHIP policy.",
-      "category": "update",
-      "date": "2026-06-05",
-      "source": "Centers for Medicare & Medicaid Services (CMS)",
-      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance",
+      "id": "n-20260606-medicaid-work-requirements-impact",
+      "title": "KFF Health News: new federal Medicaid work rules could affect 18.5 million adults; CBO estimates 5.3 million uninsured by 2034",
+      "summary": "KFF Health News reports that the One Big Beautiful Bill Act could require about 18.5 million Medicaid adults across 42 states and D.C. to document work or qualifying activities to keep coverage, unless exempt. The story also cites a Congressional Budget Office estimate that 5.3 million enrollees would become uninsured by 2034 due to Medicaid work requirements.",
+      "category": "policy-change",
+      "date": "2026-06-06",
+      "source": "KFF Health News",
+      "sourceUrl": "https://kffhealthnews.org/medicaid/trump-law-medicaid-work-rules-states-overhaul-eligibility-systems/",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260605-cms-telehealth-rhc-fqhc",
-      "title": "CMS flags telehealth billing change for RHCs and FQHCs effective Oct. 1, 2026",
-      "summary": "CMS’s MLN Connects newsletter notes rural health clinics and federally qualified health centers must bill the individual CPT/HCPCS code for distant site telehealth services instead of HCPCS code G2025 starting Oct. 1, 2026. CMS highlights this as an upcoming operational change providers should prepare for in advance of the effective date.",
-      "category": "policy-change",
-      "date": "2026-06-05",
-      "source": "Centers for Medicare & Medicaid Services (CMS)",
-      "sourceUrl": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-june-4-2026",
+      "id": "n-20260606-fafta-federal-deadline-reminder",
+      "title": "FAFSA reminder: 2026–27 aid year federal filing deadline is June 30, 2027 (but many schools/states have earlier priority dates)",
+      "summary": "A FAFSA explainer notes the 2026–27 FAFSA covers the award period from July 1, 2026 through June 30, 2027 and lists the federal deadline to submit as June 30, 2027. It also warns that colleges and states can have earlier priority deadlines that may affect access to limited grant aid.",
+      "category": "deadline",
+      "date": "2026-06-06",
+      "source": "UNCF",
+      "sourceUrl": "https://uncf.org/the-latest/how-and-when-to-fill-out-the-fafsa",
       "programs": [
-        "medicaid"
+        "pell"
+      ]
+    },
+    {
+      "id": "n-20260606-snap-resources-recent",
+      "title": "USDA FNS posts new SNAP resources in late May/early June, including a June 1 Federal Register information-collection notice",
+      "summary": "USDA’s FNS resources listing shows a June 1, 2026 entry for an information collection titled “FNS-245 SNAP Negative Case Action Review Schedule.” The same list includes late-May SNAP items dated May 27, 2026 covering information collections related to SNAP incentive waiver requests and to state options for standard utility allowances and self-employment income.",
+      "category": "update",
+      "date": "2026-06-06",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/resources",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260606-irs-irb-none-eitc",
+      "title": "IRS publishes Internal Revenue Bulletin 2026-24; no new EITC/CTC guidance in this issue",
+      "summary": "The IRS’s Internal Revenue Bulletin 2026-24 includes items like Rev. Rul. 2026-11 (federal rates and a Low-Income Housing Credit table) and Notice 2026-33 (qualified long-term care distributions). A review of the issue did not find new guidance specifically addressing the Earned Income Tax Credit (EITC) or Child Tax Credit (CTC).",
+      "category": "update",
+      "date": "2026-06-06",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/irb/2026-24_IRB",
+      "programs": [
+        "eitc",
+        "ctc"
       ]
     }
   ]
