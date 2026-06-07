@@ -1,91 +1,103 @@
 {
-  "lastUpdated": "2026-06-06T11:05:36Z",
+  "lastUpdated": "2026-06-07T11:06:32Z",
   "items": [
     {
-      "id": "n-20260606-snap-retailer-stocking",
-      "title": "USDA final SNAP retailer stocking rule: updated staple-food standards take effect Nov. 4, 2026",
-      "summary": "USDA’s Food and Nutrition Service says the updated SNAP retailer stocking standards published May 8, 2026 must be followed starting Nov. 4, 2026. The eligibility page highlights numeric requirements including at least 36 staple food items, with three varieties in each of four staple-food categories and three stocking units per variety, plus at least one perishable variety in two categories.",
-      "category": "policy-change",
-      "date": "2026-06-06",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/eligible",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260606-pell-effective-dates",
-      "title": "Education Dept. posts effective dates for Workforce Pell and new Pell ineligibility rules: July 1, 2026",
-      "summary": "Federal Student Aid says Workforce Pell provisions take effect July 1, 2026. The same July 1, 2026 effective date also applies to Federal Pell Grant ineligibility provisions described in the announcement.",
-      "category": "policy-change",
-      "date": "2026-06-06",
-      "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/effective-dates-workforce-pell-and-federal-pell-grant-ineligibility-provisions",
-      "programs": [
-        "pell"
-      ]
-    },
-    {
-      "id": "n-20260606-sun-bucks-ma-issuance",
-      "title": "Massachusetts says SUN Bucks (Summer EBT) 2026 benefits began issuing June 1: $120 per eligible child",
-      "summary": "Massachusetts’ SUN Bucks FAQ says the first issuance of SUN Bucks 2026 benefits was June 1, 2026. The same page states the benefit is $120 per eligible child as a one-time, lump-sum payment for summer months.",
+      "id": "n-20260607-snap-fraud-oh",
+      "title": "USDA and Ohio issue violation notices to 19 SNAP retailers in fraud crackdown",
+      "summary": "USDA’s Food and Nutrition Administration and Ohio’s Investigative Unit issued formal SNAP violation notices to 19 retailers across Cleveland, Cincinnati, and Columbus on June 3–4, 2026. USDA said one store allegedly trafficked more than $14,000 in SNAP benefits, and described another case where a retailer exchanged more than $800 in benefits for $300 in cash and other ineligible items.",
       "category": "update",
-      "date": "2026-06-06",
-      "source": "Commonwealth of Massachusetts",
-      "sourceUrl": "https://www.mass.gov/info-details/sun-bucks-faq",
+      "date": "2026-06-07",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/newsroom/fna-0002.26",
       "programs": [
         "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260606-medicaid-work-requirements-impact",
-      "title": "KFF Health News: new federal Medicaid work rules could affect 18.5 million adults; CBO estimates 5.3 million uninsured by 2034",
-      "summary": "KFF Health News reports that the One Big Beautiful Bill Act could require about 18.5 million Medicaid adults across 42 states and D.C. to document work or qualifying activities to keep coverage, unless exempt. The story also cites a Congressional Budget Office estimate that 5.3 million enrollees would become uninsured by 2034 due to Medicaid work requirements.",
-      "category": "policy-change",
-      "date": "2026-06-06",
-      "source": "KFF Health News",
-      "sourceUrl": "https://kffhealthnews.org/medicaid/trump-law-medicaid-work-rules-states-overhaul-eligibility-systems/",
-      "programs": [
-        "medicaid",
-        "chip"
       ]
     },
     {
-      "id": "n-20260606-fafta-federal-deadline-reminder",
-      "title": "FAFSA reminder: 2026–27 aid year federal filing deadline is June 30, 2027 (but many schools/states have earlier priority dates)",
-      "summary": "A FAFSA explainer notes the 2026–27 FAFSA covers the award period from July 1, 2026 through June 30, 2027 and lists the federal deadline to submit as June 30, 2027. It also warns that colleges and states can have earlier priority deadlines that may affect access to limited grant aid.",
+      "id": "n-20260607-homelessness-coc-nof0",
+      "title": "HUD announces $4.04B FY2026 Continuum of Care homelessness funding and new priorities",
+      "summary": "HUD announced a new Notice of Funding Opportunity for the Continuum of Care (CoC) program totaling $4.04 billion for FY 2026. HUD said $1.3 billion of the total is for new projects, and emphasized priorities including transitional housing and supportive services alongside housing assistance.",
+      "category": "update",
+      "date": "2026-06-07",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/news/hud-no-26-038",
+      "programs": [
+        "housing",
+        "homelessness"
+      ]
+    },
+    {
+      "id": "n-20260607-wic-cvvb-fy26",
+      "title": "USDA updates WIC fruit-and-vegetable cash benefit amounts for FY2026",
+      "summary": "USDA set FY 2026 monthly WIC cash-value benefits at $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. USDA said the FY 2026 inflation adjustment is 11.8% over the FY 2022 baseline, and noted states were required to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) by April 2026.",
+      "category": "policy-change",
+      "date": "2026-06-07",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260607-medicaid-workreq-kff",
+      "title": "Medicaid work requirements: KFF tracker highlights early state start dates ahead of 2027 federal requirement",
+      "summary": "KFF reports that a 2025 reconciliation law requires states to condition Medicaid eligibility for ACA expansion adults on work requirements starting January 1, 2027. KFF notes Nebraska began enforcing requirements early on May 1, 2026, and that Montana (July 1, 2026) and Iowa (December 1, 2026) plan early implementation; Arkansas plans a July 1, 2026 “soft” launch without disenrollments before 2027.",
+      "category": "policy-change",
+      "date": "2026-06-07",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-1115-waivers/",
+      "programs": [
+        "medicaid"
+      ]
+    },
+    {
+      "id": "n-20260607-hcv-hotma-pih-2026-15",
+      "title": "HUD sets Jan. 1, 2027 deadline for most PHAs to use HOTMA-compliant HUD-50058 reporting",
+      "summary": "HUD’s PIH Notice 2026-15 says PHAs (with exceptions including MTW PHAs and PHAs exclusively using FRS) must reflect HOTMA requirements in all HUD-50058 transactions with an effective date on or after January 1, 2027. HUD also notes that PHAs that start annual reexams 120 days in advance may need to begin collecting/verifying income under HOTMA policies starting in September 2026.",
       "category": "deadline",
-      "date": "2026-06-06",
-      "source": "UNCF",
-      "sourceUrl": "https://uncf.org/the-latest/how-and-when-to-fill-out-the-fafsa",
+      "date": "2026-06-07",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
       "programs": [
-        "pell"
+        "housing",
+        "section8"
       ]
     },
     {
-      "id": "n-20260606-snap-resources-recent",
-      "title": "USDA FNS posts new SNAP resources in late May/early June, including a June 1 Federal Register information-collection notice",
-      "summary": "USDA’s FNS resources listing shows a June 1, 2026 entry for an information collection titled “FNS-245 SNAP Negative Case Action Review Schedule.” The same list includes late-May SNAP items dated May 27, 2026 covering information collections related to SNAP incentive waiver requests and to state options for standard utility allowances and self-employment income.",
-      "category": "update",
-      "date": "2026-06-06",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/resources",
+      "id": "n-20260607-irs-childcare-credit-45f",
+      "title": "IRS details expanded employer-provided child care tax credit rules for tax year 2026+",
+      "summary": "IRS guidance says the employer-provided child care credit for amounts paid or incurred after December 31, 2025 equals 40% of qualified child care expenditures (50% for eligible small businesses) plus 10% of qualified child care resource and referral expenditures. IRS says the annual credit cap increases to $500,000 (or $600,000 for eligible small businesses), with both amounts adjusted for inflation.",
+      "category": "policy-change",
+      "date": "2026-06-07",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-provided-child-care-credit-tax-year-2026-and-later",
       "programs": [
-        "snap"
+        "tax-credits"
       ]
     },
     {
-      "id": "n-20260606-irs-irb-none-eitc",
-      "title": "IRS publishes Internal Revenue Bulletin 2026-24; no new EITC/CTC guidance in this issue",
-      "summary": "The IRS’s Internal Revenue Bulletin 2026-24 includes items like Rev. Rul. 2026-11 (federal rates and a Low-Income Housing Credit table) and Notice 2026-33 (qualified long-term care distributions). A review of the issue did not find new guidance specifically addressing the Earned Income Tax Credit (EITC) or Child Tax Credit (CTC).",
-      "category": "update",
-      "date": "2026-06-06",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/irb/2026-24_IRB",
+      "id": "n-20260607-irs-litc-grants",
+      "title": "IRS Low Income Taxpayer Clinic (LITC) matching grant applications open through July 6, 2026",
+      "summary": "IRS says it is accepting applications for Low Income Taxpayer Clinic matching grants from May 6, 2026 through July 6, 2026. The program supports organizations that help lower-income taxpayers resolve disputes with the IRS and understand their rights and responsibilities.",
+      "category": "deadline",
+      "date": "2026-06-07",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/news-releases-for-current-month",
       "programs": [
-        "eitc",
-        "ctc"
+        "tax-credits"
+      ]
+    },
+    {
+      "id": "n-20260607-ssa-disability-processing-time",
+      "title": "SSA data: average disability claim processing time was 193 days in Feb. 2026",
+      "summary": "SSA’s open data shows the average processing time for combined initial Title II disability and Title XVI blind/disabled claims was 193 days in February 2026 (FY 2026). The same dataset shows a FY 2026-to-date average of 196 days through February.",
+      "category": "update",
+      "date": "2026-06-07",
+      "source": "SSA",
+      "sourceUrl": "https://www.ssa.gov/data/fy16-onwards-CDP-Time-Monthly.csv",
+      "programs": [
+        "ssdi",
+        "ssi"
       ]
     }
   ]
