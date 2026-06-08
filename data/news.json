@@ -1,103 +1,88 @@
 {
-  "lastUpdated": "2026-06-07T11:06:32Z",
+  "lastUpdated": "2026-06-08T11:22:18Z",
   "items": [
     {
-      "id": "n-20260607-snap-fraud-oh",
-      "title": "USDA and Ohio issue violation notices to 19 SNAP retailers in fraud crackdown",
-      "summary": "USDA’s Food and Nutrition Administration and Ohio’s Investigative Unit issued formal SNAP violation notices to 19 retailers across Cleveland, Cincinnati, and Columbus on June 3–4, 2026. USDA said one store allegedly trafficked more than $14,000 in SNAP benefits, and described another case where a retailer exchanged more than $800 in benefits for $300 in cash and other ineligible items.",
-      "category": "update",
-      "date": "2026-06-07",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/newsroom/fna-0002.26",
+      "id": "n-20260608-snap-arkansas-food-restriction-waiver",
+      "title": "USDA approves Arkansas SNAP waiver restricting certain drinks and candy starting July 1, 2026",
+      "summary": "USDA’s Food and Nutrition Service approved Arkansas’ request to modify the restricted food and beverage definitions under its SNAP food restriction waiver on May 12, 2026. The waiver is approved for two years, effective July 1, 2026, and the June 10, 2025 approval letter lists excluded items including soda (including low/no-calorie), fruit/vegetable drinks with less than 50% natural juice, other unhealthy drinks, and candy.",
+      "category": "policy-change",
+      "date": "2026-06-08",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction/arkansas",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260607-homelessness-coc-nof0",
-      "title": "HUD announces $4.04B FY2026 Continuum of Care homelessness funding and new priorities",
-      "summary": "HUD announced a new Notice of Funding Opportunity for the Continuum of Care (CoC) program totaling $4.04 billion for FY 2026. HUD said $1.3 billion of the total is for new projects, and emphasized priorities including transitional housing and supportive services alongside housing assistance.",
+      "id": "n-20260608-wic-fy26-cash-value-benefit-amounts",
+      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash-value benefit amounts (children $26; pregnant/postpartum $48; breastfeeding $52)",
+      "summary": "USDA WIC Policy Memorandum #2026-2 (dated Dec. 10, 2025) lists the FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts for fruits and vegetables as $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. The memo cites an FY 2026 inflation adjustment of 11.8% over FY 2022 baseline amounts.",
       "category": "update",
-      "date": "2026-06-07",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/news/hud-no-26-038",
-      "programs": [
-        "housing",
-        "homelessness"
-      ]
-    },
-    {
-      "id": "n-20260607-wic-cvvb-fy26",
-      "title": "USDA updates WIC fruit-and-vegetable cash benefit amounts for FY2026",
-      "summary": "USDA set FY 2026 monthly WIC cash-value benefits at $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. USDA said the FY 2026 inflation adjustment is 11.8% over the FY 2022 baseline, and noted states were required to authorize at least one additional form of fruits and vegetables (frozen, canned, and/or dried) by April 2026.",
-      "category": "policy-change",
-      "date": "2026-06-07",
-      "source": "USDA FNS",
+      "date": "2026-06-08",
+      "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
       "programs": [
         "wic"
       ]
     },
     {
-      "id": "n-20260607-medicaid-workreq-kff",
-      "title": "Medicaid work requirements: KFF tracker highlights early state start dates ahead of 2027 federal requirement",
-      "summary": "KFF reports that a 2025 reconciliation law requires states to condition Medicaid eligibility for ACA expansion adults on work requirements starting January 1, 2027. KFF notes Nebraska began enforcing requirements early on May 1, 2026, and that Montana (July 1, 2026) and Iowa (December 1, 2026) plan early implementation; Arkansas plans a July 1, 2026 “soft” launch without disenrollments before 2027.",
-      "category": "policy-change",
-      "date": "2026-06-07",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-1115-waivers/",
-      "programs": [
-        "medicaid"
-      ]
-    },
-    {
-      "id": "n-20260607-hcv-hotma-pih-2026-15",
-      "title": "HUD sets Jan. 1, 2027 deadline for most PHAs to use HOTMA-compliant HUD-50058 reporting",
-      "summary": "HUD’s PIH Notice 2026-15 says PHAs (with exceptions including MTW PHAs and PHAs exclusively using FRS) must reflect HOTMA requirements in all HUD-50058 transactions with an effective date on or after January 1, 2027. HUD also notes that PHAs that start annual reexams 120 days in advance may need to begin collecting/verifying income under HOTMA policies starting in September 2026.",
-      "category": "deadline",
-      "date": "2026-06-07",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-15.pdf",
-      "programs": [
-        "housing",
-        "section8"
-      ]
-    },
-    {
-      "id": "n-20260607-irs-childcare-credit-45f",
-      "title": "IRS details expanded employer-provided child care tax credit rules for tax year 2026+",
-      "summary": "IRS guidance says the employer-provided child care credit for amounts paid or incurred after December 31, 2025 equals 40% of qualified child care expenditures (50% for eligible small businesses) plus 10% of qualified child care resource and referral expenditures. IRS says the annual credit cap increases to $500,000 (or $600,000 for eligible small businesses), with both amounts adjusted for inflation.",
-      "category": "policy-change",
-      "date": "2026-06-07",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-provided-child-care-credit-tax-year-2026-and-later",
-      "programs": [
-        "tax-credits"
-      ]
-    },
-    {
-      "id": "n-20260607-irs-litc-grants",
-      "title": "IRS Low Income Taxpayer Clinic (LITC) matching grant applications open through July 6, 2026",
-      "summary": "IRS says it is accepting applications for Low Income Taxpayer Clinic matching grants from May 6, 2026 through July 6, 2026. The program supports organizations that help lower-income taxpayers resolve disputes with the IRS and understand their rights and responsibilities.",
-      "category": "deadline",
-      "date": "2026-06-07",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/news-releases-for-current-month",
-      "programs": [
-        "tax-credits"
-      ]
-    },
-    {
-      "id": "n-20260607-ssa-disability-processing-time",
-      "title": "SSA data: average disability claim processing time was 193 days in Feb. 2026",
-      "summary": "SSA’s open data shows the average processing time for combined initial Title II disability and Title XVI blind/disabled claims was 193 days in February 2026 (FY 2026). The same dataset shows a FY 2026-to-date average of 196 days through February.",
+      "id": "n-20260608-housing-hcv-hap-one-day-delay",
+      "title": "HUD says June Housing Choice Voucher (Section 8) HAP deposits were delayed one day and sent June 2, 2026",
+      "summary": "HUD told public housing agencies that there was a one-day delay in the deposit of June Housing Choice Voucher (HCV) Housing Assistance Payments (HAP), and that payments would be deposited the next day (June 2, 2026). HUD said it worked with the U.S. Treasury to address the issue and that it had been resolved.",
       "category": "update",
-      "date": "2026-06-07",
-      "source": "SSA",
-      "sourceUrl": "https://www.ssa.gov/data/fy16-onwards-CDP-Time-Monthly.csv",
+      "date": "2026-06-08",
+      "source": "NAHRO (citing HUD email)",
+      "sourceUrl": "https://www.nahro.org/news/delayed-hud-hap-payments-to-be-sent-to-phas-on-june-2-2026/",
       "programs": [
-        "ssdi",
-        "ssi"
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260608-snap-fy2026-max-allotments",
+      "title": "USDA posts FY 2026 SNAP income limits window and maximum monthly benefit amounts (contiguous U.S./DC)",
+      "summary": "USDA’s SNAP eligibility page notes that the published income eligibility limits apply to applications between Oct. 1, 2025 and Sept. 30, 2026. For households in the 48 contiguous states and the District of Columbia, the maximum monthly allotments listed are $298 (1 person), $546 (2), $785 (3), and $994 (4).",
+      "category": "update",
+      "date": "2026-06-08",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260608-irs-ctc-actc-ssn-requirement-tax-year-2025",
+      "title": "IRS reminder: Child Tax Credit/ACTC requires an SSN valid for work and issued before the 2025 return due date",
+      "summary": "The IRS EITC Central “Tax preparer toolkit” states that for tax year 2025, to qualify for the Child Tax Credit and Additional Child Tax Credit, the taxpayer (or spouse if filing jointly) and each qualifying child must have a Social Security number valid for employment in the U.S. and issued before the due date of the 2025 return. The page also notes that if a taxpayer doesn’t meet the SSN requirement, they aren’t eligible for the credit and do not need to respond to the notice.",
+      "category": "update",
+      "date": "2026-06-08",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/tax-professionals/eitc-central/tax-preparer-toolkit",
+      "programs": [
+        "eitc-ctc"
+      ]
+    },
+    {
+      "id": "n-20260608-cms-clinical-lab-reporting-window",
+      "title": "CMS: Some clinical labs must report private payer data May 1–July 31, 2026 (Medicare CLFS reporting)",
+      "summary": "CMS’ MLN Connects newsletter (June 4, 2026) highlights Clinical Diagnostic Laboratory Reporting and states the reporting period runs from May 1 through July 31, 2026 for applicable laboratories. CMS also lists other near-term effective dates in the same newsletter, including updates beginning July 1, 2026 and October 1, 2026 for certain Medicare billing/coding items.",
+      "category": "deadline",
+      "date": "2026-06-08",
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-june-4-2026",
+      "programs": [
+        "medicare"
+      ]
+    },
+    {
+      "id": "n-20260608-wic-2026-2027-income-guidelines-memo",
+      "title": "USDA issues memo transmitting 2026–2027 WIC income eligibility guidelines",
+      "summary": "USDA’s FNS documents listing shows a policy memorandum titled “Publication of 2026-2027 WIC Income Eligibility Guidelines” dated April 29, 2026. The memo transmits the 2026–2027 income eligibility guidelines (IEGs) used by WIC agencies when determining whether applicants meet income requirements.",
+      "category": "update",
+      "date": "2026-06-08",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/resources?f%5B0%5D=resource_type%3A401&page=0",
+      "programs": [
+        "wic"
       ]
     }
   ]
