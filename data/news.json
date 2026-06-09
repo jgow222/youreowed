@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-08T11:22:18Z",
+  "lastUpdated": "2026-06-09T11:18:39Z",
   "items": [
     {
-      "id": "n-20260608-snap-arkansas-food-restriction-waiver",
-      "title": "USDA approves Arkansas SNAP waiver restricting certain drinks and candy starting July 1, 2026",
-      "summary": "USDA’s Food and Nutrition Service approved Arkansas’ request to modify the restricted food and beverage definitions under its SNAP food restriction waiver on May 12, 2026. The waiver is approved for two years, effective July 1, 2026, and the June 10, 2025 approval letter lists excluded items including soda (including low/no-calorie), fruit/vegetable drinks with less than 50% natural juice, other unhealthy drinks, and candy.",
+      "id": "n-20260609-snap-ar-food-restrictions",
+      "title": "USDA approves Arkansas SNAP waiver restricting soda, candy, and some sweetened drinks starting July 1, 2026",
+      "summary": "USDA approved Arkansas’ request to exclude soda (including low/no-calorie), candy, and fruit/vegetable drinks with less than 50% juice from SNAP purchases, effective July 1, 2026, for two years. The state’s waiver modification was approved May 12, 2026, and the waiver is listed with a 07/01/26 target implementation date.",
       "category": "policy-change",
-      "date": "2026-06-08",
+      "date": "2026-06-09",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction/arkansas",
       "programs": [
@@ -14,75 +14,90 @@
       ]
     },
     {
-      "id": "n-20260608-wic-fy26-cash-value-benefit-amounts",
-      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash-value benefit amounts (children $26; pregnant/postpartum $48; breastfeeding $52)",
-      "summary": "USDA WIC Policy Memorandum #2026-2 (dated Dec. 10, 2025) lists the FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts for fruits and vegetables as $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. The memo cites an FY 2026 inflation adjustment of 11.8% over FY 2022 baseline amounts.",
+      "id": "n-20260609-snap-waivers-expanding",
+      "title": "USDA lists dozens of state SNAP food-restriction waivers, with multiple new restrictions rolling out in 2026",
+      "summary": "USDA’s SNAP waiver tracker shows many states implementing restrictions on items like soda and candy in 2026, including Florida (04/20/26), Texas (04/01/26), and Nebraska (01/01/26, with candy added effective Nov. 1, 2026). The tracker also lists upcoming target dates such as Colorado (10/30/26) and Virginia (10/01/26), signaling continued state policy changes.",
       "category": "update",
-      "date": "2026-06-08",
+      "date": "2026-06-09",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20260608-housing-hcv-hap-one-day-delay",
-      "title": "HUD says June Housing Choice Voucher (Section 8) HAP deposits were delayed one day and sent June 2, 2026",
-      "summary": "HUD told public housing agencies that there was a one-day delay in the deposit of June Housing Choice Voucher (HCV) Housing Assistance Payments (HAP), and that payments would be deposited the next day (June 2, 2026). HUD said it worked with the U.S. Treasury to address the issue and that it had been resolved.",
-      "category": "update",
-      "date": "2026-06-08",
-      "source": "NAHRO (citing HUD email)",
-      "sourceUrl": "https://www.nahro.org/news/delayed-hud-hap-payments-to-be-sent-to-phas-on-june-2-2026/",
-      "programs": [
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260608-snap-fy2026-max-allotments",
-      "title": "USDA posts FY 2026 SNAP income limits window and maximum monthly benefit amounts (contiguous U.S./DC)",
-      "summary": "USDA’s SNAP eligibility page notes that the published income eligibility limits apply to applications between Oct. 1, 2025 and Sept. 30, 2026. For households in the 48 contiguous states and the District of Columbia, the maximum monthly allotments listed are $298 (1 person), $546 (2), $785 (3), and $994 (4).",
-      "category": "update",
-      "date": "2026-06-08",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260608-irs-ctc-actc-ssn-requirement-tax-year-2025",
-      "title": "IRS reminder: Child Tax Credit/ACTC requires an SSN valid for work and issued before the 2025 return due date",
-      "summary": "The IRS EITC Central “Tax preparer toolkit” states that for tax year 2025, to qualify for the Child Tax Credit and Additional Child Tax Credit, the taxpayer (or spouse if filing jointly) and each qualifying child must have a Social Security number valid for employment in the U.S. and issued before the due date of the 2025 return. The page also notes that if a taxpayer doesn’t meet the SSN requirement, they aren’t eligible for the credit and do not need to respond to the notice.",
-      "category": "update",
-      "date": "2026-06-08",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/tax-professionals/eitc-central/tax-preparer-toolkit",
+      "id": "n-20260609-medicaid-work-rule-medical-frailty",
+      "title": "CMS Medicaid work-requirements rule sets 2027 start and tightens medical frailty exemption, KFF analysis says",
+      "summary": "KFF reports CMS issued an interim final rule on June 1, 2026 requiring 43 states to condition Medicaid eligibility for ACA expansion adults on meeting community engagement (work) requirements starting Jan. 1, 2027 (or sooner). The rule limits medical-frailty exemptions by tying them to ability to comply and prohibiting states from adding exemption categories; it also allows self-declaration through 2027, with broader documentation requirements beginning in January 2028.",
+      "category": "policy-change",
+      "date": "2026-06-09",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/quick-insights/cms-requires-more-restrictive-definition-of-medical-frailty-in-new-medicaid-work-requirements-rule/",
       "programs": [
-        "eitc-ctc"
+        "medicaid",
+        "chip"
       ]
     },
     {
-      "id": "n-20260608-cms-clinical-lab-reporting-window",
-      "title": "CMS: Some clinical labs must report private payer data May 1–July 31, 2026 (Medicare CLFS reporting)",
-      "summary": "CMS’ MLN Connects newsletter (June 4, 2026) highlights Clinical Diagnostic Laboratory Reporting and states the reporting period runs from May 1 through July 31, 2026 for applicable laboratories. CMS also lists other near-term effective dates in the same newsletter, including updates beginning July 1, 2026 and October 1, 2026 for certain Medicare billing/coding items.",
-      "category": "deadline",
-      "date": "2026-06-08",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-june-4-2026",
+      "id": "n-20260609-pell-workforce-final-rule",
+      "title": "Education Department finalizes ‘Workforce Pell’ for short-term programs starting July 1, 2026",
+      "summary": "The U.S. Department of Education says its final rule allows students to receive Pell Grants for eligible short-term workforce programs beginning July 1, 2026. ED says programs can prepare people for immediate employment in as little as 8 weeks and must meet time/length requirements and outcome metrics.",
+      "category": "new-program",
+      "date": "2026-06-09",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-final-rule-create-new-workforce-pell-grant-program",
       "programs": [
-        "medicare"
+        "pell"
       ]
     },
     {
-      "id": "n-20260608-wic-2026-2027-income-guidelines-memo",
-      "title": "USDA issues memo transmitting 2026–2027 WIC income eligibility guidelines",
-      "summary": "USDA’s FNS documents listing shows a policy memorandum titled “Publication of 2026-2027 WIC Income Eligibility Guidelines” dated April 29, 2026. The memo transmits the 2026–2027 income eligibility guidelines (IEGs) used by WIC agencies when determining whether applicants meet income requirements.",
+      "id": "n-20260609-fafsa-real-time-results",
+      "title": "Federal Student Aid launches real-time FAFSA results (APP-26-06)",
+      "summary": "Federal Student Aid announced the launch of “Real-Time FAFSA Results” in an electronic announcement posted June 1, 2026 (APP-26-06). The update is intended to speed up FAFSA processing feedback for applicants and schools, according to FSA’s announcement.",
       "category": "update",
-      "date": "2026-06-08",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/resources?f%5B0%5D=resource_type%3A401&page=0",
+      "date": "2026-06-09",
+      "source": "Federal Student Aid",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-01/launch-real-time-fafsa-results",
       "programs": [
-        "wic"
+        "pell"
+      ]
+    },
+    {
+      "id": "n-20260609-hud-coc-nof0-4b",
+      "title": "HUD opens FY 2026 Continuum of Care homelessness NOFO totaling $4.04B, including $1.3B for new projects",
+      "summary": "HUD announced a Fiscal Year 2026 Continuum of Care (CoC) Notice of Funding Opportunity totaling $4.04 billion to fund homelessness assistance nationwide. HUD said the NOFO includes $1.3 billion for new projects, prioritizing Transitional Housing and Supportive Service projects alongside housing assistance and wraparound services.",
+      "category": "update",
+      "date": "2026-06-09",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/news/hud-no-26-038",
+      "programs": [
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260609-irs-scholarship-tax-credit",
+      "title": "IRS: 27 states opt into new Federal Scholarship Tax Credit program, offering up to a $1,700 credit",
+      "summary": "The IRS said 27 states elected to participate in the Federal Scholarship Tax Credit (FSTC) program (IR-2026-76, June 8, 2026). The program lets eligible taxpayers claim a federal tax credit of up to $1,700 for qualified contributions to Scholarship Granting Organizations that fund K-12 education scholarships.",
+      "category": "new-program",
+      "date": "2026-06-09",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/more-than-half-the-us-states-signed-up-to-participate-in-the-federal-scholarship-tax-credit-program-enacted-under-the-one-big-beautiful-bill",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260609-irs-child-care-credit-2026",
+      "title": "IRS updates employer child care credit for tax year 2026: up to $500k ($600k for small businesses)",
+      "summary": "The IRS says for amounts paid after Dec. 31, 2025, the employer-provided child care credit equals 40% of qualified child care expenditures (50% for eligible small businesses), plus 10% of qualified resource and referral expenditures. The credit is capped at $500,000 per year ($600,000 for eligible small businesses), and the IRS notes the small-business gross receipts test is generally $32,000,000 for tax years beginning in 2026.",
+      "category": "policy-change",
+      "date": "2026-06-09",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-provided-child-care-credit-tax-year-2026-and-later",
+      "programs": [
+        "ctc",
+        "eitc"
       ]
     }
   ]
