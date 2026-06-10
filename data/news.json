@@ -1,103 +1,90 @@
 {
-  "lastUpdated": "2026-06-09T11:18:39Z",
+  "lastUpdated": "2026-06-10T11:16:02Z",
   "items": [
     {
-      "id": "n-20260609-snap-ar-food-restrictions",
-      "title": "USDA approves Arkansas SNAP waiver restricting soda, candy, and some sweetened drinks starting July 1, 2026",
-      "summary": "USDA approved Arkansas’ request to exclude soda (including low/no-calorie), candy, and fruit/vegetable drinks with less than 50% juice from SNAP purchases, effective July 1, 2026, for two years. The state’s waiver modification was approved May 12, 2026, and the waiver is listed with a 07/01/26 target implementation date.",
+      "id": "n-20260610-medicaid-work-requirements",
+      "title": "CMS issues interim final rule requiring Medicaid work requirements for many adults",
+      "summary": "CMS released an interim final rule that requires certain Medicaid applicants and enrollees ages 19–64 to meet a community engagement requirement of 80 hours per month through work, education, work programs, or community service. CMS says the requirement must be implemented no later than January 1, 2027, and lists exemptions including pregnancy/postpartum status, disability or medical frailty, American Indian/Alaska Native status, and certain caregivers.",
       "category": "policy-change",
-      "date": "2026-06-09",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction/arkansas",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260609-snap-waivers-expanding",
-      "title": "USDA lists dozens of state SNAP food-restriction waivers, with multiple new restrictions rolling out in 2026",
-      "summary": "USDA’s SNAP waiver tracker shows many states implementing restrictions on items like soda and candy in 2026, including Florida (04/20/26), Texas (04/01/26), and Nebraska (01/01/26, with candy added effective Nov. 1, 2026). The tracker also lists upcoming target dates such as Colorado (10/30/26) and Virginia (10/01/26), signaling continued state policy changes.",
-      "category": "update",
-      "date": "2026-06-09",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260609-medicaid-work-rule-medical-frailty",
-      "title": "CMS Medicaid work-requirements rule sets 2027 start and tightens medical frailty exemption, KFF analysis says",
-      "summary": "KFF reports CMS issued an interim final rule on June 1, 2026 requiring 43 states to condition Medicaid eligibility for ACA expansion adults on meeting community engagement (work) requirements starting Jan. 1, 2027 (or sooner). The rule limits medical-frailty exemptions by tying them to ability to comply and prohibiting states from adding exemption categories; it also allows self-declaration through 2027, with broader documentation requirements beginning in January 2028.",
-      "category": "policy-change",
-      "date": "2026-06-09",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/quick-insights/cms-requires-more-restrictive-definition-of-medical-frailty-in-new-medicaid-work-requirements-rule/",
+      "date": "2026-06-10",
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-launches-nationwide-framework-implement-medicaid-work-requirements",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260609-pell-workforce-final-rule",
-      "title": "Education Department finalizes ‘Workforce Pell’ for short-term programs starting July 1, 2026",
-      "summary": "The U.S. Department of Education says its final rule allows students to receive Pell Grants for eligible short-term workforce programs beginning July 1, 2026. ED says programs can prepare people for immediate employment in as little as 8 weeks and must meet time/length requirements and outcome metrics.",
-      "category": "new-program",
-      "date": "2026-06-09",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-final-rule-create-new-workforce-pell-grant-program",
+      "id": "n-20260610-snap-ptig-deadline",
+      "title": "USDA opens FY 2026 SNAP technology grants; applications due June 29",
+      "summary": "USDA’s Food and Nutrition Service says up to $5 million is available for FY 2026 SNAP Process and Technology Improvement Grants, with an anticipated 6 to 12 awards. Applications are due to Grants.gov by 11:59 p.m. EDT on June 29, 2026, and prior PTIG lead recipients from FY 2024 or FY 2025 are not eligible to apply as the lead entity.",
+      "category": "deadline",
+      "date": "2026-06-10",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/grant/snap/ptig-2026",
       "programs": [
-        "pell"
+        "snap"
       ]
     },
     {
-      "id": "n-20260609-fafsa-real-time-results",
-      "title": "Federal Student Aid launches real-time FAFSA results (APP-26-06)",
-      "summary": "Federal Student Aid announced the launch of “Real-Time FAFSA Results” in an electronic announcement posted June 1, 2026 (APP-26-06). The update is intended to speed up FAFSA processing feedback for applicants and schools, according to FSA’s announcement.",
-      "category": "update",
-      "date": "2026-06-09",
-      "source": "Federal Student Aid",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-01/launch-real-time-fafsa-results",
+      "id": "n-20260610-snap-info-collection-comments",
+      "title": "USDA seeks public comments on SNAP data collections; deadline June 22",
+      "summary": "USDA Food and Nutrition Service is taking public comments on a SNAP information collection that includes items on major changes in program design and interstate data matching to prevent multiple issuances. The agency says comments received by June 22, 2026 will be considered.",
+      "category": "deadline",
+      "date": "2026-06-10",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052126",
       "programs": [
-        "pell"
+        "snap"
       ]
     },
     {
-      "id": "n-20260609-hud-coc-nof0-4b",
-      "title": "HUD opens FY 2026 Continuum of Care homelessness NOFO totaling $4.04B, including $1.3B for new projects",
-      "summary": "HUD announced a Fiscal Year 2026 Continuum of Care (CoC) Notice of Funding Opportunity totaling $4.04 billion to fund homelessness assistance nationwide. HUD said the NOFO includes $1.3 billion for new projects, prioritizing Transitional Housing and Supportive Service projects alongside housing assistance and wraparound services.",
-      "category": "update",
-      "date": "2026-06-09",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/news/hud-no-26-038",
+      "id": "n-20260610-child-nutrition-milk-rule",
+      "title": "USDA final rule expands whole and reduced-fat milk options in child nutrition programs",
+      "summary": "USDA issued a final rule effective June 8, 2026 allowing child nutrition program operators to offer whole and reduced-fat milk to participants age 2 and older in programs including NSLP, SBP, CACFP, and the Special Milk Program. USDA says comments on the final rule must be received on or before June 8, 2026, and the rule also clarifies updated milk options by age group.",
+      "category": "policy-change",
+      "date": "2026-06-10",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/cn/fr-050826",
       "programs": [
-        "housing"
+        "wic"
       ]
     },
     {
-      "id": "n-20260609-irs-scholarship-tax-credit",
-      "title": "IRS: 27 states opt into new Federal Scholarship Tax Credit program, offering up to a $1,700 credit",
-      "summary": "The IRS said 27 states elected to participate in the Federal Scholarship Tax Credit (FSTC) program (IR-2026-76, June 8, 2026). The program lets eligible taxpayers claim a federal tax credit of up to $1,700 for qualified contributions to Scholarship Granting Organizations that fund K-12 education scholarships.",
-      "category": "new-program",
-      "date": "2026-06-09",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/more-than-half-the-us-states-signed-up-to-participate-in-the-federal-scholarship-tax-credit-program-enacted-under-the-one-big-beautiful-bill",
+      "id": "n-20260610-tribal-hud-vash-renewal",
+      "title": "HUD sets Tribal HUD-VASH renewal requirements; renewal packages due June 5",
+      "summary": "HUD’s PIH Notice 2026-14 sets renewal requirements for Tribal HUD-VASH recipients, with renewal packages due electronically by 11:59:59 p.m. ET on June 5, 2026. The notice says renewal funding includes $10 million provided in the FY 2026 Consolidated Appropriations Act, and the renewal period of performance is October 1, 2026 through September 30, 2027.",
+      "category": "deadline",
+      "date": "2026-06-10",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-14.pdf",
+      "programs": [
+        "section8"
+      ]
+    },
+    {
+      "id": "n-20260610-irs-free-file-oct15",
+      "title": "IRS: Free File remains available through Oct. 15 for 2025 tax returns",
+      "summary": "The IRS reminded taxpayers that they can still file a 2025 federal return at no cost using IRS Free File. The IRS says taxpayers with adjusted gross income of $89,000 or less can use guided Free File software, and IRS Free File remains available through Oct. 15.",
+      "category": "deadline",
+      "date": "2026-06-10",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/its-not-too-late-use-irs-free-file-today",
       "programs": [
         "eitc",
         "ctc"
       ]
     },
     {
-      "id": "n-20260609-irs-child-care-credit-2026",
-      "title": "IRS updates employer child care credit for tax year 2026: up to $500k ($600k for small businesses)",
-      "summary": "The IRS says for amounts paid after Dec. 31, 2025, the employer-provided child care credit equals 40% of qualified child care expenditures (50% for eligible small businesses), plus 10% of qualified resource and referral expenditures. The credit is capped at $500,000 per year ($600,000 for eligible small businesses), and the IRS notes the small-business gross receipts test is generally $32,000,000 for tax years beginning in 2026.",
-      "category": "policy-change",
-      "date": "2026-06-09",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-provided-child-care-credit-tax-year-2026-and-later",
+      "id": "n-20260610-trump-accounts-start-date",
+      "title": "IRS: ‘Trump Accounts’ cannot be funded before July 4, 2026",
+      "summary": "In its summary of the One, Big, Beautiful Bill Act, the IRS says ‘Trump Accounts’ cannot be funded before July 4, 2026. The IRS also says the federal government will make a one-time $1,000 contribution for each eligible child’s account and that annual contributions are authorized up to $5,000 per year.",
+      "category": "update",
+      "date": "2026-06-10",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
       "programs": [
-        "ctc",
-        "eitc"
+        "ctc"
       ]
     }
   ]
