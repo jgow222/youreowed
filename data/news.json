@@ -1,88 +1,89 @@
 {
-  "lastUpdated": "2026-06-10T11:16:02Z",
+  "lastUpdated": "2026-06-11T11:07:36Z",
   "items": [
     {
-      "id": "n-20260610-medicaid-work-requirements",
-      "title": "CMS issues interim final rule requiring Medicaid work requirements for many adults",
-      "summary": "CMS released an interim final rule that requires certain Medicaid applicants and enrollees ages 19–64 to meet a community engagement requirement of 80 hours per month through work, education, work programs, or community service. CMS says the requirement must be implemented no later than January 1, 2027, and lists exemptions including pregnancy/postpartum status, disability or medical frailty, American Indian/Alaska Native status, and certain caregivers.",
+      "id": "n-20260611-snap-stock",
+      "title": "USDA final rule updates SNAP retailer stocking standards; enforcement begins this fall",
+      "summary": "USDA finalized new SNAP retailer stocking standards that require authorized stores to carry 7 varieties in each of 4 staple food categories (up from 3) and to stock at least 1 perishable variety in 3 categories (up from 2). The rule is effective July 7, 2026, and retailers must comply no later than Nov. 4, 2026.",
       "category": "policy-change",
-      "date": "2026-06-10",
+      "date": "2026-06-11",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-050826",
+      "programs": [
+        "snap"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260611-medicaid-noncitizen-match",
+      "title": "CMS guidance: limits on federal Medicaid/CHIP matching funds for certain noncitizens start Oct. 1, 2026",
+      "summary": "CMS issued a State Health Official letter to prepare states for a statutory change that limits claiming federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens/nationals or who fall into certain noncitizen categories identified in law. CMS says states must implement the change beginning Oct. 1, 2026, while noting exceptions such as federal matching for emergency medical conditions and states’ options to cover lawfully residing children and pregnant people.",
+      "category": "policy-change",
+      "date": "2026-06-11",
       "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-launches-nationwide-framework-implement-medicaid-work-requirements",
+      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260610-snap-ptig-deadline",
-      "title": "USDA opens FY 2026 SNAP technology grants; applications due June 29",
-      "summary": "USDA’s Food and Nutrition Service says up to $5 million is available for FY 2026 SNAP Process and Technology Improvement Grants, with an anticipated 6 to 12 awards. Applications are due to Grants.gov by 11:59 p.m. EDT on June 29, 2026, and prior PTIG lead recipients from FY 2024 or FY 2025 are not eligible to apply as the lead entity.",
-      "category": "deadline",
-      "date": "2026-06-10",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/grant/snap/ptig-2026",
+      "id": "n-20260611-ssi-2026-fpa",
+      "title": "SSA posts 2026 SSI federal payment amounts after 2.8% COLA",
+      "summary": "SSA lists the 2026 maximum federal SSI payment as $994 per month for an eligible individual and $1,491 per month for an eligible individual with an eligible spouse, with $498 per month for an essential person. SSA notes the 2.8% cost-of-living increase is effective January 2026.",
+      "category": "update",
+      "date": "2026-06-11",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
       "programs": [
-        "snap"
+        "ssi"
       ]
     },
     {
-      "id": "n-20260610-snap-info-collection-comments",
-      "title": "USDA seeks public comments on SNAP data collections; deadline June 22",
-      "summary": "USDA Food and Nutrition Service is taking public comments on a SNAP information collection that includes items on major changes in program design and interstate data matching to prevent multiple issuances. The agency says comments received by June 22, 2026 will be considered.",
-      "category": "deadline",
-      "date": "2026-06-10",
+      "id": "n-20260611-wic-cvvb-fy26",
+      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash-value benefit at $26 (kids) and $48–$52 (adults)",
+      "summary": "USDA FNS issued WIC Policy Memorandum #2026-2 setting FY 2026 monthly cash-value benefit amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully or mostly breastfeeding participants. The memo says FY 2026 runs from Oct. 1, 2025, through Sept. 30, 2026, and notes the $48 amount is a $1 increase over FY 2025.",
+      "category": "update",
+      "date": "2026-06-11",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052126",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260610-child-nutrition-milk-rule",
-      "title": "USDA final rule expands whole and reduced-fat milk options in child nutrition programs",
-      "summary": "USDA issued a final rule effective June 8, 2026 allowing child nutrition program operators to offer whole and reduced-fat milk to participants age 2 and older in programs including NSLP, SBP, CACFP, and the Special Milk Program. USDA says comments on the final rule must be received on or before June 8, 2026, and the rule also clarifies updated milk options by age group.",
-      "category": "policy-change",
-      "date": "2026-06-10",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/cn/fr-050826",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
       "programs": [
         "wic"
       ]
     },
     {
-      "id": "n-20260610-tribal-hud-vash-renewal",
-      "title": "HUD sets Tribal HUD-VASH renewal requirements; renewal packages due June 5",
-      "summary": "HUD’s PIH Notice 2026-14 sets renewal requirements for Tribal HUD-VASH recipients, with renewal packages due electronically by 11:59:59 p.m. ET on June 5, 2026. The notice says renewal funding includes $10 million provided in the FY 2026 Consolidated Appropriations Act, and the renewal period of performance is October 1, 2026 through September 30, 2027.",
+      "id": "n-20260611-fafsa-deadline-2526",
+      "title": "FAFSA: federal deadline for 2025–26 aid year is June 30, 2026",
+      "summary": "USA.gov reminds students the federal FAFSA deadline for the 2025–26 school year is June 30, 2026 (and June 30, 2027 for 2026–27). The page also notes that many states have their own FAFSA deadlines, so applicants should check state requirements.",
       "category": "deadline",
-      "date": "2026-06-10",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-14.pdf",
+      "date": "2026-06-11",
+      "source": "USA.gov",
+      "sourceUrl": "https://www.usa.gov/fafsa",
       "programs": [
-        "section8"
+        "pell",
+        "student-aid"
       ]
     },
     {
-      "id": "n-20260610-irs-free-file-oct15",
-      "title": "IRS: Free File remains available through Oct. 15 for 2025 tax returns",
-      "summary": "The IRS reminded taxpayers that they can still file a 2025 federal return at no cost using IRS Free File. The IRS says taxpayers with adjusted gross income of $89,000 or less can use guided Free File software, and IRS Free File remains available through Oct. 15.",
-      "category": "deadline",
-      "date": "2026-06-10",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/its-not-too-late-use-irs-free-file-today",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260610-trump-accounts-start-date",
-      "title": "IRS: ‘Trump Accounts’ cannot be funded before July 4, 2026",
-      "summary": "In its summary of the One, Big, Beautiful Bill Act, the IRS says ‘Trump Accounts’ cannot be funded before July 4, 2026. The IRS also says the federal government will make a one-time $1,000 contribution for each eligible child’s account and that annual contributions are authorized up to $5,000 per year.",
+      "id": "n-20260611-eitc-2025-params",
+      "title": "IRS updates EITC tables for tax year 2025: maximum credit up to $8,046",
+      "summary": "IRS EITC tables show the maximum Earned Income Tax Credit for tax year 2025 ranges from $649 (no qualifying children) to $8,046 (3+ qualifying children). The same tables list a $11,950 investment income limit for tax year 2025 and maximum AGI of $61,555 for filers with 3+ qualifying children (or $68,675 for married filing jointly).",
       "category": "update",
-      "date": "2026-06-10",
+      "date": "2026-06-11",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+      "programs": [
+        "eitc"
+      ]
+    },
+    {
+      "id": "n-20260611-ctc-amounts",
+      "title": "IRS: Child Tax Credit up to $2,200 per qualifying child; refundable portion up to $1,700",
+      "summary": "The IRS says the Child Tax Credit is up to $2,200 per qualifying child and the refundable Additional Child Tax Credit is up to $1,700 per qualifying child (subject to eligibility rules). The IRS also notes the refundable credit generally requires at least $2,500 in earned income and lists phaseout thresholds starting at $200,000 in income ($400,000 for joint filers).",
+      "category": "update",
+      "date": "2026-06-11",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/child-tax-credit",
       "programs": [
         "ctc"
       ]
