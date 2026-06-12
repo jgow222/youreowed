@@ -1,91 +1,93 @@
 {
-  "lastUpdated": "2026-06-11T11:07:36Z",
+  "lastUpdated": "2026-06-12T11:06:50Z",
   "items": [
     {
-      "id": "n-20260611-snap-stock",
-      "title": "USDA final rule updates SNAP retailer stocking standards; enforcement begins this fall",
-      "summary": "USDA finalized new SNAP retailer stocking standards that require authorized stores to carry 7 varieties in each of 4 staple food categories (up from 3) and to stock at least 1 perishable variety in 3 categories (up from 2). The rule is effective July 7, 2026, and retailers must comply no later than Nov. 4, 2026.",
+      "id": "n-20260612-snap-waivers",
+      "title": "USDA posts state-by-state SNAP food-restriction waivers with 2026–2028 start dates",
+      "summary": "USDA’s SNAP Food Restriction Waivers list shows multiple states restricting purchases of items like soda and candy, with target implementation dates ranging from 01/01/26 (e.g., Indiana, Iowa, Nebraska, Utah, West Virginia) through 02/01/28 (Nevada). The USDA table includes additional mid-2026 start dates such as Arkansas (07/01/26) and Tennessee (07/31/26), and notes several waivers cover sugar-sweetened beverages and/or candy.",
       "category": "policy-change",
-      "date": "2026-06-11",
+      "date": "2026-06-12",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-050826",
+      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
       "programs": [
         "snap"
       ],
       "isBreaking": true
     },
     {
-      "id": "n-20260611-medicaid-noncitizen-match",
-      "title": "CMS guidance: limits on federal Medicaid/CHIP matching funds for certain noncitizens start Oct. 1, 2026",
-      "summary": "CMS issued a State Health Official letter to prepare states for a statutory change that limits claiming federal matching funds for Medicaid and CHIP for individuals who are not U.S. citizens/nationals or who fall into certain noncitizen categories identified in law. CMS says states must implement the change beginning Oct. 1, 2026, while noting exceptions such as federal matching for emergency medical conditions and states’ options to cover lawfully residing children and pregnant people.",
+      "id": "n-20260612-medicaid-1115-budget-neutrality",
+      "title": "CMS: New Chief Actuary certification requirement for Medicaid 1115 waivers starts Jan. 1, 2027",
+      "summary": "In a June 11 State Medicaid Director letter, CMS said that beginning 01/01/27 it cannot approve a Medicaid section 1115 demonstration (or an amendment/renewal) unless the CMS Chief Actuary certifies the project will not increase federal Medicaid spending. CMS said the requirement applies to all states, D.C., and territories, and the letter notes this new statutory requirement does not apply to CHIP section 1115 demonstrations.",
       "category": "policy-change",
-      "date": "2026-06-11",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
+      "date": "2026-06-12",
+      "source": "Medicaid.gov (CMS)",
+      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26003.pdf",
       "programs": [
         "medicaid",
         "chip"
-      ]
+      ],
+      "isBreaking": true
     },
     {
-      "id": "n-20260611-ssi-2026-fpa",
-      "title": "SSA posts 2026 SSI federal payment amounts after 2.8% COLA",
-      "summary": "SSA lists the 2026 maximum federal SSI payment as $994 per month for an eligible individual and $1,491 per month for an eligible individual with an eligible spouse, with $498 per month for an essential person. SSA notes the 2.8% cost-of-living increase is effective January 2026.",
-      "category": "update",
-      "date": "2026-06-11",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
+      "id": "n-20260612-hud-youth-homelessness-nofos",
+      "title": "HUD opens $193 million youth-homelessness funding opportunity; applications due Aug. 10, 2026",
+      "summary": "HUD announced $193 million for youth homelessness work, including a Youth Homelessness NOFO that HUD says competes $144 million for 26–50 new Youth Homelessness Demonstration Program (YHDP) communities and $49 million for Youth Homelessness System Improvement (YHSI) grants. HUD says applications are due 08/10/26.",
+      "category": "new-program",
+      "date": "2026-06-12",
+      "source": "U.S. Department of Housing and Urban Development (HUD)",
+      "sourceUrl": "https://www.hud.gov/hud-partners/community-youth",
       "programs": [
-        "ssi"
+        "housing"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260612-ssa-trustees-report",
+      "title": "SSA 2026 Trustees Report: Combined trust funds projected to pay full benefits until 2034",
+      "summary": "SSA said the combined OASI and DI trust funds are projected to have dedicated revenue to pay all scheduled benefits and associated administrative costs until 2034, after which 83% of benefits would be payable. SSA also reported the combined trust fund reserves declined by $160 billion in 2025 to $2.56 trillion, and that Social Security had 70 million beneficiaries at the end of 2025.",
+      "category": "update",
+      "date": "2026-06-12",
+      "source": "Social Security Administration (SSA)",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html",
+      "programs": [
+        "ssi",
+        "ssdi"
       ]
     },
     {
-      "id": "n-20260611-wic-cvvb-fy26",
-      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash-value benefit at $26 (kids) and $48–$52 (adults)",
-      "summary": "USDA FNS issued WIC Policy Memorandum #2026-2 setting FY 2026 monthly cash-value benefit amounts at $26 for children, $48 for pregnant/postpartum participants, and $52 for fully or mostly breastfeeding participants. The memo says FY 2026 runs from Oct. 1, 2025, through Sept. 30, 2026, and notes the $48 amount is a $1 increase over FY 2025.",
+      "id": "n-20260612-irs-childcare-credit",
+      "title": "IRS details bigger employer child care credit for tax year 2026 and later (up to $500k/$600k)",
+      "summary": "The IRS says the amended Section 45F employer-provided child care credit cap rises from $150,000 to $500,000 (or $600,000 for eligible small businesses), for amounts paid or incurred after 12/31/25. The IRS also says the credit rate on qualified child care expenditures increases from 25% to 40% (50% for eligible small businesses), and notes a 2026 eligible-small-business gross-receipts test threshold of $32,000,000 (average annual gross receipts over the prior five years).",
+      "category": "policy-change",
+      "date": "2026-06-12",
+      "source": "Internal Revenue Service (IRS)",
+      "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-provided-child-care-credit-tax-year-2026-and-later",
+      "programs": [
+        "tax-credits"
+      ]
+    },
+    {
+      "id": "n-20260612-wic-income-guidelines",
+      "title": "USDA posts 2026–2027 WIC income guidelines (185% of poverty; family of 4: $61,050/year)",
+      "summary": "USDA’s WIC FAQ states that for the period 07/01/26 to 06/30/27, income eligibility is at or below 185% of the U.S. poverty income guidelines, and lists example thresholds such as $61,050 per year for a family of 4 (or $5,088 per month). The same table lists $29,526 per year for a family of 1 and adds $10,508 per additional family member.",
       "category": "update",
-      "date": "2026-06-11",
+      "date": "2026-06-12",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
+      "sourceUrl": "https://www.fna.usda.gov/wic/faqs",
       "programs": [
         "wic"
       ]
     },
     {
-      "id": "n-20260611-fafsa-deadline-2526",
-      "title": "FAFSA: federal deadline for 2025–26 aid year is June 30, 2026",
-      "summary": "USA.gov reminds students the federal FAFSA deadline for the 2025–26 school year is June 30, 2026 (and June 30, 2027 for 2026–27). The page also notes that many states have their own FAFSA deadlines, so applicants should check state requirements.",
+      "id": "n-20260612-fafsa-deadline",
+      "title": "FAFSA 2026–27: Federal deadline is June 30, 2027 (form available starting Oct. 1, 2025)",
+      "summary": "The 2026–27 FAFSA PDF says you can submit the FAFSA for federal aid as early as possible but no earlier than 10/01/25. It also states the Department of Education must receive the application no later than 06/30/27.",
       "category": "deadline",
-      "date": "2026-06-11",
-      "source": "USA.gov",
-      "sourceUrl": "https://www.usa.gov/fafsa",
+      "date": "2026-06-12",
+      "source": "Federal Student Aid (U.S. Department of Education)",
+      "sourceUrl": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
       "programs": [
-        "pell",
-        "student-aid"
-      ]
-    },
-    {
-      "id": "n-20260611-eitc-2025-params",
-      "title": "IRS updates EITC tables for tax year 2025: maximum credit up to $8,046",
-      "summary": "IRS EITC tables show the maximum Earned Income Tax Credit for tax year 2025 ranges from $649 (no qualifying children) to $8,046 (3+ qualifying children). The same tables list a $11,950 investment income limit for tax year 2025 and maximum AGI of $61,555 for filers with 3+ qualifying children (or $68,675 for married filing jointly).",
-      "category": "update",
-      "date": "2026-06-11",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
-      "programs": [
-        "eitc"
-      ]
-    },
-    {
-      "id": "n-20260611-ctc-amounts",
-      "title": "IRS: Child Tax Credit up to $2,200 per qualifying child; refundable portion up to $1,700",
-      "summary": "The IRS says the Child Tax Credit is up to $2,200 per qualifying child and the refundable Additional Child Tax Credit is up to $1,700 per qualifying child (subject to eligibility rules). The IRS also notes the refundable credit generally requires at least $2,500 in earned income and lists phaseout thresholds starting at $200,000 in income ($400,000 for joint filers).",
-      "category": "update",
-      "date": "2026-06-11",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/child-tax-credit",
-      "programs": [
-        "ctc"
+        "pell"
       ]
     }
   ]
