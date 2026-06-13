@@ -1,91 +1,87 @@
 {
-  "lastUpdated": "2026-06-12T11:06:50Z",
+  "lastUpdated": "2026-06-13T11:05:39Z",
   "items": [
     {
-      "id": "n-20260612-snap-waivers",
-      "title": "USDA posts state-by-state SNAP food-restriction waivers with 2026–2028 start dates",
-      "summary": "USDA’s SNAP Food Restriction Waivers list shows multiple states restricting purchases of items like soda and candy, with target implementation dates ranging from 01/01/26 (e.g., Indiana, Iowa, Nebraska, Utah, West Virginia) through 02/01/28 (Nevada). The USDA table includes additional mid-2026 start dates such as Arkansas (07/01/26) and Tennessee (07/31/26), and notes several waivers cover sugar-sweetened beverages and/or candy.",
+      "id": "n-20260613-medicaid-workreq",
+      "title": "CMS issues interim final rule creating a nationwide Medicaid work-requirement framework",
+      "summary": "CMS announced an interim final rule requiring certain Medicaid adults ages 19–64 to meet an 80-hours-per-month work requirement (including work, education, work programs, or community service) as a condition of eligibility. CMS says applicable states must implement no later than 2027-01-01, with exemptions including pregnancy, disability/medical frailty, certain caregivers, and American Indian/Alaska Native beneficiaries.",
       "category": "policy-change",
-      "date": "2026-06-12",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
-      "programs": [
-        "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260612-medicaid-1115-budget-neutrality",
-      "title": "CMS: New Chief Actuary certification requirement for Medicaid 1115 waivers starts Jan. 1, 2027",
-      "summary": "In a June 11 State Medicaid Director letter, CMS said that beginning 01/01/27 it cannot approve a Medicaid section 1115 demonstration (or an amendment/renewal) unless the CMS Chief Actuary certifies the project will not increase federal Medicaid spending. CMS said the requirement applies to all states, D.C., and territories, and the letter notes this new statutory requirement does not apply to CHIP section 1115 demonstrations.",
-      "category": "policy-change",
-      "date": "2026-06-12",
-      "source": "Medicaid.gov (CMS)",
-      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26003.pdf",
+      "date": "2026-06-13",
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-launches-nationwide-framework-implement-medicaid-work-requirements",
       "programs": [
         "medicaid",
         "chip"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260612-hud-youth-homelessness-nofos",
-      "title": "HUD opens $193 million youth-homelessness funding opportunity; applications due Aug. 10, 2026",
-      "summary": "HUD announced $193 million for youth homelessness work, including a Youth Homelessness NOFO that HUD says competes $144 million for 26–50 new Youth Homelessness Demonstration Program (YHDP) communities and $49 million for Youth Homelessness System Improvement (YHSI) grants. HUD says applications are due 08/10/26.",
-      "category": "new-program",
-      "date": "2026-06-12",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/hud-partners/community-youth",
-      "programs": [
-        "housing"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260612-ssa-trustees-report",
-      "title": "SSA 2026 Trustees Report: Combined trust funds projected to pay full benefits until 2034",
-      "summary": "SSA said the combined OASI and DI trust funds are projected to have dedicated revenue to pay all scheduled benefits and associated administrative costs until 2034, after which 83% of benefits would be payable. SSA also reported the combined trust fund reserves declined by $160 billion in 2025 to $2.56 trillion, and that Social Security had 70 million beneficiaries at the end of 2025.",
-      "category": "update",
-      "date": "2026-06-12",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html",
-      "programs": [
-        "ssi",
-        "ssdi"
       ]
     },
     {
-      "id": "n-20260612-irs-childcare-credit",
-      "title": "IRS details bigger employer child care credit for tax year 2026 and later (up to $500k/$600k)",
-      "summary": "The IRS says the amended Section 45F employer-provided child care credit cap rises from $150,000 to $500,000 (or $600,000 for eligible small businesses), for amounts paid or incurred after 12/31/25. The IRS also says the credit rate on qualified child care expenditures increases from 25% to 40% (50% for eligible small businesses), and notes a 2026 eligible-small-business gross-receipts test threshold of $32,000,000 (average annual gross receipts over the prior five years).",
+      "id": "n-20260613-snap-ptig-deadline",
+      "title": "USDA SNAP technology-improvement grants (FY2026) accept applications through June 29",
+      "summary": "USDA’s SNAP Process and Technology Improvement Grants (PTIG) program plans to award up to $5 million in FY 2026 funding for projects that modernize SNAP customer service, improve eligibility operations, or coordinate eligibility with other programs. USDA lists the Grants.gov close date as 2026-06-29, and the agency notes funded projects run through a three-year period ending 2029-09-30.",
+      "category": "deadline",
+      "date": "2026-06-13",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/ptig",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260613-wic-cvb-increase",
+      "title": "USDA finalizes larger WIC fruit-and-vegetable benefit amounts in WIC food package updates",
+      "summary": "USDA’s WIC food package updates set new base monthly cash-value benefit (CVB) amounts of $24 for children, $43 for pregnant/postpartum participants, and $47 for breastfeeding participants (with annual inflation adjustments). USDA also notes that at the time of rule implementation, inflation-indexed amounts will continue at $26 (children), $47 (pregnant/postpartum), and $52 (breastfeeding) levels.",
       "category": "policy-change",
-      "date": "2026-06-12",
-      "source": "Internal Revenue Service (IRS)",
+      "date": "2026-06-13",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fna.usda.gov/wic/food-packages",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260613-wic-income-eligibility-2026-2027",
+      "title": "USDA publishes WIC income eligibility guidelines for July 2026–June 2027",
+      "summary": "USDA published WIC income eligibility guidelines effective 2026-07-01 through 2027-06-30. For a 1-person household in the 48 contiguous states/D.C., the published amounts include $15,960 annually ($1,330 monthly) at 100% of the federal poverty guideline and $29,526 annually ($2,461 monthly) at 185% (reduced-price meals).",
+      "category": "update",
+      "date": "2026-06-13",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fna.usda.gov/wic/fr-042926",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260613-hud-arf-guidance",
+      "title": "HUD issues updated guidance on eligibility timelines for the public-housing Asset Repositioning Fee",
+      "summary": "HUD Notice PIH 2026-16 updates guidance for when public housing agencies can receive the Asset Repositioning Fee (ARF) tied to demolition/disposition and relocation activities. HUD describes ARF eligibility beginning on the first day of the next quarter after 6 months following the ARF trigger date, with ARF lasting 24 months for disposition and 36 months for demolition; the notice also references a 90-day minimum relocation notice standard.",
+      "category": "update",
+      "date": "2026-06-13",
+      "source": "U.S. Department of Housing and Urban Development",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-16.pdf",
+      "programs": [
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260613-irs-employer-childcare-credit",
+      "title": "IRS posts updated details for the employer-provided child care credit starting in tax year 2026",
+      "summary": "The IRS says that for amounts paid or incurred after 2025-12-31, the employer-provided child care credit equals 40% of qualified child care expenditures (50% for eligible small businesses) plus 10% of qualified child care resource and referral expenditures. The IRS directs filers to claim the credit using Form 8882.",
+      "category": "update",
+      "date": "2026-06-13",
+      "source": "Internal Revenue Service",
       "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-provided-child-care-credit-tax-year-2026-and-later",
       "programs": [
         "tax-credits"
       ]
     },
     {
-      "id": "n-20260612-wic-income-guidelines",
-      "title": "USDA posts 2026–2027 WIC income guidelines (185% of poverty; family of 4: $61,050/year)",
-      "summary": "USDA’s WIC FAQ states that for the period 07/01/26 to 06/30/27, income eligibility is at or below 185% of the U.S. poverty income guidelines, and lists example thresholds such as $61,050 per year for a family of 4 (or $5,088 per month). The same table lists $29,526 per year for a family of 1 and adds $10,508 per additional family member.",
+      "id": "n-20260613-student-aid-loan-rates-2026-2027",
+      "title": "Education Department posts 2026–27 federal student loan interest-rate period dates (effective July 1)",
+      "summary": "Federal Student Aid posted information for the July 1, 2026 through June 30, 2027 period covering interest rate calculations for FFEL Program Stafford/PLUS/SLS and consolidation loans. Borrowers should verify which loan program they have and confirm their rate is tied to the 2026-07-01 to 2027-06-30 period when reviewing award letters.",
       "category": "update",
-      "date": "2026-06-12",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/wic/faqs",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20260612-fafsa-deadline",
-      "title": "FAFSA 2026–27: Federal deadline is June 30, 2027 (form available starting Oct. 1, 2025)",
-      "summary": "The 2026–27 FAFSA PDF says you can submit the FAFSA for federal aid as early as possible but no earlier than 10/01/25. It also states the Department of Education must receive the application no later than 06/30/27.",
-      "category": "deadline",
-      "date": "2026-06-12",
-      "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
+      "date": "2026-06-13",
+      "source": "Federal Student Aid (FSA Partners Knowledge Center)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/ffel-variable-interest-rates/2026-06-02/federal-family-education-loan-program-federal-stafford-federal-plus-federal-sls-and-federal-consolidation-loan-interest-rate-calculations-period-july-1-2026-june-30-2027",
       "programs": [
         "pell"
       ]
