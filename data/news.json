@@ -1,49 +1,61 @@
 {
-  "lastUpdated": "2026-06-13T11:05:39Z",
+  "lastUpdated": "2026-06-14T11:10:13Z",
   "items": [
     {
-      "id": "n-20260613-medicaid-workreq",
-      "title": "CMS issues interim final rule creating a nationwide Medicaid work-requirement framework",
-      "summary": "CMS announced an interim final rule requiring certain Medicaid adults ages 19–64 to meet an 80-hours-per-month work requirement (including work, education, work programs, or community service) as a condition of eligibility. CMS says applicable states must implement no later than 2027-01-01, with exemptions including pregnancy, disability/medical frailty, certain caregivers, and American Indian/Alaska Native beneficiaries.",
-      "category": "policy-change",
-      "date": "2026-06-13",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-launches-nationwide-framework-implement-medicaid-work-requirements",
+      "id": "n-20260614-ssa-trustees",
+      "title": "Social Security Trustees: combined trust funds projected depleted in 2034; 83% of benefits payable",
+      "summary": "Social Security’s Trustees project the combined OASI and DI trust funds will be depleted in 2034; at that point, incoming revenue would cover about 83% of scheduled benefits. The OASI (retirement) trust fund alone is projected to be depleted in the fourth quarter of 2032, when about 78% of benefits would be payable without legislative changes.",
+      "category": "update",
+      "date": "2026-06-14",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html",
       "programs": [
-        "medicaid",
-        "chip"
+        "ssdi",
+        "ssi"
       ]
     },
     {
-      "id": "n-20260613-snap-ptig-deadline",
-      "title": "USDA SNAP technology-improvement grants (FY2026) accept applications through June 29",
-      "summary": "USDA’s SNAP Process and Technology Improvement Grants (PTIG) program plans to award up to $5 million in FY 2026 funding for projects that modernize SNAP customer service, improve eligibility operations, or coordinate eligibility with other programs. USDA lists the Grants.gov close date as 2026-06-29, and the agency notes funded projects run through a three-year period ending 2029-09-30.",
-      "category": "deadline",
-      "date": "2026-06-13",
+      "id": "n-20260614-liheap-reporting",
+      "title": "HHS proposes shorter LIHEAP household report, removing expired CARES/ARP fields",
+      "summary": "HHS’s Office of Community Services proposed revising LIHEAP’s annual household reporting to reduce burden and remove data elements tied to expired supplemental LIHEAP funding under the CARES Act and American Rescue Plan. The notice estimates total annual burden hours of 1,850,930, with the long format reduced from 67 to 41 hours per response and the short format reduced from 10 to 6 hours per response.",
+      "category": "policy-change",
+      "date": "2026-06-14",
+      "source": "Federal Register (via GovInfo)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-06-12/pdf/2026-11828.pdf",
+      "programs": [
+        "liheap"
+      ]
+    },
+    {
+      "id": "n-20260614-snap-abawd-guidance-pending",
+      "title": "USDA notes SNAP work-requirement changes from 2025 law; guidance on ABAWD exceptions/waivers pending",
+      "summary": "USDA says it is preparing guidance on how the One Big Beautiful Bill Act of 2025 changes SNAP work requirements for able-bodied adults without dependents (ABAWDs), including changes to exception criteria and waiver criteria. Under current federal rules, ABAWDs ages 18–54 generally face a 3-month time limit in a 3-year period unless they meet an 80-hours-per-month work/work program requirement or qualify for an exemption.",
+      "category": "update",
+      "date": "2026-06-14",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/ptig",
+      "sourceUrl": "https://www.fna.usda.gov/snap/work-requirements",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260613-wic-cvb-increase",
-      "title": "USDA finalizes larger WIC fruit-and-vegetable benefit amounts in WIC food package updates",
-      "summary": "USDA’s WIC food package updates set new base monthly cash-value benefit (CVB) amounts of $24 for children, $43 for pregnant/postpartum participants, and $47 for breastfeeding participants (with annual inflation adjustments). USDA also notes that at the time of rule implementation, inflation-indexed amounts will continue at $26 (children), $47 (pregnant/postpartum), and $52 (breastfeeding) levels.",
-      "category": "policy-change",
-      "date": "2026-06-13",
+      "id": "n-20260614-wic-fy26-cvvb",
+      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash benefit at $26–$52 per month",
+      "summary": "USDA’s WIC policy memo says the FY 2026 inflation adjustment for the Cash-Value Voucher/Benefit (CVV/B) is 11.8% over the FY 2022 baseline. The FY 2026 monthly CVV/B amounts are $48 for pregnant/postpartum participants, $52 for fully or partially breastfeeding participants, and $26 for children.",
+      "category": "update",
+      "date": "2026-06-14",
       "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/wic/food-packages",
+      "sourceUrl": "https://www.fna.usda.gov/wic/agency/cvvb-fy26",
       "programs": [
         "wic"
       ]
     },
     {
-      "id": "n-20260613-wic-income-eligibility-2026-2027",
+      "id": "n-20260614-wic-ieg-2026-2027",
       "title": "USDA publishes WIC income eligibility guidelines for July 2026–June 2027",
-      "summary": "USDA published WIC income eligibility guidelines effective 2026-07-01 through 2027-06-30. For a 1-person household in the 48 contiguous states/D.C., the published amounts include $15,960 annually ($1,330 monthly) at 100% of the federal poverty guideline and $29,526 annually ($2,461 monthly) at 185% (reduced-price meals).",
+      "summary": "USDA published updated WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. For 48 contiguous states and D.C., the maximum income guideline for a 1-person household is $29,526 per year ($2,461 per month), and for a 4-person household it is $61,050 per year ($5,088 per month).",
       "category": "update",
-      "date": "2026-06-13",
+      "date": "2026-06-14",
       "source": "USDA Food and Nutrition Service",
       "sourceUrl": "https://www.fna.usda.gov/wic/fr-042926",
       "programs": [
@@ -51,39 +63,40 @@
       ]
     },
     {
-      "id": "n-20260613-hud-arf-guidance",
-      "title": "HUD issues updated guidance on eligibility timelines for the public-housing Asset Repositioning Fee",
-      "summary": "HUD Notice PIH 2026-16 updates guidance for when public housing agencies can receive the Asset Repositioning Fee (ARF) tied to demolition/disposition and relocation activities. HUD describes ARF eligibility beginning on the first day of the next quarter after 6 months following the ARF trigger date, with ARF lasting 24 months for disposition and 36 months for demolition; the notice also references a 90-day minimum relocation notice standard.",
+      "id": "n-20260614-school-meals-ieg",
+      "title": "USDA updates income eligibility guidelines for free/reduced school meals and Summer EBT for 2026–27",
+      "summary": "USDA announced the annual Income Eligibility Guidelines used to determine eligibility for free and reduced-price school meals, free milk, and Summer EBT benefits for the period July 1, 2026 through June 30, 2027. USDA says the free and reduced-price thresholds are calculated using the 2026 federal poverty guidelines multiplied by 1.30 (free) and 1.85 (reduced), then rounded up.",
       "category": "update",
-      "date": "2026-06-13",
-      "source": "U.S. Department of Housing and Urban Development",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-16.pdf",
+      "date": "2026-06-14",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fna.usda.gov/schoolmeals/fr-040926",
       "programs": [
-        "housing"
+        "snap"
       ]
     },
     {
-      "id": "n-20260613-irs-employer-childcare-credit",
-      "title": "IRS posts updated details for the employer-provided child care credit starting in tax year 2026",
-      "summary": "The IRS says that for amounts paid or incurred after 2025-12-31, the employer-provided child care credit equals 40% of qualified child care expenditures (50% for eligible small businesses) plus 10% of qualified child care resource and referral expenditures. The IRS directs filers to claim the credit using Form 8882.",
-      "category": "update",
-      "date": "2026-06-13",
+      "id": "n-20260614-cms-access-model",
+      "title": "CMS: ACCESS Model enrollment starts July 5 for eligible Original Medicare beneficiaries, with no beneficiary cost-sharing",
+      "summary": "CMS’s MLN Connects newsletter says that starting July 5, eligible Original Medicare beneficiaries can sign up with participating ACCESS Model providers for technology-supported disease management services at low or no additional cost (examples include lifestyle coaching, remote monitoring and medication management). CMS also notes the model includes a co-management payment with no beneficiary cost-sharing, and an ACCESS Directory is expected to launch in July 2026.",
+      "category": "new-program",
+      "date": "2026-06-14",
+      "source": "Centers for Medicare & Medicaid Services",
+      "sourceUrl": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-june-11-2026",
+      "programs": [
+        "medicaid"
+      ]
+    },
+    {
+      "id": "n-20260614-irs-obbb-adoption-credit",
+      "title": "IRS highlights new partial refundability for adoption credit (up to $5,000) after 2024",
+      "summary": "The IRS says that beginning in tax years after Dec. 31, 2024, up to $5,000 (indexed for inflation) of the adoption credit may be refundable, though carried-forward credit amounts can’t be used to calculate the refundable portion. The IRS page also notes that, for tax years beginning after Dec. 31, 2025, limitations on repayment of excess advance premium tax credit are removed.",
+      "category": "policy-change",
+      "date": "2026-06-14",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-provided-child-care-credit-tax-year-2026-and-later",
+      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
       "programs": [
-        "tax-credits"
-      ]
-    },
-    {
-      "id": "n-20260613-student-aid-loan-rates-2026-2027",
-      "title": "Education Department posts 2026–27 federal student loan interest-rate period dates (effective July 1)",
-      "summary": "Federal Student Aid posted information for the July 1, 2026 through June 30, 2027 period covering interest rate calculations for FFEL Program Stafford/PLUS/SLS and consolidation loans. Borrowers should verify which loan program they have and confirm their rate is tied to the 2026-07-01 to 2027-06-30 period when reviewing award letters.",
-      "category": "update",
-      "date": "2026-06-13",
-      "source": "Federal Student Aid (FSA Partners Knowledge Center)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/ffel-variable-interest-rates/2026-06-02/federal-family-education-loan-program-federal-stafford-federal-plus-federal-sls-and-federal-consolidation-loan-interest-rate-calculations-period-july-1-2026-june-30-2027",
-      "programs": [
-        "pell"
+        "eitc",
+        "ctc"
       ]
     }
   ]
