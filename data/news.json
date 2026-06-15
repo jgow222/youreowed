@@ -1,12 +1,74 @@
 {
-  "lastUpdated": "2026-06-14T11:10:13Z",
+  "lastUpdated": "2026-06-15T11:29:13Z",
   "items": [
     {
-      "id": "n-20260614-ssa-trustees",
-      "title": "Social Security Trustees: combined trust funds projected depleted in 2034; 83% of benefits payable",
-      "summary": "Social Security’s Trustees project the combined OASI and DI trust funds will be depleted in 2034; at that point, incoming revenue would cover about 83% of scheduled benefits. The OASI (retirement) trust fund alone is projected to be depleted in the fourth quarter of 2032, when about 78% of benefits would be payable without legislative changes.",
+      "id": "n-20260615-medicaid-work-rule",
+      "title": "CMS issues interim final rule creating an 80-hours-per-month Medicaid community engagement requirement",
+      "summary": "CMS issued an interim final rule on June 1, 2026 requiring certain adults to document 80 hours per month of qualifying activities (work, job programs, community service, or school at least half time) to enroll in or keep Medicaid coverage. The rule allows meeting the requirement via income of at least 80 times the federal minimum wage (listed as $580 per month in 2026) and generally requires states to implement by January 1, 2027.",
+      "category": "policy-change",
+      "date": "2026-06-15",
+      "source": "CMS",
+      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260615-medicaid-work-rule-npr",
+      "title": "NPR: Medicaid work requirements take effect Jan. 1 with an 80-hours-per-month standard",
+      "summary": "NPR reports the new federal Medicaid work requirements take effect January 1 and require adults to show at least 80 hours per month of work, school, or volunteering to stay eligible. NPR also cites a Congressional Budget Office estimate that the policy could leave more than 5 million additional people without health insurance.",
       "category": "update",
-      "date": "2026-06-14",
+      "date": "2026-06-15",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/06/03/nx-s1-5844220/trump-administration-shares-new-work-requirements-for-medicaid-recipients",
+      "programs": [
+        "medicaid"
+      ]
+    },
+    {
+      "id": "n-20260615-hud-arf-guidance",
+      "title": "HUD updates guidance on the Asset Repositioning Fee timeline for public housing demolition/disposition",
+      "summary": "HUD Notice PIH 2026-16 (issued May 29, 2026) updates guidance for when a public housing agency can receive the Asset Repositioning Fee (ARF) as part of operating subsidy during demolition or disposition. ARF eligibility begins the first day of the next quarter after the trigger date plus 6 months, and can last 24 months for disposition or 36 months for demolition.",
+      "category": "update",
+      "date": "2026-06-15",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-16.pdf",
+      "programs": [
+        "section8",
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260615-snap-incentive-waiver-comments",
+      "title": "USDA seeks comments on SNAP retailer waiver requests for incentive projects (deadline July 27, 2026)",
+      "summary": "USDA/FNS published a Paperwork Reduction Act notice renewing an information collection for SNAP-authorized retailers to request a waiver to offer incentives that encourage healthier purchases. Written comments must be received on or before July 27, 2026, and the collection affects retailers and partner organizations (not SNAP households directly).",
+      "category": "deadline",
+      "date": "2026-06-15",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052726b",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260615-irs-scholarship-tax-credit",
+      "title": "IRS: 27 states elect to participate in the new Federal Scholarship Tax Credit (up to $1,700)",
+      "summary": "The IRS announced that 27 states have elected to participate in the Federal Scholarship Tax Credit program, allowing eligible taxpayers to claim a federal tax credit of up to $1,700 for qualified contributions to Scholarship Granting Organizations (SGOs). To claim the credit, taxpayers must contribute to an SGO located in a participating state that has submitted a list of qualified SGOs.",
+      "category": "new-program",
+      "date": "2026-06-15",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/more-than-half-the-us-states-signed-up-to-participate-in-the-federal-scholarship-tax-credit-program-enacted-under-the-one-big-beautiful-bill",
+      "programs": [
+        "tax-credits"
+      ]
+    },
+    {
+      "id": "n-20260615-ssa-trustees-report",
+      "title": "SSA: 2026 Trustees Report projects combined OASI and DI trust fund reserves can pay full benefits until 2034",
+      "summary": "The Social Security Board of Trustees’ 2026 report projects the combined OASI and DI trust fund reserves can pay 100% of scheduled benefits and administrative costs until 2034. After that, dedicated income would be sufficient to pay about 83% of scheduled benefits.",
+      "category": "update",
+      "date": "2026-06-15",
       "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html",
       "programs": [
@@ -15,88 +77,18 @@
       ]
     },
     {
-      "id": "n-20260614-liheap-reporting",
-      "title": "HHS proposes shorter LIHEAP household report, removing expired CARES/ARP fields",
-      "summary": "HHS’s Office of Community Services proposed revising LIHEAP’s annual household reporting to reduce burden and remove data elements tied to expired supplemental LIHEAP funding under the CARES Act and American Rescue Plan. The notice estimates total annual burden hours of 1,850,930, with the long format reduced from 67 to 41 hours per response and the short format reduced from 10 to 6 hours per response.",
-      "category": "policy-change",
-      "date": "2026-06-14",
-      "source": "Federal Register (via GovInfo)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-06-12/pdf/2026-11828.pdf",
-      "programs": [
-        "liheap"
-      ]
-    },
-    {
-      "id": "n-20260614-snap-abawd-guidance-pending",
-      "title": "USDA notes SNAP work-requirement changes from 2025 law; guidance on ABAWD exceptions/waivers pending",
-      "summary": "USDA says it is preparing guidance on how the One Big Beautiful Bill Act of 2025 changes SNAP work requirements for able-bodied adults without dependents (ABAWDs), including changes to exception criteria and waiver criteria. Under current federal rules, ABAWDs ages 18–54 generally face a 3-month time limit in a 3-year period unless they meet an 80-hours-per-month work/work program requirement or qualify for an exemption.",
+      "id": "n-20260615-hhs-fpl-2026",
+      "title": "HHS publishes 2026 federal poverty level standards used for program eligibility",
+      "summary": "HHS has published the 2026 federal poverty level standards, which many programs use to set income eligibility and cost-sharing thresholds. The updated poverty guidelines can affect eligibility cutoffs for programs like Medicaid/CHIP and other assistance programs that reference the federal poverty level.",
       "category": "update",
-      "date": "2026-06-14",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/snap/work-requirements",
+      "date": "2026-06-15",
+      "source": "HHS",
+      "sourceUrl": "https://www.hhs.gov/guidance/document/2026-federal-poverty-level-standards",
       "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260614-wic-fy26-cvvb",
-      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash benefit at $26–$52 per month",
-      "summary": "USDA’s WIC policy memo says the FY 2026 inflation adjustment for the Cash-Value Voucher/Benefit (CVV/B) is 11.8% over the FY 2022 baseline. The FY 2026 monthly CVV/B amounts are $48 for pregnant/postpartum participants, $52 for fully or partially breastfeeding participants, and $26 for children.",
-      "category": "update",
-      "date": "2026-06-14",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
+        "medicaid",
+        "chip",
+        "snap",
         "wic"
-      ]
-    },
-    {
-      "id": "n-20260614-wic-ieg-2026-2027",
-      "title": "USDA publishes WIC income eligibility guidelines for July 2026–June 2027",
-      "summary": "USDA published updated WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. For 48 contiguous states and D.C., the maximum income guideline for a 1-person household is $29,526 per year ($2,461 per month), and for a 4-person household it is $61,050 per year ($5,088 per month).",
-      "category": "update",
-      "date": "2026-06-14",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/wic/fr-042926",
-      "programs": [
-        "wic"
-      ]
-    },
-    {
-      "id": "n-20260614-school-meals-ieg",
-      "title": "USDA updates income eligibility guidelines for free/reduced school meals and Summer EBT for 2026–27",
-      "summary": "USDA announced the annual Income Eligibility Guidelines used to determine eligibility for free and reduced-price school meals, free milk, and Summer EBT benefits for the period July 1, 2026 through June 30, 2027. USDA says the free and reduced-price thresholds are calculated using the 2026 federal poverty guidelines multiplied by 1.30 (free) and 1.85 (reduced), then rounded up.",
-      "category": "update",
-      "date": "2026-06-14",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/schoolmeals/fr-040926",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260614-cms-access-model",
-      "title": "CMS: ACCESS Model enrollment starts July 5 for eligible Original Medicare beneficiaries, with no beneficiary cost-sharing",
-      "summary": "CMS’s MLN Connects newsletter says that starting July 5, eligible Original Medicare beneficiaries can sign up with participating ACCESS Model providers for technology-supported disease management services at low or no additional cost (examples include lifestyle coaching, remote monitoring and medication management). CMS also notes the model includes a co-management payment with no beneficiary cost-sharing, and an ACCESS Directory is expected to launch in July 2026.",
-      "category": "new-program",
-      "date": "2026-06-14",
-      "source": "Centers for Medicare & Medicaid Services",
-      "sourceUrl": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-june-11-2026",
-      "programs": [
-        "medicaid"
-      ]
-    },
-    {
-      "id": "n-20260614-irs-obbb-adoption-credit",
-      "title": "IRS highlights new partial refundability for adoption credit (up to $5,000) after 2024",
-      "summary": "The IRS says that beginning in tax years after Dec. 31, 2024, up to $5,000 (indexed for inflation) of the adoption credit may be refundable, though carried-forward credit amounts can’t be used to calculate the refundable portion. The IRS page also notes that, for tax years beginning after Dec. 31, 2025, limitations on repayment of excess advance premium tax credit are removed.",
-      "category": "policy-change",
-      "date": "2026-06-14",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
-      "programs": [
-        "eitc",
-        "ctc"
       ]
     }
   ]
