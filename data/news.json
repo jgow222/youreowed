@@ -1,75 +1,50 @@
 {
-  "lastUpdated": "2026-06-15T11:29:13Z",
+  "lastUpdated": "2026-06-16T11:03:40Z",
   "items": [
     {
-      "id": "n-20260615-medicaid-work-rule",
-      "title": "CMS issues interim final rule creating an 80-hours-per-month Medicaid community engagement requirement",
-      "summary": "CMS issued an interim final rule on June 1, 2026 requiring certain adults to document 80 hours per month of qualifying activities (work, job programs, community service, or school at least half time) to enroll in or keep Medicaid coverage. The rule allows meeting the requirement via income of at least 80 times the federal minimum wage (listed as $580 per month in 2026) and generally requires states to implement by January 1, 2027.",
+      "id": "n-20260616-medicaid-1115-budget-neutrality",
+      "title": "CMS previews tighter federal review for Medicaid 1115 waivers starting in 2027",
+      "summary": "CMS issued new guidance saying it will require the CMS Chief Actuary to certify that Section 1115 demonstrations are budget neutral for any new waivers, renewals, or amendments approved on or after Jan. 1, 2027. CMS says it expects to start applying the approach described in the guidance while it works on a rule, giving states early notice for planning around 2027 renewals.",
       "category": "policy-change",
-      "date": "2026-06-15",
+      "date": "2026-06-16",
       "source": "CMS",
-      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
-    },
-    {
-      "id": "n-20260615-medicaid-work-rule-npr",
-      "title": "NPR: Medicaid work requirements take effect Jan. 1 with an 80-hours-per-month standard",
-      "summary": "NPR reports the new federal Medicaid work requirements take effect January 1 and require adults to show at least 80 hours per month of work, school, or volunteering to stay eligible. NPR also cites a Congressional Budget Office estimate that the policy could leave more than 5 million additional people without health insurance.",
-      "category": "update",
-      "date": "2026-06-15",
-      "source": "NPR",
-      "sourceUrl": "https://www.npr.org/2026/06/03/nx-s1-5844220/trump-administration-shares-new-work-requirements-for-medicaid-recipients",
+      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-takes-bold-new-approach-stewarding-medicaid-demonstration-project-spending",
       "programs": [
         "medicaid"
       ]
     },
     {
-      "id": "n-20260615-hud-arf-guidance",
-      "title": "HUD updates guidance on the Asset Repositioning Fee timeline for public housing demolition/disposition",
-      "summary": "HUD Notice PIH 2026-16 (issued May 29, 2026) updates guidance for when a public housing agency can receive the Asset Repositioning Fee (ARF) as part of operating subsidy during demolition or disposition. ARF eligibility begins the first day of the next quarter after the trigger date plus 6 months, and can last 24 months for disposition or 36 months for demolition.",
-      "category": "update",
-      "date": "2026-06-15",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-16.pdf",
-      "programs": [
-        "section8",
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260615-snap-incentive-waiver-comments",
-      "title": "USDA seeks comments on SNAP retailer waiver requests for incentive projects (deadline July 27, 2026)",
-      "summary": "USDA/FNS published a Paperwork Reduction Act notice renewing an information collection for SNAP-authorized retailers to request a waiver to offer incentives that encourage healthier purchases. Written comments must be received on or before July 27, 2026, and the collection affects retailers and partner organizations (not SNAP households directly).",
+      "id": "n-20260616-medicaid-work-rule-comment",
+      "title": "Medicaid work requirements rule: public comments still open",
+      "summary": "CMS released an interim final rule on Medicaid work requirements with a public comment period; CMS summarizes the rule as covering a community engagement requirement for certain individuals. If you may be affected, watch for your state’s implementation timeline and submit comments before the federal deadline listed in the CMS fact sheet.",
       "category": "deadline",
-      "date": "2026-06-15",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/fr-052726b",
+      "date": "2026-06-16",
+      "source": "CMS",
+      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
       "programs": [
-        "snap"
+        "medicaid"
       ]
     },
     {
-      "id": "n-20260615-irs-scholarship-tax-credit",
-      "title": "IRS: 27 states elect to participate in the new Federal Scholarship Tax Credit (up to $1,700)",
-      "summary": "The IRS announced that 27 states have elected to participate in the Federal Scholarship Tax Credit program, allowing eligible taxpayers to claim a federal tax credit of up to $1,700 for qualified contributions to Scholarship Granting Organizations (SGOs). To claim the credit, taxpayers must contribute to an SGO located in a participating state that has submitted a list of qualified SGOs.",
-      "category": "new-program",
-      "date": "2026-06-15",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/more-than-half-the-us-states-signed-up-to-participate-in-the-federal-scholarship-tax-credit-program-enacted-under-the-one-big-beautiful-bill",
-      "programs": [
-        "tax-credits"
-      ]
-    },
-    {
-      "id": "n-20260615-ssa-trustees-report",
-      "title": "SSA: 2026 Trustees Report projects combined OASI and DI trust fund reserves can pay full benefits until 2034",
-      "summary": "The Social Security Board of Trustees’ 2026 report projects the combined OASI and DI trust fund reserves can pay 100% of scheduled benefits and administrative costs until 2034. After that, dedicated income would be sufficient to pay about 83% of scheduled benefits.",
+      "id": "n-20260616-ssi-paper-checks",
+      "title": "Social Security says it will finish moving benefit payments away from paper checks",
+      "summary": "SSA says federal law and Executive Order 14247 require federal benefits to be paid electronically as of Sept. 30, 2025, and that Social Security plans to complete the transition for all beneficiaries this year. SSA cites Treasury data that printing and mailing a check costs about $3.07 per check and says paper checks are 16 times more likely to be lost, stolen, altered, or returned undeliverable than electronic payments.",
       "category": "update",
-      "date": "2026-06-15",
-      "source": "Social Security Administration",
+      "date": "2026-06-16",
+      "source": "SSA",
+      "sourceUrl": "https://www.ssa.gov/blog/en/posts/2026-06-02.html",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260616-ssa-trustees-2026",
+      "title": "Social Security Trustees: combined trust funds projected to pay full benefits until 2034",
+      "summary": "SSA’s Trustees Report press release says the combined OASI and DI trust funds are projected to pay all scheduled benefits and administrative costs until 2034; at that point, 83% of scheduled benefits would be payable if Congress does not act. The release also says combined reserves declined by $160 billion in 2025 to $2.56 trillion, and the OASI (retirement) trust fund is projected to be depleted in Q4 2032 with 78% of benefits payable then.",
+      "category": "update",
+      "date": "2026-06-16",
+      "source": "SSA",
       "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html",
       "programs": [
         "ssdi",
@@ -77,17 +52,75 @@
       ]
     },
     {
-      "id": "n-20260615-hhs-fpl-2026",
-      "title": "HHS publishes 2026 federal poverty level standards used for program eligibility",
-      "summary": "HHS has published the 2026 federal poverty level standards, which many programs use to set income eligibility and cost-sharing thresholds. The updated poverty guidelines can affect eligibility cutoffs for programs like Medicaid/CHIP and other assistance programs that reference the federal poverty level.",
-      "category": "update",
-      "date": "2026-06-15",
-      "source": "HHS",
-      "sourceUrl": "https://www.hhs.gov/guidance/document/2026-federal-poverty-level-standards",
+      "id": "n-20260616-hud-coc-nofunding",
+      "title": "HUD announces $4.04 billion homelessness assistance funding round (Continuum of Care)",
+      "summary": "HUD announced a new Notice of Funding Opportunity for $4.04 billion for the Continuum of Care (CoC) homelessness assistance program. Local continuums typically apply through HUD’s CoC process, so communities should watch for the NOFO’s local timelines and required submissions.",
+      "category": "new-program",
+      "date": "2026-06-16",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/news/hud-no-26-038",
       "programs": [
-        "medicaid",
-        "chip",
-        "snap",
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260616-hud-eiv-save-deadlines",
+      "title": "HUD sets new EIV-SAVE attestation deadlines for housing providers",
+      "summary": "HUD set deadlines for housing providers to review the EIV-SAVE Tenant Matching Report and attest documentation is in order: PBRA owners/agents must verify discrepancies by June 20, 2026, and Public Housing / Housing Choice Voucher agencies must complete the attestation by Aug. 3, 2026. NAHRO says the HCV/Public Housing attestation is completed through DocuSign and requires entries like the PHA code and submitter information.",
+      "category": "deadline",
+      "date": "2026-06-16",
+      "source": "NAHRO (re: HUD requirement)",
+      "sourceUrl": "https://www.nahro.org/news/hud-sets-deadlines-for-eiv-save-attestation-requirement/",
+      "programs": [
+        "housing"
+      ]
+    },
+    {
+      "id": "n-20260616-irs-fstc-states",
+      "title": "IRS: 27 states opted into the new Federal Scholarship Tax Credit program",
+      "summary": "The IRS says 27 states have elected to participate in the Federal Scholarship Tax Credit (FSTC) program, enacted under the One, Big, Beautiful Bill. The program allows eligible taxpayers to claim a federal tax credit of up to $1,700 for qualified contributions to Scholarship Granting Organizations (SGOs) that provide K-12 scholarships, but taxpayers must donate to an SGO in a participating state.",
+      "category": "new-program",
+      "date": "2026-06-16",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/newsroom/more-than-half-the-us-states-signed-up-to-participate-in-the-federal-scholarship-tax-credit-program-enacted-under-the-one-big-beautiful-bill",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260616-irs-ptc-ctc-ssn-rules",
+      "title": "IRS Publication 505 highlights 2026 rule changes affecting premium tax credits and the Child Tax Credit",
+      "summary": "IRS Publication 505 says that beginning in 2026, households with income over 400% of the federal poverty line are no longer eligible for the premium tax credit, and there is no longer a cap on how much excess advance credit must be repaid. The same publication says claiming the Child Tax Credit (CTC) or Additional CTC now requires a valid Social Security number (valid for employment and issued before the return due date, including extensions), with special rules for joint filers.",
+      "category": "policy-change",
+      "date": "2026-06-16",
+      "source": "IRS",
+      "sourceUrl": "https://www.irs.gov/publications/p505",
+      "programs": [
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260616-workforce-pell-final-rule",
+      "title": "Education Department finalizes Workforce Pell for short-term job training programs",
+      "summary": "The Education Department says Workforce Pell will allow Pell Grants for high-quality short-term programs starting July 1, 2026. A Department fact sheet says eligible workforce programs must be 8–14 weeks of instructional time and 150–599 clock hours, with early implementation allowed July 1, 2026 and the rule effective July 20, 2026.",
+      "category": "new-program",
+      "date": "2026-06-16",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-final-rule-create-new-workforce-pell-grant-program",
+      "programs": [
+        "pell"
+      ]
+    },
+    {
+      "id": "n-20260616-wic-misc-final-rule",
+      "title": "USDA issues final rule updating WIC program operations and reporting",
+      "summary": "USDA finalized a rule making a package of updates to WIC regulations, including streamlined federal reporting requirements for state agencies and clarified confidentiality rules to support coordination with public organizations and private physicians. USDA also says the rule incorporates legislation that gives state agencies the option to extend certification periods for breastfeeding women.",
+      "category": "policy-change",
+      "date": "2026-06-16",
+      "source": "USDA FNS",
+      "sourceUrl": "https://www.fns.usda.gov/wic/fr-092706",
+      "programs": [
         "wic"
       ]
     }
