@@ -1,127 +1,105 @@
 {
-  "lastUpdated": "2026-06-16T11:03:40Z",
+  "lastUpdated": "2026-06-17T11:21:05Z",
   "items": [
     {
-      "id": "n-20260616-medicaid-1115-budget-neutrality",
-      "title": "CMS previews tighter federal review for Medicaid 1115 waivers starting in 2027",
-      "summary": "CMS issued new guidance saying it will require the CMS Chief Actuary to certify that Section 1115 demonstrations are budget neutral for any new waivers, renewals, or amendments approved on or after Jan. 1, 2027. CMS says it expects to start applying the approach described in the guidance while it works on a rule, giving states early notice for planning around 2027 renewals.",
+      "id": "n-20260617-medicaid-work-requirement",
+      "title": "AP: New Medicaid work requirement sets 80-hours-per-month standard for many expansion adults",
+      "summary": "The Associated Press reports that adults ages 19–64 in Medicaid expansion coverage will have to show they work or do community service at least 80 hours per month, or attend school at least half time. The story says some people can self-attest in 2027 (and once in 2028), but at renewal in 2028 they’ll need to provide proof to keep the exemption if claiming medical frailty.",
       "category": "policy-change",
-      "date": "2026-06-16",
-      "source": "CMS",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-takes-bold-new-approach-stewarding-medicaid-demonstration-project-spending",
+      "date": "2026-06-17",
+      "source": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/medicaid-eligibility-medical-frailty-trump-oz-cms-7104d2f6a0cd44c58978ba20968f04c7",
+      "programs": [
+        "medicaid",
+        "chip"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260617-medicaid-sdp-caps",
+      "title": "KFF: CMS proposal would cap certain Medicaid supplemental payments at 100%/110% of Medicare rates",
+      "summary": "KFF says a CMS proposed rule released in May 2026 would implement new limits on Medicaid state directed payments (SDPs), with caps generally at 100% of Medicare rates in ACA expansion states and 110% in non-expansion states. KFF notes CMS estimates the changes would reduce federal Medicaid spending by $510 billion between 2026 and 2035.",
+      "category": "policy-change",
+      "date": "2026-06-17",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/forthcoming-policy-changes-to-medicaid-state-directed-payments/",
       "programs": [
         "medicaid"
       ]
     },
     {
-      "id": "n-20260616-medicaid-work-rule-comment",
-      "title": "Medicaid work requirements rule: public comments still open",
-      "summary": "CMS released an interim final rule on Medicaid work requirements with a public comment period; CMS summarizes the rule as covering a community engagement requirement for certain individuals. If you may be affected, watch for your state’s implementation timeline and submit comments before the federal deadline listed in the CMS fact sheet.",
-      "category": "deadline",
-      "date": "2026-06-16",
-      "source": "CMS",
-      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
-      "programs": [
-        "medicaid"
-      ]
-    },
-    {
-      "id": "n-20260616-ssi-paper-checks",
-      "title": "Social Security says it will finish moving benefit payments away from paper checks",
-      "summary": "SSA says federal law and Executive Order 14247 require federal benefits to be paid electronically as of Sept. 30, 2025, and that Social Security plans to complete the transition for all beneficiaries this year. SSA cites Treasury data that printing and mailing a check costs about $3.07 per check and says paper checks are 16 times more likely to be lost, stolen, altered, or returned undeliverable than electronic payments.",
+      "id": "n-20260617-snap-ptig-deadline",
+      "title": "USDA opens FY 2026 SNAP technology grants (PTIG) with up to $5M and 6–12 expected awards",
+      "summary": "USDA’s Food and Nutrition Service says the SNAP Process and Technology Improvement Grants (PTIG) program will provide up to $5 million and expects to make between six and 12 awards in FY 2026. Eligible applicants include SNAP-administering state agencies and certain public or private nonprofit entities, but USDA says any lead entity that received a PTIG award in FY 2024 or FY 2025 is not eligible to apply in FY 2026.",
       "category": "update",
-      "date": "2026-06-16",
-      "source": "SSA",
-      "sourceUrl": "https://www.ssa.gov/blog/en/posts/2026-06-02.html",
+      "date": "2026-06-17",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/grant/snap/ptig-2026",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260617-snap-database-privacy-notice",
+      "title": "USDA publishes Privacy Act system notice for USDA/FNS-15 National SNAP Information Database",
+      "summary": "USDA’s Food and Nutrition Service published a Privacy Act system-of-records notice for USDA/FNS-15, the National SNAP Information Database, describing how participant and transaction data may be used for eligibility validation and program integrity. The notice says the system will be hosted in a FedRAMP-certified FNS AWS cloud environment with data processed and stored in the continental U.S., and it lists routine uses including disclosures to agencies for audit/oversight and to Treasury’s Do Not Pay system.",
+      "category": "update",
+      "date": "2026-06-17",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fna.usda.gov/snap/fr-062325",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260617-ssa-payment-schedule",
+      "title": "SSA posts 2026 schedule: Social Security paid by birth-date Wednesdays; SSI typically paid on the 1st",
+      "summary": "SSA’s 2026–2027 payment schedule says Social Security benefits are paid on the 2nd Wednesday for birthdays on the 1st–10th, the 3rd Wednesday for birthdays on the 11th–20th, and the 4th Wednesday for birthdays on the 21st–31st. SSA also notes that if you received Social Security before May 1997 or if you receive both Social Security and SSI, then Social Security is paid on the 3rd of the month and SSI on the 1st.",
+      "category": "update",
+      "date": "2026-06-17",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
         "ssi",
         "ssdi"
       ]
     },
     {
-      "id": "n-20260616-ssa-trustees-2026",
-      "title": "Social Security Trustees: combined trust funds projected to pay full benefits until 2034",
-      "summary": "SSA’s Trustees Report press release says the combined OASI and DI trust funds are projected to pay all scheduled benefits and administrative costs until 2034; at that point, 83% of scheduled benefits would be payable if Congress does not act. The release also says combined reserves declined by $160 billion in 2025 to $2.56 trillion, and the OASI (retirement) trust fund is projected to be depleted in Q4 2032 with 78% of benefits payable then.",
-      "category": "update",
-      "date": "2026-06-16",
-      "source": "SSA",
-      "sourceUrl": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html",
-      "programs": [
-        "ssdi",
-        "ssi"
-      ]
-    },
-    {
-      "id": "n-20260616-hud-coc-nofunding",
-      "title": "HUD announces $4.04 billion homelessness assistance funding round (Continuum of Care)",
-      "summary": "HUD announced a new Notice of Funding Opportunity for $4.04 billion for the Continuum of Care (CoC) homelessness assistance program. Local continuums typically apply through HUD’s CoC process, so communities should watch for the NOFO’s local timelines and required submissions.",
-      "category": "new-program",
-      "date": "2026-06-16",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/news/hud-no-26-038",
-      "programs": [
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260616-hud-eiv-save-deadlines",
-      "title": "HUD sets new EIV-SAVE attestation deadlines for housing providers",
-      "summary": "HUD set deadlines for housing providers to review the EIV-SAVE Tenant Matching Report and attest documentation is in order: PBRA owners/agents must verify discrepancies by June 20, 2026, and Public Housing / Housing Choice Voucher agencies must complete the attestation by Aug. 3, 2026. NAHRO says the HCV/Public Housing attestation is completed through DocuSign and requires entries like the PHA code and submitter information.",
+      "id": "n-20260617-irs-free-file-extensions",
+      "title": "IRS reminder: extension filers still have free options, including IRS Free File for AGI $89,000 or less",
+      "summary": "The IRS says people who requested an extension for their 2025 federal return have until Oct. 15 to file, and it highlights free filing options that are still available. IRS Free File is available to taxpayers with adjusted gross income of $89,000 or less in 2025, and the IRS also points filers to Free File Fillable Forms and MilTax (which includes up to five free state returns for eligible military users).",
       "category": "deadline",
-      "date": "2026-06-16",
-      "source": "NAHRO (re: HUD requirement)",
-      "sourceUrl": "https://www.nahro.org/news/hud-sets-deadlines-for-eiv-save-attestation-requirement/",
-      "programs": [
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260616-irs-fstc-states",
-      "title": "IRS: 27 states opted into the new Federal Scholarship Tax Credit program",
-      "summary": "The IRS says 27 states have elected to participate in the Federal Scholarship Tax Credit (FSTC) program, enacted under the One, Big, Beautiful Bill. The program allows eligible taxpayers to claim a federal tax credit of up to $1,700 for qualified contributions to Scholarship Granting Organizations (SGOs) that provide K-12 scholarships, but taxpayers must donate to an SGO in a participating state.",
-      "category": "new-program",
-      "date": "2026-06-16",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/newsroom/more-than-half-the-us-states-signed-up-to-participate-in-the-federal-scholarship-tax-credit-program-enacted-under-the-one-big-beautiful-bill",
+      "date": "2026-06-17",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/dont-delay-filing-any-longer-several-free-filing-options-still-available",
       "programs": [
         "eitc",
         "ctc"
       ]
     },
     {
-      "id": "n-20260616-irs-ptc-ctc-ssn-rules",
-      "title": "IRS Publication 505 highlights 2026 rule changes affecting premium tax credits and the Child Tax Credit",
-      "summary": "IRS Publication 505 says that beginning in 2026, households with income over 400% of the federal poverty line are no longer eligible for the premium tax credit, and there is no longer a cap on how much excess advance credit must be repaid. The same publication says claiming the Child Tax Credit (CTC) or Additional CTC now requires a valid Social Security number (valid for employment and issued before the return due date, including extensions), with special rules for joint filers.",
-      "category": "policy-change",
-      "date": "2026-06-16",
-      "source": "IRS",
-      "sourceUrl": "https://www.irs.gov/publications/p505",
+      "id": "n-20260617-irs-disaster-tax-relief-az",
+      "title": "IRS disaster tax relief: San Carlos Apache Tribe deadlines postponed to Sept. 28, 2026",
+      "summary": "The IRS announced tax relief for individuals and businesses in the San Carlos Apache Tribe affected by severe storms and flooding (Oct. 10–13, 2025), postponing many filing and payment deadlines to Sept. 28, 2026. The relief applies to returns and payments with original or extended due dates on or after Oct. 10, 2025 and before Sept. 28, 2026, including certain quarterly payroll and excise tax returns that would normally be due Oct. 31, 2025; Jan. 31, 2026; April 30, 2026; and July 31, 2026.",
+      "category": "deadline",
+      "date": "2026-06-17",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-severe-storms-and-flooding-in-the-san-carlos-apache-tribe-various-deadlines-postponed-to-sept-28-2026",
       "programs": [
+        "eitc",
         "ctc"
       ]
     },
     {
-      "id": "n-20260616-workforce-pell-final-rule",
-      "title": "Education Department finalizes Workforce Pell for short-term job training programs",
-      "summary": "The Education Department says Workforce Pell will allow Pell Grants for high-quality short-term programs starting July 1, 2026. A Department fact sheet says eligible workforce programs must be 8–14 weeks of instructional time and 150–599 clock hours, with early implementation allowed July 1, 2026 and the rule effective July 20, 2026.",
-      "category": "new-program",
-      "date": "2026-06-16",
+      "id": "n-20260617-student-loans-rap",
+      "title": "Education Department: Repayment Assistance Plan (RAP) and Tiered Standard repayment available July 1, 2026",
+      "summary": "The U.S. Department of Education says borrowers can access two new repayment options starting July 1, 2026: the Repayment Assistance Plan (RAP) and a Tiered Standard plan with fixed terms of 10, 15, 20, or 25 years. ED also says certain borrowers in repayment plans being phased out (with loans made before July 1, 2026) will have until July 1, 2028 to choose RAP, Tiered Standard, or Income-Based Repayment.",
+      "category": "policy-change",
+      "date": "2026-06-17",
       "source": "U.S. Department of Education",
-      "sourceUrl": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-final-rule-create-new-workforce-pell-grant-program",
+      "sourceUrl": "https://www.ed.gov/about/news/press-release/fact-sheet-trump-administration-simplifying-student-loan-repayment",
       "programs": [
         "pell"
-      ]
-    },
-    {
-      "id": "n-20260616-wic-misc-final-rule",
-      "title": "USDA issues final rule updating WIC program operations and reporting",
-      "summary": "USDA finalized a rule making a package of updates to WIC regulations, including streamlined federal reporting requirements for state agencies and clarified confidentiality rules to support coordination with public organizations and private physicians. USDA also says the rule incorporates legislation that gives state agencies the option to extend certification periods for breastfeeding women.",
-      "category": "policy-change",
-      "date": "2026-06-16",
-      "source": "USDA FNS",
-      "sourceUrl": "https://www.fns.usda.gov/wic/fr-092706",
-      "programs": [
-        "wic"
       ]
     }
   ]
