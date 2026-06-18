@@ -1,105 +1,107 @@
 {
-  "lastUpdated": "2026-06-17T11:21:05Z",
+  "lastUpdated": "2026-06-18T11:09:35Z",
   "items": [
     {
-      "id": "n-20260617-medicaid-work-requirement",
-      "title": "AP: New Medicaid work requirement sets 80-hours-per-month standard for many expansion adults",
-      "summary": "The Associated Press reports that adults ages 19–64 in Medicaid expansion coverage will have to show they work or do community service at least 80 hours per month, or attend school at least half time. The story says some people can self-attest in 2027 (and once in 2028), but at renewal in 2028 they’ll need to provide proof to keep the exemption if claiming medical frailty.",
+      "id": "n-20260618-snap-privacy-sorn",
+      "title": "USDA updates privacy notice for National SNAP Information Database",
+      "summary": "USDA published a modified Privacy Act System of Records Notice (USDA/FNA-15) for the National SNAP Information Database on June 15, 2026. The revised notice says SNAP records may be disclosed only where the Food and Nutrition Act of 2008 permits, and it narrows routine uses (including law enforcement and fraud/waste/abuse) to better track the statute’s confidentiality provisions.",
       "category": "policy-change",
-      "date": "2026-06-17",
-      "source": "Associated Press",
-      "sourceUrl": "https://apnews.com/article/medicaid-eligibility-medical-frailty-trump-oz-cms-7104d2f6a0cd44c58978ba20968f04c7",
+      "date": "2026-06-18",
+      "source": "Data Foundation",
+      "sourceUrl": "https://datafoundation.org/news/blogs/866/866-USDA-Revises-Its-National-SNAP-Information-Database-Notice-",
       "programs": [
-        "medicaid",
-        "chip"
+        "snap"
       ],
       "isBreaking": true
     },
     {
-      "id": "n-20260617-medicaid-sdp-caps",
-      "title": "KFF: CMS proposal would cap certain Medicaid supplemental payments at 100%/110% of Medicare rates",
-      "summary": "KFF says a CMS proposed rule released in May 2026 would implement new limits on Medicaid state directed payments (SDPs), with caps generally at 100% of Medicare rates in ACA expansion states and 110% in non-expansion states. KFF notes CMS estimates the changes would reduce federal Medicaid spending by $510 billion between 2026 and 2035.",
+      "id": "n-20260618-wic-cvvb-fy2026",
+      "title": "WIC FY2026 fruit & vegetable benefit amounts: $26 kids, $48 pregnant/postpartum, $52 breastfeeding",
+      "summary": "USDA’s WIC Policy Memorandum #2026-2 sets FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts at $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/mostly breastfeeding participants. USDA notes the FY 2026 inflation adjustment is 11.8% over the FY 2022 baseline, resulting in a $1 increase for pregnant/postpartum participants and no change for children and breastfeeding participants versus FY 2025.",
+      "category": "update",
+      "date": "2026-06-18",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/wic/agency/cvvb-fy26",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260618-medicaid-sdp-proposed-rule",
+      "title": "CMS proposed rule would tighten Medicaid state directed payments; KFF highlights $510B federal spending estimate",
+      "summary": "KFF reports that CMS released a proposed rule in May 2026 to implement new limits on Medicaid state directed payments (SDPs), with CMS estimating the changes would reduce federal Medicaid spending by $510 billion over 2026–2034 (and elsewhere in the rule analysis over 2026–2035). The proposed rule would phase down grandfathered SDPs by reducing the total approved payment amount by 10% each year starting with the first rating period after January 1, 2028.",
       "category": "policy-change",
-      "date": "2026-06-17",
-      "source": "KFF",
+      "date": "2026-06-18",
+      "source": "KFF (Kaiser Family Foundation)",
       "sourceUrl": "https://www.kff.org/medicaid/forthcoming-policy-changes-to-medicaid-state-directed-payments/",
       "programs": [
-        "medicaid"
+        "medicaid",
+        "chip"
       ]
     },
     {
-      "id": "n-20260617-snap-ptig-deadline",
-      "title": "USDA opens FY 2026 SNAP technology grants (PTIG) with up to $5M and 6–12 expected awards",
-      "summary": "USDA’s Food and Nutrition Service says the SNAP Process and Technology Improvement Grants (PTIG) program will provide up to $5 million and expects to make between six and 12 awards in FY 2026. Eligible applicants include SNAP-administering state agencies and certain public or private nonprofit entities, but USDA says any lead entity that received a PTIG award in FY 2024 or FY 2025 is not eligible to apply in FY 2026.",
+      "id": "n-20260618-ssa-june-payments",
+      "title": "SSA June 2026 payment dates: SSI June 1; Social Security/SSDI on June 3, 10, 17, and 24",
+      "summary": "The Social Security Administration’s official 2026 payment schedule shows SSI payments scheduled for June 1, 2026. Social Security and SSDI payments are scheduled for June 3 (for people who received Social Security before May 1997 or who get both SSI and Social Security) and then on June 10, June 17, and June 24 based on birth date ranges.",
       "category": "update",
-      "date": "2026-06-17",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/grant/snap/ptig-2026",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260617-snap-database-privacy-notice",
-      "title": "USDA publishes Privacy Act system notice for USDA/FNS-15 National SNAP Information Database",
-      "summary": "USDA’s Food and Nutrition Service published a Privacy Act system-of-records notice for USDA/FNS-15, the National SNAP Information Database, describing how participant and transaction data may be used for eligibility validation and program integrity. The notice says the system will be hosted in a FedRAMP-certified FNS AWS cloud environment with data processed and stored in the continental U.S., and it lists routine uses including disclosures to agencies for audit/oversight and to Treasury’s Do Not Pay system.",
-      "category": "update",
-      "date": "2026-06-17",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/snap/fr-062325",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260617-ssa-payment-schedule",
-      "title": "SSA posts 2026 schedule: Social Security paid by birth-date Wednesdays; SSI typically paid on the 1st",
-      "summary": "SSA’s 2026–2027 payment schedule says Social Security benefits are paid on the 2nd Wednesday for birthdays on the 1st–10th, the 3rd Wednesday for birthdays on the 11th–20th, and the 4th Wednesday for birthdays on the 21st–31st. SSA also notes that if you received Social Security before May 1997 or if you receive both Social Security and SSI, then Social Security is paid on the 3rd of the month and SSI on the 1st.",
-      "category": "update",
-      "date": "2026-06-17",
+      "date": "2026-06-18",
       "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
         "ssi",
         "ssdi"
+      ],
+      "isBreaking": false
+    },
+    {
+      "id": "n-20260618-fafsa-realtime-results",
+      "title": "FAFSA now provides real-time FAFSA Submission Summary after you submit",
+      "summary": "Federal Student Aid announced the launch of real-time FAFSA results effective June 1, 2026. Students can see their FAFSA Submission Summary information immediately after submitting the FAFSA, instead of waiting for later processing.",
+      "category": "update",
+      "date": "2026-06-18",
+      "source": "Federal Student Aid",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-01/launch-real-time-fafsa-results",
+      "programs": [
+        "pell",
+        "fafsa"
       ]
     },
     {
-      "id": "n-20260617-irs-free-file-extensions",
-      "title": "IRS reminder: extension filers still have free options, including IRS Free File for AGI $89,000 or less",
-      "summary": "The IRS says people who requested an extension for their 2025 federal return have until Oct. 15 to file, and it highlights free filing options that are still available. IRS Free File is available to taxpayers with adjusted gross income of $89,000 or less in 2025, and the IRS also points filers to Free File Fillable Forms and MilTax (which includes up to five free state returns for eligible military users).",
+      "id": "n-20260618-fafsa-2025-26-deadline",
+      "title": "FAFSA deadline reminder: 2025–26 federal FAFSA closes June 30, 2026",
+      "summary": "The federal FAFSA submission deadline for the 2025–26 award year is June 30, 2026 (with the form closing after that). Students who still need aid eligibility for 2025–26 should submit before the deadline, since late submissions generally can’t receive federal aid for that award year.",
       "category": "deadline",
-      "date": "2026-06-17",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/dont-delay-filing-any-longer-several-free-filing-options-still-available",
+      "date": "2026-06-18",
+      "source": "Federal Student Aid",
+      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
       "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260617-irs-disaster-tax-relief-az",
-      "title": "IRS disaster tax relief: San Carlos Apache Tribe deadlines postponed to Sept. 28, 2026",
-      "summary": "The IRS announced tax relief for individuals and businesses in the San Carlos Apache Tribe affected by severe storms and flooding (Oct. 10–13, 2025), postponing many filing and payment deadlines to Sept. 28, 2026. The relief applies to returns and payments with original or extended due dates on or after Oct. 10, 2025 and before Sept. 28, 2026, including certain quarterly payroll and excise tax returns that would normally be due Oct. 31, 2025; Jan. 31, 2026; April 30, 2026; and July 31, 2026.",
-      "category": "deadline",
-      "date": "2026-06-17",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-severe-storms-and-flooding-in-the-san-carlos-apache-tribe-various-deadlines-postponed-to-sept-28-2026",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260617-student-loans-rap",
-      "title": "Education Department: Repayment Assistance Plan (RAP) and Tiered Standard repayment available July 1, 2026",
-      "summary": "The U.S. Department of Education says borrowers can access two new repayment options starting July 1, 2026: the Repayment Assistance Plan (RAP) and a Tiered Standard plan with fixed terms of 10, 15, 20, or 25 years. ED also says certain borrowers in repayment plans being phased out (with loans made before July 1, 2026) will have until July 1, 2028 to choose RAP, Tiered Standard, or Income-Based Repayment.",
-      "category": "policy-change",
-      "date": "2026-06-17",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "https://www.ed.gov/about/news/press-release/fact-sheet-trump-administration-simplifying-student-loan-repayment",
-      "programs": [
+        "fafsa",
         "pell"
+      ]
+    },
+    {
+      "id": "n-20260618-fafsa-2026-27-deadline",
+      "title": "FAFSA deadline: 2026–27 federal FAFSA due June 30, 2027",
+      "summary": "For the 2026–27 award year (covering July 1, 2026 through June 30, 2027), the federal FAFSA deadline is June 30, 2027. If you submit, you can generally make corrections after submission (within the correction window published by Federal Student Aid).",
+      "category": "deadline",
+      "date": "2026-06-18",
+      "source": "Federal Student Aid",
+      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
+      "programs": [
+        "fafsa",
+        "pell"
+      ]
+    },
+    {
+      "id": "n-20260618-wic-ebt-handbook-update",
+      "title": "USDA updates WIC EBT handbook section to streamline Advance Planning Document process",
+      "summary": "USDA says it updated the WIC EBT section of FNS Handbook 901 to streamline the EBT Advance Planning Document (APD) process. Highlights include allowing an updated Planning APD to start with a letter plus budget/budget narrative/schedule, making alternatives analysis and cost-benefit analysis optional, and consolidating some implementation APD requirements.",
+      "category": "policy-change",
+      "date": "2026-06-18",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fns.usda.gov/sso/wic-ebt-section-updated",
+      "programs": [
+        "wic"
       ]
     }
   ]
