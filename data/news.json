@@ -1,107 +1,116 @@
 {
-  "lastUpdated": "2026-06-18T11:09:35Z",
+  "lastUpdated": "2026-06-19T11:08:47Z",
   "items": [
     {
-      "id": "n-20260618-snap-privacy-sorn",
-      "title": "USDA updates privacy notice for National SNAP Information Database",
-      "summary": "USDA published a modified Privacy Act System of Records Notice (USDA/FNA-15) for the National SNAP Information Database on June 15, 2026. The revised notice says SNAP records may be disclosed only where the Food and Nutrition Act of 2008 permits, and it narrows routine uses (including law enforcement and fraud/waste/abuse) to better track the statute’s confidentiality provisions.",
-      "category": "policy-change",
-      "date": "2026-06-18",
-      "source": "Data Foundation",
-      "sourceUrl": "https://datafoundation.org/news/blogs/866/866-USDA-Revises-Its-National-SNAP-Information-Database-Notice-",
+      "id": "n-20260619-snap-fraud-grants",
+      "title": "USDA opens $5 million SNAP Fraud Framework Implementation Grants for states (apply by July 17, 2026)",
+      "summary": "USDA announced up to $5 million in FY26 SNAP Fraud Framework Implementation Grants to help states upgrade data analytics and fraud detection tools, strengthen oversight, and expand SNAP integrity training. The application window runs through July 17, 2026.",
+      "category": "deadline",
+      "date": "2026-06-19",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/newsroom/fna-0003.26",
       "programs": [
         "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260618-wic-cvvb-fy2026",
-      "title": "WIC FY2026 fruit & vegetable benefit amounts: $26 kids, $48 pregnant/postpartum, $52 breastfeeding",
-      "summary": "USDA’s WIC Policy Memorandum #2026-2 sets FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts at $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/mostly breastfeeding participants. USDA notes the FY 2026 inflation adjustment is 11.8% over the FY 2022 baseline, resulting in a $1 increase for pregnant/postpartum participants and no change for children and breastfeeding participants versus FY 2025.",
-      "category": "update",
-      "date": "2026-06-18",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/wic/agency/cvvb-fy26",
-      "programs": [
-        "wic"
       ]
     },
     {
-      "id": "n-20260618-medicaid-sdp-proposed-rule",
-      "title": "CMS proposed rule would tighten Medicaid state directed payments; KFF highlights $510B federal spending estimate",
-      "summary": "KFF reports that CMS released a proposed rule in May 2026 to implement new limits on Medicaid state directed payments (SDPs), with CMS estimating the changes would reduce federal Medicaid spending by $510 billion over 2026–2034 (and elsewhere in the rule analysis over 2026–2035). The proposed rule would phase down grandfathered SDPs by reducing the total approved payment amount by 10% each year starting with the first rating period after January 1, 2028.",
-      "category": "policy-change",
-      "date": "2026-06-18",
-      "source": "KFF (Kaiser Family Foundation)",
-      "sourceUrl": "https://www.kff.org/medicaid/forthcoming-policy-changes-to-medicaid-state-directed-payments/",
+      "id": "n-20260619-snap-privacy-database",
+      "title": "USDA updates Privacy Act notice for the National SNAP Information Database after 450+ public comments",
+      "summary": "USDA published a modified Privacy Act System of Records Notice for USDA/FNA-15 (the National SNAP Information Database), which consolidates state SNAP participant data for eligibility verification and program integrity. The updated notice ties disclosures to what the Food and Nutrition Act permits and reflects changes after more than 450 public comments.",
+      "category": "update",
+      "date": "2026-06-19",
+      "source": "Data Foundation (summarizing USDA notice)",
+      "sourceUrl": "https://datafoundation.org/news/blogs/866/866-USDA-Revises-Its-National-SNAP-Information-Database-Notice-",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260619-medicaid-community-engagement",
+      "title": "MACPAC: Medicaid community engagement requirements start Jan. 1, 2027; notices due by June 30, 2026",
+      "summary": "MACPAC reports that Medicaid community engagement requirements begin January 1, 2027, and states must notify affected people at least 3 months before the look-back period preceding Dec. 31, 2026 (which implies notices by June 30, 2026). MACPAC cites a Congressional Budget Office estimate of 5.3 million fewer people insured in 2034 and $326 billion in savings over the period.",
+      "category": "deadline",
+      "date": "2026-06-19",
+      "source": "Medicaid and CHIP Payment and Access Commission (MACPAC)",
+      "sourceUrl": "https://www.macpac.gov/wp-content/uploads/2026/06/MACPAC_June-2026-WEB-508.pdf",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260618-ssa-june-payments",
-      "title": "SSA June 2026 payment dates: SSI June 1; Social Security/SSDI on June 3, 10, 17, and 24",
-      "summary": "The Social Security Administration’s official 2026 payment schedule shows SSI payments scheduled for June 1, 2026. Social Security and SSDI payments are scheduled for June 3 (for people who received Social Security before May 1997 or who get both SSI and Social Security) and then on June 10, June 17, and June 24 based on birth date ranges.",
-      "category": "update",
-      "date": "2026-06-18",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ],
-      "isBreaking": false
-    },
-    {
-      "id": "n-20260618-fafsa-realtime-results",
-      "title": "FAFSA now provides real-time FAFSA Submission Summary after you submit",
-      "summary": "Federal Student Aid announced the launch of real-time FAFSA results effective June 1, 2026. Students can see their FAFSA Submission Summary information immediately after submitting the FAFSA, instead of waiting for later processing.",
-      "category": "update",
-      "date": "2026-06-18",
-      "source": "Federal Student Aid",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-01/launch-real-time-fafsa-results",
-      "programs": [
-        "pell",
-        "fafsa"
-      ]
-    },
-    {
-      "id": "n-20260618-fafsa-2025-26-deadline",
-      "title": "FAFSA deadline reminder: 2025–26 federal FAFSA closes June 30, 2026",
-      "summary": "The federal FAFSA submission deadline for the 2025–26 award year is June 30, 2026 (with the form closing after that). Students who still need aid eligibility for 2025–26 should submit before the deadline, since late submissions generally can’t receive federal aid for that award year.",
-      "category": "deadline",
-      "date": "2026-06-18",
-      "source": "Federal Student Aid",
-      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
-      "programs": [
-        "fafsa",
-        "pell"
-      ]
-    },
-    {
-      "id": "n-20260618-fafsa-2026-27-deadline",
-      "title": "FAFSA deadline: 2026–27 federal FAFSA due June 30, 2027",
-      "summary": "For the 2026–27 award year (covering July 1, 2026 through June 30, 2027), the federal FAFSA deadline is June 30, 2027. If you submit, you can generally make corrections after submission (within the correction window published by Federal Student Aid).",
-      "category": "deadline",
-      "date": "2026-06-18",
-      "source": "Federal Student Aid",
-      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
-      "programs": [
-        "fafsa",
-        "pell"
-      ]
-    },
-    {
-      "id": "n-20260618-wic-ebt-handbook-update",
-      "title": "USDA updates WIC EBT handbook section to streamline Advance Planning Document process",
-      "summary": "USDA says it updated the WIC EBT section of FNS Handbook 901 to streamline the EBT Advance Planning Document (APD) process. Highlights include allowing an updated Planning APD to start with a letter plus budget/budget narrative/schedule, making alternatives analysis and cost-benefit analysis optional, and consolidating some implementation APD requirements.",
+      "id": "n-20260619-medicaid-chip-immigration-ffp",
+      "title": "CMS guidance: new Medicaid/CHIP federal funding limits by immigration status take effect Oct. 1, 2026",
+      "summary": "CMS guidance says that beginning October 1, 2026, federal financial participation (FFP) for non-emergency Medicaid and certain CHIP coverage is generally limited to U.S. citizens/nationals and specified eligible noncitizen groups (including lawful permanent residents, Cuban/Haitian entrants, and COFA migrants), with limited exceptions. States must redetermine potentially affected current beneficiaries by Oct. 1, 2026, and may provide a 90-day reasonable opportunity period when verification cannot be promptly completed.",
       "category": "policy-change",
-      "date": "2026-06-18",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/sso/wic-ebt-section-updated",
+      "date": "2026-06-19",
+      "source": "Medicaid.gov (CMS)",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/downloads/impl-alien-elg-section-71109-wftc-deck.pdf",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260619-irs-dependent-care-credit",
+      "title": "IRS: child and dependent care credit maximum rate increases to 50% for 2026 (with $3,000/$6,000 expense limits)",
+      "summary": "IRS guidance notes that for 2026, legislation enhanced the child and dependent care credit: the qualifying expense limits remain $3,000 (or $6,000 for two or more qualifying children), but the maximum credit rate increases from 35% to 50%. This change can increase the maximum credit for eligible families with child care expenses.",
+      "category": "policy-change",
+      "date": "2026-06-19",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/publications/p505",
+      "programs": [
+        "tax-credits",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260619-irs-adoption-credit",
+      "title": "IRS: up to $5,120 of the adoption credit is refundable for 2026; max credit/exclusion rises to $17,670",
+      "summary": "IRS guidance states that for 2026, up to $5,120 of the adoption credit is refundable (calculated per child). The maximum adoption credit or exclusion for employer-provided adoption benefits increases to $17,670, and eligibility requires modified AGI under $305,080.",
+      "category": "update",
+      "date": "2026-06-19",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/publications/p505",
+      "programs": [
+        "tax-credits"
+      ]
+    },
+    {
+      "id": "n-20260619-irs-ctc-ssn-rule",
+      "title": "IRS: new 2026 Child Tax Credit/Additional CTC rule requires a valid SSN for employment (issued by filing deadline)",
+      "summary": "IRS guidance says that beginning in 2026, to claim the Child Tax Credit (CTC) or Additional Child Tax Credit (ACTC), the filer must have a valid Social Security number for employment issued before the return due date (including extensions). On joint returns, only one spouse must have a valid SSN for employment, while the other spouse must have an SSN or ITIN issued by the filing due date.",
+      "category": "policy-change",
+      "date": "2026-06-19",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/publications/p505",
+      "programs": [
+        "tax-credits",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260619-wic-income-guidelines",
+      "title": "USDA sets WIC income guidelines for July 1, 2026–June 30, 2027 (example: family of 4 up to $61,050 at 185% FPL)",
+      "summary": "USDA published updated WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. For the 48 contiguous states and D.C., the 185% guideline is $29,526 annually for a 1-person household and $61,050 annually for a 4-person household.",
+      "category": "update",
+      "date": "2026-06-19",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/wic/fr-042926",
       "programs": [
         "wic"
+      ]
+    },
+    {
+      "id": "n-20260619-workforce-pell-effective",
+      "title": "Education Department: Workforce Pell and new Pell ineligibility provisions take effect July 1, 2026",
+      "summary": "Federal Student Aid posted an announcement stating Workforce Pell begins July 1, 2026. The same announcement says new Federal Pell Grant ineligibility provisions also take effect July 1, 2026.",
+      "category": "policy-change",
+      "date": "2026-06-19",
+      "source": "Federal Student Aid (U.S. Department of Education)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/effective-dates-workforce-pell-and-federal-pell-grant-ineligibility-provisions",
+      "programs": [
+        "pell"
       ]
     }
   ]
