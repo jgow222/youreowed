@@ -1,116 +1,104 @@
 {
-  "lastUpdated": "2026-06-19T11:08:47Z",
+  "lastUpdated": "2026-06-20T11:02:56Z",
   "items": [
     {
-      "id": "n-20260619-snap-fraud-grants",
-      "title": "USDA opens $5 million SNAP Fraud Framework Implementation Grants for states (apply by July 17, 2026)",
-      "summary": "USDA announced up to $5 million in FY26 SNAP Fraud Framework Implementation Grants to help states upgrade data analytics and fraud detection tools, strengthen oversight, and expand SNAP integrity training. The application window runs through July 17, 2026.",
-      "category": "deadline",
-      "date": "2026-06-19",
+      "id": "n-20260620-snap-retailer-stocking",
+      "title": "USDA finalizes new SNAP retailer stocking standards (7 varieties per category)",
+      "summary": "USDA’s final rule requires SNAP-authorized retailers to stock 7 distinct varieties in each of 4 staple food categories (up from 3), and to carry at least 1 perishable variety in 3 categories (up from 2). The rule takes effect July 7, 2026, and retailers must comply by Nov. 4, 2026.",
+      "category": "policy-change",
+      "date": "2026-06-20",
       "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/newsroom/fna-0003.26",
+      "sourceUrl": "https://www.fna.usda.gov/snap/fr-050826",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260619-snap-privacy-database",
-      "title": "USDA updates Privacy Act notice for the National SNAP Information Database after 450+ public comments",
-      "summary": "USDA published a modified Privacy Act System of Records Notice for USDA/FNA-15 (the National SNAP Information Database), which consolidates state SNAP participant data for eligibility verification and program integrity. The updated notice ties disclosures to what the Food and Nutrition Act permits and reflects changes after more than 450 public comments.",
+      "id": "n-20260620-snap-food-restriction-waivers",
+      "title": "USDA posts state-by-state timelines for SNAP food restriction waivers",
+      "summary": "USDA’s waiver tracker lists multiple states restricting purchases like soda and candy with SNAP, with different start dates by state. Examples: Arkansas’ restrictions begin July 1, 2026; Colorado’s soft drink restriction is listed for Oct. 30, 2026; Hawaii’s soft drink restriction is listed for April 1, 2027.",
       "category": "update",
-      "date": "2026-06-19",
-      "source": "Data Foundation (summarizing USDA notice)",
-      "sourceUrl": "https://datafoundation.org/news/blogs/866/866-USDA-Revises-Its-National-SNAP-Information-Database-Notice-",
+      "date": "2026-06-20",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/snap/waivers/foodrestriction",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260619-medicaid-community-engagement",
-      "title": "MACPAC: Medicaid community engagement requirements start Jan. 1, 2027; notices due by June 30, 2026",
-      "summary": "MACPAC reports that Medicaid community engagement requirements begin January 1, 2027, and states must notify affected people at least 3 months before the look-back period preceding Dec. 31, 2026 (which implies notices by June 30, 2026). MACPAC cites a Congressional Budget Office estimate of 5.3 million fewer people insured in 2034 and $326 billion in savings over the period.",
-      "category": "deadline",
-      "date": "2026-06-19",
-      "source": "Medicaid and CHIP Payment and Access Commission (MACPAC)",
-      "sourceUrl": "https://www.macpac.gov/wp-content/uploads/2026/06/MACPAC_June-2026-WEB-508.pdf",
+      "id": "n-20260620-medicaid-work-requirements-states-list",
+      "title": "KFF: CMS list names 8 states with 1115 waivers where some enrollees will be subject to Medicaid work requirements",
+      "summary": "KFF reports that CMS released a list in June 2026 identifying 8 states with 1115 waiver programs that include individuals who will be subject to Medicaid work requirements starting Jan. 1, 2027. The states listed are Georgia, Tennessee, Wisconsin, Hawaii, Massachusetts, New York, Oregon, and Utah.",
+      "category": "update",
+      "date": "2026-06-20",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260619-medicaid-chip-immigration-ffp",
-      "title": "CMS guidance: new Medicaid/CHIP federal funding limits by immigration status take effect Oct. 1, 2026",
-      "summary": "CMS guidance says that beginning October 1, 2026, federal financial participation (FFP) for non-emergency Medicaid and certain CHIP coverage is generally limited to U.S. citizens/nationals and specified eligible noncitizen groups (including lawful permanent residents, Cuban/Haitian entrants, and COFA migrants), with limited exceptions. States must redetermine potentially affected current beneficiaries by Oct. 1, 2026, and may provide a 90-day reasonable opportunity period when verification cannot be promptly completed.",
+      "id": "n-20260620-medicaid-medical-frailty",
+      "title": "KFF: CMS Medicaid work requirements rule uses a more restrictive ‘medical frailty’ definition",
+      "summary": "KFF says CMS issued an interim final rule on June 1 covering Medicaid work requirements, including the ‘medical frailty’ exemption. KFF’s analysis warns the rule’s more restrictive definition differs from states’ early expectations and may be hard to administer, increasing the risk of eligible people losing coverage.",
       "category": "policy-change",
-      "date": "2026-06-19",
-      "source": "Medicaid.gov (CMS)",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/downloads/impl-alien-elg-section-71109-wftc-deck.pdf",
+      "date": "2026-06-20",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260619-irs-dependent-care-credit",
-      "title": "IRS: child and dependent care credit maximum rate increases to 50% for 2026 (with $3,000/$6,000 expense limits)",
-      "summary": "IRS guidance notes that for 2026, legislation enhanced the child and dependent care credit: the qualifying expense limits remain $3,000 (or $6,000 for two or more qualifying children), but the maximum credit rate increases from 35% to 50%. This change can increase the maximum credit for eligible families with child care expenses.",
-      "category": "policy-change",
-      "date": "2026-06-19",
+      "id": "n-20260620-ctc-actc-1700",
+      "title": "IRS form update: maximum Additional Child Tax Credit (ACTC) is $1,700 per qualifying child for 2026",
+      "summary": "IRS Form 1040-ES (NR) states that for 2026 the maximum Additional Child Tax Credit amount is $1,700 for each qualifying child. The same form also notes that to claim the CTC or ACTC you must have a valid SSN issued by the return due date (including extensions), with a special rule allowing only one spouse on a joint return to have a valid SSN.",
+      "category": "update",
+      "date": "2026-06-20",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/publications/p505",
+      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/f1040esn.pdf",
       "programs": [
-        "tax-credits",
-        "ctc"
+        "ctc",
+        "eitc"
       ]
     },
     {
-      "id": "n-20260619-irs-adoption-credit",
-      "title": "IRS: up to $5,120 of the adoption credit is refundable for 2026; max credit/exclusion rises to $17,670",
-      "summary": "IRS guidance states that for 2026, up to $5,120 of the adoption credit is refundable (calculated per child). The maximum adoption credit or exclusion for employer-provided adoption benefits increases to $17,670, and eligibility requires modified AGI under $305,080.",
-      "category": "update",
-      "date": "2026-06-19",
+      "id": "n-20260620-irs-fstc-27-states",
+      "title": "IRS: 27 states opt into the Federal Scholarship Tax Credit program",
+      "summary": "The IRS says 27 states elected to participate in the Federal Scholarship Tax Credit (FSTC) program. The program allows eligible taxpayers to claim a federal tax credit for qualified contributions to Scholarship Granting Organizations (SGOs) that provide scholarships for qualified K–12 education expenses.",
+      "category": "new-program",
+      "date": "2026-06-20",
       "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/publications/p505",
+      "sourceUrl": "https://www.irs.gov/newsroom/news-releases-for-current-month",
       "programs": [
         "tax-credits"
       ]
     },
     {
-      "id": "n-20260619-irs-ctc-ssn-rule",
-      "title": "IRS: new 2026 Child Tax Credit/Additional CTC rule requires a valid SSN for employment (issued by filing deadline)",
-      "summary": "IRS guidance says that beginning in 2026, to claim the Child Tax Credit (CTC) or Additional Child Tax Credit (ACTC), the filer must have a valid Social Security number for employment issued before the return due date (including extensions). On joint returns, only one spouse must have a valid SSN for employment, while the other spouse must have an SSN or ITIN issued by the filing due date.",
-      "category": "policy-change",
-      "date": "2026-06-19",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/publications/p505",
-      "programs": [
-        "tax-credits",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260619-wic-income-guidelines",
-      "title": "USDA sets WIC income guidelines for July 1, 2026–June 30, 2027 (example: family of 4 up to $61,050 at 185% FPL)",
-      "summary": "USDA published updated WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. For the 48 contiguous states and D.C., the 185% guideline is $29,526 annually for a 1-person household and $61,050 annually for a 4-person household.",
+      "id": "n-20260620-snap-participation-losses-cnbc",
+      "title": "CNBC: analysis says at least 3.5 million people lost SNAP access as 2025 law changes take effect",
+      "summary": "CNBC reports an analysis finding at least 3.5 million people have lost SNAP access as changes in the 2025 reconciliation law took effect. The story cites a Congressional Budget Office estimate of $187 billion in SNAP funding reductions and says the law expanded work requirements to adults ages 55–64 and to some parents of minors ages 14 and older.",
       "category": "update",
-      "date": "2026-06-19",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/wic/fr-042926",
+      "date": "2026-06-20",
+      "source": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/30/snap-food-stamps-big-beautiful-bill.html",
       "programs": [
-        "wic"
+        "snap"
       ]
     },
     {
-      "id": "n-20260619-workforce-pell-effective",
-      "title": "Education Department: Workforce Pell and new Pell ineligibility provisions take effect July 1, 2026",
-      "summary": "Federal Student Aid posted an announcement stating Workforce Pell begins July 1, 2026. The same announcement says new Federal Pell Grant ineligibility provisions also take effect July 1, 2026.",
-      "category": "policy-change",
-      "date": "2026-06-19",
+      "id": "n-20260620-fsa-fafsa-2627",
+      "title": "FAFSA (2026–27): students can file online now; use Federal Student Aid to track deadlines",
+      "summary": "Federal Student Aid’s FAFSA page is the official starting point to submit the FAFSA online and confirms students should check federal, state, and school financial-aid deadlines (which can be earlier than the federal date). Filing early helps maximize eligibility for limited funds like some state grants and school aid.",
+      "category": "deadline",
+      "date": "2026-06-20",
       "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/effective-dates-workforce-pell-and-federal-pell-grant-ineligibility-provisions",
+      "sourceUrl": "https://studentaid.gov/h/apply-for-aid/fafsa",
       "programs": [
-        "pell"
+        "pell",
+        "fafsa"
       ]
     }
   ]
