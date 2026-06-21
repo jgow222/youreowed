@@ -1,24 +1,12 @@
 {
-  "lastUpdated": "2026-06-20T11:02:56Z",
+  "lastUpdated": "2026-06-21T11:02:12Z",
   "items": [
     {
-      "id": "n-20260620-snap-retailer-stocking",
-      "title": "USDA finalizes new SNAP retailer stocking standards (7 varieties per category)",
-      "summary": "USDA’s final rule requires SNAP-authorized retailers to stock 7 distinct varieties in each of 4 staple food categories (up from 3), and to carry at least 1 perishable variety in 3 categories (up from 2). The rule takes effect July 7, 2026, and retailers must comply by Nov. 4, 2026.",
+      "id": "n-20260621-snap-waivers",
+      "title": "USDA lists SNAP ‘food restriction waivers’ that limit soda/candy purchases in multiple states",
+      "summary": "USDA’s SNAP Food Restriction Waivers page shows states implementing restrictions on certain items purchased with SNAP, including Texas (effective 04/01/26) restricting sweetened drinks and candy and Arkansas (07/01/26) restricting soda, certain juice drinks, energy drinks, and candy. The same USDA table lists additional states with target dates later in 2026 such as Tennessee (07/31/26) and Ohio (10/01/26).",
       "category": "policy-change",
-      "date": "2026-06-20",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/snap/fr-050826",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260620-snap-food-restriction-waivers",
-      "title": "USDA posts state-by-state timelines for SNAP food restriction waivers",
-      "summary": "USDA’s waiver tracker lists multiple states restricting purchases like soda and candy with SNAP, with different start dates by state. Examples: Arkansas’ restrictions begin July 1, 2026; Colorado’s soft drink restriction is listed for Oct. 30, 2026; Hawaii’s soft drink restriction is listed for April 1, 2027.",
-      "category": "update",
-      "date": "2026-06-20",
+      "date": "2026-06-21",
       "source": "USDA Food and Nutrition Administration",
       "sourceUrl": "https://www.fna.usda.gov/snap/waivers/foodrestriction",
       "programs": [
@@ -26,79 +14,89 @@
       ]
     },
     {
-      "id": "n-20260620-medicaid-work-requirements-states-list",
-      "title": "KFF: CMS list names 8 states with 1115 waivers where some enrollees will be subject to Medicaid work requirements",
-      "summary": "KFF reports that CMS released a list in June 2026 identifying 8 states with 1115 waiver programs that include individuals who will be subject to Medicaid work requirements starting Jan. 1, 2027. The states listed are Georgia, Tennessee, Wisconsin, Hawaii, Massachusetts, New York, Oregon, and Utah.",
-      "category": "update",
-      "date": "2026-06-20",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
-    },
-    {
-      "id": "n-20260620-medicaid-medical-frailty",
-      "title": "KFF: CMS Medicaid work requirements rule uses a more restrictive ‘medical frailty’ definition",
-      "summary": "KFF says CMS issued an interim final rule on June 1 covering Medicaid work requirements, including the ‘medical frailty’ exemption. KFF’s analysis warns the rule’s more restrictive definition differs from states’ early expectations and may be hard to administer, increasing the risk of eligible people losing coverage.",
+      "id": "n-20260621-snap-retailer-stock",
+      "title": "SNAP retailer stocking standards update takes effect Nov. 4, 2026 (retailer rules, not shopper eligibility)",
+      "summary": "USDA says that as of Nov. 4, 2026, SNAP-authorized retailers must comply with updated stocking standards for staple foods. USDA notes that butter, jerky, cheese dip, snack bars, and fruit spreads no longer count as staple foods for retailer authorization, but the rule does not change what customers can buy with SNAP benefits.",
       "category": "policy-change",
-      "date": "2026-06-20",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org",
-      "programs": [
-        "medicaid",
-        "chip"
-      ]
-    },
-    {
-      "id": "n-20260620-ctc-actc-1700",
-      "title": "IRS form update: maximum Additional Child Tax Credit (ACTC) is $1,700 per qualifying child for 2026",
-      "summary": "IRS Form 1040-ES (NR) states that for 2026 the maximum Additional Child Tax Credit amount is $1,700 for each qualifying child. The same form also notes that to claim the CTC or ACTC you must have a valid SSN issued by the return due date (including extensions), with a special rule allowing only one spouse on a joint return to have a valid SSN.",
-      "category": "update",
-      "date": "2026-06-20",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/f1040esn.pdf",
-      "programs": [
-        "ctc",
-        "eitc"
-      ]
-    },
-    {
-      "id": "n-20260620-irs-fstc-27-states",
-      "title": "IRS: 27 states opt into the Federal Scholarship Tax Credit program",
-      "summary": "The IRS says 27 states elected to participate in the Federal Scholarship Tax Credit (FSTC) program. The program allows eligible taxpayers to claim a federal tax credit for qualified contributions to Scholarship Granting Organizations (SGOs) that provide scholarships for qualified K–12 education expenses.",
-      "category": "new-program",
-      "date": "2026-06-20",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/news-releases-for-current-month",
-      "programs": [
-        "tax-credits"
-      ]
-    },
-    {
-      "id": "n-20260620-snap-participation-losses-cnbc",
-      "title": "CNBC: analysis says at least 3.5 million people lost SNAP access as 2025 law changes take effect",
-      "summary": "CNBC reports an analysis finding at least 3.5 million people have lost SNAP access as changes in the 2025 reconciliation law took effect. The story cites a Congressional Budget Office estimate of $187 billion in SNAP funding reductions and says the law expanded work requirements to adults ages 55–64 and to some parents of minors ages 14 and older.",
-      "category": "update",
-      "date": "2026-06-20",
-      "source": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/05/30/snap-food-stamps-big-beautiful-bill.html",
+      "date": "2026-06-21",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/snap/retailer/stocking-standards-rule",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260620-fsa-fafsa-2627",
-      "title": "FAFSA (2026–27): students can file online now; use Federal Student Aid to track deadlines",
-      "summary": "Federal Student Aid’s FAFSA page is the official starting point to submit the FAFSA online and confirms students should check federal, state, and school financial-aid deadlines (which can be earlier than the federal date). Filing early helps maximize eligibility for limited funds like some state grants and school aid.",
-      "category": "deadline",
-      "date": "2026-06-20",
-      "source": "Federal Student Aid (U.S. Department of Education)",
-      "sourceUrl": "https://studentaid.gov/h/apply-for-aid/fafsa",
+      "id": "n-20260621-wic-cvvb-fy26",
+      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash benefit amounts ($26 kids; $48 pregnant/postpartum; $52 breastfeeding)",
+      "summary": "USDA’s WIC Policy Memorandum #2026-2 lists FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts for fruits and vegetables: $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/mostly breastfeeding participants. USDA notes these are FY 2026 amounts, covering Oct. 1, 2025 through Sept. 30, 2026.",
+      "category": "update",
+      "date": "2026-06-21",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/wic/agency/cvvb-fy26",
       "programs": [
-        "pell",
-        "fafsa"
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260621-ssa-pay-schedule",
+      "title": "SSA posts official 2026–2027 payment schedule (SSI on the 1st; Social Security on the 3rd for some; otherwise Wednesdays)",
+      "summary": "SSA’s 2026–2027 payment schedule states that SSI is paid on the 1st of the month, and Social Security is paid on the 3rd for people who received Social Security before May 1997 or who receive both Social Security and SSI. For other Social Security recipients, SSA lists payments on the 2nd Wednesday (birthdays 1–10), 3rd Wednesday (11–20), or 4th Wednesday (21–31).",
+      "category": "update",
+      "date": "2026-06-21",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
+      "programs": [
+        "ssi",
+        "ssdi"
+      ]
+    },
+    {
+      "id": "n-20260621-medicaid-1115-actuary",
+      "title": "CMS guidance: starting Jan. 1, 2027, Section 1115 Medicaid waivers need Chief Actuary certification of budget neutrality",
+      "summary": "CMS guidance says that beginning Jan. 1, 2027, the Secretary may not approve a Medicaid Section 1115 demonstration (or an amendment or renewal) unless the CMS Chief Actuary certifies it is not expected to increase federal Medicaid spending versus what would have happened without the demonstration. CMS also says if a final rule is not effective before Jan. 1, 2027, it expects to apply the approach provisionally to new demonstrations, amendments, and renewals until a final rule is effective.",
+      "category": "policy-change",
+      "date": "2026-06-21",
+      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
+      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26003.pdf",
+      "programs": [
+        "medicaid"
+      ]
+    },
+    {
+      "id": "n-20260621-irs-disaster-relief-san-carlos",
+      "title": "IRS disaster tax relief: San Carlos Apache Tribe deadlines postponed to Sept. 28, 2026",
+      "summary": "The IRS announced tax relief for individuals and businesses in the San Carlos Apache Tribe area affected by severe storms and flooding (Oct. 10–13, 2025), postponing various filing and payment deadlines to Sept. 28, 2026. The IRS notice says the postponement covers (among other items) individual income tax returns and payments, estimated tax payments, and quarterly payroll and excise tax returns normally due on Oct. 31, 2025; Jan. 31, 2026; Apr. 30, 2026; and Jul. 31, 2026.",
+      "category": "deadline",
+      "date": "2026-06-21",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-severe-storms-and-flooding-in-the-san-carlos-apache-tribe-various-deadlines-postponed-to-sept-28-2026",
+      "programs": [
+        "eitc",
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260621-snap-incentive-comments",
+      "title": "USDA requests public comment on SNAP retailer incentive-waiver information collection (comments due July 27, 2026)",
+      "summary": "USDA published a notice about an information collection renewal for SNAP waiver requests that allow retailers to offer incentives to SNAP recipients (to encourage healthier purchases) by waiving SNAP’s equal treatment provisions. The notice states written comments must be received on or before July 27, 2026.",
+      "category": "deadline",
+      "date": "2026-06-21",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/snap/fr-052726b",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260621-snap-database-sorn",
+      "title": "USDA posts Privacy Act system-of-records notice for the National SNAP Information Database (USDA/FNS-15)",
+      "summary": "USDA published a Privacy Act system-of-records notice for USDA/FNS-15, the National SNAP Information Database, describing its purpose to validate eligibility determinations and strengthen program integrity. The notice describes the system as owned, administered, and secured by USDA’s Food and Nutrition Service.",
+      "category": "update",
+      "date": "2026-06-21",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/snap/fr-062325",
+      "programs": [
+        "snap"
       ]
     }
   ]
