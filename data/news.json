@@ -1,102 +1,103 @@
 {
-  "lastUpdated": "2026-06-21T11:02:12Z",
+  "lastUpdated": "2026-06-22T11:30:33Z",
   "items": [
     {
-      "id": "n-20260621-snap-waivers",
-      "title": "USDA lists SNAP ‘food restriction waivers’ that limit soda/candy purchases in multiple states",
-      "summary": "USDA’s SNAP Food Restriction Waivers page shows states implementing restrictions on certain items purchased with SNAP, including Texas (effective 04/01/26) restricting sweetened drinks and candy and Arkansas (07/01/26) restricting soda, certain juice drinks, energy drinks, and candy. The same USDA table lists additional states with target dates later in 2026 such as Tennessee (07/31/26) and Ohio (10/01/26).",
+      "id": "n-20260622-medicaid-work-rule",
+      "title": "CMS issues Medicaid 'community engagement' rule: 80 hours/month requirement, states must implement by Jan. 1, 2027",
+      "summary": "CMS issued an interim final rule implementing a new Medicaid community engagement requirement for certain adults: generally 80 hours per month of qualifying work or similar activity as a condition of eligibility. CMS says states must generally implement the requirement no later than 2027-01-01, and states may begin earlier.",
       "category": "policy-change",
-      "date": "2026-06-21",
-      "source": "USDA Food and Nutrition Administration",
+      "date": "2026-06-22",
+      "source": "Centers for Medicare & Medicaid Services (CMS)",
+      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "programs": [
+        "medicaid",
+        "chip"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260622-snap-retailer-stocking-standards",
+      "title": "SNAP retailers face new stocking standards: USDA says broad compliance starts Nov. 4, 2026",
+      "summary": "USDA finalized updated staple food stocking standards for retailers that accept SNAP, including a new framework for meeting staple-food variety requirements. USDA’s retailer notice says that starting 2026-11-04, most SNAP-authorized retailers (other than specialty stores like butchers and farm stands) must comply or risk losing the ability to redeem SNAP benefits.",
+      "category": "deadline",
+      "date": "2026-06-22",
+      "source": "USDA Food and Nutrition Service (FNS)",
+      "sourceUrl": "https://fns-prod.azureedge.us/resources?f%5B0%5D=audience%3A28&f%5B1%5D=topic%3A50&f%5B2%5D=topic%3A66&f%5B3%5D=topic%3A399&f%5B4%5D=topic%3A4109&page=0",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260622-snap-food-restriction-waivers",
+      "title": "USDA list shows multiple states implementing SNAP purchase restriction waivers in 2026",
+      "summary": "USDA posted state SNAP food restriction waivers that restrict purchases such as soda and candy, with several 2026 target dates. Examples include Arkansas (target 2026-07-01) and Colorado (target 2026-10-30) as well as earlier 2026 targets like Idaho (2026-02-15) and Florida (2026-04-20), depending on the waiver.",
+      "category": "update",
+      "date": "2026-06-22",
+      "source": "USDA Food and Nutrition Administration (FNA)",
       "sourceUrl": "https://www.fna.usda.gov/snap/waivers/foodrestriction",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260621-snap-retailer-stock",
-      "title": "SNAP retailer stocking standards update takes effect Nov. 4, 2026 (retailer rules, not shopper eligibility)",
-      "summary": "USDA says that as of Nov. 4, 2026, SNAP-authorized retailers must comply with updated stocking standards for staple foods. USDA notes that butter, jerky, cheese dip, snack bars, and fruit spreads no longer count as staple foods for retailer authorization, but the rule does not change what customers can buy with SNAP benefits.",
-      "category": "policy-change",
-      "date": "2026-06-21",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/snap/retailer/stocking-standards-rule",
+      "id": "n-20260622-snap-milk-incentive-grant",
+      "title": "USDA announces up to $4 million for a FY2026 SNAP Healthy Fluid Milk Incentive project",
+      "summary": "USDA says that for fiscal year 2026 it will provide up to $4 million for a competitive cooperative agreement to carry out a Healthy Fluid Milk Incentive project. The agency’s resources page describes this as a SNAP-related grant opportunity for a government or nonprofit entity.",
+      "category": "new-program",
+      "date": "2026-06-22",
+      "source": "USDA Food and Nutrition Administration (FNA)",
+      "sourceUrl": "https://www.fna.usda.gov/resources",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260621-wic-cvvb-fy26",
-      "title": "USDA sets FY 2026 WIC fruit-and-vegetable cash benefit amounts ($26 kids; $48 pregnant/postpartum; $52 breastfeeding)",
-      "summary": "USDA’s WIC Policy Memorandum #2026-2 lists FY 2026 monthly cash-value voucher/benefit (CVV/B) amounts for fruits and vegetables: $26 for children, $48 for pregnant and postpartum participants, and $52 for fully/mostly breastfeeding participants. USDA notes these are FY 2026 amounts, covering Oct. 1, 2025 through Sept. 30, 2026.",
-      "category": "update",
-      "date": "2026-06-21",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/wic/agency/cvvb-fy26",
+      "id": "n-20260622-hud-nofo-deadline",
+      "title": "HUD reminds applicants: NOFO applications due 11:59:59 PM ET on May 26, 2026 (late submissions ineligible)",
+      "summary": "HUD’s NOFO FAQ states that applications were due by 11:59:59 PM Eastern Time on 2026-05-26, and applications received after the deadline are considered late and ineligible. HUD also notes the application period was 60 days (instead of 30 days) and that only completed applications received by Grants.gov on or before the deadline count as timely.",
+      "category": "deadline",
+      "date": "2026-06-22",
+      "source": "U.S. Department of Housing and Urban Development (HUD)",
+      "sourceUrl": "https://www.hud.gov/hud-partners/grants-info-funding-opps-faqs",
       "programs": [
-        "wic"
+        "section8",
+        "housing"
       ]
     },
     {
-      "id": "n-20260621-ssa-pay-schedule",
-      "title": "SSA posts official 2026–2027 payment schedule (SSI on the 1st; Social Security on the 3rd for some; otherwise Wednesdays)",
-      "summary": "SSA’s 2026–2027 payment schedule states that SSI is paid on the 1st of the month, and Social Security is paid on the 3rd for people who received Social Security before May 1997 or who receive both Social Security and SSI. For other Social Security recipients, SSA lists payments on the 2nd Wednesday (birthdays 1–10), 3rd Wednesday (11–20), or 4th Wednesday (21–31).",
-      "category": "update",
-      "date": "2026-06-21",
-      "source": "Social Security Administration",
-      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
+      "id": "n-20260622-snap-sua-comments",
+      "title": "USDA seeks comments through July 27, 2026 on SNAP standard utility allowance (SUA) information collection",
+      "summary": "USDA published a notice about SNAP state agency standard utility allowance (SUA) methodology submissions, stating that written comments must be received on or before 2026-07-27. The notice references a 2024 final rule requiring states to submit SUA methodologies for approval at least every five years.",
+      "category": "deadline",
+      "date": "2026-06-22",
+      "source": "USDA Food and Nutrition Administration (FNA)",
+      "sourceUrl": "https://www.fna.usda.gov/snap/fr-052726a",
       "programs": [
-        "ssi",
-        "ssdi"
+        "snap"
       ]
     },
     {
-      "id": "n-20260621-medicaid-1115-actuary",
-      "title": "CMS guidance: starting Jan. 1, 2027, Section 1115 Medicaid waivers need Chief Actuary certification of budget neutrality",
-      "summary": "CMS guidance says that beginning Jan. 1, 2027, the Secretary may not approve a Medicaid Section 1115 demonstration (or an amendment or renewal) unless the CMS Chief Actuary certifies it is not expected to increase federal Medicaid spending versus what would have happened without the demonstration. CMS also says if a final rule is not effective before Jan. 1, 2027, it expects to apply the approach provisionally to new demonstrations, amendments, and renewals until a final rule is effective.",
-      "category": "policy-change",
-      "date": "2026-06-21",
-      "source": "Centers for Medicare & Medicaid Services (Medicaid.gov)",
-      "sourceUrl": "https://www.medicaid.gov/federal-policy-guidance/downloads/smd26003.pdf",
+      "id": "n-20260622-dc-snap-abawd-forms",
+      "title": "DC SNAP: new ABAWD forms released June 1, 2026; fixed 36-month clock runs June 2026–May 2029",
+      "summary": "DC’s Department of Human Services says that starting 2026-06-01, SNAP customers ages 18–64 who are not exempt are subject to ABAWD work requirements (80 hours averaged monthly) and a 3-month limit in a 36-month period. DC says it uses a fixed 36-month clock for all customers that starts 2026-06-01 and ends 2029-05-31, and it released three new ABAWD-related forms on June 1, 2026.",
+      "category": "update",
+      "date": "2026-06-22",
+      "source": "DC Department of Human Services",
+      "sourceUrl": "https://dhs.dc.gov/page/snap-work-requirements",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260622-medicaid-work-tracker",
+      "title": "KFF tracker: federal Medicaid work requirement starts Jan. 1, 2027; some states plan earlier enforcement",
+      "summary": "KFF summarizes the 2025 reconciliation law’s Medicaid work requirement for ACA expansion adults starting 2027-01-01 and tracks state implementation decisions. KFF reports Nebraska began enforcing early via a state plan amendment on 2026-05-01, with Montana planning 2026-07-01 and Iowa planning 2026-12-01; Arkansas plans a July 2026 launch but says it won’t disenroll people prior to 2027-01-01.",
+      "category": "update",
+      "date": "2026-06-22",
+      "source": "KFF (Kaiser Family Foundation)",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-1115-waivers/",
       "programs": [
         "medicaid"
-      ]
-    },
-    {
-      "id": "n-20260621-irs-disaster-relief-san-carlos",
-      "title": "IRS disaster tax relief: San Carlos Apache Tribe deadlines postponed to Sept. 28, 2026",
-      "summary": "The IRS announced tax relief for individuals and businesses in the San Carlos Apache Tribe area affected by severe storms and flooding (Oct. 10–13, 2025), postponing various filing and payment deadlines to Sept. 28, 2026. The IRS notice says the postponement covers (among other items) individual income tax returns and payments, estimated tax payments, and quarterly payroll and excise tax returns normally due on Oct. 31, 2025; Jan. 31, 2026; Apr. 30, 2026; and Jul. 31, 2026.",
-      "category": "deadline",
-      "date": "2026-06-21",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-tax-relief-for-taxpayers-impacted-by-severe-storms-and-flooding-in-the-san-carlos-apache-tribe-various-deadlines-postponed-to-sept-28-2026",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260621-snap-incentive-comments",
-      "title": "USDA requests public comment on SNAP retailer incentive-waiver information collection (comments due July 27, 2026)",
-      "summary": "USDA published a notice about an information collection renewal for SNAP waiver requests that allow retailers to offer incentives to SNAP recipients (to encourage healthier purchases) by waiving SNAP’s equal treatment provisions. The notice states written comments must be received on or before July 27, 2026.",
-      "category": "deadline",
-      "date": "2026-06-21",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/snap/fr-052726b",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260621-snap-database-sorn",
-      "title": "USDA posts Privacy Act system-of-records notice for the National SNAP Information Database (USDA/FNS-15)",
-      "summary": "USDA published a Privacy Act system-of-records notice for USDA/FNS-15, the National SNAP Information Database, describing its purpose to validate eligibility determinations and strengthen program integrity. The notice describes the system as owned, administered, and secured by USDA’s Food and Nutrition Service.",
-      "category": "update",
-      "date": "2026-06-21",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/snap/fr-062325",
-      "programs": [
-        "snap"
       ]
     }
   ]
