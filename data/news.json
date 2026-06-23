@@ -1,103 +1,103 @@
 {
-  "lastUpdated": "2026-06-22T11:30:33Z",
+  "lastUpdated": "2026-06-23T11:28:02Z",
   "items": [
     {
-      "id": "n-20260622-medicaid-work-rule",
-      "title": "CMS issues Medicaid 'community engagement' rule: 80 hours/month requirement, states must implement by Jan. 1, 2027",
-      "summary": "CMS issued an interim final rule implementing a new Medicaid community engagement requirement for certain adults: generally 80 hours per month of qualifying work or similar activity as a condition of eligibility. CMS says states must generally implement the requirement no later than 2027-01-01, and states may begin earlier.",
+      "id": "n-20260623-snap-court-pilots",
+      "title": "Federal judge tosses state SNAP pilot limits on soda/candy purchases",
+      "summary": "A federal judge struck down USDA-approved state pilots that limited what SNAP benefits could buy, ruling the Agriculture secretary exceeded authority under federal law. The ruling affects pilot programs in five states: Colorado, Iowa, Nebraska, Tennessee, and West Virginia.",
       "category": "policy-change",
-      "date": "2026-06-22",
-      "source": "Centers for Medicare & Medicaid Services (CMS)",
-      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "date": "2026-06-23",
+      "source": "POLITICO",
+      "sourceUrl": "https://www.politico.com/news/2026/06/22/judge-snap-junk-food-rules-maha-00970700",
       "programs": [
-        "medicaid",
-        "chip"
+        "snap"
       ],
       "isBreaking": true
     },
     {
-      "id": "n-20260622-snap-retailer-stocking-standards",
-      "title": "SNAP retailers face new stocking standards: USDA says broad compliance starts Nov. 4, 2026",
-      "summary": "USDA finalized updated staple food stocking standards for retailers that accept SNAP, including a new framework for meeting staple-food variety requirements. USDA’s retailer notice says that starting 2026-11-04, most SNAP-authorized retailers (other than specialty stores like butchers and farm stands) must comply or risk losing the ability to redeem SNAP benefits.",
+      "id": "n-20260623-snap-retailer-stocking",
+      "title": "USDA final rule raises SNAP retailer stocking standards; compliance due Nov. 4, 2026",
+      "summary": "USDA finalized new SNAP retailer stocking standards that increase the minimum from 3 to 7 staple food varieties in each of four staple food categories. The rule is effective July 7, 2026, and SNAP retailers must implement it no later than Nov. 4, 2026.",
       "category": "deadline",
-      "date": "2026-06-22",
-      "source": "USDA Food and Nutrition Service (FNS)",
-      "sourceUrl": "https://fns-prod.azureedge.us/resources?f%5B0%5D=audience%3A28&f%5B1%5D=topic%3A50&f%5B2%5D=topic%3A66&f%5B3%5D=topic%3A399&f%5B4%5D=topic%3A4109&page=0",
+      "date": "2026-06-23",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fna.usda.gov/snap/fr-050826",
       "programs": [
         "snap"
       ]
     },
     {
-      "id": "n-20260622-snap-food-restriction-waivers",
-      "title": "USDA list shows multiple states implementing SNAP purchase restriction waivers in 2026",
-      "summary": "USDA posted state SNAP food restriction waivers that restrict purchases such as soda and candy, with several 2026 target dates. Examples include Arkansas (target 2026-07-01) and Colorado (target 2026-10-30) as well as earlier 2026 targets like Idaho (2026-02-15) and Florida (2026-04-20), depending on the waiver.",
+      "id": "n-20260623-medicaid-work-rule",
+      "title": "CMS rules set Medicaid work requirement standards starting Jan. 2027; 80 hours/month",
+      "summary": "CMS released rules detailing how Medicaid expansion enrollees must document 80 hours per month of work or other qualifying activities to keep coverage, affecting about 18.5 million people. Nebraska began enforcing requirements in May; Montana plans to start in July (with disenrollments beginning in October), and Arkansas plans a July “soft” start with no penalties until 2027.",
+      "category": "policy-change",
+      "date": "2026-06-23",
+      "source": "KFF Health News",
+      "sourceUrl": "https://kffhealthnews.org/medicaid/medicaid-work-requirements-final-rules-exemptions-trump-cms/",
+      "programs": [
+        "medicaid",
+        "chip"
+      ]
+    },
+    {
+      "id": "n-20260623-medicaid-student-threshold",
+      "title": "Medicaid work rules define “half-time student” to meet 80-hour requirement",
+      "summary": "Under CMS’ Medicaid work requirement rules, enrollees can meet the 80-hours-per-month standard through education, but the rules specify how school time counts. Students generally must be enrolled in 6 credit hours per semester to qualify as “half-time” for purposes of meeting the requirement.",
       "category": "update",
-      "date": "2026-06-22",
-      "source": "USDA Food and Nutrition Administration (FNA)",
-      "sourceUrl": "https://www.fna.usda.gov/snap/waivers/foodrestriction",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260622-snap-milk-incentive-grant",
-      "title": "USDA announces up to $4 million for a FY2026 SNAP Healthy Fluid Milk Incentive project",
-      "summary": "USDA says that for fiscal year 2026 it will provide up to $4 million for a competitive cooperative agreement to carry out a Healthy Fluid Milk Incentive project. The agency’s resources page describes this as a SNAP-related grant opportunity for a government or nonprofit entity.",
-      "category": "new-program",
-      "date": "2026-06-22",
-      "source": "USDA Food and Nutrition Administration (FNA)",
-      "sourceUrl": "https://www.fna.usda.gov/resources",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260622-hud-nofo-deadline",
-      "title": "HUD reminds applicants: NOFO applications due 11:59:59 PM ET on May 26, 2026 (late submissions ineligible)",
-      "summary": "HUD’s NOFO FAQ states that applications were due by 11:59:59 PM Eastern Time on 2026-05-26, and applications received after the deadline are considered late and ineligible. HUD also notes the application period was 60 days (instead of 30 days) and that only completed applications received by Grants.gov on or before the deadline count as timely.",
-      "category": "deadline",
-      "date": "2026-06-22",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/hud-partners/grants-info-funding-opps-faqs",
-      "programs": [
-        "section8",
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260622-snap-sua-comments",
-      "title": "USDA seeks comments through July 27, 2026 on SNAP standard utility allowance (SUA) information collection",
-      "summary": "USDA published a notice about SNAP state agency standard utility allowance (SUA) methodology submissions, stating that written comments must be received on or before 2026-07-27. The notice references a 2024 final rule requiring states to submit SUA methodologies for approval at least every five years.",
-      "category": "deadline",
-      "date": "2026-06-22",
-      "source": "USDA Food and Nutrition Administration (FNA)",
-      "sourceUrl": "https://www.fna.usda.gov/snap/fr-052726a",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260622-dc-snap-abawd-forms",
-      "title": "DC SNAP: new ABAWD forms released June 1, 2026; fixed 36-month clock runs June 2026–May 2029",
-      "summary": "DC’s Department of Human Services says that starting 2026-06-01, SNAP customers ages 18–64 who are not exempt are subject to ABAWD work requirements (80 hours averaged monthly) and a 3-month limit in a 36-month period. DC says it uses a fixed 36-month clock for all customers that starts 2026-06-01 and ends 2029-05-31, and it released three new ABAWD-related forms on June 1, 2026.",
-      "category": "update",
-      "date": "2026-06-22",
-      "source": "DC Department of Human Services",
-      "sourceUrl": "https://dhs.dc.gov/page/snap-work-requirements",
-      "programs": [
-        "snap"
-      ]
-    },
-    {
-      "id": "n-20260622-medicaid-work-tracker",
-      "title": "KFF tracker: federal Medicaid work requirement starts Jan. 1, 2027; some states plan earlier enforcement",
-      "summary": "KFF summarizes the 2025 reconciliation law’s Medicaid work requirement for ACA expansion adults starting 2027-01-01 and tracks state implementation decisions. KFF reports Nebraska began enforcing early via a state plan amendment on 2026-05-01, with Montana planning 2026-07-01 and Iowa planning 2026-12-01; Arkansas plans a July 2026 launch but says it won’t disenroll people prior to 2027-01-01.",
-      "category": "update",
-      "date": "2026-06-22",
-      "source": "KFF (Kaiser Family Foundation)",
-      "sourceUrl": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-1115-waivers/",
+      "date": "2026-06-23",
+      "source": "KFF Health News",
+      "sourceUrl": "https://kffhealthnews.org/medicaid/medicaid-work-requirements-final-rules-exemptions-trump-cms/",
       "programs": [
         "medicaid"
+      ]
+    },
+    {
+      "id": "n-20260623-wic-cvvb-amounts",
+      "title": "WIC fruit-and-vegetable cash-value benefit set for FY 2026 (Oct 2025–Sep 2026)",
+      "summary": "USDA issued FY 2026 WIC cash-value voucher/benefit (CVV/B) amounts: $26/month for children, $48/month for pregnant and postpartum participants, and $52/month for fully or mostly breastfeeding participants. USDA said the FY 2026 CVV/B inflation adjustment is 11.8% over the FY 2022 baseline amounts.",
+      "category": "update",
+      "date": "2026-06-23",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fna.usda.gov/wic/agency/cvvb-fy26",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260623-wic-income-guidelines",
+      "title": "USDA posts WIC income eligibility guidelines for July 2026–June 2027",
+      "summary": "USDA published WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. For the 48 contiguous states and D.C., the 185% guideline is $29,526 annually ($2,461 monthly) for a household of 1 and $61,050 annually ($5,088 monthly) for a household of 4.",
+      "category": "update",
+      "date": "2026-06-23",
+      "source": "USDA Food and Nutrition Service",
+      "sourceUrl": "https://www.fna.usda.gov/wic/fr-042926",
+      "programs": [
+        "wic"
+      ]
+    },
+    {
+      "id": "n-20260623-ed-basic-needs-grants",
+      "title": "Education Department lists $10M for FY 2026 Basic Needs for Postsecondary Students grants",
+      "summary": "The U.S. Department of Education lists $10,000,000 in FY 2026 funding for its Basic Needs for Postsecondary Students Program. ED estimates 2–10 awards, with an estimated award range of $1,000,000 to $5,000,000 over a 48-month project period.",
+      "category": "new-program",
+      "date": "2026-06-23",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://www.ed.gov/grants-and-programs/grants-higher-education/improvement-of-postsecondary-education/basic-needs-postsecondary-students-program-84116n",
+      "programs": [
+        "pell"
+      ]
+    },
+    {
+      "id": "n-20260623-irs-irb-2026-26",
+      "title": "IRS publishes IRB 2026-26, including a 2026 inflation adjustment factor notice",
+      "summary": "The IRS issued Internal Revenue Bulletin 2026-26, which includes Notice 2026-37 on the section 45 renewable electricity production credit. The bulletin says the 2026 inflation adjustment factor and reference price were published in the Federal Register at 91 FR 32511 on June 1, 2026, and lists a 2026 inflation adjustment factor of 2.0570.",
+      "category": "update",
+      "date": "2026-06-23",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/irb/2026-26_irb",
+      "programs": [
+        "eitc",
+        "ctc"
       ]
     }
   ]
