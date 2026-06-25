@@ -1,92 +1,104 @@
 {
-  "lastUpdated": "2026-06-24T11:13:44Z",
+  "lastUpdated": "2026-06-25T11:05:12Z",
   "items": [
     {
-      "id": "n-20260624-snap-court-waivers",
-      "title": "Federal court blocks USDA-approved SNAP food-restriction pilots in five states",
-      "summary": "On June 22, 2026, a federal district court held USDA exceeded its authority when it approved state SNAP demonstration projects restricting what participants can buy with benefits. The order stops the pilots in Colorado, Iowa, Nebraska, Tennessee, and West Virginia, while other states’ restrictions may continue unless separately withdrawn or struck down.",
+      "id": "n-20260625-snap-retailer-stocking",
+      "title": "USDA finalizes tougher SNAP retailer stocking standards to boost nutritious options",
+      "summary": "USDA finalized new SNAP retailer stocking standards requiring SNAP-authorized stores to carry 7 varieties of items in each of 4 staple food categories (protein, grains, dairy, and fruits/vegetables). The agency said the changes take effect in Fall 2026 and are intended to increase access to healthier foods while closing loopholes that allowed some snack foods to count toward staple requirements.",
       "category": "policy-change",
-      "date": "2026-06-24",
-      "source": "Food Research & Action Center (FRAC)",
-      "sourceUrl": "https://frac.org/blog/federal-court-strikes-down-usda-approval-of-snap-food-restriction-demonstrations",
+      "date": "2026-06-25",
+      "source": "USDA",
+      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/05/07/usda-requires-snap-authorized-retailers-carry-more-real-food",
       "programs": [
         "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260624-medicaid-medical-frailty",
-      "title": "CMS interim final rule tightens ‘medical frailty’ exemptions in Medicaid work requirements",
-      "summary": "CMS issued an interim final rule (June 1, 2026) that adopts a more restrictive definition of medical frailty for Medicaid work requirements and bars states from adding extra categorical exemptions. KFF notes work requirements must begin January 1, 2027 (or sooner at state option) in the 43 states covered by the 2025 reconciliation law, and states may use self-declaration in limited cases through 2027.",
-      "category": "policy-change",
-      "date": "2026-06-24",
-      "source": "KFF",
-      "sourceUrl": "https://www.kff.org/quick-insights/cms-requires-more-restrictive-definition-of-medical-frailty-in-new-medicaid-work-requirements-rule/",
-      "programs": [
-        "medicaid",
-        "chip"
       ]
     },
     {
-      "id": "n-20260624-ssa-cola-2026",
-      "title": "Social Security confirms 2.8% COLA for 2026; SSI increase begins Dec. 31, 2025",
-      "summary": "SSA says Social Security and SSI benefits will rise 2.8% for 2026. The increase applies to Social Security benefits payable in January 2026, and SSI recipients see the higher payment starting December 31, 2025.",
+      "id": "n-20260625-ssi-ssdi-cola-2026",
+      "title": "SSA: 2026 Social Security COLA set at 2.8%, raising SSI federal payments",
+      "summary": "Social Security’s 2026 cost-of-living adjustment (COLA) is 2.8% based on the CPI-W, according to SSA. SSA’s 2026 COLA fact sheet lists the SSI federal payment standard increasing to $994/month for an individual (up from $967) and $1,491/month for a couple (up from $1,450).",
       "category": "update",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/cola/",
+      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
       "programs": [
         "ssi",
         "ssdi"
       ]
     },
     {
-      "id": "n-20260624-wic-cvb-fy2026",
-      "title": "USDA sets FY2026 WIC fruit-and-vegetable cash benefit amounts",
-      "summary": "USDA’s WIC policy memo lists the FY2026 monthly cash-value benefit at $26 for children, $48 for pregnant and postpartum participants, and $52 for fully or mostly breastfeeding participants. USDA notes FY2026 runs from Oct. 1, 2025 through Sept. 30, 2026.",
-      "category": "update",
-      "date": "2026-06-24",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/wic/agency/cvvb-fy26",
+      "id": "n-20260625-medicaid-chip-noncitizen-funding-guidance",
+      "title": "CMS issues guidance on new limits to federal Medicaid/CHIP matching funds for certain noncitizens",
+      "summary": "CMS released a State Health Official letter to help states implement a statutory change limiting the ability to claim federal Medicaid and CHIP matching funds for individuals in certain noncitizen categories. CMS said the statutory change begins October 1, 2026, while noting that federal matching funds remain available for treatment of emergency medical conditions and that the change does not apply to lawfully residing children and pregnant women options.",
+      "category": "policy-change",
+      "date": "2026-06-25",
+      "source": "Centers for Medicare & Medicaid Services (CMS)",
+      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
       "programs": [
-        "wic"
+        "medicaid",
+        "chip"
       ]
     },
     {
-      "id": "n-20260624-wic-income-guidelines-2026",
-      "title": "New WIC income guidelines take effect July 1 (2026–2027)",
-      "summary": "USDA published the 2026–2027 WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. For the 48 contiguous states and D.C., the annual federal poverty guideline example is $33,000 for a household of 4 (and $15,960 for a household of 1).",
+      "id": "n-20260625-irs-2026-inflation-eitc",
+      "title": "IRS releases 2026 tax inflation adjustments, including higher EITC maximum for larger families",
+      "summary": "The IRS announced annual inflation adjustments for tax year 2026, including a higher maximum Earned Income Tax Credit (EITC) for taxpayers with three or more qualifying children. The IRS release lists the 2026 EITC maximum for 3+ qualifying children as $8,231 (up from $8,046), and standard deduction amounts rising to $16,100 (single), $32,200 (married filing jointly), and $24,150 (head of household).",
       "category": "update",
-      "date": "2026-06-24",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fna.usda.gov/wic/fr-042926",
+      "date": "2026-06-25",
+      "source": "Internal Revenue Service (IRS)",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
       "programs": [
-        "wic"
+        "eitc",
+        "ctc"
       ]
     },
     {
-      "id": "n-20260624-hud-eiv-save-deadlines",
-      "title": "HUD sets 2026 deadlines for EIV-SAVE review/attestation for housing providers",
-      "summary": "HUD set deadlines for housing providers to review their EIV-SAVE report and attest documentation is error-free for people who claim U.S. citizenship or eligible noncitizen status. NAHRO reports the PBRA owner/agent deadline is June 20, 2026, and Housing Choice Voucher/Public Housing agencies must complete the attestation by August 3, 2026.",
+      "id": "n-20260625-fafsa-deadlines-2026-27",
+      "title": "Federal Register posts key FAFSA deadlines for 2026–27 aid year (submit by June 30, 2027)",
+      "summary": "A Federal Register notice lists the deadline for the Department’s FAFSA Processing System to receive a 2026–2027 FAFSA as June 30, 2027. The notice also sets September 11, 2027 as the deadline for corrections (and other changes like address or school updates) and says schools must receive an ISIR or FAFSA Submission Summary by the student’s last date of enrollment for 2026–2027 or September 18, 2027—whichever is earlier.",
       "category": "deadline",
-      "date": "2026-06-24",
-      "source": "NAHRO",
-      "sourceUrl": "https://www.nahro.org/news/hud-sets-deadlines-for-eiv-save-attestation-requirement/",
+      "date": "2026-06-25",
+      "source": "Federal Register (via GovInfo)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-06-22/pdf/2026-12487.pdf",
+      "programs": [
+        "pell",
+        "student_aid"
+      ]
+    },
+    {
+      "id": "n-20260625-section8-eiv-deceased-tenants",
+      "title": "HUD tells PHAs to run EIV Deceased Tenants Report at least monthly to reduce Section 8 payment errors",
+      "summary": "HUD’s PIH Notice 2026-11 updates guidance requiring public housing agencies (PHAs) to use the EIV system’s Deceased Tenants Report to reduce subsidy payment and administrative errors across Public Housing, Housing Choice Vouchers (HCV), PBV, and Mod Rehab. HUD directs PHAs to generate the report at least once a month (and for HCV/PBV/Mod Rehab, at least monthly before disbursing Housing Assistance Payments), and the notice includes timelines like submitting Form HUD-50058 no later than 60 calendar days from the effective date of action.",
+      "category": "policy-change",
+      "date": "2026-06-25",
+      "source": "U.S. Department of Housing and Urban Development (HUD)",
+      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-11.pdf",
       "programs": [
         "section8"
       ]
     },
     {
-      "id": "n-20260624-fafsa-specs-june-update",
-      "title": "ED updates 2026–27 FAFSA processing specifications (June 2026 update)",
-      "summary": "Federal Student Aid posted a June 2026 update to the 2026–27 FAFSA Specifications Guide for schools and vendors (last modified June 22, 2026). These technical specs affect how institutions and software providers process FAFSA data for the 2026–27 aid year.",
+      "id": "n-20260625-liheap-ca-fy2026",
+      "title": "California says it received $236 million in LIHEAP funding for federal fiscal year 2026",
+      "summary": "California’s LIHEAP program page says the state received $236 million in annual LIHEAP funding for Federal Fiscal Year 2026. The page also notes that LIHEAP funding is limited and local service providers prioritize particularly vulnerable households; it describes crisis help for households facing a 24–48 hour disconnect notice.",
       "category": "update",
-      "date": "2026-06-24",
-      "source": "U.S. Department of Education (Federal Student Aid)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/handbooks-manuals-or-guides/2025-02-26/2026-27-fafsa-specifications-guide-june-2026-update",
+      "date": "2026-06-25",
+      "source": "California Department of Community Services & Development (CSD)",
+      "sourceUrl": "https://www.csd.ca.gov/pages/liheapprogram.aspx",
       "programs": [
-        "pell",
-        "fafsa"
+        "liheap"
+      ]
+    },
+    {
+      "id": "n-20260625-wic-milk-mma-temp-increase",
+      "title": "USDA WIC memo: temporary higher monthly milk amounts effective immediately through Sept. 30, 2026",
+      "summary": "USDA issued WIC Policy Memorandum #2026-1 implementing a temporary increase to the maximum monthly allowance (MMA) of fluid milk for certain WIC food packages. The memo lists updated milk MMAs (e.g., 16 quarts for Food Packages IV A/B and VI, 22 quarts for Food Packages V A/B, and 24 quarts for Food Package VII) and says the authority for updated amounts terminates September 30, 2026.",
+      "category": "policy-change",
+      "date": "2026-06-25",
+      "source": "USDA",
+      "sourceUrl": "https://www.usda.gov/sites/default/files/guidance-documents/fns.wic-2026-1-mma-increase.pdf",
+      "programs": [
+        "wic"
       ]
     }
   ]
