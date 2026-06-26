@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-25T11:05:12Z",
+  "lastUpdated": "2026-06-26T11:03:39Z",
   "items": [
     {
-      "id": "n-20260625-snap-retailer-stocking",
-      "title": "USDA finalizes tougher SNAP retailer stocking standards to boost nutritious options",
-      "summary": "USDA finalized new SNAP retailer stocking standards requiring SNAP-authorized stores to carry 7 varieties of items in each of 4 staple food categories (protein, grains, dairy, and fruits/vegetables). The agency said the changes take effect in Fall 2026 and are intended to increase access to healthier foods while closing loopholes that allowed some snack foods to count toward staple requirements.",
+      "id": "n-20260626-snap-retailers",
+      "title": "USDA finalizes tougher SNAP retailer stocking standards to expand healthy food options",
+      "summary": "USDA published a final rule requiring SNAP-authorized retailers to carry seven varieties of staple foods across four categories (protein, grains, dairy, and fruits/vegetables). The agency says the new standard more than doubles the prior requirement and is scheduled to take effect in Fall 2026.",
       "category": "policy-change",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "source": "USDA",
       "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/05/07/usda-requires-snap-authorized-retailers-carry-more-real-food",
       "programs": [
@@ -14,91 +14,79 @@
       ]
     },
     {
-      "id": "n-20260625-ssi-ssdi-cola-2026",
-      "title": "SSA: 2026 Social Security COLA set at 2.8%, raising SSI federal payments",
-      "summary": "Social Security’s 2026 cost-of-living adjustment (COLA) is 2.8% based on the CPI-W, according to SSA. SSA’s 2026 COLA fact sheet lists the SSI federal payment standard increasing to $994/month for an individual (up from $967) and $1,491/month for a couple (up from $1,450).",
-      "category": "update",
-      "date": "2026-06-25",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/news/en/cola/factsheets/2026.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
-    },
-    {
-      "id": "n-20260625-medicaid-chip-noncitizen-funding-guidance",
-      "title": "CMS issues guidance on new limits to federal Medicaid/CHIP matching funds for certain noncitizens",
-      "summary": "CMS released a State Health Official letter to help states implement a statutory change limiting the ability to claim federal Medicaid and CHIP matching funds for individuals in certain noncitizen categories. CMS said the statutory change begins October 1, 2026, while noting that federal matching funds remain available for treatment of emergency medical conditions and that the change does not apply to lawfully residing children and pregnant women options.",
+      "id": "n-20260626-medicaid-work-requirement",
+      "title": "CMS issues interim final rule implementing Medicaid work requirement for certain adults",
+      "summary": "CMS issued an interim final rule implementing a new “community engagement” requirement: certain non-pregnant adults ages 19–64 generally must complete 80 hours per month of qualifying activities (work, job programs, community service, or half-time education). States must generally implement the requirement by January 1, 2027, and the rule also allows meeting it through monthly earnings of at least 80 times the federal minimum wage (listed as $580/month in 2026).",
       "category": "policy-change",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "source": "Centers for Medicare & Medicaid Services (CMS)",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
+      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
       "programs": [
         "medicaid",
         "chip"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260626-eitc-max-2025",
+      "title": "IRS posts updated EITC tables: maximum credit up to $8,046 for tax year 2025",
+      "summary": "The IRS EITC tables list maximum credits for tax year 2025 of $649 (no qualifying children), $4,328 (one child), $7,152 (two children), and $8,046 (three or more children). The page also notes an investment income limit of $11,950 or less to qualify.",
+      "category": "update",
+      "date": "2026-06-26",
+      "source": "Internal Revenue Service (IRS)",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+      "programs": [
+        "eitc"
       ]
     },
     {
-      "id": "n-20260625-irs-2026-inflation-eitc",
-      "title": "IRS releases 2026 tax inflation adjustments, including higher EITC maximum for larger families",
-      "summary": "The IRS announced annual inflation adjustments for tax year 2026, including a higher maximum Earned Income Tax Credit (EITC) for taxpayers with three or more qualifying children. The IRS release lists the 2026 EITC maximum for 3+ qualifying children as $8,231 (up from $8,046), and standard deduction amounts rising to $16,100 (single), $32,200 (married filing jointly), and $24,150 (head of household).",
+      "id": "n-20260626-ctc-actc-amounts",
+      "title": "IRS: Child Tax Credit up to $2,200 per child; refundable portion up to $1,700 (if eligible)",
+      "summary": "The IRS Child Tax Credit page states the credit is worth up to $2,200 per qualifying child. It also says families with little or no federal income tax liability may qualify for the Additional Child Tax Credit (refundable portion) up to $1,700 per qualifying child, and notes an earned income threshold of at least $2,500 to be eligible.",
       "category": "update",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "source": "Internal Revenue Service (IRS)",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/child-tax-credit",
       "programs": [
-        "eitc",
         "ctc"
       ]
     },
     {
-      "id": "n-20260625-fafsa-deadlines-2026-27",
-      "title": "Federal Register posts key FAFSA deadlines for 2026–27 aid year (submit by June 30, 2027)",
-      "summary": "A Federal Register notice lists the deadline for the Department’s FAFSA Processing System to receive a 2026–2027 FAFSA as June 30, 2027. The notice also sets September 11, 2027 as the deadline for corrections (and other changes like address or school updates) and says schools must receive an ISIR or FAFSA Submission Summary by the student’s last date of enrollment for 2026–2027 or September 18, 2027—whichever is earlier.",
+      "id": "n-20260626-fafsa-final-deadline",
+      "title": "Federal Register posts 2026–27 award-year FAFSA processing receipt deadline: Aug. 31, 2027",
+      "summary": "A Federal Register notice posted by Federal Student Aid lists August 31, 2027 as the final FAFSA processing receipt deadline for the 2026–27 award year. The notice also lists June 30, 2027 and September 29, 2027 as additional 2026–27 award-year deadlines for reports/records across programs including Pell Grants, Direct Loans, FSEOG, and Federal Work-Study.",
       "category": "deadline",
-      "date": "2026-06-25",
-      "source": "Federal Register (via GovInfo)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-06-22/pdf/2026-12487.pdf",
+      "date": "2026-06-26",
+      "source": "Federal Student Aid (Federal Register notice)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/federal-registers/2026-06-23/2026-2027-award-year-deadline-dates-reports-and-other-records-associated-free-application-federal-student-aid-fafsa-form",
       "programs": [
         "pell",
-        "student_aid"
+        "fafsa"
       ]
     },
     {
-      "id": "n-20260625-section8-eiv-deceased-tenants",
-      "title": "HUD tells PHAs to run EIV Deceased Tenants Report at least monthly to reduce Section 8 payment errors",
-      "summary": "HUD’s PIH Notice 2026-11 updates guidance requiring public housing agencies (PHAs) to use the EIV system’s Deceased Tenants Report to reduce subsidy payment and administrative errors across Public Housing, Housing Choice Vouchers (HCV), PBV, and Mod Rehab. HUD directs PHAs to generate the report at least once a month (and for HCV/PBV/Mod Rehab, at least monthly before disbursing Housing Assistance Payments), and the notice includes timelines like submitting Form HUD-50058 no later than 60 calendar days from the effective date of action.",
-      "category": "policy-change",
-      "date": "2026-06-25",
+      "id": "n-20260626-hud-youth-homelessness-nofo",
+      "title": "HUD: $193M available for youth homelessness programs; applications due Aug. 10, 2026",
+      "summary": "HUD states it is competing $144 million for the Youth Homelessness Demonstration Program (YHDP) to fund 26–50 new communities, plus $49 million for Youth Homelessness System Improvement (YHSI) grants. HUD lists an application deadline of August 10, 2026.",
+      "category": "deadline",
+      "date": "2026-06-26",
       "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-11.pdf",
+      "sourceUrl": "http://www.hud.gov/hud-partners/community-youth",
       "programs": [
-        "section8"
+        "housing"
       ]
     },
     {
-      "id": "n-20260625-liheap-ca-fy2026",
-      "title": "California says it received $236 million in LIHEAP funding for federal fiscal year 2026",
-      "summary": "California’s LIHEAP program page says the state received $236 million in annual LIHEAP funding for Federal Fiscal Year 2026. The page also notes that LIHEAP funding is limited and local service providers prioritize particularly vulnerable households; it describes crisis help for households facing a 24–48 hour disconnect notice.",
+      "id": "n-20260626-ssi-payment-schedule",
+      "title": "SSA publishes 2026–2027 benefit payment schedule (SSI generally paid on the 1st)",
+      "summary": "SSA’s 2026–2027 payment schedule explains that SSI is generally paid on the 1st of each month, while Social Security is paid on the 3rd for people who got benefits before May 1997 or who receive both Social Security and SSI. The publication also advises allowing three additional mailing days after the expected date before contacting SSA if a payment isn’t received.",
       "category": "update",
-      "date": "2026-06-25",
-      "source": "California Department of Community Services & Development (CSD)",
-      "sourceUrl": "https://www.csd.ca.gov/pages/liheapprogram.aspx",
+      "date": "2026-06-26",
+      "source": "Social Security Administration (SSA)",
+      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
-        "liheap"
-      ]
-    },
-    {
-      "id": "n-20260625-wic-milk-mma-temp-increase",
-      "title": "USDA WIC memo: temporary higher monthly milk amounts effective immediately through Sept. 30, 2026",
-      "summary": "USDA issued WIC Policy Memorandum #2026-1 implementing a temporary increase to the maximum monthly allowance (MMA) of fluid milk for certain WIC food packages. The memo lists updated milk MMAs (e.g., 16 quarts for Food Packages IV A/B and VI, 22 quarts for Food Packages V A/B, and 24 quarts for Food Package VII) and says the authority for updated amounts terminates September 30, 2026.",
-      "category": "policy-change",
-      "date": "2026-06-25",
-      "source": "USDA",
-      "sourceUrl": "https://www.usda.gov/sites/default/files/guidance-documents/fns.wic-2026-1-mma-increase.pdf",
-      "programs": [
-        "wic"
+        "ssi",
+        "ssdi"
       ]
     }
   ]
