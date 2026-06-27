@@ -1,24 +1,25 @@
 {
-  "lastUpdated": "2026-06-26T11:03:39Z",
+  "lastUpdated": "2026-06-27T11:05:01Z",
   "items": [
     {
-      "id": "n-20260626-snap-retailers",
-      "title": "USDA finalizes tougher SNAP retailer stocking standards to expand healthy food options",
-      "summary": "USDA published a final rule requiring SNAP-authorized retailers to carry seven varieties of staple foods across four categories (protein, grains, dairy, and fruits/vegetables). The agency says the new standard more than doubles the prior requirement and is scheduled to take effect in Fall 2026.",
+      "id": "n-20260627-snap-retailer-stock",
+      "title": "USDA finalizes tougher SNAP retailer stocking standards; compliance begins Nov. 4, 2026",
+      "summary": "USDA’s final rule raises SNAP retailer staple-food requirements to 7 varieties across 4 staple categories (protein, grains, dairy, and fruits/vegetables), more than doubling the previous standard. USDA says SNAP-authorized retailers process over $90 billion per year (about $236 million per day) in benefits, and compliance with the new stocking standards starts Nov. 4, 2026.",
       "category": "policy-change",
-      "date": "2026-06-26",
-      "source": "USDA",
-      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/05/07/usda-requires-snap-authorized-retailers-carry-more-real-food",
+      "date": "2026-06-27",
+      "source": "USDA Food and Nutrition Service / USDA",
+      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/stocking-requirements",
       "programs": [
         "snap"
-      ]
+      ],
+      "isBreaking": true
     },
     {
-      "id": "n-20260626-medicaid-work-requirement",
-      "title": "CMS issues interim final rule implementing Medicaid work requirement for certain adults",
-      "summary": "CMS issued an interim final rule implementing a new “community engagement” requirement: certain non-pregnant adults ages 19–64 generally must complete 80 hours per month of qualifying activities (work, job programs, community service, or half-time education). States must generally implement the requirement by January 1, 2027, and the rule also allows meeting it through monthly earnings of at least 80 times the federal minimum wage (listed as $580/month in 2026).",
+      "id": "n-20260627-medicaid-work-ifr",
+      "title": "CMS issues Medicaid community engagement (work) rule: 80 hours/month; states must implement by Jan. 1, 2027",
+      "summary": "CMS released an interim final rule implementing a new Medicaid community engagement requirement for certain non-pregnant adults ages 19–64 in the Medicaid adult group. The rule sets a standard of 80 hours per month of qualifying activities (or an income-equivalent threshold of $580/month in 2026, based on 80 hours at the federal minimum wage) and says states must generally implement the requirement by Jan. 1, 2027.",
       "category": "policy-change",
-      "date": "2026-06-26",
+      "date": "2026-06-27",
       "source": "Centers for Medicare & Medicaid Services (CMS)",
       "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
       "programs": [
@@ -28,65 +29,64 @@
       "isBreaking": true
     },
     {
-      "id": "n-20260626-eitc-max-2025",
-      "title": "IRS posts updated EITC tables: maximum credit up to $8,046 for tax year 2025",
-      "summary": "The IRS EITC tables list maximum credits for tax year 2025 of $649 (no qualifying children), $4,328 (one child), $7,152 (two children), and $8,046 (three or more children). The page also notes an investment income limit of $11,950 or less to qualify.",
+      "id": "n-20260627-wic-cvb-fy2026",
+      "title": "WIC FY 2026 fruit-and-vegetable benefit amounts: $26 children, $48 pregnant/postpartum, $52 breastfeeding",
+      "summary": "USDA set WIC’s FY 2026 cash-value voucher/benefit (CVV/CVB) amounts at $26 per month for children, $48 per month for pregnant and postpartum participants, and $52 per month for fully/mostly breastfeeding participants. The memo defines FY 2026 as Oct. 1, 2025 through Sept. 30, 2026.",
       "category": "update",
-      "date": "2026-06-26",
-      "source": "Internal Revenue Service (IRS)",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+      "date": "2026-06-27",
+      "source": "USDA Food and Nutrition Service (WIC Policy Memorandum)",
+      "sourceUrl": "https://www.fns.usda.gov/wic/agency/cvvb-fy26",
       "programs": [
-        "eitc"
+        "wic"
       ]
     },
     {
-      "id": "n-20260626-ctc-actc-amounts",
-      "title": "IRS: Child Tax Credit up to $2,200 per child; refundable portion up to $1,700 (if eligible)",
-      "summary": "The IRS Child Tax Credit page states the credit is worth up to $2,200 per qualifying child. It also says families with little or no federal income tax liability may qualify for the Additional Child Tax Credit (refundable portion) up to $1,700 per qualifying child, and notes an earned income threshold of at least $2,500 to be eligible.",
+      "id": "n-20260627-wic-income-guidelines-2627",
+      "title": "USDA posts WIC income eligibility guidelines for 2026–27 (effective July 1, 2026–June 30, 2027)",
+      "summary": "USDA published WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027. Examples on the federal guideline table include $15,960 annual income for a 1-person household (100% of poverty) and $33,000 for a 4-person household (100% of poverty).",
       "category": "update",
-      "date": "2026-06-26",
-      "source": "Internal Revenue Service (IRS)",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/child-tax-credit",
+      "date": "2026-06-27",
+      "source": "USDA Food and Nutrition Service (WIC)",
+      "sourceUrl": "https://www.fns.usda.gov/wic/fr-042926",
       "programs": [
-        "ctc"
+        "wic"
       ]
     },
     {
-      "id": "n-20260626-fafsa-final-deadline",
-      "title": "Federal Register posts 2026–27 award-year FAFSA processing receipt deadline: Aug. 31, 2027",
-      "summary": "A Federal Register notice posted by Federal Student Aid lists August 31, 2027 as the final FAFSA processing receipt deadline for the 2026–27 award year. The notice also lists June 30, 2027 and September 29, 2027 as additional 2026–27 award-year deadlines for reports/records across programs including Pell Grants, Direct Loans, FSEOG, and Federal Work-Study.",
+      "id": "n-20260627-fafsa-titleiv-deadlines-2627",
+      "title": "Federal Register sets 2026–27 FAFSA and Title IV processing deadlines: June 30, 2027 FAFSA receipt; Sept. 11, 2027 corrections",
+      "summary": "A June 22, 2026 Federal Register notice sets the deadline for receipt of a 2026–27 FAFSA by the Department’s FAFSA Processing System (FPS) as June 30, 2027. The notice also sets Sept. 11, 2027 as the deadline for corrections (and related changes/duplicate requests), and says schools must receive an ISIR or FAFSA Submission Summary no later than the student’s last date of enrollment for 2026–27 or Sept. 18, 2027 (whichever is earlier).",
       "category": "deadline",
-      "date": "2026-06-26",
-      "source": "Federal Student Aid (Federal Register notice)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/library/federal-registers/2026-06-23/2026-2027-award-year-deadline-dates-reports-and-other-records-associated-free-application-federal-student-aid-fafsa-form",
+      "date": "2026-06-27",
+      "source": "Federal Register (GovInfo PDF)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-06-22/pdf/2026-12487.pdf",
       "programs": [
         "pell",
         "fafsa"
       ]
     },
     {
-      "id": "n-20260626-hud-youth-homelessness-nofo",
-      "title": "HUD: $193M available for youth homelessness programs; applications due Aug. 10, 2026",
-      "summary": "HUD states it is competing $144 million for the Youth Homelessness Demonstration Program (YHDP) to fund 26–50 new communities, plus $49 million for Youth Homelessness System Improvement (YHSI) grants. HUD lists an application deadline of August 10, 2026.",
-      "category": "deadline",
-      "date": "2026-06-26",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "http://www.hud.gov/hud-partners/community-youth",
+      "id": "n-20260627-snap-retailer-compliance-date",
+      "title": "USDA confirms SNAP retailer stocking-rule compliance date: Nov. 4, 2026",
+      "summary": "USDA’s SNAP retailer guidance page says the final rule “Updated Staple Food Stocking Standards for Retailers in SNAP” requires retailers to comply starting Nov. 4, 2026. The agency says it will publish additional retailer guidance and update training materials ahead of that date.",
+      "category": "update",
+      "date": "2026-06-27",
+      "source": "USDA Food and Nutrition Service (FNS)",
+      "sourceUrl": "https://www.fns.usda.gov/snap/retailer/stocking-requirements",
       "programs": [
-        "housing"
+        "snap"
       ]
     },
     {
-      "id": "n-20260626-ssi-payment-schedule",
-      "title": "SSA publishes 2026–2027 benefit payment schedule (SSI generally paid on the 1st)",
-      "summary": "SSA’s 2026–2027 payment schedule explains that SSI is generally paid on the 1st of each month, while Social Security is paid on the 3rd for people who got benefits before May 1997 or who receive both Social Security and SSI. The publication also advises allowing three additional mailing days after the expected date before contacting SSA if a payment isn’t received.",
+      "id": "n-20260627-medicaid-work-costs",
+      "title": "Medicaid work-rule rollout: CMS outlines verification steps and a 30-day response window if compliance can’t be verified",
+      "summary": "CMS says states must verify compliance with the Medicaid community engagement requirement at application and renewal, and (optionally) at more frequent intervals. If a state can’t verify compliance, it must send a noncompliance notice and give the person 30 calendar days to show they met the requirement or qualify for an exemption.",
       "category": "update",
-      "date": "2026-06-26",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
+      "date": "2026-06-27",
+      "source": "Centers for Medicare & Medicaid Services (CMS)",
+      "sourceUrl": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
       "programs": [
-        "ssi",
-        "ssdi"
+        "medicaid"
       ]
     }
   ]
