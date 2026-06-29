@@ -1,63 +1,39 @@
 {
-  "lastUpdated": "2026-06-28T11:04:00Z",
+  "lastUpdated": "2026-06-29T11:09:59Z",
   "items": [
     {
-      "id": "n-20260628-snap-food-restriction-waivers",
-      "title": "USDA posts updated list of state SNAP food-restriction waivers (some starting as soon as July 1, 2026)",
-      "summary": "USDA updated its tracker of SNAP food-restriction waivers that limit what items can be purchased with benefits (e.g., soda and candy). The tracker lists target implementation dates including Arkansas (07/01/26), Tennessee (07/31/26), and Colorado (10/30/26), so SNAP households and retailers in those states should watch for state-issued guidance on what products will be restricted.",
+      "id": "n-20260629-snap-waiver-ar",
+      "title": "Arkansas SNAP waiver will block benefits from buying soda and candy starting July 1",
+      "summary": "USDA approved Arkansas’ request for a two-year SNAP demonstration that takes effect July 1, 2026. The waiver excludes soda (including low- and no-calorie soda), fruit/vegetable drinks with less than 50% juice, other unhealthy drinks, and candy from SNAP-eligible purchases.",
       "category": "policy-change",
-      "date": "2026-06-28",
-      "source": "USDA Food and Nutrition Service",
-      "sourceUrl": "https://www.fns.usda.gov/snap/waivers/foodrestriction",
+      "date": "2026-06-29",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/snap/waivers/foodrestriction/arkansas",
       "programs": [
         "snap"
-      ]
+      ],
+      "isBreaking": true
     },
     {
-      "id": "n-20260628-medicaid-1115-budget-neutrality-2027",
-      "title": "CMS previews stricter budget-neutrality rules for Medicaid Section 1115 waivers starting Jan. 1, 2027",
-      "summary": "CMS says that beginning January 1, 2027 it will not approve new Medicaid Section 1115 demonstrations, renewals, or amendments unless the CMS Chief Actuary certifies the project is budget neutral. CMS notes that nearly one-third of all federal Medicaid dollars flow through demonstration projects, and it plans to apply this approach to approvals until a final rule is effective.",
-      "category": "policy-change",
-      "date": "2026-06-28",
-      "source": "Centers for Medicare & Medicaid Services (CMS)",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-takes-bold-new-approach-stewarding-medicaid-demonstration-project-spending",
+      "id": "n-20260629-medicaid-snapshot-march",
+      "title": "CMS released the March 2026 Medicaid/CHIP eligibility operations snapshot",
+      "summary": "CMS posted its Medicaid and CHIP Eligibility Operations and Enrollment Snapshot covering March 2026 on June 26, 2026. The report provides state and national operational metrics for eligibility processing and enrollment operations (the webpage links to the full snapshot and related materials).",
+      "category": "update",
+      "date": "2026-06-29",
+      "source": "Medicaid.gov (CMS)",
+      "sourceUrl": "https://www.medicaid.gov/medicaid-and-chip-eligibility-operations-and-enrollment-snapshot",
       "programs": [
-        "medicaid"
+        "medicaid",
+        "chip"
       ]
     },
     {
-      "id": "n-20260628-tax-deadline-eitc-actc-refunds",
-      "title": "IRS: April 15, 2026 tax deadline; EITC/ACTC refunds generally arrive by March 2 with direct deposit",
-      "summary": "The IRS says it expects about 164 million individual tax returns for tax year 2025 ahead of the April 15, 2026 federal deadline. For early filers claiming the Earned Income Tax Credit (EITC) or Additional Child Tax Credit (ACTC) with direct deposit, the IRS says most refunds should be available by March 2, 2026, and “Where’s My Refund?” should show projected deposit dates for most by Feb. 21, 2026.",
+      "id": "n-20260629-ssi-ssdi-july-payments",
+      "title": "SSA confirms July 2026 payment dates for SSI and Social Security benefits",
+      "summary": "SSA’s 2026–2027 payment schedule lists SSI payments for July 2026 on July 1, 2026. Social Security benefit payments for July 2026 are scheduled for July 8 (birthdays 1–10), July 15 (11–20), and July 22 (21–31).",
       "category": "deadline",
-      "date": "2026-06-28",
-      "source": "Internal Revenue Service (IRS)",
-      "sourceUrl": "https://www.irs.gov/newsroom/irs-opens-2026-filing-season",
-      "programs": [
-        "eitc",
-        "ctc"
-      ]
-    },
-    {
-      "id": "n-20260628-ssi-ssdi-electronic-payments",
-      "title": "SSA urges remaining beneficiaries to switch from paper checks to electronic payments (Direct Deposit or Direct Express)",
-      "summary": "SSA says federal law and Executive Order 14247 require federal benefits to be paid electronically as of Sept. 30, 2025, and Social Security plans to complete the full transition for all beneficiaries in 2026. SSA cites Treasury data saying paper checks are 16 times more likely to be lost, stolen, altered, or returned undeliverable, and says the average cost to print a check is $3.07.",
-      "category": "update",
-      "date": "2026-06-28",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/blog/en/posts/2026-06-02.html",
-      "programs": [
-        "ssi",
-        "ssdi"
-      ]
-    },
-    {
-      "id": "n-20260628-ssa-payment-schedule-2026-2027",
-      "title": "SSA publishes the 2026–2027 Social Security benefit payment schedule",
-      "summary": "SSA posted its official payment calendar for 2026–2027, including the Supplemental Security Income (SSI) payment dates and Social Security payment Wednesdays based on birth date. The schedule is useful for planning around months where payments shift due to weekends or federal holidays.",
-      "category": "update",
-      "date": "2026-06-28",
-      "source": "Social Security Administration (SSA)",
+      "date": "2026-06-29",
+      "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
         "ssi",
@@ -65,37 +41,62 @@
       ]
     },
     {
-      "id": "n-20260628-hud-arf-guidance-2026-16",
-      "title": "HUD updates guidance on the Asset Repositioning Fee (ARF) that can add operating subsidy during public-housing demolition/disposition",
-      "summary": "HUD Notice PIH 2026-16 (issued May 29, 2026) updates guidance on eligibility and timing for the Asset Repositioning Fee (ARF), which can provide an add-on operating subsidy when units are removed via Section 18 demolition/disposition. The notice explains that ARF begins on the first day of the next quarter after 6 months from the trigger event, and that ARF lasts 36 months for demolitions and 24 months for dispositions.",
+      "id": "n-20260629-ctc-actc-1700",
+      "title": "IRS: maximum Additional Child Tax Credit is $1,700 per child for 2026",
+      "summary": "The IRS’s 2026 Form 1040-ES (NR) instructions state that for 2026, the maximum Additional Child Tax Credit amount is $1,700 for each qualifying child. The same document lists 2026 estimated-tax due dates of April 15, June 15, September 15, 2026, and January 15, 2027.",
+      "category": "update",
+      "date": "2026-06-29",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/f1040esn.pdf",
+      "programs": [
+        "ctc"
+      ]
+    },
+    {
+      "id": "n-20260629-hud-vash-2532",
+      "title": "HUD and VA announce $33 million for 2,532 new HUD-VASH vouchers for homeless veterans",
+      "summary": "HUD and VA announced $33 million to support 2,532 new HUD-VASH vouchers across 265 Public Housing Authorities in 44 states. HUD also announced $10 million in administrative fees across 289 PHAs in 46 states to help lease HUD-VASH vouchers and improve program delivery.",
+      "category": "new-program",
+      "date": "2026-06-29",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/news/hud-no-26-052",
+      "programs": [
+        "section8"
+      ],
+      "isBreaking": true
+    },
+    {
+      "id": "n-20260629-hud-fha-policy-14",
+      "title": "HUD announces 14 FHA Single Family policy changes, including appraisal field-review savings",
+      "summary": "HUD announced 14 policy changes to its FHA Single Family program on June 23, 2026. HUD said streamlining appraisal field-review requirements could cut an average $425 per field review and is expected to save about $3.3 million annually.",
       "category": "policy-change",
-      "date": "2026-06-28",
-      "source": "U.S. Department of Housing and Urban Development (HUD)",
-      "sourceUrl": "https://www.hud.gov/sites/default/files/hudclips/documents/PIH-2026-16.pdf",
+      "date": "2026-06-29",
+      "source": "HUD",
+      "sourceUrl": "https://www.hud.gov/news/hud-no-26-051",
       "programs": [
         "housing"
       ]
     },
     {
-      "id": "n-20260628-wic-final-rule-misc-provisions",
-      "title": "USDA final rule updates WIC regulations (reporting, confidentiality, and breastfeeding certification flexibility)",
-      "summary": "USDA finalized a rule updating multiple WIC regulatory provisions, including streamlined state reporting requirements and clarified confidentiality rules to strengthen coordination with other organizations and physicians. The rule also incorporates legislation giving state agencies the option to extend the certification period for breastfeeding women.",
-      "category": "policy-change",
-      "date": "2026-06-28",
-      "source": "USDA Food and Nutrition Service (WIC)",
-      "sourceUrl": "https://www.fns.usda.gov/wic/fr-092706",
+      "id": "n-20260629-wic-cvb-amounts",
+      "title": "USDA outlines WIC food package changes, including higher fruit/vegetable cash-value benefits",
+      "summary": "USDA’s WIC food packages guidance lists base monthly cash-value benefit amounts of $24 for children, $43 for pregnant/postpartum participants, and $47 for breastfeeding participants (adjusted annually for inflation). The same guidance lists FY 2024 inflation-adjusted levels at implementation as $26 (children), $47 (pregnant/postpartum), and $52 (breastfeeding).",
+      "category": "update",
+      "date": "2026-06-29",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/wic/food-packages",
       "programs": [
         "wic"
       ]
     },
     {
-      "id": "n-20260628-fafsa-2026-27-deadline",
-      "title": "FAFSA (2026–27 school year): You can submit as early as Oct. 1, 2025; federal deadline is June 30, 2027",
-      "summary": "The U.S. Department of Education’s 2026–27 FAFSA form states you can submit as early as Oct. 1, 2025, and the federal deadline is June 30, 2027 (states and colleges may set earlier deadlines). Submitting earlier can help students access limited first-come, first-served aid like some state grants.",
+      "id": "n-20260629-fafsa-deadline-2027",
+      "title": "2026–27 FAFSA cycle: applications accepted through June 30, 2027 (online and paper)",
+      "summary": "The Federal Student Aid Handbook’s 2026–27 application-process guidance states the online FAFSA for 2026–27 was available to all applicants by October 1, 2025. It also states that 2026–27 FAFSA applications will be accepted through June 30, 2027 (online submissions must be received by that date, and paper forms must be received by that date).",
       "category": "deadline",
-      "date": "2026-06-28",
-      "source": "U.S. Department of Education — Federal Student Aid",
-      "sourceUrl": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
+      "date": "2026-06-29",
+      "source": "FSA Partner Connect (U.S. Department of Education)",
+      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/fsa-handbook/2026-2027/application-and-verification-guide/ch1-application-process-fafsa-isir",
       "programs": [
         "pell"
       ]
