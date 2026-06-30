@@ -1,38 +1,50 @@
 {
-  "lastUpdated": "2026-06-29T11:09:59Z",
+  "lastUpdated": "2026-06-30T11:02:55Z",
   "items": [
     {
-      "id": "n-20260629-snap-waiver-ar",
-      "title": "Arkansas SNAP waiver will block benefits from buying soda and candy starting July 1",
-      "summary": "USDA approved Arkansas’ request for a two-year SNAP demonstration that takes effect July 1, 2026. The waiver excludes soda (including low- and no-calorie soda), fruit/vegetable drinks with less than 50% juice, other unhealthy drinks, and candy from SNAP-eligible purchases.",
+      "id": "n-20260630-snap-waivers-court",
+      "title": "Federal court vacates SNAP 'food restriction' waivers in five states, threatening broader state bans",
+      "summary": "On June 22, 2026, a federal district court vacated USDA SNAP waivers that let Colorado, Iowa, Nebraska, Tennessee, and West Virginia block purchases like soda and candy, finding USDA lacked authority to waive Congress’s definition of eligible food. USDA says it has approved 18 states for SNAP food restriction waivers, so the ruling could influence other states’ planned restrictions even though it directly addressed only five waivers.",
       "category": "policy-change",
-      "date": "2026-06-29",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/snap/waivers/foodrestriction/arkansas",
+      "date": "2026-06-30",
+      "source": "National Law Review / USDA",
+      "sourceUrl": "https://natlawreview.com/article/federal-judge-vacates-five-state-snap-waivers",
       "programs": [
         "snap"
       ],
       "isBreaking": true
     },
     {
-      "id": "n-20260629-medicaid-snapshot-march",
-      "title": "CMS released the March 2026 Medicaid/CHIP eligibility operations snapshot",
-      "summary": "CMS posted its Medicaid and CHIP Eligibility Operations and Enrollment Snapshot covering March 2026 on June 26, 2026. The report provides state and national operational metrics for eligibility processing and enrollment operations (the webpage links to the full snapshot and related materials).",
+      "id": "n-20260630-snap-waivers-count",
+      "title": "USDA lists 18 states approved for SNAP food restriction waivers",
+      "summary": "USDA’s “Make America Healthy Again” page says it has approved 18 states to restrict certain items from purchase with SNAP benefits. The page explicitly lists Arkansas, Colorado, Florida, Idaho, Indiana, Iowa, Louisiana, Nebraska, Oklahoma, Texas, Utah, West Virginia, Missouri, North Dakota, South Carolina, Tennessee, Virginia, and Hawaii.",
       "category": "update",
-      "date": "2026-06-29",
-      "source": "Medicaid.gov (CMS)",
-      "sourceUrl": "https://www.medicaid.gov/medicaid-and-chip-eligibility-operations-and-enrollment-snapshot",
+      "date": "2026-06-30",
+      "source": "USDA",
+      "sourceUrl": "https://www.usda.gov/maha",
+      "programs": [
+        "snap"
+      ]
+    },
+    {
+      "id": "n-20260630-medicaid-work-comments",
+      "title": "Medicaid work-requirement rule: public comments due July 31, 2026; requirements take effect January 1, 2027",
+      "summary": "A policy explainer notes CMS issued an interim final rule on June 1, 2026 creating a national framework for Medicaid “community engagement” (work) requirements, with a 60-day comment period open until July 31, 2026. The rule is described as taking effect January 1, 2027, with exemptions including people under 19 or over 64, people receiving SSI/SSDI, and certain caregivers and medically frail individuals.",
+      "category": "deadline",
+      "date": "2026-06-30",
+      "source": "Family Voices (summarizing CMS rule)",
+      "sourceUrl": "https://familyvoices.org/understanding-medicaid-work-requirement-interim-final-rule-ifr/",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260629-ssi-ssdi-july-payments",
-      "title": "SSA confirms July 2026 payment dates for SSI and Social Security benefits",
-      "summary": "SSA’s 2026–2027 payment schedule lists SSI payments for July 2026 on July 1, 2026. Social Security benefit payments for July 2026 are scheduled for July 8 (birthdays 1–10), July 15 (11–20), and July 22 (21–31).",
-      "category": "deadline",
-      "date": "2026-06-29",
+      "id": "n-20260630-ssi-july-payments",
+      "title": "SSA schedule shows SSI paid July 1, 2026 (and an August date appears on the calendar)",
+      "summary": "SSA’s official 2026–2027 benefit payment schedule shows Supplemental Security Income (SSI) paid on July 1, 2026. The same SSA calendar also shows an August 2026 payment date of August 31, 2026.",
+      "category": "update",
+      "date": "2026-06-30",
       "source": "Social Security Administration",
       "sourceUrl": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf",
       "programs": [
@@ -41,64 +53,53 @@
       ]
     },
     {
-      "id": "n-20260629-ctc-actc-1700",
-      "title": "IRS: maximum Additional Child Tax Credit is $1,700 per child for 2026",
-      "summary": "The IRS’s 2026 Form 1040-ES (NR) instructions state that for 2026, the maximum Additional Child Tax Credit amount is $1,700 for each qualifying child. The same document lists 2026 estimated-tax due dates of April 15, June 15, September 15, 2026, and January 15, 2027.",
+      "id": "n-20260630-wic-income-guidelines",
+      "title": "WIC income eligibility guidelines updated for July 1, 2026 through June 30, 2027",
+      "summary": "USDA’s Federal Register notice sets WIC income eligibility guidelines effective July 1, 2026 through June 30, 2027, tied to 185% of federal poverty guidelines. For the 48 contiguous states and D.C., the 185% guideline is $29,526/year ($2,461/month) for a 1-person household and $61,050/year ($5,088/month) for a 4-person household.",
       "category": "update",
-      "date": "2026-06-29",
-      "source": "Internal Revenue Service",
-      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/f1040esn.pdf",
+      "date": "2026-06-30",
+      "source": "USDA (Federal Register notice via FNA)",
+      "sourceUrl": "https://www.fna.usda.gov/wic/fr-042926",
       "programs": [
-        "ctc"
+        "wic"
       ]
     },
     {
-      "id": "n-20260629-hud-vash-2532",
-      "title": "HUD and VA announce $33 million for 2,532 new HUD-VASH vouchers for homeless veterans",
-      "summary": "HUD and VA announced $33 million to support 2,532 new HUD-VASH vouchers across 265 Public Housing Authorities in 44 states. HUD also announced $10 million in administrative fees across 289 PHAs in 46 states to help lease HUD-VASH vouchers and improve program delivery.",
-      "category": "new-program",
-      "date": "2026-06-29",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/news/hud-no-26-052",
-      "programs": [
-        "section8"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260629-hud-fha-policy-14",
-      "title": "HUD announces 14 FHA Single Family policy changes, including appraisal field-review savings",
-      "summary": "HUD announced 14 policy changes to its FHA Single Family program on June 23, 2026. HUD said streamlining appraisal field-review requirements could cut an average $425 per field review and is expected to save about $3.3 million annually.",
-      "category": "policy-change",
-      "date": "2026-06-29",
-      "source": "HUD",
-      "sourceUrl": "https://www.hud.gov/news/hud-no-26-051",
-      "programs": [
-        "housing"
-      ]
-    },
-    {
-      "id": "n-20260629-wic-cvb-amounts",
-      "title": "USDA outlines WIC food package changes, including higher fruit/vegetable cash-value benefits",
-      "summary": "USDA’s WIC food packages guidance lists base monthly cash-value benefit amounts of $24 for children, $43 for pregnant/postpartum participants, and $47 for breastfeeding participants (adjusted annually for inflation). The same guidance lists FY 2024 inflation-adjusted levels at implementation as $26 (children), $47 (pregnant/postpartum), and $52 (breastfeeding).",
+      "id": "n-20260630-wic-cvb-levels",
+      "title": "WIC cash-value benefit (fruits/vegetables) levels listed at $26/$47/$52 per month (FY 2024 inflation-adjusted levels)",
+      "summary": "USDA’s WIC food packages page lists cash-value benefit (CVB) levels at the time of rule implementation due to inflation (FY 2024) as $26 per month for children, $47 for pregnant/postpartum participants, and $52 for breastfeeding participants. These amounts are the monthly produce benefits used for fresh, frozen, or canned fruits and vegetables.",
       "category": "update",
-      "date": "2026-06-29",
-      "source": "USDA Food and Nutrition Administration",
+      "date": "2026-06-30",
+      "source": "USDA",
       "sourceUrl": "https://www.fna.usda.gov/wic/food-packages",
       "programs": [
         "wic"
       ]
     },
     {
-      "id": "n-20260629-fafsa-deadline-2027",
-      "title": "2026–27 FAFSA cycle: applications accepted through June 30, 2027 (online and paper)",
-      "summary": "The Federal Student Aid Handbook’s 2026–27 application-process guidance states the online FAFSA for 2026–27 was available to all applicants by October 1, 2025. It also states that 2026–27 FAFSA applications will be accepted through June 30, 2027 (online submissions must be received by that date, and paper forms must be received by that date).",
+      "id": "n-20260630-fafsa-deadline",
+      "title": "Federal FAFSA deadline for 2026–27 is June 30, 2027 (apply early for state/school aid)",
+      "summary": "Federal Student Aid guidance for the 2026–27 cycle says the FAFSA remains open through June 30, 2027 for aid covering July 1, 2026 through June 30, 2027. Many states and colleges run out of grant money earlier, so filing well before the federal deadline can matter for total aid.",
       "category": "deadline",
-      "date": "2026-06-29",
-      "source": "FSA Partner Connect (U.S. Department of Education)",
-      "sourceUrl": "https://fsapartners.ed.gov/knowledge-center/fsa-handbook/2026-2027/application-and-verification-guide/ch1-application-process-fafsa-isir",
+      "date": "2026-06-30",
+      "source": "Money.com (summarizing Federal Student Aid deadlines)",
+      "sourceUrl": "https://money.com/2026-fafsa-opens-changes/",
       "programs": [
-        "pell"
+        "pell",
+        "student-aid"
+      ]
+    },
+    {
+      "id": "n-20260630-ssa-july-package",
+      "title": "SSA posts its July 2026 Monthly Information Package for advocates",
+      "summary": "SSA posted a “July Monthly Information Package” on June 22, 2026 to highlight new Social Security-related articles and updates for advocates. It’s a recurring SSA resource used to share timely program information and announcements.",
+      "category": "update",
+      "date": "2026-06-30",
+      "source": "Social Security Administration",
+      "sourceUrl": "https://www.ssa.gov/news/en/advocates/2026-06-22.html",
+      "programs": [
+        "ssi",
+        "ssdi"
       ]
     }
   ]
