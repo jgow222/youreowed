@@ -1,120 +1,102 @@
 {
-  "lastUpdated": "2026-07-01T11:09:30Z",
+  "lastUpdated": "2026-07-02T17:48:19Z",
   "items": [
     {
-      "id": "n-20260701-snap-waiver-arkansas",
-      "title": "USDA lists Arkansas SNAP waiver to restrict soda/candy purchases starting July 1, 2026",
-      "summary": "USDA’s Food and Nutrition Administration lists Arkansas as having an approved SNAP food-restriction waiver with a target implementation date of 07/01/26. The waiver restricts SNAP purchases of soda, fruit/vegetable drinks with less than 50% juice, energy drinks, unhealthy drinks, and candy.",
-      "category": "policy-change",
-      "date": "2026-07-01",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/snap/waivers/foodrestriction",
-      "programs": [
-        "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260701-medicaid-noncitizen-ffp-guidance",
-      "title": "CMS issues guidance on limits to federal Medicaid/CHIP funding for certain noncitizens starting Oct. 1, 2026",
-      "summary": "CMS released guidance to states on implementing a statutory change that limits federal matching funds for full-scope Medicaid and CHIP for certain noncitizens beginning October 1, 2026. CMS notes federal matching funds remain available for treatment of emergency medical conditions and that the change does not apply to states’ options to cover lawfully residing children and pregnant women.",
-      "category": "policy-change",
-      "date": "2026-07-01",
-      "source": "Centers for Medicare & Medicaid Services (CMS)",
-      "sourceUrl": "https://www.cms.gov/newsroom/press-releases/cms-issues-guidance-implement-new-limits-federal-medicaid-chip-funding-certain-noncitizens",
+      "id": "n-20260702-medicaid-enrollment",
+      "title": "Medicaid/CHIP enrollment fell to 74.3 million as of March 2026 (CMS-reported data)",
+      "summary": "KFF’s tracker of CMS Performance Indicator Project data shows 74.3 million people enrolled in Medicaid/CHIP nationally as of March 2026, including 67.1 million in Medicaid and 7.2 million in CHIP. The tracker notes Medicaid enrollment declined by 4.8 million people (6%) from March 2025 to March 2026.",
+      "category": "update",
+      "date": "2026-07-02",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-enrollment-tracker/",
       "programs": [
         "medicaid",
         "chip"
       ]
     },
     {
-      "id": "n-20260701-medicaid-community-engagement-ifc",
-      "title": "CMS interim final rule sets Medicaid “community engagement” requirement at 80 hours/month; comments due July 31, 2026",
-      "summary": "CMS issued an interim final rule implementing a new Medicaid community engagement requirement for certain adults, generally requiring 80 hours per month of qualifying activities (work, education, job training, or community service) as a condition of eligibility. The rule is effective July 31, 2026, and states must generally implement the requirement no later than January 1, 2027.",
+      "id": "n-20260702-medicaid-work-requirements",
+      "title": "Medicaid work-requirement implementation: federal start set for Jan. 1, 2027; some states moved earlier",
+      "summary": "KFF’s tracker says the 2025 reconciliation law requires Medicaid work requirements beginning Jan. 1, 2027. The tracker also lists earlier state start dates, including Georgia on May 1, 2026; Tennessee and Utah on July 1, 2026; and Wisconsin on Dec. 1, 2026.",
       "category": "policy-change",
-      "date": "2026-07-01",
-      "source": "Federal Register (CMS)",
-      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-06-03/pdf/2026-11094.pdf",
+      "date": "2026-07-02",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/",
       "programs": [
         "medicaid"
-      ],
-      "isBreaking": true
+      ]
     },
     {
-      "id": "n-20260701-snap-admin-cost-sharing-comments",
-      "title": "USDA proposes reducing federal SNAP administrative cost share from 50% to 25% starting FY 2027; comments due Aug. 24, 2026",
-      "summary": "USDA’s Food and Nutrition Administration published a proposed rule to codify a reduction in the federal government’s share of SNAP state administrative costs from 50% to 25% beginning in fiscal year 2027. The notice says written comments must be received on or before August 24, 2026.",
-      "category": "deadline",
-      "date": "2026-07-01",
-      "source": "USDA Food and Nutrition Administration",
-      "sourceUrl": "https://www.fna.usda.gov/snap/fr-062426",
+      "id": "n-20260702-medicaid-sdp-proposed-rule",
+      "title": "Proposed CMS rule would cap some Medicaid directed payments at Medicare rates; CMS estimates $510B federal reduction (2026–2035)",
+      "summary": "KFF reports the 2025 reconciliation law created new limits on Medicaid state directed payments (SDPs) for inpatient and outpatient hospital services, nursing facility services, and professional services at academic medical centers. The caps are set at 100% of Medicare rates in Medicaid expansion states and 110% in non-expansion states, and KFF notes CMS estimated the proposed rule would reduce federal Medicaid spending by $510 billion between 2026 and 2035.",
+      "category": "policy-change",
+      "date": "2026-07-02",
+      "source": "KFF",
+      "sourceUrl": "https://www.kff.org/medicaid/forthcoming-policy-changes-to-medicaid-state-directed-payments/",
+      "programs": [
+        "medicaid"
+      ]
+    },
+    {
+      "id": "n-20260702-snap-error-rates",
+      "title": "USDA: FY 2025 SNAP payment error rate was 10.62% (about $10.1B in improper payments); states at/above 6% face future cost-sharing",
+      "summary": "USDA reported a national SNAP payment error rate of 10.62% for FY 2025 and estimated $10.1 billion in improper payments (overpayments and underpayments combined). USDA said states with error rates at or above 6% will be responsible for covering 5%, 10%, or 15% of their state’s benefits, in most cases starting Oct. 1, 2027.",
+      "category": "update",
+      "date": "2026-07-02",
+      "source": "USDA",
+      "sourceUrl": "https://www.usda.gov/about-usda/news/press-releases/2026/06/24/usda-announces-fy-2025-state-payment-error-rates-snap",
       "programs": [
         "snap"
-      ],
-      "isBreaking": true
-    },
-    {
-      "id": "n-20260701-ssi-2026-federal-payment-amounts",
-      "title": "SSA posts 2026 SSI federal payment amounts: $994/month (individual) and $1,491/month (eligible couple)",
-      "summary": "SSA’s 2026 SSI federal payment standards reflect the 2.8% COLA effective January 2026. The posted maximum monthly federal SSI amounts for 2026 are $994 for an eligible individual and $1,491 for an eligible individual with an eligible spouse (plus $498 for an essential person).",
-      "category": "update",
-      "date": "2026-07-01",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/oact/cola/SSI.html",
-      "programs": [
-        "ssi",
-        "ssdi"
       ]
     },
     {
-      "id": "n-20260701-ss-2026-cola-2-8",
-      "title": "SSA confirms 2.8% COLA for 2026 affecting about 75 million Social Security and SSI recipients",
-      "summary": "SSA says Social Security benefits and SSI payments for 75 million Americans increase by 2.8% in 2026. The increase begins with benefits payable in January 2026, and increased SSI payments begin with the December 31, 2025 payment.",
-      "category": "update",
-      "date": "2026-07-01",
-      "source": "Social Security Administration (SSA)",
-      "sourceUrl": "https://www.ssa.gov/faqs/en/questions/KA-01951.html",
+      "id": "n-20260702-snap-fraud-grants",
+      "title": "USDA opened SNAP Fraud Framework Implementation Grants (up to $5 million); applications close July 17, 2026",
+      "summary": "USDA announced SNAP Fraud Framework Implementation Grants to support states in preventing, detecting, and responding to recipient fraud. The funding opportunity offers up to $5 million and the application window runs from June 15, 2026 through July 17, 2026.",
+      "category": "deadline",
+      "date": "2026-07-02",
+      "source": "USDA Food and Nutrition Administration",
+      "sourceUrl": "https://www.fna.usda.gov/newsroom/fna-0003.26",
       "programs": [
-        "ssi",
-        "ssdi"
+        "snap"
       ]
     },
     {
-      "id": "n-20260701-wic-milk-mma-fy2026",
-      "title": "USDA: WIC temporarily increases maximum monthly fluid milk allowances through Sept. 30, 2026",
-      "summary": "USDA’s WIC policy memo says a temporary increase to the maximum monthly allowance (MMA) of fluid milk is in effect for FY 2026, including 16 quarts for some packages and up to 24 quarts for Food Package VII. USDA says the authority for the updated amounts terminates on September 30, 2026.",
-      "category": "policy-change",
-      "date": "2026-07-01",
-      "source": "USDA",
-      "sourceUrl": "https://www.usda.gov/sites/default/files/guidance-documents/fns.wic-2026-1-mma-increase.pdf",
+      "id": "n-20260702-fafsa-2026-27-deadlines",
+      "title": "FAFSA 2026–27 federal deadline is June 30, 2027; corrections accepted until Sept. 12, 2027",
+      "summary": "Federal Student Aid lists the 2026–27 FAFSA submission deadline as June 30, 2027 at 11:59 p.m. Central time. The same table lists a separate deadline for corrections or updates of Sept. 12, 2027 at 11:59 p.m. Central time.",
+      "category": "deadline",
+      "date": "2026-07-02",
+      "source": "Federal Student Aid (U.S. Department of Education)",
+      "sourceUrl": "https://studentaid.gov/apply-for-aid/fafsa/fafsa-deadlines",
       "programs": [
-        "wic"
+        "pell-grant"
       ]
     },
     {
-      "id": "n-20260701-eitc-2025-tables",
-      "title": "IRS posts EITC tables: maximum 2025 EITC is $8,046 (3+ qualifying children) and investment income limit is $11,950",
-      "summary": "IRS EITC tables list the 2025 maximum credit amounts including $8,046 for filers with three or more qualifying children and $649 for filers with no qualifying children. The IRS also lists an investment income limit of $11,950 or less for tax year 2025 EITC eligibility.",
-      "category": "update",
-      "date": "2026-07-01",
-      "source": "Internal Revenue Service (IRS)",
-      "sourceUrl": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+      "id": "n-20260702-hud-hotma-deadline",
+      "title": "HUD set Jan. 1, 2027 as the compliance deadline for key HOTMA changes for most voucher and public housing programs",
+      "summary": "The National Apartment Association reports HUD set Jan. 1, 2027 as the compliance deadline for all aspects of HOTMA sections 102 and 104 for PHAs administering Housing Choice Voucher (HCV), Project-Based Voucher, Moderate Rehabilitation, Moderate Rehabilitation SRO, and public housing programs. The same summary notes exclusions for Moving to Work (MTW) PHAs and PHAs that exclusively use the HUD Family Reporting Software.",
+      "category": "deadline",
+      "date": "2026-07-02",
+      "source": "National Apartment Association (summarizing HUD notice)",
+      "sourceUrl": "https://naahq.org/news/hud-sets-final-hotma-compliance-date",
+      "programs": [
+        "section-8"
+      ]
+    },
+    {
+      "id": "n-20260702-irs-free-file-oct15",
+      "title": "IRS: Free File remains available through Oct. 15; guided filing available for AGI $89,000 or less",
+      "summary": "In a June 2, 2026 release, the IRS said taxpayers with adjusted gross income (AGI) of $89,000 or less can use IRS Free File guided software to file a federal return (and usually a state return) at no cost. The IRS said Free File remains available through Oct. 15.",
+      "category": "deadline",
+      "date": "2026-07-02",
+      "source": "Internal Revenue Service",
+      "sourceUrl": "https://www.irs.gov/newsroom/its-not-too-late-use-irs-free-file-today",
       "programs": [
         "eitc",
         "ctc"
-      ]
-    },
-    {
-      "id": "n-20260701-fafsa-2526-deadline-june30",
-      "title": "FAFSA (2025–26) federal submission deadline is June 30, 2026; 2026–27 deadline is June 30, 2027",
-      "summary": "USA.gov lists the federal FAFSA submission deadline for the 2025–26 school year as June 30, 2026. It also lists the federal FAFSA submission deadline for the 2026–27 school year as June 30, 2027.",
-      "category": "deadline",
-      "date": "2026-07-01",
-      "source": "USA.gov",
-      "sourceUrl": "https://www.usa.gov/fafsa",
-      "programs": [
-        "pell",
-        "fafsa"
       ]
     }
   ]
